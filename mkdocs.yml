@@ -1,14 +1,25 @@
-site_name: Projecte Intermodular 2DAW
-site_url: https://cipfpbatoi.github.io/pi2daw2526/
+site_name: Programació web en Entorn Servidor 2026
+site_url: https://cipfpbatoi.github.io/dwes2627/
 use_directory_urls: false
 
 nav:
   - "Inici": "index.md"
-  - "Enunciat": "projecte.md"
-  - "Iteració: Entorn, aparador i contacte": "sprint1.md"
-  - "Iteració: Catàleg de productes": "sprint2.md"
-  - "Iteració: Migració a Laravel": "sprint3.md"
-  - "Iteració: Client SPA amb Vue i control de rols": "sprint4.md"
+  - "Com funciona el curs": "01_com_funciona_el_curs/index.md"
+  - "Reptes":
+      - "Visió general": "02_reptes/index.md"
+      - "Repte 01": "02_reptes/repte_01.md"
+      - "Repte 02": "02_reptes/repte_02.md"
+      - "Repte 03": "02_reptes/repte_03.md"
+      - "Repte 04": "02_reptes/repte_04.md"
+      - "Repte 05": "02_reptes/repte_05.md"
+      - "Fase final": "02_reptes/fase_final.md"
+  - "Com s'avalua":
+      - "Visió general": "03_com_s_avalua/index.md"
+      - "Evidències": "03_com_s_avalua/evidencies.md"
+      - "Checkpoints i defenses": "03_com_s_avalua/checkpoints_i_defenses.md"
+  - "Materials": "04_materials/index.md"
+  - "Projecte base": "05_projecte_base/index.md"
+  - "Recursos ràpids": "06_recursos_rapid/index.md"
 theme:
   language: ca
   favicon: imagenes/favicon.png
@@ -41,8 +52,6 @@ extra:
   search:
     language: "ca"
   social:
-    - icon: material/twitter
-      link: https://twitter.com/aitormedrano
     - icon: material/email-edit
       link: mailto:<i.gomismullor@edu.gva.es>
   analytics:
@@ -77,4 +86,4 @@ markdown_extensions:
       permalink: true
       toc_depth: 3
 
-copyright: 2025-2026  Ignasi Gomis,Andrés Martos - Licencia CC BY-NC-SA
+copyright: 2026-2027 Ignasi Gomis  - Licencia CC BY-NC-SA
