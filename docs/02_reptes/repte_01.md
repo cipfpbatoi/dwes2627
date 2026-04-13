@@ -1,45 +1,203 @@
-# Repte 1
+# Repte 1. Kickoff funcional del backend
 
-## Objectiu
+## Finalitat del repte
 
-En este primer repte has de deixar el projecte en marxa amb una primera funcionalitat real. No basta amb tindre l'entorn creat: ha d'existir un flux simple que es puga provar de principi a fi.
+Este primer repte servix per posar en marxa la base tècnica del projecte i demostrar que el sistema ja és capaç de fer alguna cosa real.
 
-## Què has de fer
+No es tracta només de triar tecnologia o muntar un esquelet buit. Es tracta de deixar una base executable, documentada i amb un primer flux funcional verificable.
 
-Per completar el repte, prepara com a mínim estes peces:
+## Context professional
 
-- un repositori que es puga arrancar
-- un punt d'entrada al producte
-- un formulari o interacció equivalent
-- una validació mínima en servidor
-- un primer registre o persistència bàsica
-- un `README` amb els passos d'arrancada i prova
+Imagina que formes part d’un equip que rep l’encàrrec d’iniciar un nou servei web.
 
-## Què has d'entregar
+Encara no s’espera un producte complet, però sí una base fiable que permeta:
 
-Quan dones `R1` per entregat, ha de quedar visible:
+- arrancar el projecte
+- justificar una primera decisió tècnica
+- mostrar una primera interacció real
+- deixar traçabilitat del treball
+- preparar el terreny per als reptes següents
 
-- el codi del projecte
-- el `README` actualitzat
-- el flux principal funcionant
-- un cas correcte i un cas incorrecte
-- commits que mostren el treball fet
+## Encàrrec
 
-## Com es comprovarà
+Has de preparar una primera versió del projecte que incloga una funcionalitat mínima però real.
 
-La revisió es farà de manera pràctica:
+Esta primera versió ha de servir per demostrar que el backend:
 
-- arrancant el projecte
-- seguint el `README`
-- provant el flux principal
-- revisant què passa quan les dades són incorrectes
-- comprovant on queda la informació o el resultat
+- arranca
+- rep informació
+- la tracta mínimament
+- respon
+- i deixa algun tipus de rastre o registre útil
 
-## Quan encara no està prou bé
+## Què has de construir
 
-El repte es queda curt si passa alguna d'estes coses:
+Has de deixar preparada una primera versió funcional del projecte amb, com a mínim:
 
-- només hi ha l'esquelet del framework
-- no es pot reproduir la prova
-- la validació no està realment connectada al backend
-- no es veu què fa el sistema amb la informació rebuda
+- un repositori ordenat i executable
+- una decisió tècnica inicial justificada
+- un punt d’entrada al producte
+- un formulari o interacció equivalent útil
+- validació mínima en servidor
+- un registre o persistència bàsica de la informació
+- un README que permeta arrancar el projecte
+- traçabilitat mínima del treball fet
+
+## Producte final esperat
+
+Al final del repte hauries de tindre un producte que permeta mostrar una seqüència real com esta:
+
+- l’usuari entra al sistema
+- l’usuari envia una informació
+- el backend rep la petició
+- el backend valida mínimament la informació
+- el backend respon
+- i queda algun registre o persistència bàsica de la dada
+
+## Seqüència de treball recomanada
+
+### 1. Decidir la base tècnica
+
+Has de comparar opcions de manera breu i justificar la que utilitzaràs.
+
+No cal fer una comparativa molt llarga, però sí suficient per explicar:
+
+- quina opció tries
+- per què la tries
+- quines alternatives has descartat
+- per què és adequada per al projecte
+
+### 2. Preparar l’entorn de treball
+
+Has de muntar el projecte perquè es puga arrancar de manera clara i reproduïble.
+
+Això inclou:
+
+- estructura mínima del repositori
+- fitxers necessaris per començar
+- convencions bàsiques
+- README amb instruccions d’arrancada
+
+### 3. Construir el primer flux funcional
+
+Has de crear una primera interacció real amb el sistema.
+
+Per exemple:
+
+- una landing o equivalent
+- un formulari útil
+- tractament de la petició
+- validació mínima
+- resposta clara
+- registre o persistència bàsica
+
+### 4. Preparar la revisió del repte
+
+Has de deixar el treball en condicions de ser revisat.
+
+Això implica:
+
+- README revisat
+- evidència de prova del flux
+- decisions bàsiques documentades
+- preparació per al checkpoint o la defensa
+
+## Evidències obligatòries
+
+Per considerar complet el repte, hauràs d’aportar com a mínim:
+
+- repositori actualitzat
+- README executable
+- issue principal del repte o registre equivalent
+- commits amb sentit
+- decisió tècnica inicial justificada
+- primer flux funcional operatiu
+- evidència de validació mínima
+- evidència de registre o persistència bàsica
+- demo o mostra funcional del repte
+
+## Què es comprovarà
+
+Es comprovarà si:
+
+- el projecte arranca de veritat
+- el README permet posar-lo en marxa
+- el flux funcional està connectat de punta a punta
+- la validació no és només aparent
+- hi ha una primera decisió tècnica justificable
+- el treball està traçat amb evidències reals
+- pots explicar el que has fet
+
+## Checkpoint del repte
+
+En el checkpoint hauràs de poder mostrar:
+
+- que el projecte arranca
+- quina tecnologia o enfocament has triat
+- quin és el primer flux funcional
+- què valida el sistema
+- què queda registrat o persistit
+- quins problemes has tingut fins ara
+
+## Defensa tècnica breu
+
+En la defensa o revisió hauràs de poder respondre preguntes com:
+
+- per què has triat esta opció tècnica?
+- què fa exactament el backend quan rep la petició?
+- on es valida la informació?
+- què està realment implementat i què encara no?
+- com prepararies esta base per al repte següent?
+
+## Ús de la IA en este repte
+
+La IA et pot ajudar, per exemple, a:
+
+- comparar opcions
+- generar esquelets inicials
+- detectar errors de configuració
+- revisar el README
+- suggerir validacions
+
+Però no és suficient copiar el que et done.
+
+Has de poder:
+
+- explicar la solució
+- adaptar-la
+- verificar-la
+- corregir errors
+- justificar per què l’has adoptada
+
+## Errors habituals
+
+Convindria evitar estos errors:
+
+- muntar només un esquelet sense funcionalitat real
+- portar una comparativa superficial
+- fer un formulari sense tractament real en servidor
+- validar només de manera aparent
+- tindre un README que no servix per arrancar el projecte
+- presentar codi que no pots explicar
+
+## Quan es considera superat
+
+Este repte es considera superat quan:
+
+- el projecte es pot arrancar
+- existix una primera funcionalitat real
+- hi ha una entrada d’usuari tractada pel backend
+- hi ha validació mínima en servidor
+- existix algun registre o persistència bàsica
+- el treball està documentat i traçat
+- pots defendre tècnicament el que has fet
+
+## Què prepara este repte
+
+Este repte deixa la base preparada per al següent pas del curs:
+
+- tractar millor les dades
+- incorporar lògica de processament
+- gestionar estat
+- protegir funcionalitats
+- i fer que el producte comence a comportar-se com un sistema real
