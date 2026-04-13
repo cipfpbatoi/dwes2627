@@ -7,19 +7,9 @@ nav:
   - "Com funciona el curs": "01_com_funciona_el_curs/index.md"
   - "Reptes":
       - "Visió general": "02_reptes/index.md"
-      - "Repte 01": "02_reptes/repte_01.md"
-      - "Repte 02": "02_reptes/repte_02.md"
-      - "Repte 03": "02_reptes/repte_03.md"
-      - "Repte 04": "02_reptes/repte_04.md"
-      - "Repte 05": "02_reptes/repte_05.md"
-      - "Fase final": "02_reptes/fase_final.md"
-  - "Com s'avalua":
-      - "Visió general": "03_com_s_avalua/index.md"
-      - "Evidències": "03_com_s_avalua/evidencies.md"
-      - "Checkpoints i defenses": "03_com_s_avalua/checkpoints_i_defenses.md"
-  - "Materials": "04_materials/index.md"
-  - "Projecte base": "05_projecte_base/index.md"
-  - "Recursos ràpids": "06_recursos_rapid/index.md"
+      - "Repte 1": "02_reptes/repte_01.md"
+      - "Repte 2": "02_reptes/repte_02.md"
+  - "Com s'avalua": "03_com_s_avalua/index.md"
 theme:
   language: ca
   favicon: imagenes/favicon.png
