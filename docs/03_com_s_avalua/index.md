@@ -2,132 +2,177 @@
 
 ## Idea general
 
-En este mòdul no s’avalua només si el producte “funciona”.
+En este curs no s’avalua només si el producte “funciona”.
 
 També s’avalua si eres capaç de:
 
-- entendre el que has fet
-- justificar decisions tècniques
-- provar el sistema
-- documentar el treball
-- mantindre el producte quan creix
-- defendre el resultat amb criteri
-
-## En què es basa l’avaluació
-
-L’avaluació es basa en **evidències reals de treball**.
-
-Segons el repte, es podran valorar elements com:
-
-- repositori actualitzat
-- commits i historial de treball
-- funcionalitats executables
-- proves o verificacions
-- documentació tècnica
-- checkpoints
-- defenses tècniques
-- registre d’ús d’IA quan corresponga
+- Entendre el que has fet.
+- Justificar decisions tècniques.
+- Provar el sistema.
+- Detectar i corregir errors.
+- Documentar el treball.
+- Defendre tècnicament el resultat.
 
 La idea clau és esta: no n’hi ha prou amb entregar una solució. Cal poder demostrar què fa, com ho fa i per què està feta així.
 
-## Autoria individual i cooperació
+## Què és una evidència
 
-Encara que hi haja cooperació tècnica, el criteri d’avaluació continua sent individual.
+Una evidència és una prova real del treball que has fet i del que saps fer.
 
-La cooperació pot incloure:
+Pot ser, per exemple:
 
-- mateix projecte
-- mateix encàrrec funcional
-- comparació de tecnologies
-- revisió creuada
-- checkpoints compartits quan toque
+- Codi funcional.
+- Commits.
+- Issues o tasques registrades, quan toque.
+- Proves o verificacions.
+- Documentació tècnica.
+- Una demo o una execució reproduïble.
+- Una defensa tècnica.
+- `AI log` o registre equivalent, quan corresponga.
 
-Però això no substituïx:
+Les evidències no servixen per decorar l’entrega. Servixen perquè es puga revisar el teu treball real.
 
-- el teu repositori
-- les teues evidències
-- la teua defensa
+## Tipus d’evidències
 
-La modalitat base és la de parelles de contrast tècnic. Els trios avançats només s’obrin com a possibilitat puntual.
+Les evidències que es poden demanar solen caure en tres grups.
 
-## Què es valorarà al llarg del curs
+### Evidències de producte
 
-Encara que cada repte tinga un focus principal, hi ha criteris que apareixen de manera transversal:
+Mostren què has construït.
 
-- funcionalitat real
-- qualitat mínima de la solució
-- evidències verificables
-- prova del que s’ha construït
-- documentació útil
-- traçabilitat del procés
-- comprensió i defensa tècnica
+Per exemple:
 
-## Checkpoints
+- Una funcionalitat executable.
+- Una operació protegida.
+- Una `API` publicada.
+- Una integració que funciona.
 
-Durant el curs hi haurà moments de revisió parcial.
+### Evidències de procés
 
-En un checkpoint no basta amb ensenyar alguna cosa. Cal poder explicar:
+Mostren com has treballat.
 
-- què tens fet
-- què funciona
-- què no està resolt encara
-- quines decisions has pres
-- quin serà el pas següent
+Per exemple:
 
-## Defenses tècniques
+- El repositori actualitzat.
+- Commits amb sentit.
+- Issues o tasques.
+- Documentació de decisions.
+- Comparació entre versions.
+- `AI log`, si la IA ha tingut pes real.
 
-En alguns moments hauràs de fer una defensa breu del teu treball.
+### Evidències de comprensió
 
-Això implica:
+Mostren que entens el que presentes.
 
-- mostrar el sistema
-- explicar el flux principal
-- justificar decisions
-- parlar d’errors i correccions
-- explicar l’ús de la IA
-- respondre preguntes
+Per exemple:
+
+- Una defensa breu.
+- Respostes a preguntes tècniques.
+- Un canvi menut en directe.
+- L’explicació d’un error, una correcció o una decisió.
+
+## Com es comprova l’aprenentatge real
+
+L’aprenentatge real es pot comprovar de diverses maneres.
+
+Per exemple:
+
+- Revisió del repositori.
+- Revisió de commits i issues.
+- Execució del producte.
+- Proves funcionals.
+- Checkpoints.
+- Defenses breus.
+- Preguntes tècniques.
+- Canvis menuts en directe.
+- Comparació entre versions.
+
+El criteri de fons és sempre el mateix: si pots traçar, explicar, provar i defensar el que presentes.
 
 ## Ús de la IA i avaluació
 
-La IA es pot utilitzar, però no substituïx la teua responsabilitat tècnica.
+La IA es pot usar com a eina de suport.
+
+Et pot ajudar a explorar alternatives, detectar errors, generar un primer esquelet, revisar documentació o proposar proves.
+
+Però la IA no substituïx la teua responsabilitat tècnica.
 
 El que es valorarà és si pots:
 
-- validar el resultat
-- detectar errors
-- adaptar la solució
-- justificar decisions
-- explicar què has fet realment tu i què has fet amb suport
+- Validar el resultat.
+- Adaptar-lo al teu projecte.
+- Justificar les decisions preses.
+- Corregir-lo si falla.
+- Defendre el que presentes.
 
-## Com es comprovarà l’aprenentatge real
+Si una part important del treball ha passat per IA, ha de quedar rastre mínim i has de poder explicar què has acceptat, què has descartat i com ho has comprovat.
 
-Es podran utilitzar mecanismes com:
+## Treball cooperatiu i autoria individual
 
-- revisió del repositori
-- revisió de commits i historial
-- execució del producte
-- proves funcionals
-- preguntes tècniques
-- modificacions menudes en directe
-- defenses curtes
+El curs pot tindre treball cooperatiu, però l’avaluació continua sent individual.
 
-## Què convé fer per anar bé
+La modalitat base és la de **parelles de contrast tècnic**.
 
-- treballar de manera progressiva
-- no deixar les evidències per al final
-- provar allò que construeixes
-- documentar problemes i correccions
-- revisar el repositori abans de cada checkpoint
-- preparar la defensa amb el sistema obert i comprovat
+De manera puntual es poden donar **trios avançats**, però no són la forma general de treball.
+
+Es pot compartir:
+
+- El mateix projecte.
+- El mateix encàrrec funcional.
+- Part del context de treball.
+- Comparació de tecnologies o decisions.
+- Alguns checkpoints o moments de contrast.
+
+Però continuen sent individuals:
+
+- El repositori.
+- Les evidències.
+- La defensa.
+
+Això vol dir que no et pots amagar darrere del treball de la parella o del trio. Has de poder explicar i defensar la teua part.
+
+## Checkpoints i defenses
+
+Un checkpoint és una revisió curta del punt en què està el teu treball.
+
+En un checkpoint s’espera que pugues mostrar:
+
+- Què tens fet.
+- Què funciona.
+- Què no està tancat encara.
+- Quines decisions has pres.
+- Quin serà el pas següent.
+
+Una defensa és una explicació breu del teu propi treball.
+
+En una defensa s’espera que pugues:
+
+- Mostrar el sistema funcionant.
+- Explicar el flux principal.
+- Justificar decisions importants.
+- Parlar d’errors i correccions.
+- Explicar l’ús de la IA, si n’has fet.
+- Respondre preguntes o fer un microcanvi.
+
+## Què no és suficient
+
+No és suficient:
+
+- Mostrar captures sense prova reproduïble.
+- Portar codi que no entens.
+- Confiar només en el cas feliç.
+- Improvisar la documentació al final.
+- Delegar massa en la IA.
+- Amagar-te darrere del treball de la parella o del trio.
+
+Una presentació que parega correcta no compensa falta de proves, falta de traçabilitat o falta de comprensió real.
 
 ## Idea final
 
-En este mòdul no es valora només si arribes al resultat.
+En este curs es valora sobretot si el teu treball és:
 
-Es valora també si eres capaç de demostrar que el resultat és:
-
-- real
-- verificable
-- comprensible
-- mantingable
-- i defensable
+- Real.
+- Verificable.
+- Comprensible.
+- Traçable.
+- I defensable.
