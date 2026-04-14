@@ -29,10 +29,21 @@ La progressió general és esta:
 - [Repte 2](repte_02.md): processament de dades, estat o sessió, autenticació i primera funcionalitat protegida.
 - [Repte 3](repte_03.md): arquitectura més mantenible i persistència.
 - [Repte 4](repte_04.md): `API` i serveis reutilitzables.
-- [Repte 5](repte_05.md): integració externa, manteniment i tancament funcional.
+- [Repte 5](repte_05.md): aplicació híbrida, integració externa i manteniment.
 - [Tancament i defensa](fase_final.md): verificació final, documentació i defensa del producte.
 
 Cada fase reutilitza el treball anterior. Per això, si un repte queda massa superficial, el següent es complica molt.
+
+## Què canvia d’un repte a un altre
+
+El producte continua sent el mateix, però el focus va canviant.
+
+- En `R1`, la prioritat és obrir el projecte i deixar una primera base funcional.
+- En `R2`, la prioritat és consolidar el flux complet de servidor sobre una base comuna en `PHP`.
+- En `R3`, entra el framework i el producte passa a ser més mantenible i persistent.
+- En `R4`, el treball se centra a exposar serveis i reutilitzar el producte com a `API`.
+- En `R5`, el sistema ja ha de connectar amb integracions o fluxos híbrids reals.
+- En la fase final, el focus està en provar, documentar i defendre el conjunt del producte.
 
 ## Paper especial del Repte 2
 
