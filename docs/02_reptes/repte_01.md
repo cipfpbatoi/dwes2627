@@ -52,133 +52,209 @@ Al final del repte hauries de poder mostrar una seqüència com esta:
 - El punt d’entrada és visible, simple i comprensible.
 - La base creada es pot reutilitzar per al `Repte 2`.
 
-## Microreptes del repte
+## Microreptes del Repte 1
 
-Per a treballar bé este repte, convé dividir-lo en quatre peces clares.
+Este repte funciona millor si el dividixes en quatre peces clares. Això t’ajuda a no quedar-te només en la infraestructura i a entendre què es valora en cada part.
 
-### Microrepte 1. Elecció guiada de stack i marc tècnic inicial
+### Microrepte 1. Model d’execució client/servidor i elecció guiada de stack
 
 **Objectiu**
 
-Prendre una primera decisió tècnica guiada i justificar-la amb criteri.
+Entendre què s’executa en client i què s’executa en servidor, i prendre una primera decisió tècnica inicial amb criteri.
 
-En este moment, això no significa obrir encara el contrast de frameworks del curs. Significa decidir amb quin marc tècnic inicial arrancaràs el servei i per què és assumible per al recorregut del curs.
+**Què has de fer**
 
-**Què s’espera**
+Has de preparar una explicació breu del model client/servidor i justificar quina base tècnica utilitzaràs per començar el projecte.
 
-- Una comparativa breu entre opcions guiades.
-- Una decisió inicial argumentada.
-- Una explicació de com s’executa el backend triat.
-- Una idea clara de per què esta base és viable per a continuar.
+En este microrepte no es tracta encara d’instal·lar el framework complet, sinó de:
 
-**Evidències principals**
+- Entendre el paper del navegador.
+- Entendre el paper del servidor web.
+- Entendre el paper del codi de servidor.
+- Decidir amb quin marc tècnic inicial arrancarà el projecte.
 
-- Nota de decisió tècnica o `ADR` curt.
-- Referència a alternatives descartades.
-- Issue o registre breu de la decisió.
+**Criteris d’avaluació que es treballen**
+
+- **RA1.a**: Diferenciar què s’executa en client i què s’executa en servidor.
+- **RA1.b**: Comprendre el valor del backend i del seu comportament dinàmic.
+- **RA1.c**: Identificar el paper del servidor d’aplicacions i el seu funcionament bàsic.
+- **RA1.g**: Justificar la tecnologia triada amb criteri.
+
+**Què vol dir això en llenguatge clar**
+
+En este microrepte es valorarà si pots:
+
+- Explicar què fa el client i què fa el servidor.
+- Distingir una pàgina servida d’una resposta generada en backend.
+- Entendre per què fa falta un entorn de servidor.
+- Justificar per què tries una tecnologia i no una altra.
+
+**Evidències obligatòries**
+
+- Esquema simple client/servidor.
+- Explicació breu del model d’execució.
+- Comparativa o decisió tècnica inicial.
+- Justificació breu de la base triada.
 
 **Com es comprovarà**
 
-- Preguntes tècniques breus.
-- Defensa oral curta sobre la decisió presa.
-- Contrast entre la justificació i el que realment has muntat.
+- Revisió de l’esquema i de la justificació.
+- Pregunta oral breu sobre què s’executa en client i què en servidor.
+- Contrast entre la decisió tècnica i el projecte que després es munta.
 
-### Microrepte 2. Entorn executable, Docker i estructura base del servei
+### Microrepte 2. Entorn executable amb Docker, PHP i servidor web
 
 **Objectiu**
 
-Deixar el projecte arrancable de manera reproductible i amb una estructura inicial coherent.
+Deixar el projecte preparat perquè es puga arrancar de manera clara, reproduïble i usable.
 
-**Què s’espera**
+**Què has de fer**
 
-- Repositori creat i usable.
-- Arrancada amb Docker o equivalent.
-- Estructura base recognoscible.
-- Convencions mínimes de treball.
+Has de muntar un entorn executable amb:
+
+- Docker o equivalent.
+- PHP.
+- Servidor web.
+- Estructura mínima del projecte.
 - `README` amb instruccions d’arrancada.
 
-**Evidències principals**
+En este microrepte encara **no es demana la instal·lació completa del framework**.
 
-- Repositori funcional.
-- Docker Compose o equivalent funcional.
-- `README` executable.
-- Issue mare del kickoff.
-- Primers commits significatius.
+La prioritat és tindre una base comuna i controlada sobre la qual després es puga continuar construint.
+
+**Criteris d’avaluació que es treballen**
+
+- **RA1.c**: Identificar el paper del servidor d’aplicacions i la seua integració.
+- **RA1.d**: Reconéixer tecnologies, ferramentes i entorn propi del backend.
+- **RA1.e**: Preparar un entorn executable i funcional.
+- **RA1.f**: Comprovar la posada en marxa del servei i la seua resposta bàsica.
+
+**Què vol dir això en llenguatge clar**
+
+En este microrepte es valorarà si pots:
+
+- Posar en marxa el projecte.
+- Entendre què fa cada peça de l’entorn.
+- Arrancar-lo amb instruccions clares.
+- Demostrar que realment funciona.
+
+**Evidències obligatòries**
+
+- Fitxers de configuració mínims.
+- Contenidor o estructura executable.
+- `README` funcional.
+- Evidència que el servei arranca correctament.
 
 **Com es comprovarà**
 
-- Execució real seguint només el `README`.
-- Arrancada real amb Docker o equivalent.
-- Revisió de l’estructura del projecte.
-- Revisió de commits i issue mare.
+- Execució real del `README`.
+- Arrencada amb Docker o equivalent.
+- Comprovació que el servei respon.
+- Preguntes breus sobre l’entorn muntat.
 
-### Microrepte 3. Primer punt d’entrada funcional del producte
+### Microrepte 3. Primer punt d’entrada funcional del backend
 
 **Objectiu**
 
-Evitar que el repte quede reduït a infraestructura i demostrar que el backend ja respon de manera real.
+Construir una primera peça funcional real del projecte, encara que siga simple.
 
-**Què s’espera**
+**Què has de fer**
 
-- Una landing, ruta, vista, endpoint o healthcheck funcional.
-- Una resposta observable del sistema.
-- Una implementació simple però real.
-- Una primera peça que ja pertanga al producte, no només a la infraestructura.
+Has de crear un primer punt d’entrada funcional que permeta demostrar que el backend ja està fent una tasca real.
 
-Si ací ja incorpores un formulari, validació mínima o un primer registre, millor. Però el mínim obligatori és que existisca un punt d’entrada funcional real i verificable.
+Per exemple:
 
-**Evidències principals**
+- Una pàgina inicial generada pel servidor.
+- Una resposta dinàmica mínima.
+- Una entrada simple amb tractament bàsic.
+- Una validació mínima en servidor.
+- Un primer registre o persistència molt bàsica.
 
-- Demo del comportament.
-- Registre de prova funcional mínima.
-- Logs, captura o resposta observable com a suport.
-- Commits associats.
+**Criteris d’avaluació que es treballen**
+
+- **RA1.b**: Comprendre el valor d’un backend que genera comportament real.
+- **RA1.e**: Construir una primera funcionalitat executable.
+- **RA1.f**: Comprovar la integració entre resposta del servidor i punt d’entrada funcional.
+
+**Què vol dir això en llenguatge clar**
+
+En este microrepte es valorarà si pots:
+
+- Passar d’un esquelet a una funcionalitat mínima.
+- Demostrar que el backend rep, tracta o genera una resposta.
+- Mostrar una primera interacció real amb el sistema.
+
+**Evidències obligatòries**
+
+- Punt d’entrada funcional.
+- Evidència de validació mínima o tractament bàsic.
+- Evidència d’un registre o persistència simple, si apareix.
+- Demo funcional breu.
 
 **Com es comprovarà**
 
-- Prova en directe del punt d’entrada.
-- Canvi menor en viu sobre ruta, missatge o resposta.
-- Pregunta tècnica sobre què passa al servidor quan s’accedix a eixe punt.
+- Execució real del punt d’entrada.
+- Prova del flux mínim.
+- Revisió del codi i de la resposta generada.
+- Pregunta oral sobre què fa exactament el backend en eixe punt.
 
 ### Microrepte 4. Documentació tècnica, verificació i defensa breu
 
 **Objectiu**
 
-Tancar el repte amb evidència verificable i demostrar que entens el que has muntat.
+Deixar el repte preparat per a revisió i demostrar que el que s’ha construït és executable i explicable.
 
-**Què s’espera**
+**Què has de fer**
+
+Has de tancar el repte amb:
+
+- `README` revisat.
+- Evidència de prova del flux.
+- Decisions bàsiques documentades.
+- Preparació per al checkpoint o la defensa.
+
+Este microrepte també servix per revalidar si realment comprens el model client/servidor, la base tècnica muntada i la funcionalitat construïda.
+
+**Criteris d’avaluació que es treballen**
+
+- **RA1.d**: Reconéixer i documentar adequadament tecnologies i eines.
+- **RA1.g**: Justificar decisions tècniques i el camí triat.
+- **RA1.a**: Explicar de manera solvent el paper de client i servidor en la solució implementada.
+
+**Què vol dir això en llenguatge clar**
+
+En este microrepte es valorarà si pots:
+
+- Documentar el projecte de manera útil.
+- Demostrar que el que has construït funciona.
+- Explicar com està muntat.
+- Justificar les decisions preses.
+
+**Evidències obligatòries**
 
 - `README` final revisat.
+- Evidència de prova o execució.
 - Justificació tècnica breu.
-- Registre dels primers problemes i correccions.
-- Preparació d’una defensa tècnica breu.
-
-**Evidències principals**
-
-- `README` final.
-- Justificació tècnica o `ADR` curt.
-- Evidència de validació tècnica mínima.
-- Defensa oral breu.
-- `AI log`, si hi ha hagut ús rellevant de la IA.
+- Preparació per a checkpoint o defensa.
 
 **Com es comprovarà**
 
-- Execució del `README`.
-- Contrast entre documentació, repositori i resultat real.
-- Preguntes de transferència sobre com esta base prepara el `Repte 2`.
+- Revisió del `README`.
+- Execució real del projecte.
+- Defensa tècnica breu.
+- Preguntes sobre decisions, model d’execució i funcionalitat mínima.
 
-## Criteris que es treballen en este repte
+## Resum dels criteris d’avaluació del Repte 1
 
-En llenguatge clar, en este repte es treballa sobretot que sigues capaç de:
+En este repte es treballen especialment estos criteris:
 
-- Entendre per què un backend dinàmic aporta valor al producte.
-- Explicar on i com s’executa el codi del servidor.
-- Identificar el paper del servidor d’aplicacions, del runtime i de la seua integració.
-- Reconéixer les tecnologies i eines bàsiques del backend.
-- Comprovar que hi ha una resposta real entre el servidor i el punt d’entrada funcional.
-- Justificar la tecnologia i el marc tècnic inicial que has triat.
-
-No es tracta de memoritzar teoria. Es tracta de demostrar que entens la base que estàs muntant i que la pots defensar.
+- Entendre la diferència entre client i servidor.
+- Comprendre el paper del backend.
+- Identificar el paper del servidor d’aplicacions.
+- Reconéixer tecnologies i eines del backend.
+- Posar en marxa un entorn executable.
+- Demostrar una primera funcionalitat real.
+- Justificar la base tècnica triada.
 
 ## Evidències obligatòries
 
@@ -200,7 +276,7 @@ Per considerar complet el repte, hauràs d’aportar com a mínim:
 El professorat podrà comprovar el treball amb mecanismes com:
 
 - Execució real del `README`.
-- Arrancada amb Docker o equivalent.
+- Arrencada amb Docker o equivalent.
 - Prova del punt d’entrada funcional.
 - Revisió de commits i issues.
 - Preguntes tècniques breus.
@@ -249,6 +325,14 @@ Este repte es considera superat quan:
 - La decisió tècnica inicial està justificada.
 - El treball deixa traçabilitat real.
 - Pots explicar què has fet, per què i com prepara el pas al `Repte 2`.
+
+## Decisió metodològica important d’este repte
+
+En el **Repte 1** no es demana encara la instal·lació completa d’un framework.
+
+La prioritat és disposar d’un entorn executable en **Docker + PHP + servidor web** i construir una primera peça funcional mínima del backend.
+
+La decisió sobre el framework pot aparéixer com a comparativa o orientació inicial, però la seua incorporació efectiva es reserva per a fases posteriors del curs.
 
 ## Què prepara este repte
 
