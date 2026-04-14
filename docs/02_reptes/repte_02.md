@@ -506,6 +506,43 @@ Per considerar complet el repte, hauràs d’aportar com a mínim:
 - Documentació tècnica actualitzada.
 - `AI log`, quan hi haja ús rellevant d’IA.
 
+## Forma de prova del repte
+
+En este repte no n’hi ha prou amb dir que el sistema funciona. Cal **provar-lo de manera visible i verificable**.
+
+La prova mínima del repte ha d’incloure, com a mínim, estos casos:
+
+- enviament correcte del formulari
+- errors de validació visibles per a l’usuari
+- correcció d’un formulari inicialment incorrecte
+- tractament correcte de la informació en servidor
+- conservació o reutilització posterior de la informació
+- cas autoritzat de la funcionalitat protegida
+- cas denegat de la funcionalitat protegida
+- tractament d’imatge o fitxer, si forma part del flux del projecte
+
+## Com s’han de presentar les proves
+
+Les proves del repte han de quedar registrades d’una manera simple però clara.
+
+Es recomana usar una **checklist de verificació** o una **taula de casos de prova** amb una estructura com esta:
+
+- cas de prova
+- entrada
+- resultat esperat
+- resultat obtingut
+- incidències detectades
+
+## Què es comprovarà en la prova
+
+En la revisió del repte, el professorat podrà comprovar:
+
+- si el flux complet funciona realment
+- si els errors de validació es mostren de manera visible
+- si la informació correcta es conserva i es pot reutilitzar
+- si la funcionalitat protegida respon diferent en cas autoritzat i en cas denegat
+- si l’alumne o alumna pot explicar què s’ha provat i per què
+
 ## Com es comprovarà
 
 El professorat podrà comprovar el treball amb mecanismes com:
@@ -521,6 +558,57 @@ El professorat podrà comprovar el treball amb mecanismes com:
 - Defensa oral curta.
 - Microcanvis en viu quan siga necessari.
 - Contrast entre documentació, codi i comportament real.
+
+## Documentació del codi
+
+En este repte, la documentació del codi ha de ser **útil i proporcionada**.
+
+No es demana documentar de manera exhaustiva tot el projecte, però sí deixar clar:
+
+- què fa cada part important del flux
+- on es valida la informació
+- on es tracta l’autenticació o la comprovació d’accés
+- on es processa la imatge o el fitxer, si n’hi ha
+- com es conserva després la informació
+
+## Ús de PHPDoc
+
+Es recomana usar **PHPDoc DocBlocks** de manera selectiva en funcions pròpies amb lògica rellevant, especialment en casos com:
+
+- funcions de validació
+- funcions de tractament de dades
+- funcions de tractament d’imatge o fitxer
+- funcions de comprovació d’accés
+- funcions reutilitzables que no siguen evidents a simple vista
+
+## Què s’espera del PHPDoc en este repte
+
+Si s’utilitza PHPDoc, hauria de servir sobretot per millorar la comprensió del codi.
+
+Com a mínim, en les funcions on toque, pot ser útil incloure:
+
+- una descripció breu
+- `@param`
+- `@return`
+- `@throws`, si realment aplica
+
+## Què no es demana
+
+En este repte no es demana:
+
+- documentar cada variable
+- omplir de DocBlocks fitxers trivials
+- generar documentació automàtica completa
+- convertir la documentació en una capa decorativa sense utilitat real
+
+## Idea clau
+
+En este repte es valorarà sobretot que:
+
+- proves realment el que has programat
+- pots demostrar què funciona i què falla
+- documentes de manera útil les parts importants
+- i deixes el codi prou clar perquè una altra persona puga entendre el flux principal
 
 ## Ús de la IA en este repte
 
