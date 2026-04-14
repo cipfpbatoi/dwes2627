@@ -2,201 +2,260 @@
 
 ## Finalitat del repte
 
-Este primer repte servix per posar en marxa la base del projecte i demostrar que el sistema ja és capaç de fer alguna cosa real.
+Este primer repte servix per iniciar el backend en condicions professionals bàsiques.
 
-No es tracta d’obrir itineraris ni de comparar frameworks. Es tracta de deixar el mateix producte arrancat, executable, documentat i preparat per a `R2`.
+No es tracta només d’obrir un repositori o de deixar un esquelet buit. Es tracta de començar el projecte del curs amb una base tècnica executable, documentada i defensable.
+
+En concret, este repte ha de servir per:
+
+- Deixar una base tècnica executable.
+- Prendre una primera decisió tècnica justificada.
+- Obrir el treball amb criteri professional mínim.
+- Construir una primera peça funcional real del producte.
 
 ## Context professional
 
-Imagina que formes part d’un equip que rep l’encàrrec d’iniciar un nou servei web.
+Imagina que formes part d’un equip que rep l’encàrrec de posar en marxa un nou servei web.
 
-Encara no s’espera un producte complet, però sí una base fiable que permeta:
+Encara no es demana un producte complet, però sí una base fiable que permeta:
 
-- arrancar el projecte
-- acotar el primer cas d’ús
-- mostrar una primera interacció real
-- deixar traçabilitat del treball
-- preparar el terreny per als reptes següents
-
-## Encàrrec
-
-Has de preparar una primera versió del projecte que incloga una funcionalitat mínima però real.
-
-Esta primera versió ha de servir per demostrar que el backend:
-
-- arranca
-- rep informació
-- la tracta mínimament
-- respon
-- i deixa algun tipus de rastre o registre útil
+- Arrancar el projecte sense improvisació.
+- Entendre com s’executa el backend.
+- Deixar un punt d’entrada funcional simple.
+- Documentar com es posa en marxa.
+- Continuar el projecte amb criteri en els reptes següents.
 
 ## Què has de construir
 
-Has de deixar preparada una primera versió funcional del projecte amb, com a mínim:
+En este repte has de deixar, com a mínim:
 
-- un repositori ordenat i executable
-- una decisió inicial de domini o d’abast justificada
-- un punt d’entrada al producte
-- un formulari o interacció equivalent útil
-- validació mínima en servidor
-- un registre o persistència bàsica de la informació
-- un README que permeta arrancar el projecte
-- traçabilitat mínima del treball fet
+- Un repositori funcional.
+- Un entorn executable.
+- Docker o equivalent per reproduir l’arrancada.
+- Un `README` executable.
+- Una estructura base coherent del servei.
+- Un punt d’entrada funcional simple del producte.
+- Una justificació tècnica breu.
+- Traçabilitat del treball amb issues i commits o registre equivalent.
 
-## Producte final esperat
+El mínim obligatori no exigix encara una funcionalitat de domini rica. El que sí exigix és una base real de treball, un punt d’entrada funcional i evidència que el sistema arranca i es pot revisar.
 
-Al final del repte hauries de tindre un producte que permeta mostrar una seqüència real com esta:
+Si el teu kickoff ja inclou formulari, validació mínima o primer registre de dades, pot ser una bona ampliació, però no ha de substituir la qualitat de la base tècnica.
 
-- l’usuari entra al sistema
-- l’usuari envia una informació
-- el backend rep la petició
-- el backend valida mínimament la informació
-- el backend respon
-- i queda algun registre o persistència bàsica de la dada
+## Producte mínim esperat
 
-## Seqüència de treball recomanada
+Al final del repte hauries de poder mostrar una seqüència com esta:
 
-### 1. Acotar el cas d’ús i preparar la base del projecte
+- El projecte arranca seguint el `README`.
+- El servei es posa en marxa amb Docker o equivalent.
+- Hi ha una resposta real del backend.
+- El punt d’entrada és visible, simple i comprensible.
+- La base creada es pot reutilitzar per al `Repte 2`.
 
-Has de concretar què començaràs a construir i deixar preparada la base comuna del projecte.
+## Microreptes del repte
 
-No cal fer una justificació llarga, però sí suficient per explicar:
+Per a treballar bé este repte, convé dividir-lo en quatre peces clares.
 
-- quin flux inicial tries
-- per què és adequat per al producte
-- què quedarà ja preparat per a `R2`
-- quins límits té encara esta primera versió
+### Microrepte 1. Elecció guiada de stack i marc tècnic inicial
 
-### 2. Preparar l’entorn de treball
+**Objectiu**
 
-Has de muntar el projecte perquè es puga arrancar de manera clara i reproduïble.
+Prendre una primera decisió tècnica guiada i justificar-la amb criteri.
 
-Això inclou:
+En este moment, això no significa obrir encara el contrast de frameworks del curs. Significa decidir amb quin marc tècnic inicial arrancaràs el servei i per què és assumible per al recorregut del curs.
 
-- estructura mínima del repositori
-- fitxers necessaris per començar
-- convencions bàsiques
-- README amb instruccions d’arrancada
+**Què s’espera**
 
-### 3. Construir el primer flux funcional
+- Una comparativa breu entre opcions guiades.
+- Una decisió inicial argumentada.
+- Una explicació de com s’executa el backend triat.
+- Una idea clara de per què esta base és viable per a continuar.
 
-Has de crear una primera interacció real amb el sistema.
+**Evidències principals**
 
-Per exemple:
+- Nota de decisió tècnica o `ADR` curt.
+- Referència a alternatives descartades.
+- Issue o registre breu de la decisió.
 
-- una landing o equivalent
-- un formulari útil
-- tractament de la petició
-- validació mínima
-- resposta clara
-- registre o persistència bàsica
+**Com es comprovarà**
 
-### 4. Preparar la revisió del repte
+- Preguntes tècniques breus.
+- Defensa oral curta sobre la decisió presa.
+- Contrast entre la justificació i el que realment has muntat.
 
-Has de deixar el treball en condicions de ser revisat.
+### Microrepte 2. Entorn executable, Docker i estructura base del servei
 
-Això implica:
+**Objectiu**
 
-- README revisat
-- evidència de prova del flux
-- decisions bàsiques documentades
-- preparació per al checkpoint o la defensa
+Deixar el projecte arrancable de manera reproductible i amb una estructura inicial coherent.
+
+**Què s’espera**
+
+- Repositori creat i usable.
+- Arrancada amb Docker o equivalent.
+- Estructura base recognoscible.
+- Convencions mínimes de treball.
+- `README` amb instruccions d’arrancada.
+
+**Evidències principals**
+
+- Repositori funcional.
+- Docker Compose o equivalent funcional.
+- `README` executable.
+- Issue mare del kickoff.
+- Primers commits significatius.
+
+**Com es comprovarà**
+
+- Execució real seguint només el `README`.
+- Arrancada real amb Docker o equivalent.
+- Revisió de l’estructura del projecte.
+- Revisió de commits i issue mare.
+
+### Microrepte 3. Primer punt d’entrada funcional del producte
+
+**Objectiu**
+
+Evitar que el repte quede reduït a infraestructura i demostrar que el backend ja respon de manera real.
+
+**Què s’espera**
+
+- Una landing, ruta, vista, endpoint o healthcheck funcional.
+- Una resposta observable del sistema.
+- Una implementació simple però real.
+- Una primera peça que ja pertanga al producte, no només a la infraestructura.
+
+Si ací ja incorpores un formulari, validació mínima o un primer registre, millor. Però el mínim obligatori és que existisca un punt d’entrada funcional real i verificable.
+
+**Evidències principals**
+
+- Demo del comportament.
+- Registre de prova funcional mínima.
+- Logs, captura o resposta observable com a suport.
+- Commits associats.
+
+**Com es comprovarà**
+
+- Prova en directe del punt d’entrada.
+- Canvi menor en viu sobre ruta, missatge o resposta.
+- Pregunta tècnica sobre què passa al servidor quan s’accedix a eixe punt.
+
+### Microrepte 4. Documentació tècnica, verificació i defensa breu
+
+**Objectiu**
+
+Tancar el repte amb evidència verificable i demostrar que entens el que has muntat.
+
+**Què s’espera**
+
+- `README` final revisat.
+- Justificació tècnica breu.
+- Registre dels primers problemes i correccions.
+- Preparació d’una defensa tècnica breu.
+
+**Evidències principals**
+
+- `README` final.
+- Justificació tècnica o `ADR` curt.
+- Evidència de validació tècnica mínima.
+- Defensa oral breu.
+- `AI log`, si hi ha hagut ús rellevant de la IA.
+
+**Com es comprovarà**
+
+- Execució del `README`.
+- Contrast entre documentació, repositori i resultat real.
+- Preguntes de transferència sobre com esta base prepara el `Repte 2`.
+
+## Criteris que es treballen en este repte
+
+En llenguatge clar, en este repte es treballa sobretot que sigues capaç de:
+
+- Entendre per què un backend dinàmic aporta valor al producte.
+- Explicar on i com s’executa el codi del servidor.
+- Identificar el paper del servidor d’aplicacions, del runtime i de la seua integració.
+- Reconéixer les tecnologies i eines bàsiques del backend.
+- Comprovar que hi ha una resposta real entre el servidor i el punt d’entrada funcional.
+- Justificar la tecnologia i el marc tècnic inicial que has triat.
+
+No es tracta de memoritzar teoria. Es tracta de demostrar que entens la base que estàs muntant i que la pots defensar.
 
 ## Evidències obligatòries
 
 Per considerar complet el repte, hauràs d’aportar com a mínim:
 
-- repositori actualitzat
-- README executable
-- issue principal del repte o registre equivalent
-- commits amb sentit
-- decisió inicial de domini o d’abast justificada
-- primer flux funcional operatiu
-- evidència de validació mínima
-- evidència de registre o persistència bàsica
-- demo o mostra funcional del repte
+- Repositori actualitzat i usable.
+- Issue mare del kickoff o registre equivalent.
+- Historial de commits significatiu.
+- `README` executable.
+- Docker Compose o equivalent funcional.
+- Justificació tècnica breu o `ADR` curt.
+- Punt d’entrada funcional simple.
+- Evidència de validació tècnica mínima.
+- Defensa tècnica breu.
+- `AI log`, quan hi haja ús rellevant d’IA.
 
-## Què es comprovarà
+## Com es comprovarà
 
-Es comprovarà si:
+El professorat podrà comprovar el treball amb mecanismes com:
 
-- el projecte arranca de veritat
-- el README permet posar-lo en marxa
-- el flux funcional està connectat de punta a punta
-- la validació no és només aparent
-- hi ha una primera decisió de producte justificable
-- el treball està traçat amb evidències reals
-- pots explicar el que has fet
-
-## Checkpoint del repte
-
-En el checkpoint hauràs de poder mostrar:
-
-- que el projecte arranca
-- quin cas d’ús o enfocament inicial has triat
-- quin és el primer flux funcional
-- què valida el sistema
-- què queda registrat o persistit
-- quins problemes has tingut fins ara
-
-## Defensa tècnica breu
-
-En la defensa o revisió hauràs de poder respondre preguntes com:
-
-- per què has triat este flux inicial?
-- què fa exactament el backend quan rep la petició?
-- on es valida la informació?
-- què està realment implementat i què encara no?
-- com prepararies esta base per al repte següent?
+- Execució real del `README`.
+- Arrancada amb Docker o equivalent.
+- Prova del punt d’entrada funcional.
+- Revisió de commits i issues.
+- Preguntes tècniques breus.
+- Defensa oral curta.
+- Microcanvis en viu quan siga necessari.
+- Contrast entre documentació, codi i resultat real.
 
 ## Ús de la IA en este repte
 
 La IA et pot ajudar, per exemple, a:
 
-- comparar opcions
-- generar esquelets inicials
-- detectar errors de configuració
-- revisar el README
-- suggerir validacions
+- Explorar opcions tècniques.
+- Preparar un primer esquelet.
+- Proposar fitxers de Docker.
+- Revisar el `README`.
+- Detectar errors de configuració.
 
-Però no és suficient copiar el que et done.
+El que no pots delegar és:
 
-Has de poder:
+- Entendre l’entorn que has muntat.
+- Verificar que arranca realment.
+- Explicar què fa cada peça important.
+- Justificar per què has adoptat eixa solució.
 
-- explicar la solució
-- adaptar-la
-- verificar-la
-- corregir errors
-- justificar per què l’has adoptada
+Encara que uses IA, es comprovarà igualment si pots validar, adaptar i defendre el que presentes.
 
 ## Errors habituals
 
-Convindria evitar estos errors:
+Convindria evitar errors com estos:
 
-- muntar només un esquelet sense funcionalitat real
-- fer un formulari sense tractament real en servidor
-- validar només de manera aparent
-- tindre un README que no servix per arrancar el projecte
-- presentar codi que no pots explicar
+- Esquelet buit sense producte real.
+- Comparativa superficial.
+- Docker present però no usable.
+- `README` que no permet arrancar el projecte.
+- Punt d’entrada només decoratiu.
+- Codi que no es pot explicar.
 
 ## Quan es considera superat
 
 Este repte es considera superat quan:
 
-- el projecte es pot arrancar
-- existix una primera funcionalitat real
-- hi ha una entrada d’usuari tractada pel backend
-- hi ha validació mínima en servidor
-- existix algun registre o persistència bàsica
-- el treball està documentat i traçat
-- pots defendre tècnicament el que has fet
+- El projecte arranca seguint el `README`.
+- L’entorn és executable de manera reproductible.
+- Hi ha una primera peça funcional real del producte.
+- Existix un punt d’entrada funcional simple i defensable.
+- La decisió tècnica inicial està justificada.
+- El treball deixa traçabilitat real.
+- Pots explicar què has fet, per què i com prepara el pas al `Repte 2`.
 
 ## Què prepara este repte
 
 Este repte deixa la base preparada per al següent pas del curs:
 
-- tractar millor les dades
-- incorporar lògica de processament
-- gestionar estat
-- protegir funcionalitats
-- i fer que el producte comence a comportar-se com un sistema real
+- Tractar millor les dades.
+- Incorporar lògica de processament.
+- Gestionar estat o sessió.
+- Protegir funcionalitats.
+- Convertir la base inicial en un flux de servidor més complet en `R2`.
