@@ -146,6 +146,7 @@ Construir un punt d’entrada de dades usable i demostrar que el sistema rep la 
 - Validació mínima al servidor.
 - Visualització clara dels errors de validació.
 - Possibilitat de corregir i tornar a enviar.
+- Comentaris breus en el codi quan facen falta per entendre el flux.
 - Conservació de la informació correcta en un mecanisme controlat.
 - Primera prova que la dada es podrà reutilitzar després.
 
@@ -153,7 +154,7 @@ Construir un punt d’entrada de dades usable i demostrar que el sistema rep la 
 
 - **RA3.e**: Utilitzar formularis o mecanismes equivalents per interactuar amb l’usuari.
 - **RA3.f**: Recuperar correctament les dades introduïdes.
-- **RA3.g**: Deixar el codi i el flux prou clars per a poder revisar-los.
+- **RA3.g**: Deixar comentaris útils i claredat mínima en el codi perquè el flux es puga revisar.
 
 **Què vol dir això en llenguatge clar**
 
@@ -181,7 +182,7 @@ En este microrepte es valorarà si pots:
 - Revisió del flux de dades, dels errors mostrats i del punt on la informació correcta queda guardada.
 - Pregunta breu sobre com arriba la informació al servidor, com es valida i com es conserva.
 
-### Microrepte 2. Processament bàsic de la petició, persistència funcional i tractament d’imatge o fitxer
+### Microrepte 2. Processament bàsic de la petició, codi embegut i tractament d’imatge o fitxer
 
 **Objectiu**
 
@@ -189,6 +190,10 @@ Fer visible el treball bàsic de programació en servidor que transforma les dad
 
 **Què s’espera**
 
+- Comprensió bàsica de com la base comuna en `PHP` genera una pàgina o una resposta amb codi embegut o equivalent.
+- Identificació clara de les peces tècniques associades al flux: petició, servidor, fitxer o plantilla i resposta.
+- Inclusió recognoscible de codi de servidor dins del punt on es genera la resposta.
+- Sintaxi correcta.
 - Variables amb sentit.
 - Operadors i sentències bàsiques ben aplicats.
 - Tractament clar de la petició.
@@ -200,12 +205,17 @@ Fer visible el treball bàsic de programació en servidor que transforma les dad
 
 **Criteris d’avaluació que es treballen**
 
-- **RA2.c - RA2.h**: Integrar codi de servidor, usar sintaxi, variables, operadors i directives bàsiques, i entendre com afecta això al comportament del sistema.
+- **RA2.a - RA2.b**: Entendre el mecanisme bàsic de generació de pàgines o respostes amb codi embegut sobre la base comuna en `PHP` i les tecnologies associades.
+- **RA2.c**: Integrar codi de servidor dins del flux o de la resposta generada.
+- **RA2.d - RA2.e**: Usar sintaxi i sentències simples amb correcció i amb efecte visible.
+- **RA2.f - RA2.h**: Utilitzar directives, variables, operadors i àmbits de variables amb sentit funcional.
 
 **Què vol dir això en llenguatge clar**
 
 En este microrepte es valorarà si pots:
 
+- Explicar on s’executa el codi de servidor i com arriba el resultat al navegador o al client.
+- Identificar quin paper té cada peça tècnica mínima del flux sobre la base comuna en `PHP`.
 - Explicar què fa el codi quan arriben les dades.
 - Demostrar que el tractament no és decoratiu.
 - Relacionar les dades d’entrada amb la resposta final.
@@ -214,8 +224,10 @@ En este microrepte es valorarà si pots:
 
 **Evidències principals**
 
+- Tram recognoscible de codi embegut o equivalent dins de la resposta generada.
 - Codi executable de processament.
 - Evidència d’ús real de variables i operadors.
+- Evidència d’alguna directiva o configuració bàsica aplicada amb sentit.
 - Demo del tractament correcte.
 - Demo d’una dada guardada de manera funcional.
 - Demo d’un error de validació o de fitxer no vàlid quan corresponga.
@@ -225,7 +237,7 @@ En este microrepte es valorarà si pots:
 
 - Execució del flux amb dades reals.
 - Revisió del tram de codi que processa la petició, del punt on es conserva la informació i del control de fitxer o imatge quan existisca.
-- Pregunta breu sobre variables, operadors o pas de dades.
+- Pregunta breu sobre com es genera la pàgina o resposta, i sobre variables, operadors o pas de dades.
 
 ### Microrepte 3. Decisions, arrays, funcions i reutilització del que ja has guardat
 
@@ -280,12 +292,14 @@ Demostrar que el sistema pot conservar informació rellevant entre interaccions,
 - Un mecanisme d’estat real.
 - Evidència de què es guarda en estat o sessió.
 - Recuperació correcta de la informació guardada.
+- Si hi ha informació guardada en client, prova de lectura i recuperació.
 - Distinció clara entre estat temporal i dades que el projecte necessita reutilitzar després.
 - Neteja o invalidació quan toque.
 
 **Criteris d’avaluació que es treballen**
 
-- **RA4.a - RA4.c**: Identificar i usar mecanismes d’estat, guardar i recuperar informació del client, i entendre quan deixa de ser vàlida.
+- **RA4.a - RA4.b**: Identificar i usar mecanismes de manteniment d’informació i d’estat per a un client concret.
+- **RA4.c**: Emmagatzemar informació en client, recuperar-la i explicar quan convé usar-ho.
 
 **Què vol dir això en llenguatge clar**
 
@@ -293,6 +307,7 @@ En este microrepte es valorarà si pots:
 
 - Explicar què guarda el sistema i per què.
 - Distingir entre estat, sessió, cookies i altres mecanismes.
+- Distingir què queda en client i què manté el servidor.
 - Demostrar que el comportament canvia segons l’estat.
 - Explicar per què una dada del domini pot necessitar un mecanisme diferent de la sessió si l’has de tornar a usar després.
 
@@ -300,6 +315,7 @@ En este microrepte es valorarà si pots:
 
 - Mecanisme d’estat implementat.
 - Demo de recuperació de la informació.
+- Si hi ha cookies o emmagatzematge en client, demo de lectura i recuperació.
 - Demo de neteja o invalidació.
 - Explicació clara de la frontera entre estat i persistència funcional.
 - Commits associats.
@@ -307,7 +323,7 @@ En este microrepte es valorarà si pots:
 **Com es comprovarà**
 
 - Execució en directe del canvi d’estat.
-- Pregunta breu sobre què es guarda, on i amb quina finalitat.
+- Pregunta breu sobre què es guarda, on, amb quina finalitat i si queda en client o en servidor.
 - Contrast entre el que dius i el que realment passa al flux.
 
 ### Microrepte 5. Autenticació i primera funcionalitat protegida amb dades reutilitzables
@@ -365,6 +381,7 @@ Comprovar que el flux complet funciona, que els errors es poden observar, que le
 - Prova d’un cas d’error o denegació.
 - Revisió d’errors i validacions.
 - Comprovació que la informació guardada es pot recuperar o reutilitzar.
+- Ús visible d’alguna eina o entorn simple de prova i depuració.
 - Documentació mínima actualitzada.
 - Preparació per al checkpoint o la defensa.
 
@@ -378,6 +395,7 @@ En este microrepte es valorarà si pots:
 
 - Demostrar que el flux funciona de veritat.
 - Detectar errors i explicar-los.
+- Fer servir algun suport real de prova o depuració, com ara navegador, terminal, registres, `curl`, col·leccions de peticions o equivalent.
 - Deixar rastre del que has provat i del que encara cal millorar.
 - Explicar per què la conservació de dades que has fet és suficient per a `R2`, encara que no siga encara el centre del curs.
 
@@ -386,37 +404,54 @@ En este microrepte es valorarà si pots:
 - Registre de proves mínimes.
 - Cas positiu i cas negatiu documentats.
 - Incidències detectades o correccions rellevants.
+- Rastre de l’eina o entorn utilitzat per provar o depurar.
 - Evidència de reutilització de dades.
 - Documentació tècnica actualitzada.
 
 **Com es comprovarà**
 
 - Execució dels casos documentats.
+- Revisió de l’eina o entorn utilitzat per provar o depurar.
 - Contrast entre documentació, repositori i resultat real.
 - Defensa tècnica breu sobre el flux complet.
+
+## Com es reparteixen els criteris dins del repte
+
+Per orientar-te sense convertir el repte en una llista normativa, pots llegir-lo així:
+
+- `RA2` apareix sobretot en el microrepte 2: ací entra la base comuna en `PHP`, la generació de pàgines o respostes amb codi embegut, la sintaxi, les sentències, les directives, les variables, els operadors i els àmbits.
+- `RA3` apareix sobretot en els microreptes 1 i 3: formularis, recuperació de dades, comentaris útils, decisions, bucles, arrays i funcions.
+- `RA4` apareix sobretot en els microreptes 4, 5 i 6: estat, emmagatzematge en client quan toque, autenticació, funcionalitat protegida, prova i depuració.
 
 ## Criteris que es treballen en este repte
 
 En llenguatge clar, en este repte es treballa sobretot que sigues capaç de:
 
+- Entendre com la base comuna en `PHP` genera una pàgina o resposta amb codi embegut o equivalent.
+- Identificar les peces tècniques bàsiques que intervenen en eixe flux.
 - Rebre i recuperar dades d’un formulari o entrada equivalent.
 - Mostrar errors de validació de manera clara i permetre correcció.
-- Aplicar lògica bàsica de servidor amb sentit.
+- Aplicar lògica bàsica de servidor amb sentit, usant sintaxi, sentències, directives, variables i operadors.
+- Entendre on viu cada variable i quin àmbit afecta el comportament.
 - Validar al servidor les dades i, quan toque, els fitxers o imatges.
 - Conservar informació útil perquè després es puga reutilitzar dins del projecte.
+- Deixar comentaris útils en el codi quan facen falta per explicar el flux.
 - Utilitzar decisions, bucles, arrays o funcions quan realment fan falta.
 - Entendre i usar mecanismes d’estat.
+- Entendre què queda en client i què queda en servidor quan mantens informació.
 - Distingir entre estat temporal i conservació funcional de dades.
 - Distingir entre estat, autenticació i autorització.
 - Aplicar autenticació funcional.
 - Protegir una operació real del domini vinculada al projecte base.
-- Provar i documentar el flux complet.
+- Provar, depurar i documentar el flux complet amb eines o entorns simples.
 
 No es tracta de memoritzar noms de funcions o paraules tècniques. Es tracta de demostrar que entens el recorregut complet del que passa al servidor i per què la informació útil no es queda en una prova que desapareix.
 
 ## Idea metodològica important d’este repte
 
 Este repte es resol sobre una **base comuna en `PHP`**.
+
+Això implica també entendre, encara que siga a un nivell bàsic, com es genera una pàgina o una resposta des del servidor amb codi embegut o equivalent, i quines peces tècniques intervenen en eixe recorregut.
 
 En este moment del curs, la prioritat és consolidar el flux complet en servidor:
 
