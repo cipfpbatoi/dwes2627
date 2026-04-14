@@ -1,288 +1,423 @@
 # Repte 2. Processament, estat i funcionalitat protegida
 
-## Regla del repte
-
-Este repte es resol sobre una **base comuna en `PHP`**.
-
-En esta fase:
-
-- la prioritat és consolidar tractament de dades, lògica bàsica, estat o sessió, autenticació i funcionalitat protegida
-- el contrast de frameworks no entra com a norma general
-- el mateix projecte ha de quedar preparat per continuar després en un framework
-
 ## Finalitat del repte
 
-En este repte el projecte deixa de ser només una base funcional i passa a comportar-se més com un sistema real.
+Este repte servix per consolidar el flux complet de programació en servidor i fer que el projecte deixe de ser només una base funcional.
 
-Ara no n’hi ha prou amb rebre una dada i respondre. El sistema ha de ser capaç de:
+Ara el backend ja no ha de limitar-se a rebre una petició i respondre. Ha de ser capaç de:
 
-- tractar informació d’entrada amb més criteri
-- aplicar lògica bàsica de programació
-- mantindre estat quan faça falta
-- gestionar autenticació
-- protegir una primera funcionalitat real del domini
+- Tractar dades de manera real.
+- Aplicar lògica bàsica amb sentit.
+- Mantindre estat quan faça falta.
+- Autenticar usuaris i gestionar sessions quan toque.
+- Protegir una primera funcionalitat del projecte.
 
 ## Context professional
 
-El projecte ja té una base executable i un primer flux mínim.
+L’equip ja té una base executable del producte després del `Repte 1`.
 
-Ara l’equip ha de fer un pas important: construir una funcionalitat del producte que no estiga oberta a qualsevol situació, sinó controlada per l’estat del sistema o per la identitat de l’usuari.
+Ara toca fer un pas més seriós: convertir eixa base en una funcionalitat real de producte, amb entrada de dades, comportament de servidor coherent i control d’accés.
 
-En entorns professionals, este és un moment clau: passar d’un backend que “respon” a un backend que “gestiona comportament real”.
-
-## Encàrrec
-
-Has de fer evolucionar el projecte del `Repte 1` fins a arribar a una primera funcionalitat protegida.
-
-El sistema ha de ser capaç de:
-
-- rebre dades
-- tractar-les en servidor sobre la base comuna en `PHP`
-- aplicar lògica bàsica
-- mantindre informació d’estat quan siga necessari
-- comprovar condicions d’accés
-- permetre o impedir una acció real del producte
+En un entorn professional, este és el moment en què el sistema deixa de ser només una prova tècnica i comença a gestionar comportament real.
 
 ## Què has de construir
 
-El repte ha d’incloure, com a mínim:
+En este repte has de fer evolucionar el projecte fins a deixar, com a mínim:
 
-- un formulari o entrada de dades real
-- recuperació i tractament de la informació en servidor
-- ús de decisions, estructures de dades o funcions quan tinga sentit
-- una evidència de manteniment d’estat
-- autenticació funcional
-- una operació del projecte protegida
-- tractament mínim d’errors
-- proves o verificacions bàsiques del flux
+- Un formulari o una entrada de dades real.
+- Recuperació i tractament de la informació en servidor.
+- Lògica bàsica amb decisions, bucles, arrays o funcions quan toque.
+- Evidència de manteniment d’estat o sessió.
+- Autenticació funcional.
+- Una operació real del projecte protegida.
+- Un cas positiu i un cas negatiu.
+- Prova mínima i documentació bàsica del flux.
 
-## Què no és l’objectiu del repte
+## Producte mínim esperat
 
-- comparar frameworks com a norma general
-- reescriure el projecte en `Laravel`, `Symfony` o `NestJS` abans d’hora
-- quedar-te en un login aïllat sense valor de domini
-- confondre autenticació amb funcionalitat protegida
+Al final del repte hauries de poder mostrar un recorregut complet com este:
 
-## Producte final esperat
+- L’usuari envia o consulta dades.
+- El servidor les rep i les tracta.
+- El sistema aplica una regla o una decisió.
+- Es manté estat quan és necessari.
+- El sistema comprova si l’acció està permesa.
+- Una funcionalitat del producte queda protegida.
+- Es pot demostrar què passa en el cas correcte i en el cas denegat.
 
-Al final del repte hauries de tindre una primera funcionalitat del projecte que estiga realment protegida.
+No cal que siga un producte gran. Sí que cal que siga un flux complet, explicable i verificable.
 
-Això vol dir que hi ha d’haver:
+## Què no és suficient
 
-- un cas correcte
-- un cas incorrecte o denegat
-- una explicació clara de què controla el sistema
-- evidència de què passa quan l’acció està permesa i quan no
+En este repte no n’hi ha prou amb:
 
-## Seqüència de treball recomanada
+- Fer només registre, `login` i `logout`.
+- Protegir una ruta decorativa o sense valor dins del projecte.
+- Confondre estat, autenticació i autorització.
+- Validar només el cas feliç.
+- Portar una demo que funciona una vegada però no es pot explicar ni reproduir.
 
-### 1. Formulari base i recuperació de dades
+## Microreptes del Repte 2
 
-Has de construir una entrada de dades funcional i demostrar que el backend rep correctament la informació.
+Per treballar bé este repte convé dividir-lo en sis peces clares. Això ajuda a no reduir-lo a un simple `login` i a entendre què s’està construint en cada fase.
 
-Això implica, com a mínim:
+### Microrepte 1. Formulari base i recuperació de dades
 
-- camps útils
-- recepció real de dades
-- una resposta observable del sistema
+**Objectiu**
 
-### 2. Processament bàsic de la petició
+Construir un punt d’entrada de dades usable i demostrar que el sistema rep la informació correctament.
 
-Has de tractar la informació en servidor de manera clara i funcional.
+**Què s’espera**
 
-Això vol dir que hi ha d’haver:
+- Un formulari funcional o una entrada equivalent.
+- Camps amb sentit dins del projecte.
+- Recuperació real de les dades en servidor.
+- Una primera resposta observable del sistema.
 
-- variables amb sentit
-- operacions bàsiques
-- tractament del flux
-- una resposta construïda a partir de les dades rebudes
+**Criteris d’avaluació que es treballen**
 
-### 3. Lògica del flux
+- **RA3.e**: Utilitzar formularis o mecanismes equivalents per interactuar amb l’usuari.
+- **RA3.f**: Recuperar correctament les dades introduïdes.
+- **RA3.g**: Deixar el codi i el flux prou clars per a poder revisar-los.
 
-Has d’aplicar lògica bàsica de programació allà on faça falta.
+**Què vol dir això en llenguatge clar**
 
-Per exemple:
+En este microrepte es valorarà si pots:
 
-- decisions
-- estructures iteratives
-- arrays o estructures equivalents
-- funcions útils
+- Fer arribar dades reals al servidor.
+- Explicar d’on ix cada dada i com es recupera.
+- Relacionar els camps del formulari amb la resposta que genera el sistema.
 
-No es tracta d’afegir-les per decorar, sinó perquè la funcionalitat ho necessite.
+**Evidències principals**
 
-### 4. Estat i sessió
+- Formulari funcional o entrada equivalent.
+- Recuperació correcta de dades.
+- Demo del cas bàsic.
+- Commits associats.
 
-Has de demostrar que el sistema pot mantindre informació entre interaccions quan siga necessari.
+**Com es comprovarà**
 
-En esta fase, això s’ha de resoldre de manera clara sobre la base comuna del repte.
+- Execució real del formulari o de l’entrada equivalent.
+- Revisió del flux de dades.
+- Pregunta breu sobre com arriba la informació al servidor.
 
-Normalment, això passarà per:
+### Microrepte 2. Processament bàsic de la petició
 
-- sessió
-- cookies quan facen falta
-- un criteri clar sobre quan l’estat és vàlid o deixa de ser-ho
+**Objectiu**
 
-El més important és que pugues explicar:
+Fer visible el treball bàsic de programació en servidor que transforma les dades rebudes en comportament real.
 
-- què es guarda
-- per què es guarda
-- quan es recupera
-- quan es deixa de considerar vàlid
+**Què s’espera**
 
-### 5. Autenticació i funcionalitat protegida
+- Variables amb sentit.
+- Operadors i sentències bàsiques ben aplicats.
+- Tractament clar de la petició.
+- Una resposta generada a partir de les dades rebudes.
 
-Has d’implementar una primera funcionalitat del projecte que només puga executar-se si es complixen unes condicions.
+**Criteris d’avaluació que es treballen**
 
-Ha d’existir:
+- **RA2.c - RA2.h**: Integrar codi de servidor, usar sintaxi, variables, operadors i directives bàsiques, i entendre com afecta això al comportament del sistema.
 
-- autenticació funcional
-- comprovació d’accés
-- una acció real del domini protegida
-- almenys un cas autoritzat
-- almenys un cas denegat
+**Què vol dir això en llenguatge clar**
 
-### 6. Tancament, prova i revisió
+En este microrepte es valorarà si pots:
 
-Has de deixar el repte preparat per a revisió.
+- Explicar què fa el codi quan arriben les dades.
+- Demostrar que el tractament no és decoratiu.
+- Relacionar les dades d’entrada amb la resposta final.
 
-Això implica:
+**Evidències principals**
 
-- prova del cas correcte
-- prova d’un cas d’error
-- documentació mínima del flux
-- preparació per al checkpoint o la defensa
+- Codi executable de processament.
+- Evidència d’ús real de variables i operadors.
+- Demo del tractament correcte.
+- Commits o issues relacionades.
+
+**Com es comprovarà**
+
+- Execució del flux amb dades reals.
+- Revisió del tram de codi que processa la petició.
+- Pregunta breu sobre variables, operadors o pas de dades.
+
+### Microrepte 3. Decisions, arrays i funcions aplicades al flux
+
+**Objectiu**
+
+Aplicar lògica bàsica de programació per controlar el comportament del sistema segons les dades i les regles del projecte.
+
+**Què s’espera**
+
+- Almenys una decisió significativa.
+- Una repetició o un recorregut quan el flux ho necessite.
+- Ús d’arrays o estructures equivalents quan faça falta.
+- Una o més funcions útils.
+- Lògica connectada al flux real del producte.
+
+**Criteris d’avaluació que es treballen**
+
+- **RA3.a - RA3.d**: Aplicar decisions, repeticions, estructures de dades i funcions dins d’un flux de servidor amb sentit.
+
+**Què vol dir això en llenguatge clar**
+
+En este microrepte es valorarà si pots:
+
+- Fer que el sistema no responga sempre igual.
+- Organitzar millor el comportament amb estructures bàsiques.
+- Justificar per què uses una funció, un array o una condició.
+
+**Evidències principals**
+
+- Cas de decisió observable o recorregut significatiu.
+- Array o estructura equivalent usada amb sentit.
+- Funció o funcions útils.
+- Demo del comportament resultant.
+
+**Com es comprovarà**
+
+- Prova del flux amb més d’un cas.
+- Revisió de la lògica aplicada.
+- Microcanvi en viu sobre una condició o una funció quan siga necessari.
+
+### Microrepte 4. Estat, sessió i/o cookies
+
+**Objectiu**
+
+Demostrar que el sistema pot conservar informació rellevant entre interaccions i que entens què és estat i què no ho és.
+
+**Què s’espera**
+
+- Un mecanisme d’estat real.
+- Evidència de què es guarda.
+- Recuperació correcta de la informació guardada.
+- Neteja o invalidació quan toque.
+
+**Criteris d’avaluació que es treballen**
+
+- **RA4.a - RA4.c**: Identificar i usar mecanismes d’estat, guardar i recuperar informació del client, i entendre quan deixa de ser vàlida.
+
+**Què vol dir això en llenguatge clar**
+
+En este microrepte es valorarà si pots:
+
+- Explicar què guarda el sistema i per què.
+- Distingir entre estat, sessió i altres mecanismes.
+- Demostrar que el comportament canvia segons l’estat.
+
+**Evidències principals**
+
+- Mecanisme d’estat implementat.
+- Demo de recuperació de la informació.
+- Demo de neteja o invalidació.
+- Commits associats.
+
+**Com es comprovarà**
+
+- Execució en directe del canvi d’estat.
+- Pregunta breu sobre què es guarda, on i amb quina finalitat.
+- Contrast entre el que dius i el que realment passa al flux.
+
+### Microrepte 5. Autenticació i primera funcionalitat protegida
+
+**Objectiu**
+
+Connectar tot el flux anterior amb una primera necessitat real del producte: una operació que només es pot executar si es complixen unes condicions d’accés.
+
+**Què s’espera**
+
+- Identificació o entrada d’usuari funcional.
+- Autenticació real.
+- Comprovació d’accés.
+- Una operació del domini protegida.
+- Un cas autoritzat i un cas denegat.
+
+**Criteris d’avaluació que es treballen**
+
+- **RA4.d - RA4.e**: Implementar autenticació funcional i restringir una acció del sistema de manera real i verificable.
+
+**Què vol dir això en llenguatge clar**
+
+En este microrepte es valorarà si pots:
+
+- Diferenciar entre estar autenticat i estar autoritzat.
+- Protegir una acció amb valor real dins del projecte.
+- Demostrar què passa quan l’acció està permesa i quan no ho està.
+
+**Evidències principals**
+
+- Flux d’autenticació funcional.
+- Operació protegida real.
+- Cas positiu.
+- Cas negatiu.
+- Evidència de la restricció aplicada.
+
+**Com es comprovarà**
+
+- Execució real del cas autoritzat.
+- Execució real del cas denegat.
+- Pregunta oral sobre en quin punt es bloqueja o es permet l’acció.
+
+### Microrepte 6. Prova, depuració i revisió final del repte
+
+**Objectiu**
+
+Comprovar que el flux complet funciona, que els errors es poden observar i que el repte queda prou net per continuar després.
+
+**Què s’espera**
+
+- Prova del cas correcte.
+- Prova d’un cas d’error o denegació.
+- Revisió d’errors i validacions.
+- Documentació mínima actualitzada.
+- Preparació per al checkpoint o la defensa.
+
+**Criteris d’avaluació que es treballen**
+
+- **RA4.f**: Provar, depurar i documentar el comportament real del sistema.
+
+**Què vol dir això en llenguatge clar**
+
+En este microrepte es valorarà si pots:
+
+- Demostrar que el flux funciona de veritat.
+- Detectar errors i explicar-los.
+- Deixar rastre del que has provat i del que encara cal millorar.
+
+**Evidències principals**
+
+- Registre de proves mínimes.
+- Cas positiu i cas negatiu documentats.
+- Incidències detectades o correccions rellevants.
+- Documentació tècnica actualitzada.
+
+**Com es comprovarà**
+
+- Execució dels casos documentats.
+- Contrast entre documentació, repositori i resultat real.
+- Defensa tècnica breu sobre el flux complet.
+
+## Criteris que es treballen en este repte
+
+En llenguatge clar, en este repte es treballa sobretot que sigues capaç de:
+
+- Rebre i recuperar dades d’un formulari o entrada equivalent.
+- Aplicar lògica bàsica de servidor amb sentit.
+- Utilitzar decisions, bucles, arrays o funcions quan realment fan falta.
+- Entendre i usar mecanismes d’estat.
+- Distingir entre estat, autenticació i autorització.
+- Aplicar autenticació funcional.
+- Protegir una operació real del domini.
+- Provar i documentar el flux complet.
+
+No es tracta de memoritzar noms de funcions o paraules tècniques. Es tracta de demostrar que entens el recorregut complet del que passa al servidor.
+
+## Idea metodològica important d’este repte
+
+Este repte es resol sobre una **base comuna en `PHP`**.
+
+En este moment del curs, la prioritat és consolidar el flux complet en servidor:
+
+- Entrada de dades.
+- Processament.
+- Lògica bàsica.
+- Estat o sessió.
+- Autenticació.
+- Funcionalitat protegida.
+
+El contrast de frameworks encara no és el focus principal. No toca reescriure el projecte en `Laravel`, `Symfony` o `NestJS` abans d’hora.
+
+Eixe contrast entrarà després, quan el mateix projecte passe a una fase més arquitectònica i més mantenible.
+
+Ara toca demostrar una base funcional comuna i defensable. Després arribarà el contrast amb itineraris com `Laravel`, `Symfony` o `NestJS`.
+
+## Si et bloqueges
+
+Per no perdre el fil del repte:
+
+- Treballa amb un únic actor i una sola operació protegida.
+- Tanca primer el flux principal abans d’afegir rols o extres.
+- No canvies de framework per intentar desbloquejar este repte.
+- Assegura’t que el `README` o la documentació equivalent expliquen com reproduir el cas bo i el cas denegat.
 
 ## Evidències obligatòries
 
 Per considerar complet el repte, hauràs d’aportar com a mínim:
 
-- repositori actualitzat
-- commits amb sentit
-- issue principal del repte o registre equivalent
-- formulari o entrada funcional
-- tractament real de dades en servidor
-- evidència d’ús de lògica bàsica
-- evidència de manteniment d’estat
-- autenticació funcional
-- una operació protegida del projecte
-- un cas positiu i un cas negatiu
-- prova o verificació bàsica del flux
-- documentació mínima del repte
+- Repositori actualitzat.
+- Issue principal del repte o registre equivalent.
+- Seqüència de commits significativa.
+- Formulari funcional o entrada equivalent.
+- Recuperació real de dades.
+- Processament bàsic en servidor.
+- Ús visible de lògica amb decisions, bucles, arrays o funcions.
+- Evidència d’estat, sessió o cookies.
+- Autenticació funcional.
+- Operació real protegida.
+- Cas positiu i cas negatiu.
+- Prova o verificació mínima del flux.
+- Documentació tècnica actualitzada.
+- `AI log`, quan hi haja ús rellevant d’IA.
 
-## Si cooperes amb una altra persona
+## Com es comprovarà
 
-Este repte admet treball coordinat, però no autoria compartida.
+El professorat podrà comprovar el treball amb mecanismes com:
 
-Pots:
-
-- contrastar decisions
-- compartir checkpoints
-- comparar com resols el mateix encàrrec funcional
-
-Però cadascú ha de mantindre:
-
-- el seu repositori
-- les seues evidències
-- la seua explicació tècnica
-
-## Què s’entén per funcionalitat protegida
-
-No és suficient tindre un formulari de login aïllat.
-
-Hi ha d’haver una acció real del producte que només es puga fer en determinades condicions.
-
-Per exemple:
-
-- crear un recurs
-- modificar una informació
-- accedir a una part restringida
-- executar una operació només per a un tipus concret d’usuari
-- impedir una acció si no es complix una regla del sistema
-
-## Què es comprovarà
-
-Es comprovarà si:
-
-- el sistema rep i tracta realment dades
-- hi ha lògica de servidor amb sentit
-- diferencies bé entre tractament de dades, estat i autenticació
-- la funcionalitat protegida és real
-- els errors no queden amagats
-- pots demostrar un cas correcte i un cas incorrecte
-- pots explicar el flux complet
-
-## Checkpoint del repte
-
-En el checkpoint hauràs de poder mostrar:
-
-- com entra la informació al sistema
-- què fa el servidor amb eixa informació
-- quina lògica s’està aplicant
-- què es guarda com a estat
-- com es comprova l’accés
-- quina funcionalitat queda protegida
-- què passa quan el cas és incorrecte
-
-## Defensa tècnica breu
-
-En la defensa o revisió hauràs de poder respondre preguntes com:
-
-- per què este repte es resol encara sobre una base comuna en `PHP`?
-- quina diferència hi ha entre estat i autenticació?
-- en quin punt es decidix si una acció està permesa o no?
-- què passa quan les dades són incorrectes?
-- què guarda el sistema i amb quina finalitat?
-- quina part del flux és pública i quina és protegida?
+- Execució real del flux complet.
+- Prova del cas positiu i del cas negatiu.
+- Revisió de commits i issues.
+- Preguntes tècniques breus.
+- Defensa oral curta.
+- Microcanvis en viu quan siga necessari.
+- Contrast entre documentació, codi i comportament real.
 
 ## Ús de la IA en este repte
 
 La IA et pot ajudar, per exemple, a:
 
-- proposar estructures de formulari
-- suggerir validacions
-- revisar errors
-- generar esquelets inicials de flux
-- proposar casos de prova
-- ajudar a documentar el comportament
+- Proposar estructures de formulari.
+- Sugerir validacions.
+- Recordar patrons de sessió o autenticació.
+- Detectar errors.
+- Proposar casos de prova.
+- Ajudar a documentar el flux.
 
-Però has de poder:
+El que no pots delegar és:
 
-- explicar el codi
-- validar el que fa
-- demostrar que funciona
-- corregir-lo si falla
-- justificar per què la funcionalitat protegida està construïda així
+- Entendre d’on ix cada dada i on es tracta.
+- Distingir entre estat, autenticació i autorització.
+- Comprovar que el cas positiu i el negatiu funcionen de veritat.
+- Explicar per què una acció queda protegida i una altra no.
+
+Encara que uses IA, es comprovarà igualment si pots validar, adaptar, corregir i defendre el que presentes.
 
 ## Errors habituals
 
-Convindria evitar estos errors:
+Convindria evitar errors com estos:
 
-- fer només el cas feliç
-- confondre estat amb autenticació
-- tindre login però no cap funcionalitat real protegida
-- mostrar dades sense tractar-les de veritat
-- afegir lògica artificial només per cobrir apartats
-- portar una solució que no pots explicar
+- Fer només el cas feliç.
+- Confondre estat amb autenticació.
+- Tindre `login` però no una funcionalitat real protegida.
+- Mostrar dades sense tractar-les realment.
+- Afegir lògica artificial només per complir.
+- Portar una solució que no es pot explicar.
 
 ## Quan es considera superat
 
 Este repte es considera superat quan:
 
-- el sistema rep i tracta dades en servidor
-- hi ha lògica bàsica aplicada amb sentit
-- existix una evidència clara de manteniment d’estat
-- l’autenticació o control d’accés és funcional
-- hi ha una operació real del projecte protegida
-- es poden demostrar un cas positiu i un cas negatiu
-- el treball està prou documentat i traçat
-- pots defendre tècnicament el flux complet
+- El sistema rep i tracta dades en servidor.
+- Hi ha lògica bàsica aplicada amb sentit.
+- Existix una evidència clara de manteniment d’estat.
+- L’autenticació o control d’accés és funcional.
+- Hi ha una operació real del projecte protegida.
+- Es poden demostrar un cas positiu i un cas negatiu.
+- El treball està prou documentat i traçat.
+- Pots defendre tècnicament el flux complet.
 
 ## Què prepara este repte
 
 Este repte deixa el producte preparat per al següent pas del curs:
 
-- introduir el framework sense canviar de producte
-- comparar solucions sobre el mateix encàrrec funcional
-- millorar l’arquitectura
-- separar responsabilitats
-- consolidar persistència
+- Introduir el framework sense canviar de projecte.
+- Reorganitzar millor el codi.
+- Millorar l’arquitectura i la persistència.
+- Mantindre viva la funcionalitat construïda ací quan entre el contrast de frameworks.
