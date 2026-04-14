@@ -14,10 +14,7 @@ nav:
       - "Repte 4": "02_reptes/repte_04.md"
       - "Repte 5": "02_reptes/repte_05.md"
       - "Tancament i defensa": "02_reptes/fase_final.md"
-  - "Com s'avalua":
-      - "Visió general": "03_com_s_avalua/index.md"
-      - "Evidències": "03_com_s_avalua/evidencies.md"
-      - "Checkpoints i defenses": "03_com_s_avalua/checkpoints_i_defenses.md"
+  - "Com s'avalua": "03_com_s_avalua/index.md"
 theme:
   language: ca
   favicon: imagenes/favicon.png

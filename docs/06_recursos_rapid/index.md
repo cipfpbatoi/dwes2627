@@ -27,5 +27,3 @@ Des de `R3`, els itineraris base són:
 ## Si tens dubtes d’avaluació
 
 - [Com s’avalua](../03_com_s_avalua/index.md)
-- [Evidències](../03_com_s_avalua/evidencies.md)
-- [Checkpoints i defenses](../03_com_s_avalua/checkpoints_i_defenses.md)
