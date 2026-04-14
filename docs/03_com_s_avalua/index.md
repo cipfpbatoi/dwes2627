@@ -2,14 +2,13 @@
 
 ## Idea general
 
-En este mòdul no s’avalua només si el producte final “funciona”.
+En este mòdul no s’avalua només si el producte “funciona”.
 
 També s’avalua si eres capaç de:
 
 - entendre el que has fet
 - justificar decisions tècniques
 - provar el sistema
-- detectar i corregir errors
 - documentar el treball
 - mantindre el producte quan creix
 - defendre el resultat amb criteri
@@ -22,7 +21,6 @@ Segons el repte, es podran valorar elements com:
 
 - repositori actualitzat
 - commits i historial de treball
-- issues o tasques registrades
 - funcionalitats executables
 - proves o verificacions
 - documentació tècnica
@@ -32,55 +30,25 @@ Segons el repte, es podran valorar elements com:
 
 La idea clau és esta: no n’hi ha prou amb entregar una solució. Cal poder demostrar què fa, com ho fa i per què està feta així.
 
-## Què és una evidència
+## Autoria individual i cooperació
 
-Una evidència és una prova real del treball que has fet i del que saps fer.
+Encara que hi haja cooperació tècnica, el criteri d’avaluació continua sent individual.
 
-Per exemple:
+La cooperació pot incloure:
 
-- codi funcional
-- una prova executada
-- una decisió documentada
-- una incidència corregida
-- una demo
-- una defensa oral
-- una explicació tècnica solvent
+- mateix projecte
+- mateix encàrrec funcional
+- comparació de tecnologies
+- revisió creuada
+- checkpoints compartits quan toque
 
-## Tipus d’evidències habituals
+Però això no substituïx:
 
-### Evidències de producte
+- el teu repositori
+- les teues evidències
+- la teua defensa
 
-Mostren què has construït.
-
-Per exemple:
-
-- backend funcional
-- endpoint operatiu
-- integració externa real
-- automatització útil
-
-### Evidències de procés
-
-Mostren com has treballat.
-
-Per exemple:
-
-- commits
-- issues
-- registre d’errors
-- comparació entre versions
-- AI log
-
-### Evidències de comprensió
-
-Mostren que entens el que presentes.
-
-Per exemple:
-
-- defensa tècnica
-- preguntes del professorat
-- canvi menut en directe
-- explicació d’una decisió o d’un error
+La modalitat base és la de parelles de contrast tècnic. Els trios avançats només s’obrin com a possibilitat puntual.
 
 ## Què es valorarà al llarg del curs
 
@@ -98,13 +66,12 @@ Encara que cada repte tinga un focus principal, hi ha criteris que apareixen de 
 
 Durant el curs hi haurà moments de revisió parcial.
 
-En un checkpoint no basta amb “ensenyar alguna cosa”. Cal poder explicar:
+En un checkpoint no basta amb ensenyar alguna cosa. Cal poder explicar:
 
 - què tens fet
 - què funciona
 - què no està resolt encara
 - quines decisions has pres
-- quins problemes tens
 - quin serà el pas següent
 
 ## Defenses tècniques
@@ -132,30 +99,15 @@ El que es valorarà és si pots:
 - justificar decisions
 - explicar què has fet realment tu i què has fet amb suport
 
-## Tres situacions diferents
-
-### Treball autònom real
-
-Pots explicar, adaptar, corregir i defendre el que has construït.
-
-### Treball assistit per IA
-
-Has rebut ajuda, però entens el resultat, l’has validat i pots justificar-lo.
-
-### Treball excessivament delegat
-
-No pots explicar bé la solució, no saps corregir-la i no pots transferir-la a una situació nova.
-
 ## Com es comprovarà l’aprenentatge real
 
 Es podran utilitzar mecanismes com:
 
 - revisió del repositori
-- revisió de commits i issues
+- revisió de commits i historial
 - execució del producte
 - proves funcionals
 - preguntes tècniques
-- comparació entre versions
 - modificacions menudes en directe
 - defenses curtes
 

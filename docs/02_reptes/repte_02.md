@@ -1,5 +1,15 @@
 # Repte 2. Processament, estat i funcionalitat protegida
 
+## Regla del repte
+
+Este repte es resol sobre una **base comuna en `PHP`**.
+
+En esta fase:
+
+- la prioritat és consolidar tractament de dades, lògica bàsica, estat o sessió, autenticació i funcionalitat protegida
+- el contrast de frameworks no entra com a norma general
+- el mateix projecte ha de quedar preparat per continuar després en un framework
+
 ## Finalitat del repte
 
 En este repte el projecte deixa de ser només una base funcional i passa a comportar-se més com un sistema real.
@@ -22,12 +32,12 @@ En entorns professionals, este és un moment clau: passar d’un backend que “
 
 ## Encàrrec
 
-Has de fer evolucionar el projecte del Repte 1 fins a arribar a una primera funcionalitat protegida.
+Has de fer evolucionar el projecte del `Repte 1` fins a arribar a una primera funcionalitat protegida.
 
 El sistema ha de ser capaç de:
 
 - rebre dades
-- tractar-les en servidor
+- tractar-les en servidor sobre la base comuna en `PHP`
 - aplicar lògica bàsica
 - mantindre informació d’estat quan siga necessari
 - comprovar condicions d’accés
@@ -41,23 +51,17 @@ El repte ha d’incloure, com a mínim:
 - recuperació i tractament de la informació en servidor
 - ús de decisions, estructures de dades o funcions quan tinga sentit
 - una evidència de manteniment d’estat
-- autenticació funcional o mecanisme equivalent
+- autenticació funcional
 - una operació del projecte protegida
 - tractament mínim d’errors
 - proves o verificacions bàsiques del flux
 
-## Idea clau del repte
+## Què no és l’objectiu del repte
 
-Este repte **no és només fer login**.
-
-El valor real està en arribar a una situació com esta:
-
-- l’usuari introduïx dades
-- el sistema les rep i les tracta
-- el sistema aplica lògica
-- el sistema manté alguna informació d’estat quan toca
-- el sistema comprova qui és l’usuari o en quina situació està
-- el sistema permet o impedix una acció real del producte
+- comparar frameworks com a norma general
+- reescriure el projecte en `Laravel`, `Symfony` o `NestJS` abans d’hora
+- quedar-te en un login aïllat sense valor de domini
+- confondre autenticació amb funcionalitat protegida
 
 ## Producte final esperat
 
@@ -106,15 +110,17 @@ Per exemple:
 
 No es tracta d’afegir-les per decorar, sinó perquè la funcionalitat ho necessite.
 
-### 4. Estat, sessió o mecanisme equivalent
+### 4. Estat i sessió
 
 Has de demostrar que el sistema pot mantindre informació entre interaccions quan siga necessari.
 
-Això pot implicar, segons l’stack:
+En esta fase, això s’ha de resoldre de manera clara sobre la base comuna del repte.
+
+Normalment, això passarà per:
 
 - sessió
-- cookies
-- un altre mecanisme equivalent
+- cookies quan facen falta
+- un criteri clar sobre quan l’estat és vàlid o deixa de ser-ho
 
 El més important és que pugues explicar:
 
@@ -129,7 +135,7 @@ Has d’implementar una primera funcionalitat del projecte que només puga execu
 
 Ha d’existir:
 
-- identificació o autenticació funcional
+- autenticació funcional
 - comprovació d’accés
 - una acció real del domini protegida
 - almenys un cas autoritzat
@@ -157,11 +163,27 @@ Per considerar complet el repte, hauràs d’aportar com a mínim:
 - tractament real de dades en servidor
 - evidència d’ús de lògica bàsica
 - evidència de manteniment d’estat
-- autenticació funcional o equivalent
+- autenticació funcional
 - una operació protegida del projecte
 - un cas positiu i un cas negatiu
 - prova o verificació bàsica del flux
 - documentació mínima del repte
+
+## Si cooperes amb una altra persona
+
+Este repte admet treball coordinat, però no autoria compartida.
+
+Pots:
+
+- contrastar decisions
+- compartir checkpoints
+- comparar com resols el mateix encàrrec funcional
+
+Però cadascú ha de mantindre:
+
+- el seu repositori
+- les seues evidències
+- la seua explicació tècnica
 
 ## Què s’entén per funcionalitat protegida
 
@@ -196,7 +218,7 @@ En el checkpoint hauràs de poder mostrar:
 - com entra la informació al sistema
 - què fa el servidor amb eixa informació
 - quina lògica s’està aplicant
-- què es guarda com a estat, si és el cas
+- què es guarda com a estat
 - com es comprova l’accés
 - quina funcionalitat queda protegida
 - què passa quan el cas és incorrecte
@@ -205,6 +227,7 @@ En el checkpoint hauràs de poder mostrar:
 
 En la defensa o revisió hauràs de poder respondre preguntes com:
 
+- per què este repte es resol encara sobre una base comuna en `PHP`?
 - quina diferència hi ha entre estat i autenticació?
 - en quin punt es decidix si una acció està permesa o no?
 - què passa quan les dades són incorrectes?
@@ -258,7 +281,8 @@ Este repte es considera superat quan:
 
 Este repte deixa el producte preparat per al següent pas del curs:
 
+- introduir el framework sense canviar de producte
+- comparar solucions sobre el mateix encàrrec funcional
 - millorar l’arquitectura
 - separar responsabilitats
 - consolidar persistència
-- i professionalitzar una funcionalitat que ja funciona, però encara ha de ser més mantingable

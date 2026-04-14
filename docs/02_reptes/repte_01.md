@@ -2,9 +2,9 @@
 
 ## Finalitat del repte
 
-Este primer repte servix per posar en marxa la base tècnica del projecte i demostrar que el sistema ja és capaç de fer alguna cosa real.
+Este primer repte servix per posar en marxa la base del projecte i demostrar que el sistema ja és capaç de fer alguna cosa real.
 
-No es tracta només de triar tecnologia o muntar un esquelet buit. Es tracta de deixar una base executable, documentada i amb un primer flux funcional verificable.
+No es tracta d’obrir itineraris ni de comparar frameworks. Es tracta de deixar el mateix producte arrancat, executable, documentat i preparat per a `R2`.
 
 ## Context professional
 
@@ -13,7 +13,7 @@ Imagina que formes part d’un equip que rep l’encàrrec d’iniciar un nou se
 Encara no s’espera un producte complet, però sí una base fiable que permeta:
 
 - arrancar el projecte
-- justificar una primera decisió tècnica
+- acotar el primer cas d’ús
 - mostrar una primera interacció real
 - deixar traçabilitat del treball
 - preparar el terreny per als reptes següents
@@ -35,7 +35,7 @@ Esta primera versió ha de servir per demostrar que el backend:
 Has de deixar preparada una primera versió funcional del projecte amb, com a mínim:
 
 - un repositori ordenat i executable
-- una decisió tècnica inicial justificada
+- una decisió inicial de domini o d’abast justificada
 - un punt d’entrada al producte
 - un formulari o interacció equivalent útil
 - validació mínima en servidor
@@ -56,16 +56,16 @@ Al final del repte hauries de tindre un producte que permeta mostrar una seqüè
 
 ## Seqüència de treball recomanada
 
-### 1. Decidir la base tècnica
+### 1. Acotar el cas d’ús i preparar la base del projecte
 
-Has de comparar opcions de manera breu i justificar la que utilitzaràs.
+Has de concretar què començaràs a construir i deixar preparada la base comuna del projecte.
 
-No cal fer una comparativa molt llarga, però sí suficient per explicar:
+No cal fer una justificació llarga, però sí suficient per explicar:
 
-- quina opció tries
-- per què la tries
-- quines alternatives has descartat
-- per què és adequada per al projecte
+- quin flux inicial tries
+- per què és adequat per al producte
+- què quedarà ja preparat per a `R2`
+- quins límits té encara esta primera versió
 
 ### 2. Preparar l’entorn de treball
 
@@ -110,7 +110,7 @@ Per considerar complet el repte, hauràs d’aportar com a mínim:
 - README executable
 - issue principal del repte o registre equivalent
 - commits amb sentit
-- decisió tècnica inicial justificada
+- decisió inicial de domini o d’abast justificada
 - primer flux funcional operatiu
 - evidència de validació mínima
 - evidència de registre o persistència bàsica
@@ -124,7 +124,7 @@ Es comprovarà si:
 - el README permet posar-lo en marxa
 - el flux funcional està connectat de punta a punta
 - la validació no és només aparent
-- hi ha una primera decisió tècnica justificable
+- hi ha una primera decisió de producte justificable
 - el treball està traçat amb evidències reals
 - pots explicar el que has fet
 
@@ -133,7 +133,7 @@ Es comprovarà si:
 En el checkpoint hauràs de poder mostrar:
 
 - que el projecte arranca
-- quina tecnologia o enfocament has triat
+- quin cas d’ús o enfocament inicial has triat
 - quin és el primer flux funcional
 - què valida el sistema
 - què queda registrat o persistit
@@ -143,7 +143,7 @@ En el checkpoint hauràs de poder mostrar:
 
 En la defensa o revisió hauràs de poder respondre preguntes com:
 
-- per què has triat esta opció tècnica?
+- per què has triat este flux inicial?
 - què fa exactament el backend quan rep la petició?
 - on es valida la informació?
 - què està realment implementat i què encara no?
@@ -174,7 +174,6 @@ Has de poder:
 Convindria evitar estos errors:
 
 - muntar només un esquelet sense funcionalitat real
-- portar una comparativa superficial
 - fer un formulari sense tractament real en servidor
 - validar només de manera aparent
 - tindre un README que no servix per arrancar el projecte

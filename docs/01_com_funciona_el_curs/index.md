@@ -4,22 +4,62 @@
 
 Este mòdul funciona a partir d’un **projecte evolutiu basat en reptes**.
 
-Això vol dir que no anirem fent pràctiques inconnexes o exercicis aïllats que es comencen i s’abandonen. En lloc d’això, treballarem sobre un mateix producte que anirà creixent, canviant i millorant al llarg del curs.
-
-Cada repte tindrà un focus principal, però el que construïsques en un repte es reutilitzarà, es consolidarà o es transformarà en els següents.
+No faràs una pràctica diferent per a cada tema. Faràs créixer un mateix producte backend i cada repte reutilitzarà, consolidarà o professionalitzarà el que ja tens.
 
 ## Com progressa el projecte
 
 La seqüència general del curs és esta:
 
-- començar amb una base tècnica funcional
-- passar a tractar dades, aplicar lògica i protegir funcionalitats
-- millorar l’arquitectura i la persistència
-- exposar serveis i APIs
-- integrar fonts o serveis externs
-- tancar el producte amb revisió, prova, documentació i defensa tècnica
+- `R1`: arrancar el projecte i deixar un primer flux funcional
+- `R2`: consolidar una base comuna en `PHP` amb dades, lògica, estat o sessió, autenticació i funcionalitat protegida
+- `R3`: introduir framework i continuar el mateix projecte amb `Laravel`, `Symfony` o `NestJS`
+- `R4`: publicar i consumir una API real del producte
+- `R5`: integrar, automatitzar i deixar el producte preparat per al tancament
 
-La idea clau és que el sistema no es construeix “tot d’una”, sinó per iteracions.
+La idea clau és que el sistema no es construeix “tot d’una”, sinó per iteracions sobre el mateix encàrrec funcional.
+
+## Què vol dir "base comuna"
+
+Abans d’obrir itineraris diferents, tot el grup passa per una fase comuna de treball.
+
+Això significa que en `R2`:
+
+- el projecte continua sobre una base comuna en `PHP`
+- la prioritat és dominar el flux complet de servidor
+- no toca, com a norma general, comparar frameworks
+- el focus està en dades, lògica, estat, autenticació i control d’accés
+
+El contrast tecnològic entra després, quan s’introduïx el framework.
+
+## Mateix projecte, diferents itineraris
+
+Quan arriba el moment del framework, no canvies de producte ni d’encàrrec funcional.
+
+El que canvia és la manera de continuar-lo.
+
+A partir d’eixe moment, el mateix projecte pot seguir en:
+
+- `Laravel`
+- `Symfony`
+- `NestJS`
+
+`FastAPI` no és un itinerari base general del curs. Només pot aparéixer com a via avançada o excepcional quan es marque així.
+
+## Com es combina cooperació i autoria
+
+La cooperació és compatible amb l’avaluació individual.
+
+El model preferent és este:
+
+- mateix projecte
+- mateix encàrrec funcional
+- comparació de tecnologies quan toque
+- checkpoints o revisions compartides quan toque
+- repositori individual
+- evidències individuals
+- defensa individual
+
+La modalitat base és la de parelles de contrast tècnic. Els trios avançats poden aparéixer en casos puntuals, però no són la forma general de treball.
 
 ## Com es treballa en cada repte
 
@@ -43,69 +83,54 @@ En este curs es valora que sigues capaç de:
 - construir funcionalitat real
 - entendre el codi i el comportament del sistema
 - justificar decisions tècniques
-- detectar errors i corregir-los
 - provar que una solució funciona de veritat
 - documentar el treball amb claredat
 - mantindre el producte quan va creixent
-- defendre tècnicament el que presentes
+- explicar i defendre individualment el que presentes
 
 ## Quines evidències hauràs d’aportar
 
-Al llarg del curs, segons el repte, hauràs d’aportar evidències com ara:
+Segons el repte, hauràs d’aportar evidències com ara:
 
 - repositori actualitzat
 - commits amb sentit
-- issues o registre de tasques
-- codi funcional
+- codi executable
 - proves o verificacions
 - documentació tècnica
-- demos o captures
-- defenses tècniques breus
-- AI log quan corresponga
+- checkpoints
+- defenses tècniques
+- registre d’ús d’IA quan corresponga
 
 El més important és que les evidències siguen reals, útils i verificables.
 
-## Què vol dir “treballar per reptes”
-
-Treballar per reptes vol dir que cada fase del curs té:
-
-- un context amb sentit professional
-- una exigència tècnica concreta
-- un producte o funcionalitat a construir
-- unes evidències obligatòries
-- un moment de revisió, checkpoint o defensa
-
-Per tant, un repte no és només un enunciat. És una unitat de treball completa.
-
 ## Què és un checkpoint
 
-Un checkpoint és un moment de revisió durant el repte.
+Un checkpoint és una revisió curta del teu estat de treball.
 
-No és només “ensenyar que has avançat”, sinó demostrar:
+No és només ensenyar que has avançat. Has de poder explicar:
 
 - què tens fet
 - què funciona
-- què no funciona encara
+- què no està tancat encara
 - quines decisions has pres
-- quins problemes has trobat
 - què faràs després
 
 ## Què és una defensa tècnica
 
-Una defensa tècnica és una explicació breu i clara del treball realitzat.
+Una defensa tècnica és una explicació breu i clara del teu propi treball.
 
 En una defensa tècnica hauràs de poder:
 
-- mostrar el sistema
+- mostrar el sistema funcionant
 - explicar el flux principal
 - justificar decisions
 - parlar d’errors i correccions
-- explicar l’ús de la IA
-- respondre preguntes del professorat
+- respondre preguntes
+- fer algun canvi menut si cal
 
 ## Com s’usa la IA en este curs
 
-La IA es pot utilitzar com a ferramenta habitual de treball.
+La IA es pot utilitzar com a suport de treball.
 
 Per exemple, et pot ajudar a:
 
@@ -116,43 +141,7 @@ Per exemple, et pot ajudar a:
 - proposar proves
 - millorar documentació
 
-Però hi ha una condició molt important: has de **validar, comprendre i poder defendre** el que presentes.
-
-## Tres situacions que hem de saber diferenciar
-
-### Treball autònom real
-
-Has construït o adaptat la solució amb criteri propi i pots explicar-la, corregir-la i ampliar-la.
-
-### Treball assistit per IA
-
-Has utilitzat suport d’IA, però has revisat el resultat, has pres decisions i pots justificar tècnicament el que presentes.
-
-### Treball excessivament delegat en IA
-
-No pots explicar bé el que fa la solució, no saps corregir-la i no pots transferir-la a una situació nova.
-
-En este curs ens interessa sobretot el treball autònom i el treball assistit amb validació real.
-
-## Què no hauria de passar
-
-Convindria evitar situacions com estes:
-
-- presentar codi que no entens
-- copiar solucions sense adaptar-les
-- confiar només en el cas feliç
-- documentar coses que no s’han provat
-- improvisar la defensa sense revisar el treball real
-
-## Com aprofitar millor este repositori
-
-L’orde recomanat és este:
-
-- començar per la visió general dels reptes
-- revisar com s’avalua
-- entrar després al repte que toque
-- consultar materials quan els necessites
-- tornar als recursos ràpids quan tingues un dubte concret
+Però no substituïx la teua responsabilitat tècnica. Has de validar, comprendre i poder defendre allò que presentes.
 
 ## Idea final
 
@@ -161,7 +150,6 @@ L’objectiu del curs no és només arribar a un producte que funcione.
 L’objectiu és arribar a un producte que pugues:
 
 - construir
-- entendre
 - provar
 - mantindre
 - explicar

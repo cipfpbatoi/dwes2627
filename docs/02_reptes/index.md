@@ -1,20 +1,32 @@
 # Reptes del curs
 
-Ací tens la seqüència inicial dels reptes del curs. Cada repte obri un objectiu concret i et diu què has de fer, què has d'entregar i com es comprovarà.
+Ací tens la seqüència del curs. Cada repte aprofita l’anterior i prepara el següent.
 
-## Com llegir cada repte
+## Seqüència general
 
-En cada fitxer trobaràs, com a mínim:
+- [Repte 1](repte_01.md): posar en marxa el projecte i deixar un primer flux funcional real
+- [Repte 2](repte_02.md): consolidar la base comuna en `PHP` amb dades, lògica, estat o sessió, autenticació i funcionalitat protegida
+- [Repte 3](repte_03.md): introduir framework i continuar el mateix projecte amb `Laravel`, `Symfony` o `NestJS`
+- [Repte 4](repte_04.md): publicar i consumir una API real del producte
+- [Repte 5](repte_05.md): integrar o automatitzar el sistema i deixar-lo preparat per al tancament
+- [Tancament i defensa](fase_final.md): revisar proves, documentació, evidències i defensa final
 
-- objectiu del repte
-- treball a fer
-- entregables mínims
-- manera de comprovar el resultat
+## Idea clau
 
-## Reptes oberts ara mateix
+- el curs continua sent un únic projecte evolutiu
+- el contrast de frameworks no entra com a norma general en `R2`
+- el contrast tecnològic comença quan s’introduïx el framework
+- el mateix projecte i el mateix encàrrec funcional continuen després
+- els frameworks base d’eixe tram són `Laravel`, `Symfony` i `NestJS`
+- `FastAPI` només pot aparéixer com a via avançada o excepcional
 
-- [Repte 1](repte_01.md): posar en marxa el projecte i deixar un primer flux funcional
-- [Repte 2](repte_02.md): tractar dades, gestionar estat i protegir una primera funcionalitat
+## Cooperació i autoria
+
+- la modalitat base és la de parelles de contrast tècnic
+- es pot compartir projecte i encàrrec funcional
+- hi pot haver checkpoints o contrastos compartits quan toque
+- els trios avançats són una opció puntual, no general
+- el repositori, les evidències i la defensa continuen sent individuals
 
 ## Abans de passar al següent repte
 
