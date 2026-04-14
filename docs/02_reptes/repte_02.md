@@ -24,12 +24,14 @@ En un entorn professional, este és el moment en què el sistema deixa de ser no
 
 En este repte has de fer evolucionar el projecte fins a deixar, com a mínim:
 
-- Un formulari o una entrada de dades real.
+- Un formulari o una entrada de dades real vinculada al projecte triat.
 - Recuperació i tractament de la informació en servidor.
+- Validació al servidor, visualització d’errors i possibilitat de correcció.
 - Lògica bàsica amb decisions, bucles, arrays o funcions quan toque.
+- Si el flux ho demana, tractament d’imatge o fitxer amb control bàsic de tipus i grandària.
 - Evidència de manteniment d’estat o sessió.
 - Autenticació funcional.
-- Una operació real del projecte protegida.
+- Una operació real del projecte protegida i lligada al domini triat.
 - Un cas positiu i un cas negatiu.
 - Prova mínima i documentació bàsica del flux.
 
@@ -37,8 +39,12 @@ En este repte has de fer evolucionar el projecte fins a deixar, com a mínim:
 
 Al final del repte hauries de poder mostrar un recorregut complet com este:
 
-- L’usuari envia o consulta dades.
-- El servidor les rep i les tracta.
+- L’usuari inicia una acció útil del projecte base.
+- El sistema recull les dades i les valida en servidor.
+- Si hi ha error, el sistema el mostra de manera clara.
+- L’usuari pot corregir i tornar a provar.
+- El servidor processa la petició correcta.
+- Si hi ha una imatge o un fitxer, el sistema en valida tipus i grandària abans d’acceptar-lo.
 - El sistema aplica una regla o una decisió.
 - Es manté estat quan és necessari.
 - El sistema comprova si l’acció està permesa.
@@ -46,6 +52,8 @@ Al final del repte hauries de poder mostrar un recorregut complet com este:
 - Es pot demostrar què passa en el cas correcte i en el cas denegat.
 
 No cal que siga un producte gran. Sí que cal que siga un flux complet, explicable i verificable.
+
+Per tant, el formulari no compta com a repte complet si només envia dades i torna un missatge genèric. Ha d’estar integrat en una funcionalitat real del projecte.
 
 ## Què no és suficient
 
@@ -55,24 +63,41 @@ En este repte no n’hi ha prou amb:
 - Protegir una ruta decorativa o sense valor dins del projecte.
 - Confondre estat, autenticació i autorització.
 - Validar només el cas feliç.
+- Quedar-se en “formulari + validació” sense obrir una funcionalitat del producte.
 - Portar una demo que funciona una vegada però no es pot explicar ni reproduir.
+
+## Relació amb el projecte base
+
+La funcionalitat protegida ha d’estar lligada al projecte que ja vas definir al `Repte 1`.
+
+No es considera suficient construir un formulari genèric desconnectat del domini. El que compta és que el flux servisca per crear, modificar, reservar, publicar, pujar o gestionar alguna cosa que tinga sentit dins del teu producte.
+
+La pregunta útil no és només “quin formulari faré?”, sinó “quina acció real del meu projecte vull validar, processar i protegir en servidor?”.
+
+## Exemples breus segons projecte base
+
+- **Plataforma de productes**: alta o edició d’un producte amb nom, preu, categoria i imatge. Si falta un camp o la imatge no compleix tipus o grandària, el sistema ho ha de mostrar, permetre correcció i només deixar publicar o editar si l’usuari té accés.
+- **Gestor de reserves o activitats**: creació d’una reserva o d’una activitat amb data, places i possibles dades adjuntes com un cartell o comprovant. El flux ha de validar dades, respondre amb errors clars si alguna cosa no és correcta i protegir l’operació de confirmació o gestió.
+- **Plataforma de recursos o publicacions**: alta d’un recurs, notícia o publicació amb títol, descripció i, quan toque, miniatura, imatge o document adjunt. El servidor ha de validar l’entrada, controlar el fitxer i permetre publicar només a qui corresponga.
 
 ## Microreptes del Repte 2
 
 Per treballar bé este repte convé dividir-lo en sis peces clares. Això ajuda a no reduir-lo a un simple `login` i a entendre què s’està construint en cada fase.
 
-### Microrepte 1. Formulari base i recuperació de dades
+### Microrepte 1. Formulari base, validació visible i recuperació de dades
 
 **Objectiu**
 
-Construir un punt d’entrada de dades usable i demostrar que el sistema rep la informació correctament.
+Construir un punt d’entrada de dades usable i demostrar que el sistema rep la informació correctament, valida el que toca i mostra feedback útil a l’usuari.
 
 **Què s’espera**
 
 - Un formulari funcional o una entrada equivalent.
-- Camps amb sentit dins del projecte.
+- Camps amb sentit dins del projecte base.
 - Recuperació real de les dades en servidor.
-- Una primera resposta observable del sistema.
+- Validació mínima al servidor.
+- Visualització clara dels errors de validació.
+- Possibilitat de corregir i tornar a enviar.
 
 **Criteris d’avaluació que es treballen**
 
@@ -87,25 +112,28 @@ En este microrepte es valorarà si pots:
 - Fer arribar dades reals al servidor.
 - Explicar d’on ix cada dada i com es recupera.
 - Relacionar els camps del formulari amb la resposta que genera el sistema.
+- Mostrar què passa quan una dada no és vàlida.
+- Permetre correcció i reintent dins del mateix flux.
 
 **Evidències principals**
 
 - Formulari funcional o entrada equivalent.
 - Recuperació correcta de dades.
-- Demo del cas bàsic.
+- Error de validació visible.
+- Reintent amb correcció.
 - Commits associats.
 
 **Com es comprovarà**
 
 - Execució real del formulari o de l’entrada equivalent.
-- Revisió del flux de dades.
-- Pregunta breu sobre com arriba la informació al servidor.
+- Revisió del flux de dades i dels errors mostrats.
+- Pregunta breu sobre com arriba la informació al servidor i com es valida.
 
-### Microrepte 2. Processament bàsic de la petició
+### Microrepte 2. Processament bàsic de la petició i tractament d’imatge o fitxer
 
 **Objectiu**
 
-Fer visible el treball bàsic de programació en servidor que transforma les dades rebudes en comportament real.
+Fer visible el treball bàsic de programació en servidor que transforma les dades rebudes en comportament real i tracta correctament els fitxers o imatges quan formen part del flux.
 
 **Què s’espera**
 
@@ -113,6 +141,9 @@ Fer visible el treball bàsic de programació en servidor que transforma les dad
 - Operadors i sentències bàsiques ben aplicats.
 - Tractament clar de la petició.
 - Una resposta generada a partir de les dades rebudes.
+- Si hi ha imatge o fitxer en el flux, validació bàsica de tipus i grandària.
+- Error interpretable si el fitxer no és correcte.
+- Integració funcional del fitxer o la imatge dins del projecte.
 
 **Criteris d’avaluació que es treballen**
 
@@ -125,18 +156,20 @@ En este microrepte es valorarà si pots:
 - Explicar què fa el codi quan arriben les dades.
 - Demostrar que el tractament no és decoratiu.
 - Relacionar les dades d’entrada amb la resposta final.
+- Explicar com controles una imatge o un fitxer incorrectes quan el teu flux els usa.
 
 **Evidències principals**
 
 - Codi executable de processament.
 - Evidència d’ús real de variables i operadors.
 - Demo del tractament correcte.
+- Demo d’un error de validació o de fitxer no vàlid quan corresponga.
 - Commits o issues relacionades.
 
 **Com es comprovarà**
 
 - Execució del flux amb dades reals.
-- Revisió del tram de codi que processa la petició.
+- Revisió del tram de codi que processa la petició i del control de fitxer o imatge quan existisca.
 - Pregunta breu sobre variables, operadors o pas de dades.
 
 ### Microrepte 3. Decisions, arrays i funcions aplicades al flux
@@ -227,7 +260,7 @@ Connectar tot el flux anterior amb una primera necessitat real del producte: una
 - Identificació o entrada d’usuari funcional.
 - Autenticació real.
 - Comprovació d’accés.
-- Una operació del domini protegida.
+- Una operació del domini protegida i vinculada al projecte base.
 - Un cas autoritzat i un cas denegat.
 
 **Criteris d’avaluació que es treballen**
@@ -239,13 +272,13 @@ Connectar tot el flux anterior amb una primera necessitat real del producte: una
 En este microrepte es valorarà si pots:
 
 - Diferenciar entre estar autenticat i estar autoritzat.
-- Protegir una acció amb valor real dins del projecte.
+- Protegir una acció amb valor real dins del projecte, no un exemple genèric.
 - Demostrar què passa quan l’acció està permesa i quan no ho està.
 
 **Evidències principals**
 
 - Flux d’autenticació funcional.
-- Operació protegida real.
+- Operació protegida real i lligada al projecte base.
 - Cas positiu.
 - Cas negatiu.
 - Evidència de la restricció aplicada.
@@ -300,12 +333,14 @@ En este microrepte es valorarà si pots:
 En llenguatge clar, en este repte es treballa sobretot que sigues capaç de:
 
 - Rebre i recuperar dades d’un formulari o entrada equivalent.
+- Mostrar errors de validació de manera clara i permetre correcció.
 - Aplicar lògica bàsica de servidor amb sentit.
+- Validar al servidor les dades i, quan toque, els fitxers o imatges.
 - Utilitzar decisions, bucles, arrays o funcions quan realment fan falta.
 - Entendre i usar mecanismes d’estat.
 - Distingir entre estat, autenticació i autorització.
 - Aplicar autenticació funcional.
-- Protegir una operació real del domini.
+- Protegir una operació real del domini vinculada al projecte base.
 - Provar i documentar el flux complet.
 
 No es tracta de memoritzar noms de funcions o paraules tècniques. Es tracta de demostrar que entens el recorregut complet del que passa al servidor.
@@ -335,6 +370,7 @@ Per no perdre el fil del repte:
 
 - Treballa amb un únic actor i una sola operació protegida.
 - Tanca primer el flux principal abans d’afegir rols o extres.
+- Si hi ha imatge o fitxer, comença per un únic tipus acceptat i una regla de grandària clara.
 - No canvies de framework per intentar desbloquejar este repte.
 - Assegura’t que el `README` o la documentació equivalent expliquen com reproduir el cas bo i el cas denegat.
 
@@ -347,11 +383,13 @@ Per considerar complet el repte, hauràs d’aportar com a mínim:
 - Seqüència de commits significativa.
 - Formulari funcional o entrada equivalent.
 - Recuperació real de dades.
+- Error de validació visible i possibilitat de correcció.
 - Processament bàsic en servidor.
+- Si el flux inclou imatge o fitxer, prova de validació de tipus i grandària.
 - Ús visible de lògica amb decisions, bucles, arrays o funcions.
 - Evidència d’estat, sessió o cookies.
 - Autenticació funcional.
-- Operació real protegida.
+- Operació real protegida i vinculada al projecte base.
 - Cas positiu i cas negatiu.
 - Prova o verificació mínima del flux.
 - Documentació tècnica actualitzada.
@@ -362,7 +400,9 @@ Per considerar complet el repte, hauràs d’aportar com a mínim:
 El professorat podrà comprovar el treball amb mecanismes com:
 
 - Execució real del flux complet.
-- Prova del cas positiu i del cas negatiu.
+- Prova del cas positiu, del cas negatiu i d’almenys un error de validació.
+- Revisió de com es mostren els errors i de com es reprén el flux després de corregir-los.
+- Si hi ha fitxer o imatge, prova d’un cas acceptable i d’un cas rebutjat.
 - Revisió de commits i issues.
 - Preguntes tècniques breus.
 - Defensa oral curta.
@@ -394,7 +434,10 @@ Encara que uses IA, es comprovarà igualment si pots validar, adaptar, corregir 
 Convindria evitar errors com estos:
 
 - Fer només el cas feliç.
+- Quedar-se en un formulari genèric sense funcionalitat real de projecte.
 - Confondre estat amb autenticació.
+- Mostrar un error però no permetre corregir i continuar el flux.
+- Acceptar una imatge o un fitxer sense comprovar tipus o grandària.
 - Tindre `login` però no una funcionalitat real protegida.
 - Mostrar dades sense tractar-les realment.
 - Afegir lògica artificial només per complir.
@@ -404,11 +447,13 @@ Convindria evitar errors com estos:
 
 Este repte es considera superat quan:
 
-- El sistema rep i tracta dades en servidor.
+- El sistema rep i tracta dades en servidor dins d’un flux complet.
+- La validació és visible, interpretable i permet correcció.
 - Hi ha lògica bàsica aplicada amb sentit.
+- Si hi ha imatge o fitxer, el sistema el valida i l’integra amb criteri bàsic.
 - Existix una evidència clara de manteniment d’estat.
 - L’autenticació o control d’accés és funcional.
-- Hi ha una operació real del projecte protegida.
+- Hi ha una operació real del projecte protegida i vinculada al domini triat.
 - Es poden demostrar un cas positiu i un cas negatiu.
 - El treball està prou documentat i traçat.
 - Pots defendre tècnicament el flux complet.
