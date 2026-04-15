@@ -89,6 +89,12 @@ Per exemple:
 
 El criteri de fons és sempre el mateix: si pots traçar, explicar, provar i defensar el que presentes.
 
+## Recursos de verificació
+
+Si estàs tancant el `Repte 2`, tens una [checklist de proves](checklists_de_prova.md) que et pot ajudar a registrar casos de prova, errors visibles, estat, autenticació i funcionalitat protegida.
+
+Esta checklist és una ajuda útil per provar el repte i deixar una evidència de verificació, però no substituïx la demo ni la defensa tècnica.
+
 ## Ús de la IA i avaluació
 
 La IA es pot usar com a eina de suport.
