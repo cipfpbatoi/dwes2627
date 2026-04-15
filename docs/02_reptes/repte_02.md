@@ -60,6 +60,8 @@ Al final del repte hauries de poder mostrar un recorregut complet com este:
 
 No cal que siga un producte gran. Sí que cal que siga un flux complet, explicable i verificable.
 
+La seqüència ha de quedar clara: primer arriben les dades i es validen; després, només si són correctes, es processen, es conserven i es poden reutilitzar; i és sobre eixe recorregut on després actua la funcionalitat protegida.
+
 Per tant, el formulari no compta com a repte complet si només envia dades i torna un missatge genèric. Ha d’estar integrat en una funcionalitat real del projecte, amb tractament, conservació i reutilització posterior.
 
 ## Persistència funcional de suport
@@ -132,11 +134,13 @@ La pregunta útil no és només “quin formulari faré?”, sinó “quina acci
 
 Per treballar bé este repte convé dividir-lo en sis peces clares. Això ajuda a no reduir-lo a un simple `login` i a entendre què s’està construint en cada fase.
 
-### Microrepte 1. Formulari base, validació visible i primera conservació de dades
+La progressió també és important: en el microrepte 1 toca fer entrar les dades, validar-les i tallar el flux si hi ha errors; en el microrepte 2 toca processar les dades correctes, conservar-les i deixar-les preparades per reutilitzar-les després dins del projecte.
+
+### Microrepte 1. Formulari base, validació visible i correcció
 
 **Objectiu**
 
-Construir un punt d’entrada de dades usable i demostrar que el sistema rep la informació correctament, valida el que toca, mostra feedback útil a l’usuari i no perd la informació correcta sense més.
+Construir un punt d’entrada de dades usable i demostrar que el sistema rep la informació correctament, valida el que toca, mostra feedback útil a l’usuari i no continua el flux mentre hi haja errors.
 
 **Què s’espera**
 
@@ -147,8 +151,6 @@ Construir un punt d’entrada de dades usable i demostrar que el sistema rep la 
 - Visualització clara dels errors de validació.
 - Possibilitat de corregir i tornar a enviar.
 - Comentaris breus en el codi quan facen falta per entendre el flux.
-- Conservació de la informació correcta en un mecanisme controlat.
-- Primera prova que la dada es podrà reutilitzar després.
 
 **Criteris d’avaluació que es treballen**
 
@@ -165,7 +167,7 @@ En este microrepte es valorarà si pots:
 - Relacionar els camps del formulari amb la resposta que genera el sistema.
 - Mostrar què passa quan una dada no és vàlida.
 - Permetre correcció i reintent dins del mateix flux.
-- Explicar on queda la dada correcta i per què després es podrà tornar a usar.
+- Explicar per què el sistema no continua mentre la informació no siga correcta.
 
 **Evidències principals**
 
@@ -173,20 +175,20 @@ En este microrepte es valorarà si pots:
 - Recuperació correcta de dades.
 - Error de validació visible.
 - Reintent amb correcció.
-- Primera dada conservada de manera verificable.
+- Evidència clara que el flux es talla quan hi ha errors.
 - Commits associats.
 
 **Com es comprovarà**
 
 - Execució real del formulari o de l’entrada equivalent.
-- Revisió del flux de dades, dels errors mostrats i del punt on la informació correcta queda guardada.
-- Pregunta breu sobre com arriba la informació al servidor, com es valida i com es conserva.
+- Revisió del flux de dades, dels errors mostrats i de com es reprén el formulari després de corregir-los.
+- Pregunta breu sobre com arriba la informació al servidor, com es valida i per què el flux no continua si hi ha errors.
 
-### Microrepte 2. Processament bàsic de la petició, codi embegut i tractament d’imatge o fitxer
+### Microrepte 2. Processament bàsic de la petició, conservació funcional i tractament d’imatge o fitxer
 
 **Objectiu**
 
-Fer visible el treball bàsic de programació en servidor que transforma les dades rebudes en comportament real, les deixa en un estat aprofitable per al projecte i tracta correctament els fitxers o imatges quan formen part del flux.
+Fer visible el treball bàsic de programació en servidor que, una vegada les dades ja són correctes, les transforma en comportament real, aplica la lògica del flux, les conserva d’una manera funcional i tracta correctament els fitxers o imatges quan formen part del recorregut.
 
 **Què s’espera**
 
@@ -197,8 +199,10 @@ Fer visible el treball bàsic de programació en servidor que transforma les dad
 - Variables amb sentit.
 - Operadors i sentències bàsiques ben aplicats.
 - Tractament clar de la petició.
-- Una resposta generada a partir de les dades rebudes.
-- Un mecanisme simple i controlat per conservar la informació útil.
+- Tractament de la informació correcta amb una resposta generada a partir de les dades rebudes.
+- Aplicació d’una lògica bàsica de servidor sobre eixa informació.
+- Un mecanisme simple i controlat per conservar o persistir funcionalment la informació útil.
+- Primera reutilització posterior d’eixa informació dins del projecte.
 - Si hi ha imatge o fitxer en el flux, validació bàsica de tipus i grandària.
 - Error interpretable si el fitxer no és correcte.
 - Integració funcional del fitxer o la imatge dins del projecte.
@@ -218,8 +222,9 @@ En este microrepte es valorarà si pots:
 - Identificar quin paper té cada peça tècnica mínima del flux sobre la base comuna en `PHP`.
 - Explicar què fa el codi quan arriben les dades.
 - Demostrar que el tractament no és decoratiu.
-- Relacionar les dades d’entrada amb la resposta final.
+- Relacionar les dades d’entrada correctes amb la resposta final i amb la lògica aplicada.
 - Explicar quin mecanisme uses per guardar el que toca sense convertir el repte en un exercici d’arquitectura de dades.
+- Mostrar com eixa informació torna a aparéixer després dins del projecte.
 - Explicar com controles una imatge o un fitxer incorrectes quan el teu flux els usa.
 
 **Evidències principals**
@@ -229,15 +234,16 @@ En este microrepte es valorarà si pots:
 - Evidència d’ús real de variables i operadors.
 - Evidència d’alguna directiva o configuració bàsica aplicada amb sentit.
 - Demo del tractament correcte.
-- Demo d’una dada guardada de manera funcional.
+- Demo d’una dada correcta processada i guardada de manera funcional.
+- Demo de reutilització posterior d’eixa informació dins del projecte.
 - Demo d’un error de validació o de fitxer no vàlid quan corresponga.
 - Commits o issues relacionades.
 
 **Com es comprovarà**
 
 - Execució del flux amb dades reals.
-- Revisió del tram de codi que processa la petició, del punt on es conserva la informació i del control de fitxer o imatge quan existisca.
-- Pregunta breu sobre com es genera la pàgina o resposta, i sobre variables, operadors o pas de dades.
+- Revisió del tram de codi que processa la petició, del punt on es conserva la informació, de com es reutilitza després i del control de fitxer o imatge quan existisca.
+- Pregunta breu sobre com es genera la pàgina o resposta, com s’aplica la lògica del flux i com passa la informació correcta a quedar disponible després.
 
 ### Microrepte 3. Decisions, arrays, funcions i reutilització del que ja has guardat
 
