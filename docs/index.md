@@ -1,8 +1,8 @@
-# Inici
+# 🏠 Inici
 
 Este repositori és la porta d'entrada del curs per a alumnat. Ací tens la versió curta de com funciona el curs, com avançarà el projecte i què s'espera del teu treball.
 
-## Com va el curs
+## 📘 Com va el curs
 
 - Este mòdul es treballa per reptes.
 - No faràs peces inconnexes, sinó un mateix producte backend que va creixent.
@@ -11,7 +11,7 @@ Este repositori és la porta d'entrada del curs per a alumnat. Ací tens la vers
 - El mateix projecte pot continuar amb `Laravel`, `Symfony` o `NestJS`.
 - `FastAPI` només apareix com a via avançada o excepcional.
 
-## El projecte
+## 🧱 El projecte
 
 - Des del principi has de treballar sobre un projecte base recognoscible.
 - El projecte ha de poder créixer sense reiniciar-lo a cada repte.
@@ -19,7 +19,7 @@ Este repositori és la porta d'entrada del curs per a alumnat. Ací tens la vers
 - No val quedar-se en un esquelet buit o en una tècnica aïllada del tema.
 - El que construeixes en un repte ha de preparar el següent.
 
-## Cooperació i autoria
+## 🤝 Cooperació i autoria
 
 - El model base és el de parelles de contrast tècnic.
 - Podeu treballar sobre el mateix projecte i el mateix encàrrec funcional.
@@ -27,14 +27,14 @@ Este repositori és la porta d'entrada del curs per a alumnat. Ací tens la vers
 - Els trios avançats només són una opció puntual, no la modalitat general.
 - El repositori, les evidències i la defensa continuen sent individuals.
 
-## Què tens disponible
+## 🗂️ Què tens disponible
 
 - [Com funciona el curs](01_com_funciona_el_curs/index.md).
 - [Projecte base](05_projecte_base/index.md).
 - [Reptes](02_reptes/index.md).
 - [Com s'avalua](03_com_s_avalua/index.md).
 
-## Per on començar
+## 🚀 Per on començar
 
 Si és la primera vegada que entres, fes este recorregut.
 
@@ -44,7 +44,7 @@ Si és la primera vegada que entres, fes este recorregut.
 4. Obri [Repte 1](02_reptes/repte_01.md).
 5. Consulta [Com s'avalua](03_com_s_avalua/index.md).
 
-## Què s'espera de tu
+## ✅ Què s'espera de tu
 
 - Treball regular sobre el mateix repositori.
 - Mantindre el mateix projecte viu repte a repte.

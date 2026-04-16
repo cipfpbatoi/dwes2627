@@ -1,6 +1,6 @@
-# Reptes del curs
+# 🧩 Reptes del curs
 
-## Idea general
+## 💡 Idea general
 
 El curs funciona com un **projecte evolutiu basat en reptes**.
 
@@ -8,7 +8,7 @@ Això vol dir que els reptes no són activitats desconnectades. Cada repte té u
 
 El que construïxes en un repte ha de servir per al següent.
 
-## Com llegir els reptes
+## 🧭 Com llegir els reptes
 
 En cada repte trobaràs, com a mínim:
 
@@ -21,7 +21,7 @@ En cada repte trobaràs, com a mínim:
 
 La idea no és només saber “què toca ara”, sinó entendre què aporta cada repte al mateix projecte de curs.
 
-## Seqüència general del curs
+## 🗺️ Seqüència general del curs
 
 La progressió general és esta:
 
@@ -34,7 +34,7 @@ La progressió general és esta:
 
 Cada fase reutilitza el treball anterior. Per això, si un repte queda massa superficial, el següent es complica molt.
 
-## Què canvia d’un repte a un altre
+## 🔀 Què canvia d’un repte a un altre
 
 El producte continua sent el mateix, però el focus va canviant.
 
@@ -45,7 +45,7 @@ El producte continua sent el mateix, però el focus va canviant.
 - En `R5`, el sistema ja ha de connectar amb integracions o fluxos híbrids reals.
 - En la fase final, el focus està en provar, documentar i defendre el conjunt del producte.
 
-## Paper especial del Repte 2
+## 🧪 Paper especial del Repte 2
 
 El `Repte 2` té un paper especial dins del curs.
 
@@ -61,7 +61,7 @@ En esta fase, la prioritat és consolidar el flux complet de programació en ser
 
 El contrast de frameworks **encara no és el focus principal** en `R2`.
 
-## Quan entra el framework
+## 🛠️ Quan entra el framework
 
 El contrast de frameworks entra a partir del moment en què s’introduïx el framework, és a dir, des de `R3`.
 
@@ -75,7 +75,7 @@ Els frameworks base d’este tram són:
 
 `FastAPI` només es considera una opció avançada o excepcional, no un itinerari base general.
 
-## Mateix projecte, diferents fases
+## 🧱 Mateix projecte, diferents fases
 
 Encara que canvie el focus tècnic de cada repte, el projecte continua sent el mateix.
 
@@ -89,7 +89,7 @@ La seqüència del curs fa que el producte:
 
 Per això, els reptes no són peces aïllades. Són fases del mateix recorregut.
 
-## Cooperació i autoria
+## 🤝 Cooperació i autoria
 
 El projecte es pot treballar amb contrast tècnic.
 
@@ -110,7 +110,7 @@ Però continuen sent individuals:
 - Les evidències.
 - La defensa.
 
-## Què tenen en comú tots els reptes
+## ✅ Què tenen en comú tots els reptes
 
 En tots els reptes es valorarà que hi haja:
 
@@ -122,7 +122,7 @@ En tots els reptes es valorarà que hi haja:
 
 No convé avançar al següent repte si l’anterior encara no es pot revisar bé.
 
-## Accés ràpid
+## 🚀 Accés ràpid
 
 - [Repte 1](repte_01.md).
 - [Repte 2](repte_02.md).

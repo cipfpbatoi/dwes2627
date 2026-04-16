@@ -1,6 +1,6 @@
-# Com funciona el curs
+# 📘 Com funciona el curs
 
-## Idea general
+## 💡 Idea general
 
 Este mòdul es treballa com un **projecte evolutiu basat en reptes**.
 
@@ -8,7 +8,7 @@ No faràs pràctiques inconnexes ni un projecte diferent en cada tema. Treballar
 
 La idea clau és simple: el que construeixes en un repte ha de servir per al següent.
 
-## Seqüència del curs
+## 🧭 Seqüència del curs
 
 La seqüència general és esta:
 
@@ -20,7 +20,7 @@ La seqüència general és esta:
 
 Els reptes no són entregues independents. Cada repte aprofita l’anterior i prepara el següent.
 
-## Què canvia entre `R2` i `R3`
+## 🔀 Què canvia entre `R2` i `R3`
 
 `R2` és un tram comú. En esta fase, la prioritat no és comparar frameworks.
 
@@ -42,7 +42,7 @@ A partir d’eixe moment, el mateix projecte i el mateix encàrrec funcional pod
 
 `FastAPI` no és un itinerari base general per a alumnat. Només pot aparéixer com a opció avançada o excepcional.
 
-## Mateix projecte, diferents fases
+## 🧱 Mateix projecte, diferents fases
 
 Quan passa el curs del tram comú al tram de framework, no canvies de problema ni comences de zero.
 
@@ -55,7 +55,7 @@ Per això, des del principi convé que el projecte:
 - Admeta autenticació, persistència, `API` i integració.
 - Et permeta explicar decisions tècniques reals, no només estructures buides.
 
-## Cooperació i autoria
+## 🤝 Cooperació i autoria
 
 La cooperació és possible, però no substituïx l’autoria individual.
 
@@ -76,7 +76,7 @@ Però continuen sent individuals:
 - Les evidències.
 - La defensa.
 
-## Què s’espera del teu treball
+## ✅ Què s’espera del teu treball
 
 Al llarg del curs s’espera que sigues capaç de:
 
@@ -94,7 +94,7 @@ No és suficient:
 - Deixar funcionalitat sense proves ni comprovació real.
 - Entregar codi que no pots explicar.
 
-## Ús de la IA
+## 🤖 Ús de la IA
 
 La IA es pot usar com a ferramenta de suport.
 
@@ -109,7 +109,9 @@ Si uses IA, has de poder:
 - Justificar què has acceptat i què has descartat.
 - Demostrar que encaixa amb el comportament real del teu repositori.
 
-## Idea final
+Si vols el criteri complet, consulta la [Guia d'ús verificable de la IA](../04_materials/guia_us_verificable_ia.md).
+
+## 🎯 Idea final
 
 L’objectiu del curs no és només arribar a un producte que funcione.
 

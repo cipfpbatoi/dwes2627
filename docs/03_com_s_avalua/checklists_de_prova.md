@@ -1,4 +1,4 @@
-# Checklist de proves del Repte 2
+# 🧪 Checklist de proves del Repte 2
 
 Esta plantilla et servix per deixar rastre de les proves del `Repte 2`.
 
@@ -6,7 +6,7 @@ No substituïx la demo ni la defensa tècnica, però sí que t’ajuda a provar 
 
 Si una part del teu flux no aplica, marca-la com a `No aplica` i justifica-ho breument. Si tens més casos, afig-los.
 
-## 1. Dades del repte
+## 1. 🧾 Dades del repte
 
 | Camp | Valor |
 |---|---|
@@ -15,7 +15,7 @@ Si una part del teu flux no aplica, marca-la com a `No aplica` i justifica-ho br
 | Data de revisió |  |
 | Flux funcional provat |  |
 
-## 2. Proves del formulari
+## 2. 📝 Proves del formulari
 
 | Cas de prova | Entrada | Resultat esperat | Resultat obtingut | Incidències detectades |
 |---|---|---|---|---|
@@ -24,7 +24,7 @@ Si una part del teu flux no aplica, marca-la com a `No aplica` i justifica-ho br
 | Format incorrecte | Email, data, preu o altre camp amb format no vàlid | El sistema rebutja la dada i mostra un missatge clar |  |  |
 | Dades correctes | Tots els camps compleixen el mínim exigit | El sistema accepta l’enviament i passa al següent tram del flux |  |  |
 
-## 3. Proves de validació visible
+## 3. 👀 Proves de validació visible
 
 | Cas de prova | Entrada | Resultat esperat | Resultat obtingut | Incidències detectades |
 |---|---|---|---|---|
@@ -32,7 +32,7 @@ Si una part del teu flux no aplica, marca-la com a `No aplica` i justifica-ho br
 | Conservació de dades útils després d’error | Formulari amb un error i la resta correcta | Es mantenen les dades útils i només cal corregir el que falla |  |  |
 | Correcció i reenviament | Formulari primer incorrecte i després corregit | El segon enviament funciona sense perdre el flux |  |  |
 
-## 4. Proves de processament en servidor
+## 4. ⚙️ Proves de processament en servidor
 
 | Cas de prova | Entrada | Resultat esperat | Resultat obtingut | Incidències detectades |
 |---|---|---|---|---|
@@ -40,7 +40,7 @@ Si una part del teu flux no aplica, marca-la com a `No aplica` i justifica-ho br
 | Dades incorrectes rebutjades | Entrada inconsistent o manipulada | El servidor rebutja la petició i no continua el flux |  |  |
 | Aplicació de lògica del flux o del negoci | Cas amb condició, regla o càlcul | La decisió, funció, array o bucle afecta el resultat de manera visible |  |  |
 
-## 5. Proves de conservació o persistència funcional
+## 5. 💾 Proves de conservació o persistència funcional
 
 En el `Repte 2` la informació s’ha de poder conservar i reutilitzar.
 
@@ -52,7 +52,7 @@ Això es pot resoldre amb persistència simple o amb base de dades si així ho h
 | Recuperació posterior | Tornar a carregar el flux o consultar el recurs | La dada reapareix i continua sent usable |  |  |
 | Llistat o visualització del recurs | Accés a la vista, llistat o detall | El recurs creat es veu correctament |  |  |
 
-## 6. Proves de fitxer o imatge, si n’hi ha
+## 6. 🖼️ Proves de fitxer o imatge, si n’hi ha
 
 Si el teu flux no treballa amb fitxers o imatges, marca esta secció com a `No aplica`.
 
@@ -63,7 +63,7 @@ Si el teu flux no treballa amb fitxers o imatges, marca esta secció com a `No a
 | Grandària no permesa | Fitxer massa gran | El sistema bloqueja la pujada i informa del problema |  |  |
 | Associació del fitxer al recurs | Recurs creat o editat amb fitxer vàlid | El fitxer queda vinculat al recurs correcte |  |  |
 
-## 7. Proves d’estat i sessió
+## 7. 🔄 Proves d’estat i sessió
 
 | Cas de prova | Entrada | Resultat esperat | Resultat obtingut | Incidències detectades |
 |---|---|---|---|---|
@@ -71,7 +71,7 @@ Si el teu flux no treballa amb fitxers o imatges, marca esta secció com a `No a
 | Estat recuperat | Nou pas del flux o recàrrega | El sistema recupera l’estat i manté el comportament esperat |  |  |
 | Estat invalidat | Tancament, logout o neteja | L’estat deixa de ser vàlid i el sistema ho reflectix |  |  |
 
-## 8. Proves d’autenticació i funcionalitat protegida
+## 8. 🔒 Proves d’autenticació i funcionalitat protegida
 
 | Cas de prova | Entrada | Resultat esperat | Resultat obtingut | Incidències detectades |
 |---|---|---|---|---|
@@ -80,7 +80,7 @@ Si el teu flux no treballa amb fitxers o imatges, marca esta secció com a `No a
 | Sessió vàlida | Sessió iniciada correctament | El sistema reconeix l’usuari i manté l’accés mentre toca |  |  |
 | Tancament o invalidació | Logout o expiració | La funcionalitat protegida deixa d’estar disponible |  |  |
 
-## 9. Proves d’error i depuració
+## 9. 🐞 Proves d’error i depuració
 
 | Cas de prova | Entrada | Resultat esperat | Resultat obtingut | Incidències detectades |
 |---|---|---|---|---|
@@ -97,7 +97,7 @@ Eina o entorn utilitzat per provar o depurar:
 - registres o logs
 - altre:  ______________________
 
-## 10. Resum final de la prova
+## 10. ✅ Resum final de la prova
 
 ### Casos que funcionen correctament
 

@@ -1,6 +1,6 @@
-# Projecte base
+# 🧱 Projecte base
 
-## Què és el projecte base
+## 💡 Què és el projecte base
 
 En este curs no faràs pràctiques inconnexes ni un producte diferent en cada repte.
 
@@ -8,7 +8,7 @@ Treballaràs sobre un mateix projecte backend que anirà creixent de `R1` a `R5`
 
 El projecte base és just això: el producte que dona sentit al curs i que et permet avançar repte a repte sense començar de zero cada vegada.
 
-## Per a què servix
+## 🎯 Per a què servix
 
 El projecte base servix per convertir els reptes del curs en parts d’un mateix recorregut.
 
@@ -23,7 +23,7 @@ Gràcies a això, el curs et permet:
 
 Si cada tema fora una pràctica aïllada, tot això quedaria molt més superficial.
 
-## Com encaixa amb els reptes
+## 🧩 Com encaixa amb els reptes
 
 El projecte base es relaciona amb els reptes així:
 
@@ -35,7 +35,7 @@ El projecte base es relaciona amb els reptes així:
 
 Per tant, el projecte base no és una peça separada dels reptes. És el fil conductor de tot el curs.
 
-## Què han de tindre en comú tots els projectes base
+## ✅ Què han de tindre en comú tots els projectes base
 
 Qualsevol projecte base del curs ha de tindre uns mínims comuns.
 
@@ -51,11 +51,11 @@ Ha de permetre:
 
 Si un projecte no permet arribar de manera creïble a estos punts, no encaixa bé amb el curs.
 
-## Possibles projectes base
+## 🗂️ Possibles projectes base
 
 Els projectes base del curs no formen una llista infinita. Es treballa amb un conjunt curt i usable de contextos que encaixen bé amb els reptes.
 
-### 1. Gestor d’inventari amb rols i token d’operació
+### 1. 📦 Gestor d’inventari amb rols i token d’operació
 
 És un producte pensat per gestionar recursos, moviments i control d’operacions internes.
 
@@ -69,7 +69,7 @@ Pot servir per treballar:
 
 És una bona opció si vols un projecte amb rols clars, control d’accés i operacions que deixen rastre.
 
-### 2. Sistema de reserves amb tokens de confirmació o cancel·lació
+### 2. 📅 Sistema de reserves amb tokens de confirmació o cancel·lació
 
 És un producte pensat per gestionar reserves, disponibilitat i canvis d’estat.
 
@@ -83,7 +83,7 @@ Pot servir per treballar:
 
 És una bona opció si vols un projecte on la validació i els estats del flux siguen especialment importants.
 
-### 3. Gestor d’incidències amb invitació o seguiment extern tokenitzat
+### 3. 🛠️ Gestor d’incidències amb invitació o seguiment extern tokenitzat
 
 És un producte pensat per gestionar incidències, seguiment i comunicació amb tercers.
 
@@ -97,7 +97,7 @@ Pot servir per treballar:
 
 És una bona opció si vols un projecte amb més pes en l’estat del procés, l’assignació i el seguiment.
 
-## Què tenen en comú estos projectes
+## 🤝 Què tenen en comú estos projectes
 
 Encara que el context canvie, els tres projectes compartixen la mateixa idea de fons:
 
@@ -110,7 +110,7 @@ Encara que el context canvie, els tres projectes compartixen la mateixa idea de 
 
 Per això servixen per al curs. Canvia el context funcional, però no baixa l’exigència.
 
-## Com es concreta el projecte
+## 🧭 Com es concreta el projecte
 
 No convé obrir un catàleg infinit de possibilitats.
 
@@ -128,7 +128,7 @@ En qualsevol cas:
 
 La idea no és que cada persona faça una cosa completament diferent, sinó que totes les opcions mantinguen coherència amb el projecte evolutiu del curs.
 
-## Com triar bé
+## ✅ Com triar bé
 
 Convé triar o concretar un projecte que:
 
@@ -139,7 +139,7 @@ Convé triar o concretar un projecte que:
 - Puga créixer cap a persistència, `API` i integració.
 - Es puga provar i defendre sense forçar-lo artificialment.
 
-## Què no ha de passar
+## ⚠️ Què no ha de passar
 
 El projecte triat no hauria de ser:
 
@@ -149,7 +149,7 @@ El projecte triat no hauria de ser:
 - Massa tancat per créixer.
 - Ni tan complex que faça impossible arribar al final del curs.
 
-## Idea final
+## 🎯 Idea final
 
 El projecte base no és només el tema del teu backend.
 

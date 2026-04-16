@@ -3,20 +3,22 @@ site_url: https://cipfpbatoi.github.io/dwes2627/
 use_directory_urls: false
 
 nav:
-  - "Inici": "index.md"
-  - "Com funciona el curs": "01_com_funciona_el_curs/index.md"
-  - "Projecte base": "05_projecte_base/index.md"
-  - "Reptes":
-      - "Visió general": "02_reptes/index.md"
-      - "Repte 1": "02_reptes/repte_01.md"
-      - "Repte 2": "02_reptes/repte_02.md"
-      - "Repte 3": "02_reptes/repte_03.md"
-      - "Repte 4": "02_reptes/repte_04.md"
-      - "Repte 5": "02_reptes/repte_05.md"
-      - "Tancament i defensa": "02_reptes/fase_final.md"
-  - "Com s'avalua":
-      - "Visió general": "03_com_s_avalua/index.md"
-      - "Checklist de proves": "03_com_s_avalua/checklists_de_prova.md"
+  - "🏠 Inici": "index.md"
+  - "📘 Com funciona el curs":
+      - "🧭 Visió general": "01_com_funciona_el_curs/index.md"
+      - "🤖 Ús verificable de la IA": "04_materials/guia_us_verificable_ia.md"
+  - "🧱 Projecte base": "05_projecte_base/index.md"
+  - "🧩 Reptes":
+      - "👀 Visió general": "02_reptes/index.md"
+      - "1️⃣ Repte 1": "02_reptes/repte_01.md"
+      - "2️⃣ Repte 2": "02_reptes/repte_02.md"
+      - "3️⃣ Repte 3": "02_reptes/repte_03.md"
+      - "4️⃣ Repte 4": "02_reptes/repte_04.md"
+      - "5️⃣ Repte 5": "02_reptes/repte_05.md"
+      - "🎓 Tancament i defensa": "02_reptes/fase_final.md"
+  - "📏 Com s'avalua":
+      - "👀 Visió general": "03_com_s_avalua/index.md"
+      - "🧪 Checklist de proves": "03_com_s_avalua/checklists_de_prova.md"
 theme:
   language: ca
   favicon: imagenes/favicon.png

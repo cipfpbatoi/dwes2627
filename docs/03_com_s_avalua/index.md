@@ -1,6 +1,6 @@
-# Com s’avalua
+# 📏 Com s’avalua
 
-## Idea general
+## 💡 Idea general
 
 En este curs no s’avalua només si el producte “funciona”.
 
@@ -15,7 +15,7 @@ També s’avalua si eres capaç de:
 
 La idea clau és esta: no n’hi ha prou amb entregar una solució. Cal poder demostrar què fa, com ho fa i per què està feta així.
 
-## Què és una evidència
+## 🧾 Què és una evidència
 
 Una evidència és una prova real del treball que has fet i del que saps fer.
 
@@ -32,11 +32,11 @@ Pot ser, per exemple:
 
 Les evidències no servixen per decorar l’entrega. Servixen perquè es puga revisar el teu treball real.
 
-## Tipus d’evidències
+## 🗂️ Tipus d’evidències
 
 Les evidències que es poden demanar solen caure en tres grups.
 
-### Evidències de producte
+### 🧱 Evidències de producte
 
 Mostren què has construït.
 
@@ -47,7 +47,7 @@ Per exemple:
 - Una `API` publicada.
 - Una integració que funciona.
 
-### Evidències de procés
+### 🔄 Evidències de procés
 
 Mostren com has treballat.
 
@@ -60,7 +60,7 @@ Per exemple:
 - Comparació entre versions.
 - `AI log`, si la IA ha tingut pes real.
 
-### Evidències de comprensió
+### 🧠 Evidències de comprensió
 
 Mostren que entens el que presentes.
 
@@ -71,7 +71,7 @@ Per exemple:
 - Un canvi menut en directe.
 - L’explicació d’un error, una correcció o una decisió.
 
-## Com es comprova l’aprenentatge real
+## 🔍 Com es comprova l’aprenentatge real
 
 L’aprenentatge real es pot comprovar de diverses maneres.
 
@@ -89,13 +89,13 @@ Per exemple:
 
 El criteri de fons és sempre el mateix: si pots traçar, explicar, provar i defensar el que presentes.
 
-## Recursos de verificació
+## 🧪 Recursos de verificació
 
 Si estàs tancant el `Repte 2`, tens una [checklist de proves](checklists_de_prova.md) que et pot ajudar a registrar casos de prova, errors visibles, estat, autenticació i funcionalitat protegida.
 
 Esta checklist és una ajuda útil per provar el repte i deixar una evidència de verificació, però no substituïx la demo ni la defensa tècnica.
 
-## Ús de la IA i avaluació
+## 🤖 Ús de la IA i avaluació
 
 La IA es pot usar com a eina de suport.
 
@@ -113,7 +113,7 @@ El que es valorarà és si pots:
 
 Si una part important del treball ha passat per IA, ha de quedar rastre mínim i has de poder explicar què has acceptat, què has descartat i com ho has comprovat.
 
-## Treball cooperatiu i autoria individual
+## 🤝 Treball cooperatiu i autoria individual
 
 El curs pot tindre treball cooperatiu, però l’avaluació continua sent individual.
 
@@ -137,7 +137,7 @@ Però continuen sent individuals:
 
 Això vol dir que no et pots amagar darrere del treball de la parella o del trio. Has de poder explicar i defensar la teua part.
 
-## Checkpoints i defenses
+## 🎓 Checkpoints i defenses
 
 Un checkpoint és una revisió curta del punt en què està el teu treball.
 
@@ -160,7 +160,7 @@ En una defensa s’espera que pugues:
 - Explicar l’ús de la IA, si n’has fet.
 - Respondre preguntes o fer un microcanvi.
 
-## Què no és suficient
+## ⚠️ Què no és suficient
 
 No és suficient:
 
@@ -173,7 +173,7 @@ No és suficient:
 
 Una presentació que parega correcta no compensa falta de proves, falta de traçabilitat o falta de comprensió real.
 
-## Idea final
+## 🎯 Idea final
 
 En este curs es valora sobretot si el teu treball és:
 
