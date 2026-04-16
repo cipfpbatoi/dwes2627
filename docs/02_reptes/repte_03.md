@@ -64,6 +64,25 @@ La frontera entre `R2` i `R3` ha de quedar clara:
 
 Per tant, `R3` no consistix a repetir el formulari, la validació i l’autenticació dins d’un framework. Consistix a agarrar una funcionalitat que ja existix i reconstruir-la amb una arquitectura millor i amb persistència suficient.
 
+## Com conviuen `R2` i `R3`
+
+En este repte no es demana mantindre dues implementacions actives del mateix flux alhora.
+
+La convivència bona és esta:
+
+- el projecte continua sent el mateix
+- el codi de `R2` et servix com a punt de partida, referència o traçabilitat
+- el framework nou passa a ser la via principal del cas d’ús que migres
+- la resta de peces que encara no hages migrat poden quedar pendents o com a deute tècnic controlat
+
+Per tant:
+
+- no cal muntar un servidor web que servisca alhora el `PHP` antic i el framework nou
+- no cal mantindre dues versions igualment actives del mateix cas d’ús
+- no convé duplicar indefinidament el mateix flux en dos tecnologies diferents
+
+Si necessites conservar la versió anterior, pots fer-ho com a historial del repositori, en una branca, en un punt de Git, en un directori `legacy/` o en peces que encara no s’han migrat. El que importa és que la implementació nova siga la principal per al cas d’ús que estàs professionalitzant.
+
 ## Frameworks base i forma de treball
 
 A partir d’este repte, el projecte pot continuar-se en estes vies base:
@@ -132,6 +151,7 @@ Introduir el framework triat sense perdre el fil del projecte i deixar una estru
 - estructura base recognoscible del framework
 - primera organització de carpetes, mòduls o peces principals amb sentit
 - connexió clara entre el projecte de `R2` i la nova base
+- pas a la nova base sense necessitat de mantindre dues versions actives del mateix flux alhora
 
 **Criteris d’avaluació que es treballen**
 
