@@ -18,6 +18,7 @@ nav:
       - "🎓 Tancament i defensa": "02_reptes/fase_final.md"
   - "📏 Com s'avalua":
       - "👀 Visió general": "03_com_s_avalua/index.md"
+      - "📝 Report breu d'ús de la IA": "03_com_s_avalua/report_breu_ús_ia.md"
       - "🧪 Checklist de proves": "03_com_s_avalua/checklists_de_prova.md"
 theme:
   language: ca

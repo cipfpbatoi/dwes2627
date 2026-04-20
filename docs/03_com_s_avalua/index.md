@@ -28,7 +28,7 @@ Pot ser, per exemple:
 - Documentació tècnica.
 - Una demo o una execució reproduïble.
 - Una defensa tècnica.
-- `AI log` o registre equivalent, quan corresponga.
+- `Report breu d’ús de la IA` o registre equivalent, quan corresponga.
 
 Les evidències no servixen per decorar l’entrega. Servixen perquè es puga revisar el teu treball real.
 
@@ -58,7 +58,7 @@ Per exemple:
 - Issues o tasques.
 - Documentació de decisions.
 - Comparació entre versions.
-- `AI log`, si la IA ha tingut pes real.
+- `Report breu d’ús de la IA`, si la IA ha tingut pes rellevant.
 
 ### 🧠 Evidències de comprensió
 
@@ -97,11 +97,9 @@ Esta checklist és una ajuda útil per provar el repte i deixar una evidència d
 
 ## 🤖 Ús de la IA i avaluació
 
-La IA es pot usar com a eina de suport.
+En este curs es dona per fet que usaràs la IA de manera habitual.
 
-Et pot ajudar a explorar alternatives, detectar errors, generar un primer esquelet, revisar documentació o proposar proves.
-
-Però la IA no substituïx la teua responsabilitat tècnica.
+No es tracta d’evitar-la ni d’amagar-la. Es tracta d’usar-la amb criteri i de poder demostrar què has entés, què has aprofitat i què has validat tu.
 
 El que es valorarà és si pots:
 
@@ -111,7 +109,25 @@ El que es valorarà és si pots:
 - Corregir-lo si falla.
 - Defendre el que presentes.
 
-Si una part important del treball ha passat per IA, ha de quedar rastre mínim i has de poder explicar què has acceptat, què has descartat i com ho has comprovat.
+### 📝 Report breu d’ús de la IA
+
+Quan la IA haja influït de manera rellevant en el treball que presentes, has d’entregar el [Report breu d’ús de la IA](report_breu_ús_ia.md).
+
+S’ha d’entregar:
+
+- Almenys al final de cada repte.
+- També es pot demanar en checkpoints importants.
+- En defenses tècniques.
+- En microreptes amb ús intensiu d’IA.
+- En situacions en què calga verificar millor l’autoria.
+
+No cal:
+
+- Fer un report per cada consulta menuda o trivial.
+- Registrar cada ús menor.
+- Omplir-lo si la IA no ha afectat de manera rellevant el treball presentat.
+
+La idea és deixar un rastre breu del que has demanat, del que has aprofitat realment i del que pots explicar o defendre després.
 
 ## 🤝 Treball cooperatiu i autoria individual
 
