@@ -7,6 +7,9 @@ nav:
   - "📘 Com funciona el curs":
       - "🧭 Visió general": "01_com_funciona_el_curs/index.md"
       - "🤖 Ús verificable de la IA": "04_materials/guia_us_verificable_ia.md"
+  - "📚 Materials":
+      - "👀 Visió general": "04_materials/index.md"
+      - "📝 Fitxa d'exploració tècnica inicial": "04_materials/fitxa_exploracio_tecnica_inicial.md"
   - "🧱 Projecte base": "05_projecte_base/index.md"
   - "🧩 Reptes":
       - "👀 Visió general": "02_reptes/index.md"

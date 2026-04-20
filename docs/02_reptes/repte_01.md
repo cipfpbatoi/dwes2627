@@ -64,13 +64,22 @@ Entendre què s’executa en client i què s’executa en servidor, i prendre un
 
 **Què has de fer**
 
-Has de preparar una explicació breu del model client/servidor i justificar quina base tècnica utilitzaràs per començar el projecte.
+Has de completar una [fitxa breu d’exploració tècnica inicial](../04_materials/fitxa_exploracio_tecnica_inicial.md) i justificar quina base tècnica utilitzaràs per començar el projecte.
+
+Esta exploració es pot fer amb ajuda d’IA.
+
+No busca una comparativa exhaustiva ni un informe llarg. Busca sobretot comprensió inicial, criteri tècnic i capacitat d’explicar amb què començaries i quins dubtes tècnics tens oberts.
+
+No cal adjuntar captures de totes les converses amb IA.
 
 En este microrepte no es tracta encara d’instal·lar el framework complet, sinó de:
 
 - Entendre el paper del navegador.
 - Entendre el paper del servidor web.
 - Entendre el paper del codi de servidor.
+- Identificar tecnologies de client i de servidor.
+- Explorar de manera breu possibles stacks o frameworks.
+- Comparar de manera inicial exemples com `Laravel`, `Symfony` i `NestJS`.
 - Decidir amb quin marc tècnic inicial arrancarà el projecte.
 
 **Criteris d’avaluació que es treballen**
@@ -92,13 +101,15 @@ En este microrepte es valorarà si pots:
 **Evidències obligatòries**
 
 - Esquema simple client/servidor.
-- Explicació breu del model d’execució.
-- Comparativa o decisió tècnica inicial.
+- Fitxa breu d’exploració tècnica inicial.
+- Primera decisió tècnica orientativa.
 - Justificació breu de la base triada.
+- Dubtes tècnics detectats.
 
 **Com es comprovarà**
 
-- Revisió de l’esquema i de la justificació.
+- Revisió de l’esquema, de la fitxa i de la justificació.
+- Posada en comú oral breu al final del microrepte o a l’inici del següent tram.
 - Pregunta oral breu sobre què s’executa en client i què en servidor.
 - Contrast entre la decisió tècnica i el projecte que després es munta.
 
@@ -263,6 +274,7 @@ Per considerar complet el repte, hauràs d’aportar com a mínim:
 - Repositori actualitzat i usable.
 - Issue mare del kickoff o registre equivalent.
 - Historial de commits significatiu.
+- Fitxa breu d’exploració tècnica inicial del microrepte `1`.
 - `README` executable.
 - Docker Compose o equivalent funcional.
 - Justificació tècnica breu o `ADR` curt.
@@ -332,7 +344,7 @@ En el **Repte 1** no es demana encara la instal·lació completa d’un framewor
 
 La prioritat és disposar d’un entorn executable en **Docker + PHP + servidor web** i construir una primera peça funcional mínima del backend.
 
-La decisió sobre el framework pot aparéixer com a comparativa o orientació inicial, però la seua incorporació efectiva es reserva per a fases posteriors del curs.
+La decisió sobre el framework pot aparéixer com a exploració inicial o orientació tècnica dins de la fitxa breu del microrepte `1`, però la seua incorporació efectiva es reserva per a fases posteriors del curs.
 
 ## Què prepara este repte
 
