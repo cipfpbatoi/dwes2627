@@ -11,7 +11,7 @@ Ara el backend ja no ha de limitar-se a rebre una petició i respondre. Ha de se
 - Permetre correcció i reintent.
 - Processar la informació amb lògica bàsica.
 - Conservar la informació correcta perquè després es puga reutilitzar.
-- Mantindre estat, sessió i/o cookies quan faça falta.
+- Mantindre estat quan faça falta.
 - Autenticar usuaris i gestionar sessions quan toque.
 - Protegir una primera funcionalitat del projecte.
 
@@ -22,22 +22,6 @@ L’equip ja té una base executable del producte després del `Repte 1`.
 Ara toca fer un pas més seriós: convertir eixa base en una funcionalitat real de producte, amb entrada de dades, comportament coherent de servidor, conservació d’informació útil i control d’accés.
 
 En un entorn professional, este és el moment en què el sistema deixa de ser només una prova tècnica i comença a gestionar informació que després torna a aparéixer dins del mateix producte.
-
-## Posició del repte dins del mòdul
-
-`R2` és el tram comú del mòdul i es resol sobre una base comuna en `PHP`.
-
-En esta fase convé tindre clars estos límits:
-
-- El contrast fort de frameworks no entra ací.
-- `R3` serà el punt d’entrada dels itineraris diferenciats.
-- Este repte no es resol amb un simple formulari i un `login` aïllats.
-- La persistència pot aparéixer com a suport funcional del flux.
-- La persistència encara no és el focus principal del repte.
-
-## Desplegament en aula
-
-La seqüència operativa d’este repte es concreta en la [Programació d’aula del Repte 2](repte_02_programacio_aula.md), organitzada en sis sessions de tres hores alineades amb els microprojectes que tens més avall.
 
 ## Què has de construir
 
@@ -50,7 +34,7 @@ En este repte has de fer evolucionar el projecte fins a deixar, com a mínim:
 - Conservació o persistència funcional de la informació correcta.
 - Reutilització posterior d’eixa informació dins del projecte.
 - Si el flux ho demana, tractament d’imatge o fitxer amb control bàsic de tipus i grandària.
-- Evidència de manteniment d’estat, sessió i/o cookies quan aporte sentit al flux.
+- Evidència de manteniment d’estat o sessió.
 - Autenticació funcional.
 - Una operació real del projecte protegida i lligada al domini triat.
 - Un cas positiu i un cas negatiu.
@@ -69,16 +53,14 @@ Al final del repte hauries de poder mostrar un recorregut complet com este:
 - La informació correcta queda conservada en un mecanisme controlat.
 - El projecte pot recuperar o reutilitzar eixa informació més avant.
 - El sistema aplica una regla o una decisió.
-- Es manté estat, sessió i/o cookies quan és necessari.
+- Es manté estat quan és necessari.
 - El sistema comprova si l’acció està permesa.
 - Una funcionalitat del producte queda protegida.
 - Es pot demostrar què passa en el cas correcte i en el cas denegat.
 
 No cal que siga un producte gran. Sí que cal que siga un flux complet, explicable i verificable.
 
-La seqüència ha de quedar clara: primer arriben les dades i es validen; després, només si són correctes, es processen i es guarden per poder reutilitzar-les; després s’apliquen regles del projecte; després es manté estat, sessió i/o cookies quan fa falta; després es protegix una acció real; i, al final, es tanca la prova i la revisió de tot el recorregut.
-
-La prova i la depuració no han d’aparéixer només al final com una frase decorativa. Cada microprojecte ha de deixar una comprovació funcional curta del tram que s’ha tancat, i el microprojecte final servix per consolidar, documentar i revisar el conjunt.
+La seqüència ha de quedar clara: primer arriben les dades i es validen; després, només si són correctes, es processen i es guarden per poder reutilitzar-les; després s’apliquen regles del projecte; després es manté estat quan fa falta; després es protegix una acció real; i, al final, es prova i es revisa tot el recorregut.
 
 Per tant, el formulari no compta com a repte complet si només envia dades i torna un missatge genèric. Ha d’estar integrat en una funcionalitat real del projecte, amb tractament, conservació i reutilització posterior.
 
@@ -100,7 +82,7 @@ La prioritat continua sent:
 
 - Tractament de dades.
 - Lògica bàsica.
-- Estat, sessió i/o cookies quan toque.
+- Estat o sessió.
 - Autenticació.
 - Funcionalitat protegida.
 
@@ -113,7 +95,7 @@ La persistència d’este repte es pot resoldre preferentment amb un mecanisme s
 Per exemple, es pot treballar amb:
 
 - Persistència estructurada senzilla.
-- Estat, sessió, cookies o emmagatzematge controlat, quan siga coherent amb el flux.
+- Estat o emmagatzematge controlat.
 - Mecanismes simples de conservació dins del backend.
 - Base de dades, només si el professorat ho establix o si el projecte realment ho demana.
 
@@ -125,7 +107,7 @@ La base de dades pot aparéixer, però no constituïx encara el focus principal 
 
 En este repte no n’hi ha prou amb:
 
-- Fer només formulari, registre, `login` i `logout`.
+- Fer només registre, `login` i `logout`.
 - Protegir una ruta decorativa o sense valor dins del projecte.
 - Confondre estat, autenticació, autorització i persistència.
 - Validar només el cas feliç.
@@ -144,19 +126,17 @@ La pregunta útil no és només “quin formulari faré?”, sinó “quina acci
 
 ## Exemples breus segons projecte base
 
-- **Tenda o catàleg**: alta o edició d’un producte amb nom, preu, categoria i imatge. Si falta un camp o la imatge no compleix tipus o grandària, el sistema ho ha de mostrar, permetre correcció i, quan la dada siga correcta, deixar el producte guardat per poder-lo tornar a mostrar en el catàleg o en una zona protegida.
-- **Activitats, reserves o esdeveniments**: creació d’una reserva, d’una activitat o d’un esdeveniment amb data, places i possibles dades adjuntes com un cartell o comprovant. El flux ha de validar dades, respondre amb errors clars si alguna cosa no és correcta i deixar l’activitat o la reserva disponible per recuperar-la o gestionar-la després.
-- **Recursos, publicacions o continguts**: alta d’un recurs, notícia o publicació amb títol, descripció i, quan toque, miniatura, imatge o document adjunt. El servidor ha de validar l’entrada, controlar el fitxer i permetre que la publicació o el recurs es puguen tornar a mostrar més avant dins del projecte.
+- **Plataforma de productes**: alta o edició d’un producte amb nom, preu, categoria i imatge. Si falta un camp o la imatge no compleix tipus o grandària, el sistema ho ha de mostrar, permetre correcció i, quan la dada siga correcta, deixar el producte guardat per poder-lo tornar a mostrar en el catàleg o en una zona protegida.
+- **Gestor de reserves o activitats**: creació d’una reserva o d’una activitat amb data, places i possibles dades adjuntes com un cartell o comprovant. El flux ha de validar dades, respondre amb errors clars si alguna cosa no és correcta i deixar l’activitat o la reserva disponible per recuperar-la o gestionar-la després.
+- **Plataforma de recursos o publicacions**: alta d’un recurs, notícia o publicació amb títol, descripció i, quan toque, miniatura, imatge o document adjunt. El servidor ha de validar l’entrada, controlar el fitxer i permetre que la publicació o el recurs es puguen tornar a mostrar més avant dins del projecte.
 
-## Microprojectes del Repte 2
+## Microreptes del Repte 2
 
 Per treballar bé este repte convé dividir-lo en sis peces clares. Això ajuda a no reduir-lo a un simple `login` i a entendre què s’està construint en cada fase.
 
-La progressió també és important: en el microprojecte 1 entra i es valida la informació; en el 2 es processen i es guarden les dades correctes; en el 3 s’apliquen regles reals del projecte; en el 4 es conserva estat temporal del flux amb sessió i/o cookies quan toque; en el 5 es protegix una operació real; i en el 6 es prova, es depura i es revisa tot el conjunt.
+La progressió també és important: en el microrepte 1 entra i es valida la informació; en el 2 es processen i es guarden les dades correctes; en el 3 s’apliquen regles reals del projecte; en el 4 es conserva estat temporal del flux; en el 5 es protegix una operació real; i en el 6 es prova, es depura i es revisa tot el conjunt.
 
-Cada microprojecte ha de deixar una evidència funcional curta i revisable. La sessió final no substituïx eixes comprovacions intermèdies, sinó que les ordena i les tanca.
-
-### Microprojecte 1. Formulari i validació visible
+### Microrepte 1. Formulari i validació visible
 
 **Objectiu**
 
@@ -181,7 +161,7 @@ Construir un punt d’entrada de dades usable i demostrar que el sistema rep la 
 
 **Què vol dir això en llenguatge clar**
 
-En este microprojecte es valorarà si pots:
+En este microrepte es valorarà si pots:
 
 - Fer arribar dades reals al servidor.
 - Explicar d’on ix cada dada i com es recupera.
@@ -205,7 +185,7 @@ En este microprojecte es valorarà si pots:
 - Revisió del flux de dades, dels errors mostrats i de com es reprén el formulari després de corregir-los.
 - Pregunta breu sobre com arriba la informació al servidor, com es valida i per què el flux no continua si hi ha errors.
 
-### Microprojecte 2. Processament i guardat funcional
+### Microrepte 2. Processament i guardat funcional
 
 **Objectiu**
 
@@ -223,7 +203,6 @@ Fer visible el treball bàsic de programació en servidor que, una vegada les da
 - Processament en servidor de la informació correcta amb una resposta generada a partir de les dades rebudes.
 - Un mecanisme simple i controlat per guardar o persistir funcionalment la informació útil.
 - Primera reutilització posterior d’eixa informació dins del projecte.
-- Si apareix base de dades, ús justificat com a suport funcional del flux i no com a focus metodològic del repte.
 - Si hi ha imatge o fitxer en el flux, validació bàsica de tipus i grandària.
 - Error interpretable si el fitxer no és correcte.
 - Integració funcional del fitxer o la imatge dins del projecte.
@@ -237,7 +216,7 @@ Fer visible el treball bàsic de programació en servidor que, una vegada les da
 
 **Què vol dir això en llenguatge clar**
 
-En este microprojecte es valorarà si pots:
+En este microrepte es valorarà si pots:
 
 - Explicar on s’executa el codi de servidor i com arriba el resultat al navegador o al client.
 - Identificar quin paper té cada peça tècnica mínima del flux sobre la base comuna en `PHP`.
@@ -246,7 +225,6 @@ En este microprojecte es valorarà si pots:
 - Relacionar les dades d’entrada correctes amb la resposta final i amb el recurs que queda guardat.
 - Explicar quin mecanisme uses per guardar el que toca sense convertir el repte en un exercici d’arquitectura de dades.
 - Mostrar com eixa informació torna a aparéixer després dins del projecte.
-- Explicar per què, si uses base de dades, ací continua sent un suport funcional i no el centre del repte.
 - Explicar com controles una imatge o un fitxer incorrectes quan el teu flux els usa.
 
 **Evidències principals**
@@ -267,7 +245,7 @@ En este microprojecte es valorarà si pots:
 - Revisió del tram de codi que processa la petició, del punt on es guarda funcionalment la informació, de com es reutilitza després i del control de fitxer o imatge quan existisca.
 - Pregunta breu sobre com es genera la pàgina o resposta, com es tracta la informació correcta i com passa a quedar disponible després.
 
-### Microprojecte 3. Lògica del flux i regles del projecte
+### Microrepte 3. Lògica del flux i regles del projecte
 
 **Objectiu**
 
@@ -289,7 +267,7 @@ Aplicar lògica bàsica de programació perquè el backend no es limite a rebre 
 
 **Què vol dir això en llenguatge clar**
 
-En este microprojecte es valorarà si pots:
+En este microrepte es valorarà si pots:
 
 - Fer que el sistema prenga decisions segons les dades rebudes
 - Aplicar alguna regla del projecte
@@ -341,19 +319,19 @@ Pots fer que el sistema:
 - Pregunta oral breu sobre la regla implementada
 - Comprovació que la lògica no és ornamental, sinó útil per al projecte
 
-### Microprojecte 4. Estat, sessió i/o cookies per conservar el flux
+### Microrepte 4. Estat i sessió per conservar el flux
 
 **Objectiu**
 
-Demostrar que el sistema pot recordar informació provisional entre peticions per no perdre el fil del recorregut, recuperar un esborrany o unes seleccions temporals i invalidar-les quan ja no facen falta, amb sessió, cookies o un mecanisme equivalent, sense convertir encara este punt en un model complet d’usuari.
+Demostrar que el sistema pot recordar informació provisional entre peticions per no perdre el fil del recorregut, recuperar un esborrany o unes seleccions temporals i invalidar-les quan ja no facen falta, sense convertir encara este punt en un model complet d’usuari.
 
 **Què s’espera**
 
-- Un mecanisme d’estat real basat en sessió, cookies o un suport equivalent coherent amb el flux.
+- Un mecanisme d’estat real o equivalent.
 - Dades provisionals amb sentit dins del flux: esborranys, seleccions temporals, pas actual o informació pendent de confirmar.
-- Evidència de què es guarda en estat, sessió o cookies i de com es recupera.
+- Evidència de què es guarda en estat o sessió i de com es recupera.
 - Recuperació del flux després d’un error, una recàrrega o un pas intermedi.
-- Si hi ha informació guardada en client, prova de lectura i recuperació amb criteri clar sobre què es deixa en client i què no.
+- Si hi ha informació guardada en client, prova de lectura i recuperació.
 - Distinció clara entre estat temporal del flux i guardat funcional del recurs.
 - Neteja o invalidació quan toque.
 
@@ -364,7 +342,7 @@ Demostrar que el sistema pot recordar informació provisional entre peticions pe
 
 **Què vol dir això en llenguatge clar**
 
-En este microprojecte es valorarà si pots:
+En este microrepte es valorarà si pots:
 
 - Explicar què guarda el sistema i per què és provisional.
 - Distingir entre estat, sessió, cookies i altres mecanismes equivalents.
@@ -387,7 +365,7 @@ En este microprojecte es valorarà si pots:
 - Pregunta breu sobre què es guarda, on, amb quina finalitat i si queda en client o en servidor.
 - Contrast entre el que dius i el que realment passa al flux.
 
-### Microprojecte 5. Autenticació i funcionalitat protegida
+### Microrepte 5. Autenticació i funcionalitat protegida
 
 **Objectiu**
 
@@ -406,18 +384,12 @@ Connectar tot el flux anterior amb una necessitat real del producte: una operaci
 
 **Què vol dir això en llenguatge clar**
 
-En este microprojecte es valorarà si pots:
+En este microrepte es valorarà si pots:
 
 - Diferenciar entre estar autenticat i estar autoritzat.
 - Protegir una acció amb valor real dins del projecte, no un exemple genèric.
 - Demostrar què passa quan l’acció està permesa i quan no ho està.
 - Mostrar que la funcionalitat protegida treballa amb informació que després continua tenint sentit dins del producte.
-
-**Exemples segons projecte**
-
-- **Tenda o catàleg**: alta, edició o publicació d’un producte només des d’una sessió vàlida o d’un perfil autoritzat.
-- **Activitats, reserves o esdeveniments**: confirmació, cancel·lació o gestió de places només per a qui té permís d’accés sobre eixa operació.
-- **Recursos, publicacions o continguts**: creació, edició o publicació d’un recurs en una zona protegida, amb prova del cas autoritzat i del cas denegat.
 
 **Evidències principals**
 
@@ -435,7 +407,7 @@ En este microprojecte es valorarà si pots:
 - Revisió de si la dada creada o recuperada forma part del flux protegit.
 - Pregunta oral sobre en quin punt es bloqueja o es permet l’acció.
 
-### Microprojecte 6. Prova, depuració, documentació mínima i revisió final
+### Microrepte 6. Prova, depuració i revisió final
 
 **Objectiu**
 
@@ -444,7 +416,6 @@ Comprovar que el flux complet funciona, que queda registrat amb una checklist o 
 **Què s’espera**
 
 - Checklist o taula simple de casos de prova.
-- Registre mínim de proves que arranca en els microprojectes anteriors i es consolida ací.
 - Prova del cas correcte.
 - Prova d’un cas d’error o denegació.
 - Revisió d’errors i validacions.
@@ -460,7 +431,7 @@ Comprovar que el flux complet funciona, que queda registrat amb una checklist o 
 
 **Què vol dir això en llenguatge clar**
 
-En este microprojecte es valorarà si pots:
+En este microrepte es valorarà si pots:
 
 - Demostrar que el flux funciona de veritat.
 - Detectar errors i explicar-los.
@@ -486,25 +457,13 @@ En este microprojecte es valorarà si pots:
 - Contrast entre documentació, repositori i resultat real.
 - Defensa tècnica breu sobre el flux complet.
 
-## Fil de prova i depuració al llarg del repte
-
-La prova i la depuració no s’esperen només en l’últim tram del repte.
-
-En cada microprojecte convé deixar, com a mínim:
-
-- Una comprovació funcional breu del que s’ha tancat en eixa fase.
-- Una anotació mínima de l’error detectat o de la verificació superada.
-- Una actualització curta del `README`, de la checklist o de la guia de reproducció si el flux ha canviat.
-
-El microprojecte 6 reunix, depura i documenta estes comprovacions, però no les substituïx.
-
 ## Com es reparteixen els criteris dins del repte
 
 Per orientar-te sense convertir el repte en una llista normativa, pots llegir-lo així:
 
-- `RA2` apareix sobretot en el microprojecte 2: ací entra la base comuna en `PHP`, la generació de pàgines o respostes amb codi embegut, la sintaxi, les sentències, les directives, les variables, els operadors i els àmbits.
-- `RA3` apareix sobretot en els microprojectes 1 i 3: formularis, recuperació de dades, comentaris útils, decisions, bucles, arrays i funcions.
-- `RA4` apareix sobretot en els microprojectes 4, 5 i 6: estat, sessió, emmagatzematge en client quan toque, autenticació, funcionalitat protegida, prova i depuració.
+- `RA2` apareix sobretot en el microrepte 2: ací entra la base comuna en `PHP`, la generació de pàgines o respostes amb codi embegut, la sintaxi, les sentències, les directives, les variables, els operadors i els àmbits.
+- `RA3` apareix sobretot en els microreptes 1 i 3: formularis, recuperació de dades, comentaris útils, decisions, bucles, arrays i funcions.
+- `RA4` apareix sobretot en els microreptes 4, 5 i 6: estat, emmagatzematge en client quan toque, autenticació, funcionalitat protegida, prova i depuració.
 
 ## Criteris que es treballen en este repte
 
@@ -541,7 +500,7 @@ En este moment del curs, la prioritat és consolidar el flux complet en servidor
 - Entrada de dades i validació visible.
 - Processament i guardat funcional.
 - Lògica del flux i regles del projecte.
-- Estat, sessió i/o cookies quan faça falta.
+- Estat o sessió quan faça falta.
 - Autenticació i funcionalitat protegida.
 - Prova, depuració i revisió final.
 
@@ -551,7 +510,7 @@ Però això no vol dir que ara toque convertir el repte en un bloc d’accés a 
 
 El contrast de frameworks i la consolidació arquitectònica encara no són el focus principal. No toca reescriure el projecte en `Laravel`, `Symfony` o `NestJS` abans d’hora, ni convertir `R2` en una carrera per veure qui munta la persistència més sofisticada.
 
-Ara toca demostrar una base funcional comuna i defensable. Després arribarà `R3`, punt d’entrada dels itineraris diferenciats amb `Laravel`, `Symfony` o `NestJS`, i serà allí quan la persistència passarà a tindre un pes més central en l’arquitectura.
+Ara toca demostrar una base funcional comuna i defensable. Després arribarà el contrast amb itineraris com `Laravel`, `Symfony` o `NestJS`, i serà en `R3` quan la persistència passarà a tindre un pes més central en l’arquitectura.
 
 ## Si et bloqueges
 
@@ -760,4 +719,4 @@ Este repte deixa el producte preparat per al següent pas del curs:
 - Reorganitzar millor el codi.
 - Millorar l’arquitectura.
 - Donar més pes a la persistència quan arribe `R3`.
-- Obrir els itineraris diferenciats de framework sense canviar de projecte.
+- Introduir el framework sense canviar de projecte.
