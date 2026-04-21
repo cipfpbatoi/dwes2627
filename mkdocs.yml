@@ -42,7 +42,7 @@ theme:
         name: Canviar a mode dia
   font:
     text: Roboto
-    code: Rochboto Mono
+    code: Roboto Mono
   logo: "imagenes/logofp.png"
   features:
     - header.autohide
