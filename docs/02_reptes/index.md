@@ -126,6 +126,7 @@ No convé avançar al següent repte si l’anterior encara no es pot revisar b�
 
 - [Repte 1](repte_01.md).
 - [Repte 2](repte_02.md).
+- [Programació d’aula del Repte 2](repte_02_programacio_aula.md).
 - [Repte 3](repte_03.md).
 - [Repte 4](repte_04.md).
 - [Repte 5](repte_05.md).
