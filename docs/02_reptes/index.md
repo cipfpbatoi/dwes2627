@@ -51,6 +51,8 @@ El `Repte 2` té un paper especial dins del curs.
 
 Este repte es resol sobre una **base comuna en `PHP`**.
 
+La seua base queda organitzada en `7` sessions de `3` hores.
+
 En esta fase, la prioritat és consolidar el flux complet de programació en servidor:
 
 - Tractament de dades.
@@ -61,7 +63,7 @@ En esta fase, la prioritat és consolidar el flux complet de programació en ser
 
 El contrast de frameworks **encara no és el focus principal** en `R2`.
 
-Quan el flux ja funciona, `R2` també es pot tancar amb una revisió final curta de refactorització per netejar codi i millorar mantenibilitat.
+La sessió `7` de `R2` es dedica a revisar el codi, netejar-lo i millorar-ne la mantenibilitat.
 
 Això no substituïx `R3` ni convertix `R2` en un repte centrat en POO completa o base de dades com a focus principal.
 

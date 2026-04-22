@@ -39,6 +39,7 @@ En este repte has de fer evolucionar el projecte fins a deixar, com a mínim:
 - Una operació real del projecte protegida i lligada al domini triat.
 - Un cas positiu i un cas negatiu.
 - Prova mínima i documentació bàsica del flux.
+- Revisió final del codi per millorar mantenibilitat i justificar per què la versió final és millor.
 
 ## Producte mínim esperat
 
@@ -115,6 +116,7 @@ En este repte no n’hi ha prou amb:
 - Guardar dades de manera aparent si després no es poden reutilitzar.
 - Muntar una base de dades com a reclam tècnic mentre el flux principal continua dèbil.
 - Portar una demo que funciona una vegada però no es pot explicar ni reproduir.
+- Convertir la sessió final en una reescriptura completa o en una entrada obligatòria a POO i BBDD.
 
 ## Relació amb el projecte base
 
@@ -132,11 +134,11 @@ La pregunta útil no és només “quin formulari faré?”, sinó “quina acci
 
 ## Microreptes del Repte 2
 
-Per treballar bé este repte convé dividir-lo en sis peces clares. Això ajuda a no reduir-lo a un simple `login` i a entendre què s’està construint en cada fase.
+Per treballar bé este repte convé dividir-lo en set peces clares. Això ajuda a no reduir-lo a un simple `login` i a entendre què s’està construint en cada fase.
 
-La progressió també és important: en el microrepte 1 entra i es valida la informació; en el 2 es processen i es guarden les dades correctes; en el 3 s’apliquen regles reals del projecte; en el 4 es conserva estat temporal del flux; en el 5 es protegix una operació real; i en el 6 es prova, es depura i es revisa tot el conjunt.
+La base del repte queda en `21` hores, organitzades en `7` sessions de `3` hores.
 
-La base del repte continua sent de sis microreptes. Si el professorat ho marca i el flux ja funciona de punta a punta, el tancament pot incloure una revisió final curta de refactorització lleu.
+La progressió també és important: en el microrepte 1 entra i es valida la informació; en el 2 es processen i es guarden les dades correctes; en el 3 s’apliquen regles reals del projecte; en el 4 es conserva estat temporal del flux; en el 5 es protegix una operació real; en el 6 es prova, es depura i es tanca un checkpoint tècnic; i en el 7 es revisa el codi per fer-lo més clar i mantenible.
 
 ### Microrepte 1. Formulari i validació visible
 
@@ -409,11 +411,11 @@ En este microrepte es valorarà si pots:
 - Revisió de si la dada creada o recuperada forma part del flux protegit.
 - Pregunta oral sobre en quin punt es bloqueja o es permet l’acció.
 
-### Microrepte 6. Prova, depuració i revisió final
+### Microrepte 6. Prova, depuració i checkpoint tècnic
 
 **Objectiu**
 
-Comprovar que el flux complet funciona, que queda registrat amb una checklist o taula simple de proves, que es pot demostrar en una demo breu i que el repte queda prou net per defensar-lo.
+Comprovar que el flux complet funciona, que queda registrat amb una checklist o taula simple de proves, que es pot demostrar en una demo breu i que el repte arriba a la sessió final amb una base tècnica clara.
 
 **Què s’espera**
 
@@ -441,6 +443,7 @@ En este microrepte es valorarà si pots:
 - Deixar rastre del que has provat i del que encara cal millorar.
 - Explicar com has organitzat la prova i quins casos has verificat.
 - Explicar per què la conservació de dades que has fet és suficient per a `R2`, encara que no siga encara el centre del curs.
+- Deixar clar quines parts del codi convé revisar en el microrepte 7.
 
 **Evidències principals**
 
@@ -459,11 +462,11 @@ En este microrepte es valorarà si pots:
 - Contrast entre documentació, repositori i resultat real.
 - Defensa tècnica breu sobre el flux complet.
 
-### Tram final opcional. Revisió i refactorització lleu del codi
+### Microrepte 7. Refactorització i millora de mantenibilitat
 
-Si el professorat activa este tram i el flux base ja està tancat, pots haver de fer una revisió final curta del codi.
+En este microrepte hauràs de revisar el codi que ja funciona i aplicar una millora clara de mantenibilitat.
 
-Esta revisió no substituïx els sis microreptes ni convertix `R2` en `R3`.
+Este microrepte no substituïx la resta del repte ni convertix `R2` en `R3`.
 
 Ací sí que pot tocar:
 
@@ -482,8 +485,8 @@ Si apareixen una classe simple, algun objecte mínim o una persistència més fo
 Per orientar-te sense convertir el repte en una llista normativa, pots llegir-lo així:
 
 - `RA2` apareix sobretot en el microrepte 2: ací entra la base comuna en `PHP`, la generació de pàgines o respostes amb codi embegut, la sintaxi, les sentències, les directives, les variables, els operadors i els àmbits.
-- `RA3` apareix sobretot en els microreptes 1 i 3: formularis, recuperació de dades, comentaris útils, decisions, bucles, arrays i funcions.
-- `RA4` apareix sobretot en els microreptes 4, 5 i 6: estat, emmagatzematge en client quan toque, autenticació, funcionalitat protegida, prova i depuració.
+- `RA3` apareix sobretot en els microreptes 1, 3 i 7: formularis, recuperació de dades, comentaris útils, decisions, bucles, arrays, funcions i revisió de claredat del codi.
+- `RA4` apareix sobretot en els microreptes 4, 5, 6 i 7: estat, emmagatzematge en client quan toque, autenticació, funcionalitat protegida, prova, depuració i comprovació final després de la revisió.
 
 ## Criteris que es treballen en este repte
 
@@ -522,8 +525,8 @@ En este moment del curs, la prioritat és consolidar el flux complet en servidor
 - Lògica del flux i regles del projecte.
 - Estat o sessió quan faça falta.
 - Autenticació i funcionalitat protegida.
-- Prova, depuració i revisió final.
-- Si el professorat ho indica, una revisió final curta de mantenibilitat sobre el que ja funciona.
+- Prova, depuració i checkpoint tècnic.
+- Refactorització i millora de mantenibilitat.
 
 Això significa que la informació correcta ha de poder continuar viva dins del projecte. El sistema ha de poder aprofitar-la després per mostrar-la, recuperar-la, llistar-la o continuar treballant amb ella.
 
@@ -533,7 +536,7 @@ El contrast de frameworks i la consolidació arquitectònica encara no són el f
 
 Ara toca demostrar una base funcional comuna i defensable. Després arribarà el contrast amb itineraris com `Laravel`, `Symfony` o `NestJS`, i serà en `R3` quan la persistència passarà a tindre un pes més central en l’arquitectura.
 
-Si hi ha revisió final de refactorització en `R2`, ha de servir per netejar i aclarir el codi que ja funciona, no per fer una reescriptura arquitectònica completa.
+La sessió `7` de `R2` ha de servir per netejar i aclarir el codi que ja funciona, no per fer una reescriptura arquitectònica completa.
 
 ## Si et bloqueges
 
@@ -568,11 +571,12 @@ Per considerar complet el repte, hauràs d’aportar com a mínim:
 - Cas positiu i cas negatiu.
 - Prova o verificació mínima del flux.
 - Documentació tècnica actualitzada.
+- Evidència de revisió final del codi i justificació de la millora de mantenibilitat.
 - `AI log`, quan hi haja ús rellevant d’IA.
 
-## Evidències opcionals de revisió final
+## Evidències de la sessió final de revisió
 
-Si el professorat activa el tram final de refactorització lleu, una bona evidència pot ser:
+En el microrepte 7, una bona evidència és:
 
 - comparació breu abans/després
 - explicació de quina duplicació, mescla `HTML + PHP` o responsabilitat has netejat
@@ -742,7 +746,7 @@ Este repte es considera superat quan:
 - Es poden demostrar un cas positiu i un cas negatiu.
 - El treball està prou documentat i traçat.
 - Pots defendre tècnicament el flux complet i explicar per què la persistència ací és de suport i no encara el centre del repte.
-- Si el professorat ha activat la revisió final, pots justificar per què la versió revisada és més clara i mantenible que la inicial.
+- Pots justificar per què la versió revisada en la sessió `7` és més clara i mantenible que la inicial.
 
 ## Què prepara este repte
 
@@ -754,4 +758,4 @@ Este repte deixa el producte preparat per al següent pas del curs:
 - Donar més pes a la persistència quan arribe `R3`.
 - Introduir el framework sense canviar de projecte.
 
-Si hi ha un tram final de revisió en `R2`, eixa neteja ha de servir justament per arribar a `R3` amb una base més clara, no per consumir abans d’hora tot el que correspon al repte següent.
+La sessió `7` de revisió en `R2` ha de servir justament per arribar a `R3` amb una base més clara, no per consumir abans d’hora tot el que correspon al repte següent.
