@@ -65,6 +65,8 @@ El contrast de frameworks **encara no és el focus principal** en `R2`.
 
 La sessió `7` de `R2` es dedica a revisar el codi, netejar-lo i millorar-ne la mantenibilitat.
 
+En eixa sessió final també toca separar funcions comunes en fitxers, usar `include` / `require` amb sentit i donar forma a un primer objecte simple del domini.
+
 Això no substituïx `R3` ni convertix `R2` en un repte centrat en POO completa o base de dades com a focus principal.
 
 ## 🛠️ Quan entra el framework

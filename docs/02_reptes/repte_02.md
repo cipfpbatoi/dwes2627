@@ -39,7 +39,7 @@ En este repte has de fer evolucionar el projecte fins a deixar, com a mínim:
 - Una operació real del projecte protegida i lligada al domini triat.
 - Un cas positiu i un cas negatiu.
 - Prova mínima i documentació bàsica del flux.
-- Revisió final del codi per millorar mantenibilitat i justificar per què la versió final és millor.
+- Revisió final del codi per millorar mantenibilitat, traure funcions comunes a fitxers separats, usar `include` / `require` amb sentit, incorporar almenys un objecte simple del domini i justificar per què la versió final és millor.
 
 ## Producte mínim esperat
 
@@ -138,7 +138,7 @@ Per treballar bé este repte convé dividir-lo en set peces clares. Això ajuda 
 
 La base del repte queda en `21` hores, organitzades en `7` sessions de `3` hores.
 
-La progressió també és important: en el microrepte 1 entra i es valida la informació; en el 2 es processen i es guarden les dades correctes; en el 3 s’apliquen regles reals del projecte; en el 4 es conserva estat temporal del flux; en el 5 es protegix una operació real; en el 6 es prova, es depura i es tanca un checkpoint tècnic; i en el 7 es revisa el codi per fer-lo més clar i mantenible.
+La progressió també és important: en el microrepte 1 entra i es valida la informació; en el 2 es processen i es guarden les dades correctes; en el 3 s’apliquen regles reals del projecte; en el 4 es conserva estat temporal del flux; en el 5 es protegix una operació real; en el 6 es prova, es depura i es tanca un checkpoint tècnic; i en el 7 es revisa el codi, es trau el que es repetix a fitxers comuns, s’usen `include` / `require` amb sentit i es fa visible almenys un objecte simple del domini.
 
 ### Microrepte 1. Formulari i validació visible
 
@@ -468,17 +468,27 @@ En este microrepte hauràs de revisar el codi que ja funciona i aplicar una mill
 
 Este microrepte no substituïx la resta del repte ni convertix `R2` en `R3`.
 
-Ací sí que pot tocar:
+Ací sí que hauràs de:
 
 - revisar parts repetides
 - reduir barreja excessiva de `HTML + PHP`
-- extraure funcions útils
+- extraure funcions comunes a un fitxer separat
+- començar a repartir el codi en fitxers de manera simple i clara
+- usar `include` / `require` o, quan toque, `include_once` / `require_once` amb sentit
 - millorar noms
 - ordenar millor el codi
 - separar millor preparació de dades i renderitzat
+- representar almenys una part del projecte amb un objecte simple
 - justificar per què la versió final és més clara o mantenible
 
-Si apareixen una classe simple, algun objecte mínim o una persistència més formal, s’han d’entendre com a ampliació, millora o avançament controlat cap al repte següent, no com a exigència central per a tot l’alumnat dins de `R2`.
+Este microrepte no vol dir:
+
+- convertir tot el projecte a objectes
+- fer una arquitectura completa
+- passar-ho tot a base de dades
+- substituir el treball propi de `R3`
+
+Si després d’esta revisió afegixes més classes, més objectes o una persistència més formal, això s’ha d’entendre com a ampliació, millora o avançament controlat cap al repte següent, no com a exigència central per a tot l’alumnat dins de `R2`.
 
 ## Com es reparteixen els criteris dins del repte
 
@@ -530,13 +540,15 @@ En este moment del curs, la prioritat és consolidar el flux complet en servidor
 
 Això significa que la informació correcta ha de poder continuar viva dins del projecte. El sistema ha de poder aprofitar-la després per mostrar-la, recuperar-la, llistar-la o continuar treballant amb ella.
 
+En la sessió `7`, això implica revisar el que ja tens, traure funcions comunes a fitxers separats, usar `include` / `require` o `include_once` / `require_once` amb sentit i donar forma a almenys una entitat del projecte amb un objecte simple.
+
 Però això no vol dir que ara toque convertir el repte en un bloc d’accés a dades, modelat complet o arquitectura de persistència.
 
 El contrast de frameworks i la consolidació arquitectònica encara no són el focus principal. No toca reescriure el projecte en `Laravel`, `Symfony` o `NestJS` abans d’hora, ni convertir `R2` en una carrera per veure qui munta la persistència més sofisticada.
 
 Ara toca demostrar una base funcional comuna i defensable. Després arribarà el contrast amb itineraris com `Laravel`, `Symfony` o `NestJS`, i serà en `R3` quan la persistència passarà a tindre un pes més central en l’arquitectura.
 
-La sessió `7` de `R2` ha de servir per netejar i aclarir el codi que ja funciona, no per fer una reescriptura arquitectònica completa.
+La sessió `7` de `R2` ha de servir per netejar i aclarir el codi que ja funciona, organitzar-lo millor en fitxers i introduir un objecte mínim del domini, no per fer una reescriptura arquitectònica completa.
 
 ## Si et bloqueges
 
@@ -572,6 +584,7 @@ Per considerar complet el repte, hauràs d’aportar com a mínim:
 - Prova o verificació mínima del flux.
 - Documentació tècnica actualitzada.
 - Evidència de revisió final del codi i justificació de la millora de mantenibilitat.
+- Almenys un fitxer comú o una peça reutilitzable importada amb `include` / `require` i almenys un objecte simple del domini.
 - `AI log`, quan hi haja ús rellevant d’IA.
 
 ## Evidències de la sessió final de revisió
@@ -580,8 +593,10 @@ En el microrepte 7, una bona evidència és:
 
 - comparació breu abans/després
 - explicació de quina duplicació, mescla `HTML + PHP` o responsabilitat has netejat
+- almenys un fitxer comú o peça reutilitzable importada amb `include` / `require`
+- almenys una entitat del projecte representada amb un objecte simple
 - justificació de per què la versió revisada és millor
-- si has afegit alguna classe, objecte o persistència més formal, explicació de per què això és una ampliació o un pont cap a `R3`
+- si després d’això has afegit més classes, més objectes o persistència més formal, explicació de per què això és una ampliació o un pont cap a `R3`
 
 ## Forma de prova del repte
 
@@ -681,6 +696,9 @@ En este repte no es demana:
 - omplir de DocBlocks fitxers trivials
 - generar documentació automàtica completa
 - convertir la documentació en una capa decorativa sense utilitat real
+- convertir tot el projecte a POO completa
+- muntar una arquitectura completa abans d’hora
+- fer de la base de dades el centre del repte
 
 ## Idea clau
 
@@ -747,6 +765,7 @@ Este repte es considera superat quan:
 - El treball està prou documentat i traçat.
 - Pots defendre tècnicament el flux complet i explicar per què la persistència ací és de suport i no encara el centre del repte.
 - Pots justificar per què la versió revisada en la sessió `7` és més clara i mantenible que la inicial.
+- La sessió `7` deixa almenys una reutilització real en fitxers amb `include` / `require` i una entitat mínima del domini com a objecte simple.
 
 ## Què prepara este repte
 
