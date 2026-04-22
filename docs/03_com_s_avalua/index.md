@@ -58,6 +58,7 @@ Per exemple:
 - Issues o tasques.
 - Documentació de decisions.
 - Comparació entre versions.
+- Comparació breu abans/després d’una revisió final de codi, si el professorat la demana en `R2`.
 - `Report breu d’ús de la IA`, si la IA ha tingut pes rellevant.
 
 ### 🧠 Evidències de comprensió
@@ -94,6 +95,10 @@ El criteri de fons és sempre el mateix: si pots traçar, explicar, provar i def
 Si estàs tancant el `Repte 2`, tens una [checklist de proves](checklists_de_prova.md) que et pot ajudar a registrar casos de prova, errors visibles, estat, autenticació i funcionalitat protegida.
 
 Esta checklist és una ajuda útil per provar el repte i deixar una evidència de verificació, però no substituïx la demo ni la defensa tècnica.
+
+Si el professorat et demana un tancament de refactorització lleu en `R2`, una evidència bona és una comparació breu abans/després on expliques quines repeticions, mescles `HTML + PHP`, noms o responsabilitats has netejat i per què ara el flux és més clar.
+
+No es tracta encara d’una reescriptura completa ni d’anticipar tot `R3`.
 
 ## 🤖 Ús de la IA i avaluació
 

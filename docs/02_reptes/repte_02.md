@@ -136,6 +136,8 @@ Per treballar bé este repte convé dividir-lo en sis peces clares. Això ajuda 
 
 La progressió també és important: en el microrepte 1 entra i es valida la informació; en el 2 es processen i es guarden les dades correctes; en el 3 s’apliquen regles reals del projecte; en el 4 es conserva estat temporal del flux; en el 5 es protegix una operació real; i en el 6 es prova, es depura i es revisa tot el conjunt.
 
+La base del repte continua sent de sis microreptes. Si el professorat ho marca i el flux ja funciona de punta a punta, el tancament pot incloure una revisió final curta de refactorització lleu.
+
 ### Microrepte 1. Formulari i validació visible
 
 **Objectiu**
@@ -457,6 +459,24 @@ En este microrepte es valorarà si pots:
 - Contrast entre documentació, repositori i resultat real.
 - Defensa tècnica breu sobre el flux complet.
 
+### Tram final opcional. Revisió i refactorització lleu del codi
+
+Si el professorat activa este tram i el flux base ja està tancat, pots haver de fer una revisió final curta del codi.
+
+Esta revisió no substituïx els sis microreptes ni convertix `R2` en `R3`.
+
+Ací sí que pot tocar:
+
+- revisar parts repetides
+- reduir barreja excessiva de `HTML + PHP`
+- extraure funcions útils
+- millorar noms
+- ordenar millor el codi
+- separar millor preparació de dades i renderitzat
+- justificar per què la versió final és més clara o mantenible
+
+Si apareixen una classe simple, algun objecte mínim o una persistència més formal, s’han d’entendre com a ampliació, millora o avançament controlat cap al repte següent, no com a exigència central per a tot l’alumnat dins de `R2`.
+
 ## Com es reparteixen els criteris dins del repte
 
 Per orientar-te sense convertir el repte en una llista normativa, pots llegir-lo així:
@@ -503,6 +523,7 @@ En este moment del curs, la prioritat és consolidar el flux complet en servidor
 - Estat o sessió quan faça falta.
 - Autenticació i funcionalitat protegida.
 - Prova, depuració i revisió final.
+- Si el professorat ho indica, una revisió final curta de mantenibilitat sobre el que ja funciona.
 
 Això significa que la informació correcta ha de poder continuar viva dins del projecte. El sistema ha de poder aprofitar-la després per mostrar-la, recuperar-la, llistar-la o continuar treballant amb ella.
 
@@ -511,6 +532,8 @@ Però això no vol dir que ara toque convertir el repte en un bloc d’accés a 
 El contrast de frameworks i la consolidació arquitectònica encara no són el focus principal. No toca reescriure el projecte en `Laravel`, `Symfony` o `NestJS` abans d’hora, ni convertir `R2` en una carrera per veure qui munta la persistència més sofisticada.
 
 Ara toca demostrar una base funcional comuna i defensable. Després arribarà el contrast amb itineraris com `Laravel`, `Symfony` o `NestJS`, i serà en `R3` quan la persistència passarà a tindre un pes més central en l’arquitectura.
+
+Si hi ha revisió final de refactorització en `R2`, ha de servir per netejar i aclarir el codi que ja funciona, no per fer una reescriptura arquitectònica completa.
 
 ## Si et bloqueges
 
@@ -546,6 +569,15 @@ Per considerar complet el repte, hauràs d’aportar com a mínim:
 - Prova o verificació mínima del flux.
 - Documentació tècnica actualitzada.
 - `AI log`, quan hi haja ús rellevant d’IA.
+
+## Evidències opcionals de revisió final
+
+Si el professorat activa el tram final de refactorització lleu, una bona evidència pot ser:
+
+- comparació breu abans/després
+- explicació de quina duplicació, mescla `HTML + PHP` o responsabilitat has netejat
+- justificació de per què la versió revisada és millor
+- si has afegit alguna classe, objecte o persistència més formal, explicació de per què això és una ampliació o un pont cap a `R3`
 
 ## Forma de prova del repte
 
@@ -710,6 +742,7 @@ Este repte es considera superat quan:
 - Es poden demostrar un cas positiu i un cas negatiu.
 - El treball està prou documentat i traçat.
 - Pots defendre tècnicament el flux complet i explicar per què la persistència ací és de suport i no encara el centre del repte.
+- Si el professorat ha activat la revisió final, pots justificar per què la versió revisada és més clara i mantenible que la inicial.
 
 ## Què prepara este repte
 
@@ -720,3 +753,5 @@ Este repte deixa el producte preparat per al següent pas del curs:
 - Millorar l’arquitectura.
 - Donar més pes a la persistència quan arribe `R3`.
 - Introduir el framework sense canviar de projecte.
+
+Si hi ha un tram final de revisió en `R2`, eixa neteja ha de servir justament per arribar a `R3` amb una base més clara, no per consumir abans d’hora tot el que correspon al repte següent.

@@ -61,6 +61,10 @@ En esta fase, la prioritat és consolidar el flux complet de programació en ser
 
 El contrast de frameworks **encara no és el focus principal** en `R2`.
 
+Quan el flux ja funciona, `R2` també es pot tancar amb una revisió final curta de refactorització per netejar codi i millorar mantenibilitat.
+
+Això no substituïx `R3` ni convertix `R2` en un repte centrat en POO completa o base de dades com a focus principal.
+
 ## 🛠️ Quan entra el framework
 
 El contrast de frameworks entra a partir del moment en què s’introduïx el framework, és a dir, des de `R3`.
