@@ -106,69 +106,122 @@ Pots comparar decisions, checkpoints i solucions amb altres companys o companyes
 
 ## Microreptes del Repte 3
 
-Per treballar bé este repte convé dividir-lo en sis peces clares. La seqüència és esta: primer detectes què cal millorar del flux actual; després introduïxes el framework i la base del projecte; després migres el cas d’ús principal; després assegures la persistència suficient; després confirmes que el comportament continua viu; i finalment deixes documentat i defensable el canvi.
+Per treballar bé este repte convé dividir-lo en sis peces clares. La seqüència és esta: primer fas una diagnosi guiada del punt de partida, tries un cas d’ús realment migrable i deixes preparada la infraestructura mínima; després comences la migració amb el terreny tècnic ja preparat; després consolides el cas d’ús principal dins de la nova arquitectura; després assegures la persistència suficient; després confirmes que el comportament continua viu; i finalment deixes documentat i defensable el canvi.
 
-### Microrepte 1. Diagnosi del codi actual i del flux a millorar
+### Microrepte 1. Diagnosi guiada, selecció del cas d’ús i preparació de l’entorn de migració
+
+**Finalitat**
+
+Este microrepte és l’entrada real a `R3`. No és només una anàlisi prèvia: ha de deixar clar què es migrarà, per què eixe punt d’entrada és viable i amb quin entorn tècnic començarà la migració.
+
+Cal assumir que no tot l’alumnat arriba al final de `R2` amb el mateix grau de producte ni amb prou maduresa per fer una diagnosi autònoma útil. Per això, la diagnosi ha d’estar guiada i la preparació de la infraestructura forma part del treball docent del repte, no d’un temps invisible que després acabe carregant `MP2`.
 
 **Objectiu**
 
-Triar quin cas d’ús de `R2` mereix passar a una arquitectura més professional i detectar què té ara de poc mantenible.
+Triar un cas d’ús real de `R2` que siga migrable, justificar-lo com a millor punt d’entrada a `R3` i deixar instal·lada o inicialitzada la infraestructura mínima per començar `MP2` sense perdre temps estructural.
 
 **Què s’espera**
 
-- selecció clara d’una funcionalitat real del projecte
-- diagnosi breu del punt de partida
-- detecció d’acoblaments, duplicitats o barreges de responsabilitats
-- identificació de quines parts del flux convé conservar i quines convé reconstruir
-- primer pla curt de migració o reconstrucció
+- **Part A. Diagnosi guiada**
+- revisió del producte real heretat de `R2`, encara que siga incomplet o desigual
+- identificació de problemes concrets de mescla de responsabilitats
+- detecció de fitxers, pantalles, rutes o fluxos amb excés de càrrega
+- selecció d’un cas d’ús realment migrable, no d’un bloc massa gran del projecte
+- justificació de per què eixe cas d’ús és el millor punt d’entrada
+- esquema breu d’abans i després: què hi ha ara i com hauria de quedar repartit
+- **Part B. Preparació de l’entorn de migració**
+- tria justificada d’itinerari o stack: `Laravel`, `Symfony` o `NestJS`
+- instal·lació o inicialització de la nova infraestructura mínima
+- prova d’arrencada del projecte o entorn base
+- estructura inicial del projecte de migració
+- preparació d’issues, microtasques o roadmap curt per començar `MP2`
+
+**Organització en sessions**
+
+`MP1` ocupa dues sessions:
+
+- **Sessió 1**: diagnosi guiada del producte de `R2`, selecció del cas d’ús i defensa breu de la tria.
+- **Sessió 2**: pla curt de migració, decisió de stack i preparació o instal·lació de l’entorn mínim.
 
 **Criteris d’avaluació que es treballen**
 
 - **RA5.c - RA5.d**: Analitzar l’estructura actual i justificar per què convé reorganitzar-la.
+- **RA5.e - RA5.f**: Preparar una arquitectura base coherent i arrancable per començar la migració.
 
 **Evidències principals**
 
-- diagnosi breu del codi o del flux
-- cas d’ús triat
+- diagnosi breu del codi o del flux de `R2`
+- cas d’ús seleccionat i justificat
+- esquema abans/després del flux o de les responsabilitats principals
+- nota breu de decisions de stack
+- projecte o entorn base inicialitzat
+- prova que el nou entorn arranca
+- estructura inicial del projecte de migració
 - issue principal del repte o registre equivalent
-- pla curt de migració
+- issues, microtasques o roadmap curt de migració
+- pla curt de migració validable
+
+**Instruments**
+
+- plantilla curta de diagnosi o checklist docent
+- revisió guiada de fitxers, rutes, formularis, controladors o scripts carregats
+- mapa senzill de responsabilitats actuals i responsabilitats previstes
+- issue principal de `R3` i microtasques associades
+- captura, registre o anotació de l’arrencada correcta de l’entorn
 
 **Com es comprovarà**
 
-- pregunta breu sobre quin problema real vols corregir
+- defensa breu de la selecció del cas d’ús
+- validació docent del pla de migració
+- comprovació que l’entorn nou arranca
+- revisió que el cas d’ús triat no és inviable, massa gran o massa vague
 - contrast entre la diagnosi inicial i els canvis que acabes fent després
 
-### Microrepte 2. Entrada del framework i estructura base del projecte
+**Riscos a evitar**
+
+- triar “tot el projecte” com a cas d’ús
+- triar una funcionalitat que encara no existix mínimament en `R2`
+- fer una diagnosi abstracta sobre `MVC` sense mirar el codi real
+- deixar la instal·lació del framework com a feina invisible fora del repte
+- arribar a `MP2` sense entorn arrancable ni tasques concretes
+
+**Relació amb `MP2`**
+
+`MP2` comença amb el terreny preparat: cas d’ús triat, stack decidit, entorn base arrancable i roadmap curt. Això permet que `MP2` es dedique a començar la migració real, no a descobrir tard què es vol migrar ni a consumir mitja sessió instal·lant la base tècnica.
+
+### Microrepte 2. Primer esquelet funcional del cas d’ús dins del framework
 
 **Objectiu**
 
-Introduir el framework triat sense perdre el fil del projecte i deixar una estructura base comprensible per continuar treballant.
+Començar la migració del cas d’ús triat sobre l’entorn ja preparat en `MP1`, creant el primer esquelet funcional dins del framework sense intentar resoldre encara tota la persistència ni tots els detalls del flux.
 
 **Què s’espera**
 
-- elecció justificada de `Laravel`, `Symfony` o `NestJS`
-- projecte arrancable i reproduïble amb instruccions clares
+- ús real de l’itinerari triat i inicialitzat en `MP1`
 - estructura base recognoscible del framework
-- primera organització de carpetes, mòduls o peces principals amb sentit
+- primera ruta, controlador, acció, mòdul o equivalent relacionat amb el cas d’ús triat
+- primer repartiment de carpetes, mòduls o peces principals amb sentit
 - connexió clara entre el projecte de `R2` i la nova base
-- pas a la nova base sense necessitat de mantindre dues versions actives del mateix flux alhora
+- pas inicial a la nova base sense necessitat de mantindre dues versions actives del mateix flux alhora
+- instruccions clares per tornar a arrancar el projecte
 
 **Criteris d’avaluació que es treballen**
 
-- **RA5.e - RA5.f**: Introduir una arquitectura base coherent i usable per al mateix projecte.
+- **RA5.e - RA5.f**: Usar una arquitectura base coherent i començar a ubicar-hi el cas d’ús seleccionat.
 
 **Evidències principals**
 
-- projecte del framework creat o integrat
+- projecte del framework ja creat o integrat des de `MP1`
 - estructura base revisable
-- commits inicials de l’entrada al framework
+- primers commits de migració sobre la base preparada
+- primera ruta, pantalla, endpoint o acció del cas d’ús dins del framework
 - documentació mínima d’arrancada
 
 **Com es comprovarà**
 
 - execució real del projecte
 - revisió de l’estructura base
-- pregunta breu sobre per què has triat eixe framework i no un altre
+- comprovació que el primer esquelet correspon al cas d’ús validat en `MP1`
 
 ### Microrepte 3. Migració o reconstrucció del cas d’ús principal
 
@@ -314,8 +367,13 @@ Per considerar complet el repte, hauràs d’aportar com a mínim:
 - repositori actualitzat
 - issue principal del repte o registre equivalent
 - seqüència de commits significativa
-- cas d’ús real seleccionat a partir de `R2`
-- evidència de diagnosi i pla curt de migració
+- cas d’ús real seleccionat i justificat a partir de `R2`
+- evidència de diagnosi guiada i pla curt de migració
+- esquema abans/després del flux o de les responsabilitats
+- nota breu de decisions de stack
+- issues o microtasques de migració
+- prova que el nou entorn arranca
+- estructura inicial del projecte de migració
 - projecte arrencable en `Laravel`, `Symfony` o `NestJS`
 - arquitectura més clara i separació visible de responsabilitats
 - persistència suficient i verificable del recurs principal
@@ -330,6 +388,10 @@ El professorat podrà comprovar el treball amb mecanismes com:
 - execució real de la funcionalitat reconstruïda
 - revisió del repositori
 - revisió de commits i issues
+- defensa breu de la selecció del cas d’ús
+- validació del pla de migració
+- comprovació que l’entorn nou arranca
+- verificació que el cas d’ús triat no és inviable o massa gran
 - comparació entre abans i després
 - revisió de la persistència aplicada al cas d’ús
 - preguntes tècniques breus
@@ -344,6 +406,7 @@ La IA et pot ajudar, per exemple, a:
 - revisar codi i detectar acoblaments
 - proposar refactoritzacions per iteracions
 - interpretar errors del framework o de persistència
+- ajudar a preparar l’entorn base o interpretar errors d’arrencada
 - proposar casos de prova o comprovacions mínimes
 - ajudar a redactar documentació tècnica
 
@@ -364,6 +427,8 @@ Convindria evitar errors com estos:
 - limitar-te a canviar fitxers sense millora real d’estructura
 - introduir un framework però continuar barrejant responsabilitats
 - repetir el mateix flux de `R2` sense professionalitzar-lo
+- arribar a `MP2` sense cas d’ús validat ni entorn arrancable
+- convertir la instal·lació del stack en temps invisible no planificat
 - fer persistència sense criteri o sense relació amb el cas d’ús
 - reescriure massa i perdre la funcionalitat que ja existia
 - deixar el projecte arrancat però no explicable
