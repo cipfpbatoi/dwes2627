@@ -26,8 +26,8 @@ La idea no és només saber “què toca ara”, sinó entendre què aporta cada
 La progressió general és esta:
 
 - [Repte 1](repte_01.md): base tècnica i primer flux funcional del producte.
-- [Repte 2](repte_02.md): processament de dades, estat o sessió, autenticació i primera funcionalitat protegida.
-- [Repte 3](repte_03.md): reconstrucció en framework, BBDD real, `migrations`, `seeders` i `2` casos d'ús funcionals.
+- [Repte 2](repte_02.md): codi servidor integrat amb marques, processament de dades, estat o sessió, autenticació i primera funcionalitat protegida.
+- [Repte 3](repte_03.md): reconstrucció en framework, BBDD real, `migrations`, `seeders`, vistes o plantilles i `2` casos d'ús funcionals.
 - [Repte 4](repte_04.md): `API` i serveis reutilitzables.
 - [Repte 5](repte_05.md): aplicació híbrida, integració externa i manteniment.
 - [Tancament i defensa](fase_final.md): verificació final, documentació i defensa del producte.
@@ -39,8 +39,8 @@ Cada fase reutilitza el treball anterior. Per això, si un repte queda massa sup
 El producte continua sent el mateix, però el focus va canviant.
 
 - En `R1`, la prioritat és obrir el projecte i deixar una primera base funcional.
-- En `R2`, la prioritat és consolidar el flux complet de servidor sobre una base comuna en `PHP`.
-- En `R3`, entra el framework i el producte es reconstrueix sobre una base real amb Docker, BBDD, `migrations`, `seeders` i `2` casos d'ús funcionals.
+- En `R2`, la prioritat és consolidar el flux complet de servidor sobre una base comuna en `PHP`, amb codi integrat amb marques i resposta generada pel servidor.
+- En `R3`, entra el framework i el producte es reconstrueix sobre una base real amb Docker, BBDD, `migrations`, `seeders`, vistes o plantilles i `2` casos d'ús funcionals.
 - En `R4`, el treball se centra a exposar serveis i reutilitzar el producte com a `API`.
 - En `R5`, el sistema ja ha de connectar amb integracions o fluxos híbrids reals.
 - En la fase final, el focus està en provar, documentar i defendre el conjunt del producte.
@@ -56,6 +56,9 @@ La seua base queda organitzada en `7` sessions de `3` hores.
 En esta fase, la prioritat és consolidar el flux complet de programació en servidor:
 
 - Tractament de dades.
+- Codi servidor integrat amb `HTML` o plantilla.
+- Variables, operadors, sentències simples, directives i àmbits dins d'un flux real.
+- Generació de la resposta o document des del servidor.
 - Lògica bàsica.
 - Estat o sessió.
 - Autenticació.
@@ -74,6 +77,8 @@ Això no substituïx `R3` ni convertix `R2` en un repte centrat en POO completa 
 El contrast de frameworks entra a partir del moment en què s’introduïx el framework, és a dir, des de `R3`.
 
 Des d’eixe punt, el mateix projecte pot continuar amb itineraris diferents, però sense canviar d’encàrrec funcional.
+
+En `R3`, almenys un cas d'ús ha de ser **server-rendered**: el framework ha de passar dades a una vista o plantilla i generar una resposta `HTML` verificable. No tot pot quedar formulat només com a futura `API`.
 
 Els frameworks base d’este tram són:
 

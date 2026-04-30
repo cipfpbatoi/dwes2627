@@ -6,8 +6,11 @@ Este repte servix per consolidar un flux complet de programació en servidor i f
 
 Ara el backend ja no ha de limitar-se a rebre una petició i respondre. Ha de ser capaç de:
 
+- Integrar codi de servidor amb `HTML` o una plantilla equivalent.
+- Usar variables, operadors, sentències simples, directives i àmbits dins del flux.
 - Recollir dades útils del projecte.
 - Validar-les en servidor i mostrar errors clars.
+- Generar el document o resposta resultant des del servidor.
 - Permetre correcció i reintent.
 - Processar la informació amb lògica bàsica.
 - Conservar la informació correcta perquè després es puga reutilitzar.
@@ -28,9 +31,12 @@ En un entorn professional, este és el moment en què el sistema deixa de ser no
 En este repte has de fer evolucionar el projecte fins a deixar, com a mínim:
 
 - Un formulari o una entrada de dades real vinculada al projecte triat.
+- Codi servidor integrat amb llenguatge de marques o plantilla, no una pàgina estàtica separada del flux.
+- Ús visible de variables, operadors, sentències simples, directives i àmbits.
 - Recollida de dades, validació, errors visibles i possibilitat de correcció.
 - Recuperació i tractament de la informació en servidor.
 - Processament real de la petició amb lògica bàsica.
+- Resposta o document generat pel servidor a partir de les dades rebudes.
 - Conservació o persistència funcional de la informació correcta.
 - Reutilització posterior d’eixa informació dins del projecte.
 - Si el flux ho demana, tractament d’imatge o fitxer amb control bàsic de tipus i grandària.
@@ -49,7 +55,8 @@ Al final del repte hauries de poder mostrar un recorregut complet com este:
 - El sistema recull les dades i les valida en servidor.
 - Si hi ha error, el sistema el mostra de manera clara.
 - L’usuari pot corregir i tornar a provar.
-- El servidor processa la petició correcta.
+- El servidor processa la petició correcta amb variables, operadors i sentències simples aplicades al flux.
+- El sistema genera una resposta o document on es veu el resultat del tractament en servidor.
 - Si hi ha una imatge o un fitxer, el sistema en valida tipus i grandària abans d’acceptar-lo.
 - La informació correcta queda conservada en un mecanisme controlat.
 - El projecte pot recuperar o reutilitzar eixa informació més avant.
@@ -109,6 +116,8 @@ La base de dades pot aparéixer, però no constituïx encara el focus principal 
 En este repte no n’hi ha prou amb:
 
 - Fer només registre, `login` i `logout`.
+- Escriure `HTML` estàtic sense codi servidor integrat en el flux.
+- Usar variables o operadors només com a exemples desconnectats del producte.
 - Protegir una ruta decorativa o sense valor dins del projecte.
 - Confondre estat, autenticació, autorització i persistència.
 - Validar només el cas feliç.

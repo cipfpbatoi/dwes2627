@@ -17,12 +17,17 @@ Has de lliurar una aplicació en `Laravel`, `Symfony` o `NestJS` amb:
 - configuració mínima i `.env.example` o instruccions equivalents
 - rutes
 - controladors o equivalents
-- vistes, plantilles o respostes
+- vistes, plantilles o respostes generades pel framework
 - models, entitats, esquemes o capa equivalent de dades
 - BBDD real
 - `migrations`
 - `seeders` o mecanisme equivalent
+- justificació del framework triat
+- comparació breu amb una altra opció possible
+- explicació d'un avantatge de separar presentació i lògica
+- conjunt de dades real recuperat i usat en un flux
 - `2` casos d'ús funcionals de punta a punta
+- almenys `1` cas d'ús server-rendered amb vista o plantilla i resposta `HTML`
 - validació mínima
 - tractament bàsic d'errors
 - proves mínimes
@@ -41,6 +46,7 @@ Tampoc és suficient:
 - carregar dades de demo manualment sense `seeders`
 - fer només un cas d'ús
 - fer un segon flux que siga només cosmètic
+- deixar tots els fluxos com a `API` o JSON sense cap resposta renderitzada en servidor
 
 ## Casos d'ús obligatoris
 
@@ -62,6 +68,8 @@ El segon flux ha d'aportar valor real. Exemples:
 - filtrar un llistat
 - relacionar dues dades simples
 
+Almenys un dels dos casos d'ús ha de ser **server-rendered**. Això vol dir que el framework rep la petició, el controlador obté o prepara dades, les passa a una vista o plantilla i el servidor retorna una pàgina `HTML` amb contingut real del projecte.
+
 ## Eines del framework que has d'usar
 
 Segons l'stack, els noms canvien. Però has d'usar peces equivalents a:
@@ -77,6 +85,33 @@ Segons l'stack, els noms canvien. Però has d'usar peces equivalents a:
 | Validació | Form requests o validators | forms, constraints o validators | DTO + pipes |
 | Proves | tests del projecte | PHPUnit o equivalent | Jest o equivalent |
 
+## Decisió de framework
+
+En `MP1` has de justificar la tria del framework.
+
+La justificació ha de ser curta i concreta:
+
+- quina opció tries
+- amb quina altra opció la compares
+- quin avantatge aporta per separar presentació i lògica
+- com quedarà millor repartit el flux respecte a `R2`
+
+No cal fer una comparativa llarga. Sí cal demostrar que no has triat el framework a cegues.
+
+## Conjunt de dades real
+
+En `MP2` no n'hi ha prou amb crear la BBDD.
+
+Has de recuperar un conjunt de dades real i usar-lo en un flux funcional. Pot ser:
+
+- un llistat
+- un detall amb dades relacionades
+- un filtre
+- una resposta JSON
+- una vista amb dades del domini
+
+Si eixe conjunt de dades alimenta el cas server-rendered, la vista o plantilla ha de mostrar que les dades venen de la BBDD i no d'arrays inventats.
+
 ## Lliurables
 
 Has d'entregar o deixar visible al repositori:
@@ -86,6 +121,10 @@ Has d'entregar o deixar visible al repositori:
 - `.env.example` o instruccions de variables
 - migracions
 - seeders o equivalent
+- nota comparativa curta de framework
+- esquema abans/després de responsabilitats
+- evidència d'un conjunt de dades recuperat i usat
+- evidència d'un flux server-rendered amb vista o plantilla i resposta `HTML`
 - README actualitzat
 - proves mínimes o checklist de verificació
 - evidència dels `2` casos d'ús
@@ -94,10 +133,10 @@ Has d'entregar o deixar visible al repositori:
 
 ## Microreptes
 
-- `MP1`: arrencada del nou projecte.
-- `MP2`: persistència mínima amb `migrations` i `seeders`.
-- `MP3`: primer cas d'ús complet.
-- `MP4`: segon cas d'ús o ampliació funcional.
+- `MP1`: arrencada del nou projecte, comparació de framework i avantatges de separació.
+- `MP2`: persistència mínima amb `migrations`, `seeders` i conjunt de dades real usat en un flux.
+- `MP3`: primer cas d'ús complet, preferentment com a flux server-rendered si és viable.
+- `MP4`: segon cas d'ús o ampliació funcional amb canvi dinàmic de resposta.
 - `MP5`: qualitat i estabilització.
 - `MP6`: tancament tècnic.
 

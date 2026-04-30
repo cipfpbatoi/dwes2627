@@ -4,17 +4,21 @@
 
 ### Objectiu
 
-Deixar arrancat el projecte en framework amb Docker, configuració mínima i primera ruta verificable.
+Deixar arrancat el projecte en framework amb Docker, configuració mínima, primera ruta verificable i una justificació curta de la tria tècnica.
 
 ### Tasques concretes
 
 - Tria `Laravel`, `Symfony` o `NestJS`.
+- Compara l'opció triada amb almenys una altra alternativa possible.
+- Explica un avantatge clar de separar presentació i lògica amb el framework triat.
+- Fes un esquema curt abans/després entre la base de `R2` i la nova estructura.
 - Crea o inicialitza el projecte base.
 - Prepara Docker i els serveis necessaris.
 - Crea `.env.example` o documenta les variables mínimes.
 - Defineix una ruta inicial o `healthcheck`.
 - Declara quins `2` casos d'ús faràs en `R3`.
 - Indica quin cas d'ús ve de `R2`.
+- Indica quin cas d'ús serà server-rendered amb vista o plantilla.
 
 ### Producte esperat
 
@@ -24,8 +28,12 @@ Un projecte en framework que arranca i que ja té una ruta mínima visible.
 
 - Docker funcional.
 - Projecte arrancable.
+- Nota comparativa curta de framework.
+- Esquema abans/després de responsabilitats.
+- Justificació breu dels avantatges de separar presentació i lògica.
 - `.env.example` o instruccions.
 - Ruta mínima.
+- Primera resposta generada pel framework, encara que siga una vista mínima.
 - Issue o llista de tasques de `R3`.
 - Llista dels `2` casos d'ús.
 
@@ -33,6 +41,8 @@ Un projecte en framework que arranca i que ja té una ruta mínima visible.
 
 - Una altra persona pot arrancar el projecte.
 - El framework no és només una carpeta buida.
+- La tria del framework està justificada amb un avantatge concret, no amb frases genèriques.
+- L'esquema abans/després mostra millor separació de ruta, controlador, vista o resposta i model.
 - L'abast de `R3` està clar i no diu "migrar tot".
 
 ### Errors habituals
@@ -40,6 +50,8 @@ Un projecte en framework que arranca i que ja té una ruta mínima visible.
 - Instal·lar el framework però no poder arrancar-lo.
 - No documentar variables d'entorn.
 - No decidir els `2` casos d'ús.
+- Dir "Laravel/Symfony/NestJS és millor" sense explicar per què ajuda a separar responsabilitats.
+- Fer una comparativa llarga però inútil per al projecte.
 - Triar com a objectiu "tota l'aplicació".
 
 ### IA
@@ -50,10 +62,13 @@ Pots demanar a la IA:
 - una proposta de `compose.yaml`
 - una llista de passos per crear el projecte base
 - una comparació ràpida entre convencions de `Laravel`, `Symfony` i `NestJS`
+- preguntes per revisar avantatges de separar presentació i lògica
 
 No pots delegar:
 
 - la tria de l'stack sense entendre-la
+- la justificació de per què l'stack triat ajuda al teu projecte
+- l'esquema abans/després
 - la comprovació real que arranca
 - la decisió dels casos d'ús
 
@@ -61,7 +76,7 @@ No pots delegar:
 
 ### Objectiu
 
-Crear una BBDD real, definir l'esquema mínim i carregar dades inicials reproduïbles.
+Crear una BBDD real, definir l'esquema mínim, carregar dades inicials reproduïbles i usar un conjunt de dades recuperat dins d'un flux funcional.
 
 ### Tasques concretes
 
@@ -72,10 +87,13 @@ Crear una BBDD real, definir l'esquema mínim i carregar dades inicials reprodu�
 - Crea `seeders`, fixtures o script equivalent.
 - Carrega dades de prova.
 - Fes una primera lectura real de dades.
+- Recupera un conjunt de dades real des de la BBDD.
+- Prepara eixe conjunt de dades perquè alimente una vista, llistat, filtre, detall o resposta.
+- Demostra que la informació recuperada arriba al flux funcional.
 
 ### Producte esperat
 
-BBDD reconstruïble des de zero amb dades inicials útils per als fluxos.
+BBDD reconstruïble des de zero amb dades inicials útils i un conjunt de dades real usat en un flux.
 
 ### Evidències
 
@@ -84,12 +102,17 @@ BBDD reconstruïble des de zero amb dades inicials útils per als fluxos.
 - Comanda o instrucció per crear BBDD.
 - Comanda o instrucció per carregar dades.
 - Captura, log o demo de lectura real.
+- Consulta o recuperació que retorne un conjunt de dades.
+- Ús d'eixe conjunt de dades en un llistat, filtre, detall o resposta.
+- Prova que les dades recuperades arriben al flux.
 
 ### Criteris de qualitat
 
 - Les dades no es carreguen a mà.
 - Les taules tenen relació amb els casos d'ús.
 - Es pot reiniciar BBDD i recuperar dades de demo.
+- El conjunt de dades recuperat té estructura clara i no és una consulta solta sense ús.
+- Les dades alimenten una vista, resposta o flux funcional.
 
 ### Errors habituals
 
@@ -97,6 +120,8 @@ BBDD reconstruïble des de zero amb dades inicials útils per als fluxos.
 - Fer un model de dades massa gran.
 - Usar arrays en lloc de BBDD.
 - No documentar com executar migracions i seeders.
+- Fer una lectura de prova que no arriba a cap flux.
+- Recuperar dades però no tractar-les de manera estructurada.
 
 ### IA
 
@@ -106,12 +131,14 @@ Pots demanar a la IA:
 - ajuda per escriure una migració
 - exemples de seeders o fixtures
 - explicació d'un error de connexió
+- exemples de consulta per llistar o filtrar dades
 
 No pots delegar:
 
 - decidir quines dades necessita el teu domini
 - validar que la BBDD es crea de zero
 - comprovar que els seeders carreguen dades reals
+- demostrar que el conjunt de dades alimenta un flux funcional
 
 ## MP3. Primer cas d'ús complet
 
@@ -126,6 +153,8 @@ Migrar o reconstruir en el framework un cas d'ús real que vinga de `R2`.
 - Crea controlador o equivalent.
 - Usa model, servei o capa de dades.
 - Crea vista, plantilla o resposta.
+- Passa dades del controlador a una vista o plantilla si aquest serà el flux server-rendered.
+- Genera una resposta `HTML` en servidor en almenys un cas d'ús de `R3`.
 - Llig dades reals de BBDD.
 - Afig validació mínima si hi ha entrada d'usuari.
 - Controla almenys un error.
@@ -141,6 +170,7 @@ Un flux end-to-end heretat de `R2` funcionant en el framework.
 - Controlador o equivalent.
 - Model, servei o capa de dades.
 - Vista, plantilla o resposta.
+- Si és el flux server-rendered, pàgina `HTML` generada pel servidor amb dades reals.
 - Dades reals de BBDD.
 - Prova del cas positiu.
 - Error controlat.
@@ -150,6 +180,7 @@ Un flux end-to-end heretat de `R2` funcionant en el framework.
 - El flux ve de `R2`.
 - No és una pantalla estàtica.
 - La BBDD participa en el flux.
+- Almenys aquest flux o un altre de `R3` és server-rendered.
 - Les responsabilitats no estan totes dins del controlador.
 
 ### Errors habituals
@@ -186,6 +217,7 @@ Afegir un segon flux end-to-end que demostre que la base en framework pot créix
 - Implementa ruta.
 - Implementa controlador o equivalent.
 - Usa BBDD real.
+- Fes que el contingut generat canvie segons dades, paràmetres, estat, filtre o formulari.
 - Afig validació o error mínim.
 - Prova el recorregut complet.
 
@@ -199,6 +231,8 @@ Un segon flux funcional. Pot ser xicotet, però ha de tindre valor real.
 - Justificació de per què és útil.
 - Ruta i controlador o equivalents.
 - Interacció amb BBDD.
+- Canvi dinàmic visible en la resposta generada.
+- Vista o plantilla si aquest és el flux triat com a server-rendered.
 - Validació o error.
 - Demo o prova.
 
@@ -207,6 +241,7 @@ Un segon flux funcional. Pot ser xicotet, però ha de tindre valor real.
 - No és només una vista nova.
 - No és una còpia del primer flux canviant noms.
 - Aprofita estructura del framework.
+- El canvi és funcional i modifica la resposta segons dades o interacció real.
 - No trenca el primer flux.
 
 ### Errors habituals

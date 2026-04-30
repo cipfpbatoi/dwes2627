@@ -36,6 +36,8 @@ Si una part del teu flux no aplica, marca-la com a `No aplica` i justifica-ho br
 
 | Cas de prova | Entrada | Resultat esperat | Resultat obtingut | Incidències detectades |
 |---|---|---|---|---|
+| Codi servidor integrat amb marques | Acció que genera una pàgina o resposta | El resultat mostra dades tractades pel servidor dins d'`HTML` o plantilla equivalent |  |  |
+| Variables i operadors aplicats | Entrada que obliga a calcular, comparar o transformar | Les variables i operadors afecten la resposta generada |  |  |
 | Dades correctes processades | Entrada vàlida | El servidor tracta la informació i genera la resposta esperada |  |  |
 | Dades incorrectes rebutjades | Entrada inconsistent o manipulada | El servidor rebutja la petició i no continua el flux |  |  |
 | Aplicació de lògica del flux o del negoci | Cas amb condició, regla o càlcul | La decisió, funció, array o bucle afecta el resultat de manera visible |  |  |
@@ -126,6 +128,9 @@ Eina o entorn utilitzat per provar o depurar:
 ### Valoració final
 
 - [ ] El flux principal està provat de punta a punta.
+- [ ] El flux mostra codi servidor integrat amb `HTML` o plantilla equivalent.
+- [ ] He comprovat variables, operadors, sentències simples, directives o àmbits dins del comportament real.
+- [ ] La resposta o document resultant es genera des del servidor i canvia segons les dades.
 - [ ] Els errors de validació es mostren de manera visible.
 - [ ] La informació correcta es conserva i es pot reutilitzar.
 - [ ] La funcionalitat protegida té prova autoritzada i prova denegada.

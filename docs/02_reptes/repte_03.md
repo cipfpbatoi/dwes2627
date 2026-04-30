@@ -19,13 +19,17 @@ Al final de `R3` has de poder mostrar:
 - configuració mínima i `.env.example` o instruccions equivalents
 - rutes reals
 - controladors o equivalents
-- vistes, plantilles o respostes
+- vistes, plantilles o respostes generades pel framework
 - models, entitats, esquemes o capa equivalent de dades
 - BBDD real
 - `migrations` per crear l'estructura de dades
 - `seeders` o equivalent per carregar dades inicials
+- comparació curta del framework triat amb una altra opció possible
+- esquema abans/després de responsabilitats respecte a `R2`
+- recuperació i ús d'un conjunt de dades real dins d'un flux funcional
 - `2` casos d'ús end-to-end
 - almenys `1` cas d'ús migrat de `R2`
+- almenys `1` cas d'ús server-rendered amb vista o plantilla i resposta `HTML` generada en servidor
 - validació mínima
 - tractament bàsic d'errors
 - proves mínimes
@@ -41,6 +45,7 @@ No es demana:
 - crear només un esquelet del framework
 - usar BBDD amb dades carregades a mà
 - fer un segon flux que siga només una pantalla o un canvi visual
+- formular-ho tot com a `API` o JSON sense cap pàgina renderitzada en servidor
 
 El codi de `R2` és punt de partida i referència. La nova via principal del projecte en `R3` és el framework.
 
@@ -52,7 +57,7 @@ Els stacks base són:
 - `Symfony`
 - `NestJS`
 
-La nomenclatura canvia segons l'stack, però el criteri és el mateix: ruta, controlador, capa de dades, persistència real, resposta visible, validació, error i prova.
+La nomenclatura canvia segons l'stack, però el criteri és el mateix: ruta, controlador, capa de dades, persistència real, resposta visible, validació, error i prova. En almenys un flux, la resposta visible ha de ser una pàgina o plantilla renderitzada pel servidor.
 
 ## Microreptes
 
@@ -60,10 +65,10 @@ La nomenclatura canvia segons l'stack, però el criteri és el mateix: ruta, con
 
 | Microrepte | Producte principal |
 |---|---|
-| `MP1` Arrencada del nou projecte | Docker, framework, `.env`, ruta mínima i abast dels 2 fluxos |
-| `MP2` Persistència mínima | BBDD, `migrations`, `seeders` i primera lectura real |
-| `MP3` Primer cas d'ús complet | flux heretat de `R2` funcionant en framework |
-| `MP4` Segon cas d'ús o ampliació | segon flux real, migrat o ampliació funcional útil |
+| `MP1` Arrencada del nou projecte | Docker, framework, `.env`, ruta mínima, comparació de stack i esquema abans/després |
+| `MP2` Persistència mínima | BBDD, `migrations`, `seeders` i conjunt de dades real usat en un flux |
+| `MP3` Primer cas d'ús complet | flux heretat de `R2` funcionant en framework, preferentment com a cas server-rendered |
+| `MP4` Segon cas d'ús o ampliació | segon flux real, migrat o ampliació funcional útil amb canvi dinàmic de resposta |
 | `MP5` Qualitat i estabilització | validació, errors, proves i revisió d'estructura |
 | `MP6` Tancament tècnic | README, demo, decisions i mapa del que queda pendent |
 
@@ -82,12 +87,18 @@ Has d'aportar:
 - commits significatius
 - issue o llista de tasques de `R3`
 - Docker i framework arrancables
+- justificació del framework triat i avantatge de separar presentació i lògica
+- comparació breu amb una altra opció de framework
+- esquema abans/després de responsabilitats entre `R2` i `R3`
 - `.env.example` o instruccions de configuració
 - `migrations`
 - `seeders` o equivalent
 - dades de demostració reproduïbles
+- consulta o recuperació d'un conjunt de dades real
+- ús d'eixe conjunt de dades en un llistat, detall, filtre o resposta
 - prova dels `2` casos d'ús funcionals
 - prova que almenys `1` flux ve de `R2`
+- evidència que almenys `1` flux passa dades del controlador a una vista o plantilla i genera `HTML` en servidor
 - validació i errors mínims
 - proves mínimes o checklist verificable
 - README curt d'arrencada i ús
@@ -101,9 +112,11 @@ Has d'aportar:
 1. arrancar el projecte amb les instruccions del README
 2. crear la BBDD amb `migrations`
 3. carregar dades inicials amb `seeders` o equivalent
-4. executar els `2` casos d'ús
-5. veure una validació o error controlat
-6. executar o revisar proves mínimes
-7. entendre què s'ha migrat, què s'ha ampliat i què queda pendent
+4. recuperar un conjunt de dades real i vore'l dins d'un flux funcional
+5. executar els `2` casos d'ús
+6. vore almenys `1` cas d'ús server-rendered amb dades reals en una vista o plantilla
+7. veure una validació o error controlat
+8. executar o revisar proves mínimes
+9. entendre què s'ha migrat, què s'ha ampliat i què queda pendent
 
-Si falta Docker, BBDD reconstruïble, seeders o els `2` fluxos, el repte encara no està tancat.
+Si falta Docker, BBDD reconstruïble, seeders, els `2` fluxos o el cas server-rendered, el repte encara no està tancat.

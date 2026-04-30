@@ -13,7 +13,21 @@ En un flux web bàsic, el camí és:
 5. Un model, repositori o ORM consulta o guarda dades.
 6. Una vista, plantilla o resposta retorna el resultat.
 
+En `R3`, almenys un recorregut ha de passar per una vista o plantilla renderitzada en servidor. Si tots els fluxos acaben només en JSON o en una futura `API`, falta una part del repte.
+
 Si tot passa dins d'un únic fitxer o controlador gegant, no estàs aprofitant bé el framework.
+
+## Per què separar presentació i lògica
+
+Separar responsabilitats aporta avantatges pràctics:
+
+- pots canviar una vista sense tocar tota la lògica
+- pots provar millor una operació
+- pots reutilitzar una consulta o servei
+- pots entendre abans on està un error
+- pots preparar millor una futura `API`
+
+En `MP1` has de comparar el framework triat amb una altra opció i explicar quin avantatge t'ajuda més en el teu projecte. No cal una comparativa llarga; cal una decisió tècnica comprensible.
 
 ## Rutes
 
@@ -64,6 +78,13 @@ Criteri mínim:
 - ha de permetre provar el cas d'ús
 - els errors han de ser visibles o identificables
 
+Per al cas server-rendered:
+
+- el controlador ha de passar dades reals a una vista o plantilla
+- el servidor ha de retornar `HTML` generat pel framework
+- el contingut ha de canviar segons dades, paràmetres, estat, filtre o formulari
+- no val una plantilla estàtica sense dades del projecte
+
 ## Models i capa de dades
 
 El model, entitat, esquema o repositori representa dades del domini.
@@ -81,6 +102,27 @@ Criteri mínim:
 - el model ha d'estar connectat amb la BBDD
 - ha de servir als casos d'ús
 - no modeles tot el projecte si només necessites una base inicial
+
+## Conjunt de dades recuperat
+
+En `MP2` has de recuperar un conjunt de dades real i usar-lo.
+
+Exemples:
+
+- llistat d'incidències
+- reserves d'un usuari
+- productes amb stock baix
+- últims moviments d'inventari
+- tasques filtrades per estat
+
+El conjunt de dades ha d'arribar a una vista, resposta o flux funcional. Una consulta feta només en consola no és suficient si després no alimenta cap part del projecte.
+
+Si alimenta una vista, has de poder assenyalar clarament:
+
+- on es fa la consulta o recuperació
+- on es passa el conjunt de dades al controlador o resposta
+- on la plantilla el recorre o el mostra
+- com es comprova que les dades venen de la BBDD
 
 ## Connexió a BBDD
 
@@ -173,5 +215,5 @@ I també com executar dins del contenidor les comandes del framework, si cal.
 | Model | `app/Models` | `src/Entity` | entity, schema o model |
 | Migració | `database/migrations` | Doctrine migrations | carpeta de migrations de l'ORM |
 | Seeder | `database/seeders` | fixtures | script o seeder |
-| Vista | Blade | Twig | normalment JSON |
+| Vista | Blade | Twig | plantilles si el projecte activa renderitzat servidor; si no, acordar amb el professorat quin flux HTML cobreix `R3` |
 | Proves | PHPUnit/Pest | PHPUnit | Jest |

@@ -8,6 +8,7 @@ En `R3` has de reconstruir el projecte en framework i deixar una base real:
 - BBDD creada per `migrations`
 - dades inicials amb `seeders`
 - `2` casos d'ús funcionals
+- almenys `1` cas server-rendered amb vista o plantilla
 - validació, errors i proves mínimes
 - README curt d'arrencada i ús
 
