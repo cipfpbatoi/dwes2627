@@ -27,7 +27,7 @@ La progressió general és esta:
 
 - [Repte 1](repte_01.md): base tècnica i primer flux funcional del producte.
 - [Repte 2](repte_02.md): processament de dades, estat o sessió, autenticació i primera funcionalitat protegida.
-- [Repte 3](repte_03.md): arquitectura més mantenible i persistència.
+- [Repte 3](repte_03.md): reconstrucció en framework, BBDD real, `migrations`, `seeders` i `2` casos d'ús funcionals.
 - [Repte 4](repte_04.md): `API` i serveis reutilitzables.
 - [Repte 5](repte_05.md): aplicació híbrida, integració externa i manteniment.
 - [Tancament i defensa](fase_final.md): verificació final, documentació i defensa del producte.
@@ -40,7 +40,7 @@ El producte continua sent el mateix, però el focus va canviant.
 
 - En `R1`, la prioritat és obrir el projecte i deixar una primera base funcional.
 - En `R2`, la prioritat és consolidar el flux complet de servidor sobre una base comuna en `PHP`.
-- En `R3`, entra el framework i el producte passa a ser més mantenible i persistent.
+- En `R3`, entra el framework i el producte es reconstrueix sobre una base real amb Docker, BBDD, `migrations`, `seeders` i `2` casos d'ús funcionals.
 - En `R4`, el treball se centra a exposar serveis i reutilitzar el producte com a `API`.
 - En `R5`, el sistema ja ha de connectar amb integracions o fluxos híbrids reals.
 - En la fase final, el focus està en provar, documentar i defendre el conjunt del producte.
@@ -91,7 +91,7 @@ La seqüència del curs fa que el producte:
 
 - Naixa com una primera base funcional.
 - Guanye una base comuna en `PHP`.
-- Es faça més mantenible amb framework i persistència.
+- Es reconstruïsca sobre framework amb persistència real i fluxos verificables.
 - S’òbriga a `API`.
 - I acabe amb integració, prova i defensa.
 

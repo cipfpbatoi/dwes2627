@@ -14,7 +14,7 @@ La seqüència general és esta:
 
 - `R1`: obri el projecte i deixa una primera peça funcional real.
 - `R2`: es resol sobre una base comuna en `PHP` per consolidar dades, lògica, estat o sessió, autenticació i funcionalitat protegida.
-- `R3`: és on entra el contrast de frameworks i el mateix projecte continua amb una estructura més mantenible i persistència.
+- `R3`: és on entra el contrast de frameworks i el mateix projecte es reconstrueix amb Docker, BBDD real, `migrations`, `seeders` i `2` casos d'ús funcionals.
 - `R4`: el producte passa a publicar i consumir una `API` real.
 - `R5`: el curs es tanca amb integració, manteniment, revisió i defensa del producte.
 
@@ -44,7 +44,9 @@ A partir d’eixe moment, el mateix projecte i el mateix encàrrec funcional pod
 
 ## 🧱 Mateix projecte, diferents fases
 
-Quan passa el curs del tram comú al tram de framework, no canvies de problema ni comences de zero.
+Quan passa el curs del tram comú al tram de framework, no canvies de problema ni migres tota l'aplicació antiga.
+
+El que fas en `R3` és construir una base nova i real en framework, amb almenys `2` fluxos funcionals. Com a mínim un ha de vindre de `R2`.
 
 Continues el mateix projecte. El que canvia és la manera d’organitzar-lo, fer-lo créixer i professionalitzar-lo.
 

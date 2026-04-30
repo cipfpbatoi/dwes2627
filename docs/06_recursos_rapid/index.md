@@ -22,6 +22,13 @@ Des de `R3`, els itineraris base són:
 - `Symfony`
 - `NestJS`
 
+Per al treball concret de `R3`, consulta també:
+
+- [Fitxa general del Repte 3](../04_materials/repte_03/fitxa_general.md)
+- [Microreptes de R3](../04_materials/repte_03/microreptes.md)
+- [Suport tècnic de R3](../04_materials/repte_03/suport_tecnic.md)
+- [Checklists de R3](../04_materials/repte_03/checklists.md)
+
 `FastAPI` queda només com a opció avançada o excepcional.
 
 ## Si tens dubtes d’avaluació

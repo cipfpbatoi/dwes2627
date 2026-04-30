@@ -7,7 +7,7 @@ Este repositori és la porta d'entrada del curs per a alumnat. Ací tens la vers
 - Este mòdul es treballa per reptes.
 - No faràs peces inconnexes, sinó un mateix producte backend que va creixent.
 - El `Repte 2` és el moment de consolidar una base comuna en `PHP`.
-- El contrast de frameworks comença després, a partir del `Repte 3`.
+- El contrast de frameworks comença després, a partir del `Repte 3`, amb una reconstrucció real sobre framework.
 - El mateix projecte pot continuar amb `Laravel`, `Symfony` o `NestJS`.
 - `FastAPI` només apareix com a via avançada o excepcional.
 
@@ -32,6 +32,7 @@ Este repositori és la porta d'entrada del curs per a alumnat. Ací tens la vers
 - [Com funciona el curs](01_com_funciona_el_curs/index.md).
 - [Projecte base](05_projecte_base/index.md).
 - [Reptes](02_reptes/index.md).
+- [Materials del Repte 3](04_materials/repte_03/index.md).
 - [Com s'avalua](03_com_s_avalua/index.md).
 
 ## 🚀 Per on començar
