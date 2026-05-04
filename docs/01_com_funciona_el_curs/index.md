@@ -124,3 +124,16 @@ L’objectiu és arribar a un producte que pugues:
 - Mantindre.
 - Explicar.
 - I defendre.
+
+
+## 🌟 Via d'excel·lència 9→10
+
+Cada repte pot incloure una ampliació `9→10`. Esta ampliació no substituïx el nucli obligatori: només compta quan el repte base ja està complet i validat.
+
+La idea és simple:
+
+- primer resols bé el nucli
+- després, si toca, aprofundixes amb una millora tècnica real
+- l'ampliació només compta si la pots provar, explicar i defensar
+
+Tens el resum comú en [Ampliacions d'excel·lència 9→10](../ampliacions-excellencia.md).

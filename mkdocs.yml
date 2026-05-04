@@ -6,6 +6,7 @@ nav:
   - "🏠 Inici": "index.md"
   - "📘 Com funciona el curs":
       - "🧭 Visió general": "01_com_funciona_el_curs/index.md"
+      - "🌟 Ampliacions 9→10": "ampliacions-excellencia.md"
       - "🤖 Ús verificable de la IA": "04_materials/guia_us_verificable_ia.md"
   - "📚 Materials":
       - "👀 Visió general": "04_materials/index.md"

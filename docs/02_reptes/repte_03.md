@@ -120,3 +120,30 @@ Has d'aportar:
 9. entendre què s'ha migrat, què s'ha ampliat i què queda pendent
 
 Si falta Docker, BBDD reconstruïble, seeders, els `2` fluxos o el cas server-rendered, el repte encara no està tancat.
+
+## Ampliació 9→10
+
+**Finalitat**  
+Aprofundir en la qualitat de l'arquitectura en framework i demostrar millor criteri sobre `MVC`, persistència i mantenibilitat.
+
+**Condició prèvia**  
+El nucli del repte ha d'estar complet, funcional i validat.
+
+**Opcions d'ampliació**
+- Millorar un flux amb paginació, filtrat, cerca o autorització sense trencar la coherència del projecte.
+- Fer una refactorització justificada del repartiment entre ruta, controlador, capa de dades i vista o plantilla.
+
+**Proposta pròpia**  
+Es pot presentar una ampliació pròpia si continua centrada en qualitat arquitectònica i es valida abans amb el professorat.
+
+**Evidències mínimes**
+- commit o branca identificable
+- nota tècnica breu o `ADR`
+- demo funcional del flux millorat
+- rastre de l'ús assistit per IA, si n'hi ha hagut
+
+**Ús assistit per IA**  
+La IA et pot ajudar a comparar estructures, revisar codi o suggerir proves, però la decisió d'arquitectura i la defensa han de ser teues.
+
+**Defensa**  
+Perquè compute com a `9→10`, has de poder justificar per què la millora aporta qualitat real al projecte.

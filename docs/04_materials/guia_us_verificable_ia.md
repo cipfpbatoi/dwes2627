@@ -80,3 +80,17 @@ Convé deixar AI log o rastre equivalent sobretot:
 - la IA s'ha usat com a suport, no com a substitut del treball tècnic
 - si la IA ha fallat o has descartat una proposta, això també pot quedar reflectit si aporta context útil
 - el resultat final continua sent defensable encara que desaparega el text original generat
+
+
+## 🌟 IA i ampliacions 9→10
+
+En les ampliacions `9→10`, la IA també es pot usar com a suport per contrastar enfocaments, revisar codi, suggerir proves o comparar alternatives.
+
+Però continua sense ser acceptable que substituïsca:
+
+- la decisió tècnica
+- la validació real
+- la prova funcional
+- la defensa de l'ampliació
+
+Si la IA ha tingut un paper rellevant en una ampliació, convé que això quede reflectit en el rastre o `AI log` corresponent.

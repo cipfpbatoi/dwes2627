@@ -27,6 +27,10 @@ Este repositori és la porta d'entrada del curs per a alumnat. Ací tens la vers
 - Els trios avançats només són una opció puntual, no la modalitat general.
 - El repositori, les evidències i la defensa continuen sent individuals.
 
+## 🌟 Ampliacions 9→10
+
+Cada repte pot tindre una via d'excel·lència. La regla és simple: **nucli primer, ampliació després**. Tens el resum comú en [Ampliacions d'excel·lència 9→10](ampliacions-excellencia.md).
+
 ## 🗂️ Què tens disponible
 
 - [Com funciona el curs](01_com_funciona_el_curs/index.md).

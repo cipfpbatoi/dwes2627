@@ -787,3 +787,30 @@ Este repte deixa el producte preparat per al següent pas del curs:
 - Introduir el framework sense canviar de projecte.
 
 La sessió `7` de revisió en `R2` ha de servir justament per arribar a `R3` amb una base més clara, no per consumir abans d’hora tot el que correspon al repte següent.
+
+## Ampliació 9→10
+
+**Finalitat**  
+Millorar la robustesa del flux en servidor i demostrar més control sobre validació, estat, autenticació i mantenibilitat.
+
+**Condició prèvia**  
+El nucli del repte ha d'estar complet, funcional i validat.
+
+**Opcions d'ampliació**
+- Reforçar la validació, els errors visibles o la funcionalitat protegida amb un cas crític millor resolt.
+- Fer una refactorització tècnica breu i justificada que deixe el flux més clar, reutilitzable o mantenible.
+
+**Proposta pròpia**  
+També pots proposar una ampliació pròpia si té valor tècnic real i es valida abans amb el professorat.
+
+**Evidències mínimes**
+- commit o branca identificable
+- justificació tècnica breu
+- prova funcional dels casos millorats
+- rastre de l'ús assistit per IA, si l'has usat
+
+**Ús assistit per IA**  
+La IA et pot ajudar a contrastar validacions, proves o refactoritzacions, però no substituïx la teua decisió ni la teua comprovació real.
+
+**Defensa**  
+L'ampliació només compta si la pots explicar amb criteri i sense delegació excessiva.

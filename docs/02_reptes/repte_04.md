@@ -32,3 +32,30 @@ El treball continua sobre el mateix projecte i sobre el mateix encàrrec funcion
 ## Connexió amb el següent pas
 
 En `R5`, esta API formarà part d’un flux híbrid o automatitzat. Si el contracte no està clar, la integració final es trenca.
+
+## Ampliació 9→10
+
+**Finalitat**  
+Fer l'API més robusta, més clara i més verificable des del punt de vista del productor i del consumidor.
+
+**Condició prèvia**  
+El nucli del repte ha d'estar complet, funcional i validat.
+
+**Opcions d'ampliació**
+- Millorar la documentació de l'API, la coherència dels codis de resposta i la gestió d'errors dels endpoints principals.
+- Afegir comprovacions o proves addicionals sobre contracte, autenticació o casos crítics de consum.
+
+**Proposta pròpia**  
+Pots proposar una ampliació pròpia si continua centrada en qualitat d'API i es valida abans amb el professorat.
+
+**Evidències mínimes**
+- commit o branca identificable
+- README tècnic curt o nota de canvis
+- prova funcional amb client, script, Postman o equivalent
+- rastre de l'ús assistit per IA, si n'hi ha hagut
+
+**Ús assistit per IA**  
+La IA pot ajudar a revisar endpoints, generar proves o comparar respostes, però has de validar tu el comportament real de l'API.
+
+**Defensa**  
+Perquè compte com a `9→10`, l'ampliació ha d'estar integrada, aportar robustesa real i poder-se defensar.

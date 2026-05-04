@@ -203,3 +203,16 @@ En este curs es valora sobretot si el teu treball és:
 - Comprensible.
 - Traçable.
 - I defensable.
+
+
+## 🌟 Com compta la franja 9→10
+
+La franja `9→10` no és un sistema de punts extra. Requerix una ampliació amb valor tècnic real sobre un repte que ja estiga ben resolt.
+
+Perquè una ampliació compte de veritat, ha de:
+
+- partir d'un nucli complet i validat
+- aportar una millora integrada i no ornamental
+- deixar evidències mínimes revisables
+- poder-se explicar i defensar
+- no dependre d'una delegació excessiva en IA

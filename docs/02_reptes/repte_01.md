@@ -355,3 +355,30 @@ Este repte deixa la base preparada per al següent pas del curs:
 - Gestionar estat o sessió.
 - Protegir funcionalitats.
 - Convertir la base inicial en un flux de servidor més complet en `R2`.
+
+## Ampliació 9→10
+
+**Finalitat**  
+Aprofundir el kickoff del backend amb una millora tècnica real sobre entorn, arrencada o traçabilitat inicial.
+
+**Condició prèvia**  
+El nucli del repte ha d'estar complet, funcional i validat.
+
+**Opcions d'ampliació**
+- Deixar l'entorn encara més reproductible amb automatització bàsica d'arrencada o millor contenidorització.
+- Redactar un `ADR` curt o una nota tècnica més sòlida sobre l'arquitectura inicial i la decisió de stack.
+
+**Proposta pròpia**  
+També pots proposar una ampliació pròpia si està alineada amb el repte i la valides abans amb el professorat.
+
+**Evidències mínimes**
+- commit o branca identificable
+- justificació tècnica breu
+- prova funcional de l'arrencada o de la millora aplicada
+- rastre de l'ús assistit per IA, si n'hi ha hagut
+
+**Ús assistit per IA**  
+La IA et pot ajudar a comparar opcions o revisar configuració, però la decisió, la prova i la validació han de ser teues.
+
+**Defensa**  
+Perquè compute com a `9→10`, l'ampliació ha d'aportar valor real i l'has de poder explicar i defensar.
