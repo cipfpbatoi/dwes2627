@@ -6,7 +6,15 @@ Ací tens algunes guies breus de suport per al curs.
 
 - [Fitxa breu d'exploració tècnica inicial](fitxa_exploracio_tecnica_inicial.md)
 - [Guia d'ús verificable de la IA](guia_us_verificable_ia.md)
+- [Materials del Repte 1](repte_01/index.md)
 - [Materials del Repte 3](repte_03/index.md)
+
+## 🧱 Materials del Repte 1
+
+Per a `R1`, usa estos materials com a suport dels microreptes:
+
+- [Materials del Repte 1](repte_01/index.md)
+- [Fitxa breu d'exploració tècnica inicial](fitxa_exploracio_tecnica_inicial.md)
 
 ## 🧱 Materials del Repte 3
 

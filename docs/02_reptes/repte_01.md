@@ -60,6 +60,8 @@ Al final del repte hauries de poder mostrar una seqüència com esta:
 
 Este repte funciona millor si el dividixes en quatre peces clares. Això t’ajuda a no quedar-te només en la infraestructura i a entendre què es valora en cada part.
 
+Abans de començar, consulta els [materials de suport del Repte 1](../04_materials/repte_01/index.md). Allí tens els PDF d’explicació del professorat organitzats per microrepte.
+
 ### Microrepte 1. Model d’execució client/servidor i elecció guiada de stack
 
 **Objectiu**
@@ -85,6 +87,13 @@ En este microrepte no es tracta encara d’instal·lar el framework complet, sin
 - Explorar de manera breu possibles stacks o frameworks.
 - Comparar de manera inicial exemples com `Laravel`, `Symfony` i `NestJS`.
 - Decidir amb quin marc tècnic inicial arrancarà el projecte.
+
+**Materials de suport**
+
+- [Arquitectura web bàsica](../recursos/Repte1/Arquitectura-web-basica.pdf)
+- [Client-servidor](../recursos/Repte1/Client-Servidor.pdf)
+- [Què és el backend](../recursos/Repte1/Que-es-el-backend.pdf)
+- [Llenguatges, frameworks i full stack](../recursos/Repte1/Llenguatges-frameworks-i-full-stack.pdf)
 
 **Criteris d’avaluació que es treballen**
 
@@ -137,6 +146,11 @@ En este microrepte encara **no es demana la instal·lació completa del framewor
 
 La prioritat és tindre una base comuna i controlada sobre la qual després es puga continuar construint.
 
+**Materials de suport**
+
+- [Entorn executable, servidor i Docker](../recursos/Repte1/Entorn-executable-servidor-i-Docker.pdf)
+- [Muntar l’entorn executable](../recursos/Repte1/Muntar-lentorn-executable.pdf)
+
 **Criteris d’avaluació que es treballen**
 
 - **RA1.c**: Identificar el paper del servidor d’aplicacions i la seua integració.
@@ -185,6 +199,11 @@ Per exemple:
 - Una validació mínima en servidor.
 - Un primer registre o persistència molt bàsica.
 
+**Materials de suport**
+
+- [Repte 1. Els 4 microreptes](../recursos/Repte1/Repte-1-Els-4-Microreptes.pdf)
+- [Criteris d’avaluació i evidències](../recursos/Repte1/Repte-1-Criteris-dAvaluacio-i-Evidencies.pdf)
+
 **Criteris d’avaluació que es treballen**
 
 - **RA1.b**: Comprendre el valor d’un backend que genera comportament real.
@@ -229,6 +248,10 @@ Has de tancar el repte amb:
 - Preparació per al checkpoint o la defensa.
 
 Este microrepte també servix per revalidar si realment comprens el model client/servidor, la base tècnica muntada i la funcionalitat construïda.
+
+**Materials de suport**
+
+- [Criteris d’avaluació i evidències](../recursos/Repte1/Repte-1-Criteris-dAvaluacio-i-Evidencies.pdf)
 
 **Criteris d’avaluació que es treballen**
 

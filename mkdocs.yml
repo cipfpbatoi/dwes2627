@@ -11,7 +11,10 @@ nav:
   - "📚 Materials":
       - "👀 Visió general": "04_materials/index.md"
       - "📝 Fitxa d'exploració tècnica inicial": "04_materials/fitxa_exploracio_tecnica_inicial.md"
+      - "1️⃣ Materials Repte 1": "04_materials/repte_01/index.md"
+      - "3️⃣ Materials Repte 3": "04_materials/repte_03/index.md"
   - "🧱 Projectes base": "05_projecte_base/index.md"
+  - "⚡ Recursos ràpids": "06_recursos_rapid/index.md"
   - "🧩 Reptes":
       - "👀 Visió general": "02_reptes/index.md"
       - "1️⃣ Repte 1": "02_reptes/repte_01.md"

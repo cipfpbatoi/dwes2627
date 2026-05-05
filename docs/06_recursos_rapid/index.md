@@ -14,6 +14,12 @@ Per a `R1` i `R2`, el que has de tindre clar és:
 - `R2` es resol sobre una base comuna en `PHP`
 - el focus està en dades, lògica, estat, autenticació i funcionalitat protegida
 
+Per a `R1`, consulta també:
+
+- [Enunciat del Repte 1](../02_reptes/repte_01.md)
+- [Materials de suport del Repte 1](../04_materials/repte_01/index.md)
+- [Fitxa breu d'exploració tècnica inicial](../04_materials/fitxa_exploracio_tecnica_inicial.md)
+
 ## Si ja has entrat al framework
 
 Des de `R3`, els itineraris base són:

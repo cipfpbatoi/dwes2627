@@ -36,7 +36,9 @@ Cada repte pot tindre una via d'excel·lència. La regla és simple: **nucli pri
 - [Com funciona el curs](01_com_funciona_el_curs/index.md).
 - [Projecte base](05_projecte_base/index.md).
 - [Reptes](02_reptes/index.md).
+- [Materials del Repte 1](04_materials/repte_01/index.md).
 - [Materials del Repte 3](04_materials/repte_03/index.md).
+- [Recursos ràpids](06_recursos_rapid/index.md).
 - [Com s'avalua](03_com_s_avalua/index.md).
 
 ## 🚀 Per on començar
@@ -47,7 +49,8 @@ Si és la primera vegada que entres, fes este recorregut.
 2. Revisa [Projecte base](05_projecte_base/index.md).
 3. Mira la [visió general dels reptes](02_reptes/index.md).
 4. Obri [Repte 1](02_reptes/repte_01.md).
-5. Consulta [Com s'avalua](03_com_s_avalua/index.md).
+5. Consulta els [materials del Repte 1](04_materials/repte_01/index.md).
+6. Consulta [Com s'avalua](03_com_s_avalua/index.md).
 
 ## ✅ Què s'espera de tu
 
