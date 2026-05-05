@@ -201,7 +201,7 @@ Per exemple:
 
 **Materials de suport**
 
-- [Repte 1. Els 4 microreptes](../recursos/Repte1/Repte-1-Els-4-Microreptes.pdf)
+- [Repte 1. Kickoff Professional del Backend](../recursos/Repte1/Repte-1-Kickoff-Professional-del-Backend.pdf)
 - [Criteris d’avaluació i evidències](../recursos/Repte1/Repte-1-Criteris-dAvaluacio-i-Evidencies.pdf)
 
 **Criteris d’avaluació que es treballen**
