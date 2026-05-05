@@ -90,9 +90,9 @@ En este microrepte no es tracta encara d’instal·lar el framework complet, sin
 
 **Materials de suport**
 
+- [Arquitectura web bàsica](../recursos/Repte1/Arquitectura-web-basica.pdf)
 - [Client-servidor](../recursos/Repte1/Client-Servidor.pdf)
 - [Què és el backend](../recursos/Repte1/Que-es-el-backend.pdf)
-- [Arquitectura web bàsica](../recursos/Repte1/Arquitectura-web-basica.pdf)
 - [Llenguatges, frameworks i full stack](../recursos/Repte1/Llenguatges-frameworks-i-full-stack.pdf)
 
 **Criteris d’avaluació que es treballen**
@@ -199,6 +199,10 @@ Per exemple:
 - Una validació mínima en servidor.
 - Un primer registre o persistència molt bàsica.
 
+**Materials de suport**
+
+- [Repte 1. Els 4 microreptes](../recursos/Repte1/Repte-1-Els-4-Microreptes.pdf)
+- [Criteris d’avaluació i evidències](../recursos/Repte1/Repte-1-Criteris-dAvaluacio-i-Evidencies.pdf)
 
 **Criteris d’avaluació que es treballen**
 
@@ -365,7 +369,7 @@ Este repte es considera superat quan:
 
 En el **Repte 1** no es demana encara la instal·lació completa d’un framework.
 
-La prioritat és disposar d’un entorn executable en **Docker + PHP + servidor web + BBDD + phpMyAdmin ** i construir una primera peça funcional mínima del backend.
+La prioritat és disposar d’un entorn executable en **Docker + PHP + servidor web** i construir una primera peça funcional mínima del backend.
 
 La decisió sobre el framework pot aparéixer com a exploració inicial o orientació tècnica dins de la fitxa breu del microrepte `1`, però la seua incorporació efectiva es reserva per a fases posteriors del curs.
 
