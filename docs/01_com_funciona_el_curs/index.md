@@ -20,6 +20,16 @@ La seqüència general és esta:
 
 Els reptes no són entregues independents. Cada repte aprofita l’anterior i prepara el següent.
 
+## 🗓️ Ritme per avaluacions
+
+A nivell pràctic, el curs es repartix així:
+
+- **Avaluació 1**: `Repte 1`, `Repte 2` i entrada a `Repte 3`.
+- **Avaluació 2**: tancament de `Repte 3`, `Repte 4`, `Repte 5` i defensa.
+- **Avaluació 3**: tram residual de tancaments, millores o connexió amb empresa/FCT, si correspon.
+
+És una orientació de ritme. El detall concret pot ajustar-se durant el curs segons el calendari real.
+
 ## 🔀 Què canvia entre `R2` i `R3`
 
 `R2` és un tram comú. En esta fase, la prioritat no és comparar frameworks.

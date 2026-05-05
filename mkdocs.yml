@@ -1,4 +1,4 @@
-site_name: Programació web en Entorn Servidor 2026
+site_name: Programació web en Entorn Servidor 2026-2027
 site_url: https://cipfpbatoi.github.io/dwes2627/
 use_directory_urls: false
 
@@ -11,7 +11,7 @@ nav:
   - "📚 Materials":
       - "👀 Visió general": "04_materials/index.md"
       - "📝 Fitxa d'exploració tècnica inicial": "04_materials/fitxa_exploracio_tecnica_inicial.md"
-  - "🧱 Projecte base": "05_projecte_base/index.md"
+  - "🧱 Projectes base": "05_projecte_base/index.md"
   - "🧩 Reptes":
       - "👀 Visió general": "02_reptes/index.md"
       - "1️⃣ Repte 1": "02_reptes/repte_01.md"

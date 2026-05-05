@@ -9,6 +9,10 @@ Continua vigent la mateixa regla del curs:
 - es pot compartir context o contrast tècnic
 - implementació, evidències i defensa continuen sent individuals
 
+## 🌟 Via 9→10 en este repte
+
+Este repte també té una via d'excel·lència `9→10`: **primer has de tancar bé el nucli i després pots obrir una ampliació amb valor tècnic real**. La secció completa està al final del repte.
+
 ## Què has de consolidar
 
 - un flux híbrid o automatitzat amb valor real

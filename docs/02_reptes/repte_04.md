@@ -6,6 +6,10 @@ En este repte el backend deixa de ser només usable des de dins i passa a ser pu
 
 El treball continua sobre el mateix projecte i sobre el mateix encàrrec funcional. L’objectiu és convertir casos d’ús reals del producte en una API clara, provada i documentada.
 
+## 🌟 Via 9→10 en este repte
+
+Este repte també té una via d'excel·lència `9→10`: **primer has de tancar bé el nucli i després pots obrir una ampliació amb valor tècnic real**. La secció completa està al final del repte.
+
 ## Què has de consolidar
 
 - endpoints lligats a casos d’ús reals

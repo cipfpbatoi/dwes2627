@@ -13,6 +13,10 @@ En concret, este repte ha de servir per:
 - Obrir el treball amb criteri professional mínim.
 - Construir una primera peça funcional real del producte.
 
+## 🌟 Via 9→10 en este repte
+
+Este repte també té una via d'excel·lència `9→10`: **primer has de tancar bé el nucli i després pots obrir una ampliació amb valor tècnic real**. La secció completa està al final del repte.
+
 ## Context professional
 
 Imagina que formes part d’un equip que rep l’encàrrec de posar en marxa un nou servei web.

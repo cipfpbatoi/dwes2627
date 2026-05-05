@@ -1,16 +1,16 @@
-# 🧱 Projecte base
+# 🧱 Projectes base
 
-## 💡 Què és el projecte base
+## 💡 Què són els projectes base
 
 En este curs no faràs pràctiques inconnexes ni un producte diferent en cada repte.
 
 Treballaràs sobre un mateix projecte backend que anirà creixent de `R1` a `R5`.
 
-El projecte base és just això: el producte que dona sentit al curs i que et permet avançar repte a repte sense començar de zero cada vegada.
+Els projectes base són els contextos de treball que donen sentit al curs i et permeten avançar repte a repte sense començar de zero cada vegada.
 
-## 🎯 Per a què servix
+## 🎯 Per a què servixen
 
-El projecte base servix per convertir els reptes del curs en parts d’un mateix recorregut.
+Els projectes base servixen per convertir els reptes del curs en parts d’un mateix recorregut.
 
 Gràcies a això, el curs et permet:
 
@@ -23,9 +23,9 @@ Gràcies a això, el curs et permet:
 
 Si cada tema fora una pràctica aïllada, tot això quedaria molt més superficial.
 
-## 🧩 Com encaixa amb els reptes
+## 🧩 Com encaixen amb els reptes
 
-El projecte base es relaciona amb els reptes així:
+Els projectes base es relacionen amb els reptes així:
 
 - `R1`: obri el projecte i deixa una primera peça funcional real.
 - `R2`: consolida una base comuna en `PHP` amb dades, lògica, estat o sessió, autenticació i funcionalitat protegida.
@@ -33,11 +33,11 @@ El projecte base es relaciona amb els reptes així:
 - `R4`: publica i consumix una `API` real del producte.
 - `R5`: integra, manté i deixa el producte preparat per al tancament i la defensa.
 
-Per tant, el projecte base no és una peça separada dels reptes. És el fil conductor de tot el curs.
+Per tant, els projectes base no són una peça separada dels reptes. Són el fil conductor de tot el curs.
 
 ## ✅ Què han de tindre en comú tots els projectes base
 
-Qualsevol projecte base del curs ha de tindre uns mínims comuns.
+Qualsevol dels projectes base del curs ha de tindre uns mínims comuns.
 
 Ha de permetre:
 
@@ -151,6 +151,6 @@ El projecte triat no hauria de ser:
 
 ## 🎯 Idea final
 
-El projecte base no és només el tema del teu backend.
+Els projectes base no són només el tema del teu backend.
 
-És la peça que fa possible que el curs tinga continuïtat, que els reptes tinguen sentit i que pugues arribar al final amb un producte real, provable i defensable.
+Són la peça que fa possible que el curs tinga continuïtat, que els reptes tinguen sentit i que pugues arribar al final amb un producte real, provable i defensable.

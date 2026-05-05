@@ -18,6 +18,10 @@ Ara el backend ja no ha de limitar-se a rebre una petició i respondre. Ha de se
 - Autenticar usuaris i gestionar sessions quan toque.
 - Protegir una primera funcionalitat del projecte.
 
+## 🌟 Via 9→10 en este repte
+
+Este repte també té una via d'excel·lència `9→10`: **primer has de tancar bé el nucli i després pots obrir una ampliació amb valor tècnic real**. La secció completa està al final del repte.
+
 ## Context professional
 
 L’equip ja té una base executable del producte després del `Repte 1`.
