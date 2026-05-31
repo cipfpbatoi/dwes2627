@@ -4,6 +4,14 @@ Estos materials arrepleguen les explicacions de suport per al kickoff funcional 
 
 Usa’ls mentre treballes els microreptes, no com a substitut de les evidències pròpies del projecte.
 
+## Organització per sessions
+
+| Sessió | Autocorrecció | Materials principals |
+|---|---|---|
+| `R1-S01` | `r1-s01-model-client-servidor-stack` | Arquitectura web, client-servidor, backend i llenguatges/frameworks. |
+| `R1-S02` | `r1-s02-entorn-executable` | Entorn executable, servidor i Docker. |
+| `R1-S03` | `r1-s03-punt-entrada-documentacio-checkpoint` | Kickoff professional del backend, criteris d’avaluació, evidències i checkpoint. |
+
 ## Visió general del repte
 
 - [Repte 1. Kickoff Professional del Backend](../../recursos/Repte1/Repte-1-Kickoff-Professional-del-Backend.pdf): mapa general del treball que s’ha de fer.

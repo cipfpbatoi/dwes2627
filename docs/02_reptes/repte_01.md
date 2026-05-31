@@ -60,6 +60,14 @@ Al final del repte hauries de poder mostrar una seqüència com esta:
 
 Este repte funciona millor si el dividixes en quatre peces clares. Això t’ajuda a no quedar-te només en la infraestructura i a entendre què es valora en cada part.
 
+L’autocorrecció, en canvi, es farà per sessió. En este repte hi ha tres sessions i quatre microreptes, perquè l’últim microrepte és el tancament i checkpoint del treball fet en la sessió 3.
+
+| Sessió | Autocorrecció | Microreptes inclosos | Focus principal |
+|---|---|---|---|
+| `R1-S01` | `r1-s01-model-client-servidor-stack` | `MP1` | Model client/servidor, backend i decisió inicial de stack. |
+| `R1-S02` | `r1-s02-entorn-executable` | `MP2` | Entorn executable amb Docker, PHP i servidor web. |
+| `R1-S03` | `r1-s03-punt-entrada-documentacio-checkpoint` | `MP3` + `MP4` | Punt d’entrada funcional, documentació, verificació i defensa breu. |
+
 Abans de començar, consulta els [materials de suport del Repte 1](../04_materials/repte_01/index.md). Allí tens els PDF d’explicació del professorat organitzats per microrepte.
 
 ### Microrepte 1. Model d’execució client/servidor i elecció guiada de stack
