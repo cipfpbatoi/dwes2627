@@ -37,13 +37,13 @@ En este repte has de fer evolucionar el projecte fins a deixar, com a mínim:
 - Un formulari o una entrada de dades real vinculada al projecte triat.
 - Codi servidor integrat amb llenguatge de marques o plantilla, no una pàgina estàtica separada del flux.
 - Ús visible de variables, operadors, sentències simples, directives i àmbits.
-- Recollida de dades, validació, errors visibles i possibilitat de correcció.
+- Recollida de dades, validació inicial bàsica, error visible i possibilitat de correcció.
 - Recuperació i tractament de la informació en servidor.
 - Processament real de la petició amb lògica bàsica.
 - Resposta o document generat pel servidor a partir de les dades rebudes.
 - Conservació o persistència funcional de la informació correcta.
 - Reutilització posterior d’eixa informació dins del projecte.
-- Si el flux ho demana, tractament d’imatge o fitxer amb control bàsic de tipus i grandària.
+- Si el flux ho demana i ja tens el mínim tancat, tractament d’imatge o fitxer com a ampliació amb control bàsic de tipus i grandària.
 - Evidència de manteniment d’estat o sessió.
 - Autenticació funcional.
 - Una operació real del projecte protegida i lligada al domini triat.
@@ -56,12 +56,12 @@ En este repte has de fer evolucionar el projecte fins a deixar, com a mínim:
 Al final del repte hauries de poder mostrar un recorregut complet com este:
 
 - L’usuari inicia una acció útil del projecte base.
-- El sistema recull les dades i les valida en servidor.
-- Si hi ha error, el sistema el mostra de manera clara.
+- El sistema recull les dades i aplica una validació bàsica en servidor.
+- Si hi ha error, el sistema mostra almenys un missatge clar.
 - L’usuari pot corregir i tornar a provar.
 - El servidor processa la petició correcta amb variables, operadors i sentències simples aplicades al flux.
 - El sistema genera una resposta o document on es veu el resultat del tractament en servidor.
-- Si hi ha una imatge o un fitxer, el sistema en valida tipus i grandària abans d’acceptar-lo.
+- Si hi ha una imatge o un fitxer com a ampliació, el sistema en valida tipus i grandària abans d’acceptar-lo.
 - La informació correcta queda conservada en un mecanisme controlat.
 - El projecte pot recuperar o reutilitzar eixa informació més avant.
 - El sistema aplica una regla o una decisió.
@@ -72,7 +72,7 @@ Al final del repte hauries de poder mostrar un recorregut complet com este:
 
 No cal que siga un producte gran. Sí que cal que siga un flux complet, explicable i verificable.
 
-La seqüència ha de quedar clara: primer arriben les dades i es validen; després, només si són correctes, es processen i es guarden per poder reutilitzar-les; després s’apliquen regles del projecte; després es manté estat quan fa falta; després es protegix una acció real; i, al final, es prova i es revisa tot el recorregut.
+La seqüència ha de quedar clara: primer arriben les dades i es fa una validació inicial bàsica; després, només si són correctes, es processen i es guarden per poder reutilitzar-les; després s’apliquen regles del projecte; després es manté estat quan fa falta; després es protegix una acció real; i, al final, es prova i es revisa tot el recorregut.
 
 Per tant, el formulari no compta com a repte complet si només envia dades i torna un missatge genèric. Ha d’estar integrat en una funcionalitat real del projecte, amb tractament, conservació i reutilització posterior.
 
@@ -141,9 +141,9 @@ La pregunta útil no és només “quin formulari faré?”, sinó “quina acci
 
 ## Exemples breus segons projecte base
 
-- **Plataforma de productes**: alta o edició d’un producte amb nom, preu, categoria i imatge. Si falta un camp o la imatge no compleix tipus o grandària, el sistema ho ha de mostrar, permetre correcció i, quan la dada siga correcta, deixar el producte guardat per poder-lo tornar a mostrar en el catàleg o en una zona protegida.
-- **Gestor de reserves o activitats**: creació d’una reserva o d’una activitat amb data, places i possibles dades adjuntes com un cartell o comprovant. El flux ha de validar dades, respondre amb errors clars si alguna cosa no és correcta i deixar l’activitat o la reserva disponible per recuperar-la o gestionar-la després.
-- **Plataforma de recursos o publicacions**: alta d’un recurs, notícia o publicació amb títol, descripció i, quan toque, miniatura, imatge o document adjunt. El servidor ha de validar l’entrada, controlar el fitxer i permetre que la publicació o el recurs es puguen tornar a mostrar més avant dins del projecte.
+- **Plataforma de productes**: alta o edició d’un producte amb nom, categoria i confirmació. Si falta la dada triada per validar, el sistema ho mostra, permet correcció i, quan la dada siga correcta, deixa el producte preparat per al processament posterior.
+- **Gestor de reserves o activitats**: creació d’una reserva o d’una activitat amb nom, franja i confirmació. El flux ha de validar almenys una dada clau, respondre amb un error clar si no és correcta i deixar la reserva preparada per continuar el recorregut.
+- **Plataforma de recursos o publicacions**: alta d’un recurs, notícia o publicació amb títol, tipus i confirmació. El servidor ha de validar una dada inicial i permetre que el recurs es puga processar més avant dins del projecte.
 
 ## Microreptes del Repte 2
 
@@ -153,22 +153,23 @@ La base del repte queda en `21` hores, organitzades en `7` sessions de `3` hores
 
 La progressió també és important: en el microrepte 1 entra i es valida la informació; en el 2 es processen i es guarden les dades correctes; en el 3 s’apliquen regles reals del projecte; en el 4 es conserva estat temporal del flux; en el 5 es protegix una operació real; en el 6 es prova, es depura i es tanca un checkpoint tècnic; i en el 7 es revisa el codi, es trau el que es repetix a fitxers comuns, s’usen `include` / `require` amb sentit i es fa visible almenys un objecte simple del domini.
 
-### Microrepte 1. Formulari i validació visible
+### Microrepte 1. Entrada de dades i validació bàsica
 
 **Objectiu**
 
-Construir un punt d’entrada de dades usable i demostrar que el sistema rep la informació correctament, valida el que toca, mostra feedback útil a l’usuari i no continua cap tractament ni guardat funcional mentre hi haja errors.
+Construir un punt d’entrada de dades usable i demostrar que el sistema rep la informació correctament, aplica una validació bàsica en servidor, mostra un error visible i permet reenviar el formulari corregit.
 
 **Què s’espera**
 
 - Un formulari funcional o una entrada equivalent.
-- Camps amb sentit dins del projecte base.
-- Recuperació real de les dades en servidor.
-- Validació mínima al servidor.
-- Visualització clara dels errors de validació.
+- Camps mínims amb sentit dins del projecte base: text, llista o opció tancada i checkbox.
+- Recuperació real de les dades en servidor amb `$_POST` o mecanisme equivalent.
+- Una validació bàsica al servidor amb una condició simple.
+- Un missatge d’error visible quan la dada triada no és acceptable.
 - Possibilitat de corregir i tornar a enviar.
-- Aturada del flux quan hi ha errors de validació.
 - Comentaris breus en el codi quan facen falta per entendre el flux.
+
+No cal encara acumular errors en arrays, validar tots els controls alhora, conservar tots els valors del formulari, gestionar fitxers ni fer checkbox múltiples. Això es pot millorar més avant.
 
 **Criteris d’avaluació que es treballen**
 
@@ -183,24 +184,24 @@ En este microrepte es valorarà si pots:
 - Fer arribar dades reals al servidor.
 - Explicar d’on ix cada dada i com es recupera.
 - Relacionar els camps del formulari amb la resposta que genera el sistema.
-- Mostrar què passa quan una dada no és vàlida.
-- Permetre correcció i reintent dins del mateix flux.
-- Explicar per què el sistema no continua mentre la informació no siga correcta.
+- Mostrar què passa quan una dada clau no és vàlida.
+- Permetre correcció i reenviament dins del mateix flux.
+- Explicar la condició simple que genera l’error.
 
 **Evidències principals**
 
 - Formulari funcional o entrada equivalent.
 - Recuperació correcta de dades.
-- Error de validació visible.
-- Reintent amb correcció.
-- Evidència clara que el flux es talla quan hi ha errors.
+- Error visible generat per una condició de servidor.
+- Reenviament amb correcció.
+- Evidència clara que el cas incorrecte no continua com si fora correcte.
 - Commits associats.
 
 **Com es comprovarà**
 
 - Execució real del formulari o de l’entrada equivalent.
-- Revisió del flux de dades, dels errors mostrats i de com es reprén el formulari després de corregir-los.
-- Pregunta breu sobre com arriba la informació al servidor, com es valida i per què el flux no continua si hi ha errors.
+- Revisió del flux de dades, de l’error mostrat i de com es reenvia el formulari després de corregir-lo.
+- Pregunta breu sobre com arriba la informació al servidor i quina condició genera l’error.
 
 ### Microrepte 2. Processament i guardat funcional
 
@@ -220,9 +221,8 @@ Fer visible el treball bàsic de programació en servidor que, una vegada les da
 - Processament en servidor de la informació correcta amb una resposta generada a partir de les dades rebudes.
 - Un mecanisme simple i controlat per guardar o persistir funcionalment la informació útil.
 - Primera reutilització posterior d’eixa informació dins del projecte.
-- Si hi ha imatge o fitxer en el flux, validació bàsica de tipus i grandària.
-- Error interpretable si el fitxer no és correcte.
-- Integració funcional del fitxer o la imatge dins del projecte.
+- Si `MP1` ja ha deixat una dada validada, reutilització d’eixa dada en el processament.
+- Els fitxers, imatges i validacions més completes queden com a ampliació o per a una fase posterior.
 
 **Criteris d’avaluació que es treballen**
 
@@ -518,10 +518,10 @@ En llenguatge clar, en este repte es treballa sobretot que sigues capaç de:
 - Entendre com la base comuna en `PHP` genera una pàgina o resposta amb codi embegut o equivalent.
 - Identificar les peces tècniques bàsiques que intervenen en eixe flux.
 - Rebre i recuperar dades d’un formulari o entrada equivalent.
-- Mostrar errors de validació de manera clara i permetre correcció.
+- Mostrar almenys un error de validació de manera clara i permetre correcció.
 - Aplicar lògica bàsica de servidor amb sentit, usant sintaxi, sentències, directives, variables i operadors.
 - Entendre on viu cada variable i quin àmbit afecta el comportament.
-- Validar al servidor les dades i, quan toque, els fitxers o imatges.
+- Fer una validació bàsica al servidor i millorar-la progressivament quan el flux ja s'entén.
 - Conservar informació útil perquè després es puga reutilitzar dins del projecte.
 - Deixar comentaris útils en el codi quan facen falta per explicar el flux.
 - Utilitzar decisions, bucles, arrays o funcions quan realment fan falta.
@@ -543,7 +543,7 @@ Això implica també entendre, encara que siga a un nivell bàsic, com es genera
 
 En este moment del curs, la prioritat és consolidar el flux complet en servidor:
 
-- Entrada de dades i validació visible.
+- Entrada de dades i validació bàsica.
 - Processament i guardat funcional.
 - Lògica del flux i regles del projecte.
 - Estat o sessió quan faça falta.
@@ -570,7 +570,7 @@ Per no perdre el fil del repte:
 - Treballa amb un únic actor i una sola operació protegida.
 - Tria una dada del domini que després pugues tornar a mostrar o recuperar.
 - Tanca primer el flux principal abans d’afegir rols o extres.
-- Si hi ha imatge o fitxer, comença per un únic tipus acceptat i una regla de grandària clara.
+- Si hi ha imatge o fitxer com a ampliació, comença per un únic tipus acceptat i una regla de grandària clara.
 - No canvies de framework per intentar desbloquejar este repte.
 - No compliques la persistència si el flux principal encara no està tancat.
 - Assegura’t que el `README` o la documentació equivalent expliquen com reproduir el cas bo, el cas denegat i la reutilització de la dada correcta.
@@ -584,11 +584,11 @@ Per considerar complet el repte, hauràs d’aportar com a mínim:
 - Seqüència de commits significativa.
 - Formulari funcional o entrada equivalent.
 - Recuperació real de dades.
-- Error de validació visible i possibilitat de correcció.
+- Error de validació bàsic visible i possibilitat de correcció.
 - Processament bàsic en servidor.
 - Conservació o persistència funcional de la informació correcta.
 - Reutilització posterior d’eixa informació dins del projecte.
-- Si el flux inclou imatge o fitxer, prova de validació de tipus i grandària.
+- Si el flux inclou imatge o fitxer com a ampliació, prova de validació de tipus i grandària.
 - Ús visible de lògica amb decisions, bucles, arrays o funcions.
 - Evidència d’estat, sessió o cookies.
 - Autenticació funcional.
@@ -618,7 +618,7 @@ En este repte no n’hi ha prou amb dir que el sistema funciona. Cal **provar-lo
 La prova mínima del repte ha d’incloure, com a mínim, estos casos:
 
 - enviament correcte del formulari
-- errors de validació visibles per a l’usuari
+- error de validació visible per a l’usuari
 - correcció d’un formulari inicialment incorrecte
 - tractament i guardat funcional correcte de la informació en servidor
 - aplicació d’alguna regla bàsica del projecte
@@ -656,7 +656,7 @@ En la revisió del repte, el professorat podrà comprovar:
 El professorat podrà comprovar el treball amb mecanismes com:
 
 - Execució real del flux complet.
-- Prova del cas positiu, del cas negatiu i d’almenys un error de validació.
+- Prova del cas positiu, del cas negatiu i d’almenys un error de validació bàsic.
 - Revisió de com es mostren els errors i de com es reprén el flux després de corregir-los.
 - Prova que una dada correcta queda guardada i es pot tornar a mostrar, recuperar o llistar.
 - Si hi ha estat temporal, prova de recuperació del flux sense perdre la informació provisional.
@@ -684,7 +684,7 @@ No es demana documentar de manera exhaustiva tot el projecte, però sí deixar c
 
 Es recomana usar **PHPDoc DocBlocks** de manera selectiva en funcions pròpies amb lògica rellevant, especialment en casos com:
 
-- funcions de validació
+- funció o condició de validació quan ja entengues el `if/else` bàsic
 - funcions de tractament de dades
 - funcions de tractament d’imatge o fitxer
 - funcions de comprovació d’accés
@@ -766,7 +766,7 @@ Convindria evitar errors com estos:
 Este repte es considera superat quan:
 
 - El sistema rep i tracta dades en servidor dins d’un flux complet.
-- La validació és visible, interpretable i permet correcció.
+- La validació inicial és visible, interpretable i permet correcció.
 - La informació correcta queda conservada amb sentit funcional.
 - Eixa informació es pot reutilitzar després dins del projecte.
 - Hi ha lògica bàsica aplicada amb sentit.

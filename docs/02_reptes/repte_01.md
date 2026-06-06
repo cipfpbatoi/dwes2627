@@ -60,13 +60,12 @@ Al final del repte hauries de poder mostrar una seqüència com esta:
 
 Este repte funciona millor si el dividixes en quatre peces clares. Això t’ajuda a no quedar-te només en la infraestructura i a entendre què es valora en cada part.
 
-L’autocorrecció, en canvi, es farà per sessió. En este repte hi ha tres sessions i quatre microreptes, perquè l’últim microrepte és el tancament i checkpoint del treball fet en la sessió 3.
+L’autocorrecció es farà per sessió. En este repte hi ha dues sessions i quatre microreptes: la primera treballa `MP1` i la segona compacta `MP2 + MP3 + MP4` perquè l'entorn executable, el punt d'entrada i el checkpoint queden tancats abans de passar a `R2`.
 
 | Sessió | Autocorrecció | Microreptes inclosos | Focus principal |
 |---|---|---|---|
 | `R1-S01` | `r1-s01-model-client-servidor-stack` | `MP1` | Model client/servidor, backend i decisió inicial de stack. |
-| `R1-S02` | `r1-s02-entorn-executable` | `MP2` | Entorn executable amb Docker, PHP i servidor web. |
-| `R1-S03` | `r1-s03-punt-entrada-documentacio-checkpoint` | `MP3` + `MP4` | Punt d’entrada funcional, documentació, verificació i defensa breu. |
+| `R1-S02` | `r1-s02-entorn-executable` | `MP2` + `MP3` + `MP4` | Entorn executable amb Docker, PHP i servidor web, punt d’entrada funcional, documentació, verificació i defensa breu. |
 
 Abans de començar, consulta els [materials de suport del Repte 1](../04_materials/repte_01/index.md). Allí tens els PDF d’explicació del professorat organitzats per microrepte.
 
@@ -203,9 +202,10 @@ Per exemple:
 
 - Una pàgina inicial generada pel servidor.
 - Una resposta dinàmica mínima.
-- Una entrada simple amb tractament bàsic.
-- Una validació mínima en servidor.
-- Un primer registre o persistència molt bàsica.
+- Un healthcheck, ruta d'estat o landing mínima connectada amb el producte.
+- Una resposta que pugues modificar i explicar.
+
+No cal començar encara formularis, validació de dades d'usuari ni persistència. Això pertany al `Repte 2` o a ampliacions puntuals.
 
 **Materials de suport**
 
@@ -229,8 +229,8 @@ En este microrepte es valorarà si pots:
 **Evidències obligatòries**
 
 - Punt d’entrada funcional.
-- Evidència de validació mínima o tractament bàsic.
-- Evidència d’un registre o persistència simple, si apareix.
+- Evidència que la resposta ve del backend.
+- Evidència de prova, captura, log o URL de comprovació.
 - Demo funcional breu.
 
 **Com es comprovarà**
@@ -314,7 +314,7 @@ Per considerar complet el repte, hauràs d’aportar com a mínim:
 - Docker Compose o equivalent funcional.
 - Justificació tècnica breu o `ADR` curt.
 - Punt d’entrada funcional simple.
-- Evidència de validació tècnica mínima.
+- Evidència de comprovació tècnica mínima.
 - Defensa tècnica breu.
 - `AI log`, quan hi haja ús rellevant d’IA.
 

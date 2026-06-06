@@ -24,7 +24,7 @@ Si una part del teu flux no aplica, marca-la com a `No aplica` i justifica-ho br
 | Format incorrecte | Email, data, preu o altre camp amb format no vàlid | El sistema rebutja la dada i mostra un missatge clar |  |  |
 | Dades correctes | Tots els camps compleixen el mínim exigit | El sistema accepta l’enviament i passa al següent tram del flux |  |  |
 
-## 3. 👀 Proves de validació visible
+## 3. 👀 Proves de validació bàsica visible
 
 | Cas de prova | Entrada | Resultat esperat | Resultat obtingut | Incidències detectades |
 |---|---|---|---|---|
@@ -54,9 +54,9 @@ Això es pot resoldre amb persistència simple o amb base de dades si així ho h
 | Recuperació posterior | Tornar a carregar el flux o consultar el recurs | La dada reapareix i continua sent usable |  |  |
 | Llistat o visualització del recurs | Accés a la vista, llistat o detall | El recurs creat es veu correctament |  |  |
 
-## 6. 🖼️ Proves de fitxer o imatge, si n’hi ha
+## 6. 🖼️ Proves de fitxer o imatge, si n’hi ha com a ampliació
 
-Si el teu flux no treballa amb fitxers o imatges, marca esta secció com a `No aplica`.
+Si el teu flux no treballa amb fitxers o imatges, marca esta secció com a `No aplica`. No és una exigència del primer microrepte de `R2`.
 
 | Cas de prova | Entrada | Resultat esperat | Resultat obtingut | Incidències detectades |
 |---|---|---|---|---|
@@ -131,7 +131,7 @@ Eina o entorn utilitzat per provar o depurar:
 - [ ] El flux mostra codi servidor integrat amb `HTML` o plantilla equivalent.
 - [ ] He comprovat variables, operadors, sentències simples, directives o àmbits dins del comportament real.
 - [ ] La resposta o document resultant es genera des del servidor i canvia segons les dades.
-- [ ] Els errors de validació es mostren de manera visible.
+- [ ] Almenys un error de validació es mostra de manera visible.
 - [ ] La informació correcta es conserva i es pot reutilitzar.
 - [ ] La funcionalitat protegida té prova autoritzada i prova denegada.
 - [ ] He separat almenys una peça comuna en un fitxer i la importe amb `include` o `require`.
