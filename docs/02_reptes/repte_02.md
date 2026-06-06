@@ -203,11 +203,11 @@ En este microrepte es valorarà si pots:
 - Revisió del flux de dades, de l’error mostrat i de com es reenvia el formulari després de corregir-lo.
 - Pregunta breu sobre com arriba la informació al servidor i quina condició genera l’error.
 
-### Microrepte 2. Processament i guardat funcional
+### Microrepte 2. Processament, reintent i guardat funcional
 
 **Objectiu**
 
-Fer visible el treball bàsic de programació en servidor que, una vegada les dades ja són correctes, les tracta, les processa, les guarda d’una manera funcional i les deixa preparades per reutilitzar-les després dins del projecte.
+Millorar el flux d’error del formulari i completar el cas correcte. Quan una dada no és correcta, el servidor torna a generar el formulari conservant les dades que sí eren aprofitables. Quan l’entrada ja és correcta, el servidor la processa i la guarda funcionalment amb un mecanisme simple.
 
 Este microrepte continua directament el `R2M1`. No has de començar de zero ni construir un formulari nou si el que tens ja envia dades i valida almenys una dada clau. Ara la pregunta és una altra: què fa el servidor amb la informació correcta quan ja pot confiar mínimament en ella?
 
@@ -219,53 +219,57 @@ Este microrepte continua directament el `R2M1`. No has de començar de zero ni c
 - Sintaxi correcta.
 - Variables amb sentit.
 - Operadors i sentències bàsiques ben aplicats.
-- Tractament clar de la petició una vegada la validació de `R2M1` ja és correcta.
-- Separació mínima entre dada rebuda, dada neta i resultat generat.
-- Processament en servidor de la informació correcta amb una resposta generada a partir de les dades rebudes.
-- Un mecanisme simple i controlat per guardar o persistir funcionalment la informació útil.
-- Primera reutilització posterior d’eixa informació dins del projecte.
-- Si `R2M1` ja ha deixat una dada validada, reutilització d’eixa dada en el processament.
-- Els fitxers, imatges i validacions més completes queden com a ampliació o per a una fase posterior.
+- Tractament clar de les dades rebudes abans de tornar-les al formulari.
+- Error visible generat en servidor.
+- Formulari regenerat amb les dades aprofitables conservades.
+- Reintent corregit sense haver de repetir totes les dades.
+- Guardat funcional simple quan l’entrada és correcta.
+- Explicació clara de per què conservar dades en el reintent no és el mateix que guardar funcionalment un cas correcte.
+- Els arrays d’errors, fitxers, checkbox múltiples i validacions més completes queden com a ampliació o per a una fase posterior.
 
 **Què has de construir**
 
 Has de completar un recorregut curt però real:
 
-1. Enviar un cas vàlid des del formulari o entrada de `R2M1`.
-2. Recuperar la dada validada en el servidor.
-3. Preparar-la o transformar-la amb codi propi: normalitzar text, calcular un valor, crear una etiqueta, construir un resum o generar una resposta coherent amb el teu projecte.
-4. Mostrar una resposta generada pel servidor que depenga d’eixa dada.
-5. Guardar només la informació correcta amb un mecanisme simple.
-6. Tornar a mostrar o reutilitzar eixa informació en una pantalla, llista, resum o resposta posterior.
+1. Enviar el formulari amb algun error.
+2. Recuperar les dades enviades en el servidor.
+3. Mostrar un missatge d’error clar.
+4. Tornar a generar el formulari amb les dades aprofitables ja escrites o seleccionades.
+5. Corregir només la dada errònia.
+6. Reenviar correctament i obtindre una resposta final.
+7. Processar i guardar funcionalment la informació correcta.
+8. Mostrar o recuperar la dada guardada en una pantalla, llista o resum simple.
 
 Exemples:
 
-- Si tens una tenda, pots processar el nom i categoria d’un producte, deixar-lo com a proposta guardada i mostrar-lo en una llista provisional.
-- Si tens reserves, pots processar la franja triada, generar un resum de reserva i tornar-lo a mostrar en una pantalla de reserves pendents.
-- Si tens publicacions o recursos, pots preparar el títol, tipus o estat inicial i mostrar el recurs creat en una llista provisional.
+- Si tens una tenda, pots enviar un producte sense nom però conservar la categoria triada; quan el nom ja és correcte, el producte queda guardat en una llista provisional.
+- Si tens reserves, pots enviar una reserva amb una franja no vàlida però conservar el nom; quan la franja ja és correcta, la reserva queda guardada funcionalment.
+- Si tens publicacions o recursos, pots enviar una publicació amb títol massa curt però conservar el tipus; quan el títol ja és correcte, el recurs queda registrat en una llista simple.
 
 **Què has d’entregar**
 
 - Codi del flux actualitzat.
-- Evidència d’un cas vàlid complet: enviar, validar, processar, guardar i reutilitzar.
+- Evidència d’un cas amb error i reintent: enviar, mostrar error, conservar dades, corregir i reenviar.
+- Evidència d’un cas correcte: processar, guardar funcionalment i mostrar o recuperar la dada.
 - README, issue o registre amb:
-  - com provar el cas vàlid;
-  - on es processa la dada;
-  - on es guarda;
-  - on torna a aparéixer;
-  - limitacions del mecanisme de guardat triat.
-- Commits relacionats amb el processament i el guardat.
+  - com provocar l’error;
+  - quines dades es conserven;
+  - on es preparen els valors que tornen al formulari;
+  - com es fa el reenviament correcte;
+  - què es guarda quan el cas és correcte;
+  - què queda fora del mínim.
+- Commits relacionats amb el processament, el reintent i el guardat funcional.
 - `AI log` si has usat IA de manera rellevant.
 
 **Requisits mínims**
 
-- El processament ha de partir d’una dada validada en `R2M1`.
-- Si la validació falla, la dada no s’ha de guardar com si fora correcta.
-- La resposta del servidor ha de dependre de les dades, no ser una maqueta fixa.
+- El flux ha de partir del formulari o entrada de `R2M1`.
+- Si la validació falla, el formulari ha de tornar amb dades aprofitables conservades.
+- La resposta del servidor ha de dependre de les dades enviades, no de valors fixos.
 - Hi ha d’haver ús real de variables, operadors o sentències simples.
-- La informació correcta ha de quedar guardada amb un mecanisme que pugues explicar.
-- La informació guardada ha de tornar a aparéixer o usar-se després.
-- Has de poder assenyalar en el codi el punt de recepció, processament, guardat i reutilització.
+- Has de conservar almenys un camp de text i una opció tancada, i revisar què passa amb un checkbox simple.
+- Quan el cas és correcte, la informació ha de quedar guardada amb un mecanisme simple que pugues explicar.
+- Has de poder assenyalar en el codi el punt de recepció, validació, preparació de valors, reconstrucció del formulari i guardat del cas correcte.
 
 **Què es deixa per a més avant**
 
@@ -277,6 +281,7 @@ No cal encara:
 - pujar fitxers o imatges com a mínim obligatori;
 - crear funcions i arrays com a centre del microrepte;
 - iniciar sessió, cookies, login o rols;
+- usar base de dades com a mínim obligatori;
 - muntar una arquitectura MVC o una persistència formal.
 
 Els arrays, funcions i regles del projecte apareixen amb més sentit en `R2M3`. Estat, sessió i cookies apareixen en `R2M4`. Autenticació i operació protegida apareixen en `R2M5`.
@@ -294,31 +299,31 @@ En este microrepte es valorarà si pots:
 
 - Explicar on s’executa el codi de servidor i com arriba el resultat al navegador o al client.
 - Identificar quin paper té cada peça tècnica mínima del flux sobre la base comuna en `PHP`.
-- Explicar què fa el codi quan les dades ja han passat la validació.
-- Demostrar que el tractament no és decoratiu.
-- Relacionar les dades d’entrada correctes amb la resposta final i amb el recurs que queda guardat.
-- Explicar quin mecanisme uses per guardar el que toca sense convertir el repte en un exercici d’arquitectura de dades.
-- Mostrar com eixa informació torna a aparéixer després dins del projecte.
-- Explicar com controles una imatge o un fitxer incorrectes quan el teu flux els usa.
+- Explicar què fa el codi quan hi ha un error.
+- Demostrar que el formulari no es reconstrueix amb valors fixos.
+- Relacionar les dades enviades amb els valors que tornen a aparéixer.
+- Explicar com es conserva un text, una opció tancada i un checkbox simple.
+- Diferenciar conservar dades per al reintent de guardar funcionalment el cas correcte.
 
 **Evidències principals**
 
 - Tram recognoscible de codi embegut o equivalent dins de la resposta generada.
-- Codi executable de processament.
+- Codi executable de processament del reintent.
 - Evidència d’ús real de variables i operadors.
 - Evidència d’alguna directiva o configuració bàsica aplicada amb sentit.
-- Demo del tractament correcte.
-- Demo d’una dada correcta processada i guardada de manera funcional.
-- Demo de reutilització posterior d’eixa informació dins del projecte.
-- Demo d’un error de validació o de fitxer no vàlid quan corresponga.
+- Demo d’un enviament amb error.
+- Demo del formulari recarregat amb dades conservades.
+- Demo del reenviament corregit.
+- Demo del cas correcte guardat funcionalment.
+- Explicació breu de què es conserva i què no.
 - Commits o issues relacionades.
 
 **Com es comprovarà**
 
 - Execució del flux amb dades reals.
-- Revisió del tram de codi que processa la petició, del punt on es guarda funcionalment la informació, de com es reutilitza després i del control de fitxer o imatge quan existisca.
-- Pregunta breu sobre com es genera la pàgina o resposta, com es tracta la informació correcta i com passa a quedar disponible després.
-- Microcanvi en viu sobre una variable, operador o dada d’entrada per comprovar que el resultat canvia i que entens el recorregut.
+- Revisió del tram de codi que recupera dades, prepara valors i regenera el formulari.
+- Pregunta breu sobre com es genera la resposta d’error, com es conserven les dades i què es guarda quan el cas és correcte.
+- Microcanvi en viu sobre un valor conservat per comprovar que entens el recorregut.
 
 ### Microrepte 3. Lògica del flux i regles del projecte
 
@@ -602,7 +607,7 @@ Això implica també entendre, encara que siga a un nivell bàsic, com es genera
 En este moment del curs, la prioritat és consolidar el flux complet en servidor:
 
 - Entrada de dades i validació bàsica.
-- Processament i guardat funcional.
+- Processament, reintent i guardat funcional.
 - Lògica del flux i regles del projecte.
 - Estat o sessió quan faça falta.
 - Autenticació i funcionalitat protegida.
@@ -678,7 +683,7 @@ La prova mínima del repte ha d’incloure, com a mínim, estos casos:
 - enviament correcte del formulari
 - error de validació visible per a l’usuari
 - correcció d’un formulari inicialment incorrecte
-- tractament i guardat funcional correcte de la informació en servidor
+- tractament del reintent amb dades conservades en servidor i guardat funcional del cas correcte
 - aplicació d’alguna regla bàsica del projecte
 - recuperació d’informació temporal d’estat o sessió, si forma part del flux
 - conservació o reutilització posterior de la informació
