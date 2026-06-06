@@ -62,10 +62,10 @@ Este repte funciona millor si el dividixes en quatre peces clares. Això t’aju
 
 L’autocorrecció es farà per sessió. En este repte hi ha dues sessions i quatre microreptes: la primera treballa `MP1` i la segona compacta `MP2 + MP3 + MP4` perquè l'entorn executable, el punt d'entrada i el checkpoint queden tancats abans de passar a `R2`.
 
-| Sessió | Autocorrecció | Microreptes inclosos | Focus principal |
-|---|---|---|---|
-| `R1-S01` | `r1-s01-model-client-servidor-stack` | `MP1` | Model client/servidor, backend i decisió inicial de stack. |
-| `R1-S02` | `r1-s02-entorn-executable` | `MP2` + `MP3` + `MP4` | Entorn executable amb Docker, PHP i servidor web, punt d’entrada funcional, documentació, verificació i defensa breu. |
+| Sessió | Autocorrecció | Microreptes inclosos | Pes dins del repte | Focus principal |
+|---|---|---|---:|---|
+| `R1-S01` | `r1-s01-model-client-servidor-stack` | `MP1` | `25%` | Model client/servidor, backend i decisió inicial de stack. |
+| `R1-S02` | `r1-s02-entorn-executable` | `MP2` + `MP3` + `MP4` | `75%` | Entorn executable amb Docker, PHP i servidor web, punt d’entrada funcional, documentació, verificació i defensa breu. |
 
 Abans de començar, consulta els [materials de suport del Repte 1](../04_materials/repte_01/index.md). Allí tens els PDF d’explicació del professorat organitzats per microrepte.
 

@@ -209,6 +209,8 @@ En este microrepte es valorarà si pots:
 
 Fer visible el treball bàsic de programació en servidor que, una vegada les dades ja són correctes, les tracta, les processa, les guarda d’una manera funcional i les deixa preparades per reutilitzar-les després dins del projecte.
 
+Este microrepte continua directament el `R2M1`. No has de començar de zero ni construir un formulari nou si el que tens ja envia dades i valida almenys una dada clau. Ara la pregunta és una altra: què fa el servidor amb la informació correcta quan ja pot confiar mínimament en ella?
+
 **Què s’espera**
 
 - Comprensió bàsica de com la base comuna en `PHP` genera una pàgina o una resposta amb codi embegut o equivalent.
@@ -217,12 +219,67 @@ Fer visible el treball bàsic de programació en servidor que, una vegada les da
 - Sintaxi correcta.
 - Variables amb sentit.
 - Operadors i sentències bàsiques ben aplicats.
-- Tractament clar de la petició una vegada la validació ja és correcta.
+- Tractament clar de la petició una vegada la validació de `R2M1` ja és correcta.
+- Separació mínima entre dada rebuda, dada neta i resultat generat.
 - Processament en servidor de la informació correcta amb una resposta generada a partir de les dades rebudes.
 - Un mecanisme simple i controlat per guardar o persistir funcionalment la informació útil.
 - Primera reutilització posterior d’eixa informació dins del projecte.
-- Si `MP1` ja ha deixat una dada validada, reutilització d’eixa dada en el processament.
+- Si `R2M1` ja ha deixat una dada validada, reutilització d’eixa dada en el processament.
 - Els fitxers, imatges i validacions més completes queden com a ampliació o per a una fase posterior.
+
+**Què has de construir**
+
+Has de completar un recorregut curt però real:
+
+1. Enviar un cas vàlid des del formulari o entrada de `R2M1`.
+2. Recuperar la dada validada en el servidor.
+3. Preparar-la o transformar-la amb codi propi: normalitzar text, calcular un valor, crear una etiqueta, construir un resum o generar una resposta coherent amb el teu projecte.
+4. Mostrar una resposta generada pel servidor que depenga d’eixa dada.
+5. Guardar només la informació correcta amb un mecanisme simple.
+6. Tornar a mostrar o reutilitzar eixa informació en una pantalla, llista, resum o resposta posterior.
+
+Exemples:
+
+- Si tens una tenda, pots processar el nom i categoria d’un producte, deixar-lo com a proposta guardada i mostrar-lo en una llista provisional.
+- Si tens reserves, pots processar la franja triada, generar un resum de reserva i tornar-lo a mostrar en una pantalla de reserves pendents.
+- Si tens publicacions o recursos, pots preparar el títol, tipus o estat inicial i mostrar el recurs creat en una llista provisional.
+
+**Què has d’entregar**
+
+- Codi del flux actualitzat.
+- Evidència d’un cas vàlid complet: enviar, validar, processar, guardar i reutilitzar.
+- README, issue o registre amb:
+  - com provar el cas vàlid;
+  - on es processa la dada;
+  - on es guarda;
+  - on torna a aparéixer;
+  - limitacions del mecanisme de guardat triat.
+- Commits relacionats amb el processament i el guardat.
+- `AI log` si has usat IA de manera rellevant.
+
+**Requisits mínims**
+
+- El processament ha de partir d’una dada validada en `R2M1`.
+- Si la validació falla, la dada no s’ha de guardar com si fora correcta.
+- La resposta del servidor ha de dependre de les dades, no ser una maqueta fixa.
+- Hi ha d’haver ús real de variables, operadors o sentències simples.
+- La informació correcta ha de quedar guardada amb un mecanisme que pugues explicar.
+- La informació guardada ha de tornar a aparéixer o usar-se després.
+- Has de poder assenyalar en el codi el punt de recepció, processament, guardat i reutilització.
+
+**Què es deixa per a més avant**
+
+No cal encara:
+
+- acumular errors en arrays;
+- convertir el formulari en una validació completa de tots els camps;
+- fer checkbox múltiples si no aporten res al flux;
+- pujar fitxers o imatges com a mínim obligatori;
+- crear funcions i arrays com a centre del microrepte;
+- iniciar sessió, cookies, login o rols;
+- muntar una arquitectura MVC o una persistència formal.
+
+Els arrays, funcions i regles del projecte apareixen amb més sentit en `R2M3`. Estat, sessió i cookies apareixen en `R2M4`. Autenticació i operació protegida apareixen en `R2M5`.
 
 **Criteris d’avaluació que es treballen**
 
@@ -261,6 +318,7 @@ En este microrepte es valorarà si pots:
 - Execució del flux amb dades reals.
 - Revisió del tram de codi que processa la petició, del punt on es guarda funcionalment la informació, de com es reutilitza després i del control de fitxer o imatge quan existisca.
 - Pregunta breu sobre com es genera la pàgina o resposta, com es tracta la informació correcta i com passa a quedar disponible després.
+- Microcanvi en viu sobre una variable, operador o dada d’entrada per comprovar que el resultat canvia i que entens el recorregut.
 
 ### Microrepte 3. Lògica del flux i regles del projecte
 
