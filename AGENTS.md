@@ -47,6 +47,32 @@ No pot aparéixer en una rúbrica, checklist o autocorrecció cap requisit que n
 
 També s'ha de complir la regla inversa: si una evidència és obligatòria per a l'alumnat, ha d'estar contemplada en la rúbrica, checklist o autocorrecció corresponent.
 
+## Guia d'avaluació visible per microrepte
+
+Cada microrepte publicat en `dwes-documentacio-alumnat` ha d'incloure o enllaçar una guia d'avaluació visible per a l'alumnat. Esta guia ha d'estar alineada amb el visor del microrepte i amb la definició d'autocorrecció del repositori `dwes-microreptes-autocorreccio`.
+
+La guia d'avaluació ha de contemplar, com a mínim:
+
+- visor o resum del microrepte: codi, títol, repte, sessió associada, pes i finalitat;
+- criteris d'avaluació treballats, amb el pes o ponderació quan estiga definida;
+- evidències requerides per considerar el microrepte entregable;
+- senyals esperats que ajudaran a comprovar que l'evidència és real i coherent;
+- elements que no es penalitzen perquè queden fora d'abast o com a ampliació;
+- relació amb l'autocorrecció o checklist tècnica corresponent.
+
+Sempre que siga possible, esta guia ha d'usar el mateix format de taules que el visor del repte o del microrepte en l'autocorrecció. Si l'autocorrecció defineix dimensions de rúbrica, evidències esperades o comprovacions, la documentació d'alumnat ha de presentar una versió entenedora d'eixos mateixos elements, sense afegir requisits nous.
+
+Format recomanat per a cada microrepte:
+
+| Apartat | Contingut mínim |
+|---|---|
+| Visor del microrepte | Codi, títol, sessió, repte, pes, producte esperat i autocorrecció associada. |
+| Criteris d'avaluació | RA/CA treballats i pes de cada dimensió si està definit. |
+| Evidències requerides | Fitxers, captures, demo, README, commits, proves o documents que cal entregar. |
+| Senyals esperats | Indicadors observables que mostren que el treball funciona i que l'alumne l'entén. |
+| Fora d'abast | Elements que no s'exigixen encara i que no han de penalitzar-se. |
+| Connexió amb autocorrecció | Identificador del microrepte autocorregible i aspectes que revisarà. |
+
 ## Convenció de nomenclatura
 
 - `R2S2` identifica la sessió.
