@@ -58,18 +58,18 @@ Al final del repte hauries de poder mostrar una seqüència com esta:
 
 ## Microreptes del Repte 1
 
-Este repte funciona millor si el dividixes en quatre peces clares. Això t’ajuda a no quedar-te només en la infraestructura i a entendre què es valora en cada part.
+Este repte té `2` microreptes, un per sessió. El primer et dona criteri per entendre el backend i triar una base tècnica inicial. El segon transforma eixa decisió en un repositori executable, amb un primer punt d'entrada funcional i documentació suficient per passar a `R2`.
 
-L’autocorrecció es farà per sessió. En este repte hi ha dues sessions i quatre microreptes: la primera treballa `MP1` i la segona compacta `MP2 + MP3 + MP4` perquè l'entorn executable, el punt d'entrada i el checkpoint queden tancats abans de passar a `R2`.
+L'autocorrecció també es farà per sessió. Per tant, `R1M1` té un pes del `25%` dins del repte i `R1M2` té un pes del `75%`.
 
 | Sessió | Autocorrecció | Microreptes inclosos | Pes dins del repte | Focus principal |
 |---|---|---|---:|---|
-| `R1-S01` | `r1-s01-model-client-servidor-stack` | `MP1` | `25%` | Model client/servidor, backend i decisió inicial de stack. |
-| `R1-S02` | `r1-s02-entorn-executable` | `MP2` + `MP3` + `MP4` | `75%` | Entorn executable amb Docker, PHP i servidor web, punt d’entrada funcional, documentació, verificació i defensa breu. |
+| `R1-S01` | `r1-s01-model-client-servidor-stack` | `R1M1` | `25%` | Model client/servidor, backend i decisió inicial de stack. |
+| `R1-S02` | `r1-s02-entorn-executable` | `R1M2` | `75%` | Entorn executable amb Docker, PHP i servidor web, punt d'entrada funcional, documentació, verificació i defensa breu. |
 
 Abans de començar, consulta els [materials de suport del Repte 1](../04_materials/repte_01/index.md). Allí tens els PDF d’explicació del professorat organitzats per microrepte.
 
-### Microrepte 1. Model d’execució client/servidor i elecció guiada de stack
+### R1M1. Model d'execució client/servidor i elecció guiada de stack
 
 **Objectiu**
 
@@ -133,30 +133,35 @@ En este microrepte es valorarà si pots:
 - Pregunta oral breu sobre què s’executa en client i què en servidor.
 - Contrast entre la decisió tècnica i el projecte que després es munta.
 
-### Microrepte 2. Entorn executable amb Docker, PHP i servidor web
+### R1M2. Entorn executable, punt d'entrada i tancament de R1
 
 **Objectiu**
 
-Deixar el projecte preparat perquè es puga arrancar de manera clara, reproduïble i usable.
+Deixar el projecte preparat perquè es puga arrancar de manera clara, reproduïble i usable, i perquè ja tinga una primera resposta real del backend.
 
 **Què has de fer**
 
-Has de muntar un entorn executable amb:
+Has de muntar i tancar una base inicial amb:
 
 - Docker o equivalent.
 - PHP.
 - Servidor web.
+- Base de dades i phpMyAdmin quan el model docent ho demane.
 - Estructura mínima del projecte.
-- `README` amb instruccions d’arrancada.
+- Un primer punt d'entrada funcional: ruta, vista, endpoint, landing mínima o healthcheck servit pel backend.
+- `README` amb instruccions d'arrancada, parada i comprovació.
+- Documentació del repte dins del repositori.
 
 En este microrepte encara **no es demana la instal·lació completa del framework**.
 
-La prioritat és tindre una base comuna i controlada sobre la qual després es puga continuar construint.
+La prioritat és tindre una base comuna i controlada sobre la qual després es puga continuar construint en `R2`.
 
 **Materials de suport**
 
 - [Entorn executable, servidor i Docker](../recursos/Repte1/Entorn-executable-servidor-i-Docker.pdf)
 - [Muntar l’entorn executable](../recursos/Repte1/Muntar-lentorn-executable.pdf)
+- [Repte 1. Kickoff Professional del Backend](../recursos/Repte1/Repte-1-Kickoff-Professional-del-Backend.pdf)
+- [Criteris d'avaluació i evidències](../recursos/Repte1/Repte-1-Criteris-dAvaluacio-i-Evidencies.pdf)
 
 **Criteris d’avaluació que es treballen**
 
@@ -164,6 +169,8 @@ La prioritat és tindre una base comuna i controlada sobre la qual després es p
 - **RA1.d**: Reconéixer tecnologies, ferramentes i entorn propi del backend.
 - **RA1.e**: Preparar un entorn executable i funcional.
 - **RA1.f**: Comprovar la posada en marxa del servei i la seua resposta bàsica.
+- **RA1.b**: Comprendre el valor d'una resposta generada pel backend.
+- **RA1.g**: Justificar decisions tècniques a partir de l'experiència real.
 
 **Què vol dir això en llenguatge clar**
 
@@ -173,6 +180,8 @@ En este microrepte es valorarà si pots:
 - Entendre què fa cada peça de l’entorn.
 - Arrancar-lo amb instruccions clares.
 - Demostrar que realment funciona.
+- Crear una primera resposta mínima del backend.
+- Documentar i defensar el que has construït.
 
 **Evidències obligatòries**
 
@@ -180,106 +189,10 @@ En este microrepte es valorarà si pots:
 - Contenidor o estructura executable.
 - `README` funcional.
 - Evidència que el servei arranca correctament.
-
-**Com es comprovarà**
-
-- Execució real del `README`.
-- Arrencada amb Docker o equivalent.
-- Comprovació que el servei respon.
-- Preguntes breus sobre l’entorn muntat.
-
-### Microrepte 3. Primer punt d’entrada funcional del backend
-
-**Objectiu**
-
-Construir una primera peça funcional real del projecte, encara que siga simple.
-
-**Què has de fer**
-
-Has de crear un primer punt d’entrada funcional que permeta demostrar que el backend ja està fent una tasca real.
-
-Per exemple:
-
-- Una pàgina inicial generada pel servidor.
-- Una resposta dinàmica mínima.
-- Un healthcheck, ruta d'estat o landing mínima connectada amb el producte.
-- Una resposta que pugues modificar i explicar.
-
-No cal començar encara formularis, validació de dades d'usuari ni persistència. Això pertany al `Repte 2` o a ampliacions puntuals.
-
-**Materials de suport**
-
-- [Repte 1. Kickoff Professional del Backend](../recursos/Repte1/Repte-1-Kickoff-Professional-del-Backend.pdf)
-- [Criteris d’avaluació i evidències](../recursos/Repte1/Repte-1-Criteris-dAvaluacio-i-Evidencies.pdf)
-
-**Criteris d’avaluació que es treballen**
-
-- **RA1.b**: Comprendre el valor d’un backend que genera comportament real.
-- **RA1.e**: Construir una primera funcionalitat executable.
-- **RA1.f**: Comprovar la integració entre resposta del servidor i punt d’entrada funcional.
-
-**Què vol dir això en llenguatge clar**
-
-En este microrepte es valorarà si pots:
-
-- Passar d’un esquelet a una funcionalitat mínima.
-- Demostrar que el backend rep, tracta o genera una resposta.
-- Mostrar una primera interacció real amb el sistema.
-
-**Evidències obligatòries**
-
 - Punt d’entrada funcional.
 - Evidència que la resposta ve del backend.
 - Evidència de prova, captura, log o URL de comprovació.
-- Demo funcional breu.
-
-**Com es comprovarà**
-
-- Execució real del punt d’entrada.
-- Prova del flux mínim.
-- Revisió del codi i de la resposta generada.
-- Pregunta oral sobre què fa exactament el backend en eixe punt.
-
-### Microrepte 4. Documentació tècnica, verificació i defensa breu
-
-**Objectiu**
-
-Deixar el repte preparat per a revisió i demostrar que el que s’ha construït és executable i explicable.
-
-**Què has de fer**
-
-Has de tancar el repte amb:
-
-- `README` revisat.
-- Evidència de prova del flux.
-- Decisions bàsiques documentades.
-- Preparació per al checkpoint o la defensa.
-
-Este microrepte també servix per revalidar si realment comprens el model client/servidor, la base tècnica muntada i la funcionalitat construïda.
-
-**Materials de suport**
-
-- [Criteris d’avaluació i evidències](../recursos/Repte1/Repte-1-Criteris-dAvaluacio-i-Evidencies.pdf)
-
-**Criteris d’avaluació que es treballen**
-
-- **RA1.d**: Reconéixer i documentar adequadament tecnologies i eines.
-- **RA1.g**: Justificar decisions tècniques i el camí triat.
-- **RA1.a**: Explicar de manera solvent el paper de client i servidor en la solució implementada.
-
-**Què vol dir això en llenguatge clar**
-
-En este microrepte es valorarà si pots:
-
-- Documentar el projecte de manera útil.
-- Demostrar que el que has construït funciona.
-- Explicar com està muntat.
-- Justificar les decisions preses.
-
-**Evidències obligatòries**
-
 - `README` final revisat.
-- Evidència de prova o execució.
 - Justificació tècnica breu.
 - Preparació per a checkpoint o defensa.
 
@@ -287,6 +200,7 @@ En este microrepte es valorarà si pots:
 
 - Revisió del `README`.
 - Execució real del projecte.
+- Prova del punt d'entrada funcional.
 - Defensa tècnica breu.
 - Preguntes sobre decisions, model d’execució i funcionalitat mínima.
 
@@ -309,7 +223,7 @@ Per considerar complet el repte, hauràs d’aportar com a mínim:
 - Repositori actualitzat i usable.
 - Issue mare del kickoff o registre equivalent.
 - Historial de commits significatiu.
-- Fitxa breu d’exploració tècnica inicial del microrepte `1`.
+- Fitxa breu d’exploració tècnica inicial de `R1M1`.
 - `README` executable.
 - Docker Compose o equivalent funcional.
 - Justificació tècnica breu o `ADR` curt.

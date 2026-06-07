@@ -41,8 +41,7 @@ Per al Repte 1, els PDF existents suggereixen esta separació:
   - criteris d'avaluació i evidències.
 - Presentacions de microrepte:
   - `R1M1`: model client/servidor i elecció guiada de stack;
-  - `R1M2/R1M3`: entorn executable i primer punt d'entrada;
-  - `R1M4`: tancament, verificació i evidències de pas a `R2`, si continua definit com a microrepte.
+  - `R1M2`: entorn executable, primer punt d'entrada, tancament, verificació i evidències de pas a `R2`.
 - Presentacions teòriques:
   - client-servidor;
   - què és el backend;

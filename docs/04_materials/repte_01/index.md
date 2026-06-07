@@ -16,7 +16,7 @@ Usa’ls mentre treballes els microreptes, no com a substitut de les evidències
 - [Repte 1. Kickoff Professional del Backend](../../recursos/Repte1/Repte-1-Kickoff-Professional-del-Backend.pdf): mapa general del treball que s’ha de fer.
 - [Criteris d’avaluació i evidències](../../recursos/Repte1/Repte-1-Criteris-dAvaluacio-i-Evidencies.pdf): què es revisarà i quines proves has d’aportar.
 
-## Microrepte 1. Client, servidor i stack
+## R1M1. Client, servidor i stack
 
 - [Arquitectura web bàsica](../../recursos/Repte1/Arquitectura-web-basica.pdf)
 - [Client-servidor](../../recursos/Repte1/Client-Servidor.pdf)
@@ -25,7 +25,9 @@ Usa’ls mentre treballes els microreptes, no com a substitut de les evidències
 
 Consulta també la [fitxa breu d’exploració tècnica inicial](../fitxa_exploracio_tecnica_inicial.md).
 
-## Microrepte 2. Entorn executable
+## R1M2. Entorn executable, punt d'entrada i tancament
 
 - [Entorn executable, servidor i Docker](../../recursos/Repte1/Entorn-executable-servidor-i-Docker.pdf)
 - [Muntar l’entorn executable](../../recursos/Repte1/Muntar-lentorn-executable.pdf)
+- [Repte 1. Kickoff Professional del Backend](../../recursos/Repte1/Repte-1-Kickoff-Professional-del-Backend.pdf)
+- [Criteris d'avaluació i evidències](../../recursos/Repte1/Repte-1-Criteris-dAvaluacio-i-Evidencies.pdf)
