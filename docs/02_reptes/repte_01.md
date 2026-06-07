@@ -67,6 +67,11 @@ L'autocorrecció també es farà per sessió. Per tant, `R1M1` té un pes del `2
 | `R1-S01` | `r1-s01-model-client-servidor-stack` | `R1M1` | `25%` | Model client/servidor, backend i decisió inicial de stack. |
 | `R1-S02` | `r1-s02-entorn-executable` | `R1M2` | `75%` | Entorn executable amb Docker, PHP i servidor web, punt d'entrada funcional, documentació, verificació i defensa breu. |
 
+Guies d'avaluació del repte:
+
+- [R1M1. Guia d'avaluació](../03_com_s_avalua/rubriques/r1m1.md)
+- [R1M2. Guia d'avaluació](../03_com_s_avalua/rubriques/r1m2.md)
+
 Abans de començar, consulta els [materials de suport del Repte 1](../04_materials/repte_01/index.md). Allí tens els PDF d’explicació del professorat organitzats per microrepte.
 
 ### R1M1. Model d'execució client/servidor i elecció guiada de stack
@@ -74,6 +79,8 @@ Abans de començar, consulta els [materials de suport del Repte 1](../04_materia
 **Objectiu**
 
 Entendre què s’executa en client i què s’executa en servidor, i prendre una primera decisió tècnica inicial amb criteri.
+
+Abans d'entregar, revisa la [guia d'avaluació de R1M1](../03_com_s_avalua/rubriques/r1m1.md).
 
 **Què has de fer**
 
@@ -138,6 +145,8 @@ En este microrepte es valorarà si pots:
 **Objectiu**
 
 Deixar el projecte preparat perquè es puga arrancar de manera clara, reproduïble i usable, i perquè ja tinga una primera resposta real del backend.
+
+Abans d'entregar, revisa la [guia d'avaluació de R1M2](../03_com_s_avalua/rubriques/r1m2.md).
 
 **Què has de fer**
 

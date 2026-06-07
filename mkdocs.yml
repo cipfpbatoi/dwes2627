@@ -25,6 +25,10 @@ nav:
       - "🎓 Tancament i defensa": "02_reptes/fase_final.md"
   - "📏 Com s'avalua":
       - "👀 Visió general": "03_com_s_avalua/index.md"
+      - "📋 Guies d'avaluació":
+          - "👀 Visió general": "03_com_s_avalua/rubriques/index.md"
+          - "R1M1. Model client/servidor i stack": "03_com_s_avalua/rubriques/r1m1.md"
+          - "R1M2. Entorn executable i tancament": "03_com_s_avalua/rubriques/r1m2.md"
       - "📝 Report breu d'ús de la IA": "03_com_s_avalua/report_breu_ús_ia.md"
       - "🧪 Checklist de proves": "03_com_s_avalua/checklists_de_prova.md"
 theme:
