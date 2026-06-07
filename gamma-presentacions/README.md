@@ -92,6 +92,7 @@ La presentació ha d'usar el mateix nom, codi, abast i evidències que la docume
 ```text
 gamma-presentacions/
   README.md
+  recursos-existents.md
   reptes/
     r1.md
     r2.md
@@ -103,3 +104,14 @@ gamma-presentacions/
 ```
 
 Els fitxers poden ser prompts, guions o briefs per a Gamma. No han de generar-se dins de `docs/` llevat que es decidisca publicar una versió final per a l'alumnat.
+
+## Ús de PDF ja generats
+
+Si ja hi ha PDF generats amb Gamma en `docs/recursos/`, s'han de revisar abans de crear nous prompts. Poden servir com a:
+
+- referència de contingut ja validat;
+- punt de partida per separar presentacions de repte, microrepte i teoria;
+- inventari de materials que cal mantindre, actualitzar o substituir;
+- evidència de quins coneixements previs ja estan coberts.
+
+Els PDF publicats no s'han de copiar dins de `gamma-presentacions/`. Este directori només ha de contindre instruccions, prompts, guions i inventaris interns.
