@@ -495,9 +495,13 @@ En este microrepte es valorarà si pots:
 
 Connectar tot el flux anterior amb una necessitat real del producte: una operació que només es pot executar si es complixen unes condicions d’accés i que deixa clar què passa en el cas autoritzat i en el cas denegat.
 
+En este microrepte també has de mostrar un registre o alta mínima d’usuari. No cal una base de dades ni un sistema complet d’usuaris, però sí cal guardar la contrasenya amb hash, encara que siga en un array, fitxer o estructura equivalent del projecte.
+
 **Què s’espera**
 
-- Autenticació real.
+- Registre o alta mínima d’usuari.
+- Contrasenya guardada amb `password_hash` o mecanisme equivalent.
+- Autenticació real amb verificació de hash, per exemple `password_verify`.
 - Comprovació d’accés.
 - Una operació del domini protegida, vinculada al projecte base i aplicada sobre dades reals del projecte.
 - Un cas autoritzat i un cas denegat.
@@ -511,6 +515,8 @@ Connectar tot el flux anterior amb una necessitat real del producte: una operaci
 En este microrepte es valorarà si pots:
 
 - Diferenciar entre estar autenticat i estar autoritzat.
+- Explicar on es genera el hash de la contrasenya i on es verifica.
+- Evitar guardar contrasenyes en clar.
 - Protegir una acció amb valor real dins del projecte, no un exemple genèric.
 - Demostrar què passa quan l’acció està permesa i quan no ho està.
 - Mostrar que la funcionalitat protegida treballa amb informació que després continua tenint sentit dins del producte.
@@ -518,6 +524,7 @@ En este microrepte es valorarà si pots:
 **Evidències principals**
 
 - Flux d’autenticació funcional.
+- Registre o estructura d’usuaris amb contrasenya hashejada.
 - Operació protegida real i lligada al projecte base.
 - Dada o conjunt de dades reutilitzables dins del projecte.
 - Cas positiu.
@@ -527,6 +534,9 @@ En este microrepte es valorarà si pots:
 **Com es comprovarà**
 
 - Execució real del cas autoritzat.
+- Revisió de l’alta o registre mínim.
+- Revisió que la contrasenya no queda guardada en clar.
+- Revisió de la verificació del hash en el login.
 - Execució real del cas denegat.
 - Revisió de si la dada creada o recuperada forma part del flux protegit.
 - Pregunta oral sobre en quin punt es bloqueja o es permet l’acció.
@@ -534,7 +544,7 @@ En este microrepte es valorarà si pots:
 **Què no es penalitza encara**
 
 - No tindre rols avançats.
-- No tindre registre públic, recuperació de contrasenya, OAuth o JWT.
+- No tindre registre públic complet, recuperació de contrasenya, OAuth o JWT.
 - No tindre arquitectura completa ni persistència formal com a centre.
 
 ### Microrepte 6. Prova, depuració i checkpoint tècnic
