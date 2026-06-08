@@ -2,7 +2,7 @@
 
 ## Objectiu
 
-Crear una presentació teòrica curta per preparar `R2M4`.
+Crear una presentació teòrica curta per preparar `R2M4`, incloent sessió, cookie, `$_SERVER` i base comuna d'includes.
 
 ## Referències existents
 
@@ -17,14 +17,19 @@ Crear una presentació teòrica curta per preparar `R2M4`.
 - Sessió: dades associades al client i mantingudes al servidor.
 - Cookie: dada en client, sovint identificador o preferència limitada.
 - La cookie de sessió no és tota la sessió.
+- `$_SERVER` aporta context de petició, com mètode, agent o IP, però no autentica una persona.
+- Les rutes relatives en `include` o `require` poden trencar-se si els fitxers canvien de carpeta.
+- Un `config.php` o `bootstrap.php` amb ruta base ajuda a fer includes estables.
 - Estat temporal no és persistència del domini.
 - Cal invalidar o netejar quan la dada deixa de tindre sentit.
 
 ## Format recomanat
 
 - 7-9 diapositives.
-- Mapa client -> cookie -> servidor -> sessió.
-- Exemple d'una dada temporal.
+- Mapa client -> cookie -> servidor -> sessió -> `$_SERVER`.
+- Exemple d'una dada temporal en sessió.
+- Exemple de cookie no sensible.
+- Exemple de `BASE_PATH` i `require_once`.
 - Exemple d'invalidació.
 - Errors habituals.
 - Preguntes finals de comprovació.
@@ -35,4 +40,3 @@ Crear una presentació teòrica curta per preparar `R2M4`.
 - Autorització.
 - Persistència formal.
 - Arquitectura MVC.
-

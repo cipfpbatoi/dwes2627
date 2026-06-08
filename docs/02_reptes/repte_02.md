@@ -430,13 +430,17 @@ Pots fer que el sistema:
 
 Demostrar que el sistema pot recordar informació provisional entre peticions per no perdre el fil del recorregut, recuperar un esborrany o unes seleccions temporals i invalidar-les quan ja no facen falta, sense convertir encara este punt en un model complet d’usuari.
 
+En este microrepte hauràs d’usar **sessió i cookie**. No és suficient triar només una de les dues. També hauràs de llegir alguna dada de `$_SERVER` amb una finalitat clara i preparar una base comuna de rutes perquè els `include` / `require` partisquen del mateix lloc.
+
 **Què s’espera**
 
-- Un mecanisme d’estat real o equivalent.
-- Dades provisionals amb sentit dins del flux: esborranys, seleccions temporals, pas actual o informació pendent de confirmar.
-- Evidència de què es guarda en estat o sessió i de com es recupera.
+- Una dada significativa del projecte guardada en sessió: esborrany, pas actual, selecció temporal o informació pendent de confirmar.
+- Una cookie pròpia no sensible amb sentit funcional: preferència de vista, últim filtre, idioma, avís vist o última secció consultada.
+- Evidència de què es guarda en sessió i de com es recupera.
+- Evidència de què es guarda en cookie i de com es recupera.
+- Lectura acotada d’alguna dada de `$_SERVER`, com `REQUEST_METHOD`, `HTTP_USER_AGENT` o `REMOTE_ADDR` tractada amb prudència.
+- Un fitxer comú de configuració o bootstrap amb una ruta base per fer `include` / `require` de manera estable.
 - Recuperació del flux després d’un error, una recàrrega o un pas intermedi.
-- Si hi ha informació guardada en client, prova de lectura i recuperació.
 - Distinció clara entre estat temporal del flux i guardat funcional del recurs.
 - Neteja o invalidació quan toque.
 
@@ -452,14 +456,18 @@ En este microrepte es valorarà si pots:
 - Explicar què guarda el sistema i per què és provisional.
 - Distingir entre estat, sessió, cookies i altres mecanismes equivalents.
 - Distingir què queda en client i què manté el servidor.
+- Explicar què aporta `$_SERVER` i per què no substitueix autenticació.
+- Evitar rutes relatives fràgils en els includes.
 - Demostrar que el flux es pot reprendre sense dependre encara d’un model complet d’usuari.
 - Explicar quan toca netejar o invalidar eixa informació temporal.
 
 **Evidències principals**
 
-- Mecanisme d’estat implementat.
+- Dada de sessió implementada i recuperada.
+- Cookie pròpia implementada, recuperada i observable.
+- Dada de `$_SERVER` utilitzada amb finalitat clara.
+- Fitxer comú de configuració/bootstrap amb ruta base per als includes.
 - Demo de recuperació d’un esborrany, d’una selecció temporal o d’un pas del flux.
-- Si hi ha cookies o emmagatzematge en client, demo de lectura i recuperació.
 - Demo de neteja o invalidació.
 - Explicació clara de la frontera entre estat temporal i guardat funcional.
 - Commits associats.
@@ -467,7 +475,8 @@ En este microrepte es valorarà si pots:
 **Com es comprovarà**
 
 - Execució en directe de la recuperació del flux.
-- Pregunta breu sobre què es guarda, on, amb quina finalitat i si queda en client o en servidor.
+- Pregunta breu sobre què es guarda en sessió, què queda en cookie, què ve de `$_SERVER`, amb quina finalitat i si queda en client o en servidor.
+- Revisió del fitxer comú que defineix la ruta base dels includes.
 - Contrast entre el que dius i el que realment passa al flux.
 
 **Què no es penalitza encara**
