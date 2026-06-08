@@ -557,6 +557,8 @@ En este microrepte es valorarà si pots:
 
 Comprovar que el flux complet funciona, que queda registrat amb una checklist o taula simple de proves, que es pot demostrar en una demo breu i que el repte arriba a la sessió final amb una base tècnica clara.
 
+En este microrepte no es demanen encara proves unitàries ni `PHPUnit` com a mínim. Sí que has d’introduir una **prova automàtica lleugera de flux**, encara que siga una comanda `curl`, un script `.sh`, un script PHP senzill o una col·lecció de peticions documentada.
+
 **Què s’espera**
 
 - Checklist o taula simple de casos de prova.
@@ -565,6 +567,7 @@ Comprovar que el flux complet funciona, que queda registrat amb una checklist o 
 - Revisió d’errors i validacions.
 - Comprovació que la informació guardada es pot recuperar o reutilitzar.
 - Ús visible d’alguna eina o entorn simple de prova i depuració.
+- Almenys una prova automàtica lleugera d’un cas observable del flux.
 - Documentació mínima actualitzada.
 - Demo reproduïble del flux complet.
 - Defensa tècnica breu del recorregut.
@@ -580,6 +583,8 @@ En este microrepte es valorarà si pots:
 - Demostrar que el flux funciona de veritat.
 - Detectar errors i explicar-los.
 - Fer servir algun suport real de prova o depuració, com ara navegador, terminal, registres, `curl`, col·leccions de peticions o equivalent.
+- Automatitzar almenys una comprovació de caixa negra o de flux.
+- Explicar per què encara no s’estan demanant proves unitàries completes.
 - Deixar rastre del que has provat i del que encara cal millorar.
 - Explicar com has organitzat la prova i quins casos has verificat.
 - Explicar per què la conservació de dades que has fet és suficient per a `R2`, encara que no siga encara el centre del curs.
@@ -591,6 +596,7 @@ En este microrepte es valorarà si pots:
 - Cas positiu i cas negatiu documentats.
 - Incidències detectades o correccions rellevants.
 - Rastre de l’eina o entorn utilitzat per provar o depurar.
+- Script, comanda o col·lecció que execute una prova automàtica simple.
 - Evidència de reutilització de dades.
 - Documentació tècnica actualitzada.
 - Demo breu o guia de reproducció del flux.
@@ -598,6 +604,7 @@ En este microrepte es valorarà si pots:
 **Com es comprovarà**
 
 - Execució dels casos documentats.
+- Execució o revisió de la prova automàtica lleugera.
 - Revisió de l’eina o entorn utilitzat per provar o depurar.
 - Contrast entre documentació, repositori i resultat real.
 - Defensa tècnica breu sobre el flux complet.
@@ -605,6 +612,7 @@ En este microrepte es valorarà si pots:
 **Què no es penalitza encara**
 
 - No tindre proves automatitzades.
+- No tindre proves unitàries ni `PHPUnit`.
 - No haver refactoritzat encara el codi.
 - No afegir funcionalitats noves si el flux ja està tancat i verificat.
 
