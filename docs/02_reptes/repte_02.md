@@ -327,6 +327,10 @@ En este microrepte es valorarà si pots:
 
 ### Microrepte 3. Lògica del flux i regles del projecte
 
+**Autocorrecció associada**
+
+`r2-s03-logica-flux-regles-projecte`
+
 **Objectiu**
 
 Aplicar lògica bàsica de programació perquè el backend no es limite a rebre i guardar dades, sinó que aplique regles reals del projecte sobre la informació disponible.
@@ -389,6 +393,8 @@ Pots fer que el sistema:
 - Cas de decisió observable o recorregut significatiu.
 - Array o estructura equivalent usada amb sentit.
 - Funció o funcions útils.
+- Dos casos de prova amb resultats visibles diferents.
+- Nota breu al `README`, issue o registre explicant la regla i com repetir els dos casos.
 - Demo de reutilització de la informació correcta.
 - Demo del comportament resultant.
 
@@ -398,6 +404,12 @@ Pots fer que el sistema:
 - Revisió del codi
 - Pregunta oral breu sobre la regla implementada
 - Comprovació que la lògica no és ornamental, sinó útil per al projecte
+
+**Què no es penalitza encara**
+
+- No tindre sessió, cookies, login, rols o autorització.
+- No tindre base de dades obligatòria ni persistència formal.
+- No haver refactoritzat encara cap a MVC o arquitectura completa.
 
 ### Microrepte 4. Estat i sessió per conservar el flux
 
