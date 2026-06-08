@@ -57,3 +57,19 @@ Quan es regenere una presentació amb Gamma:
 - comprovar si el nom i abast continuen alineats amb els microreptes actuals;
 - evitar duplicar una presentació que ja cobrix el mateix objectiu;
 - crear un prompt nou només si el PDF existent no reflectix la seqüència actual.
+
+## Repte 2
+
+Encara no hi ha PDFs publicats localitzats en `docs/recursos/Repte2/`.
+
+Briefs interns creats per preparar les presentacions de la seqüència actual:
+
+| Fitxer | Ús probable | Observacions |
+|---|---|---|
+| `gamma-presentacions/reptes/r2.md` | Presentació de repte | Visió general de processament, reintent, guardat funcional, estat i autenticació. |
+| `gamma-presentacions/microreptes/r2m1.md` | Presentació de microrepte | Entrada variada i validació bàsica de servidor. |
+| `gamma-presentacions/microreptes/r2m2.md` | Presentació de microrepte | Processament, reintent i guardat funcional. |
+| `gamma-presentacions/microreptes/r2m3.md` | Presentació de microrepte | Lògica del flux i regles del projecte. |
+| `gamma-presentacions/teoria/r2-formularis-validacio-servidor.md` | Teoria de suport | Coneixement previ per a `R2M1`. |
+| `gamma-presentacions/teoria/r2-reintent-guardat-funcional.md` | Teoria de suport | Coneixement previ per a `R2M2`. |
+| `gamma-presentacions/teoria/r2-logica-regles-arrays-funcions.md` | Teoria de suport | Coneixement previ per a `R2M3`. |
