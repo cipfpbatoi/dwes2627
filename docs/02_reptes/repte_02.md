@@ -335,12 +335,15 @@ En este microrepte es valorarà si pots:
 
 Aplicar lògica bàsica de programació perquè el backend no es limite a rebre i guardar dades, sinó que aplique regles reals del projecte sobre la informació disponible.
 
+Perquè este microrepte siga concret, hauràs de crear una **llibreria pròpia mínima** del projecte: un fitxer separat de funcions o regles, per exemple `src/regles.php`, `includes/regles.php`, `lib/funcions.php` o equivalent, carregat des del flux amb `require_once`, `include_once` o una alternativa equivalent del teu entorn.
+
 **Què s’espera**
 
 - Almenys una decisió significativa.
 - Una repetició o un recorregut quan el flux ho necessite.
 - Ús d’arrays o estructures equivalents quan faça falta.
-- Una o més funcions útils.
+- Una funció pròpia útil situada en un fitxer separat de llibreria pròpia.
+- Ús real de `require_once`, `include_once` o equivalent per carregar eixa llibreria.
 - Aplicació recognoscible d’alguna regla bàsica del projecte.
 - Reutilització de la informació guardada quan faça falta per decidir, calcular o mostrar.
 - Lògica connectada al flux real del producte.
@@ -355,7 +358,8 @@ En este microrepte es valorarà si pots:
 
 - Fer que el sistema prenga decisions segons les dades rebudes
 - Aplicar alguna regla del projecte
-- Reutilitzar codi amb funcions pròpies
+- Reutilitzar codi amb funcions pròpies en un fitxer separat
+- Carregar una llibreria pròpia amb `require_once`, `include_once` o equivalent
 - Treballar amb llistes, etiquetes o estructures semblants
 - Demostrar que el backend està pensant i no només rebent dades
 
@@ -369,6 +373,7 @@ Pots fer que el sistema:
 - calcule o transforme alguna informació del producte
 - gestione una llista d’etiquetes o categories
 - use una funció per validar o preparar dades abans de guardar-les
+- carregue eixa funció des d’un fitxer propi de regles o funcions
 
 #### Exemple si el projecte és un gestor d’activitats o reserves
 
@@ -378,6 +383,7 @@ Pots fer que el sistema:
 - valide regles sobre dates o places
 - construïsca missatges diferents segons l’estat
 - use funcions per separar comprovacions
+- tinga eixes funcions en una llibreria pròpia senzilla
 
 #### Exemple si el projecte és una plataforma de recursos o publicacions
 
@@ -387,12 +393,14 @@ Pots fer que el sistema:
 - genere un resum o classificació bàsica
 - tracte una llista d’etiquetes
 - use funcions per preparar el recurs abans de mostrar-lo o guardar-lo
+- importe eixes funcions des d’un fitxer propi
 
 **Evidències principals**
 
 - Cas de decisió observable o recorregut significatiu.
 - Array o estructura equivalent usada amb sentit.
-- Funció o funcions útils.
+- Fitxer separat de llibreria pròpia importat pel flux.
+- Funció pròpia útil dins d’eixa llibreria.
 - Dos casos de prova amb resultats visibles diferents.
 - Nota breu al `README`, issue o registre explicant la regla i com repetir els dos casos.
 - Demo de reutilització de la informació correcta.
@@ -401,9 +409,10 @@ Pots fer que el sistema:
 **Com es comprovarà**
 
 - Execució del flux funcional
-- Revisió del codi
+- Revisió del codi principal i del fitxer de llibreria pròpia
 - Pregunta oral breu sobre la regla implementada
 - Comprovació que la lògica no és ornamental, sinó útil per al projecte
+- Comprovació que `require_once`, `include_once` o equivalent carrega codi que s’usa realment
 
 **Què no es penalitza encara**
 
