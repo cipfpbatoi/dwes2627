@@ -70,6 +70,14 @@ Briefs interns creats per preparar les presentacions de la seqüència actual:
 | `gamma-presentacions/microreptes/r2m1.md` | Presentació de microrepte | Entrada variada i validació bàsica de servidor. |
 | `gamma-presentacions/microreptes/r2m2.md` | Presentació de microrepte | Processament, reintent i guardat funcional. |
 | `gamma-presentacions/microreptes/r2m3.md` | Presentació de microrepte | Lògica del flux i regles del projecte. |
+| `gamma-presentacions/microreptes/r2m4.md` | Presentació de microrepte | Estat, sessió i cookies. |
+| `gamma-presentacions/microreptes/r2m5.md` | Presentació de microrepte | Autenticació i funcionalitat protegida. |
+| `gamma-presentacions/microreptes/r2m6.md` | Presentació de microrepte | Proves, depuració i checkpoint tècnic. |
+| `gamma-presentacions/microreptes/r2m7.md` | Presentació de microrepte | Refactorització i mantenibilitat. |
 | `gamma-presentacions/teoria/r2-formularis-validacio-servidor.md` | Teoria de suport | Coneixement previ per a `R2M1`. |
 | `gamma-presentacions/teoria/r2-reintent-guardat-funcional.md` | Teoria de suport | Coneixement previ per a `R2M2`. |
 | `gamma-presentacions/teoria/r2-logica-regles-arrays-funcions.md` | Teoria de suport | Coneixement previ per a `R2M3`. |
+| `gamma-presentacions/teoria/r2-estat-sessio-cookies.md` | Teoria de suport | Coneixement previ per a `R2M4`. |
+| `gamma-presentacions/teoria/r2-auth-operacio-protegida.md` | Teoria de suport | Coneixement previ per a `R2M5`. |
+| `gamma-presentacions/teoria/r2-proves-debug-checkpoint.md` | Teoria de suport | Coneixement previ per a `R2M6`. |
+| `gamma-presentacions/teoria/r2-refactoritzacio-mantenibilitat.md` | Teoria de suport | Coneixement previ per a `R2M7`. |

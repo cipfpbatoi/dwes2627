@@ -413,6 +413,10 @@ Pots fer que el sistema:
 
 ### Microrepte 4. Estat i sessió per conservar el flux
 
+**Autocorrecció associada**
+
+`r2-s04-estat-sessio-cookies`
+
 **Objectiu**
 
 Demostrar que el sistema pot recordar informació provisional entre peticions per no perdre el fil del recorregut, recuperar un esborrany o unes seleccions temporals i invalidar-les quan ja no facen falta, sense convertir encara este punt en un model complet d’usuari.
@@ -457,7 +461,17 @@ En este microrepte es valorarà si pots:
 - Pregunta breu sobre què es guarda, on, amb quina finalitat i si queda en client o en servidor.
 - Contrast entre el que dius i el que realment passa al flux.
 
+**Què no es penalitza encara**
+
+- No tindre login, rols o autorització.
+- No tindre base de dades obligatòria ni persistència formal.
+- No haver refactoritzat cap a MVC o arquitectura completa.
+
 ### Microrepte 5. Autenticació i funcionalitat protegida
+
+**Autocorrecció associada**
+
+`r2-s05-autenticacio-funcionalitat-protegida`
 
 **Objectiu**
 
@@ -499,7 +513,17 @@ En este microrepte es valorarà si pots:
 - Revisió de si la dada creada o recuperada forma part del flux protegit.
 - Pregunta oral sobre en quin punt es bloqueja o es permet l’acció.
 
+**Què no es penalitza encara**
+
+- No tindre rols avançats.
+- No tindre registre públic, recuperació de contrasenya, OAuth o JWT.
+- No tindre arquitectura completa ni persistència formal com a centre.
+
 ### Microrepte 6. Prova, depuració i checkpoint tècnic
+
+**Autocorrecció associada**
+
+`r2-s06-proves-depuracio-checkpoint`
 
 **Objectiu**
 
@@ -550,7 +574,17 @@ En este microrepte es valorarà si pots:
 - Contrast entre documentació, repositori i resultat real.
 - Defensa tècnica breu sobre el flux complet.
 
+**Què no es penalitza encara**
+
+- No tindre proves automatitzades.
+- No haver refactoritzat encara el codi.
+- No afegir funcionalitats noves si el flux ja està tancat i verificat.
+
 ### Microrepte 7. Refactorització i millora de mantenibilitat
+
+**Autocorrecció associada**
+
+`r2-s07-refactoritzacio-mantenibilitat`
 
 En este microrepte hauràs de revisar el codi que ja funciona i aplicar una millora clara de mantenibilitat.
 
@@ -577,6 +611,29 @@ Este microrepte no vol dir:
 - substituir el treball propi de `R3`
 
 Si després d’esta revisió afegixes més classes, més objectes o una persistència més formal, això s’ha d’entendre com a ampliació, millora o avançament controlat cap al repte següent, no com a exigència central per a tot l’alumnat dins de `R2`.
+
+**Evidències principals**
+
+- Zona del codi triada a partir del flux provat.
+- Problema de mantenibilitat identificat.
+- Fitxer comú, funció reutilitzable, import amb criteri o objecte simple.
+- Comparativa abans/després.
+- Prova de no regressió del flux.
+- Nota breu sobre què queda pendent per a `R3`.
+
+**Com es comprovarà**
+
+- Revisió del diff o comparativa.
+- Execució d’alguns casos clau de `R2M6`.
+- Pregunta oral sobre quina responsabilitat queda més clara.
+- Contrast entre la millora declarada i el codi real.
+
+**Què no es penalitza encara**
+
+- No tindre MVC complet.
+- No tindre ORM ni migracions.
+- No haver passat el projecte a un framework.
+- No fer POO completa.
 
 ## Com es reparteixen els criteris dins del repte
 
