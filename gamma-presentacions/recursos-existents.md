@@ -88,3 +88,8 @@ Briefs interns creats per preparar les presentacions de la seqüència actual:
 | `gamma-presentacions/teoria/r2-auth-operacio-protegida.md` | Teoria de suport | Coneixement previ per a `R2M5`. |
 | `gamma-presentacions/teoria/r2-proves-debug-checkpoint.md` | Teoria de suport | Coneixement previ per a `R2M6`. |
 | `gamma-presentacions/teoria/r2-poo-composer-proves-unitaries.md` | Teoria de suport | POO, Composer i proves unitàries per a `R2M7`. |
+| `gamma-presentacions/teoria/r3-framework-mvc-responsabilitats.md` | Teoria de suport | Framework, MVC o equivalent i separació de responsabilitats per a `R3M1`. |
+| `gamma-presentacions/teoria/r3-docker-env-arrencada.md` | Teoria de suport | Docker, `.env.example` i arrencada reproduïble per a `R3M1`. |
+| `gamma-presentacions/teoria/r3-persistencia-migrations-seeders.md` | Teoria de suport | BBDD real, migrations, seeders i dades reproduïbles per a `R3M2`. |
+| `gamma-presentacions/teoria/r3-rutes-controladors-vistes-flux.md` | Teoria de suport | Rutes, controladors, vistes/respostes i flux end-to-end per a `R3M3-R3M4`. |
+| `gamma-presentacions/teoria/r3-qualitat-proves-tancament.md` | Teoria de suport | Qualitat, proves, README i tancament tècnic per a `R3M5-R3M6`. |
