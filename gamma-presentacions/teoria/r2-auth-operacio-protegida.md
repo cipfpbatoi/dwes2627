@@ -19,6 +19,7 @@ Crear una presentació teòrica curta per preparar `R2M5`, incloent registre mí
 - `password_verify` o equivalent comprova la contrasenya introduïda contra el hash.
 - Autenticació: el sistema comprova que és qui diu.
 - Autorització: el sistema decideix què pot fer.
+- Autenticació i autorització són coses diferents: comprovar qui ets no és igual que comprovar què pots fer.
 - La protecció ha d'estar en servidor.
 - Ocultar un botó no protegeix una operació.
 - Una operació protegida ha de tindre valor dins del producte.

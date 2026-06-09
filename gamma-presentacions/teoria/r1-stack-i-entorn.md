@@ -15,7 +15,8 @@ Crear una presentació teòrica curta per preparar la decisió de stack i el mun
 - Diferència entre llenguatge, runtime, framework, servidor web i base de dades.
 - Què vol dir full stack sense convertir-ho en una llista de tecnologies.
 - Què ha de tindre un entorn mínim executable.
-- Com es comprova que l'entorn funciona.
+- Com es comprova que l'entorn funciona amb una ruta mínima (`/health` o `/`).
+- Variables de versió i runtime clares perquè el projecte no depenga d'un entorn inesperat.
 - Quin paper pot tindre Docker en una base comuna.
 
 ## Format recomanat

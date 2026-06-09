@@ -17,7 +17,8 @@ Crear una presentació teòrica curta per preparar `R2M1`.
 - `$_POST` o el mecanisme equivalent recull dades que venen de la petició.
 - Text, select/radio i checkbox no arriben igual.
 - Un checkbox simple pot no aparéixer si no està marcat.
-- La validació important s'ha de fer en servidor.
+- Cal tractar camps inexistents, checkbox no marcats i dades malformades com a part del flux normal.
+- No confiar en el client: la validació real s'ha de fer en servidor.
 - Una condició simple pot bloquejar un cas incorrecte i mostrar un error útil.
 
 ## Format recomanat

@@ -18,6 +18,7 @@ Crear una presentació teòrica curta per preparar `R3M1` i donar criteri comú 
 - Un framework dona convencions per separar responsabilitats.
 - Les peces mínimes són ruta, controlador o equivalent, capa de dades, vista/plantilla o resposta.
 - `MVC` o equivalent no és una teoria: és una forma de localitzar on viu cada responsabilitat.
+- Explicar què es pot mantenir de l'aplicació `R2` i què es refà quan es passa a un framework.
 - L'objectiu és construir una base real amb `2` fluxos, no migrar-ho tot.
 - La tria de stack s'ha de justificar amb avantatges concrets per al projecte.
 
