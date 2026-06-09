@@ -773,6 +773,8 @@ Per considerar complet el repte, hauràs d’aportar com a mínim:
 - Repositori actualitzat.
 - Issue principal del repte o registre equivalent.
 - Seqüència de commits significativa.
+- Per cada microrepte, almenys 3 commits útils quan siga possible: inici, progrés i prova o tancament.
+- Registre breu de temps aproximat per microrepte en el `README`, issue o document equivalent.
 - Formulari funcional o entrada equivalent.
 - Recuperació real de dades.
 - Error de validació bàsic visible i possibilitat de correcció.
@@ -857,6 +859,7 @@ El professorat podrà comprovar el treball amb mecanismes com:
 - Revisió de si el mecanisme de conservació triat és coherent i prou controlat per a `R2`.
 - Si hi ha fitxer o imatge, prova d’un cas acceptable i d’un cas rebutjat.
 - Revisió de commits i issues.
+- Revisió del registre de temps aproximat i de la seua coherència amb els commits.
 - Preguntes tècniques breus.
 - Defensa oral curta.
 - Microcanvis en viu quan siga necessari.

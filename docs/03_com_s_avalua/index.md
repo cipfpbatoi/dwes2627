@@ -90,6 +90,40 @@ Per exemple:
 
 El criteri de fons és sempre el mateix: si pots traçar, explicar, provar i defensar el que presentes.
 
+## 🕒 Temps de treball, commits i traçabilitat
+
+No es controlarà el temps amb un cronòmetre. El temps de treball es revisarà com a **evidència de procés**, junt amb commits, issues, proves, documentació i defensa.
+
+Per cada microrepte has de deixar una traça mínima:
+
+| Moment | Evidència esperada | Exemple de commit |
+|---|---|---|
+| Inici | estructura, primer intent o decisió inicial | `R2M3 inici regla de domini` |
+| Progrés | canvi funcional parcial | `R2M3 afegeix funcio calcularPrioritat` |
+| Prova o tancament | comprovació, correcció, README o checklist | `R2M3 prova casos valid i invalid` |
+
+Com a criteri general, cada microrepte hauria de tindre **almenys 3 commits significatius**. No compten com a commits significatius els canvis buits, massius o amb missatges genèrics com `canvis`, `final`, `coses` o `update`.
+
+En el `README`, issue del microrepte o registre equivalent, has d'indicar el temps aproximat:
+
+```md
+## R2M3
+
+- Inici: 2026-10-14 09:10
+- Final: 2026-10-14 11:35
+- Temps aproximat: 2h 25m
+- Commits relacionats:
+  - a1b2c3d R2M3 inici regla de domini
+  - e4f5g6h R2M3 afegeix funcio calcularPrioritat
+  - i7j8k9l R2M3 prova casos valid i invalid
+- Què he fet:
+- Què m'ha costat:
+- Què he comprovat:
+- IA usada, si aplica:
+```
+
+El temps declarat no dona punts per si sol. Servix per detectar si el procés és coherent. Si hi ha un únic commit enorme al final, temps declarat poc creïble, falta de proves o explicacions genèriques, el professorat podrà demanar una defensa més concreta o un microcanvi en directe.
+
 ## 🧪 Recursos de verificació
 
 Si estàs tancant el `Repte 2`, tens una [checklist de proves](checklists_de_prova.md) que et pot ajudar a registrar casos de prova, errors visibles, estat, autenticació i funcionalitat protegida.
