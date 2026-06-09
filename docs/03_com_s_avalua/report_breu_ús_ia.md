@@ -2,6 +2,14 @@
 
 Usa esta plantilla quan la IA haja tingut pes real en el treball que presentes. No cal fer-la per consultes menudes o trivials.
 
+El pots entregar com a report independent o mantindre'l dins del repositori en:
+
+```text
+docs/ai-log.md
+```
+
+No copies tota la conversa amb la IA. Resumeix només les intervencions rellevants i deixa clara la teua verificació.
+
 ## Dades bàsiques
 
 - Nom i cognoms:
@@ -64,3 +72,15 @@ Explicació breu de com ho he comprovat:
 - Què he canviat:
 - Quins errors he detectat:
 - Com ho provaria:
+
+## Exemple d'entrada breu
+
+```md
+## Consulta 1 - R2M5 - Error en autenticació
+
+- Objectiu de la consulta: entendre per què el login sempre fallava encara que l'usuari existia.
+- Resum del suggeriment: la IA ha indicat que podia haver-hi un problema en la comparació de contrasenyes i ha proposat revisar `password_verify()`.
+- Què s'ha acceptat: he revisat el punt on comprovava la contrasenya i he canviat la comparació directa per `password_verify()`.
+- Què s'ha rebutjat o modificat: no he incorporat el sistema complet d'usuaris que proposava la IA perquè era massa ampli per al microrepte.
+- Com s'ha verificat: he provat login correcte, login amb contrasenya incorrecta i accés a la funcionalitat protegida sense sessió.
+```

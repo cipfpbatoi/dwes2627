@@ -54,6 +54,33 @@ Quan la IA haja tingut un pes rellevant, convé deixar un registre mínim amb:
 - verificació aplicada
 - resultat final o canvi introduït
 
+El lloc recomanat per deixar este rastre és:
+
+```text
+docs/ai-log.md
+```
+
+No cal copiar tota la conversa amb la IA. El que importa és deixar clar què t'ha aportat, què has decidit tu i com ho has comprovat.
+
+### Exemple curt d'entrada en `docs/ai-log.md`
+
+```md
+## Consulta 1 - R2M7 - Classe per validar una regla del projecte
+
+- Objectiu de la consulta: separar una regla del flux en una classe simple i preparar una prova unitària.
+- Resum del suggeriment: la IA ha proposat una classe `ReservaService` amb un mètode per comprovar si hi ha places disponibles i un test bàsic amb dos casos.
+- Què s'ha acceptat: la idea de posar la regla en una classe i provar-la sense navegador.
+- Què s'ha rebutjat o modificat: he canviat els noms perquè encaixen amb el meu projecte i he eliminat la part que usava base de dades perquè encara no és el focus del microrepte.
+- Com s'ha verificat: he executat `composer dump-autoload`, la prova unitària i un cas del flux web que ja funcionava en `R2M6`.
+```
+
+Una entrada bona no ha de ser llarga. Ha de permetre entendre:
+
+- quin problema volies resoldre;
+- què va proposar la IA;
+- què has aprofitat, canviat o descartat;
+- quina prova o comprovació real has fet després.
+
 ## 👀 Quan convé deixar rastre de manera especialment clara
 
 Convé deixar AI log o rastre equivalent sobretot:

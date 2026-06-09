@@ -134,6 +134,8 @@ No cal:
 
 La idea és deixar un rastre breu del que has demanat, del que has aprofitat realment i del que pots explicar o defendre després.
 
+El format recomanat és un fitxer del repositori anomenat `docs/ai-log.md`. Cada entrada hauria d'incloure: objectiu de la consulta, resum del suggeriment, què has acceptat, què has rebutjat o modificat i com ho has verificat. En la pàgina del report tens una plantilla i un exemple omplit.
+
 ## 🤝 Treball cooperatiu i autoria individual
 
 El curs pot tindre treball cooperatiu, però l’avaluació continua sent individual.
