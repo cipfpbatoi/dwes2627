@@ -976,6 +976,10 @@ Millorar la robustesa del flux en servidor i demostrar més control sobre valida
 **Condició prèvia**  
 El nucli del repte ha d'estar complet, funcional i validat.
 
+Esta ampliació no compensa mancances del nucli. Si falten evidències obligatòries, proves mínimes, autenticació funcional o defensa del flux, primer cal reparar el repte base.
+
+Tampoc és un requisit per aprovar el repte ni per tancar els microreptes. La seua absència no penalitza mentre el nucli obligatori estiga ben resolt.
+
 **Opcions d'ampliació**
 - Reforçar la validació, els errors visibles o la funcionalitat protegida amb un cas crític millor resolt.
 - Afegir una llibreria externa menuda amb Composer o una crida a una API externa si té sentit real en el projecte i queda documentat com a ampliació.
@@ -994,3 +998,6 @@ La IA et pot ajudar a contrastar validacions, proves, classes o ús de Composer,
 
 **Defensa**  
 L'ampliació només compta si la pots explicar amb criteri i sense delegació excessiva.
+
+**Regla curta**  
+Nucli primer, ampliació després. Una ampliació no puja a `9→10` si el treball base encara no és funcional, verificable i defensable.
