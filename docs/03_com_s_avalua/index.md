@@ -213,6 +213,14 @@ En este curs es valora sobretot si el teu treball és:
 
 La franja `9→10` no és un sistema de punts extra. Requerix una ampliació amb valor tècnic real sobre un repte que ja estiga ben resolt.
 
+La nota final d'un repte es llig així:
+
+```text
+nota_final_repte = min(nota_nucli_repte, 9) + ampliacio_9_10
+```
+
+Per això una mitjana excel·lent dels microreptes acredita un nucli excel·lent, però no dona automàticament un `10` final de repte. Sense ampliació validada, la nota final del repte queda limitada a `9`.
+
 Perquè una ampliació compte de veritat, ha de:
 
 - partir d'un nucli complet i validat

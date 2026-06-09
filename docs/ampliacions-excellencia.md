@@ -12,6 +12,18 @@ L'ampliació només compta si el nucli obligatori del repte ja està complet, fu
 
 Normalment la via `9→10` s'aplica al **repte complet**, no a cada microrepte per separat. Una ampliació pot nàixer d'un microrepte concret, però ha de millorar el conjunt del repte o una part important del seu flux.
 
+## Fórmula general de nota
+
+La idea general és:
+
+```text
+nota_final_repte = min(nota_nucli_repte, 9) + ampliacio_9_10
+```
+
+La nota del nucli obligatori pot ser excel·lent, però sense ampliació validada la nota final del repte queda limitada a `9`. La franja entre `9` i `10` s'obri només amb una ampliació integrada, provada i defensada.
+
+L'ampliació `9→10` pot sumar entre `0` i `1` punt segons el valor tècnic, la integració, la verificació, la traçabilitat i la defensa.
+
 ## Com compten per a la franja 9→10
 
 La franja `9→10` no es resol amb més quantitat ni amb afegits ornamentals. Requerix una ampliació integrada, útil i defensable.

@@ -973,6 +973,40 @@ La sessió `7` en `R2` ha de servir justament per arribar a `R3` amb una primera
 **Finalitat**  
 Millorar la robustesa del flux en servidor i demostrar més control sobre validació, estat, autenticació, proves i mantenibilitat.
 
+**Autocorrecció associada**  
+`r2-ampliacio-9-10`
+
+Esta autocorrecció no posa automàticament un `10`. Servix per filtrar si la teua ampliació pot optar a la franja `9→10` i quina revisió docent necessita.
+
+## Com es calcula la nota final de R2
+
+Les autocorreccions dels microreptes `R2M1` a `R2M7` valoren el **nucli obligatori** del repte.
+
+La nota final de `R2` es calcula així:
+
+```text
+nota_final_R2 = min(nota_nucli_R2, 9) + ampliacio_9_10
+```
+
+On:
+
+- `nota_nucli_R2` és la nota obtinguda amb el conjunt dels microreptes obligatoris;
+- `min(nota_nucli_R2, 9)` vol dir que el nucli obligatori pot arribar com a màxim a `9` en la nota final del repte;
+- `ampliacio_9_10` pot sumar de `0` a `1` punt només si l’ampliació està validada;
+- la nota final mai pot superar `10`.
+
+Per tant, si tens una mitjana de `10` en els microreptes però no presentes una ampliació `9→10` validada, la nota final del repte serà `9`.
+
+No és una baixada de nota: és separar el **nucli obligatori** de la **via d’excel·lència**.
+
+| Situació | Resultat |
+|---|---:|
+| Nucli de R2 incomplet | no pot optar a `9→10` |
+| Nucli de R2 complet, sense ampliació | màxim `9` |
+| Nucli de R2 complet, ampliació no vàlida o decorativa | màxim `9` |
+| Nucli de R2 complet, ampliació útil però limitada | entre `9` i `9,5`, segons revisió docent |
+| Nucli de R2 complet, ampliació integrada, provada i defensada | fins a `10` |
+
 **A quin nivell s'aplica**  
 La via `9→10` s'aplica al **Repte 2 complet**, no a cada microrepte de manera independent.
 
@@ -1013,6 +1047,7 @@ També pots proposar una ampliació pròpia si té valor tècnic real i es valid
 - justificació tècnica breu
 - prova funcional dels casos millorats
 - rastre de l'ús assistit per IA, si l'has usat
+- referència a l'autocorrecció `r2-ampliacio-9-10` o informe equivalent de candidatura
 
 **Ús assistit per IA**  
 La IA et pot ajudar a contrastar validacions, proves, classes o ús de Composer, però no substituïx la teua decisió ni la teua comprovació real.
