@@ -29,6 +29,12 @@ nav:
           - "👀 Visió general": "03_com_s_avalua/rubriques/index.md"
           - "R1M1. Model client/servidor i stack": "03_com_s_avalua/rubriques/r1m1.md"
           - "R1M2. Entorn executable i tancament": "03_com_s_avalua/rubriques/r1m2.md"
+          - "R3M1. Arrencada del nou projecte": "03_com_s_avalua/rubriques/r3m1.md"
+          - "R3M2. Persistència mínima": "03_com_s_avalua/rubriques/r3m2.md"
+          - "R3M3. Primer cas d'ús complet": "03_com_s_avalua/rubriques/r3m3.md"
+          - "R3M4. Segon cas d'ús": "03_com_s_avalua/rubriques/r3m4.md"
+          - "R3M5. Qualitat i estabilització": "03_com_s_avalua/rubriques/r3m5.md"
+          - "R3M6. Tancament tècnic": "03_com_s_avalua/rubriques/r3m6.md"
       - "📝 Report breu d'ús de la IA": "03_com_s_avalua/report_breu_ús_ia.md"
       - "🧪 Checklist de proves": "03_com_s_avalua/checklists_de_prova.md"
 theme:

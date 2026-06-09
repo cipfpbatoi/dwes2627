@@ -67,14 +67,14 @@ La nomenclatura canvia segons l'stack, però el criteri és el mateix: ruta, con
 
 `R3` es treballa en 6 microreptes:
 
-| Microrepte | Producte principal |
-|---|---|
-| `MP1` Arrencada del nou projecte | Docker, framework, `.env`, ruta mínima, comparació de stack i esquema abans/després |
-| `MP2` Persistència mínima | BBDD, `migrations`, `seeders` i conjunt de dades real usat en un flux |
-| `MP3` Primer cas d'ús complet | flux heretat de `R2` funcionant en framework, preferentment com a cas server-rendered |
-| `MP4` Segon cas d'ús o ampliació | segon flux real, migrat o ampliació funcional útil amb canvi dinàmic de resposta |
-| `MP5` Qualitat i estabilització | validació, errors, proves i revisió d'estructura |
-| `MP6` Tancament tècnic | README, demo, decisions i mapa del que queda pendent |
+| Microrepte | Producte principal | Autocorrecció |
+|---|---|---|
+| `R3M1` Arrencada del nou projecte | Docker, framework, `.env`, ruta mínima, comparació de stack i esquema abans/després | `r3-s01-arrencada-nou-projecte` |
+| `R3M2` Persistència mínima | BBDD, `migrations`, `seeders` i conjunt de dades real usat en un flux | `r3-s02-persistencia-minima-migrations-seeders` |
+| `R3M3` Primer cas d'ús complet | flux heretat de `R2` funcionant en framework, preferentment com a cas server-rendered | `r3-s03-primer-cas-us-complet` |
+| `R3M4` Segon cas d'ús o ampliació | segon flux real, migrat o ampliació funcional útil amb canvi dinàmic de resposta | `r3-s04-segon-cas-us-ampliacio-funcional` |
+| `R3M5` Qualitat i estabilització | validació, errors, proves i revisió d'estructura | `r3-s05-qualitat-estabilitzacio` |
+| `R3M6` Tancament tècnic | README, demo, decisions i mapa del que queda pendent | `r3-s06-tancament-tecnic` |
 
 El detall operatiu està en els materials de `R3`:
 

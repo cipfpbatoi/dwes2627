@@ -74,6 +74,13 @@ Briefs interns creats per preparar les presentacions de la seqüència actual:
 | `gamma-presentacions/microreptes/r2m5.md` | Presentació de microrepte | Autenticació i funcionalitat protegida. |
 | `gamma-presentacions/microreptes/r2m6.md` | Presentació de microrepte | Proves, depuració i checkpoint tècnic. |
 | `gamma-presentacions/microreptes/r2m7.md` | Presentació de microrepte | Primera peça testable amb POO i Composer. |
+| `gamma-presentacions/reptes/r3.md` | Presentació de repte | Visió general de reconstrucció en framework, persistència real i dos fluxos. |
+| `gamma-presentacions/microreptes/r3m1.md` | Presentació de microrepte | Arrencada del nou projecte en framework. |
+| `gamma-presentacions/microreptes/r3m2.md` | Presentació de microrepte | Persistència mínima amb migrations i seeders. |
+| `gamma-presentacions/microreptes/r3m3.md` | Presentació de microrepte | Primer cas d'ús complet heretat de `R2`. |
+| `gamma-presentacions/microreptes/r3m4.md` | Presentació de microrepte | Segon cas d'ús o ampliació funcional. |
+| `gamma-presentacions/microreptes/r3m5.md` | Presentació de microrepte | Qualitat i estabilització. |
+| `gamma-presentacions/microreptes/r3m6.md` | Presentació de microrepte | Tancament tècnic i pas cap a `R4`. |
 | `gamma-presentacions/teoria/r2-formularis-validacio-servidor.md` | Teoria de suport | Coneixement previ per a `R2M1`. |
 | `gamma-presentacions/teoria/r2-reintent-guardat-funcional.md` | Teoria de suport | Coneixement previ per a `R2M2`. |
 | `gamma-presentacions/teoria/r2-logica-regles-arrays-funcions.md` | Teoria de suport | Coneixement previ per a `R2M3`. |
