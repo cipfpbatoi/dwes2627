@@ -10,6 +10,8 @@ Servixen per aprofundir amb criteri i demostrar una millora tècnica real: més 
 
 L'ampliació només compta si el nucli obligatori del repte ja està complet, funcional i validat. No servix per compensar mancances del treball base.
 
+Normalment la via `9→10` s'aplica al **repte complet**, no a cada microrepte per separat. Una ampliació pot nàixer d'un microrepte concret, però ha de millorar el conjunt del repte o una part important del seu flux.
+
 ## Com compten per a la franja 9→10
 
 La franja `9→10` no es resol amb més quantitat ni amb afegits ornamentals. Requerix una ampliació integrada, útil i defensable.
