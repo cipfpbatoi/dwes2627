@@ -684,6 +684,24 @@ Per orientar-te sense convertir el repte en una llista normativa, pots llegir-lo
 - `RA3` apareix sobretot en els microreptes 1, 3 i 7: formularis, recuperació de dades, comentaris útils, decisions, bucles, arrays, funcions i encapsulació mínima d’una regla en una classe.
 - `RA4` apareix sobretot en els microreptes 4, 5, 6 i 7: estat, emmagatzematge en client quan toque, autenticació, funcionalitat protegida, prova, depuració, prova unitària inicial i comprovació final del flux.
 
+## Pes dels microreptes dins del nucli de R2
+
+La `nota_nucli_R2` no és una mitjana simple de tots els microreptes. Es calcula amb estos pesos, segons la importància dels criteris d'avaluació treballats en cada fase:
+
+| Microrepte | Focus principal | RA/CA amb més pes | Pes dins del nucli |
+|---|---|---|---:|
+| `R2M1` | Entrada i validació bàsica | `RA2` de suport + `RA3.e`, `RA3.f`, `RA3.g` | `15%` |
+| `R2M2` | Processament, reintent i guardat funcional | `RA2.a-h` + `RA3.e`, `RA3.f`, `RA3.g` | `15%` |
+| `R2M3` | Lògica, arrays, funcions i llibreria pròpia | `RA3.a`, `RA3.b`, `RA3.c`, `RA3.d` | `15%` |
+| `R2M4` | Estat, sessió, cookie, `$_SERVER` i includes estables | `RA4.a`, `RA4.b`, `RA4.c` | `15%` |
+| `R2M5` | Registre, hash, autenticació i operació protegida | `RA4.d`, `RA4.e` | `20%` |
+| `R2M6` | Proves automàtiques lleugeres, depuració i checkpoint | `RA4.f` | `10%` |
+| `R2M7` | Primera peça testable amb POO i Composer | `RA3.d`, `RA3.g`, `RA4.f` | `10%` |
+
+El microrepte `R2M5` pesa més perquè concentra la part més significativa del repte: demostrar que l'estat i el control d'accés servixen per protegir una acció real del projecte. `R2M6` i `R2M7` pesen menys per separat, però són importants perquè fan verificable i defensable el que s'ha construït.
+
+Si un microrepte posterior depén d'un anterior, el pes no elimina la dependència. Per exemple, un bon `R2M5` necessita un flux d'entrada, processament, lògica i estat suficientment funcional.
+
 ## Criteris que es treballen en este repte
 
 En llenguatge clar, en este repte es treballa sobretot que sigues capaç de:
@@ -990,7 +1008,7 @@ nota_final_R2 = min(nota_nucli_R2, 9) + ampliacio_9_10
 
 On:
 
-- `nota_nucli_R2` és la nota obtinguda amb el conjunt dels microreptes obligatoris;
+- `nota_nucli_R2` és la nota ponderada obtinguda amb el conjunt dels microreptes obligatoris, segons els pesos indicats en la taula anterior;
 - `min(nota_nucli_R2, 9)` vol dir que el nucli obligatori pot arribar com a màxim a `9` en la nota final del repte;
 - `ampliacio_9_10` pot sumar de `0` a `1` punt només si l’ampliació està validada;
 - la nota final mai pot superar `10`.
