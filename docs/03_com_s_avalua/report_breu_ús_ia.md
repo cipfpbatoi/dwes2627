@@ -10,6 +10,8 @@ docs/ai-log.md
 
 No copies tota la conversa amb la IA. Resumeix només les intervencions rellevants i deixa clara la teua verificació.
 
+Este report no compta només per estar ben redactat. Ha de poder contrastar-se amb el teu repositori: commits, fitxers, proves, errors corregits i decisions que pots explicar en una defensa curta.
+
 ## Dades bàsiques
 
 - Nom i cognoms:
@@ -60,6 +62,7 @@ Marca el que toque.
 - [ ] He corregit errors
 - [ ] He revisat la lògica
 - [ ] He comparat amb documentació o apunts
+- [ ] Puc relacionar-ho amb un commit, fitxer o prova concreta
 - [ ] Altra validació:
 
 Explicació breu de com ho he comprovat:
@@ -72,6 +75,20 @@ Explicació breu de com ho he comprovat:
 - Què he canviat:
 - Quins errors he detectat:
 - Com ho provaria:
+- En quin fitxer o commit es veu:
+
+## Com es pot revisar
+
+El professorat pot triar una entrada d'este report i demanar-te que ensenyes:
+
+- el fitxer o fragment relacionat;
+- el commit o moment del procés;
+- la prova executada;
+- què vas acceptar de la IA;
+- què vas modificar o rebutjar;
+- què canviaries si apareix un cas nou.
+
+Si no pots relacionar el report amb el teu projecte real, el report no és una evidència suficient d'ús responsable de la IA.
 
 ## Exemple d'entrada breu
 
@@ -83,4 +100,5 @@ Explicació breu de com ho he comprovat:
 - Què s'ha acceptat: he revisat el punt on comprovava la contrasenya i he canviat la comparació directa per `password_verify()`.
 - Què s'ha rebutjat o modificat: no he incorporat el sistema complet d'usuaris que proposava la IA perquè era massa ampli per al microrepte.
 - Com s'ha verificat: he provat login correcte, login amb contrasenya incorrecta i accés a la funcionalitat protegida sense sessió.
+- En quin fitxer o commit es veu: `src/auth.php` i commit `a1b2c3d`.
 ```

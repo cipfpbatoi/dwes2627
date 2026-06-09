@@ -134,7 +134,9 @@ No cal:
 
 La idea és deixar un rastre breu del que has demanat, del que has aprofitat realment i del que pots explicar o defendre després.
 
-El format recomanat és un fitxer del repositori anomenat `docs/ai-log.md`. Cada entrada hauria d'incloure: objectiu de la consulta, resum del suggeriment, què has acceptat, què has rebutjat o modificat i com ho has verificat. En la pàgina del report tens una plantilla i un exemple omplit.
+El format recomanat és un fitxer del repositori anomenat `docs/ai-log.md`. Cada entrada hauria d'incloure: objectiu de la consulta, resum del suggeriment, què has acceptat, què has rebutjat o modificat, com ho has verificat i en quin fitxer, commit o prova es pot veure. En la pàgina del report tens una plantilla i un exemple omplit.
+
+Un `AI log` ben escrit no acredita autoria per si sol. Es revisarà junt amb commits, codi, proves i defensa curta. Si el registre és genèric, no coincideix amb el repositori o no el pots explicar, no comptarà com a evidència suficient d'ús responsable de la IA.
 
 ## 🤝 Treball cooperatiu i autoria individual
 

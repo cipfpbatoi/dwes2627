@@ -81,6 +81,51 @@ Una entrada bona no ha de ser llarga. Ha de permetre entendre:
 - què has aprofitat, canviat o descartat;
 - quina prova o comprovació real has fet després.
 
+## 🔎 Com es comprovarà que l'AI log és real
+
+Un `AI log` ben escrit no demostra per si sol que entens el treball. També pot haver sigut redactat amb ajuda d'una IA. Per això el professorat no valorarà només la qualitat del text, sinó si el registre encaixa amb el teu repositori i amb la teua defensa tècnica.
+
+El teu `AI log` ha de poder contrastar-se amb:
+
+- commits del repositori;
+- fitxers concrets modificats;
+- proves executades;
+- errors trobats i corregits;
+- decisions que pots explicar;
+- canvis que pots fer en directe si se't demana.
+
+Si una entrada diu que has acceptat una proposta, has de poder ensenyar on està aplicada. Si diu que has rebutjat una alternativa, has de poder explicar per què. Si diu que has verificat un canvi, has de poder repetir o descriure la prova.
+
+### Què pot preguntar el professorat
+
+En una revisió o microdefensa, el professorat pot triar una entrada de l'`AI log` i demanar-te:
+
+- en quin fitxer està el canvi relacionat;
+- quin commit o part del procés correspon a eixa entrada;
+- quina part de la proposta vas acceptar i quina vas modificar;
+- quin error va aparéixer i com el vas resoldre;
+- quina prova demostra que funciona;
+- què passaria si canviàrem una condició, una dada o un cas de prova.
+
+La resposta ha d'eixir del teu projecte real, no d'una explicació genèrica.
+
+### Senyals d'alerta
+
+El professorat pot considerar que l'`AI log` no és una evidència suficient si:
+
+- apareix complet només al final i no té relació clara amb commits o canvis;
+- és massa genèric i podria servir per a qualsevol projecte;
+- diu que s'han fet proves però no hi ha cap rastre, captura, comanda, checklist o resultat;
+- no coincideix amb el codi entregat;
+- l'alumne no pot explicar la decisió que diu haver pres;
+- l'alumne no pot modificar o provar una part menuda del codi relacionat.
+
+En eixe cas, el problema no és haver usat IA per redactar millor el registre. El problema és que el registre no és verificable o no demostra autoria tècnica.
+
+### Regla curta
+
+Pots usar IA per ordenar o redactar millor l'`AI log`, però les decisions, proves, errors i explicacions han de correspondre amb el teu repositori real i has de poder defensar-les.
+
 ## 👀 Quan convé deixar rastre de manera especialment clara
 
 Convé deixar AI log o rastre equivalent sobretot:
@@ -103,6 +148,7 @@ Convé deixar AI log o rastre equivalent sobretot:
 - pots explicar el codi, la prova o la decisió assistida per IA
 - hi ha execució real o contrast tècnic del que has incorporat
 - el registre d'ús permet saber què ha aportat la IA
+- cada entrada important es pot relacionar amb fitxers, commits, proves o decisions concretes
 - la resposta de la IA s'ha adaptat al teu projecte i al teu repte reals
 - la IA s'ha usat com a suport, no com a substitut del treball tècnic
 - si la IA ha fallat o has descartat una proposta, això també pot quedar reflectit si aporta context útil
