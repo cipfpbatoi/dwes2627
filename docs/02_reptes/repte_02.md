@@ -49,7 +49,7 @@ En este repte has de fer evolucionar el projecte fins a deixar, com a mínim:
 - Una operació real del projecte protegida i lligada al domini triat.
 - Un cas positiu i un cas negatiu.
 - Prova mínima i documentació bàsica del flux.
-- Revisió final del codi per millorar mantenibilitat, traure funcions comunes a fitxers separats, usar `include` / `require` amb sentit, incorporar almenys un objecte simple del domini i justificar per què la versió final és millor.
+- Primera peça testable amb POO i Composer: classe simple del domini o servei, autoload, prova unitària mínima i comprovació que el flux continua funcionant.
 
 ## Producte mínim esperat
 
@@ -129,7 +129,7 @@ En este repte no n’hi ha prou amb:
 - Guardar dades de manera aparent si després no es poden reutilitzar.
 - Muntar una base de dades com a reclam tècnic mentre el flux principal continua dèbil.
 - Portar una demo que funciona una vegada però no es pot explicar ni reproduir.
-- Convertir la sessió final en una reescriptura completa o en una entrada obligatòria a POO i BBDD.
+- Convertir la sessió final en una reescriptura completa, en MVC complet, en ORM o en migració de framework.
 
 ## Relació amb el projecte base
 
@@ -151,7 +151,7 @@ Per treballar bé este repte convé dividir-lo en set peces clares. Això ajuda 
 
 La base del repte queda en `21` hores, organitzades en `7` sessions de `3` hores.
 
-La progressió també és important: en el microrepte 1 entra i es valida la informació; en el 2 es processen i es guarden les dades correctes; en el 3 s’apliquen regles reals del projecte; en el 4 es conserva estat temporal del flux; en el 5 es protegix una operació real; en el 6 es prova, es depura i es tanca un checkpoint tècnic; i en el 7 es revisa el codi, es trau el que es repetix a fitxers comuns, s’usen `include` / `require` amb sentit i es fa visible almenys un objecte simple del domini.
+La progressió també és important: en el microrepte 1 entra i es valida la informació; en el 2 es processen i es guarden les dades correctes; en el 3 s’apliquen regles reals del projecte amb funcions pròpies; en el 4 es conserva estat temporal del flux i s'estabilitzen includes; en el 5 es protegix una operació real; en el 6 es prova, es depura i es tanca un checkpoint tècnic; i en el 7 s’introduïx una classe simple carregada amb Composer i verificada amb una primera prova unitària.
 
 ### Microrepte 1. Entrada de dades i validació bàsica
 
@@ -616,53 +616,57 @@ En este microrepte es valorarà si pots:
 - No haver refactoritzat encara el codi.
 - No afegir funcionalitats noves si el flux ja està tancat i verificat.
 
-### Microrepte 7. Refactorització i millora de mantenibilitat
+### Microrepte 7. Primera peça testable amb POO i Composer
 
 **Autocorrecció associada**
 
-`r2-s07-refactoritzacio-mantenibilitat`
+`r2-s07-primera-peca-testable-poo-composer`
 
-En este microrepte hauràs de revisar el codi que ja funciona i aplicar una millora clara de mantenibilitat.
+En este microrepte hauràs de convertir una regla, comprovació o càlcul del flux que ja funciona en una classe simple carregada amb Composer i provar-la de manera automàtica.
 
 Este microrepte no substituïx la resta del repte ni convertix `R2` en `R3`.
 
 Ací sí que hauràs de:
 
-- revisar parts repetides
-- reduir barreja excessiva de `HTML + PHP`
-- extraure funcions comunes a un fitxer separat
-- començar a repartir el codi en fitxers de manera simple i clara
-- usar `include` / `require` o, quan toque, `include_once` / `require_once` amb sentit
-- millorar noms
-- ordenar millor el codi
-- separar millor preparació de dades i renderitzat
-- representar almenys una part del projecte amb un objecte simple
-- justificar per què la versió final és més clara o mantenible
+- partir d’un flux ja provat en `R2M6`
+- crear o ajustar `composer.json`
+- configurar autoload per carregar classes pròpies
+- crear una classe simple en `src/` o carpeta equivalent
+- posar dins de la classe una regla, comprovació o càlcul real del projecte
+- evitar que eixa classe depenga directament de `$_POST`, `$_SESSION`, `$_COOKIE` o del codi `HTML`
+- escriure una prova unitària mínima amb `PHPUnit`, `Pest` o un script automàtic equivalent
+- executar la prova i documentar el resultat
+- repetir un cas clau del flux web per comprovar que no s’ha trencat res
+- explicar què queda per reorganitzar en `R3`
 
 Este microrepte no vol dir:
 
 - convertir tot el projecte a objectes
-- fer una arquitectura completa
-- passar-ho tot a base de dades
+- fer una arquitectura `MVC` completa
+- usar `ORM`
+- migrar a un framework
+- consumir una API externa com a mínim obligatori
 - substituir el treball propi de `R3`
 
-Si després d’esta revisió afegixes més classes, més objectes o una persistència més formal, això s’ha d’entendre com a ampliació, millora o avançament controlat cap al repte següent, no com a exigència central per a tot l’alumnat dins de `R2`.
+Si després d’esta peça afegixes més classes, una llibreria externa menuda via Composer o una crida a una API externa, això s’ha d’entendre com a ampliació o pont cap als reptes següents, no com a exigència central per a tot l’alumnat dins de `R2`.
 
 **Evidències principals**
 
-- Zona del codi triada a partir del flux provat.
-- Problema de mantenibilitat identificat.
-- Fitxer comú, funció reutilitzable, import amb criteri o objecte simple.
-- Comparativa abans/després.
+- `composer.json` amb autoload configurat o alternativa equivalent justificada.
+- Classe pròpia en `src/` o carpeta equivalent.
+- Ús de `vendor/autoload.php` o mecanisme equivalent.
+- Prova unitària mínima.
+- Execució documentada de la prova.
 - Prova de no regressió del flux.
 - Nota breu sobre què queda pendent per a `R3`.
 
 **Com es comprovarà**
 
-- Revisió del diff o comparativa.
-- Execució d’alguns casos clau de `R2M6`.
-- Pregunta oral sobre quina responsabilitat queda més clara.
-- Contrast entre la millora declarada i el codi real.
+- Revisió de `composer.json` i de l’autoload.
+- Revisió de la classe creada.
+- Execució o revisió de la prova unitària.
+- Execució d’un cas clau de `R2M6`.
+- Pregunta oral sobre què prova la prova unitària i què prova el flux web.
 
 **Què no es penalitza encara**
 
@@ -670,14 +674,15 @@ Si després d’esta revisió afegixes més classes, més objectes o una persist
 - No tindre ORM ni migracions.
 - No haver passat el projecte a un framework.
 - No fer POO completa.
+- No consumir API externa.
 
 ## Com es reparteixen els criteris dins del repte
 
 Per orientar-te sense convertir el repte en una llista normativa, pots llegir-lo així:
 
 - `RA2` apareix sobretot en el microrepte 2: ací entra la base comuna en `PHP`, la generació de pàgines o respostes amb codi embegut, la sintaxi, les sentències, les directives, les variables, els operadors i els àmbits.
-- `RA3` apareix sobretot en els microreptes 1, 3 i 7: formularis, recuperació de dades, comentaris útils, decisions, bucles, arrays, funcions i revisió de claredat del codi.
-- `RA4` apareix sobretot en els microreptes 4, 5, 6 i 7: estat, emmagatzematge en client quan toque, autenticació, funcionalitat protegida, prova, depuració i comprovació final després de la revisió.
+- `RA3` apareix sobretot en els microreptes 1, 3 i 7: formularis, recuperació de dades, comentaris útils, decisions, bucles, arrays, funcions i encapsulació mínima d’una regla en una classe.
+- `RA4` apareix sobretot en els microreptes 4, 5, 6 i 7: estat, emmagatzematge en client quan toque, autenticació, funcionalitat protegida, prova, depuració, prova unitària inicial i comprovació final del flux.
 
 ## Criteris que es treballen en este repte
 
@@ -717,11 +722,11 @@ En este moment del curs, la prioritat és consolidar el flux complet en servidor
 - Estat o sessió quan faça falta.
 - Autenticació i funcionalitat protegida.
 - Prova, depuració i checkpoint tècnic.
-- Refactorització i millora de mantenibilitat.
+- Primera peça testable amb POO i Composer.
 
 Això significa que la informació correcta ha de poder continuar viva dins del projecte. El sistema ha de poder aprofitar-la després per mostrar-la, recuperar-la, llistar-la o continuar treballant amb ella.
 
-En la sessió `7`, això implica revisar el que ja tens, traure funcions comunes a fitxers separats, usar `include` / `require` o `include_once` / `require_once` amb sentit i donar forma a almenys una entitat del projecte amb un objecte simple.
+En la sessió `7`, això implica triar una regla o comprovació del flux, encapsular-la en una classe simple, carregar-la amb Composer i provar-la sense navegador amb una prova unitària mínima.
 
 Però això no vol dir que ara toque convertir el repte en un bloc d’accés a dades, modelat complet o arquitectura de persistència.
 
@@ -729,7 +734,7 @@ El contrast de frameworks i la consolidació arquitectònica encara no són el f
 
 Ara toca demostrar una base funcional comuna i defensable. Després arribarà el contrast amb itineraris com `Laravel`, `Symfony` o `NestJS`, i serà en `R3` quan la persistència passarà a tindre un pes més central en l’arquitectura.
 
-La sessió `7` de `R2` ha de servir per netejar i aclarir el codi que ja funciona, organitzar-lo millor en fitxers i introduir un objecte mínim del domini, no per fer una reescriptura arquitectònica completa.
+La sessió `7` de `R2` ha de servir per fer el primer pas real cap a codi testable amb POO i Composer, no per fer una reescriptura arquitectònica completa.
 
 ## Si et bloqueges
 
@@ -764,20 +769,23 @@ Per considerar complet el repte, hauràs d’aportar com a mínim:
 - Cas positiu i cas negatiu.
 - Prova o verificació mínima del flux.
 - Documentació tècnica actualitzada.
-- Evidència de revisió final del codi i justificació de la millora de mantenibilitat.
-- Almenys un fitxer comú o una peça reutilitzable importada amb `include` / `require` i almenys un objecte simple del domini.
+- `composer.json` amb autoload configurat o alternativa equivalent justificada.
+- Classe pròpia simple vinculada al domini o servei del projecte.
+- Prova unitària mínima i resultat documentat.
+- Prova de no regressió del flux després d’afegir la classe.
 - `AI log`, quan hi haja ús rellevant d’IA.
 
-## Evidències de la sessió final de revisió
+## Evidències de la sessió final
 
 En el microrepte 7, una bona evidència és:
 
-- comparació breu abans/després
-- explicació de quina duplicació, mescla `HTML + PHP` o responsabilitat has netejat
-- almenys un fitxer comú o peça reutilitzable importada amb `include` / `require`
-- almenys una entitat del projecte representada amb un objecte simple
-- justificació de per què la versió revisada és millor
-- si després d’això has afegit més classes, més objectes o persistència més formal, explicació de per què això és una ampliació o un pont cap a `R3`
+- `composer.json` o configuració equivalent
+- classe pròpia en `src/` o carpeta equivalent
+- prova unitària mínima que es pot executar sense navegador
+- resultat de l’execució de la prova
+- comprovació que el flux web continua funcionant
+- explicació de per què eixa classe és una peça testable i què queda per a `R3`
+- si després d’això has afegit una llibreria externa o una API, explicació de per què és una ampliació i no el mínim del microrepte
 
 ## Forma de prova del repte
 
@@ -945,8 +953,8 @@ Este repte es considera superat quan:
 - Es poden demostrar un cas positiu i un cas negatiu.
 - El treball està prou documentat i traçat.
 - Pots defendre tècnicament el flux complet i explicar per què la persistència ací és de suport i no encara el centre del repte.
-- Pots justificar per què la versió revisada en la sessió `7` és més clara i mantenible que la inicial.
-- La sessió `7` deixa almenys una reutilització real en fitxers amb `include` / `require` i una entitat mínima del domini com a objecte simple.
+- Pots justificar quina regla o comprovació has convertit en una classe simple.
+- La sessió `7` deixa `composer.json` o equivalent, autoload, una classe pròpia i una prova unitària mínima executada.
 
 ## Què prepara este repte
 
@@ -958,19 +966,19 @@ Este repte deixa el producte preparat per al següent pas del curs:
 - Donar més pes a la persistència quan arribe `R3`.
 - Introduir el framework sense canviar de projecte.
 
-La sessió `7` de revisió en `R2` ha de servir justament per arribar a `R3` amb una base més clara, no per consumir abans d’hora tot el que correspon al repte següent.
+La sessió `7` en `R2` ha de servir justament per arribar a `R3` amb una primera peça testable, no per consumir abans d’hora tot el que correspon al repte següent.
 
 ## Ampliació 9→10
 
 **Finalitat**  
-Millorar la robustesa del flux en servidor i demostrar més control sobre validació, estat, autenticació i mantenibilitat.
+Millorar la robustesa del flux en servidor i demostrar més control sobre validació, estat, autenticació, proves i mantenibilitat.
 
 **Condició prèvia**  
 El nucli del repte ha d'estar complet, funcional i validat.
 
 **Opcions d'ampliació**
 - Reforçar la validació, els errors visibles o la funcionalitat protegida amb un cas crític millor resolt.
-- Fer una refactorització tècnica breu i justificada que deixe el flux més clar, reutilitzable o mantenible.
+- Afegir una llibreria externa menuda amb Composer o una crida a una API externa si té sentit real en el projecte i queda documentat com a ampliació.
 
 **Proposta pròpia**  
 També pots proposar una ampliació pròpia si té valor tècnic real i es valida abans amb el professorat.
@@ -982,7 +990,7 @@ També pots proposar una ampliació pròpia si té valor tècnic real i es valid
 - rastre de l'ús assistit per IA, si l'has usat
 
 **Ús assistit per IA**  
-La IA et pot ajudar a contrastar validacions, proves o refactoritzacions, però no substituïx la teua decisió ni la teua comprovació real.
+La IA et pot ajudar a contrastar validacions, proves, classes o ús de Composer, però no substituïx la teua decisió ni la teua comprovació real.
 
 **Defensa**  
 L'ampliació només compta si la pots explicar amb criteri i sense delegació excessiva.

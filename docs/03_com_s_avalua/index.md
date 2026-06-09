@@ -96,7 +96,7 @@ Si estàs tancant el `Repte 2`, tens una [checklist de proves](checklists_de_pro
 
 Esta checklist és una ajuda útil per provar el repte i deixar una evidència de verificació, però no substituïx la demo ni la defensa tècnica.
 
-En la sessió final de refactorització de `R2`, una evidència bona és una comparació breu abans/després on expliques quines repeticions, mescles `HTML + PHP`, noms o responsabilitats has netejat, quin fitxer comú has tret per reutilitzar-lo amb `include` / `require` i quin objecte simple del domini has començat a usar, i per què ara el flux és més clar.
+En la sessió final de `R2`, una evidència bona és `composer.json` o equivalent, una classe simple del domini o servei, una prova unitària mínima executada i una comprovació que el flux web continua funcionant.
 
 No es tracta encara d’una reescriptura completa, ni de convertir-ho tot a objectes, ni d’anticipar tot `R3`.
 

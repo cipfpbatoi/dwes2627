@@ -134,7 +134,7 @@ Eina o entorn utilitzat per provar o depurar:
 - [ ] Almenys un error de validació es mostra de manera visible.
 - [ ] La informació correcta es conserva i es pot reutilitzar.
 - [ ] La funcionalitat protegida té prova autoritzada i prova denegada.
-- [ ] He separat almenys una peça comuna en un fitxer i la importe amb `include` o `require`.
-- [ ] He representat almenys una part del projecte amb un objecte simple.
+- [ ] He configurat `composer.json` o una alternativa equivalent per carregar classes pròpies.
+- [ ] He creat una classe simple del domini o servei i una prova unitària mínima.
 - [ ] La revisió final em prepara millor per a `R3` sense haver convertit ja este repte en `R3`.
 - [ ] La documentació i les proves em deixen preparada la demo i la defensa.

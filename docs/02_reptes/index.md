@@ -66,11 +66,11 @@ En esta fase, la prioritat és consolidar el flux complet de programació en ser
 
 El contrast de frameworks **encara no és el focus principal** en `R2`.
 
-La sessió `7` de `R2` es dedica a revisar el codi, netejar-lo i millorar-ne la mantenibilitat.
+La sessió `7` de `R2` es dedica a introduir una primera peça testable amb POO i Composer.
 
-En eixa sessió final també toca separar funcions comunes en fitxers, usar `include` / `require` amb sentit i donar forma a un primer objecte simple del domini.
+En eixa sessió final toca crear una classe simple del domini o servei, carregar-la amb autoload i verificar-la amb una prova unitària mínima.
 
-Això no substituïx `R3` ni convertix `R2` en un repte centrat en POO completa o base de dades com a focus principal.
+Això no substituïx `R3` ni convertix `R2` en un repte centrat en POO completa, ORM, framework o base de dades com a focus principal.
 
 ## 🛠️ Quan entra el framework
 
