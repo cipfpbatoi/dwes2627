@@ -81,6 +81,12 @@ Briefs interns creats per preparar les presentacions de la seqüència actual:
 | `gamma-presentacions/microreptes/r3m4.md` | Presentació de microrepte | Segon cas d'ús o ampliació funcional. |
 | `gamma-presentacions/microreptes/r3m5.md` | Presentació de microrepte | Qualitat i estabilització. |
 | `gamma-presentacions/microreptes/r3m6.md` | Presentació de microrepte | Tancament tècnic i pas cap a `R4`. |
+| `gamma-presentacions/reptes/r4.md` | Presentació de repte | Visió general d'API, contracte, consum i documentació. |
+| `gamma-presentacions/microreptes/r4m1.md` | Presentació de microrepte | Contracte inicial del servei API. |
+| `gamma-presentacions/microreptes/r4m2.md` | Presentació de microrepte | Primer endpoint funcional. |
+| `gamma-presentacions/microreptes/r4m3.md` | Presentació de microrepte | Protecció de l'API. |
+| `gamma-presentacions/microreptes/r4m4.md` | Presentació de microrepte | Consum real del servei. |
+| `gamma-presentacions/microreptes/r4m5.md` | Presentació de microrepte | Documentació i prova del servei. |
 | `gamma-presentacions/teoria/r2-formularis-validacio-servidor.md` | Teoria de suport | Coneixement previ per a `R2M1`. |
 | `gamma-presentacions/teoria/r2-reintent-guardat-funcional.md` | Teoria de suport | Coneixement previ per a `R2M2`. |
 | `gamma-presentacions/teoria/r2-logica-regles-arrays-funcions.md` | Teoria de suport | Coneixement previ per a `R2M3`. |
@@ -93,3 +99,5 @@ Briefs interns creats per preparar les presentacions de la seqüència actual:
 | `gamma-presentacions/teoria/r3-persistencia-migrations-seeders.md` | Teoria de suport | BBDD real, migrations, seeders i dades reproduïbles per a `R3M2`. |
 | `gamma-presentacions/teoria/r3-rutes-controladors-vistes-flux.md` | Teoria de suport | Rutes, controladors, vistes/respostes i flux end-to-end per a `R3M3-R3M4`. |
 | `gamma-presentacions/teoria/r3-qualitat-proves-tancament.md` | Teoria de suport | Qualitat, proves, README i tancament tècnic per a `R3M5-R3M6`. |
+| `gamma-presentacions/teoria/r4-contracte-api-http.md` | Teoria de suport | Contracte d'API, HTTP, request/response, codis i errors. |
+| `gamma-presentacions/teoria/r4-proteccio-consum-documentacio-api.md` | Teoria de suport | Protecció, consum, documentació i proves d'API. |

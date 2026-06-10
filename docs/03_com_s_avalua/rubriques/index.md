@@ -28,3 +28,13 @@ Cada guia està alineada amb l'autocorrecció corresponent i mostra:
 | `R3M4` | [Segon cas d'ús o ampliació funcional](r3m4.md) | `r3-s04-segon-cas-us-ampliacio-funcional` |
 | `R3M5` | [Qualitat i estabilització](r3m5.md) | `r3-s05-qualitat-estabilitzacio` |
 | `R3M6` | [Tancament tècnic](r3m6.md) | `r3-s06-tancament-tecnic` |
+
+## Repte 4
+
+| Microrepte | Guia | Autocorrecció |
+|---|---|---|
+| `R4M1` | [Disseny del contracte del servei](r4m1.md) | `r4-s01-contracte-servei-api` |
+| `R4M2` | [Primer endpoint funcional](r4m2.md) | `r4-s02-primer-endpoint-funcional` |
+| `R4M3` | [Protecció de l'API](r4m3.md) | `r4-s03-proteccio-api` |
+| `R4M4` | [Consum real del servei](r4m4.md) | `r4-s04-consum-servei` |
+| `R4M5` | [Documentació i prova del servei](r4m5.md) | `r4-s05-documentacio-prova-servei` |
