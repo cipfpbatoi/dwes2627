@@ -94,6 +94,7 @@ Briefs interns creats per preparar les presentacions de la seqüència actual:
 | `gamma-presentacions/microreptes/r5m4.md` | Presentació de microrepte | Funcionalitat híbrida integrada en el producte. |
 | `gamma-presentacions/microreptes/r5m5.md` | Presentació de microrepte | Prova, documentació i defensa de la integració. |
 | `gamma-presentacions/teoria/r2-formularis-validacio-servidor.md` | Teoria de suport | Coneixement previ per a `R2M1`. |
+| `gamma-presentacions/teoria/r2-php-html-base.md` | Teoria de suport | Introducció prèvia de `R2S0` a `PHP`, execució al servidor i barreja controlada `HTML/PHP`. |
 | `gamma-presentacions/teoria/r2-reintent-guardat-funcional.md` | Teoria de suport | Coneixement previ per a `R2M2`. |
 | `gamma-presentacions/teoria/r2-logica-regles-arrays-funcions.md` | Teoria de suport | Coneixement previ per a `R2M3`. |
 | `gamma-presentacions/teoria/r2-estat-sessio-cookies.md` | Teoria de suport | Coneixement previ per a `R2M4`. |
