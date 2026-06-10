@@ -87,6 +87,12 @@ Briefs interns creats per preparar les presentacions de la seqüència actual:
 | `gamma-presentacions/microreptes/r4m3.md` | Presentació de microrepte | Protecció de l'API. |
 | `gamma-presentacions/microreptes/r4m4.md` | Presentació de microrepte | Consum real del servei. |
 | `gamma-presentacions/microreptes/r4m5.md` | Presentació de microrepte | Documentació i prova del servei. |
+| `gamma-presentacions/reptes/r5.md` | Presentació de repte | Visió general d'integració híbrida, font externa, mapping, proves i defensa. |
+| `gamma-presentacions/microreptes/r5m1.md` | Presentació de microrepte | Selecció de font externa i disseny de la integració. |
+| `gamma-presentacions/microreptes/r5m2.md` | Presentació de microrepte | Connexió amb la font externa i recuperació real. |
+| `gamma-presentacions/microreptes/r5m3.md` | Presentació de microrepte | Transformació, mapping i valor afegit. |
+| `gamma-presentacions/microreptes/r5m4.md` | Presentació de microrepte | Funcionalitat híbrida integrada en el producte. |
+| `gamma-presentacions/microreptes/r5m5.md` | Presentació de microrepte | Prova, documentació i defensa de la integració. |
 | `gamma-presentacions/teoria/r2-formularis-validacio-servidor.md` | Teoria de suport | Coneixement previ per a `R2M1`. |
 | `gamma-presentacions/teoria/r2-reintent-guardat-funcional.md` | Teoria de suport | Coneixement previ per a `R2M2`. |
 | `gamma-presentacions/teoria/r2-logica-regles-arrays-funcions.md` | Teoria de suport | Coneixement previ per a `R2M3`. |
@@ -101,3 +107,5 @@ Briefs interns creats per preparar les presentacions de la seqüència actual:
 | `gamma-presentacions/teoria/r3-qualitat-proves-tancament.md` | Teoria de suport | Qualitat, proves, README i tancament tècnic per a `R3M5-R3M6`. |
 | `gamma-presentacions/teoria/r4-contracte-api-http.md` | Teoria de suport | Contracte d'API, HTTP, request/response, codis i errors. |
 | `gamma-presentacions/teoria/r4-proteccio-consum-documentacio-api.md` | Teoria de suport | Protecció, consum, documentació i proves d'API. |
+| `gamma-presentacions/teoria/r5-integracio-externa-flux-hibrid.md` | Teoria de suport | Font externa, contracte, flux híbrid, connector i error. |
+| `gamma-presentacions/teoria/r5-mapping-proves-defensa-integracio.md` | Teoria de suport | Mapping, transformació, integració en producte, proves i defensa. |

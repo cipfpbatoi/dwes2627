@@ -1,44 +1,94 @@
-# Repte 5. Integració, manteniment i tancament
+# Repte 5. Integració híbrida i tancament
 
 ## Finalitat del repte
 
-Este repte servix per demostrar que el producte no només funciona, sinó que també es pot integrar en un flux més ampli i mantindre amb criteri.
+En este repte el producte deixa de funcionar com un sistema tancat i s'obri a fonts, serveis o repositoris externs.
+
+L'objectiu no és "cridar una API" ni fer una automatització vistosa. L'objectiu és construir una funcionalitat híbrida amb valor real: seleccionar una font externa, recuperar informació o servei real, transformar-lo, integrar-lo en el producte i deixar-lo provat i defensable.
 
 Continua vigent la mateixa regla del curs:
 
-- es pot compartir context o contrast tècnic
-- implementació, evidències i defensa continuen sent individuals
+- es pot compartir context o contrast tècnic;
+- implementació, evidències i defensa continuen sent individuals.
 
-## 🌟 Via 9→10 en este repte
+## Resultat principal que treballes
 
-Este repte també té una via d'excel·lència `9→10`: **primer has de tancar bé el nucli i després pots obrir una ampliació amb valor tècnic real**. La secció completa està al final del repte.
+El centre del repte és `RA9`: aplicacions web híbrides i ús de fonts o serveis externs.
+
+També poden aparéixer com a suport:
+
+- `RA7`, si consumeixes o combines serveis web;
+- `RA8`, si la integració modifica un flux dinàmic del backend;
+- `RA6`, només si persistixes o combines dades pròpies amb dades externes.
 
 ## Què has de consolidar
 
-- un flux híbrid o automatitzat amb valor real
-- connexió útil amb l’API del producte
-- tractament mínim d’errors, incidències o reintents
-- documentació del recorregut complet
-- una preparació clara per al tancament i la defensa
+- selecció crítica d'una font externa;
+- connexió real i reproduïble;
+- transformació i mapping de dades;
+- integració dins d'una funcionalitat del producte;
+- tractament mínim d'errors;
+- documentació, proves i defensa tècnica.
 
 ## Què no és suficient
 
-- una automatització decorativa
-- integrar un servei extern sense valor de negoci clar
-- no poder explicar el recorregut complet de dades
-- dependre d’una configuració copiada sense entendre-la
+- una automatització decorativa;
+- mostrar un JSON extern tal qual;
+- integrar un servei extern sense valor de negoci clar;
+- no poder explicar el recorregut complet de dades;
+- dependre d’una configuració copiada sense entendre-la;
+- tancar el repte sense prova d'error.
 
-## Evidència mínima
+## Microreptes del repte
 
-- prova del flux correcte i d’almenys una fallada rellevant
-- documentació tècnica del recorregut
-- registre d’ajustos i correccions
-- traçabilitat del treball
-- `AI log` si la IA ha participat en una part rellevant
+| Microrepte | Focus | Pes |
+|---|---|---:|
+| `R5M1` | Selecció de font externa i disseny de la integració. | `15%` |
+| `R5M2` | Connexió amb la font externa i recuperació real. | `20%` |
+| `R5M3` | Transformació, mapping i valor afegit. | `20%` |
+| `R5M4` | Integració de la funcionalitat híbrida en el producte. | `25%` |
+| `R5M5` | Prova, documentació i defensa de la integració. | `20%` |
 
-## Connexió amb el següent pas
+## Seqüència recomanada
+
+1. Tria una font externa que aporte valor real al teu producte.
+2. Implementa una connexió mínima i comprova resposta real.
+3. Transforma les dades externes perquè encaixen amb el teu domini.
+4. Integra el resultat en una pantalla, endpoint, procés o automatització del producte.
+5. Prova el cas correcte, prova una fallada i documenta el flux complet.
+
+## Evidències per microrepte
+
+| Microrepte | Evidència mínima |
+|---|---|
+| `R5M1` | Comparativa de fonts, justificació, mapa inicial i riscos. |
+| `R5M2` | Connector funcional, resposta real i cas d'error controlat. |
+| `R5M3` | Taula de mapping, codi de transformació i comparativa abans/després. |
+| `R5M4` | Funcionalitat híbrida integrada, demo completa i commit comentat. |
+| `R5M5` | Proves, mapa final, documentació tècnica, `AI log` si cal i mini defensa. |
+
+## Criteri de superació
+
+El repte es considera superat quan:
+
+- hi ha una font externa triada amb criteri;
+- la connexió recupera resposta real;
+- la informació externa es transforma o adapta al domini;
+- el resultat queda integrat en una funcionalitat real del producte;
+- hi ha prova positiva i prova d'error;
+- la documentació permet entendre font, configuració, mapping i flux;
+- pots defensar què ve de fora, què transforma el sistema i quin valor nou aporta.
+
+## Connexió amb el tancament final
 
 Després de `R5` ja no hi ha un nou repte. El següent pas és el tancament del producte i la defensa final individual.
+
+La defensa final usarà esta integració per comprovar:
+
+- criteri tècnic;
+- autoria;
+- comprensió del flux complet;
+- ús verificable de la IA, si n'hi ha hagut.
 
 ## Ampliació 9→10
 
@@ -49,17 +99,20 @@ Aprofundir en la integració híbrida i demostrar més control sobre fluxos, fon
 El nucli del repte ha d'estar complet, funcional i validat.
 
 **Opcions d'ampliació**
-- Fer més explícit el mapa d'integració: quina font externa uses, com transformes la informació i com arriba al resultat final.
-- Millorar el flux híbrid amb tractament d'errors, reintents, observabilitat bàsica o comparació entre dues estratègies d'integració.
+
+- Fer més robust el mapa d'integració: font, contracte, mapping, resultat i errors.
+- Afegir reintents, cache, fallback, observabilitat bàsica o comparació entre dues estratègies d'integració.
+- Automatitzar una part del flux si aporta valor real i continua sent defensable.
 
 **Proposta pròpia**  
 També es pot proposar una ampliació pròpia si té valor tècnic real sobre la integració i es valida prèviament.
 
 **Evidències mínimes**
-- commit o branca identificable
-- esquema o nota breu del flux híbrid
-- demo funcional de la integració
-- rastre de l'ús assistit per IA, si l'has usat
+
+- commit o branca identificable;
+- esquema o nota breu del flux híbrid;
+- demo funcional de la integració;
+- rastre de l'ús assistit per IA, si l'has usat.
 
 **Ús assistit per IA**  
 La IA pot servir per contrastar estratègies, revisar transformacions o suggerir millores, però no substituïx la teua comprensió del flux ni la teua validació.

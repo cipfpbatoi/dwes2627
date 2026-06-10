@@ -40,6 +40,11 @@ nav:
           - "R4M3. Protecció de l'API": "03_com_s_avalua/rubriques/r4m3.md"
           - "R4M4. Consum real del servei": "03_com_s_avalua/rubriques/r4m4.md"
           - "R4M5. Documentació i prova": "03_com_s_avalua/rubriques/r4m5.md"
+          - "R5M1. Font externa i disseny": "03_com_s_avalua/rubriques/r5m1.md"
+          - "R5M2. Connexió amb font externa": "03_com_s_avalua/rubriques/r5m2.md"
+          - "R5M3. Mapping i transformació": "03_com_s_avalua/rubriques/r5m3.md"
+          - "R5M4. Funcionalitat híbrida": "03_com_s_avalua/rubriques/r5m4.md"
+          - "R5M5. Prova i defensa": "03_com_s_avalua/rubriques/r5m5.md"
       - "📝 Report breu d'ús de la IA": "03_com_s_avalua/report_breu_ús_ia.md"
       - "🧪 Checklist de proves": "03_com_s_avalua/checklists_de_prova.md"
 theme:

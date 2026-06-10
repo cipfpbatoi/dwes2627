@@ -38,3 +38,13 @@ Cada guia està alineada amb l'autocorrecció corresponent i mostra:
 | `R4M3` | [Protecció de l'API](r4m3.md) | `r4-s03-proteccio-api` |
 | `R4M4` | [Consum real del servei](r4m4.md) | `r4-s04-consum-servei` |
 | `R4M5` | [Documentació i prova del servei](r4m5.md) | `r4-s05-documentacio-prova-servei` |
+
+## Repte 5
+
+| Microrepte | Guia | Autocorrecció |
+|---|---|---|
+| `R5M1` | [Selecció de font externa i disseny de la integració](r5m1.md) | `r5-s01-font-externa-disseny-integracio` |
+| `R5M2` | [Connexió amb la font externa](r5m2.md) | `r5-s02-connexio-font-externa` |
+| `R5M3` | [Transformació, mapping i valor afegit](r5m3.md) | `r5-s03-mapping-transformacio-valor` |
+| `R5M4` | [Funcionalitat híbrida integrada](r5m4.md) | `r5-s04-funcionalitat-hibrida-producte` |
+| `R5M5` | [Prova, documentació i defensa](r5m5.md) | `r5-s05-prova-documentacio-defensa` |
