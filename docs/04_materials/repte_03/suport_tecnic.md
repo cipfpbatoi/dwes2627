@@ -154,7 +154,7 @@ Criteri mínim:
 - noms comprensibles
 - sense dependència de canvis manuals en la BBDD
 
-## Seeders
+## Dades inicials reproduïbles
 
 Un seeder, fixture o script de càrrega crea dades inicials.
 
@@ -173,7 +173,7 @@ Com a mínim has de poder comprovar:
 
 - el projecte arranca
 - la BBDD es crea
-- els seeders carreguen dades
+- els fixtures/seeders o scripts carreguen dades
 - el primer flux funciona
 - el segon flux funciona
 - una entrada incorrecta dona error controlat
@@ -214,6 +214,6 @@ I també com executar dins del contenidor les comandes del framework, si cal.
 | Servei | `app/Services` o accions | `src/Service` | `*.service.ts` |
 | Model | `app/Models` | `src/Entity` | entity, schema o model |
 | Migració | `database/migrations` | Doctrine migrations | carpeta de migrations de l'ORM |
-| Seeder | `database/seeders` | fixtures | script o seeder |
+| Dades inicials | `database/seeders` | fixtures | script o seeder |
 | Vista | Blade | Twig | plantilles si el projecte activa renderitzat servidor; si no, acordar amb el professorat quin flux HTML cobreix `R3` |
 | Proves | PHPUnit/Pest | PHPUnit | Jest |

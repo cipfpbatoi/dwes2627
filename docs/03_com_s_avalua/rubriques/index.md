@@ -23,11 +23,12 @@ Cada guia està alineada amb l'autocorrecció corresponent i mostra:
 | Microrepte | Guia | Autocorrecció |
 |---|---|---|
 | `R3M1` | [Arrencada del nou projecte](r3m1.md) | `r3-s01-arrencada-nou-projecte` |
-| `R3M2` | [Persistència mínima amb migrations i seeders](r3m2.md) | `r3-s02-persistencia-minima-migrations-seeders` |
+| `R3M2` | [Persistència mínima amb migracions, fixtures/seeders o equivalent](r3m2.md) | `r3-s02-persistencia-minima-migrations-seeders` |
 | `R3M3` | [Primer cas d'ús complet](r3m3.md) | `r3-s03-primer-cas-us-complet` |
 | `R3M4` | [Segon cas d'ús o ampliació funcional](r3m4.md) | `r3-s04-segon-cas-us-ampliacio-funcional` |
-| `R3M5` | [Qualitat i estabilització](r3m5.md) | `r3-s05-qualitat-estabilitzacio` |
-| `R3M6` | [Tancament tècnic](r3m6.md) | `r3-s06-tancament-tecnic` |
+| `R3M5` | [Autenticació, autorització i middleware](r3m5.md) | `r3-s05-autenticacio-autoritzacio-middleware` |
+| `R3M6` | [Qualitat i estabilització](r3m6.md) | `r3-s06-qualitat-estabilitzacio` |
+| `R3M7` | [Tancament tècnic](r3m7.md) | `r3-s07-tancament-tecnic` |
 
 ## Repte 4
 

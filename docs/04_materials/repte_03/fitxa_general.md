@@ -20,14 +20,17 @@ Has de lliurar una aplicació en `Laravel`, `Symfony` o `NestJS` amb:
 - vistes, plantilles o respostes generades pel framework
 - models, entitats, esquemes o capa equivalent de dades
 - BBDD real
-- `migrations`
-- `seeders` o mecanisme equivalent
+- migracions o mecanisme equivalent de l'stack
+- fixtures/seeders o script equivalent de càrrega inicial
 - justificació del framework triat
 - comparació breu amb una altra opció possible
 - explicació d'un avantatge de separar presentació i lògica
 - conjunt de dades real recuperat i usat en un flux
 - `2` casos d'ús funcionals de punta a punta
 - almenys `1` cas d'ús server-rendered amb vista o plantilla i resposta `HTML`
+- autenticació amb eines del framework
+- una acció significativa protegida amb middleware, guard, voter, policy o equivalent
+- autorització mínima amb cas autoritzat i cas denegat
 - validació mínima
 - tractament bàsic d'errors
 - proves mínimes
@@ -43,7 +46,7 @@ Tampoc és suficient:
 - crear només carpetes amb noms correctes
 - parlar d'`MVC` sense tindre un flux executable
 - usar dades inventades en arrays quan toca BBDD
-- carregar dades de demo manualment sense `seeders`
+- carregar dades de demo manualment sense un mecanisme reproduïble
 - fer només un cas d'ús
 - fer un segon flux que siga només cosmètic
 - deixar tots els fluxos com a `API` o JSON sense cap resposta renderitzada en servidor
@@ -83,6 +86,7 @@ Segons l'stack, els noms canvien. Però has d'usar peces equivalents a:
 | Migracions | migrations | Doctrine migrations | migrations de l'ORM triat |
 | Dades inicials | seeders | fixtures | seeders o script de càrrega |
 | Validació | Form requests o validators | forms, constraints o validators | DTO + pipes |
+| Protecció d'accés | middleware, guard o policy | security, access control o voter | guard, middleware, decorator o pipe |
 | Proves | tests del projecte | PHPUnit o equivalent | Jest o equivalent |
 
 ## Decisió de framework
@@ -119,12 +123,13 @@ Has d'entregar o deixar visible al repositori:
 - codi del projecte en framework
 - `Dockerfile`, `compose.yaml` o configuració equivalent
 - `.env.example` o instruccions de variables
-- migracions
-- seeders o equivalent
+- migracions o mecanisme equivalent
+- fixtures/seeders o script equivalent
 - nota comparativa curta de framework
 - esquema abans/després de responsabilitats
 - evidència d'un conjunt de dades recuperat i usat
 - evidència d'un flux server-rendered amb vista o plantilla i resposta `HTML`
+- evidència d'autenticació, acció protegida i cas denegat
 - README actualitzat
 - proves mínimes o checklist de verificació
 - evidència dels `2` casos d'ús
@@ -134,10 +139,11 @@ Has d'entregar o deixar visible al repositori:
 ## Microreptes
 
 - `MP1`: arrencada del nou projecte, comparació de framework i avantatges de separació.
-- `MP2`: persistència mínima amb `migrations`, `seeders` i conjunt de dades real usat en un flux.
+- `MP2`: persistència mínima amb migracions o equivalent, fixtures/seeders o script equivalent i conjunt de dades real usat en un flux.
 - `MP3`: primer cas d'ús complet, preferentment com a flux server-rendered si és viable.
 - `MP4`: segon cas d'ús o ampliació funcional amb canvi dinàmic de resposta.
-- `MP5`: qualitat i estabilització.
-- `MP6`: tancament tècnic.
+- `MP5`: autenticació, autorització i middleware.
+- `MP6`: qualitat i estabilització.
+- `MP7`: tancament tècnic.
 
 Consulta el detall en [microreptes.md](microreptes.md).

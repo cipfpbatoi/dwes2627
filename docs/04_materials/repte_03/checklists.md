@@ -31,7 +31,7 @@ Usa estes llistes abans de dir que tens `R3` tancat.
 
 ## 3. Dades de prova carregades
 
-- [ ] Hi ha seeders, fixtures o script equivalent.
+- [ ] Hi ha fixtures/seeders o script equivalent.
 - [ ] Les dades inicials són suficients per provar els `2` fluxos.
 - [ ] Puc executar la càrrega de dades amb una instrucció clara.
 - [ ] Les dades carregades es poden consultar des de l'aplicació.
@@ -68,28 +68,45 @@ Usa estes llistes abans de dir que tens `R3` tancat.
 - [ ] No trenca el cas d'ús 1.
 - [ ] Puc explicar quin valor aporta.
 
-## 6. Proves mínimes
+## 6. Autenticació i autorització
+
+- [ ] Hi ha login o mecanisme d'autenticació funcional.
+- [ ] Hi ha logout o invalidació de sessió/token.
+- [ ] Hi ha un usuari demo reproduïble.
+- [ ] Hi ha una ruta o acció significativa protegida.
+- [ ] La protecció està en servidor, no només en la vista.
+- [ ] S'usa middleware, guard, voter, policy o equivalent.
+- [ ] Hi ha una regla d'autorització mínima vinculada al domini.
+- [ ] He provat el cas sense autenticar.
+- [ ] He provat el cas autoritzat.
+- [ ] He provat el cas denegat.
+- [ ] L'error de permisos és controlat.
+- [ ] El README explica com provar-ho.
+
+## 7. Proves mínimes
 
 - [ ] He provat que Docker arranca.
 - [ ] He provat migracions.
-- [ ] He provat seeders.
+- [ ] He provat la càrrega inicial de dades.
 - [ ] He provat el cas d'ús 1.
 - [ ] He provat el cas d'ús 2.
+- [ ] He provat una acció protegida amb cas autoritzat i denegat.
 - [ ] He provat el cas server-rendered amb dades reals visibles en la resposta.
 - [ ] He provocat almenys un error controlat.
 - [ ] He deixat rastre de les proves: test, checklist, captures, logs o instruccions.
 - [ ] Les proves es poden repetir.
 
-## 7. README usable
+## 8. README usable
 
 - [ ] Explica requisits previs.
 - [ ] Explica com arrancar Docker.
 - [ ] Explica com configurar `.env`.
 - [ ] Explica breument per què s'ha triat el framework.
 - [ ] Explica com executar migracions.
-- [ ] Explica com carregar seeders.
+- [ ] Explica com carregar fixtures/seeders o script equivalent.
 - [ ] Explica els `2` casos d'ús.
 - [ ] Explica quin cas d'ús és server-rendered i quina vista o plantilla usa.
+- [ ] Explica la ruta o acció protegida i la regla d'autorització.
 - [ ] Explica com provar-los.
 - [ ] Inclou decisions tècniques breus.
 - [ ] Inclou què queda pendent de migrar.
@@ -100,12 +117,15 @@ Usa estes llistes abans de dir que tens `R3` tancat.
 - [ ] Aplicació en framework operativa.
 - [ ] Framework triat justificat amb comparació curta i avantatge de separació.
 - [ ] Docker funcional.
-- [ ] BBDD creada per `migrations`.
-- [ ] Dades inicials amb `seeders` o equivalent.
+- [ ] BBDD creada per migracions o equivalent.
+- [ ] Dades inicials amb fixtures/seeders o equivalent.
 - [ ] Conjunt de dades real recuperat i usat en un flux.
 - [ ] `2` casos d'ús funcionals.
 - [ ] Almenys `1` cas d'ús ve de `R2`.
 - [ ] Almenys `1` cas d'ús és server-rendered amb vista o plantilla i resposta `HTML`.
+- [ ] Hi ha autenticació funcional.
+- [ ] Hi ha una acció protegida en servidor.
+- [ ] Hi ha cas autoritzat i cas denegat.
 - [ ] Validació mínima.
 - [ ] Tractament bàsic d'errors.
 - [ ] Proves mínimes.

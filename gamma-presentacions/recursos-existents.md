@@ -72,15 +72,18 @@ Briefs interns creats per preparar les presentacions de la seqüència actual:
 | `gamma-presentacions/microreptes/r2m3.md` | Presentació de microrepte | Lògica del flux i regles del projecte. |
 | `gamma-presentacions/microreptes/r2m4.md` | Presentació de microrepte | Estat, sessió i cookies. |
 | `gamma-presentacions/microreptes/r2m5.md` | Presentació de microrepte | Autenticació i funcionalitat protegida. |
-| `gamma-presentacions/microreptes/r2m6.md` | Presentació de microrepte | Proves, depuració i checkpoint tècnic. |
-| `gamma-presentacions/microreptes/r2m7.md` | Presentació de microrepte | Primera peça testable amb POO i Composer. |
+| `gamma-presentacions/microreptes/r2m6.md` | Presentació de microrepte | Mini API d'autenticació per a client. |
+| `gamma-presentacions/microreptes/r2m7.md` | Presentació de microrepte | Proves, depuració i checkpoint tècnic. |
+| `gamma-presentacions/microreptes/r2m8.md` | Presentació de microrepte | Primera peça testable amb POO i Composer. |
+| `gamma-presentacions/microreptes/r2m9.md` | Presentació de microrepte | Persistència mínima amb BBDD en PHP. |
 | `gamma-presentacions/reptes/r3.md` | Presentació de repte | Visió general de reconstrucció en framework, persistència real i dos fluxos. |
 | `gamma-presentacions/microreptes/r3m1.md` | Presentació de microrepte | Arrencada del nou projecte en framework. |
-| `gamma-presentacions/microreptes/r3m2.md` | Presentació de microrepte | Persistència mínima amb migrations i seeders. |
+| `gamma-presentacions/microreptes/r3m2.md` | Presentació de microrepte | Persistència mínima amb migracions o equivalent i dades inicials reproduïbles. |
 | `gamma-presentacions/microreptes/r3m3.md` | Presentació de microrepte | Primer cas d'ús complet heretat de `R2`. |
 | `gamma-presentacions/microreptes/r3m4.md` | Presentació de microrepte | Segon cas d'ús o ampliació funcional. |
-| `gamma-presentacions/microreptes/r3m5.md` | Presentació de microrepte | Qualitat i estabilització. |
-| `gamma-presentacions/microreptes/r3m6.md` | Presentació de microrepte | Tancament tècnic i pas cap a `R4`. |
+| `gamma-presentacions/microreptes/r3m5.md` | Presentació de microrepte | Autenticació, autorització i middleware. |
+| `gamma-presentacions/microreptes/r3m6.md` | Presentació de microrepte | Qualitat i estabilització. |
+| `gamma-presentacions/microreptes/r3m7.md` | Presentació de microrepte | Tancament tècnic i pas cap a `R4`. |
 | `gamma-presentacions/reptes/r4.md` | Presentació de repte | Visió general d'API, contracte, consum i documentació. |
 | `gamma-presentacions/microreptes/r4m1.md` | Presentació de microrepte | Contracte inicial del servei API. |
 | `gamma-presentacions/microreptes/r4m2.md` | Presentació de microrepte | Primer endpoint funcional. |
@@ -93,19 +96,24 @@ Briefs interns creats per preparar les presentacions de la seqüència actual:
 | `gamma-presentacions/microreptes/r5m3.md` | Presentació de microrepte | Transformació, mapping i valor afegit. |
 | `gamma-presentacions/microreptes/r5m4.md` | Presentació de microrepte | Funcionalitat híbrida integrada en el producte. |
 | `gamma-presentacions/microreptes/r5m5.md` | Presentació de microrepte | Prova, documentació i defensa de la integració. |
+| `gamma-presentacions/tallers/r2s10-contracte-auth-dwec.md` | Presentació de taller | Contracte d'autenticació perquè DWEC puga consumir la mini API de `R2M6`. |
+| `gamma-presentacions/tallers/r3s2b-portabilitat-frameworks.md` | Presentació de taller | Portabilitat entre `Laravel`, `Symfony` i `NestJS` abans del primer flux complet de `R3`. |
 | `gamma-presentacions/teoria/r2-formularis-validacio-servidor.md` | Teoria de suport | Coneixement previ per a `R2M1`. |
 | `gamma-presentacions/teoria/r2-php-html-base.md` | Teoria de suport | Introducció prèvia de `R2S0` a `PHP`, execució al servidor i barreja controlada `HTML/PHP`. |
 | `gamma-presentacions/teoria/r2-reintent-guardat-funcional.md` | Teoria de suport | Coneixement previ per a `R2M2`. |
 | `gamma-presentacions/teoria/r2-logica-regles-arrays-funcions.md` | Teoria de suport | Coneixement previ per a `R2M3`. |
 | `gamma-presentacions/teoria/r2-estat-sessio-cookies.md` | Teoria de suport | Coneixement previ per a `R2M4`. |
 | `gamma-presentacions/teoria/r2-auth-operacio-protegida.md` | Teoria de suport | Coneixement previ per a `R2M5`. |
-| `gamma-presentacions/teoria/r2-proves-debug-checkpoint.md` | Teoria de suport | Coneixement previ per a `R2M6`. |
-| `gamma-presentacions/teoria/r2-poo-composer-proves-unitaries.md` | Teoria de suport | POO, Composer i proves unitàries per a `R2M7`. |
+| `gamma-presentacions/teoria/r2-mini-api-auth-json.md` | Teoria de suport | JSON, codis HTTP i autenticació mínima consumible per a `R2M6`. |
+| `gamma-presentacions/teoria/r2-proves-debug-checkpoint.md` | Teoria de suport | Coneixement previ per a `R2M7`. |
+| `gamma-presentacions/teoria/r2-poo-composer-proves-unitaries.md` | Teoria de suport | POO, Composer i proves unitàries per a `R2M8`. |
+| `gamma-presentacions/teoria/r2-bbdd-php-pdo.md` | Teoria de suport | BBDD en PHP amb PDO, connexió, consultes preparades i persistència mínima per a `R2M9`. |
 | `gamma-presentacions/teoria/r3-framework-mvc-responsabilitats.md` | Teoria de suport | Framework, MVC o equivalent i separació de responsabilitats per a `R3M1`. |
 | `gamma-presentacions/teoria/r3-docker-env-arrencada.md` | Teoria de suport | Docker, `.env.example` i arrencada reproduïble per a `R3M1`. |
-| `gamma-presentacions/teoria/r3-persistencia-migrations-seeders.md` | Teoria de suport | BBDD real, migrations, seeders i dades reproduïbles per a `R3M2`. |
+| `gamma-presentacions/teoria/r3-persistencia-migrations-seeders.md` | Teoria de suport | BBDD real, migracions o equivalent i dades inicials reproduïbles per a `R3M2`. |
 | `gamma-presentacions/teoria/r3-rutes-controladors-vistes-flux.md` | Teoria de suport | Rutes, controladors, vistes/respostes i flux end-to-end per a `R3M3-R3M4`. |
-| `gamma-presentacions/teoria/r3-qualitat-proves-tancament.md` | Teoria de suport | Qualitat, proves, README i tancament tècnic per a `R3M5-R3M6`. |
+| `gamma-presentacions/teoria/r3-auth-autoritzacio-middleware.md` | Teoria de suport | Autenticació, autorització, middleware/guards/voters/policies i cas denegat per a `R3M5`. |
+| `gamma-presentacions/teoria/r3-qualitat-proves-tancament.md` | Teoria de suport | Qualitat, proves, README i tancament tècnic per a `R3M6-R3M7`. |
 | `gamma-presentacions/teoria/r4-contracte-api-http.md` | Teoria de suport | Contracte d'API, HTTP, request/response, codis i errors. |
 | `gamma-presentacions/teoria/r4-proteccio-consum-documentacio-api.md` | Teoria de suport | Protecció, consum, documentació i proves d'API. |
 | `gamma-presentacions/teoria/r5-integracio-externa-flux-hibrid.md` | Teoria de suport | Font externa, contracte, flux híbrid, connector i error. |

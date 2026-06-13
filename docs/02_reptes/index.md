@@ -68,7 +68,7 @@ El contrast de frameworks **encara no és el focus principal** en `R2`.
 
 La sessió `7` de `R2` es dedica a introduir una primera peça testable amb POO i Composer.
 
-En eixa sessió final toca crear una classe simple del domini o servei, carregar-la amb autoload i verificar-la amb una prova unitària mínima.
+En la fase final de `R2` toca exposar una mini API d'autenticació per a client, provar el flux, crear una classe simple del domini o servei, carregar-la amb autoload, verificar-la amb una prova unitària mínima i afegir una persistència mínima amb BBDD.
 
 Això no substituïx `R3` ni convertix `R2` en un repte centrat en POO completa, ORM, framework o base de dades com a focus principal.
 

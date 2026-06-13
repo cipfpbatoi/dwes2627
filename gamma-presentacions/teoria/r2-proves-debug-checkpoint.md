@@ -2,20 +2,20 @@
 
 ## Objectiu
 
-Crear una presentació teòrica curta per preparar `R2M6`.
+Crear una presentació teòrica curta per preparar `R2M7`.
 
 ## Referències existents
 
 - `docs/02_reptes/repte_02.md`
-- `dwes-restructuracio-modul/docs/01_programacio_modul/programacio_aula_r2s6_proves_depuracio_checkpoint.md`
-- `dwes-microreptes-autocorreccio/microreptes/r2-s06-proves-depuracio-checkpoint/`
+- `dwes-restructuracio-modul/docs/01_programacio_modul/programacio_aula_r2s7_proves_depuracio_checkpoint.md`
+- `dwes-microreptes-autocorreccio/microreptes/r2-s07-proves-depuracio-checkpoint/`
 
 ## Idees clau
 
 - Provar és comparar resultat esperat i resultat real.
 - El camí feliç no és suficient.
 - Una prova automàtica lleugera de flux comprova una resposta observable sense entrar encara en unit testing.
-- `curl`, scripts `.sh`, scripts PHP senzills o col·leccions de peticions són suficients per a `R2M6`.
+- `curl`, scripts `.sh`, scripts PHP senzills o col·leccions de peticions són suficients per a `R2M7`.
 - Les proves unitàries i `PHPUnit` queden com a pont cap a fases amb més separació de responsabilitats.
 - Primer cal reproduir un error i després corregir-lo.
 - Una taula de proves ha d'incloure entrada, passos, resultat esperat, resultat real i incidència.

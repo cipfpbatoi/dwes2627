@@ -72,7 +72,7 @@ No pots delegar:
 - la comprovació real que arranca
 - la decisió dels casos d'ús
 
-## MP2. Persistència mínima amb migrations i seeders
+## MP2. Persistència mínima amb migracions, fixtures/seeders o equivalent
 
 ### Objectiu
 
@@ -82,9 +82,9 @@ Crear una BBDD real, definir l'esquema mínim, carregar dades inicials reproduï
 
 - Configura connexió a BBDD.
 - Defineix les taules, entitats o esquemes mínims.
-- Crea `migrations`.
+- Crea migracions o mecanisme equivalent.
 - Executa les migracions.
-- Crea `seeders`, fixtures o script equivalent.
+- Crea fixtures/seeders o script equivalent.
 - Carrega dades de prova.
 - Fes una primera lectura real de dades.
 - Recupera un conjunt de dades real des de la BBDD.
@@ -97,8 +97,8 @@ BBDD reconstruïble des de zero amb dades inicials útils i un conjunt de dades 
 
 ### Evidències
 
-- Fitxers de migració.
-- Fitxers de seeder, fixtures o script equivalent.
+- Fitxers de migració o mecanisme equivalent.
+- Fitxers de fixtures/seeders o script equivalent.
 - Comanda o instrucció per crear BBDD.
 - Comanda o instrucció per carregar dades.
 - Captura, log o demo de lectura real.
@@ -119,7 +119,7 @@ BBDD reconstruïble des de zero amb dades inicials útils i un conjunt de dades 
 - Crear taules que no s'usen.
 - Fer un model de dades massa gran.
 - Usar arrays en lloc de BBDD.
-- No documentar com executar migracions i seeders.
+- No documentar com executar migracions i càrrega inicial.
 - Fer una lectura de prova que no arriba a cap flux.
 - Recuperar dades però no tractar-les de manera estructurada.
 
@@ -129,7 +129,7 @@ Pots demanar a la IA:
 
 - proposta de camps per a una entitat
 - ajuda per escriure una migració
-- exemples de seeders o fixtures
+- exemples de fixtures/seeders o scripts de càrrega
 - explicació d'un error de connexió
 - exemples de consulta per llistar o filtrar dades
 
@@ -137,7 +137,7 @@ No pots delegar:
 
 - decidir quines dades necessita el teu domini
 - validar que la BBDD es crea de zero
-- comprovar que els seeders carreguen dades reals
+- comprovar que els fixtures/seeders o scripts carreguen dades reals
 - demostrar que el conjunt de dades alimenta un flux funcional
 
 ## MP3. Primer cas d'ús complet
@@ -266,7 +266,72 @@ No pots delegar:
 - decidir l'abast
 - comprovar els dos fluxos en execució real
 
-## MP5. Qualitat i estabilització
+## MP5. Autenticació, autorització i middleware
+
+### Objectiu
+
+Traslladar l'autenticació treballada en `R2` a les eines pròpies del framework i protegir una acció significativa amb autorització mínima.
+
+### Tasques concretes
+
+- Implementa login o mecanisme d'autenticació amb eines del framework.
+- Implementa logout o invalidació de sessió/token.
+- Crea o documenta un usuari demo reproduïble.
+- Tria una acció significativa del domini que haja d'estar protegida.
+- Protegix la ruta o acció amb middleware, guard, voter, policy o equivalent.
+- Defineix una regla d'autorització mínima: rol, propietari del recurs, estat o permís simple.
+- Prova accés sense autenticar.
+- Prova accés autoritzat.
+- Prova accés denegat.
+- Documenta com verificar-ho.
+
+### Producte esperat
+
+Una acció real del projecte protegida en servidor, amb diferència observable entre usuari autoritzat i usuari sense permisos.
+
+### Evidències
+
+- Login o mecanisme d'autenticació funcional.
+- Logout o invalidació.
+- Usuari demo.
+- Ruta o acció protegida.
+- Middleware, guard, voter, policy o equivalent.
+- Regla d'autorització mínima.
+- Cas autoritzat i cas denegat.
+- Error o resposta controlada quan no hi ha permisos.
+
+### Criteris de qualitat
+
+- La protecció no està només en la vista.
+- La regla d'autorització té sentit dins del domini.
+- Les credencials demo no són personals ni secrets reals.
+- La solució usa convencions del framework triat.
+- El README permet repetir la prova.
+
+### Errors habituals
+
+- Ocultar un botó però deixar la ruta accessible.
+- Fer login però no autorització.
+- Crear rols sense usar-los en cap acció real.
+- Versionar contrasenyes personals o secrets.
+- No provar el cas denegat.
+
+### IA
+
+Pots demanar a la IA:
+
+- equivalències entre middleware, guard, voter o policy;
+- exemples de configuració del framework;
+- idees de regla d'autorització simple;
+- casos de prova d'accés.
+
+No pots delegar:
+
+- decidir quina acció del teu domini s'ha de protegir;
+- comprovar que el bloqueig està en servidor;
+- provar el cas denegat.
+
+## MP6. Qualitat i estabilització
 
 ### Objectiu
 
@@ -280,7 +345,7 @@ Fer que el projecte no siga només una demo: ha de tindre validació, errors, pr
 - Completa validacions mínimes.
 - Controla errors bàsics.
 - Afig proves mínimes o checklist executable.
-- Torna a provar migracions i seeders.
+- Torna a provar migracions o equivalent i càrrega inicial.
 - Torna a provar els `2` fluxos.
 
 ### Producte esperat
@@ -293,7 +358,7 @@ Una base estable, reproduïble i defensable.
 - Cas positiu i cas negatiu.
 - Errors controlats.
 - Revisió de responsabilitats.
-- Migracions i seeders comprovats.
+- Migracions o equivalent i càrrega inicial comprovades.
 
 ### Criteris de qualitat
 
@@ -305,7 +370,7 @@ Una base estable, reproduïble i defensable.
 ### Errors habituals
 
 - Provar només el cas feliç.
-- No repetir seeders després de canvis.
+- No repetir fixtures/seeders o càrrega equivalent després de canvis.
 - Fer refactorització i trencar un flux.
 - Escriure proves que no s'executen.
 
@@ -324,7 +389,7 @@ No pots delegar:
 - decidir si una refactorització és segura
 - comprovar que no has trencat res
 
-## MP6. Tancament tècnic
+## MP7. Tancament tècnic
 
 ### Objectiu
 
@@ -336,8 +401,9 @@ Deixar el projecte documentat perquè una altra persona puga arrancar-lo, provar
 - Explica com arrancar Docker.
 - Explica `.env`.
 - Explica com executar migracions.
-- Explica com carregar seeders.
+- Explica com carregar fixtures/seeders o script equivalent.
 - Descriu els `2` casos d'ús.
+- Explica la ruta o acció protegida i la regla d'autorització.
 - Explica com provar-los.
 - Registra decisions tècniques.
 - Deixa backlog o mapa del que queda per migrar de `R2`.

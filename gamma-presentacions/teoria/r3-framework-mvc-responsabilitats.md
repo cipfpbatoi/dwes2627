@@ -18,15 +18,27 @@ Crear una presentació teòrica curta per preparar `R3M1` i donar criteri comú 
 - Un framework dona convencions per separar responsabilitats.
 - Les peces mínimes són ruta, controlador o equivalent, capa de dades, vista/plantilla o resposta.
 - `MVC` o equivalent no és una teoria: és una forma de localitzar on viu cada responsabilitat.
+- El repte és neutral respecte a l'stack: `Laravel`, `Symfony` i `NestJS` són vies vàlides si es justifica la tria i es compleixen les evidències comunes.
 - Explicar què es pot mantenir de l'aplicació `R2` i què es refà quan es passa a un framework.
 - L'objectiu és construir una base real amb `2` fluxos, no migrar-ho tot.
 - La tria de stack s'ha de justificar amb avantatges concrets per al projecte.
+
+## Equivalències que han d'aparéixer
+
+| Necessitat comuna | Laravel | Symfony | NestJS |
+|---|---|---|---|
+| Rutes | `routes/web.php` o `routes/api.php` | atributs o configuració | decorators en controladors |
+| Controladors | controllers | controllers | controllers |
+| Vista o resposta | Blade o JSON | Twig o JSON | JSON o templates si s'activen |
+| Capa de dades | Eloquent | Doctrine | ORM/ODM triat, Prisma o TypeORM |
+| Validació | form requests o validators | forms/constraints/validators | DTO + pipes |
 
 ## Format recomanat
 
 - 8-10 diapositives.
 - Començar amb comparativa visual: `R2` en PHP base vs `R3` en framework.
 - Incloure mapa de responsabilitats.
+- Incloure taula d'equivalències entre `Laravel`, `Symfony` i `NestJS`.
 - Incloure exemple de flux: petició -> ruta -> controlador -> dades -> vista/resposta.
 - Incloure diapositiva de "què entra / què no entra".
 - Tancar amb checklist de `R3M1`.
@@ -34,5 +46,5 @@ Crear una presentació teòrica curta per preparar `R3M1` i donar criteri comú 
 ## No incloure
 
 - Tutorial complet de Laravel, Symfony o NestJS.
-- ORM, migrations o seeders en profunditat; això va en una teoria específica.
+- ORM, migracions o dades inicials en profunditat; això va en una teoria específica.
 - API com a objectiu de `R3`; pertany a `R4`.

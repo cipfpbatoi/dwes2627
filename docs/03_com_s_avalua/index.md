@@ -90,6 +90,22 @@ Per exemple:
 
 El criteri de fons és sempre el mateix: si pots traçar, explicar, provar i defensar el que presentes.
 
+## 🎯 Notes per RA
+
+Cada microrepte avaluable té **un únic RA avaluat**. Pot treballar idees d'altres RA perquè el projecte és integrat, però només els **CA avaluats** d'eixe RA generen nota en eixe microrepte.
+
+Per això, en les rúbriques i autocorreccions trobaràs tres camps:
+
+| Camp | Què significa |
+|---|---|
+| **RA avaluat** | El resultat d'aprenentatge que puntua en el microrepte. Sempre és un únic RA. |
+| **CA avaluats** | Els criteris d'avaluació d'eixe RA que es valoren en el microrepte. |
+| **RA de context** | Altres RA que poden aparéixer en el producte, però que no sumen nota en eixe microrepte. |
+
+La nota d'un repte no s'ha de llegir només com una mitjana única. Un mateix repte pot aportar diverses notes separades: per exemple, `R3` pot aportar una nota de `RA5`, una de `RA6` i una de `RA8`, segons quins microreptes hages completat i quin RA avalua cadascun.
+
+Els tallers, microdefenses, ampliacions i checkpoints poden condicionar la revisió docent, però no generen una nota RA pròpia si no indiquen explícitament un **RA avaluat**.
+
 ## 🕒 Temps de treball, commits i traçabilitat
 
 No es controlarà el temps amb un cronòmetre. El temps de treball es revisarà com a **evidència de procés**, junt amb commits, issues, proves, documentació i defensa.
@@ -130,7 +146,7 @@ Si estàs tancant el `Repte 2`, tens una [checklist de proves](checklists_de_pro
 
 Esta checklist és una ajuda útil per provar el repte i deixar una evidència de verificació, però no substituïx la demo ni la defensa tècnica.
 
-En la sessió final de `R2`, una evidència bona és `composer.json` o equivalent, una classe simple del domini o servei, una prova unitària mínima executada i una comprovació que el flux web continua funcionant.
+En `R2S8`, una evidència bona és `composer.json` o equivalent, una classe simple del domini o servei, una prova unitària mínima executada i una comprovació que el flux web continua funcionant. En `R2S9`, la persistència mínima amb BBDD ha de quedar reproduïble.
 
 No es tracta encara d’una reescriptura completa, ni de convertir-ho tot a objectes, ni d’anticipar tot `R3`.
 

@@ -2,13 +2,13 @@
 
 ## Objectiu
 
-Crear una presentació teòrica curta per preparar `R2M7`, introduint una classe simple, Composer, autoload i una primera prova unitària.
+Crear una presentació teòrica curta per preparar `R2M8`, introduint una classe simple, Composer, autoload i una primera prova unitària.
 
 ## Referències existents
 
 - `docs/02_reptes/repte_02.md`
-- `dwes-restructuracio-modul/docs/01_programacio_modul/programacio_aula_r2s7_primera_peca_testable_poo_composer.md`
-- `dwes-microreptes-autocorreccio/microreptes/r2-s07-primera-peca-testable-poo-composer/`
+- `dwes-restructuracio-modul/docs/01_programacio_modul/programacio_aula_r2s8_primera_peca_testable_poo_composer.md`
+- `dwes-microreptes-autocorreccio/microreptes/r2-s08-primera-peca-testable-poo-composer/`
 
 ## Idees clau
 

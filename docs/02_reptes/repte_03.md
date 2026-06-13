@@ -26,14 +26,17 @@ Al final de `R3` has de poder mostrar:
 - vistes, plantilles o respostes generades pel framework
 - models, entitats, esquemes o capa equivalent de dades
 - BBDD real
-- `migrations` per crear l'estructura de dades
-- `seeders` o equivalent per carregar dades inicials
+- migracions o mecanisme equivalent de l'stack per crear l'estructura de dades
+- fixtures, seeders o script equivalent per carregar dades inicials
 - comparació curta del framework triat amb una altra opció possible
 - esquema abans/després de responsabilitats respecte a `R2`
 - recuperació i ús d'un conjunt de dades real dins d'un flux funcional
 - `2` casos d'ús end-to-end
 - almenys `1` cas d'ús migrat de `R2`
 - almenys `1` cas d'ús server-rendered amb vista o plantilla i resposta `HTML` generada en servidor
+- autenticació amb eines del framework
+- almenys una acció protegida amb middleware, guard, voter, policy o equivalent
+- autorització mínima amb cas autoritzat i cas denegat
 - validació mínima
 - tractament bàsic d'errors
 - proves mínimes
@@ -63,18 +66,35 @@ Els stacks base són:
 
 La nomenclatura canvia segons l'stack, però el criteri és el mateix: ruta, controlador, capa de dades, persistència real, resposta visible, validació, error i prova. En almenys un flux, la resposta visible ha de ser una pàgina o plantilla renderitzada pel servidor.
 
+Per evitar confusions, estes equivalències compten igual si estan ben aplicades:
+
+| Criteri comú | Laravel | Symfony | NestJS |
+|---|---|---|---|
+| Ruta | route | route | controller route |
+| Controlador | controller | controller | controller |
+| Vista/resposta | Blade/view | Twig/Response | template/response o resposta server-rendered equivalent |
+| Model/capa de dades | Eloquent model | Doctrine entity/repository | Prisma/TypeORM entity, schema o service |
+| Migració d'esquema | migration | Doctrine migration | Prisma/TypeORM migration o equivalent |
+| Dades inicials | seeder | fixture | seed script o seeder |
+| Validació | Form Request/validator | Validator/Form | DTO + class-validator o equivalent |
+| Protecció d'accés | middleware, guard, policy | security, voter, access control | guard, middleware, decorator o pipe |
+| Configuració | `.env` | `.env` | `.env` |
+
 ## Microreptes
 
-`R3` es treballa en 6 microreptes:
+`R3` es treballa en 7 microreptes:
 
 | Microrepte | Producte principal | Autocorrecció |
 |---|---|---|
 | `R3M1` Arrencada del nou projecte | Docker, framework, `.env`, ruta mínima, comparació de stack i esquema abans/després | `r3-s01-arrencada-nou-projecte` |
-| `R3M2` Persistència mínima | BBDD, `migrations`, `seeders` i conjunt de dades real usat en un flux | `r3-s02-persistencia-minima-migrations-seeders` |
+| `R3M2` Persistència mínima | BBDD, migracions o equivalent, dades inicials reproduïbles i conjunt de dades real usat en un flux | `r3-s02-persistencia-minima-migrations-seeders` |
 | `R3M3` Primer cas d'ús complet | flux heretat de `R2` funcionant en framework, preferentment com a cas server-rendered | `r3-s03-primer-cas-us-complet` |
 | `R3M4` Segon cas d'ús o ampliació | segon flux real, migrat o ampliació funcional útil amb canvi dinàmic de resposta | `r3-s04-segon-cas-us-ampliacio-funcional` |
-| `R3M5` Qualitat i estabilització | validació, errors, proves i revisió d'estructura | `r3-s05-qualitat-estabilitzacio` |
-| `R3M6` Tancament tècnic | README, demo, decisions i mapa del que queda pendent | `r3-s06-tancament-tecnic` |
+| `R3M5` Autenticació i autorització | acció significativa protegida amb middleware, guard, voter, policy o equivalent | `r3-s05-autenticacio-autoritzacio-middleware` |
+| `R3M6` Qualitat i estabilització | validació, errors, proves i revisió d'estructura | `r3-s06-qualitat-estabilitzacio` |
+| `R3M7` Tancament tècnic | README, demo, decisions i mapa del que queda pendent | `r3-s07-tancament-tecnic` |
+
+Entre `R3M2` i `R3M3` hi haurà un taller formatiu, `R3S2B`, per comprovar equivalències entre frameworks i auditar el projecte abans del primer flux complet. No és un microrepte amb nota separada, però la taula d'equivalències i la microtasca resultant poden ajudar-te a millorar `R3M3`, `R3M5`, `R3M6` i el README final.
 
 El detall operatiu està en els materials de `R3`:
 
@@ -95,14 +115,17 @@ Has d'aportar:
 - comparació breu amb una altra opció de framework
 - esquema abans/després de responsabilitats entre `R2` i `R3`
 - `.env.example` o instruccions de configuració
-- `migrations`
-- `seeders` o equivalent
+- migracions o equivalent de l'stack
+- fixtures, seeders o script equivalent
 - dades de demostració reproduïbles
 - consulta o recuperació d'un conjunt de dades real
 - ús d'eixe conjunt de dades en un llistat, detall, filtre o resposta
 - prova dels `2` casos d'ús funcionals
 - prova que almenys `1` flux ve de `R2`
 - evidència que almenys `1` flux passa dades del controlador a una vista o plantilla i genera `HTML` en servidor
+- evidència de login o autenticació equivalent
+- evidència d'una acció protegida en servidor
+- prova de cas autoritzat i cas denegat
 - validació i errors mínims
 - proves mínimes o checklist verificable
 - README curt d'arrencada i ús
@@ -114,16 +137,17 @@ Has d'aportar:
 `R3` es considera superat quan una altra persona pot:
 
 1. arrancar el projecte amb les instruccions del README
-2. crear la BBDD amb `migrations`
-3. carregar dades inicials amb `seeders` o equivalent
+2. crear la BBDD amb migracions o mecanisme equivalent
+3. carregar dades inicials amb fixtures, seeders o script equivalent
 4. recuperar un conjunt de dades real i vore'l dins d'un flux funcional
 5. executar els `2` casos d'ús
 6. vore almenys `1` cas d'ús server-rendered amb dades reals en una vista o plantilla
-7. veure una validació o error controlat
-8. executar o revisar proves mínimes
-9. entendre què s'ha migrat, què s'ha ampliat i què queda pendent
+7. accedir a una acció protegida amb cas autoritzat i vore un cas denegat controlat
+8. veure una validació o error controlat
+9. executar o revisar proves mínimes
+10. entendre què s'ha migrat, què s'ha ampliat i què queda pendent
 
-Si falta Docker, BBDD reconstruïble, seeders, els `2` fluxos o el cas server-rendered, el repte encara no està tancat.
+Si falta Docker, BBDD reconstruïble, fixtures/seeders o càrrega equivalent, els `2` fluxos, el cas server-rendered o la protecció d'una acció significativa, el repte encara no està tancat.
 
 ## Ampliació 9→10
 
@@ -134,7 +158,7 @@ Aprofundir en la qualitat de l'arquitectura en framework i demostrar millor crit
 El nucli del repte ha d'estar complet, funcional i validat.
 
 **Opcions d'ampliació**
-- Millorar un flux amb paginació, filtrat, cerca o autorització sense trencar la coherència del projecte.
+- Millorar un flux amb paginació, filtrat, cerca o una autorització més fina que amplie la regla mínima sense trencar la coherència del projecte.
 - Fer una refactorització justificada del repartiment entre ruta, controlador, capa de dades i vista o plantilla.
 
 **Proposta pròpia**  

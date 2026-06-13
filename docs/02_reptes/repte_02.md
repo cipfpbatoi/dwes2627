@@ -17,6 +17,7 @@ Ara el backend ja no ha de limitar-se a rebre una petició i respondre. Ha de se
 - Mantindre estat quan faça falta.
 - Autenticar usuaris i gestionar sessions quan toque.
 - Protegir una primera funcionalitat del projecte.
+- Guardar i recuperar una dada significativa en una BBDD mínima amb `PHP`.
 
 ## 🌟 Via 9→10 en este repte
 
@@ -50,6 +51,7 @@ En este repte has de fer evolucionar el projecte fins a deixar, com a mínim:
 - Un cas positiu i un cas negatiu.
 - Prova mínima i documentació bàsica del flux.
 - Primera peça testable amb POO i Composer: classe simple del domini o servei, autoload, prova unitària mínima i comprovació que el flux continua funcionant.
+- Persistència mínima amb BBDD: connexió, taula, alta, lectura, consultes preparades i instruccions de reproducció.
 
 ## Producte mínim esperat
 
@@ -69,10 +71,11 @@ Al final del repte hauries de poder mostrar un recorregut complet com este:
 - El sistema comprova si l’acció està permesa.
 - Una funcionalitat del producte queda protegida.
 - Es pot demostrar què passa en el cas correcte i en el cas denegat.
+- Una dada significativa queda guardada en BBDD i es pot recuperar després.
 
 No cal que siga un producte gran. Sí que cal que siga un flux complet, explicable i verificable.
 
-La seqüència ha de quedar clara: primer arriben les dades i es fa una validació inicial bàsica; després, només si són correctes, es processen i es guarden per poder reutilitzar-les; després s’apliquen regles del projecte; després es manté estat quan fa falta; després es protegix una acció real; i, al final, es prova i es revisa tot el recorregut.
+La seqüència ha de quedar clara: primer arriben les dades i es fa una validació inicial bàsica; després, només si són correctes, es processen i es guarden per poder reutilitzar-les; després s’apliquen regles del projecte; després es manté estat quan fa falta; després es protegix una acció real; després es prova i es revisa tot el recorregut; i, al final del nucli, una dada significativa passa a una BBDD mínima.
 
 Per tant, el formulari no compta com a repte complet si només envia dades i torna un missatge genèric. Ha d’estar integrat en una funcionalitat real del projecte, amb tractament, conservació i reutilització posterior.
 
@@ -129,7 +132,7 @@ En este repte no n’hi ha prou amb:
 - Guardar dades de manera aparent si després no es poden reutilitzar.
 - Muntar una base de dades com a reclam tècnic mentre el flux principal continua dèbil.
 - Portar una demo que funciona una vegada però no es pot explicar ni reproduir.
-- Convertir la sessió final en una reescriptura completa, en MVC complet, en ORM o en migració de framework.
+- Convertir les fases finals en una reescriptura completa, en MVC complet, en ORM o en migració de framework.
 
 ## Relació amb el projecte base
 
@@ -147,11 +150,11 @@ La pregunta útil no és només “quin formulari faré?”, sinó “quina acci
 
 ## Microreptes del Repte 2
 
-Per treballar bé este repte convé dividir-lo en set peces clares. Això ajuda a no reduir-lo a un simple `login` i a entendre què s’està construint en cada fase.
+Per treballar bé este repte convé dividir-lo en nou peces clares. Això ajuda a no reduir-lo a un simple `login` i a entendre què s’està construint en cada fase.
 
-La base del repte queda en `21` hores, organitzades en `7` sessions de `3` hores.
+La base del repte queda en `27` hores, organitzades en `9` sessions de `3` hores.
 
-La progressió també és important: en el microrepte 1 entra i es valida la informació; en el 2 es processen i es guarden les dades correctes; en el 3 s’apliquen regles reals del projecte amb funcions pròpies; en el 4 es conserva estat temporal del flux i s'estabilitzen includes; en el 5 es protegix una operació real; en el 6 es prova, es depura i es tanca un checkpoint tècnic; i en el 7 s’introduïx una classe simple carregada amb Composer i verificada amb una primera prova unitària.
+La progressió també és important: en el microrepte 1 entra i es valida la informació; en el 2 es processen i es guarden les dades correctes; en el 3 s’apliquen regles reals del projecte amb funcions pròpies; en el 4 es conserva estat temporal del flux i s'estabilitzen includes; en el 5 es protegix una operació real; en el 6 s'exposa una mini API d'autenticació per a client; en el 7 es prova, es depura i es tanca un checkpoint tècnic; en el 8 s’introduïx una classe simple carregada amb Composer i verificada amb una primera prova unitària; i en el 9 es fa una persistència mínima amb BBDD.
 
 ### Microrepte 1. Entrada de dades i validació bàsica
 
@@ -547,15 +550,82 @@ En este microrepte es valorarà si pots:
 - No tindre registre públic complet, recuperació de contrasenya, OAuth o JWT.
 - No tindre arquitectura completa ni persistència formal com a centre.
 
-### Microrepte 6. Prova, depuració i checkpoint tècnic
+### Microrepte 6. Mini API d'autenticació per a client
 
 **Autocorrecció associada**
 
-`r2-s06-proves-depuracio-checkpoint`
+`r2-s06-mini-api-autenticacio-client`
+
+En este microrepte hauràs d'exposar l'autenticació que ja tens en `R2M5` com una mini API consumible des d'un client extern.
+
+Açò no convertix `R2` en el repte d'API. El que es busca és donar a `Desenvolupament Web en Entorn Client` un contracte mínim i estable per poder practicar autenticació amb `fetch`, `curl`, Postman o Insomnia abans d'arribar a `R4`.
+
+Ací sí que hauràs de:
+
+- crear un endpoint `POST /api/login` o equivalent
+- rebre credencials i validar-les contra el sistema de `R2M5`
+- retornar sempre una resposta `JSON`
+- retornar `200` quan les credencials són correctes
+- retornar `401` quan són incorrectes o falta autenticació
+- generar o retornar un token simple o mecanisme equivalent documentat
+- crear una ruta protegida com `GET /api/me`, `GET /api/protected` o equivalent
+- llegir el token amb `Authorization: Bearer ...` o mecanisme documentat
+- comprovar realment el token en la ruta protegida
+- no retornar contrasenyes ni hashes
+- provar cas correcte i cas incorrecte amb una eina externa
+- documentar el contracte perquè DWEC el puga consumir
+- deixar un usuari demo i les limitacions conegudes, incloent CORS si afecta el consum
+
+Este microrepte no vol dir:
+
+- fer una API REST completa
+- fer CRUD
+- usar OpenAPI
+- implementar OAuth
+- implementar JWT professional
+- fer refresh tokens
+- resoldre rols complexos
+- substituir el treball propi de `R4`
+
+**Evidències principals**
+
+- Endpoint de login API.
+- Resposta `JSON`.
+- Codi `200` en cas correcte.
+- Codi `401` en cas incorrecte o no autenticat.
+- Token simple o mecanisme equivalent.
+- Ruta protegida que comprova el token.
+- Prova externa amb `curl`, Postman/Insomnia o `fetch`.
+- Contracte documentat amb mètode, URL, entrada, headers i resposta.
+- Usuari demo i limitacions conegudes.
+
+**Com es comprovarà**
+
+- Execució de `POST /api/login` amb credencials correctes.
+- Execució de `POST /api/login` amb credencials incorrectes.
+- Execució de la ruta protegida sense token.
+- Execució de la ruta protegida amb token vàlid.
+- Revisió que no es retornen contrasenyes ni hashes.
+- Revisió del contracte perquè una altra persona puga consumir-lo sense mirar el codi.
+- Pregunta oral sobre què ha de fer el client quan rep `401`.
+
+**Què no es penalitza encara**
+
+- No tindre una API completa.
+- No tindre documentació OpenAPI.
+- No tindre JWT professional.
+- No tindre refresh tokens.
+- No haver resolt CORS si el client encara no el necessita.
+
+### Microrepte 7. Prova, depuració i checkpoint tècnic
+
+**Autocorrecció associada**
+
+`r2-s07-proves-depuracio-checkpoint`
 
 **Objectiu**
 
-Comprovar que el flux complet funciona, que queda registrat amb una checklist o taula simple de proves, que es pot demostrar en una demo breu i que el repte arriba a la sessió final amb una base tècnica clara.
+Comprovar que el flux complet funciona, que queda registrat amb una checklist o taula simple de proves, que es pot demostrar en una demo breu i que el repte arriba a les fases finals amb una base tècnica clara.
 
 En este microrepte no es demanen encara proves unitàries ni `PHPUnit` com a mínim. Sí que has d’introduir una **prova automàtica lleugera de flux**, encara que siga una comanda `curl`, un script `.sh`, un script PHP senzill o una col·lecció de peticions documentada.
 
@@ -588,7 +658,7 @@ En este microrepte es valorarà si pots:
 - Deixar rastre del que has provat i del que encara cal millorar.
 - Explicar com has organitzat la prova i quins casos has verificat.
 - Explicar per què la conservació de dades que has fet és suficient per a `R2`, encara que no siga encara el centre del curs.
-- Deixar clar quines parts del codi convé revisar en el microrepte 7.
+- Deixar clar quines parts del codi convé revisar en el microrepte 8.
 
 **Evidències principals**
 
@@ -611,16 +681,16 @@ En este microrepte es valorarà si pots:
 
 **Què no es penalitza encara**
 
-- No tindre proves automatitzades.
+- No tindre una suite completa de proves automatitzades.
 - No tindre proves unitàries ni `PHPUnit`.
 - No haver refactoritzat encara el codi.
 - No afegir funcionalitats noves si el flux ja està tancat i verificat.
 
-### Microrepte 7. Primera peça testable amb POO i Composer
+### Microrepte 8. Primera peça testable amb POO i Composer
 
 **Autocorrecció associada**
 
-`r2-s07-primera-peca-testable-poo-composer`
+`r2-s08-primera-peca-testable-poo-composer`
 
 En este microrepte hauràs de convertir una regla, comprovació o càlcul del flux que ja funciona en una classe simple carregada amb Composer i provar-la de manera automàtica.
 
@@ -628,7 +698,7 @@ Este microrepte no substituïx la resta del repte ni convertix `R2` en `R3`.
 
 Ací sí que hauràs de:
 
-- partir d’un flux ja provat en `R2M6`
+- partir d’un flux ja provat en `R2M7`
 - crear o ajustar `composer.json`
 - configurar autoload per carregar classes pròpies
 - crear una classe simple en `src/` o carpeta equivalent
@@ -665,7 +735,7 @@ Si després d’esta peça afegixes més classes, una llibreria externa menuda v
 - Revisió de `composer.json` i de l’autoload.
 - Revisió de la classe creada.
 - Execució o revisió de la prova unitària.
-- Execució d’un cas clau de `R2M6`.
+- Execució d’un cas clau de `R2M7`.
 - Pregunta oral sobre què prova la prova unitària i què prova el flux web.
 
 **Què no es penalitza encara**
@@ -676,29 +746,95 @@ Si després d’esta peça afegixes més classes, una llibreria externa menuda v
 - No fer POO completa.
 - No consumir API externa.
 
+### Microrepte 9. Persistència mínima amb BBDD en PHP
+
+**Autocorrecció associada**
+
+`r2-s09-persistencia-minima-bbdd-php`
+
+En este microrepte hauràs de fer que una dada significativa del projecte quede guardada en una base de dades i es puga recuperar després.
+
+Este microrepte arriba després de les funcions, l'estat, l'autenticació, les proves i la primera peça testable perquè ara la pregunta és una altra: quina informació del projecte ha de sobreviure més enllà de la sessió o d'un array provisional?
+
+Ací sí que hauràs de:
+
+- triar una dada real del projecte, no una prova artificial
+- crear o documentar una taula mínima
+- separar la configuració de connexió del codi principal
+- evitar pujar secrets reals al repositori
+- connectar amb `PDO` o un mecanisme equivalent justificat
+- fer una alta amb dades que ja passen per la validació del flux
+- fer una lectura posterior, llistat o detall
+- usar consultes preparades quan hi haja dades d'usuari
+- documentar com crear la BBDD i com provar alta i lectura
+- comprovar que el flux principal continua funcionant
+- explicar què quedarà per professionalitzar en `R3`
+
+Este microrepte no vol dir:
+
+- convertir el projecte a `Laravel`, `Symfony` o un altre framework
+- usar `ORM`
+- fer migrations o seeders com a mínim obligatori
+- crear una administració completa de BBDD
+- modelar moltes taules
+- substituir la validació, la sessió o l'autenticació per la BBDD
+- guardar contrasenyes en clar
+
+Si ja tens Composer introduït en `R2M8`, pots usar-lo per organitzar millor la connexió o carregar una llibreria menuda com `vlucas/phpdotenv`, però això no és el mínim obligatori. El mínim és entendre i demostrar connexió, alta i lectura amb dades pròpies.
+
+**Evidències principals**
+
+- Taula o script SQL relacionat amb el domini.
+- Configuració de connexió separada i sense secrets reals.
+- Alta funcional amb dades del flux.
+- Lectura funcional de dades persistides.
+- Consulta preparada quan entren dades d'usuari.
+- Instruccions de reproducció en `README`.
+- Prova manual documentada o script simple.
+- Nota breu sobre què queda per a `R3`.
+
+**Com es comprovarà**
+
+- Execució d'una alta.
+- Consulta posterior de la dada guardada.
+- Revisió de la configuració i de l'absència de secrets.
+- Revisió de la consulta preparada.
+- Pregunta oral sobre la diferència entre sessió, cookie, fitxer provisional i BBDD.
+
+**Què no es penalitza encara**
+
+- No tindre ORM.
+- No tindre migrations ni seeders.
+- No tindre relacions complexes entre taules.
+- No fer una capa de repositori completa.
+- No tindre proves automàtiques de BBDD si almenys hi ha prova manual reproduïble.
+
 ## Com es reparteixen els criteris dins del repte
 
 Per orientar-te sense convertir el repte en una llista normativa, pots llegir-lo així:
 
 - `RA2` apareix sobretot en el microrepte 2: ací entra la base comuna en `PHP`, la generació de pàgines o respostes amb codi embegut, la sintaxi, les sentències, les directives, les variables, els operadors i els àmbits.
-- `RA3` apareix sobretot en els microreptes 1, 3 i 7: formularis, recuperació de dades, comentaris útils, decisions, bucles, arrays, funcions i encapsulació mínima d’una regla en una classe.
-- `RA4` apareix sobretot en els microreptes 4, 5, 6 i 7: estat, emmagatzematge en client quan toque, autenticació, funcionalitat protegida, prova, depuració, prova unitària inicial i comprovació final del flux.
+- `RA3` apareix sobretot en els microreptes 1, 3 i 8: formularis, recuperació de dades, comentaris útils, decisions, bucles, arrays, funcions i encapsulació mínima d’una regla en una classe.
+- `RA4` apareix sobretot en els microreptes 4, 5, 6, 7 i 8: estat, emmagatzematge en client quan toque, autenticació, funcionalitat protegida, mini API autenticada, prova, depuració, prova unitària inicial i comprovació final del flux.
+- `RA6` apareix de manera introductòria en el microrepte 9: connexió a BBDD, alta, lectura, consultes preparades i reproducció mínima abans de treballar migrations, seeders i models en `R3`.
 
 ## Pes dels microreptes dins del nucli de R2
 
-La `nota_nucli_R2` no és una mitjana simple de tots els microreptes. Es calcula amb estos pesos, segons la importància dels criteris d'avaluació treballats en cada fase:
+La `nota_nucli_R2` no és una mitjana simple de tots els microreptes. Es calcula amb estos pesos per fer seguiment del repte, però cada microrepte genera nota només per al seu **RA avaluat**. Els RA de context poden aparéixer en el producte, però no puntuen en eixe microrepte.
 
-| Microrepte | Focus principal | RA/CA amb més pes | Pes dins del nucli |
-|---|---|---|---:|
-| `R2M1` | Entrada i validació bàsica | `RA2` de suport + `RA3.e`, `RA3.f`, `RA3.g` | `15%` |
-| `R2M2` | Processament, reintent i guardat funcional | `RA2.a-h` + `RA3.e`, `RA3.f`, `RA3.g` | `15%` |
-| `R2M3` | Lògica, arrays, funcions i llibreria pròpia | `RA3.a`, `RA3.b`, `RA3.c`, `RA3.d` | `15%` |
-| `R2M4` | Estat, sessió, cookie, `$_SERVER` i includes estables | `RA4.a`, `RA4.b`, `RA4.c` | `15%` |
-| `R2M5` | Registre, hash, autenticació i operació protegida | `RA4.d`, `RA4.e` | `20%` |
-| `R2M6` | Proves automàtiques lleugeres, depuració i checkpoint | `RA4.f` | `10%` |
-| `R2M7` | Primera peça testable amb POO i Composer | `RA3.d`, `RA3.g`, `RA4.f` | `10%` |
+| Microrepte | Focus principal | RA avaluat | CA avaluats | RA de context | Pes dins del nucli |
+|---|---|---|---|---|---:|
+| `R2M1` | Entrada i validació bàsica | `RA2` | `RA2.a`, `RA2.b`, `RA2.c`, `RA2.d` | `RA3.e`, `RA3.f`, `RA3.g` | `12%` |
+| `R2M2` | Processament, reintent i guardat funcional | `RA2` | `RA2.a-h` | `RA3.e`, `RA3.f`, `RA3.g` | `12%` |
+| `R2M3` | Lògica, arrays, funcions i llibreria pròpia | `RA3` | `RA3.a`, `RA3.b`, `RA3.c`, `RA3.d` | - | `12%` |
+| `R2M4` | Estat, sessió, cookie, `$_SERVER` i includes estables | `RA4` | `RA4.a`, `RA4.b`, `RA4.c` | - | `12%` |
+| `R2M5` | Registre, hash, autenticació i operació protegida | `RA4` | `RA4.d`, `RA4.e` | - | `16%` |
+| `R2M6` | Mini API d'autenticació per a client | `RA4` | `RA4.d`, `RA4.e` | pont DWEC | `10%` |
+| `R2M7` | Proves automàtiques lleugeres, depuració i checkpoint | `RA4` | `RA4.f` | - | `8%` |
+| `R2M8` | Primera peça testable amb POO i Composer | `RA3` | `RA3.d`, `RA3.g` | `RA4.f` | `8%` |
+| `R2M9` | Persistència mínima amb BBDD en PHP | `RA6` | `RA6.a`, `RA6.b`, `RA6.c`, `RA6.d`, `RA6.f` | `RA3`, `RA4` | `10%` |
 
-El microrepte `R2M5` pesa més perquè concentra la part més significativa del repte: demostrar que l'estat i el control d'accés servixen per protegir una acció real del projecte. `R2M6` i `R2M7` pesen menys per separat, però són importants perquè fan verificable i defensable el que s'ha construït.
+El microrepte `R2M5` pesa més perquè concentra la part més significativa del repte: demostrar que l'estat i el control d'accés servixen per protegir una acció real del projecte. `R2M6` pesa prou perquè és el pont intermodular amb DWEC, però queda acotat a autenticació mínima consumible. `R2M9` és obligatori dins del nucli, però queda acotat com a introducció a BBDD abans de `R3`. `R2M7` i `R2M8` pesen menys per separat, però fan verificable i defensable el que s'ha construït.
 
 Si un microrepte posterior depén d'un anterior, el pes no elimina la dependència. Per exemple, un bon `R2M5` necessita un flux d'entrada, processament, lògica i estat suficientment funcional.
 
@@ -786,6 +922,7 @@ Per considerar complet el repte, hauràs d’aportar com a mínim:
 - Evidència d’estat, sessió o cookies.
 - Autenticació funcional.
 - Operació real protegida i vinculada al projecte base.
+- Mini API d'autenticació per a client amb `JSON`, `200`, `401` i ruta protegida.
 - Cas positiu i cas negatiu.
 - Prova o verificació mínima del flux.
 - Documentació tècnica actualitzada.
@@ -793,11 +930,12 @@ Per considerar complet el repte, hauràs d’aportar com a mínim:
 - Classe pròpia simple vinculada al domini o servei del projecte.
 - Prova unitària mínima i resultat documentat.
 - Prova de no regressió del flux després d’afegir la classe.
+- Persistència mínima amb BBDD, alta i lectura documentades.
 - `AI log`, quan hi haja ús rellevant d’IA.
 
-## Evidències de la sessió final
+## Evidències de R2M8
 
-En el microrepte 7, una bona evidència és:
+En el microrepte 8, una bona evidència és:
 
 - `composer.json` o configuració equivalent
 - classe pròpia en `src/` o carpeta equivalent
@@ -1001,7 +1139,7 @@ Esta autocorrecció no posa automàticament un `10`. Servix per filtrar si la te
 
 ## Com es calcula la nota final de R2
 
-Les autocorreccions dels microreptes `R2M1` a `R2M7` valoren el **nucli obligatori** del repte.
+Les autocorreccions dels microreptes `R2M1` a `R2M9` valoren el **nucli obligatori** del repte.
 
 La nota final de `R2` es calcula així:
 
@@ -1031,7 +1169,7 @@ No és una baixada de nota: és separar el **nucli obligatori** de la **via d’
 **A quin nivell s'aplica**  
 La via `9→10` s'aplica al **Repte 2 complet**, no a cada microrepte de manera independent.
 
-Això vol dir que no has de fer una ampliació diferent per a `R2M1`, una altra per a `R2M2`, una altra per a `R2M3`, etc. Primer has de completar bé el conjunt del repte: entrada, processament, lògica, estat, autenticació, proves i primera peça testable.
+Això vol dir que no has de fer una ampliació diferent per a `R2M1`, una altra per a `R2M2`, una altra per a `R2M3`, etc. Primer has de completar bé el conjunt del repte: entrada, processament, lògica, estat, autenticació, mini API d'autenticació per a client, proves, primera peça testable i persistència mínima amb BBDD.
 
 Després, si el nucli ja està complet i validat, pots presentar **una ampliació integrada** que millore una part important del flux. Pot nàixer d’un microrepte concret, però ha de tindre impacte sobre el repte complet.
 
