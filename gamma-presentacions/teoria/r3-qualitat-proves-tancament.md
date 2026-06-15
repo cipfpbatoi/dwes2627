@@ -4,15 +4,6 @@
 
 Crear una presentació teòrica curta per preparar `R3M6` i `R3M7`, centrada en estabilitzar els fluxos, verificar reconstrucció de BBDD, càrrega inicial reproduïble i protecció d'accessos, documentar decisions i deixar el projecte preparat per a `R4`.
 
-## Referències existents
-
-- `docs/02_reptes/repte_03.md`
-- `docs/04_materials/repte_03/checklists.md`
-- `docs/04_materials/repte_03/suport_tecnic.md`
-- `dwes-restructuracio-modul/docs/01_programacio_modul/programacio_aula_r3s6_qualitat_estabilitzacio.md`
-- `dwes-restructuracio-modul/docs/01_programacio_modul/programacio_aula_r3s7_tancament_tecnic.md`
-- `dwes-microreptes-autocorreccio/microreptes/r3-s06-qualitat-estabilitzacio/`
-- `dwes-microreptes-autocorreccio/microreptes/r3-s07-tancament-tecnic/`
 
 ## Idees clau
 

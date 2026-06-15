@@ -16,6 +16,8 @@ Alumnat que coneix formularis, sessions i autenticació web bàsica.
 - `401` significa no autenticat o credencial no vàlida.
 - El token és una prova temporal d'autenticació.
 - No s'han de retornar contrasenyes ni hashes.
+- El client necessita una resposta interpretable, no una pantalla HTML.
+- El contracte ha d'indicar URL, mètode, headers, body i exemples.
 
 ## Estructura suggerida
 
@@ -52,6 +54,31 @@ Alumnat que coneix formularis, sessions i autenticació web bàsica.
    - No hi ha refresh token.
    - No hi ha OAuth.
    - No és encara R4.
+
+## Exemples PHP que han d'aparéixer
+
+- Capçalera `Content-Type: application/json`.
+- `json_encode` d'una resposta correcta.
+- `http_response_code(401)` per a credencial incorrecta.
+- Lectura simple de `Authorization: Bearer ...`.
+- Resposta protegida sense exposar hash ni contrasenya.
+
+## Codi base per a diapositives
+
+```php
+header('Content-Type: application/json');
+echo json_encode(['token' => $token]);
+```
+
+```php
+http_response_code(401);
+echo json_encode(['error' => 'Credencials incorrectes']);
+```
+
+```php
+$auth = $_SERVER['HTTP_AUTHORIZATION'] ?? '';
+$token = str_starts_with($auth, 'Bearer ') ? substr($auth, 7) : '';
+```
 
 ## Exemple de narrativa
 

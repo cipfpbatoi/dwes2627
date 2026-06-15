@@ -2,15 +2,8 @@
 
 ## Objectiu
 
-Crear una presentació teòrica curta per preparar `R3M1` i donar criteri comú sobre què vol dir reconstruir el projecte en un framework sense migrar tota l'aplicació de `R2`.
+Crear una presentació teòrica de transició per preparar `R3M1` i donar criteri comú sobre què vol dir reconstruir el projecte en un framework sense migrar tota l'aplicació de `R2`. Ha d'explicar conceptes nous amb més detall: framework, convencions, rutes, controladors, MVC o equivalent, estructura de projecte i responsabilitats.
 
-## Referències existents
-
-- `docs/02_reptes/repte_03.md`
-- `docs/04_materials/repte_03/fitxa_general.md`
-- `docs/04_materials/repte_03/suport_tecnic.md`
-- `dwes-restructuracio-modul/docs/01_programacio_modul/programacio_aula_r3s1_arrencada_nou_projecte.md`
-- `dwes-microreptes-autocorreccio/microreptes/r3-s01-arrencada-nou-projecte/`
 
 ## Idees clau
 
@@ -22,6 +15,8 @@ Crear una presentació teòrica curta per preparar `R3M1` i donar criteri comú 
 - Explicar què es pot mantenir de l'aplicació `R2` i què es refà quan es passa a un framework.
 - L'objectiu és construir una base real amb `2` fluxos, no migrar-ho tot.
 - La tria de stack s'ha de justificar amb avantatges concrets per al projecte.
+- El pas a framework és una professionalització del producte, no un reinici sense memòria.
+- El flux de `R2` ha de servir per decidir què entra primer en `R3`.
 
 ## Equivalències que han d'aparéixer
 
@@ -35,11 +30,13 @@ Crear una presentació teòrica curta per preparar `R3M1` i donar criteri comú 
 
 ## Format recomanat
 
-- 8-10 diapositives.
+- 12-14 diapositives.
 - Començar amb comparativa visual: `R2` en PHP base vs `R3` en framework.
 - Incloure mapa de responsabilitats.
 - Incloure taula d'equivalències entre `Laravel`, `Symfony` i `NestJS`.
 - Incloure exemple de flux: petició -> ruta -> controlador -> dades -> vista/resposta.
+- Incloure una diapositiva sobre "què aprofite de R2 i què refaig".
+- Incloure una diapositiva sobre errors de migració: copiar fitxers, no entendre carpetes, trencar el flux.
 - Incloure diapositiva de "què entra / què no entra".
 - Tancar amb checklist de `R3M1`.
 

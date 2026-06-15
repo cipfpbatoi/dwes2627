@@ -4,11 +4,6 @@
 
 Crear una presentació teòrica curta per preparar `R2M8`, introduint una classe simple, Composer, autoload i una primera prova unitària.
 
-## Referències existents
-
-- `docs/02_reptes/repte_02.md`
-- `dwes-restructuracio-modul/docs/01_programacio_modul/programacio_aula_r2s8_primera_peca_testable_poo_composer.md`
-- `dwes-microreptes-autocorreccio/microreptes/r2-s08-primera-peca-testable-poo-composer/`
 
 ## Idees clau
 
@@ -19,9 +14,49 @@ Crear una presentació teòrica curta per preparar `R2M8`, introduint una classe
 - La classe no ha de dependre directament de `$_POST`, `$_SESSION`, `$_COOKIE` ni HTML.
 - El mínim és classe, autoload i una prova automàtica; MVC, ORM i framework queden per a més endavant.
 
+## Exemples PHP que han d'aparéixer
+
+- Regla en funció o codi procedural abans de classe.
+- Classe simple amb mètode pur.
+- `composer.json` amb `autoload`.
+- Ús de `vendor/autoload.php`.
+- Test mínim que comprova dos casos.
+
+## Codi base per a diapositives
+
+```json
+{
+  "autoload": {
+    "psr-4": {
+      "App\\\\": "src/"
+    }
+  }
+}
+```
+
+```php
+namespace App;
+
+final class ReglaReserva
+{
+    public function potConfirmar(string $estat, bool $teConflicte): bool
+    {
+        return $estat === 'pendent' && !$teConflicte;
+    }
+}
+```
+
+```php
+require_once __DIR__ . '/../vendor/autoload.php';
+
+$regla = new App\ReglaReserva();
+assert($regla->potConfirmar('pendent', false) === true);
+assert($regla->potConfirmar('pendent', true) === false);
+```
+
 ## Format recomanat
 
-- 7-9 diapositives.
+- 9-11 diapositives.
 - Exemple breu d'una regla com a funció i després com a classe.
 - Diapositiva sobre `composer.json` i autoload.
 - Diapositiva sobre prova unitària mínima.

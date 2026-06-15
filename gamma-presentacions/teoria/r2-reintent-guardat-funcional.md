@@ -4,11 +4,6 @@
 
 Crear una presentació teòrica curta per preparar `R2M2`.
 
-## Referències existents
-
-- `docs/02_reptes/repte_02.md`
-- `dwes-restructuracio-modul/docs/01_programacio_modul/programacio_aula_r2s2_processament_reintent_conservacio_dades.md`
-- `dwes-microreptes-autocorreccio/microreptes/r2-s02-processament-reintent-conservacio-dades/`
 
 ## Idees clau
 
@@ -20,12 +15,39 @@ Crear una presentació teòrica curta per preparar `R2M2`.
 - El cas correcte pot guardar-se funcionalment amb un mecanisme simple i explicable.
 - Si es mostra text de l'usuari, cal tractar-lo o escapar-lo segons el nivell.
 
+## Exemples PHP que han d'aparéixer
+
+- Reomplir un `<input>` amb `value`.
+- Mantindre un `<select>` amb `selected`.
+- Mantindre un checkbox amb `checked`.
+- Guardar funcionalment el cas correcte en array, fitxer simple o estructura controlada segons el nivell.
+- Diferenciar "conservar per corregir" i "guardar com a dada correcta".
+
+## Codi base per a diapositives
+
+```php
+$nom = $_POST['nom'] ?? '';
+```
+
+```php
+<input name="nom" value="<?= htmlspecialchars($nom) ?>">
+```
+
+```php
+<option value="alta" <?= $tipus === 'alta' ? 'selected' : '' ?>>Alta</option>
+```
+
+```php
+<input type="checkbox" name="urgent" <?= $urgent ? 'checked' : '' ?>>
+```
+
 ## Format recomanat
 
-- 7-9 diapositives.
+- 9-11 diapositives.
 - Una diapositiva amb els dos camins: error/reintent i correcte/guardat.
 - Una diapositiva visual sobre `value`, `selected` i `checked`.
 - Una diapositiva comparant reintent, guardat funcional i persistència formal.
+- Una diapositiva amb exemple complet de reintent.
 - Una diapositiva d'errors habituals.
 - Una diapositiva final amb checklist de prova.
 

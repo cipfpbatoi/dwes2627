@@ -4,12 +4,6 @@
 
 Crear una presentació teòrica curta per preparar `R3M1`, centrada en arrancar el projecte de manera reproduïble amb Docker o entorn equivalent, configuració mínima i `.env.example`.
 
-## Referències existents
-
-- `docs/02_reptes/repte_03.md`
-- `docs/04_materials/repte_03/suport_tecnic.md`
-- `dwes-restructuracio-modul/docs/01_programacio_modul/programacio_aula_r3s1_arrencada_nou_projecte.md`
-- `dwes-microreptes-autocorreccio/microreptes/r3-s01-arrencada-nou-projecte/`
 
 ## Idees clau
 

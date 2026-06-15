@@ -4,11 +4,6 @@
 
 Crear una presentació teòrica curta per preparar `R2M7`.
 
-## Referències existents
-
-- `docs/02_reptes/repte_02.md`
-- `dwes-restructuracio-modul/docs/01_programacio_modul/programacio_aula_r2s7_proves_depuracio_checkpoint.md`
-- `dwes-microreptes-autocorreccio/microreptes/r2-s07-proves-depuracio-checkpoint/`
 
 ## Idees clau
 
@@ -22,9 +17,29 @@ Crear una presentació teòrica curta per preparar `R2M7`.
 - El README ha de permetre repetir la demo.
 - Les incidències bloquejants van abans que les millores.
 
+## Exemples pràctics que han d'aparéixer
+
+- Taula de prova amb entrada, passos, resultat esperat i resultat real.
+- `curl` per comprovar una ruta o API mínima.
+- Script `.sh` molt curt per repetir una prova.
+- Exemple d'incidència: "esperava 403, torna 200".
+- Exemple de checklist de regressió del flux de `R2`.
+
+## Codi base per a diapositives
+
+```bash
+curl -i http://localhost:8000/protegida
+```
+
+```bash
+#!/usr/bin/env bash
+set -e
+curl -s http://localhost:8000/health | grep OK
+```
+
 ## Format recomanat
 
-- 6-8 diapositives.
+- 8-10 diapositives.
 - Una taula de prova d'exemple.
 - Una diapositiva de casos mínims.
 - Una diapositiva amb una comanda `curl`.

@@ -4,12 +4,6 @@
 
 Crear una presentació teòrica curta per preparar `R3M5`, centrada en diferenciar autenticació i autorització, entendre middleware/guards/voters/policies i evitar proteccions només visuals.
 
-## Referències existents
-
-- `docs/02_reptes/repte_03.md`
-- `docs/04_materials/repte_03/microreptes.md`
-- `dwes-restructuracio-modul/docs/01_programacio_modul/programacio_aula_r3s5_autenticacio_autoritzacio_middleware.md`
-- `dwes-microreptes-autocorreccio/microreptes/r3-s05-autenticacio-autoritzacio-middleware/`
 
 ## Idees clau
 

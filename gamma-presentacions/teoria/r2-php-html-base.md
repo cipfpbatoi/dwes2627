@@ -2,7 +2,7 @@
 
 ## Objectiu
 
-Crear una presentació teòrica curta per a la sessió `R2S0`: introduir `PHP` com a llenguatge executat al servidor i mostrar com es pot barrejar de manera controlada amb `HTML` abans d'entrar en formularis, validació i estat.
+Crear una presentació teòrica de transició per a la sessió `R2S0`: introduir `PHP` com a llenguatge executat al servidor i mostrar com es pot barrejar de manera controlada amb `HTML` abans d'entrar en formularis, validació i estat. Pot ser més extensa perquè obri conceptes nous que l'alumnat usarà durant tot `R2`.
 
 ## Audiència
 
@@ -44,6 +44,14 @@ Alumnat que acaba `R1` amb un backend executable i un primer punt d'entrada, per
 7. Connexió amb `R2S1`
    - El pas següent serà rebre dades d'un formulari i validar-les al servidor.
 
+## Exemples PHP que han d'aparéixer
+
+- Variable dins d'HTML amb eixida escapada.
+- Condició que decideix un missatge.
+- `foreach` per pintar una llista d'opcions del projecte.
+- Separació mínima entre zona de càlcul i zona de presentació.
+- Exemple roí de barreja caòtica i versió millorada.
+
 ## Exemples visuals suggerits
 
 - Diagrama: navegador -> servidor PHP -> HTML final.
@@ -58,6 +66,16 @@ Alumnat que acaba `R1` amb un backend executable i un primer punt d'entrada, per
 $nom = 'Aina';
 ?>
 <h1>Benvinguda, <?= htmlspecialchars($nom) ?></h1>
+```
+
+```php
+<?php
+$estat = 'pendent';
+$classe = $estat === 'confirmada' ? 'ok' : 'avis';
+?>
+<p class="<?= htmlspecialchars($classe) ?>">
+  Estat: <?= htmlspecialchars($estat) ?>
+</p>
 ```
 
 ```php

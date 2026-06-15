@@ -4,11 +4,6 @@
 
 Crear una presentació teòrica curta per preparar `R2M3`, incloent funcions pròpies en un fitxer separat i ús bàsic de `require_once`, `include_once` o equivalent.
 
-## Referències existents
-
-- `docs/02_reptes/repte_02.md`
-- `dwes-restructuracio-modul/docs/01_programacio_modul/programacio_aula_r2s3_logica_flux_regles_projecte.md`
-- `dwes-microreptes-autocorreccio/microreptes/r2-s03-logica-flux-regles-projecte/`
 
 ## Idees clau
 
@@ -22,13 +17,49 @@ Crear una presentació teòrica curta per preparar `R2M3`, incloent funcions pr�
 - Dos casos de prova diferents són la manera mínima de demostrar que la regla funciona.
 - La lògica ha d'estar connectada a dades reals del flux, no a literals fixos.
 
+## Exemples PHP que han d'aparéixer
+
+- Regla escrita en llenguatge natural i traduïda a condició.
+- Array de prioritats, estats, tipus o recursos del projecte.
+- Funció simple que rep dades i retorna una decisió.
+- Fitxer `regles.php` carregat amb `require_once`.
+- Dos casos de prova amb resultat diferent.
+
+## Codi base per a diapositives
+
+```php
+$prioritats = [
+    'baixa' => 1,
+    'normal' => 2,
+    'alta' => 3,
+];
+```
+
+```php
+function potConfirmarReserva(string $estat, bool $teConflicte): bool
+{
+    return $estat === 'pendent' && !$teConflicte;
+}
+```
+
+```php
+require_once __DIR__ . '/../src/regles.php';
+
+if (potConfirmarReserva($estat, $teConflicte)) {
+    $missatge = 'Reserva confirmable';
+} else {
+    $missatge = 'Cal revisar la reserva';
+}
+```
+
 ## Format recomanat
 
-- 7-9 diapositives.
+- 9-11 diapositives.
 - Una diapositiva de regla en llenguatge natural -> condició.
 - Una diapositiva d'exemple d'array de domini.
 - Una diapositiva d'exemple de fitxer `regles.php` o equivalent.
 - Una diapositiva d'exemple de funció útil importada amb `require_once`.
+- Una diapositiva amb exemples per inventari, reserves i incidències.
 - Una diapositiva amb dos casos de prova.
 - Una diapositiva d'errors habituals.
 - Una diapositiva final amb preguntes de comprovació.

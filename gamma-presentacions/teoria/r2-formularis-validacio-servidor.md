@@ -4,11 +4,6 @@
 
 Crear una presentació teòrica curta per preparar `R2M1`.
 
-## Referències existents
-
-- `docs/02_reptes/repte_02.md`
-- `dwes-restructuracio-modul/docs/01_programacio_modul/programacio_aula_r2s1_entrada_variada_validacio_servidor.md`
-- `dwes-microreptes-autocorreccio/microreptes/r2-s01-entrada-validacio-basica/`
 
 ## Idees clau
 
@@ -21,12 +16,41 @@ Crear una presentació teòrica curta per preparar `R2M1`.
 - No confiar en el client: la validació real s'ha de fer en servidor.
 - Una condició simple pot bloquejar un cas incorrecte i mostrar un error útil.
 
+## Exemples PHP que han d'aparéixer
+
+- Formulari `POST` amb text, opció tancada i checkbox.
+- Lectura segura amb `$_POST['camp'] ?? ''`.
+- Checkbox no marcat que no arriba en `$_POST`.
+- Validació de servidor amb variable `$error`.
+- Resposta amb error visible i eixida escapada amb `htmlspecialchars`.
+
+## Codi base per a diapositives
+
+```php
+$nom = trim($_POST['nom'] ?? '');
+$tipus = $_POST['tipus'] ?? '';
+$urgent = isset($_POST['urgent']);
+
+$error = '';
+if ($nom === '') {
+    $error = 'El nom és obligatori';
+}
+```
+
+```php
+<?php if ($error !== ''): ?>
+  <p class="error"><?= htmlspecialchars($error) ?></p>
+<?php endif; ?>
+```
+
 ## Format recomanat
 
-- 7-9 diapositives.
+- 9-11 diapositives.
 - Una diapositiva amb mapa petició -> servidor -> resposta.
 - Una diapositiva comparant text, opció tancada i checkbox.
 - Una diapositiva amb exemple curt de validació de servidor.
+- Una diapositiva amb "què arriba a `$_POST`".
+- Una diapositiva amb checkbox marcat/no marcat.
 - Una diapositiva d'errors habituals.
 - Una diapositiva final amb preguntes de comprovació.
 

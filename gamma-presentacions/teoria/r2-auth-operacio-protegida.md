@@ -4,11 +4,6 @@
 
 Crear una presentació teòrica curta per preparar `R2M5`, incloent registre mínim, hash de contrasenya, login i operació protegida.
 
-## Referències existents
-
-- `docs/02_reptes/repte_02.md`
-- `dwes-restructuracio-modul/docs/01_programacio_modul/programacio_aula_r2s5_autenticacio_funcionalitat_protegida.md`
-- `dwes-microreptes-autocorreccio/microreptes/r2-s05-autenticacio-funcionalitat-protegida/`
 
 ## Idees clau
 
@@ -25,9 +20,37 @@ Crear una presentació teòrica curta per preparar `R2M5`, incloent registre mí
 - Una operació protegida ha de tindre valor dins del producte.
 - Cal provar cas permés, cas denegat i logout.
 
+## Exemples PHP que han d'aparéixer
+
+- Registre mínim amb `password_hash`.
+- Login amb `password_verify`.
+- Guardar només identificador mínim d'usuari en sessió.
+- Funció `requereixLogin()` o comprovació equivalent.
+- Cas denegat abans de mostrar o executar una operació.
+- Logout amb `session_destroy()` o invalidació equivalent.
+
+## Codi base per a diapositives
+
+```php
+$hash = password_hash($password, PASSWORD_DEFAULT);
+```
+
+```php
+if (password_verify($password, $usuari['password_hash'])) {
+    $_SESSION['user_id'] = $usuari['id'];
+}
+```
+
+```php
+if (!isset($_SESSION['user_id'])) {
+    http_response_code(403);
+    exit('Accés denegat');
+}
+```
+
 ## Format recomanat
 
-- 7-9 diapositives.
+- 9-11 diapositives.
 - Esquema identificació -> autenticació -> autorització.
 - Diapositiva sobre registre i hash de contrasenya.
 - Diapositiva amb operació protegida real.

@@ -16,6 +16,8 @@ Alumnat que ja sap executar PHP, rebre dades de formulari, validar-les i mantind
 - Els secrets no han d'anar al repositori.
 - `PDO` permet connectar i executar consultes de manera controlada.
 - Les consultes preparades són obligatòries quan entren dades d'usuari.
+- Les dades que arriben a BBDD han d'haver passat abans per validació.
+- Mostrar dades recuperades també exigeix escapar l'eixida HTML.
 
 ## Estructura suggerida
 
@@ -68,6 +70,34 @@ Alumnat que ja sap executar PHP, rebre dades de formulari, validar-les i mantind
    - Què serà un seeder.
    - Què aportarà un ORM.
    - Per què és útil haver vist abans el SQL real.
+
+## Exemples PHP que han d'aparéixer
+
+- Connexió `PDO` amb mode d'errors.
+- `INSERT` amb `prepare` i `execute`.
+- `SELECT` amb `fetchAll`.
+- Eixida HTML amb `htmlspecialchars`.
+- `.env.example` o configuració sense secrets reals.
+
+## Codi base per a diapositives
+
+```php
+$pdo = new PDO($dsn, $user, $password, [
+    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+]);
+```
+
+```php
+$stmt = $pdo->prepare('INSERT INTO reserves (nom, estat) VALUES (:nom, :estat)');
+$stmt->execute([
+    'nom' => $nom,
+    'estat' => 'pendent',
+]);
+```
+
+```php
+$reserves = $pdo->query('SELECT nom, estat FROM reserves')->fetchAll(PDO::FETCH_ASSOC);
+```
 
 ## Exemple de narrativa
 

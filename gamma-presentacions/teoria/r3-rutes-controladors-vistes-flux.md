@@ -4,14 +4,6 @@
 
 Crear una presentació teòrica curta per preparar `R3M3` i `R3M4`, explicant com una petició recorre el framework fins a generar una resposta visible amb dades reals.
 
-## Referències existents
-
-- `docs/02_reptes/repte_03.md`
-- `docs/04_materials/repte_03/suport_tecnic.md`
-- `dwes-restructuracio-modul/docs/01_programacio_modul/programacio_aula_r3s3_primer_cas_us_complet.md`
-- `dwes-restructuracio-modul/docs/01_programacio_modul/programacio_aula_r3s4_segon_cas_us_ampliacio_funcional.md`
-- `dwes-microreptes-autocorreccio/microreptes/r3-s03-primer-cas-us-complet/`
-- `dwes-microreptes-autocorreccio/microreptes/r3-s04-segon-cas-us-ampliacio-funcional/`
 
 ## Idees clau
 

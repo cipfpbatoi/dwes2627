@@ -4,11 +4,6 @@
 
 Crear una presentació teòrica curta per preparar `R2M4`, incloent sessió, cookie, `$_SERVER` i base comuna d'includes.
 
-## Referències existents
-
-- `docs/02_reptes/repte_02.md`
-- `dwes-restructuracio-modul/docs/01_programacio_modul/programacio_aula_r2s4_estat_sessio_cookies.md`
-- `dwes-microreptes-autocorreccio/microreptes/r2-s04-estat-sessio-cookies/`
 
 ## Idees clau
 
@@ -23,9 +18,39 @@ Crear una presentació teòrica curta per preparar `R2M4`, incloent sessió, coo
 - Estat temporal no és persistència del domini.
 - Cal invalidar o netejar quan la dada deixa de tindre sentit.
 
+## Exemples PHP que han d'aparéixer
+
+- `session_start()` abans d'usar `$_SESSION`.
+- Guardar una dada temporal no sensible en sessió.
+- Llegir la dada en una petició posterior.
+- Crear una cookie de preferència no sensible.
+- Llegir `$_SERVER['REQUEST_METHOD']`.
+- Definir una ruta base per a includes.
+- Netejar o invalidar la dada temporal.
+
+## Codi base per a diapositives
+
+```php
+session_start();
+$_SESSION['usuari_demo'] = 'aina';
+```
+
+```php
+$metode = $_SERVER['REQUEST_METHOD'] ?? 'GET';
+```
+
+```php
+setcookie('tema', 'clar', time() + 3600, '/');
+```
+
+```php
+define('BASE_PATH', dirname(__DIR__));
+require_once BASE_PATH . '/src/regles.php';
+```
+
 ## Format recomanat
 
-- 7-9 diapositives.
+- 9-11 diapositives.
 - Mapa client -> cookie -> servidor -> sessió -> `$_SERVER`.
 - Exemple d'una dada temporal en sessió.
 - Exemple de cookie no sensible.

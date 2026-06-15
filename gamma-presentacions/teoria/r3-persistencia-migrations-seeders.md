@@ -4,12 +4,6 @@
 
 Crear una presentació teòrica curta per preparar `R3M2`, introduint BBDD real, migracions o mecanisme equivalent, fixtures/seeders o script equivalent i recuperació d'un conjunt de dades que alimente un flux funcional.
 
-## Referències existents
-
-- `docs/02_reptes/repte_03.md`
-- `docs/04_materials/repte_03/suport_tecnic.md`
-- `dwes-restructuracio-modul/docs/01_programacio_modul/programacio_aula_r3s2_persistencia_minima_migrations_seeders.md`
-- `dwes-microreptes-autocorreccio/microreptes/r3-s02-persistencia-minima-migrations-seeders/`
 
 ## Idees clau
 
