@@ -54,3 +54,11 @@ curl -s http://localhost:8000/health | grep OK
 - `PHPUnit` com a mínim.
 - Refactorització encara.
 - Funcionalitats noves.
+
+## Preguntes de comprovació
+
+- Quin resultat esperaves i quin resultat real has obtingut?
+- Quin cas incorrecte pots repetir sempre?
+- Quina prova automàtica lleugera pots executar sense obrir el navegador?
+- Quina incidència has detectat o descartat?
+- El README permet a una altra persona repetir la prova?

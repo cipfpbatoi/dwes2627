@@ -53,3 +53,11 @@ Crear una presentació teòrica de transició per obrir el curs i preparar `R1M1
 - Persistència avançada.
 - Autenticació.
 - Codi extens.
+
+## Preguntes de comprovació
+
+- Què fa el navegador i què fa el servidor en una petició normal?
+- Per què una resposta generada pel backend pot ser diferent cada vegada?
+- Quina regla del teu projecte necessitarà executar-se en servidor?
+- Quina diferència hi ha entre HTML estàtic i HTML generat pel backend?
+- Quina evidència demostraria que el teu backend respon de veritat?

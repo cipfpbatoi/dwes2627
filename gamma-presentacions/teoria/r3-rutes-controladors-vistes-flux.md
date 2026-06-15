@@ -30,3 +30,11 @@ Crear una presentació teòrica curta per preparar `R3M3` i `R3M4`, explicant co
 - Contracte d'API com a focus principal.
 - Frontend client complex.
 - Arquitectura hexagonal o patrons avançats com a requisit.
+
+## Preguntes de comprovació
+
+- Quina ruta inicia el flux i quina resposta final genera?
+- Què fa el controlador i què no hauria de concentrar?
+- D'on venen les dades reals que es mostren?
+- Quin flux heretat de `R2` queda reconstruït en framework?
+- Quin error o validació pots demostrar en el flux?

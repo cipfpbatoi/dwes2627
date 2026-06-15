@@ -65,3 +65,11 @@ require_once BASE_PATH . '/src/regles.php';
 - Autorització.
 - Persistència formal.
 - Arquitectura MVC.
+
+## Preguntes de comprovació
+
+- Quina dada del teu flux és temporal i pot anar en sessió?
+- Quina dada no hauria d'anar mai en una cookie?
+- Quina diferència hi ha entre cookie i sessió?
+- Què aporta `$_SERVER` i què no pot demostrar?
+- Com neteges o invalides l'estat quan deixa de tindre sentit?

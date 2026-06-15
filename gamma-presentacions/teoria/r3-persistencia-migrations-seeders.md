@@ -39,3 +39,11 @@ Crear una presentació teòrica curta per preparar `R3M2`, introduint BBDD real,
 - Relacions complexes obligatòries.
 - Optimització de consultes.
 - API o serialització avançada.
+
+## Preguntes de comprovació
+
+- Quina estructura crea la migració o mecanisme equivalent?
+- Quines dades inicials carregues i per què són útils?
+- Pots reconstruir BBDD i dades des de zero?
+- Quin flux usa realment les dades carregades?
+- Quina diferència hi ha entre dades manuals i dades reproduïbles?

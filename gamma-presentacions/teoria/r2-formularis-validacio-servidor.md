@@ -61,3 +61,11 @@ if ($nom === '') {
 - Sessió, cookies o login.
 - Base de dades.
 - Solució completa del microrepte.
+
+## Preguntes de comprovació
+
+- Quines dades arriben a `$_POST` quan envies el formulari?
+- Què passa amb un checkbox si no està marcat?
+- Quina validació està realment en servidor i no només en el navegador?
+- Quin missatge veu l'usuari quan la dada no és vàlida?
+- Com demostraries el cas incorrecte i el reenviament corregit?

@@ -87,3 +87,11 @@ $token = str_starts_with($auth, 'Bearer ') ? substr($auth, 7) : '';
 ## To visual
 
 Curt, amb exemples de petició/resposta i codis HTTP. Evitar aprofundir en estàndards d'API que encara no entren.
+
+## Preguntes de comprovació
+
+- Quina diferència hi ha entre tornar HTML i tornar `JSON`?
+- Quin codi HTTP retorna el login correcte i quin retorna el cas incorrecte?
+- Què ha de contindre el contracte perquè DWEC puga consumir la mini API?
+- On es comprova el token o mecanisme equivalent?
+- Quina informació no ha d'aparéixer mai en la resposta?

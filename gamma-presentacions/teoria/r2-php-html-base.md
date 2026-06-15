@@ -103,3 +103,11 @@ $opcions = ['alta', 'consulta', 'modificacio'];
 - Fer una classe completa de seguretat.
 - Introduir plantilles avançades o frameworks.
 - Presentar `PHP` com si fóra només decoració dins d'HTML.
+
+## Preguntes de comprovació
+
+- Quin codi s'executa en el servidor i quin resultat rep el navegador?
+- Per què convé separar càlcul i presentació encara que estiguen en el mateix fitxer?
+- Quan has d'usar `htmlspecialchars`?
+- Quin exemple del teu projecte podria generar una resposta dinàmica amb PHP?
+- Què canviarà quan afegim formularis en `R2S1`?

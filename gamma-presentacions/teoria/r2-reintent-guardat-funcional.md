@@ -58,3 +58,11 @@ $nom = $_POST['nom'] ?? '';
 - MVC o arquitectura completa.
 - Arrays d'errors com a mínim.
 - Solució completa del microrepte.
+
+## Preguntes de comprovació
+
+- Quina diferència hi ha entre conservar dades per reintentar i guardar una dada correcta?
+- Quin camp del formulari pots repintar amb `value`?
+- Quan uses `selected` i quan uses `checked`?
+- Què no s'ha de guardar si el formulari encara té error?
+- On es pot veure després la dada correcta guardada funcionalment?

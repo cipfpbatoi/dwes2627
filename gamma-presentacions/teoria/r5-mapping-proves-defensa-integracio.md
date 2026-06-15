@@ -27,3 +27,11 @@ Crear una presentació teòrica curta per donar suport a `R5M3`, `R5M4` i `R5M5`
 - Reduir mapping a canviar noms de camps sense criteri.
 - Obrir funcionalitats grans en la sessió de tancament.
 - Fer una defensa basada en una narració inventada després amb IA.
+
+## Preguntes de comprovació
+
+- Quina dada externa es transforma en dada útil del teu domini?
+- Què descartes, normalitzes o enriquixes en el mapping?
+- On apareix la integració dins del producte final?
+- Quin cas d'error pots demostrar?
+- Pots defensar contracte, mapping, valor i límits sense llegir el README?

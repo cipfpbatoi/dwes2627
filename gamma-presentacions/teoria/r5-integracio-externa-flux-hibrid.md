@@ -46,3 +46,11 @@ Crear una presentació teòrica de transició per passar de l'API pròpia de `R4
 - Fer teoria extensa de totes les APIs possibles.
 - Presentar una tecnologia concreta com a única via.
 - Oblidar el risc de secrets exposats.
+
+## Preguntes de comprovació
+
+- Quin valor aporta la font externa al teu producte?
+- Quina dada ix del teu sistema i quina dada entra?
+- On està la frontera entre backend propi i servei extern?
+- Què passa si falta la credencial o el servei no respon?
+- Quin primer cas positiu pots provar de manera reproduïble?

@@ -46,3 +46,11 @@ Crear una presentació teòrica de transició per passar de l'aplicació persist
 - Entrar en REST avançat com a teoria pesada.
 - Convertir OpenAPI en requisit obligatori.
 - Separar el contracte del producte real.
+
+## Preguntes de comprovació
+
+- Quin recurs real del projecte exposa l'endpoint?
+- Quin mètode, URL, request i response formen el contracte?
+- Quin codi HTTP correspon al cas correcte?
+- Quins errors has previst abans de programar?
+- Una altra persona podria consumir l'endpoint sense llegir el codi?

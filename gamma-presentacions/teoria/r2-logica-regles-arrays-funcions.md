@@ -71,3 +71,11 @@ if (potConfirmarReserva($estat, $teConflicte)) {
 - Persistència formal.
 - Refactorització general.
 - Solució completa del microrepte.
+
+## Preguntes de comprovació
+
+- Quina regla real del teu projecte pots escriure en llenguatge natural?
+- Quina dada del formulari o del flux alimenta eixa regla?
+- Quin array representa informació del domini i no només un exemple solt?
+- Què rep i què retorna la funció que has creat?
+- Quins dos casos produeixen resultats visibles diferents?

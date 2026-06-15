@@ -27,3 +27,11 @@ Crear una presentació teòrica curta per preparar `R4M3`, `R4M4` i `R4M5`: cont
 - Exigir seguretat de producció.
 - Repetir login web de `R2` com si fora el centre.
 - Fer documentació bonica però no executable.
+
+## Preguntes de comprovació
+
+- Quina credencial o capçalera necessita el consumidor?
+- Quina petició demostra el cas autoritzat?
+- Quina petició demostra el cas denegat?
+- On està documentat perquè una altra persona puga repetir-ho?
+- La resposta real coincideix amb el contracte escrit?

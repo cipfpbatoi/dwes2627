@@ -39,3 +39,11 @@ Crear una presentació teòrica curta per preparar `R3M6` i `R3M7`, centrada en 
 - Desplegament.
 - Observabilitat avançada.
 - Suite completa de proves com a requisit mínim.
+
+## Preguntes de comprovació
+
+- Els dos fluxos principals continuen funcionant després dels canvis?
+- Pots reconstruir BBDD i dades inicials?
+- Quin cas negatiu o error controlat has provat?
+- El README permet arrancar, carregar dades i executar els fluxos?
+- Què queda pendent per a `R4` i què queda fora?

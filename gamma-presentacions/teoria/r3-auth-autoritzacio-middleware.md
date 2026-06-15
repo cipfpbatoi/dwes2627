@@ -40,3 +40,11 @@ Crear una presentació teòrica curta per preparar `R3M5`, centrada en diferenci
 - JWT avançat.
 - Sistema complet de rols.
 - API completa de `R4`.
+
+## Preguntes de comprovació
+
+- Qui és l'usuari autenticat en el teu projecte?
+- Quina acció queda protegida en servidor?
+- Quin mecanisme usa el teu stack: middleware, guard, voter, policy o equivalent?
+- Com proves el cas autoritzat i el cas denegat?
+- Per què ocultar un botó no és suficient?

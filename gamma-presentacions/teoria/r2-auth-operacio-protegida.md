@@ -65,3 +65,11 @@ if (!isset($_SESSION['user_id'])) {
 - Registre públic complet o recuperació de contrasenya.
 - Base de dades obligatòria.
 - Arquitectura completa.
+
+## Preguntes de comprovació
+
+- Quina diferència hi ha entre autenticar i autoritzar?
+- On es guarda el hash i on es comprova la contrasenya?
+- Quina operació real del teu projecte queda protegida?
+- Què passa si una persona no autenticada intenta executar-la?
+- Com demostres logout o invalidació de sessió?

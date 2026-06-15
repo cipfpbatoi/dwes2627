@@ -45,3 +45,11 @@ Crear una presentació teòrica de transició per preparar `R3M1` i donar criter
 - Tutorial complet de Laravel, Symfony o NestJS.
 - ORM, migracions o dades inicials en profunditat; això va en una teoria específica.
 - API com a objectiu de `R3`; pertany a `R4`.
+
+## Preguntes de comprovació
+
+- Quin flux de `R2` continuarà viu en `R3`?
+- Què canvia quan passes de PHP base a framework?
+- On viu una ruta, un controlador, una vista/resposta i una regla?
+- Què no convé copiar directament de `R2`?
+- Com justificaries el framework triat per al teu projecte?

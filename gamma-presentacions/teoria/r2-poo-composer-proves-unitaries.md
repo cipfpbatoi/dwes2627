@@ -71,3 +71,11 @@ assert($regla->potConfirmar('pendent', true) === false);
 - Migració a framework.
 - Reescriptura total.
 - Consum d'API externa com a mínim obligatori.
+
+## Preguntes de comprovació
+
+- Quina regla del flux has tret a una classe simple?
+- Per què la classe no ha de dependre directament de `$_POST` o HTML?
+- Què aporta Composer/autoload en este punt?
+- Quin test mínim comprova la classe?
+- Com demostres que el flux web continua funcionant després del canvi?

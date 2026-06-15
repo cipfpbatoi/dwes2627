@@ -106,3 +106,11 @@ $reserves = $pdo->query('SELECT nom, estat FROM reserves')->fetchAll(PDO::FETCH_
 ## To visual
 
 Clar, pràctic i amb fragments de codi curts. Prioritzar diagrames de flux i taules simples. Evitar una classe magistral de SQL completa.
+
+## Preguntes de comprovació
+
+- Quina dada del teu projecte mereix persistir en BBDD?
+- Per què sessió o cookie no són suficients per a eixa dada?
+- On està separada la connexió a BBDD?
+- Per què uses `prepare` i `execute` quan entren dades d'usuari?
+- Com comproves una alta i una lectura reproduïbles?

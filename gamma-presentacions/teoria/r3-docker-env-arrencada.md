@@ -29,3 +29,11 @@ Crear una presentació teòrica curta per preparar `R3M1`, centrada en arrancar 
 - Desplegament.
 - Seguretat avançada de secrets.
 - Optimització de contenidors.
+
+## Preguntes de comprovació
+
+- Quina comanda arranca el projecte en una màquina neta?
+- Quines variables han d'aparéixer en `.env.example`?
+- Quina ruta mínima demostra que el framework respon?
+- Què fas si falta una variable d'entorn?
+- Quina evidència deixa clar que l'arrencada és reproduïble?
