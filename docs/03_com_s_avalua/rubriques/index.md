@@ -18,6 +18,20 @@ Cada guia està alineada amb l'autocorrecció corresponent i mostra:
 | `R1M1` | [Model client/servidor i elecció guiada de stack](r1m1.md) | `r1-s01-model-client-servidor-stack` |
 | `R1M2` | [Entorn executable, punt d'entrada i tancament de R1](r1m2.md) | `r1-s02-entorn-executable` |
 
+## Repte 2
+
+| Microrepte | Guia | Autocorrecció |
+|---|---|---|
+| `R2M1` | [Entrada de dades i validació bàsica](r2m1.md) | `r2-s01-entrada-validacio-basica` |
+| `R2M2` | [Processament, reintent i guardat funcional](r2m2.md) | `r2-s02-processament-reintent-conservacio-dades` |
+| `R2M3` | [Lògica del flux i regles del projecte](r2m3.md) | `r2-s03-logica-flux-regles-projecte` |
+| `R2M4` | [Estat, sessió i cookies](r2m4.md) | `r2-s04-estat-sessio-cookies` |
+| `R2M5` | [Autenticació i funcionalitat protegida](r2m5.md) | `r2-s05-autenticacio-funcionalitat-protegida` |
+| `R2M6` | [Mini API d'autenticació per a client](r2m6.md) | `r2-s06-mini-api-autenticacio-client` |
+| `R2M7` | [Proves, depuració i checkpoint tècnic](r2m7.md) | `r2-s07-proves-depuracio-checkpoint` |
+| `R2M8` | [Primera peça testable amb POO i Composer](r2m8.md) | `r2-s08-primera-peca-testable-poo-composer` |
+| `R2M9` | [Persistència mínima amb BBDD en PHP](r2m9.md) | `r2-s09-persistencia-minima-bbdd-php` |
+
 ## Repte 3
 
 | Microrepte | Guia | Autocorrecció |
