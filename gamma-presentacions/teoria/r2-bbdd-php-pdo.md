@@ -103,6 +103,13 @@ $reserves = $pdo->query('SELECT nom, estat FROM reserves')->fetchAll(PDO::FETCH_
 
 “Primer guardàvem una dada perquè el flux tinguera sentit. Ara comprovem si eixa dada mereix existir més enllà de la petició i de la sessió. Si mereix existir, necessita una BBDD.”
 
+## Format recomanat
+
+- 10-12 diapositives.
+- Diagrames de flux i taules simples.
+- Fragments de codi curts, llegibles i connectats amb `R2M9`.
+- Una diapositiva final amb preguntes de comprovació.
+
 ## To visual
 
 Clar, pràctic i amb fragments de codi curts. Prioritzar diagrames de flux i taules simples. Evitar una classe magistral de SQL completa.

@@ -32,6 +32,7 @@ Crear una presentació teòrica curta per preparar `R3M5`, centrada en diferenci
 - Taula d'equivalències entre stacks.
 - Checklist de prova: sense autenticar, autoritzat, denegat, logout.
 - Errors habituals.
+- Una diapositiva final amb preguntes de comprovació.
 
 ## No incloure
 

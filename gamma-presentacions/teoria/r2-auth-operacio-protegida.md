@@ -57,6 +57,7 @@ if (!isset($_SESSION['user_id'])) {
 - Diapositiva de casos de prova.
 - Errors habituals.
 - Checklist final.
+- Una diapositiva final amb preguntes de comprovació.
 
 ## No incloure
 

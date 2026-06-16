@@ -59,6 +59,13 @@ Alumnat que acaba `R1` amb un backend executable i un primer punt d'entrada, per
 - Tres targetes de codi: variable, condició i `foreach`.
 - Mini avís visual: no exposar dades sense escapar.
 
+## Format recomanat
+
+- 10-12 diapositives.
+- Diagrama inicial del flux navegador -> servidor PHP -> HTML final.
+- Exemples curts de variable, condició i `foreach`.
+- Una diapositiva final amb preguntes de comprovació.
+
 ## Codi base per a diapositives
 
 ```php

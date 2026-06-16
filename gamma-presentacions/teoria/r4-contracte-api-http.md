@@ -40,6 +40,7 @@ Crear una presentació teòrica de transició per passar de l'aplicació persist
 - Taula amb mètode, URL, entrada, resposta i errors.
 - Diapositiva de codis HTTP més habituals.
 - Diapositiva d'errors habituals.
+- Una diapositiva final amb preguntes de comprovació.
 
 ## Evitar
 

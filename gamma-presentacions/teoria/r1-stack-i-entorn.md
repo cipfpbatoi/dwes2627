@@ -82,6 +82,7 @@ Incloure 2-3 diapositives específiques per comparar opcions sense presentar-les
 - Una diapositiva amb exemple de README d'arrencada.
 - Una diapositiva amb exemple de `docker compose up` o comanda equivalent.
 - Una diapositiva d'errors habituals.
+- Una diapositiva final amb preguntes de comprovació.
 
 ## No incloure
 

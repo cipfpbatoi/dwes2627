@@ -22,6 +22,13 @@ Crear una presentació teòrica curta per donar suport a `R5M3`, `R5M4` i `R5M5`
 6. Documentació final i mapa del flux.
 7. Preguntes típiques de defensa.
 
+## Format recomanat
+
+- 8-10 diapositives.
+- Taula de mapping amb origen, transformació, camp intern i ús.
+- Exemples de cas correcte i cas d'error.
+- Una diapositiva final amb preguntes de comprovació.
+
 ## Evitar
 
 - Reduir mapping a canviar noms de camps sense criteri.

@@ -39,6 +39,7 @@ Crear una presentació teòrica de transició per preparar `R3M1` i donar criter
 - Incloure una diapositiva sobre errors de migració: copiar fitxers, no entendre carpetes, trencar el flux.
 - Incloure diapositiva de "què entra / què no entra".
 - Tancar amb checklist de `R3M1`.
+- Una diapositiva final amb preguntes de comprovació.
 
 ## No incloure
 

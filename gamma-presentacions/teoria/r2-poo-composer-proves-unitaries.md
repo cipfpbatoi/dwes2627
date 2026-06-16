@@ -63,6 +63,7 @@ assert($regla->potConfirmar('pendent', true) === false);
 - Diapositiva sobre no regressió del flux.
 - Errors habituals.
 - Checklist final.
+- Una diapositiva final amb preguntes de comprovació.
 
 ## No incloure
 

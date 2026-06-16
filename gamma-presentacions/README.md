@@ -66,6 +66,22 @@ Exemples:
 - sessió, cookies i estat abans d'autenticació;
 - autenticació i autorització abans de funcionalitat protegida.
 
+### Presentació de microtaller
+
+Una presentació curta per a cada microtaller de suport dins d'un repte.
+
+Ha d'incloure:
+
+- codi del microtaller, per exemple `MT08`;
+- moment recomanat, per exemple `R3S2`;
+- objectiu de desbloqueig tècnic;
+- missatge clau;
+- estructura de `6` diapositives aproximadament;
+- evidència mínima que ha de quedar al repositori;
+- què queda fora del taller.
+
+Els microtallers no són microreptes nous ni notes separades. Han de servir per reforçar una decisió tècnica i acabar amb una evidència menuda.
+
 ## Regles d'alineació
 
 Abans de generar o actualitzar una presentació, revisa:
@@ -101,6 +117,9 @@ gamma-presentacions/
     r2m2.md
   teoria/
     r2m2-reintent-i-guardat.md
+  tallers/
+    mt01_projecte_no_crud.md
+    mt02_readme_commit_defensable.md
 ```
 
 Els fitxers poden ser prompts, guions o briefs per a Gamma. No han de generar-se dins de `docs/` llevat que es decidisca publicar una versió final per a l'alumnat.

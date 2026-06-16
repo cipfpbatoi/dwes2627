@@ -22,6 +22,13 @@ Crear una presentació teòrica curta per preparar `R4M3`, `R4M4` i `R4M5`: cont
 6. Registre d'incidències i correccions.
 7. Pas cap a `R5`.
 
+## Format recomanat
+
+- 8-10 diapositives.
+- Diagrama de protecció i consum d'API.
+- Exemples de petició autoritzada i denegada.
+- Una diapositiva final amb preguntes de comprovació.
+
 ## Evitar
 
 - Exigir seguretat de producció.

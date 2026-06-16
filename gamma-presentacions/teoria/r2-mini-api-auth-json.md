@@ -84,6 +84,13 @@ $token = str_starts_with($auth, 'Bearer ') ? substr($auth, 7) : '';
 
 “El client no necessita veure una pantalla de login del servidor. Necessita enviar credencials i rebre una resposta que puga interpretar.”
 
+## Format recomanat
+
+- 8-10 diapositives.
+- Exemples de petició i resposta amb `JSON`.
+- Codis HTTP visibles en els casos correcte i incorrecte.
+- Una diapositiva final amb preguntes de comprovació.
+
 ## To visual
 
 Curt, amb exemples de petició/resposta i codis HTTP. Evitar aprofundir en estàndards d'API que encara no entren.

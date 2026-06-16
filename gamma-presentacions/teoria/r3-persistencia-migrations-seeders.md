@@ -32,6 +32,7 @@ Crear una presentació teòrica curta per preparar `R3M2`, introduint BBDD real,
 - Comparar dades manuals, arrays i BBDD real.
 - Incloure checklist de reset i càrrega.
 - Errors habituals.
+- Una diapositiva final amb preguntes de comprovació.
 
 ## No incloure
 

@@ -40,6 +40,7 @@ Crear una presentació teòrica de transició per passar de l'API pròpia de `R4
 - Taula de valor: necessitat, font, dada, ús, risc.
 - Diapositiva de secrets i configuració.
 - Diapositiva d'errors habituals.
+- Una diapositiva final amb preguntes de comprovació.
 
 ## Evitar
 

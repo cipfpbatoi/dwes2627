@@ -22,6 +22,7 @@ Crear una presentació teòrica curta per preparar `R3M1`, centrada en arrancar 
 - Exemple de checklist d'arrencada.
 - Errors habituals i com detectar-los.
 - Tancament amb evidències de `R3M1`.
+- Una diapositiva final amb preguntes de comprovació.
 
 ## No incloure
 

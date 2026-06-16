@@ -50,6 +50,7 @@ $nom = $_POST['nom'] ?? '';
 - Una diapositiva amb exemple complet de reintent.
 - Una diapositiva d'errors habituals.
 - Una diapositiva final amb checklist de prova.
+- Una diapositiva final amb preguntes de comprovació.
 
 ## No incloure
 

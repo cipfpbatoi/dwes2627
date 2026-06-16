@@ -57,7 +57,7 @@ require_once BASE_PATH . '/src/regles.php';
 - Exemple de `BASE_PATH` i `require_once`.
 - Exemple d'invalidació.
 - Errors habituals.
-- Preguntes finals de comprovació.
+- Una diapositiva final amb preguntes de comprovació.
 
 ## No incloure
 

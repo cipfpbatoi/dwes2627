@@ -24,6 +24,7 @@ Crear una presentació teòrica curta per preparar `R3M3` i `R3M4`, explicant co
 - Diapositiva sobre primer flux heretat de `R2`.
 - Diapositiva sobre segon flux o ampliació funcional.
 - Errors habituals.
+- Una diapositiva final amb preguntes de comprovació.
 
 ## No incloure
 

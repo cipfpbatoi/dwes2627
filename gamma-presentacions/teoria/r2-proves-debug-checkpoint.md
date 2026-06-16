@@ -47,6 +47,7 @@ curl -s http://localhost:8000/health | grep OK
 - Una diapositiva de depuració ordenada.
 - Errors habituals.
 - Checklist final.
+- Una diapositiva final amb preguntes de comprovació.
 
 ## No incloure
 

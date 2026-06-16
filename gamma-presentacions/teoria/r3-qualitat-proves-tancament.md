@@ -32,6 +32,7 @@ Crear una presentació teòrica curta per preparar `R3M6` i `R3M7`, centrada en 
 - Diapositiva de decisions tècniques.
 - Diapositiva de backlog cap a `R4`.
 - Errors habituals.
+- Una diapositiva final amb preguntes de comprovació.
 
 ## No incloure
 
