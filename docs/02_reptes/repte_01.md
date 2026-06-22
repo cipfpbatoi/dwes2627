@@ -104,10 +104,8 @@ En este microrepte no es tracta encara d’instal·lar el framework complet, sin
 
 **Materials de suport**
 
-- [Arquitectura web bàsica](../recursos/Repte1/Arquitectura-web-basica.pdf)
-- [Client-servidor](../recursos/Repte1/Client-Servidor.pdf)
-- [Què és el backend](../recursos/Repte1/Que-es-el-backend.pdf)
-- [Llenguatges, frameworks i full stack](../recursos/Repte1/Llenguatges-frameworks-i-full-stack.pdf)
+- [R1M1. Model client-servidor i elecció guiada de stack](../recursos/Repte1/R1M1-Model-clientservidor-i-eleccio-guiada-de-stack.pdf)
+- [R1. Kickoff backend i base executable](../recursos/Repte1/R1-Kickoff-backend-i-base-executable.pdf)
 
 **Criteris d’avaluació que es treballen**
 
@@ -167,10 +165,8 @@ La prioritat és tindre una base comuna i controlada sobre la qual després es p
 
 **Materials de suport**
 
-- [Entorn executable, servidor i Docker](../recursos/Repte1/Entorn-executable-servidor-i-Docker.pdf)
-- [Muntar l’entorn executable](../recursos/Repte1/Muntar-lentorn-executable.pdf)
-- [Repte 1. Kickoff Professional del Backend](../recursos/Repte1/Repte-1-Kickoff-Professional-del-Backend.pdf)
-- [Criteris d'avaluació i evidències](../recursos/Repte1/Repte-1-Criteris-dAvaluacio-i-Evidencies.pdf)
+- [R1M2. Entorn executable, punt d'entrada i tancament de R1](../recursos/Repte1/R1M2-Entorn-executable-punt-dentrada-i-tancament-de-R1.pdf)
+- [R1. Kickoff backend i base executable](../recursos/Repte1/R1-Kickoff-backend-i-base-executable.pdf)
 
 **Criteris d’avaluació que es treballen**
 

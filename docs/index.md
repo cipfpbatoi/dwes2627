@@ -39,6 +39,7 @@ Cada repte pot tindre una via d'excel·lència. La regla és simple: **nucli pri
 - [Materials del Repte 1](04_materials/repte_01/index.md).
 - [Materials del Repte 3](04_materials/repte_03/index.md).
 - [Recursos ràpids](06_recursos_rapid/index.md).
+- [Presentacions en PDF](recursos/index.md).
 - [Com s'avalua](03_com_s_avalua/index.md).
 
 ## 🚀 Per on començar

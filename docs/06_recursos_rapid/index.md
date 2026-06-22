@@ -5,6 +5,7 @@
 - llig [Com funciona el curs](../01_com_funciona_el_curs/index.md)
 - revisa [Projecte base](../05_projecte_base/index.md)
 - entra després a [Reptes](../02_reptes/index.md)
+- consulta les [presentacions en PDF](../recursos/index.md)
 
 ## Si estàs en el tram comú
 
@@ -40,3 +41,7 @@ Per al treball concret de `R3`, consulta també:
 ## Si tens dubtes d’avaluació
 
 - [Com s’avalua](../03_com_s_avalua/index.md)
+
+## Si busques una presentació
+
+- [Presentacions en PDF](../recursos/index.md)
