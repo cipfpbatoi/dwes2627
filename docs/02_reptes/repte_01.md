@@ -4,10 +4,6 @@
 
 Este primer repte servix per iniciar el backend en condicions professionals bàsiques. No es tracta només d’obrir un repositori o de deixar un esquelet buit, sinó de començar el projecte del curs amb una base tècnica executable, documentada i defensable.
 
-## 🌟 Via 9→10 en este repte
-
-Este repte també té una via d'excel·lència `9→10`: **primer has de tancar bé el nucli i després pots obrir una ampliació amb valor tècnic real**. La secció completa està al final del repte.
-
 ## Vista ràpida
 
 | Apartat | Què has de deixar fet |
@@ -32,20 +28,18 @@ L'autocorrecció també es farà per sessió. Per tant, `R1M1` té un pes del `2
 | `R1-S01` | `r1-s01-model-client-servidor-stack` | `R1M1` | `25%` | Model client/servidor, backend i decisió inicial de stack. |
 | `R1-S02` | `r1-s02-entorn-executable` | `R1M2` | `75%` | Entorn executable amb Docker, PHP i servidor web, punt d'entrada funcional, documentació, verificació i defensa breu. |
 
-Guies d'avaluació del repte:
+Guies d'avaluació:
 
 - [R1M1. Guia d'avaluació](../03_com_s_avalua/rubriques/r1m1.md)
 - [R1M2. Guia d'avaluació](../03_com_s_avalua/rubriques/r1m2.md)
 
-Abans de començar, consulta els [materials de suport del Repte 1](../04_materials/repte_01/index.md). Allí tens els PDF d’explicació del professorat organitzats per microrepte.
+Materials de suport: [Repte 1](../04_materials/repte_01/index.md).
 
 ### R1M1. Model d'execució client/servidor i elecció guiada de stack
 
 **Objectiu**
 
 Entendre què s’executa en client i què s’executa en servidor, i prendre una primera decisió tècnica inicial amb criteri.
-
-Abans d'entregar, revisa la [guia d'avaluació de R1M1](../03_com_s_avalua/rubriques/r1m1.md).
 
 **Què has de fer**
 
@@ -67,49 +61,11 @@ En este microrepte no es tracta encara d’instal·lar el framework complet, sin
 - Comparar de manera inicial exemples com `Laravel`, `Symfony` i `NestJS`.
 - Decidir amb quin marc tècnic inicial arrancarà el projecte.
 
-**Materials de suport**
-
-- [R1M1. Model client-servidor i elecció guiada de stack](../recursos/Repte1/R1M1-Model-clientservidor-i-eleccio-guiada-de-stack.pdf)
-- [R1. Kickoff backend i base executable](../recursos/Repte1/R1-Kickoff-backend-i-base-executable.pdf)
-
-**Criteris d’avaluació que es treballen**
-
-- **RA1.a**: Diferenciar què s’executa en client i què s’executa en servidor.
-- **RA1.b**: Comprendre el valor del backend i del seu comportament dinàmic.
-- **RA1.c**: Identificar el paper del servidor d’aplicacions i el seu funcionament bàsic.
-- **RA1.g**: Justificar la tecnologia triada amb criteri.
-
-**Què vol dir això en llenguatge clar**
-
-En este microrepte es valorarà si pots:
-
-- Explicar què fa el client i què fa el servidor.
-- Distingir una pàgina servida d’una resposta generada en backend.
-- Entendre per què fa falta un entorn de servidor.
-- Justificar per què tries una tecnologia i no una altra.
-
-**Evidències obligatòries**
-
-- Esquema simple client/servidor.
-- Fitxa breu d’exploració tècnica inicial.
-- Primera decisió tècnica orientativa.
-- Justificació breu de la base triada.
-- Dubtes tècnics detectats.
-
-**Com es comprovarà**
-
-- Revisió de l’esquema, de la fitxa i de la justificació.
-- Posada en comú oral breu al final del microrepte o a l’inici del següent tram.
-- Pregunta oral breu sobre què s’executa en client i què en servidor.
-- Contrast entre la decisió tècnica i el projecte que després es munta.
-
 ### R1M2. Entorn executable, punt d'entrada i tancament de R1
 
 **Objectiu**
 
 Deixar el projecte preparat perquè es puga arrancar de manera clara, reproduïble i usable, i perquè ja tinga una primera resposta real del backend.
-
-Abans d'entregar, revisa la [guia d'avaluació de R1M2](../03_com_s_avalua/rubriques/r1m2.md).
 
 **Què has de fer**
 
@@ -127,52 +83,6 @@ Has de muntar i tancar una base inicial amb:
 En este microrepte encara **no es demana la instal·lació completa del framework**.
 
 La prioritat és tindre una base comuna i controlada sobre la qual després es puga continuar construint en `R2`.
-
-**Materials de suport**
-
-- [R1M2. Entorn executable, punt d'entrada i tancament de R1](../recursos/Repte1/R1M2-Entorn-executable-punt-dentrada-i-tancament-de-R1.pdf)
-- [R1. Kickoff backend i base executable](../recursos/Repte1/R1-Kickoff-backend-i-base-executable.pdf)
-
-**Criteris d’avaluació que es treballen**
-
-- **RA1.c**: Identificar el paper del servidor d’aplicacions i la seua integració.
-- **RA1.d**: Reconéixer tecnologies, ferramentes i entorn propi del backend.
-- **RA1.e**: Preparar un entorn executable i funcional.
-- **RA1.f**: Comprovar la posada en marxa del servei i la seua resposta bàsica.
-- **RA1.b**: Comprendre el valor d'una resposta generada pel backend.
-- **RA1.g**: Justificar decisions tècniques a partir de l'experiència real.
-
-**Què vol dir això en llenguatge clar**
-
-En este microrepte es valorarà si pots:
-
-- Posar en marxa el projecte.
-- Entendre què fa cada peça de l’entorn.
-- Arrancar-lo amb instruccions clares.
-- Demostrar que realment funciona.
-- Crear una primera resposta mínima del backend.
-- Documentar i defensar el que has construït.
-
-**Evidències obligatòries**
-
-- Fitxers de configuració mínims.
-- Contenidor o estructura executable.
-- `README` funcional.
-- Evidència que el servei arranca correctament.
-- Punt d’entrada funcional.
-- Evidència que la resposta ve del backend.
-- Evidència de prova, captura, log o URL de comprovació.
-- `README` final revisat.
-- Justificació tècnica breu.
-- Preparació per a checkpoint o defensa.
-
-**Com es comprovarà**
-
-- Revisió del `README`.
-- Execució real del projecte.
-- Prova del punt d'entrada funcional.
-- Defensa tècnica breu.
-- Preguntes sobre decisions, model d’execució i funcionalitat mínima.
 
 ## Checklist final del Repte 1
 

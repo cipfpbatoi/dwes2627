@@ -10,10 +10,6 @@ La idea central és:
 
 > Reconstrucció del projecte en framework amb base operativa real, persistència mínima real i primers fluxos funcionals verificables.
 
-## 🌟 Via 9→10 en este repte
-
-Este repte també té una via d'excel·lència `9→10`: **primer has de tancar bé el nucli i després pots obrir una ampliació amb valor tècnic real**. La secció completa està al final del repte.
-
 ## Vista ràpida
 
 | Bloc | Què has de deixar fet |

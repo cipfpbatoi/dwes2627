@@ -4,10 +4,6 @@
 
 Este repte servix per convertir la base funcional de `R1` en un flux complet de servidor: entrada de dades, validació, processament, conservació d'informació, estat, autenticació, funcionalitat protegida, prova mínima, primera peça testable i persistència mínima amb BBDD.
 
-## 🌟 Via 9→10 en este repte
-
-Este repte també té una via d'excel·lència `9→10`: **primer has de tancar bé el nucli i després pots obrir una ampliació amb valor tècnic real**. La secció completa està al final del repte.
-
 ## Vista ràpida
 
 | Bloc | Què has de deixar fet |
@@ -68,6 +64,8 @@ La base del repte queda en `27` hores, organitzades en `9` sessions de `3` hores
 
 La progressió també és important: en el microrepte 1 entra i es valida la informació; en el 2 es processen i es guarden les dades correctes; en el 3 s’apliquen regles reals del projecte amb funcions pròpies; en el 4 es conserva estat temporal del flux i s'estabilitzen includes; en el 5 es protegix una operació real; en el 6 s'exposa una mini API d'autenticació per a client; en el 7 es prova, es depura i es tanca un checkpoint tècnic; en el 8 s’introduïx una classe simple carregada amb Composer i verificada amb una primera prova unitària; i en el 9 es fa una persistència mínima amb BBDD.
 
+Guies d'avaluació: [rúbriques dels microreptes](../03_com_s_avalua/rubriques/index.md).
+
 ### Microrepte 1. Entrada de dades i validació bàsica
 
 **Objectiu**
@@ -85,38 +83,6 @@ Construir un punt d’entrada de dades usable i demostrar que el sistema rep la 
 - Comentaris breus en el codi quan facen falta per entendre el flux.
 
 No cal encara acumular errors en arrays, validar tots els controls alhora, conservar tots els valors del formulari, gestionar fitxers ni fer checkbox múltiples. Això es pot millorar més avant.
-
-**Criteris d’avaluació que es treballen**
-
-- **RA3.e**: Utilitzar formularis o mecanismes equivalents per interactuar amb l’usuari.
-- **RA3.f**: Recuperar correctament les dades introduïdes.
-- **RA3.g**: Deixar comentaris útils i claredat mínima en el codi perquè el flux es puga revisar.
-
-**Què vol dir això en llenguatge clar**
-
-En este microrepte es valorarà si pots:
-
-- Fer arribar dades reals al servidor.
-- Explicar d’on ix cada dada i com es recupera.
-- Relacionar els camps del formulari amb la resposta que genera el sistema.
-- Mostrar què passa quan una dada clau no és vàlida.
-- Permetre correcció i reenviament dins del mateix flux.
-- Explicar la condició simple que genera l’error.
-
-**Evidències principals**
-
-- Formulari funcional o entrada equivalent.
-- Recuperació correcta de dades.
-- Error visible generat per una condició de servidor.
-- Reenviament amb correcció.
-- Evidència clara que el cas incorrecte no continua com si fora correcte.
-- Commits associats.
-
-**Com es comprovarà**
-
-- Execució real del formulari o de l’entrada equivalent.
-- Revisió del flux de dades, de l’error mostrat i de com es reenvia el formulari després de corregir-lo.
-- Pregunta breu sobre com arriba la informació al servidor i quina condició genera l’error.
 
 ### Microrepte 2. Processament, reintent i guardat funcional
 
@@ -161,21 +127,6 @@ Exemples:
 - Si tens reserves, pots enviar una reserva amb una franja no vàlida però conservar el nom; quan la franja ja és correcta, la reserva queda guardada funcionalment.
 - Si tens publicacions o recursos, pots enviar una publicació amb títol massa curt però conservar el tipus; quan el títol ja és correcte, el recurs queda registrat en una llista simple.
 
-**Què has d’entregar**
-
-- Codi del flux actualitzat.
-- Evidència d’un cas amb error i reintent: enviar, mostrar error, conservar dades, corregir i reenviar.
-- Evidència d’un cas correcte: processar, guardar funcionalment i mostrar o recuperar la dada.
-- README, issue o registre amb:
-  - com provocar l’error;
-  - quines dades es conserven;
-  - on es preparen els valors que tornen al formulari;
-  - com es fa el reenviament correcte;
-  - què es guarda quan el cas és correcte;
-  - què queda fora del mínim.
-- Commits relacionats amb el processament, el reintent i el guardat funcional.
-- `AI log` si has usat IA de manera rellevant.
-
 **Requisits mínims**
 
 - El flux ha de partir del formulari o entrada de `R2M1`.
@@ -201,50 +152,7 @@ No cal encara:
 
 Els arrays, funcions i regles del projecte apareixen amb més sentit en `R2M3`. Estat, sessió i cookies apareixen en `R2M4`. Autenticació i operació protegida apareixen en `R2M5`.
 
-**Criteris d’avaluació que es treballen**
-
-- **RA2.a - RA2.b**: Entendre el mecanisme bàsic de generació de pàgines o respostes amb codi embegut sobre la base comuna en `PHP` i les tecnologies associades.
-- **RA2.c**: Integrar codi de servidor dins del flux o de la resposta generada.
-- **RA2.d - RA2.e**: Usar sintaxi i sentències simples amb correcció i amb efecte visible.
-- **RA2.f - RA2.h**: Utilitzar directives, variables, operadors i àmbits de variables amb sentit funcional.
-
-**Què vol dir això en llenguatge clar**
-
-En este microrepte es valorarà si pots:
-
-- Explicar on s’executa el codi de servidor i com arriba el resultat al navegador o al client.
-- Identificar quin paper té cada peça tècnica mínima del flux sobre la base comuna en `PHP`.
-- Explicar què fa el codi quan hi ha un error.
-- Demostrar que el formulari no es reconstrueix amb valors fixos.
-- Relacionar les dades enviades amb els valors que tornen a aparéixer.
-- Explicar com es conserva un text, una opció tancada i un checkbox simple.
-- Diferenciar conservar dades per al reintent de guardar funcionalment el cas correcte.
-
-**Evidències principals**
-
-- Tram recognoscible de codi embegut o equivalent dins de la resposta generada.
-- Codi executable de processament del reintent.
-- Evidència d’ús real de variables i operadors.
-- Evidència d’alguna directiva o configuració bàsica aplicada amb sentit.
-- Demo d’un enviament amb error.
-- Demo del formulari recarregat amb dades conservades.
-- Demo del reenviament corregit.
-- Demo del cas correcte guardat funcionalment.
-- Explicació breu de què es conserva i què no.
-- Commits o issues relacionades.
-
-**Com es comprovarà**
-
-- Execució del flux amb dades reals.
-- Revisió del tram de codi que recupera dades, prepara valors i regenera el formulari.
-- Pregunta breu sobre com es genera la resposta d’error, com es conserven les dades i què es guarda quan el cas és correcte.
-- Microcanvi en viu sobre un valor conservat per comprovar que entens el recorregut.
-
 ### Microrepte 3. Lògica del flux i regles del projecte
-
-**Autocorrecció associada**
-
-`r2-s03-logica-flux-regles-projecte`
 
 **Objectiu**
 
@@ -262,21 +170,6 @@ Perquè este microrepte siga concret, hauràs de crear una **llibreria pròpia m
 - Aplicació recognoscible d’alguna regla bàsica del projecte.
 - Reutilització de la informació guardada quan faça falta per decidir, calcular o mostrar.
 - Lògica connectada al flux real del producte.
-
-**Criteris d’avaluació que es treballen**
-
-- **RA3.a - RA3.f**: Aplicar decisions, repeticions, estructures de dades i funcions dins d’un flux de servidor amb sentit.
-
-**Què vol dir això en llenguatge clar**
-
-En este microrepte es valorarà si pots:
-
-- Fer que el sistema prenga decisions segons les dades rebudes
-- Aplicar alguna regla del projecte
-- Reutilitzar codi amb funcions pròpies en un fitxer separat
-- Carregar una llibreria pròpia amb `require_once`, `include_once` o equivalent
-- Treballar amb llistes, etiquetes o estructures semblants
-- Demostrar que el backend està pensant i no només rebent dades
 
 **Exemples segons projecte**
 
@@ -310,25 +203,6 @@ Pots fer que el sistema:
 - use funcions per preparar el recurs abans de mostrar-lo o guardar-lo
 - importe eixes funcions des d’un fitxer propi
 
-**Evidències principals**
-
-- Cas de decisió observable o recorregut significatiu.
-- Array o estructura equivalent usada amb sentit.
-- Fitxer separat de llibreria pròpia importat pel flux.
-- Funció pròpia útil dins d’eixa llibreria.
-- Dos casos de prova amb resultats visibles diferents.
-- Nota breu al `README`, issue o registre explicant la regla i com repetir els dos casos.
-- Demo de reutilització de la informació correcta.
-- Demo del comportament resultant.
-
-**Com es comprovarà**
-
-- Execució del flux funcional
-- Revisió del codi principal i del fitxer de llibreria pròpia
-- Pregunta oral breu sobre la regla implementada
-- Comprovació que la lògica no és ornamental, sinó útil per al projecte
-- Comprovació que `require_once`, `include_once` o equivalent carrega codi que s’usa realment
-
 **Què no es penalitza encara**
 
 - No tindre sessió, cookies, login, rols o autorització.
@@ -336,10 +210,6 @@ Pots fer que el sistema:
 - No haver refactoritzat encara cap a MVC o arquitectura completa.
 
 ### Microrepte 4. Estat i sessió per conservar el flux
-
-**Autocorrecció associada**
-
-`r2-s04-estat-sessio-cookies`
 
 **Objectiu**
 
@@ -359,41 +229,6 @@ En este microrepte hauràs d’usar **sessió i cookie**. No és suficient triar
 - Distinció clara entre estat temporal del flux i guardat funcional del recurs.
 - Neteja o invalidació quan toque.
 
-**Criteris d’avaluació que es treballen**
-
-- **RA4.a - RA4.b**: Identificar i usar mecanismes de manteniment d’informació i d’estat per a un client concret.
-- **RA4.c**: Emmagatzemar informació en client, recuperar-la i explicar quan convé usar-ho.
-
-**Què vol dir això en llenguatge clar**
-
-En este microrepte es valorarà si pots:
-
-- Explicar què guarda el sistema i per què és provisional.
-- Distingir entre estat, sessió, cookies i altres mecanismes equivalents.
-- Distingir què queda en client i què manté el servidor.
-- Explicar què aporta `$_SERVER` i per què no substitueix autenticació.
-- Evitar rutes relatives fràgils en els includes.
-- Demostrar que el flux es pot reprendre sense dependre encara d’un model complet d’usuari.
-- Explicar quan toca netejar o invalidar eixa informació temporal.
-
-**Evidències principals**
-
-- Dada de sessió implementada i recuperada.
-- Cookie pròpia implementada, recuperada i observable.
-- Dada de `$_SERVER` utilitzada amb finalitat clara.
-- Fitxer comú de configuració/bootstrap amb ruta base per als includes.
-- Demo de recuperació d’un esborrany, d’una selecció temporal o d’un pas del flux.
-- Demo de neteja o invalidació.
-- Explicació clara de la frontera entre estat temporal i guardat funcional.
-- Commits associats.
-
-**Com es comprovarà**
-
-- Execució en directe de la recuperació del flux.
-- Pregunta breu sobre què es guarda en sessió, què queda en cookie, què ve de `$_SERVER`, amb quina finalitat i si queda en client o en servidor.
-- Revisió del fitxer comú que defineix la ruta base dels includes.
-- Contrast entre el que dius i el que realment passa al flux.
-
 **Què no es penalitza encara**
 
 - No tindre login, rols o autorització.
@@ -401,10 +236,6 @@ En este microrepte es valorarà si pots:
 - No haver refactoritzat cap a MVC o arquitectura completa.
 
 ### Microrepte 5. Autenticació i funcionalitat protegida
-
-**Autocorrecció associada**
-
-`r2-s05-autenticacio-funcionalitat-protegida`
 
 **Objectiu**
 
@@ -421,41 +252,6 @@ En este microrepte també has de mostrar un registre o alta mínima d’usuari. 
 - Una operació del domini protegida, vinculada al projecte base i aplicada sobre dades reals del projecte.
 - Un cas autoritzat i un cas denegat.
 
-**Criteris d’avaluació que es treballen**
-
-- **RA4.d - RA4.e**: Implementar autenticació funcional i restringir una acció del sistema de manera real i verificable.
-
-**Què vol dir això en llenguatge clar**
-
-En este microrepte es valorarà si pots:
-
-- Diferenciar entre estar autenticat i estar autoritzat.
-- Explicar on es genera el hash de la contrasenya i on es verifica.
-- Evitar guardar contrasenyes en clar.
-- Protegir una acció amb valor real dins del projecte, no un exemple genèric.
-- Demostrar què passa quan l’acció està permesa i quan no ho està.
-- Mostrar que la funcionalitat protegida treballa amb informació que després continua tenint sentit dins del producte.
-
-**Evidències principals**
-
-- Flux d’autenticació funcional.
-- Registre o estructura d’usuaris amb contrasenya hashejada.
-- Operació protegida real i lligada al projecte base.
-- Dada o conjunt de dades reutilitzables dins del projecte.
-- Cas positiu.
-- Cas negatiu.
-- Evidència de la restricció aplicada.
-
-**Com es comprovarà**
-
-- Execució real del cas autoritzat.
-- Revisió de l’alta o registre mínim.
-- Revisió que la contrasenya no queda guardada en clar.
-- Revisió de la verificació del hash en el login.
-- Execució real del cas denegat.
-- Revisió de si la dada creada o recuperada forma part del flux protegit.
-- Pregunta oral sobre en quin punt es bloqueja o es permet l’acció.
-
 **Què no es penalitza encara**
 
 - No tindre rols avançats.
@@ -463,10 +259,6 @@ En este microrepte es valorarà si pots:
 - No tindre arquitectura completa ni persistència formal com a centre.
 
 ### Microrepte 6. Mini API d'autenticació per a client
-
-**Autocorrecció associada**
-
-`r2-s06-mini-api-autenticacio-client`
 
 En este microrepte hauràs d'exposar l'autenticació que ja tens en `R2M5` com una mini API consumible des d'un client extern.
 
@@ -499,28 +291,6 @@ Este microrepte no vol dir:
 - resoldre rols complexos
 - substituir el treball propi de `R4`
 
-**Evidències principals**
-
-- Endpoint de login API.
-- Resposta `JSON`.
-- Codi `200` en cas correcte.
-- Codi `401` en cas incorrecte o no autenticat.
-- Token simple o mecanisme equivalent.
-- Ruta protegida que comprova el token.
-- Prova externa amb `curl`, Postman/Insomnia o `fetch`.
-- Contracte documentat amb mètode, URL, entrada, headers i resposta.
-- Usuari demo i limitacions conegudes.
-
-**Com es comprovarà**
-
-- Execució de `POST /api/login` amb credencials correctes.
-- Execució de `POST /api/login` amb credencials incorrectes.
-- Execució de la ruta protegida sense token.
-- Execució de la ruta protegida amb token vàlid.
-- Revisió que no es retornen contrasenyes ni hashes.
-- Revisió del contracte perquè una altra persona puga consumir-lo sense mirar el codi.
-- Pregunta oral sobre què ha de fer el client quan rep `401`.
-
 **Què no es penalitza encara**
 
 - No tindre una API completa.
@@ -530,10 +300,6 @@ Este microrepte no vol dir:
 - No haver resolt CORS si el client encara no el necessita.
 
 ### Microrepte 7. Prova, depuració i checkpoint tècnic
-
-**Autocorrecció associada**
-
-`r2-s07-proves-depuracio-checkpoint`
 
 **Objectiu**
 
@@ -554,43 +320,6 @@ En este microrepte no es demanen encara proves unitàries ni `PHPUnit` com a mí
 - Demo reproduïble del flux complet.
 - Defensa tècnica breu del recorregut.
 
-**Criteris d’avaluació que es treballen**
-
-- **RA4.f**: Provar, depurar i documentar el comportament real del sistema.
-
-**Què vol dir això en llenguatge clar**
-
-En este microrepte es valorarà si pots:
-
-- Demostrar que el flux funciona de veritat.
-- Detectar errors i explicar-los.
-- Fer servir algun suport real de prova o depuració, com ara navegador, terminal, registres, `curl`, col·leccions de peticions o equivalent.
-- Automatitzar almenys una comprovació de caixa negra o de flux.
-- Explicar per què encara no s’estan demanant proves unitàries completes.
-- Deixar rastre del que has provat i del que encara cal millorar.
-- Explicar com has organitzat la prova i quins casos has verificat.
-- Explicar per què la conservació de dades que has fet és suficient per a `R2`, encara que no siga encara el centre del curs.
-- Deixar clar quines parts del codi convé revisar en el microrepte 8.
-
-**Evidències principals**
-
-- Checklist o taula de proves mínimes.
-- Cas positiu i cas negatiu documentats.
-- Incidències detectades o correccions rellevants.
-- Rastre de l’eina o entorn utilitzat per provar o depurar.
-- Script, comanda o col·lecció que execute una prova automàtica simple.
-- Evidència de reutilització de dades.
-- Documentació tècnica actualitzada.
-- Demo breu o guia de reproducció del flux.
-
-**Com es comprovarà**
-
-- Execució dels casos documentats.
-- Execució o revisió de la prova automàtica lleugera.
-- Revisió de l’eina o entorn utilitzat per provar o depurar.
-- Contrast entre documentació, repositori i resultat real.
-- Defensa tècnica breu sobre el flux complet.
-
 **Què no es penalitza encara**
 
 - No tindre una suite completa de proves automatitzades.
@@ -599,10 +328,6 @@ En este microrepte es valorarà si pots:
 - No afegir funcionalitats noves si el flux ja està tancat i verificat.
 
 ### Microrepte 8. Primera peça testable amb POO i Composer
-
-**Autocorrecció associada**
-
-`r2-s08-primera-peca-testable-poo-composer`
 
 En este microrepte hauràs de convertir una regla, comprovació o càlcul del flux que ja funciona en una classe simple carregada amb Composer i provar-la de manera automàtica.
 
@@ -632,24 +357,6 @@ Este microrepte no vol dir:
 
 Si després d’esta peça afegixes més classes, una llibreria externa menuda via Composer o una crida a una API externa, això s’ha d’entendre com a ampliació o pont cap als reptes següents, no com a exigència central per a tot l’alumnat dins de `R2`.
 
-**Evidències principals**
-
-- `composer.json` amb autoload configurat o alternativa equivalent justificada.
-- Classe pròpia en `src/` o carpeta equivalent.
-- Ús de `vendor/autoload.php` o mecanisme equivalent.
-- Prova unitària mínima.
-- Execució documentada de la prova.
-- Prova de no regressió del flux.
-- Nota breu sobre què queda pendent per a `R3`.
-
-**Com es comprovarà**
-
-- Revisió de `composer.json` i de l’autoload.
-- Revisió de la classe creada.
-- Execució o revisió de la prova unitària.
-- Execució d’un cas clau de `R2M7`.
-- Pregunta oral sobre què prova la prova unitària i què prova el flux web.
-
 **Què no es penalitza encara**
 
 - No tindre MVC complet.
@@ -659,10 +366,6 @@ Si després d’esta peça afegixes més classes, una llibreria externa menuda v
 - No consumir API externa.
 
 ### Microrepte 9. Persistència mínima amb BBDD en PHP
-
-**Autocorrecció associada**
-
-`r2-s09-persistencia-minima-bbdd-php`
 
 En este microrepte hauràs de fer que una dada significativa del projecte quede guardada en una base de dades i es puga recuperar després.
 
@@ -693,25 +396,6 @@ Este microrepte no vol dir:
 - guardar contrasenyes en clar
 
 Si ja tens Composer introduït en `R2M8`, pots usar-lo per organitzar millor la connexió o carregar una llibreria menuda com `vlucas/phpdotenv`, però això no és el mínim obligatori. El mínim és entendre i demostrar connexió, alta i lectura amb dades pròpies.
-
-**Evidències principals**
-
-- Taula o script SQL relacionat amb el domini.
-- Configuració de connexió separada i sense secrets reals.
-- Alta funcional amb dades del flux.
-- Lectura funcional de dades persistides.
-- Consulta preparada quan entren dades d'usuari.
-- Instruccions de reproducció en `README`.
-- Prova manual documentada o script simple.
-- Nota breu sobre què queda per a `R3`.
-
-**Com es comprovarà**
-
-- Execució d'una alta.
-- Consulta posterior de la dada guardada.
-- Revisió de la configuració i de l'absència de secrets.
-- Revisió de la consulta preparada.
-- Pregunta oral sobre la diferència entre sessió, cookie, fitxer provisional i BBDD.
 
 **Què no es penalitza encara**
 
