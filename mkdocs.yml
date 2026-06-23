@@ -18,6 +18,7 @@ nav:
   - "📎 Presentacions PDF": "recursos/index.md"
   - "🧩 Reptes":
       - "👀 Visió general": "02_reptes/index.md"
+      - "🧭 Guia de presentació": "02_reptes/guia_presentacio.md"
       - "1️⃣ Repte 1": "02_reptes/repte_01.md"
       - "2️⃣ Repte 2": "02_reptes/repte_02.md"
       - "3️⃣ Repte 3": "02_reptes/repte_03.md"

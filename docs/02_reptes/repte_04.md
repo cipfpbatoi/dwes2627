@@ -41,15 +41,9 @@ El treball continua sobre el mateix projecte i sobre el mateix encàrrec funcion
 4. Consumeix el servei com si fores una tercera persona.
 5. Documenta, prova i registra incidències abans de donar per tancat el repte.
 
-## Checklist final del Repte 4
+## Presentació i entrega
 
-| Microrepte | Evidència mínima | Com es comprovarà |
-|---|---|---|
-| `R4M1` | Contracte d'API amb mapa d'endpoints i errors. | Revisió de coherència entre contracte i cas d'ús. |
-| `R4M2` | Endpoint funcional amb resposta estructurada i prova del cas correcte. | Petició real contra el servei. |
-| `R4M3` | Petició autoritzada i petició denegada. | Comparació de codis d'estat i resposta. |
-| `R4M4` | Consumidor, script o col·lecció amb cas correcte i error. | Execució del consum fora del codi productor. |
-| `R4M5` | Documentació executable, registre de proves i commits del procés. | Verificació que productor i consumidor parlen el mateix contracte. |
+Per preparar l'entrega, la demo i la defensa breu, usa la [guia de presentació dels reptes](guia_presentacio.md#repte-4).
 
 ## Connexió amb el següent pas
 

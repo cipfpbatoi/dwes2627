@@ -498,20 +498,9 @@ Per no perdre el fil del repte:
 - No compliques la persistència si el flux principal encara no està tancat.
 - Assegura’t que el `README` o la documentació equivalent expliquen com reproduir el cas bo, el cas denegat i la reutilització de la dada correcta.
 
-## Checklist final del Repte 2
+## Presentació i entrega
 
-| Bloc | Evidència mínima | Com es comprovarà |
-|---|---|---|
-| Traçabilitat | Repositori actualitzat, issue o registre equivalent, commits significatius i registre breu de temps per microrepte. | Revisió de commits, issues, temps registrat i coherència amb el treball presentat. |
-| Entrada i validació | Formulari o entrada equivalent, recuperació real de dades, error visible i correcció. | Cas correcte, cas amb error i reintent corregit. |
-| Processament | Lògica de servidor aplicada al producte amb variables, condicions, bucles, arrays o funcions. | Execució del flux i preguntes sobre què passa en servidor. |
-| Conservació | Informació correcta guardada o conservada i reutilitzada després dins del projecte. | Prova que una dada es pot tornar a mostrar, recuperar o llistar. |
-| Estat | Sessió, cookies o mecanisme equivalent si el flux ho necessita. | Prova de recuperació del flux sense perdre informació temporal. |
-| Accés protegit | Autenticació funcional i operació real protegida vinculada al domini. | Cas autoritzat i cas denegat. |
-| Mini API | Endpoint d'autenticació amb `JSON`, resposta `200`, resposta `401` i ruta protegida. | Peticions documentades i comprovables. |
-| R2M8 POO/Composer | `composer.json` o equivalent, classe pròpia en `src/` o carpeta equivalent, prova unitària mínima i resultat documentat. | Execució o revisió de la prova i comprovació que el flux web continua funcionant. |
-| BBDD mínima | Connexió, taula, alta, lectura, consultes preparades i instruccions de reproducció. | Alta i lectura d'una dada significativa. |
-| Documentació i IA | README o documentació del flux, checklist de proves, incidències i `AI log` si hi ha ús rellevant. | Contrast entre documentació, codi i comportament real. |
+Per preparar l'entrega, la demo i la defensa breu, usa la [guia de presentació dels reptes](guia_presentacio.md#repte-2).
 
 En este repte no n’hi ha prou amb dir que el sistema funciona. Les proves han de quedar registrades en una checklist o taula simple amb cas de prova, entrada, resultat esperat, resultat obtingut i incidències.
 
@@ -559,10 +548,6 @@ Convindria evitar errors com estos:
 - Mostrar dades sense tractar-les realment.
 - Afegir lògica artificial només per complir.
 - Portar una solució que no es pot explicar.
-
-## Quan es considera superat
-
-Este repte es considera superat quan la checklist final està completa, el flux es pot provar de punta a punta i pots defensar tècnicament per què la persistència ací és de suport, quina operació has protegit i quina regla o comprovació has convertit en una classe simple.
 
 ## Què prepara este repte
 

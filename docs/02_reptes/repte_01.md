@@ -84,18 +84,9 @@ En este microrepte encara **no es demana la instal·lació completa del framewor
 
 La prioritat és tindre una base comuna i controlada sobre la qual després es puga continuar construint en `R2`.
 
-## Checklist final del Repte 1
+## Presentació i entrega
 
-| Bloc | Evidència mínima | Com es comprovarà |
-|---|---|---|
-| Repositori | Repositori actualitzat, usable i amb commits significatius. | Revisió de commits, issues o registre equivalent. |
-| Decisió inicial | Fitxa breu de `R1M1`, justificació del stack i dubtes tècnics. | Revisió de la fitxa i preguntes sobre client, servidor i tecnologia triada. |
-| Entorn executable | Docker Compose, `Dockerfile` o equivalent funcional. | Execució real seguint el `README`. |
-| Punt d’entrada | Ruta, vista, endpoint, landing mínima o healthcheck servit pel backend. | Prova de la URL o ruta documentada. |
-| Documentació | `README` amb requisits, arrancada, parada, ports, URL i resultat esperat. | Una altra persona ha de poder arrancar el projecte només amb el `README`. |
-| Verificació | Captura, log, URL o prova mínima del servei en marxa. | Contrast entre documentació, codi i resultat real. |
-| Defensa | Explicació breu de què has fet, per què i com prepara `R2`. | Preguntes tècniques breus o microcanvis en viu. |
-| Ús d’IA | `AI log`, si hi ha ús rellevant d’IA. | Revisió del registre i de la validació feta després. |
+Per preparar l'entrega, la demo i la defensa breu, usa la [guia de presentació dels reptes](guia_presentacio.md#repte-1).
 
 ## Ús de la IA en este repte
 
@@ -126,10 +117,6 @@ Convindria evitar errors com estos:
 - `README` que no permet arrancar el projecte.
 - Punt d’entrada només decoratiu.
 - Codi que no es pot explicar.
-
-## Quan es considera superat
-
-Este repte es considera superat quan la checklist final està completa i pots explicar què has fet, per què i com prepara el pas al `Repte 2`.
 
 ## Decisió metodològica important d’este repte
 
@@ -181,6 +168,7 @@ Si ja tens la landing i la pàgina `Sobre nosaltres`, pots reforçar l'ampliaci�
 També pots proposar una ampliació pròpia si està alineada amb el repte i la valides abans amb el professorat. En qualsevol cas, ha d'aportar valor visible al producte i no limitar-se a una comprovació tècnica d'estat.
 
 **Evidències mínimes**
+
 - commit o branca identificable
 - justificació tècnica breu
 - prova funcional de la landing i de la pàgina `Sobre nosaltres`

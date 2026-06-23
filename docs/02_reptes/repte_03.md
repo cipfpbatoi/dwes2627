@@ -83,21 +83,9 @@ El detall operatiu està en els materials de `R3`:
 - [Suport tècnic mínim](../04_materials/repte_03/suport_tecnic.md)
 - [Checklists d'alumnat](../04_materials/repte_03/checklists.md)
 
-## Checklist final del Repte 3
+## Presentació i entrega
 
-| Bloc | Evidència mínima | Com es comprovarà |
-|---|---|---|
-| Traçabilitat | Repositori actualitzat, commits significatius i issue o llista de tasques de `R3`. | Revisió de commits, tasques i decisions. |
-| Arrencada | Docker i framework arrancables, `.env.example` o instruccions de configuració. | Execució seguint el README. |
-| Persistència | Migracions o equivalent, fixtures/seeders o script, i dades de demostració reproduïbles. | Crear BBDD, carregar dades i recuperar un conjunt de dades real. |
-| Fluxos | Prova dels `2` casos d'ús, amb almenys `1` flux migrat de `R2`. | Execució end-to-end dels casos d'ús. |
-| Server-rendered | Un flux passa dades del controlador a una vista o plantilla i genera `HTML` en servidor. | Revisió del codi i comprovació visual del resultat. |
-| Accés protegit | Login o autenticació equivalent, acció protegida, cas autoritzat i cas denegat. | Prova dels dos casos. |
-| Qualitat | Validació, errors controlats i proves mínimes o checklist verificable. | Execució o revisió de proves i errors. |
-| Criteri tècnic | Comparació de framework, esquema abans/després i mapa del que queda pendent. | Defensa breu de decisions. |
-| Ús d'IA | `AI log`, si has usat IA de manera rellevant. | Revisió del registre i de la validació feta. |
-
-Si falta Docker, BBDD reconstruïble, fixtures/seeders o càrrega equivalent, els `2` fluxos, el cas server-rendered o la protecció d'una acció significativa, el repte encara no està tancat.
+Per preparar l'entrega, la demo i la defensa breu, usa la [guia de presentació dels reptes](guia_presentacio.md#repte-3).
 
 ## Ampliació 9→10
 
