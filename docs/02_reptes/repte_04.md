@@ -41,6 +41,23 @@ El treball continua sobre el mateix projecte i sobre el mateix encàrrec funcion
 4. Consumeix el servei com si fores una tercera persona.
 5. Documenta, prova i registra incidències abans de donar per tancat el repte.
 
+Guies d'avaluació:
+
+- [R4M1. Guia d'avaluació](../03_com_s_avalua/rubriques/r4m1.md)
+- [R4M2. Guia d'avaluació](../03_com_s_avalua/rubriques/r4m2.md)
+- [R4M3. Guia d'avaluació](../03_com_s_avalua/rubriques/r4m3.md)
+- [R4M4. Guia d'avaluació](../03_com_s_avalua/rubriques/r4m4.md)
+- [R4M5. Guia d'avaluació](../03_com_s_avalua/rubriques/r4m5.md)
+
+Materials de suport:
+
+- [R4. API pròpia, consum i documentació](../recursos/Repte4/R4-API-propia-consum-i-documentacio.pdf)
+- [R4M1. Disseny del contracte del servei](../recursos/Repte4/R4M1-Disseny-del-contracte-del-servei.pdf)
+- [R4M2. Primer endpoint funcional](../recursos/Repte4/R4M2-Primer-endpoint-funcional.pdf)
+- [R4M3. Protecció de l'API](../recursos/Repte4/R4M3-Proteccio-de-lAPI.pdf)
+- [R4M4. Consum real del servei](../recursos/Repte4/R4M4-Consum-real-del-servei.pdf)
+- [R4M5. Documentació i prova del servei](../recursos/Repte4/R4M5-Documentacio-i-prova-del-servei.pdf)
+
 ## Presentació i entrega
 
 Per preparar l'entrega, la demo i la defensa breu, usa la [guia de presentació dels reptes](guia_presentacio.md#repte-4).

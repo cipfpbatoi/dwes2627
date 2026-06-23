@@ -59,6 +59,23 @@ També poden aparéixer com a suport:
 4. Integra el resultat en una pantalla, endpoint, procés o automatització del producte.
 5. Prova el cas correcte, prova una fallada i documenta el flux complet.
 
+Guies d'avaluació:
+
+- [R5M1. Guia d'avaluació](../03_com_s_avalua/rubriques/r5m1.md)
+- [R5M2. Guia d'avaluació](../03_com_s_avalua/rubriques/r5m2.md)
+- [R5M3. Guia d'avaluació](../03_com_s_avalua/rubriques/r5m3.md)
+- [R5M4. Guia d'avaluació](../03_com_s_avalua/rubriques/r5m4.md)
+- [R5M5. Guia d'avaluació](../03_com_s_avalua/rubriques/r5m5.md)
+
+Materials de suport:
+
+- [R5. Integració híbrida i defensa final](../recursos/Repte5/R5-Integracio-hibrida-i-defensa-final.pdf)
+- [R5M1. Selecció de font externa i disseny de la integració](../recursos/Repte5/R5M1-Seleccio-de-font-externa-i-disseny-de-la-integracio.pdf)
+- [R5M2. Connexió amb la font externa](../recursos/Repte5/R5M2-Connexio-amb-la-font-externa.pdf)
+- [R5M3. Transformació, mapping i valor afegit](../recursos/Repte5/R5M3-Transformacio-mapping-i-valor-afegit.pdf)
+- [R5M4. Funcionalitat híbrida integrada](../recursos/Repte5/R5M4-Funcionalitat-hibrida-integrada.pdf)
+- [R5M5. Prova, documentació i defensa](../recursos/Repte5/R5M5-Prova-documentacio-i-defensa.pdf)
+
 ## Presentació i entrega
 
 Per preparar l'entrega, la demo i la defensa breu, usa la [guia de presentació dels reptes](guia_presentacio.md#repte-5).

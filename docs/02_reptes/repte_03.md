@@ -76,12 +76,33 @@ Per evitar confusions, estes equivalències compten igual si estan ben aplicades
 
 Entre `R3M2` i `R3M3` hi haurà un taller formatiu, `R3S2B`, per comprovar equivalències entre frameworks i auditar el projecte abans del primer flux complet. No és un microrepte amb nota separada, però la taula d'equivalències i la microtasca resultant poden ajudar-te a millorar `R3M3`, `R3M5`, `R3M6` i el README final.
 
+Guies d'avaluació:
+
+- [R3M1. Guia d'avaluació](../03_com_s_avalua/rubriques/r3m1.md)
+- [R3M2. Guia d'avaluació](../03_com_s_avalua/rubriques/r3m2.md)
+- [R3M3. Guia d'avaluació](../03_com_s_avalua/rubriques/r3m3.md)
+- [R3M4. Guia d'avaluació](../03_com_s_avalua/rubriques/r3m4.md)
+- [R3M5. Guia d'avaluació](../03_com_s_avalua/rubriques/r3m5.md)
+- [R3M6. Guia d'avaluació](../03_com_s_avalua/rubriques/r3m6.md)
+- [R3M7. Guia d'avaluació](../03_com_s_avalua/rubriques/r3m7.md)
+
 El detall operatiu està en els materials de `R3`:
 
 - [Fitxa general del Repte 3](../04_materials/repte_03/fitxa_general.md)
 - [Enunciats dels microreptes](../04_materials/repte_03/microreptes.md)
 - [Suport tècnic mínim](../04_materials/repte_03/suport_tecnic.md)
 - [Checklists d'alumnat](../04_materials/repte_03/checklists.md)
+
+Materials de suport:
+
+- [R3. Framework, arquitectura i persistència real](../recursos/Repte3/R3-Framework-arquitectura-i-persistencia-real.pdf)
+- [R3M1. Arrencada del nou projecte](../recursos/Repte3/R3M1-Arrencada-del-nou-projecte.pdf)
+- [R3M2. Persistència mínima](../recursos/Repte3/R3M2-Persistencia-minima.pdf)
+- [R3M3. Primer cas d'ús complet](../recursos/Repte3/R3M3-Primer-cas-dus-complet.pdf)
+- [R3M4. Segon cas d'ús o ampliació funcional](../recursos/Repte3/R3M4-Segon-cas-dus-o-ampliacio-funcional.pdf)
+- [R3M5. Autenticació, autorització i middleware](../recursos/Repte3/R3M5-Autenticacio-autoritzacio-i-middleware.pdf)
+- [R3M6. Qualitat i estabilització](../recursos/Repte3/R3M6-Qualitat-i-estabilitzacio.pdf)
+- [R3M7. Tancament tècnic](../recursos/Repte3/R3M7-Tancament-tecnic.pdf)
 
 ## Presentació i entrega
 

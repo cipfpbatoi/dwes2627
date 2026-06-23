@@ -64,7 +64,29 @@ La base del repte queda en `27` hores, organitzades en `9` sessions de `3` hores
 
 La progressió també és important: en el microrepte 1 entra i es valida la informació; en el 2 es processen i es guarden les dades correctes; en el 3 s’apliquen regles reals del projecte amb funcions pròpies; en el 4 es conserva estat temporal del flux i s'estabilitzen includes; en el 5 es protegix una operació real; en el 6 s'exposa una mini API d'autenticació per a client; en el 7 es prova, es depura i es tanca un checkpoint tècnic; en el 8 s’introduïx una classe simple carregada amb Composer i verificada amb una primera prova unitària; i en el 9 es fa una persistència mínima amb BBDD.
 
-Guies d'avaluació: [rúbriques dels microreptes](../03_com_s_avalua/rubriques/index.md).
+Guies d'avaluació:
+
+- [R2M1. Guia d'avaluació](../03_com_s_avalua/rubriques/r2m1.md)
+- [R2M2. Guia d'avaluació](../03_com_s_avalua/rubriques/r2m2.md)
+- [R2M3. Guia d'avaluació](../03_com_s_avalua/rubriques/r2m3.md)
+- [R2M4. Guia d'avaluació](../03_com_s_avalua/rubriques/r2m4.md)
+- [R2M5. Guia d'avaluació](../03_com_s_avalua/rubriques/r2m5.md)
+- [R2M6. Guia d'avaluació](../03_com_s_avalua/rubriques/r2m6.md)
+- [R2M7. Guia d'avaluació](../03_com_s_avalua/rubriques/r2m7.md)
+- [R2M8. Guia d'avaluació](../03_com_s_avalua/rubriques/r2m8.md)
+- [R2M9. Guia d'avaluació](../03_com_s_avalua/rubriques/r2m9.md)
+
+Materials de suport:
+
+- [R2. Processament, estat i autenticació](../recursos/Repte2/R2-Processament-estat-i-autenticacio.pdf)
+- [R2M1. Entrada variada i validació bàsica](../recursos/Repte2/R2M1-Entrada-variada-i-validacio-basica.pdf)
+- [R2M2. Processament, reintent i guardat funcional](../recursos/Repte2/R2M2-Processament-reintent-i-guardat-funcional.pdf)
+- [R2M3. Lògica del flux i regles del projecte](../recursos/Repte2/R2M3-Logica-del-flux-i-regles-del-projecte.pdf)
+- [R2M4. Estat, sessió i cookies](../recursos/Repte2/R2M4-Estat-sessio-i-cookies.pdf)
+- [R2M5. Autenticació i funcionalitat protegida](../recursos/Repte2/R2M5-Autenticacio-i-funcionalitat-protegida.pdf)
+- [R2M6. Mini API d'autenticació per a client](../recursos/Repte2/R2M6-Mini-API-dautenticacio-per-a-client.pdf)
+- [R2M8. Primera peça testable amb POO i Composer](../recursos/Repte2/R2M8-Primera-peca-testable-amb-POO-i-Composer.pdf)
+- [R2M9. Persistència mínima amb BBDD en PHP](../recursos/Repte2/R2M9-Persistencia-minima-amb-BBDD-en-PHP.pdf)
 
 ### Microrepte 1. Entrada de dades i validació bàsica
 
