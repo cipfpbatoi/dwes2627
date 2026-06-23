@@ -15,7 +15,9 @@ nav:
       - "3️⃣ Materials Repte 3": "04_materials/repte_03/index.md"
   - "🧱 Projectes base": "05_projecte_base/index.md"
   - "⚡ Recursos ràpids": "06_recursos_rapid/index.md"
-  - "📎 Presentacions PDF": "recursos/index.md"
+  - "📎 Presentacions PDF":
+      - "👀 Visió general": "recursos/index.md"
+      - "🛠️ Tallers": "recursos/tallers.md"
   - "🧩 Reptes":
       - "👀 Visió general": "02_reptes/index.md"
       - "🧭 Guia de presentació": "02_reptes/guia_presentacio.md"

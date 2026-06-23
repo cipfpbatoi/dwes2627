@@ -53,6 +53,8 @@ En esta pàgina tens les presentacions del curs agrupades per tipus de recurs.
 
 ## Tallers
 
+També tens un [índex específic de tallers](tallers.md) amb orientació sobre quan usar cada recurs.
+
 - [MT01. Projecte no CRUD](Tallers/MT01-Projecte-no-CRUD.pdf)
 - [MT02. README executable i commit defensable](Tallers/MT02-README-executable-i-commit-defensable.pdf)
 - [MT03. Validació de servidor amb casos roïns](Tallers/MT03-Validacio-de-servidor-amb-casos-roins.pdf)

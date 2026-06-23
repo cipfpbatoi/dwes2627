@@ -58,6 +58,14 @@ Materials de suport:
 - [R4M4. Consum real del servei](../recursos/Repte4/R4M4-Consum-real-del-servei.pdf)
 - [R4M5. Documentació i prova del servei](../recursos/Repte4/R4M5-Documentacio-i-prova-del-servei.pdf)
 
+Teoria relacionada per microrepte:
+
+- `R4M1`: [Contracte d'API, HTTP i respostes](../recursos/Teoria/Teoria-R4-Contracte-dAPI-HTTP-i-respostes.pdf)
+- `R4M2`: [Contracte d'API, HTTP i respostes](../recursos/Teoria/Teoria-R4-Contracte-dAPI-HTTP-i-respostes.pdf)
+- `R4M3`: [Protecció, consum i documentació d'API](../recursos/Teoria/Teoria-R4-Proteccio-consum-i-documentacio-dAPI.pdf)
+- `R4M4`: [Protecció, consum i documentació d'API](../recursos/Teoria/Teoria-R4-Proteccio-consum-i-documentacio-dAPI.pdf)
+- `R4M5`: [Protecció, consum i documentació d'API](../recursos/Teoria/Teoria-R4-Proteccio-consum-i-documentacio-dAPI.pdf)
+
 ## Presentació i entrega
 
 Per preparar l'entrega, la demo i la defensa breu, usa la [guia de presentació dels reptes](guia_presentacio.md#repte-4).

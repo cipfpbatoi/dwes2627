@@ -41,6 +41,8 @@ Materials de suport: [Repte 1](../04_materials/repte_01/index.md).
 
 Entendre què s’executa en client i què s’executa en servidor, i prendre una primera decisió tècnica inicial amb criteri.
 
+**Teoria relacionada**: [Backend, client-servidor i arquitectura web](../recursos/Teoria/Teoria-R1-Backend-client-servidor-i-arquitectura-web.pdf).
+
 **Què has de fer**
 
 Has de completar una [fitxa breu d’exploració tècnica inicial](../04_materials/fitxa_exploracio_tecnica_inicial.md) i justificar quina base tècnica utilitzaràs per començar el projecte.
@@ -66,6 +68,8 @@ En este microrepte no es tracta encara d’instal·lar el framework complet, sin
 **Objectiu**
 
 Deixar el projecte preparat perquè es puga arrancar de manera clara, reproduïble i usable, i perquè ja tinga una primera resposta real del backend.
+
+**Teoria relacionada**: [Stack servidor i entorn executable](../recursos/Teoria/Teoria-R1-Stack-servidor-i-entorn-executable.pdf).
 
 **Què has de fer**
 

@@ -94,6 +94,8 @@ Materials de suport:
 
 Construir un punt d’entrada de dades usable i demostrar que el sistema rep la informació correctament, aplica una validació bàsica en servidor, mostra un error visible i permet reenviar el formulari corregit.
 
+**Teoria relacionada**: [Formularis, petició POST i validació de servidor](../recursos/Teoria/Teoria-R2-Formularis-peticio-POST-i-validacio-de-servidor.pdf).
+
 **Què s’espera**
 
 - Un formulari funcional o una entrada equivalent.
@@ -111,6 +113,8 @@ No cal encara acumular errors en arrays, validar tots els controls alhora, conse
 **Objectiu**
 
 Millorar el flux d’error del formulari i completar el cas correcte. Quan una dada no és correcta, el servidor torna a generar el formulari conservant les dades que sí eren aprofitables. Quan l’entrada ja és correcta, el servidor la processa i la guarda funcionalment amb un mecanisme simple.
+
+**Teoria relacionada**: [Reintent, conservació de dades i guardat funcional](../recursos/Teoria/Teoria-R2-Reintent-conservacio-de-dades-i-guardat-funcional.pdf).
 
 Este microrepte continua directament el `R2M1`. No has de començar de zero ni construir un formulari nou si el que tens ja envia dades i valida almenys una dada clau. Ara la pregunta és una altra: què fa el servidor amb la informació correcta quan ja pot confiar mínimament en ella?
 
@@ -180,6 +184,8 @@ Els arrays, funcions i regles del projecte apareixen amb més sentit en `R2M3`. 
 
 Aplicar lògica bàsica de programació perquè el backend no es limite a rebre i guardar dades, sinó que aplique regles reals del projecte sobre la informació disponible.
 
+**Teoria relacionada**: [Decisions, arrays, funcions i regles de domini](../recursos/Teoria/Teoria-R2-Decisions-arrays-funcions-i-regles-de-domini.pdf).
+
 Perquè este microrepte siga concret, hauràs de crear una **llibreria pròpia mínima** del projecte: un fitxer separat de funcions o regles, per exemple `src/regles.php`, `includes/regles.php`, `lib/funcions.php` o equivalent, carregat des del flux amb `require_once`, `include_once` o una alternativa equivalent del teu entorn.
 
 **Què s’espera**
@@ -237,6 +243,8 @@ Pots fer que el sistema:
 
 Demostrar que el sistema pot recordar informació provisional entre peticions per no perdre el fil del recorregut, recuperar un esborrany o unes seleccions temporals i invalidar-les quan ja no facen falta, sense convertir encara este punt en un model complet d’usuari.
 
+**Teoria relacionada**: [Estat, sessió i cookies](../recursos/Teoria/Teoria-R2-Estat-sessio-i-cookies.pdf).
+
 En este microrepte hauràs d’usar **sessió i cookie**. No és suficient triar només una de les dues. També hauràs de llegir alguna dada de `$_SERVER` amb una finalitat clara i preparar una base comuna de rutes perquè els `include` / `require` partisquen del mateix lloc.
 
 **Què s’espera**
@@ -263,6 +271,8 @@ En este microrepte hauràs d’usar **sessió i cookie**. No és suficient triar
 
 Connectar tot el flux anterior amb una necessitat real del producte: una operació que només es pot executar si es complixen unes condicions d’accés i que deixa clar què passa en el cas autoritzat i en el cas denegat.
 
+**Teoria relacionada**: [Autenticació, autorització i operació protegida](../recursos/Teoria/Teoria-R2-Autenticacio-autoritzacio-i-operacio-protegida.pdf).
+
 En este microrepte també has de mostrar un registre o alta mínima d’usuari. No cal una base de dades ni un sistema complet d’usuaris, però sí cal guardar la contrasenya amb hash, encara que siga en un array, fitxer o estructura equivalent del projecte.
 
 **Què s’espera**
@@ -283,6 +293,8 @@ En este microrepte també has de mostrar un registre o alta mínima d’usuari. 
 ### Microrepte 6. Mini API d'autenticació per a client
 
 En este microrepte hauràs d'exposar l'autenticació que ja tens en `R2M5` com una mini API consumible des d'un client extern.
+
+**Teoria relacionada**: [JSON, codis HTTP i autenticació mínima per a client](../recursos/Teoria/Teoria-R2-JSON-codis-HTTP-i-autenticacio-minima-per-a-client.pdf).
 
 Açò no convertix `R2` en el repte d'API. El que es busca és donar a `Desenvolupament Web en Entorn Client` un contracte mínim i estable per poder practicar autenticació amb `fetch`, `curl`, Postman o Insomnia abans d'arribar a `R4`.
 
@@ -327,6 +339,8 @@ Este microrepte no vol dir:
 
 Comprovar que el flux complet funciona, que queda registrat amb una checklist o taula simple de proves, que es pot demostrar en una demo breu i que el repte arriba a les fases finals amb una base tècnica clara.
 
+**Teoria relacionada**: [Proves, depuració i checkpoint](../recursos/Teoria/Teoria-R2-Proves-depuracio-i-checkpoint.pdf).
+
 En este microrepte no es demanen encara proves unitàries ni `PHPUnit` com a mínim. Sí que has d’introduir una **prova automàtica lleugera de flux**, encara que siga una comanda `curl`, un script `.sh`, un script PHP senzill o una col·lecció de peticions documentada.
 
 **Què s’espera**
@@ -352,6 +366,8 @@ En este microrepte no es demanen encara proves unitàries ni `PHPUnit` com a mí
 ### Microrepte 8. Primera peça testable amb POO i Composer
 
 En este microrepte hauràs de convertir una regla, comprovació o càlcul del flux que ja funciona en una classe simple carregada amb Composer i provar-la de manera automàtica.
+
+**Teoria relacionada**: [POO, Composer i proves unitàries](../recursos/Teoria/Teoria-R2-POO-Composer-i-proves-unitaries.pdf).
 
 Este microrepte no substituïx la resta del repte ni convertix `R2` en `R3`.
 
@@ -390,6 +406,8 @@ Si després d’esta peça afegixes més classes, una llibreria externa menuda v
 ### Microrepte 9. Persistència mínima amb BBDD en PHP
 
 En este microrepte hauràs de fer que una dada significativa del projecte quede guardada en una base de dades i es puga recuperar després.
+
+**Teoria relacionada**: [BBDD en PHP amb PDO](../recursos/Teoria/Teoria-R2-BBDD-en-PHP-amb-PDO.pdf).
 
 Este microrepte arriba després de les funcions, l'estat, l'autenticació, les proves i la primera peça testable perquè ara la pregunta és una altra: quina informació del projecte ha de sobreviure més enllà de la sessió o d'un array provisional?
 

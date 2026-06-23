@@ -76,6 +76,14 @@ Materials de suport:
 - [R5M4. Funcionalitat híbrida integrada](../recursos/Repte5/R5M4-Funcionalitat-hibrida-integrada.pdf)
 - [R5M5. Prova, documentació i defensa](../recursos/Repte5/R5M5-Prova-documentacio-i-defensa.pdf)
 
+Teoria relacionada per microrepte:
+
+- `R5M1`: [Integració externa i flux híbrid](../recursos/Teoria/Teoria-R5-Integracio-externa-i-flux-hibrid.pdf)
+- `R5M2`: [Integració externa i flux híbrid](../recursos/Teoria/Teoria-R5-Integracio-externa-i-flux-hibrid.pdf)
+- `R5M3`: [Mapping, proves i defensa d'una integració](../recursos/Teoria/Teoria-R5-Mapping-proves-i-defensa-duna-integracio.pdf)
+- `R5M4`: [Integració externa i flux híbrid](../recursos/Teoria/Teoria-R5-Integracio-externa-i-flux-hibrid.pdf) i [Mapping, proves i defensa d'una integració](../recursos/Teoria/Teoria-R5-Mapping-proves-i-defensa-duna-integracio.pdf)
+- `R5M5`: [Mapping, proves i defensa d'una integració](../recursos/Teoria/Teoria-R5-Mapping-proves-i-defensa-duna-integracio.pdf)
+
 ## Presentació i entrega
 
 Per preparar l'entrega, la demo i la defensa breu, usa la [guia de presentació dels reptes](guia_presentacio.md#repte-5).
