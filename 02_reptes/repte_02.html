@@ -1,0 +1,2981 @@
+
+<!doctype html>
+<html lang="ca" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://cipfpbatoi.github.io/dwes2627/02_reptes/repte_02.html">
+      
+      
+        <link rel="prev" href="repte_01.html">
+      
+      
+        <link rel="next" href="repte_03.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../imagenes/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>2️⃣ Repte 2 - Programació web en Entorn Servidor 2026-2027</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-X6D0LR7TC8"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-X6D0LR7TC8",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-X6D0LR7TC8",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-blue" data-md-color-accent="Teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#repte-2-processament-estat-i-funcionalitat-protegida" class="md-skip">
+          Salta el contingut
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Capçalera">
+    <a href="../index.html" title="Programació web en Entorn Servidor 2026-2027" class="md-header__button md-logo" aria-label="Programació web en Entorn Servidor 2026-2027" data-md-component="logo">
+      
+  <img src="../imagenes/logofp.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Programació web en Entorn Servidor 2026-2027
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              2️⃣ Repte 2
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="light-blue" data-md-color-accent="Teal"  aria-label="Canviar a mode nit"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Canviar a mode nit" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="light-blue" data-md-color-accent="Teal"  aria-label="Canviar a mode dia"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Canviar a mode dia" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cerca" placeholder="Cerca" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cerca">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Neteja" aria-label="Neteja" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicialitzant cerca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navegació" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="Programació web en Entorn Servidor 2026-2027" class="md-nav__button md-logo" aria-label="Programació web en Entorn Servidor 2026-2027" data-md-component="logo">
+      
+  <img src="../imagenes/logofp.png" alt="logo">
+
+    </a>
+    Programació web en Entorn Servidor 2026-2027
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🏠 Inici
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Com funciona el curs
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    📘 Com funciona el curs
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_com_funciona_el_curs/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🧭 Visió general
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ampliacions-excellencia.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🌟 Ampliacions 9→10
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_materials/guia_us_verificable_ia.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🤖 Ús verificable de la IA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📚 Materials
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    📚 Materials
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_materials/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    👀 Visió general
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_materials/fitxa_exploracio_tecnica_inicial.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📝 Fitxa d'exploració tècnica inicial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_materials/repte_01/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1️⃣ Materials Repte 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_materials/repte_03/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3️⃣ Materials Repte 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_projecte_base/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🧱 Projectes base
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_recursos_rapid/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ⚡ Recursos ràpids
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📎 Presentacions PDF
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    📎 Presentacions PDF
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recursos/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    👀 Visió general
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recursos/tallers.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🛠️ Tallers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🧩 Reptes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🧩 Reptes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    👀 Visió general
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="guia_presentacio.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🧭 Guia de presentació
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="repte_01.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1️⃣ Repte 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2️⃣ Repte 2
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="repte_02.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2️⃣ Repte 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Taula de continguts">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Taula de continguts
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#finalitat-del-repte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Finalitat del repte
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vista-rapida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vista ràpida
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#persistencia-en-r2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Persistència en R2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-no-es-suficient" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Què no és suficient
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relacio-amb-el-projecte-base" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Relació amb el projecte base
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemples-breus-segons-projecte-base" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemples breus segons projecte base
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#microreptes-del-repte-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Microreptes del Repte 2
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Microreptes del Repte 2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#microrepte-1-entrada-de-dades-i-validacio-basica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Microrepte 1. Entrada de dades i validació bàsica
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#microrepte-2-processament-reintent-i-guardat-funcional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Microrepte 2. Processament, reintent i guardat funcional
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#microrepte-3-logica-del-flux-i-regles-del-projecte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Microrepte 3. Lògica del flux i regles del projecte
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#microrepte-4-estat-i-sessio-per-conservar-el-flux" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Microrepte 4. Estat i sessió per conservar el flux
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#microrepte-5-autenticacio-i-funcionalitat-protegida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Microrepte 5. Autenticació i funcionalitat protegida
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#microrepte-6-mini-api-dautenticacio-per-a-client" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Microrepte 6. Mini API d'autenticació per a client
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#microrepte-7-prova-depuracio-i-checkpoint-tecnic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Microrepte 7. Prova, depuració i checkpoint tècnic
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#microrepte-8-primera-peca-testable-amb-poo-i-composer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Microrepte 8. Primera peça testable amb POO i Composer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#microrepte-9-persistencia-minima-amb-bbdd-en-php" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Microrepte 9. Persistència mínima amb BBDD en PHP
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#com-es-reparteixen-els-criteris-dins-del-repte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Com es reparteixen els criteris dins del repte
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pes-dels-microreptes-dins-del-nucli-de-r2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pes dels microreptes dins del nucli de R2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#criteris-que-es-treballen-en-este-repte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Criteris que es treballen en este repte
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#idea-metodologica-important-deste-repte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Idea metodològica important d’este repte
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#si-et-bloqueges" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Si et bloqueges
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#presentacio-i-entrega" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Presentació i entrega
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentacio-del-codi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Documentació del codi
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#us-de-la-ia-en-este-repte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ús de la IA en este repte
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#errors-habituals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Errors habituals
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-prepara-este-repte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Què prepara este repte
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ampliacio-910" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ampliació 9→10
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#com-es-calcula-la-nota-final-de-r2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Com es calcula la nota final de R2
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="repte_03.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3️⃣ Repte 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="repte_04.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4️⃣ Repte 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="repte_05.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5️⃣ Repte 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fase_final.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🎓 Tancament i defensa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📏 Com s'avalua
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    📏 Com s'avalua
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_com_s_avalua/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    👀 Visió general
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📋 Guies d'avaluació
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    📋 Guies d'avaluació
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_com_s_avalua/rubriques/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    👀 Visió general
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_com_s_avalua/rubriques/r1m1.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    R1M1. Model client/servidor i stack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_com_s_avalua/rubriques/r1m2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    R1M2. Entorn executable i tancament
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_com_s_avalua/rubriques/r2m6.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    R2M6. Mini API d'autenticació
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_com_s_avalua/rubriques/r2m9.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    R2M9. Persistència mínima amb BBDD
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_com_s_avalua/rubriques/r3m1.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    R3M1. Arrencada del nou projecte
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_com_s_avalua/rubriques/r3m2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    R3M2. Persistència mínima
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_com_s_avalua/rubriques/r3m3.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    R3M3. Primer cas d'ús complet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_com_s_avalua/rubriques/r3m4.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    R3M4. Segon cas d'ús
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_com_s_avalua/rubriques/r3m5.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    R3M5. Autenticació, autorització i middleware
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_com_s_avalua/rubriques/r3m6.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    R3M6. Qualitat i estabilització
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_com_s_avalua/rubriques/r3m7.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    R3M7. Tancament tècnic
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_com_s_avalua/rubriques/r4m1.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    R4M1. Contracte del servei
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_com_s_avalua/rubriques/r4m2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    R4M2. Primer endpoint funcional
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_com_s_avalua/rubriques/r4m3.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    R4M3. Protecció de l'API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_com_s_avalua/rubriques/r4m4.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    R4M4. Consum real del servei
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_com_s_avalua/rubriques/r4m5.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    R4M5. Documentació i prova
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_com_s_avalua/rubriques/r5m1.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    R5M1. Font externa i disseny
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_com_s_avalua/rubriques/r5m2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    R5M2. Connexió amb font externa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_com_s_avalua/rubriques/r5m3.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    R5M3. Mapping i transformació
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_com_s_avalua/rubriques/r5m4.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    R5M4. Funcionalitat híbrida
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_com_s_avalua/rubriques/r5m5.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    R5M5. Prova i defensa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_com_s_avalua/report_breu_%C3%BAs_ia.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📝 Report breu d'ús de la IA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_com_s_avalua/checklists_de_prova.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🧪 Checklist de proves
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="repte-2-processament-estat-i-funcionalitat-protegida">Repte 2. Processament, estat i funcionalitat protegida<a class="headerlink" href="#repte-2-processament-estat-i-funcionalitat-protegida" title="Permanent link">&para;</a></h1>
+<h2 id="finalitat-del-repte">Finalitat del repte<a class="headerlink" href="#finalitat-del-repte" title="Permanent link">&para;</a></h2>
+<p>Este repte servix per convertir la base funcional de <code>R1</code> en un flux complet de servidor: entrada de dades, validació, processament, conservació d'informació, estat, autenticació, funcionalitat protegida, prova mínima, primera peça testable i persistència mínima amb BBDD.</p>
+<h2 id="vista-rapida">Vista ràpida<a class="headerlink" href="#vista-rapida" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Bloc</th>
+<th>Què has de deixar fet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Entrada i validació</td>
+<td>Formulari o entrada equivalent vinculada al projecte, recuperació de dades en servidor, error visible i possibilitat de correcció.</td>
+</tr>
+<tr>
+<td>Processament</td>
+<td>Codi servidor integrat amb <code>HTML</code> o plantilla, ús de variables, operadors, sentències simples, directives i àmbits dins d'un flux real.</td>
+</tr>
+<tr>
+<td>Conservació</td>
+<td>La informació correcta no es perd: es guarda amb un mecanisme simple i es pot reutilitzar després dins del producte.</td>
+</tr>
+<tr>
+<td>Lògica i estat</td>
+<td>Regles pròpies del projecte, funcions, arrays o bucles, i estat temporal amb sessió o cookies quan faça falta.</td>
+</tr>
+<tr>
+<td>Accés protegit</td>
+<td>Autenticació funcional i una operació real del projecte protegida, amb cas autoritzat i cas denegat.</td>
+</tr>
+<tr>
+<td>Mini API</td>
+<td>API d'autenticació per a client amb resposta <code>JSON</code>, cas <code>200</code>, cas <code>401</code> i ruta protegida.</td>
+</tr>
+<tr>
+<td>Codi testable</td>
+<td>Classe simple del domini o servei, autoload amb Composer o equivalent, prova unitària mínima i comprovació que el flux web continua funcionant.</td>
+</tr>
+<tr>
+<td>BBDD mínima</td>
+<td>Connexió, taula, alta, lectura, consultes preparades i instruccions per reproduir-ho.</td>
+</tr>
+<tr>
+<td>Verificació</td>
+<td>Prova del cas positiu, cas negatiu, error de validació, reutilització de dades i documentació del flux.</td>
+</tr>
+</tbody>
+</table>
+<p>No cal que siga un producte gran. Sí que cal que siga un flux complet, explicable i verificable. El formulari no compta com a repte complet si només envia dades i torna un missatge genèric.</p>
+<h2 id="persistencia-en-r2">Persistència en R2<a class="headerlink" href="#persistencia-en-r2" title="Permanent link">&para;</a></h2>
+<p>En este repte la persistència és <strong>funcional i de suport</strong>. Servix perquè la informació correcta torne a aparéixer en el producte: un llistat, una reserva, una publicació, un recurs, una activitat o qualsevol dada significativa del domini.</p>
+<p>Es pot resoldre amb un mecanisme simple i controlat, sempre que siga coherent amb el projecte. La base de dades apareix al final del nucli amb una persistència mínima en <code>PHP</code>, però <code>R2</code> encara no és un repte centrat en arquitectura completa d'accés a dades.</p>
+<h2 id="que-no-es-suficient">Què no és suficient<a class="headerlink" href="#que-no-es-suficient" title="Permanent link">&para;</a></h2>
+<p>En este repte no n’hi ha prou amb:</p>
+<ul>
+<li>Fer només registre, <code>login</code> i <code>logout</code>.</li>
+<li>Escriure <code>HTML</code> estàtic sense codi servidor integrat en el flux.</li>
+<li>Usar variables o operadors només com a exemples desconnectats del producte.</li>
+<li>Protegir una ruta decorativa o sense valor dins del projecte.</li>
+<li>Confondre estat, autenticació, autorització i persistència.</li>
+<li>Validar només el cas feliç.</li>
+<li>Quedar-se en “formulari + validació + missatge d’error” sense obrir una funcionalitat del producte.</li>
+<li>Guardar dades de manera aparent si després no es poden reutilitzar.</li>
+<li>Muntar una base de dades com a reclam tècnic mentre el flux principal continua dèbil.</li>
+<li>Portar una demo que funciona una vegada però no es pot explicar ni reproduir.</li>
+<li>Convertir les fases finals en una reescriptura completa, en MVC complet, en ORM o en migració de framework.</li>
+</ul>
+<h2 id="relacio-amb-el-projecte-base">Relació amb el projecte base<a class="headerlink" href="#relacio-amb-el-projecte-base" title="Permanent link">&para;</a></h2>
+<p>La funcionalitat protegida ha d’estar lligada al projecte que ja vas definir al <code>Repte 1</code>.</p>
+<p>No es considera suficient construir un formulari genèric desconnectat del domini. El que compta és que el flux servisca per crear, modificar, reservar, publicar, pujar, recuperar o gestionar alguna cosa que tinga sentit dins del teu producte.</p>
+<p>La pregunta útil no és només “quin formulari faré?”, sinó “quina acció real del meu projecte vull validar, processar, conservar i protegir en servidor?”.</p>
+<h2 id="exemples-breus-segons-projecte-base">Exemples breus segons projecte base<a class="headerlink" href="#exemples-breus-segons-projecte-base" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Plataforma de productes</strong>: alta o edició d’un producte amb nom, categoria i confirmació. Si falta la dada triada per validar, el sistema ho mostra, permet correcció i, quan la dada siga correcta, deixa el producte preparat per al processament posterior.</li>
+<li><strong>Gestor de reserves o activitats</strong>: creació d’una reserva o d’una activitat amb nom, franja i confirmació. El flux ha de validar almenys una dada clau, respondre amb un error clar si no és correcta i deixar la reserva preparada per continuar el recorregut.</li>
+<li><strong>Plataforma de recursos o publicacions</strong>: alta d’un recurs, notícia o publicació amb títol, tipus i confirmació. El servidor ha de validar una dada inicial i permetre que el recurs es puga processar més avant dins del projecte.</li>
+</ul>
+<h2 id="microreptes-del-repte-2">Microreptes del Repte 2<a class="headerlink" href="#microreptes-del-repte-2" title="Permanent link">&para;</a></h2>
+<p>Per treballar bé este repte convé dividir-lo en nou peces clares. Això ajuda a no reduir-lo a un simple <code>login</code> i a entendre què s’està construint en cada fase.</p>
+<p>La base del repte queda en <code>27</code> hores, organitzades en <code>9</code> sessions de <code>3</code> hores.</p>
+<p>La progressió també és important: en el microrepte 1 entra i es valida la informació; en el 2 es processen i es guarden les dades correctes; en el 3 s’apliquen regles reals del projecte amb funcions pròpies; en el 4 es conserva estat temporal del flux i s'estabilitzen includes; en el 5 es protegix una operació real; en el 6 s'exposa una mini API d'autenticació per a client; en el 7 es prova, es depura i es tanca un checkpoint tècnic; en el 8 s’introduïx una classe simple carregada amb Composer i verificada amb una primera prova unitària; i en el 9 es fa una persistència mínima amb BBDD.</p>
+<p>Guies d'avaluació:</p>
+<ul>
+<li><a href="../03_com_s_avalua/rubriques/r2m1.html">R2M1. Guia d'avaluació</a></li>
+<li><a href="../03_com_s_avalua/rubriques/r2m2.html">R2M2. Guia d'avaluació</a></li>
+<li><a href="../03_com_s_avalua/rubriques/r2m3.html">R2M3. Guia d'avaluació</a></li>
+<li><a href="../03_com_s_avalua/rubriques/r2m4.html">R2M4. Guia d'avaluació</a></li>
+<li><a href="../03_com_s_avalua/rubriques/r2m5.html">R2M5. Guia d'avaluació</a></li>
+<li><a href="../03_com_s_avalua/rubriques/r2m6.html">R2M6. Guia d'avaluació</a></li>
+<li><a href="../03_com_s_avalua/rubriques/r2m7.html">R2M7. Guia d'avaluació</a></li>
+<li><a href="../03_com_s_avalua/rubriques/r2m8.html">R2M8. Guia d'avaluació</a></li>
+<li><a href="../03_com_s_avalua/rubriques/r2m9.html">R2M9. Guia d'avaluació</a></li>
+</ul>
+<p>Materials de suport:</p>
+<ul>
+<li><a href="../recursos/Repte2/R2-Processament-estat-i-autenticacio.pdf">R2. Processament, estat i autenticació</a></li>
+<li><a href="../recursos/Repte2/R2M1-Entrada-variada-i-validacio-basica.pdf">R2M1. Entrada variada i validació bàsica</a></li>
+<li><a href="../recursos/Repte2/R2M2-Processament-reintent-i-guardat-funcional.pdf">R2M2. Processament, reintent i guardat funcional</a></li>
+<li><a href="../recursos/Repte2/R2M3-Logica-del-flux-i-regles-del-projecte.pdf">R2M3. Lògica del flux i regles del projecte</a></li>
+<li><a href="../recursos/Repte2/R2M4-Estat-sessio-i-cookies.pdf">R2M4. Estat, sessió i cookies</a></li>
+<li><a href="../recursos/Repte2/R2M5-Autenticacio-i-funcionalitat-protegida.pdf">R2M5. Autenticació i funcionalitat protegida</a></li>
+<li><a href="../recursos/Repte2/R2M6-Mini-API-dautenticacio-per-a-client.pdf">R2M6. Mini API d'autenticació per a client</a></li>
+<li><a href="../recursos/Repte2/R2M8-Primera-peca-testable-amb-POO-i-Composer.pdf">R2M8. Primera peça testable amb POO i Composer</a></li>
+<li><a href="../recursos/Repte2/R2M9-Persistencia-minima-amb-BBDD-en-PHP.pdf">R2M9. Persistència mínima amb BBDD en PHP</a></li>
+</ul>
+<h3 id="microrepte-1-entrada-de-dades-i-validacio-basica">Microrepte 1. Entrada de dades i validació bàsica<a class="headerlink" href="#microrepte-1-entrada-de-dades-i-validacio-basica" title="Permanent link">&para;</a></h3>
+<p><strong>Objectiu</strong></p>
+<p>Construir un punt d’entrada de dades usable i demostrar que el sistema rep la informació correctament, aplica una validació bàsica en servidor, mostra un error visible i permet reenviar el formulari corregit.</p>
+<p><strong>Teoria relacionada</strong>: <a href="../recursos/Teoria/Teoria-R2-Formularis-peticio-POST-i-validacio-de-servidor.pdf">Formularis, petició POST i validació de servidor</a>.</p>
+<p><strong>Què s’espera</strong></p>
+<ul>
+<li>Un formulari funcional o una entrada equivalent.</li>
+<li>Camps mínims amb sentit dins del projecte base: text, llista o opció tancada i checkbox.</li>
+<li>Recuperació real de les dades en servidor amb <code>$_POST</code> o mecanisme equivalent.</li>
+<li>Una validació bàsica al servidor amb una condició simple.</li>
+<li>Un missatge d’error visible quan la dada triada no és acceptable.</li>
+<li>Possibilitat de corregir i tornar a enviar.</li>
+<li>Comentaris breus en el codi quan facen falta per entendre el flux.</li>
+</ul>
+<p>No cal encara acumular errors en arrays, validar tots els controls alhora, conservar tots els valors del formulari, gestionar fitxers ni fer checkbox múltiples. Això es pot millorar més avant.</p>
+<h3 id="microrepte-2-processament-reintent-i-guardat-funcional">Microrepte 2. Processament, reintent i guardat funcional<a class="headerlink" href="#microrepte-2-processament-reintent-i-guardat-funcional" title="Permanent link">&para;</a></h3>
+<p><strong>Objectiu</strong></p>
+<p>Millorar el flux d’error del formulari i completar el cas correcte. Quan una dada no és correcta, el servidor torna a generar el formulari conservant les dades que sí eren aprofitables. Quan l’entrada ja és correcta, el servidor la processa i la guarda funcionalment amb un mecanisme simple.</p>
+<p><strong>Teoria relacionada</strong>: <a href="../recursos/Teoria/Teoria-R2-Reintent-conservacio-de-dades-i-guardat-funcional.pdf">Reintent, conservació de dades i guardat funcional</a>.</p>
+<p>Este microrepte continua directament el <code>R2M1</code>. No has de començar de zero ni construir un formulari nou si el que tens ja envia dades i valida almenys una dada clau. Ara la pregunta és una altra: què fa el servidor amb la informació correcta quan ja pot confiar mínimament en ella?</p>
+<p><strong>Què s’espera</strong></p>
+<ul>
+<li>Comprensió bàsica de com la base comuna en <code>PHP</code> genera una pàgina o una resposta amb codi embegut o equivalent.</li>
+<li>Identificació clara de les peces tècniques associades al flux: petició, servidor, fitxer o plantilla i resposta.</li>
+<li>Inclusió recognoscible de codi de servidor dins del punt on es genera la resposta.</li>
+<li>Sintaxi correcta.</li>
+<li>Variables amb sentit.</li>
+<li>Operadors i sentències bàsiques ben aplicats.</li>
+<li>Tractament clar de les dades rebudes abans de tornar-les al formulari.</li>
+<li>Error visible generat en servidor.</li>
+<li>Formulari regenerat amb les dades aprofitables conservades.</li>
+<li>Reintent corregit sense haver de repetir totes les dades.</li>
+<li>Guardat funcional simple quan l’entrada és correcta.</li>
+<li>Explicació clara de per què conservar dades en el reintent no és el mateix que guardar funcionalment un cas correcte.</li>
+<li>Els arrays d’errors, fitxers, checkbox múltiples i validacions més completes queden com a ampliació o per a una fase posterior.</li>
+</ul>
+<p><strong>Què has de construir</strong></p>
+<p>Has de completar un recorregut curt però real:</p>
+<ol>
+<li>Enviar el formulari amb algun error.</li>
+<li>Recuperar les dades enviades en el servidor.</li>
+<li>Mostrar un missatge d’error clar.</li>
+<li>Tornar a generar el formulari amb les dades aprofitables ja escrites o seleccionades.</li>
+<li>Corregir només la dada errònia.</li>
+<li>Reenviar correctament i obtindre una resposta final.</li>
+<li>Processar i guardar funcionalment la informació correcta.</li>
+<li>Mostrar o recuperar la dada guardada en una pantalla, llista o resum simple.</li>
+</ol>
+<p>Exemples:</p>
+<ul>
+<li>Si tens una tenda, pots enviar un producte sense nom però conservar la categoria triada; quan el nom ja és correcte, el producte queda guardat en una llista provisional.</li>
+<li>Si tens reserves, pots enviar una reserva amb una franja no vàlida però conservar el nom; quan la franja ja és correcta, la reserva queda guardada funcionalment.</li>
+<li>Si tens publicacions o recursos, pots enviar una publicació amb títol massa curt però conservar el tipus; quan el títol ja és correcte, el recurs queda registrat en una llista simple.</li>
+</ul>
+<p><strong>Requisits mínims</strong></p>
+<ul>
+<li>El flux ha de partir del formulari o entrada de <code>R2M1</code>.</li>
+<li>Si la validació falla, el formulari ha de tornar amb dades aprofitables conservades.</li>
+<li>La resposta del servidor ha de dependre de les dades enviades, no de valors fixos.</li>
+<li>Hi ha d’haver ús real de variables, operadors o sentències simples.</li>
+<li>Has de conservar almenys un camp de text i una opció tancada, i revisar què passa amb un checkbox simple.</li>
+<li>Quan el cas és correcte, la informació ha de quedar guardada amb un mecanisme simple que pugues explicar.</li>
+<li>Has de poder assenyalar en el codi el punt de recepció, validació, preparació de valors, reconstrucció del formulari i guardat del cas correcte.</li>
+</ul>
+<p><strong>Què es deixa per a més avant</strong></p>
+<p>No cal encara:</p>
+<ul>
+<li>acumular errors en arrays;</li>
+<li>convertir el formulari en una validació completa de tots els camps;</li>
+<li>fer checkbox múltiples si no aporten res al flux;</li>
+<li>pujar fitxers o imatges com a mínim obligatori;</li>
+<li>crear funcions i arrays com a centre del microrepte;</li>
+<li>iniciar sessió, cookies, login o rols;</li>
+<li>usar base de dades com a mínim obligatori;</li>
+<li>muntar una arquitectura MVC o una persistència formal.</li>
+</ul>
+<p>Els arrays, funcions i regles del projecte apareixen amb més sentit en <code>R2M3</code>. Estat, sessió i cookies apareixen en <code>R2M4</code>. Autenticació i operació protegida apareixen en <code>R2M5</code>.</p>
+<h3 id="microrepte-3-logica-del-flux-i-regles-del-projecte">Microrepte 3. Lògica del flux i regles del projecte<a class="headerlink" href="#microrepte-3-logica-del-flux-i-regles-del-projecte" title="Permanent link">&para;</a></h3>
+<p><strong>Objectiu</strong></p>
+<p>Aplicar lògica bàsica de programació perquè el backend no es limite a rebre i guardar dades, sinó que aplique regles reals del projecte sobre la informació disponible.</p>
+<p><strong>Teoria relacionada</strong>: <a href="../recursos/Teoria/Teoria-R2-Decisions-arrays-funcions-i-regles-de-domini.pdf">Decisions, arrays, funcions i regles de domini</a>.</p>
+<p>Perquè este microrepte siga concret, hauràs de crear una <strong>llibreria pròpia mínima</strong> del projecte: un fitxer separat de funcions o regles, per exemple <code>src/regles.php</code>, <code>includes/regles.php</code>, <code>lib/funcions.php</code> o equivalent, carregat des del flux amb <code>require_once</code>, <code>include_once</code> o una alternativa equivalent del teu entorn.</p>
+<p><strong>Què s’espera</strong></p>
+<ul>
+<li>Almenys una decisió significativa.</li>
+<li>Una repetició o un recorregut quan el flux ho necessite.</li>
+<li>Ús d’arrays o estructures equivalents quan faça falta.</li>
+<li>Una funció pròpia útil situada en un fitxer separat de llibreria pròpia.</li>
+<li>Ús real de <code>require_once</code>, <code>include_once</code> o equivalent per carregar eixa llibreria.</li>
+<li>Aplicació recognoscible d’alguna regla bàsica del projecte.</li>
+<li>Reutilització de la informació guardada quan faça falta per decidir, calcular o mostrar.</li>
+<li>Lògica connectada al flux real del producte.</li>
+</ul>
+<p><strong>Exemples segons projecte</strong></p>
+<h4 id="exemple-si-el-projecte-es-una-tenda">Exemple si el projecte és una tenda<a class="headerlink" href="#exemple-si-el-projecte-es-una-tenda" title="Permanent link">&para;</a></h4>
+<p>Pots fer que el sistema:</p>
+<ul>
+<li>decidisca si un producte queda visible o pendent</li>
+<li>calcule o transforme alguna informació del producte</li>
+<li>gestione una llista d’etiquetes o categories</li>
+<li>use una funció per validar o preparar dades abans de guardar-les</li>
+<li>carregue eixa funció des d’un fitxer propi de regles o funcions</li>
+</ul>
+<h4 id="exemple-si-el-projecte-es-un-gestor-dactivitats-o-reserves">Exemple si el projecte és un gestor d’activitats o reserves<a class="headerlink" href="#exemple-si-el-projecte-es-un-gestor-dactivitats-o-reserves" title="Permanent link">&para;</a></h4>
+<p>Pots fer que el sistema:</p>
+<ul>
+<li>decidisca si una activitat està oberta o tancada</li>
+<li>valide regles sobre dates o places</li>
+<li>construïsca missatges diferents segons l’estat</li>
+<li>use funcions per separar comprovacions</li>
+<li>tinga eixes funcions en una llibreria pròpia senzilla</li>
+</ul>
+<h4 id="exemple-si-el-projecte-es-una-plataforma-de-recursos-o-publicacions">Exemple si el projecte és una plataforma de recursos o publicacions<a class="headerlink" href="#exemple-si-el-projecte-es-una-plataforma-de-recursos-o-publicacions" title="Permanent link">&para;</a></h4>
+<p>Pots fer que el sistema:</p>
+<ul>
+<li>decidisca si una publicació queda en esborrany o publicada</li>
+<li>genere un resum o classificació bàsica</li>
+<li>tracte una llista d’etiquetes</li>
+<li>use funcions per preparar el recurs abans de mostrar-lo o guardar-lo</li>
+<li>importe eixes funcions des d’un fitxer propi</li>
+</ul>
+<p><strong>Què no es penalitza encara</strong></p>
+<ul>
+<li>No tindre sessió, cookies, login, rols o autorització.</li>
+<li>No tindre base de dades obligatòria ni persistència formal.</li>
+<li>No haver refactoritzat encara cap a MVC o arquitectura completa.</li>
+</ul>
+<h3 id="microrepte-4-estat-i-sessio-per-conservar-el-flux">Microrepte 4. Estat i sessió per conservar el flux<a class="headerlink" href="#microrepte-4-estat-i-sessio-per-conservar-el-flux" title="Permanent link">&para;</a></h3>
+<p><strong>Objectiu</strong></p>
+<p>Demostrar que el sistema pot recordar informació provisional entre peticions per no perdre el fil del recorregut, recuperar un esborrany o unes seleccions temporals i invalidar-les quan ja no facen falta, sense convertir encara este punt en un model complet d’usuari.</p>
+<p><strong>Teoria relacionada</strong>: <a href="../recursos/Teoria/Teoria-R2-Estat-sessio-i-cookies.pdf">Estat, sessió i cookies</a>.</p>
+<p>En este microrepte hauràs d’usar <strong>sessió i cookie</strong>. No és suficient triar només una de les dues. També hauràs de llegir alguna dada de <code>$_SERVER</code> amb una finalitat clara i preparar una base comuna de rutes perquè els <code>include</code> / <code>require</code> partisquen del mateix lloc.</p>
+<p><strong>Què s’espera</strong></p>
+<ul>
+<li>Una dada significativa del projecte guardada en sessió: esborrany, pas actual, selecció temporal o informació pendent de confirmar.</li>
+<li>Una cookie pròpia no sensible amb sentit funcional: preferència de vista, últim filtre, idioma, avís vist o última secció consultada.</li>
+<li>Evidència de què es guarda en sessió i de com es recupera.</li>
+<li>Evidència de què es guarda en cookie i de com es recupera.</li>
+<li>Lectura acotada d’alguna dada de <code>$_SERVER</code>, com <code>REQUEST_METHOD</code>, <code>HTTP_USER_AGENT</code> o <code>REMOTE_ADDR</code> tractada amb prudència.</li>
+<li>Un fitxer comú de configuració o bootstrap amb una ruta base per fer <code>include</code> / <code>require</code> de manera estable.</li>
+<li>Recuperació del flux després d’un error, una recàrrega o un pas intermedi.</li>
+<li>Distinció clara entre estat temporal del flux i guardat funcional del recurs.</li>
+<li>Neteja o invalidació quan toque.</li>
+</ul>
+<p><strong>Què no es penalitza encara</strong></p>
+<ul>
+<li>No tindre login, rols o autorització.</li>
+<li>No tindre base de dades obligatòria ni persistència formal.</li>
+<li>No haver refactoritzat cap a MVC o arquitectura completa.</li>
+</ul>
+<h3 id="microrepte-5-autenticacio-i-funcionalitat-protegida">Microrepte 5. Autenticació i funcionalitat protegida<a class="headerlink" href="#microrepte-5-autenticacio-i-funcionalitat-protegida" title="Permanent link">&para;</a></h3>
+<p><strong>Objectiu</strong></p>
+<p>Connectar tot el flux anterior amb una necessitat real del producte: una operació que només es pot executar si es complixen unes condicions d’accés i que deixa clar què passa en el cas autoritzat i en el cas denegat.</p>
+<p><strong>Teoria relacionada</strong>: <a href="../recursos/Teoria/Teoria-R2-Autenticacio-autoritzacio-i-operacio-protegida.pdf">Autenticació, autorització i operació protegida</a>.</p>
+<p>En este microrepte també has de mostrar un registre o alta mínima d’usuari. No cal una base de dades ni un sistema complet d’usuaris, però sí cal guardar la contrasenya amb hash, encara que siga en un array, fitxer o estructura equivalent del projecte.</p>
+<p><strong>Què s’espera</strong></p>
+<ul>
+<li>Registre o alta mínima d’usuari.</li>
+<li>Contrasenya guardada amb <code>password_hash</code> o mecanisme equivalent.</li>
+<li>Autenticació real amb verificació de hash, per exemple <code>password_verify</code>.</li>
+<li>Comprovació d’accés.</li>
+<li>Una operació del domini protegida, vinculada al projecte base i aplicada sobre dades reals del projecte.</li>
+<li>Un cas autoritzat i un cas denegat.</li>
+</ul>
+<p><strong>Què no es penalitza encara</strong></p>
+<ul>
+<li>No tindre rols avançats.</li>
+<li>No tindre registre públic complet, recuperació de contrasenya, OAuth o JWT.</li>
+<li>No tindre arquitectura completa ni persistència formal com a centre.</li>
+</ul>
+<h3 id="microrepte-6-mini-api-dautenticacio-per-a-client">Microrepte 6. Mini API d'autenticació per a client<a class="headerlink" href="#microrepte-6-mini-api-dautenticacio-per-a-client" title="Permanent link">&para;</a></h3>
+<p>En este microrepte hauràs d'exposar l'autenticació que ja tens en <code>R2M5</code> com una mini API consumible des d'un client extern.</p>
+<p><strong>Teoria relacionada</strong>: <a href="../recursos/Teoria/Teoria-R2-JSON-codis-HTTP-i-autenticacio-minima-per-a-client.pdf">JSON, codis HTTP i autenticació mínima per a client</a>.</p>
+<p>Açò no convertix <code>R2</code> en el repte d'API. El que es busca és donar a <code>Desenvolupament Web en Entorn Client</code> un contracte mínim i estable per poder practicar autenticació amb <code>fetch</code>, <code>curl</code>, Postman o Insomnia abans d'arribar a <code>R4</code>.</p>
+<p>Ací sí que hauràs de:</p>
+<ul>
+<li>crear un endpoint <code>POST /api/login</code> o equivalent</li>
+<li>rebre credencials i validar-les contra el sistema de <code>R2M5</code></li>
+<li>retornar sempre una resposta <code>JSON</code></li>
+<li>retornar <code>200</code> quan les credencials són correctes</li>
+<li>retornar <code>401</code> quan són incorrectes o falta autenticació</li>
+<li>generar o retornar un token simple o mecanisme equivalent documentat</li>
+<li>crear una ruta protegida com <code>GET /api/me</code>, <code>GET /api/protected</code> o equivalent</li>
+<li>llegir el token amb <code>Authorization: Bearer ...</code> o mecanisme documentat</li>
+<li>comprovar realment el token en la ruta protegida</li>
+<li>no retornar contrasenyes ni hashes</li>
+<li>provar cas correcte i cas incorrecte amb una eina externa</li>
+<li>documentar el contracte perquè DWEC el puga consumir</li>
+<li>deixar un usuari demo i les limitacions conegudes, incloent CORS si afecta el consum</li>
+</ul>
+<p>Este microrepte no vol dir:</p>
+<ul>
+<li>fer una API REST completa</li>
+<li>fer CRUD</li>
+<li>usar OpenAPI</li>
+<li>implementar OAuth</li>
+<li>implementar JWT professional</li>
+<li>fer refresh tokens</li>
+<li>resoldre rols complexos</li>
+<li>substituir el treball propi de <code>R4</code></li>
+</ul>
+<p><strong>Què no es penalitza encara</strong></p>
+<ul>
+<li>No tindre una API completa.</li>
+<li>No tindre documentació OpenAPI.</li>
+<li>No tindre JWT professional.</li>
+<li>No tindre refresh tokens.</li>
+<li>No haver resolt CORS si el client encara no el necessita.</li>
+</ul>
+<h3 id="microrepte-7-prova-depuracio-i-checkpoint-tecnic">Microrepte 7. Prova, depuració i checkpoint tècnic<a class="headerlink" href="#microrepte-7-prova-depuracio-i-checkpoint-tecnic" title="Permanent link">&para;</a></h3>
+<p><strong>Objectiu</strong></p>
+<p>Comprovar que el flux complet funciona, que queda registrat amb una checklist o taula simple de proves, que es pot demostrar en una demo breu i que el repte arriba a les fases finals amb una base tècnica clara.</p>
+<p><strong>Teoria relacionada</strong>: <a href="../recursos/Teoria/Teoria-R2-Proves-depuracio-i-checkpoint.pdf">Proves, depuració i checkpoint</a>.</p>
+<p>En este microrepte no es demanen encara proves unitàries ni <code>PHPUnit</code> com a mínim. Sí que has d’introduir una <strong>prova automàtica lleugera de flux</strong>, encara que siga una comanda <code>curl</code>, un script <code>.sh</code>, un script PHP senzill o una col·lecció de peticions documentada.</p>
+<p><strong>Què s’espera</strong></p>
+<ul>
+<li>Checklist o taula simple de casos de prova.</li>
+<li>Prova del cas correcte.</li>
+<li>Prova d’un cas d’error o denegació.</li>
+<li>Revisió d’errors i validacions.</li>
+<li>Comprovació que la informació guardada es pot recuperar o reutilitzar.</li>
+<li>Ús visible d’alguna eina o entorn simple de prova i depuració.</li>
+<li>Almenys una prova automàtica lleugera d’un cas observable del flux.</li>
+<li>Documentació mínima actualitzada.</li>
+<li>Demo reproduïble del flux complet.</li>
+<li>Defensa tècnica breu del recorregut.</li>
+</ul>
+<p><strong>Què no es penalitza encara</strong></p>
+<ul>
+<li>No tindre una suite completa de proves automatitzades.</li>
+<li>No tindre proves unitàries ni <code>PHPUnit</code>.</li>
+<li>No haver refactoritzat encara el codi.</li>
+<li>No afegir funcionalitats noves si el flux ja està tancat i verificat.</li>
+</ul>
+<h3 id="microrepte-8-primera-peca-testable-amb-poo-i-composer">Microrepte 8. Primera peça testable amb POO i Composer<a class="headerlink" href="#microrepte-8-primera-peca-testable-amb-poo-i-composer" title="Permanent link">&para;</a></h3>
+<p>En este microrepte hauràs de convertir una regla, comprovació o càlcul del flux que ja funciona en una classe simple carregada amb Composer i provar-la de manera automàtica.</p>
+<p><strong>Teoria relacionada</strong>: <a href="../recursos/Teoria/Teoria-R2-POO-Composer-i-proves-unitaries.pdf">POO, Composer i proves unitàries</a>.</p>
+<p>Este microrepte no substituïx la resta del repte ni convertix <code>R2</code> en <code>R3</code>.</p>
+<p>Ací sí que hauràs de:</p>
+<ul>
+<li>partir d’un flux ja provat en <code>R2M7</code></li>
+<li>crear o ajustar <code>composer.json</code></li>
+<li>configurar autoload per carregar classes pròpies</li>
+<li>crear una classe simple en <code>src/</code> o carpeta equivalent</li>
+<li>posar dins de la classe una regla, comprovació o càlcul real del projecte</li>
+<li>evitar que eixa classe depenga directament de <code>$_POST</code>, <code>$_SESSION</code>, <code>$_COOKIE</code> o del codi <code>HTML</code></li>
+<li>escriure una prova unitària mínima amb <code>PHPUnit</code>, <code>Pest</code> o un script automàtic equivalent</li>
+<li>executar la prova i documentar el resultat</li>
+<li>repetir un cas clau del flux web per comprovar que no s’ha trencat res</li>
+<li>explicar què queda per reorganitzar en <code>R3</code></li>
+</ul>
+<p>Este microrepte no vol dir:</p>
+<ul>
+<li>convertir tot el projecte a objectes</li>
+<li>fer una arquitectura <code>MVC</code> completa</li>
+<li>usar <code>ORM</code></li>
+<li>migrar a un framework</li>
+<li>consumir una API externa com a mínim obligatori</li>
+<li>substituir el treball propi de <code>R3</code></li>
+</ul>
+<p>Si després d’esta peça afegixes més classes, una llibreria externa menuda via Composer o una crida a una API externa, això s’ha d’entendre com a ampliació o pont cap als reptes següents, no com a exigència central per a tot l’alumnat dins de <code>R2</code>.</p>
+<p><strong>Què no es penalitza encara</strong></p>
+<ul>
+<li>No tindre MVC complet.</li>
+<li>No tindre ORM ni migracions.</li>
+<li>No haver passat el projecte a un framework.</li>
+<li>No fer POO completa.</li>
+<li>No consumir API externa.</li>
+</ul>
+<h3 id="microrepte-9-persistencia-minima-amb-bbdd-en-php">Microrepte 9. Persistència mínima amb BBDD en PHP<a class="headerlink" href="#microrepte-9-persistencia-minima-amb-bbdd-en-php" title="Permanent link">&para;</a></h3>
+<p>En este microrepte hauràs de fer que una dada significativa del projecte quede guardada en una base de dades i es puga recuperar després.</p>
+<p><strong>Teoria relacionada</strong>: <a href="../recursos/Teoria/Teoria-R2-BBDD-en-PHP-amb-PDO.pdf">BBDD en PHP amb PDO</a>.</p>
+<p>Este microrepte arriba després de les funcions, l'estat, l'autenticació, les proves i la primera peça testable perquè ara la pregunta és una altra: quina informació del projecte ha de sobreviure més enllà de la sessió o d'un array provisional?</p>
+<p>Ací sí que hauràs de:</p>
+<ul>
+<li>triar una dada real del projecte, no una prova artificial</li>
+<li>crear o documentar una taula mínima</li>
+<li>separar la configuració de connexió del codi principal</li>
+<li>evitar pujar secrets reals al repositori</li>
+<li>connectar amb <code>PDO</code> o un mecanisme equivalent justificat</li>
+<li>fer una alta amb dades que ja passen per la validació del flux</li>
+<li>fer una lectura posterior, llistat o detall</li>
+<li>usar consultes preparades quan hi haja dades d'usuari</li>
+<li>documentar com crear la BBDD i com provar alta i lectura</li>
+<li>comprovar que el flux principal continua funcionant</li>
+<li>explicar què quedarà per professionalitzar en <code>R3</code></li>
+</ul>
+<p>Este microrepte no vol dir:</p>
+<ul>
+<li>convertir el projecte a <code>Laravel</code>, <code>Symfony</code> o un altre framework</li>
+<li>usar <code>ORM</code></li>
+<li>fer migrations o seeders com a mínim obligatori</li>
+<li>crear una administració completa de BBDD</li>
+<li>modelar moltes taules</li>
+<li>substituir la validació, la sessió o l'autenticació per la BBDD</li>
+<li>guardar contrasenyes en clar</li>
+</ul>
+<p>Si ja tens Composer introduït en <code>R2M8</code>, pots usar-lo per organitzar millor la connexió o carregar una llibreria menuda com <code>vlucas/phpdotenv</code>, però això no és el mínim obligatori. El mínim és entendre i demostrar connexió, alta i lectura amb dades pròpies.</p>
+<p><strong>Què no es penalitza encara</strong></p>
+<ul>
+<li>No tindre ORM.</li>
+<li>No tindre migrations ni seeders.</li>
+<li>No tindre relacions complexes entre taules.</li>
+<li>No fer una capa de repositori completa.</li>
+<li>No tindre proves automàtiques de BBDD si almenys hi ha prova manual reproduïble.</li>
+</ul>
+<h2 id="com-es-reparteixen-els-criteris-dins-del-repte">Com es reparteixen els criteris dins del repte<a class="headerlink" href="#com-es-reparteixen-els-criteris-dins-del-repte" title="Permanent link">&para;</a></h2>
+<p>Per orientar-te sense convertir el repte en una llista normativa, pots llegir-lo així:</p>
+<ul>
+<li><code>RA2</code> apareix sobretot en el microrepte 2: ací entra la base comuna en <code>PHP</code>, la generació de pàgines o respostes amb codi embegut, la sintaxi, les sentències, les directives, les variables, els operadors i els àmbits.</li>
+<li><code>RA3</code> apareix sobretot en els microreptes 1, 3 i 8: formularis, recuperació de dades, comentaris útils, decisions, bucles, arrays, funcions i encapsulació mínima d’una regla en una classe.</li>
+<li><code>RA4</code> apareix sobretot en els microreptes 4, 5, 6, 7 i 8: estat, emmagatzematge en client quan toque, autenticació, funcionalitat protegida, mini API autenticada, prova, depuració, prova unitària inicial i comprovació final del flux.</li>
+<li><code>RA6</code> apareix de manera introductòria en el microrepte 9: connexió a BBDD, alta, lectura, consultes preparades i reproducció mínima abans de treballar migrations, seeders i models en <code>R3</code>.</li>
+</ul>
+<h2 id="pes-dels-microreptes-dins-del-nucli-de-r2">Pes dels microreptes dins del nucli de R2<a class="headerlink" href="#pes-dels-microreptes-dins-del-nucli-de-r2" title="Permanent link">&para;</a></h2>
+<p>La <code>nota_nucli_R2</code> no és una mitjana simple de tots els microreptes. Es calcula amb estos pesos per fer seguiment del repte, però cada microrepte genera nota només per al seu <strong>RA avaluat</strong>. Els RA de context poden aparéixer en el producte, però no puntuen en eixe microrepte.</p>
+<table>
+<thead>
+<tr>
+<th>Microrepte</th>
+<th>Focus principal</th>
+<th>RA avaluat</th>
+<th>CA avaluats</th>
+<th>RA de context</th>
+<th style="text-align: right;">Pes dins del nucli</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>R2M1</code></td>
+<td>Entrada i validació bàsica</td>
+<td><code>RA2</code></td>
+<td><code>RA2.a</code>, <code>RA2.b</code>, <code>RA2.c</code>, <code>RA2.d</code></td>
+<td><code>RA3.e</code>, <code>RA3.f</code>, <code>RA3.g</code></td>
+<td style="text-align: right;"><code>12%</code></td>
+</tr>
+<tr>
+<td><code>R2M2</code></td>
+<td>Processament, reintent i guardat funcional</td>
+<td><code>RA2</code></td>
+<td><code>RA2.a-h</code></td>
+<td><code>RA3.e</code>, <code>RA3.f</code>, <code>RA3.g</code></td>
+<td style="text-align: right;"><code>12%</code></td>
+</tr>
+<tr>
+<td><code>R2M3</code></td>
+<td>Lògica, arrays, funcions i llibreria pròpia</td>
+<td><code>RA3</code></td>
+<td><code>RA3.a</code>, <code>RA3.b</code>, <code>RA3.c</code>, <code>RA3.d</code></td>
+<td>-</td>
+<td style="text-align: right;"><code>12%</code></td>
+</tr>
+<tr>
+<td><code>R2M4</code></td>
+<td>Estat, sessió, cookie, <code>$_SERVER</code> i includes estables</td>
+<td><code>RA4</code></td>
+<td><code>RA4.a</code>, <code>RA4.b</code>, <code>RA4.c</code></td>
+<td>-</td>
+<td style="text-align: right;"><code>12%</code></td>
+</tr>
+<tr>
+<td><code>R2M5</code></td>
+<td>Registre, hash, autenticació i operació protegida</td>
+<td><code>RA4</code></td>
+<td><code>RA4.d</code>, <code>RA4.e</code></td>
+<td>-</td>
+<td style="text-align: right;"><code>16%</code></td>
+</tr>
+<tr>
+<td><code>R2M6</code></td>
+<td>Mini API d'autenticació per a client</td>
+<td><code>RA4</code></td>
+<td><code>RA4.d</code>, <code>RA4.e</code></td>
+<td>pont DWEC</td>
+<td style="text-align: right;"><code>10%</code></td>
+</tr>
+<tr>
+<td><code>R2M7</code></td>
+<td>Proves automàtiques lleugeres, depuració i checkpoint</td>
+<td><code>RA4</code></td>
+<td><code>RA4.f</code></td>
+<td>-</td>
+<td style="text-align: right;"><code>8%</code></td>
+</tr>
+<tr>
+<td><code>R2M8</code></td>
+<td>Primera peça testable amb POO i Composer</td>
+<td><code>RA3</code></td>
+<td><code>RA3.d</code>, <code>RA3.g</code></td>
+<td><code>RA4.f</code></td>
+<td style="text-align: right;"><code>8%</code></td>
+</tr>
+<tr>
+<td><code>R2M9</code></td>
+<td>Persistència mínima amb BBDD en PHP</td>
+<td><code>RA6</code></td>
+<td><code>RA6.a</code>, <code>RA6.b</code>, <code>RA6.c</code>, <code>RA6.d</code>, <code>RA6.f</code></td>
+<td><code>RA3</code>, <code>RA4</code></td>
+<td style="text-align: right;"><code>10%</code></td>
+</tr>
+</tbody>
+</table>
+<p>El microrepte <code>R2M5</code> pesa més perquè concentra la part més significativa del repte: demostrar que l'estat i el control d'accés servixen per protegir una acció real del projecte. <code>R2M6</code> pesa prou perquè és el pont intermodular amb DWEC, però queda acotat a autenticació mínima consumible. <code>R2M9</code> és obligatori dins del nucli, però queda acotat com a introducció a BBDD abans de <code>R3</code>. <code>R2M7</code> i <code>R2M8</code> pesen menys per separat, però fan verificable i defensable el que s'ha construït.</p>
+<p>Si un microrepte posterior depén d'un anterior, el pes no elimina la dependència. Per exemple, un bon <code>R2M5</code> necessita un flux d'entrada, processament, lògica i estat suficientment funcional.</p>
+<h2 id="criteris-que-es-treballen-en-este-repte">Criteris que es treballen en este repte<a class="headerlink" href="#criteris-que-es-treballen-en-este-repte" title="Permanent link">&para;</a></h2>
+<p>En llenguatge clar, en este repte es treballa sobretot que sigues capaç de:</p>
+<ul>
+<li>Entendre com la base comuna en <code>PHP</code> genera una pàgina o resposta amb codi embegut o equivalent.</li>
+<li>Identificar les peces tècniques bàsiques que intervenen en eixe flux.</li>
+<li>Rebre i recuperar dades d’un formulari o entrada equivalent.</li>
+<li>Mostrar almenys un error de validació de manera clara i permetre correcció.</li>
+<li>Aplicar lògica bàsica de servidor amb sentit, usant sintaxi, sentències, directives, variables i operadors.</li>
+<li>Entendre on viu cada variable i quin àmbit afecta el comportament.</li>
+<li>Fer una validació bàsica al servidor i millorar-la progressivament quan el flux ja s'entén.</li>
+<li>Conservar informació útil perquè després es puga reutilitzar dins del projecte.</li>
+<li>Deixar comentaris útils en el codi quan facen falta per explicar el flux.</li>
+<li>Utilitzar decisions, bucles, arrays o funcions quan realment fan falta.</li>
+<li>Entendre i usar mecanismes d’estat.</li>
+<li>Entendre què queda en client i què queda en servidor quan mantens informació.</li>
+<li>Distingir entre estat temporal i conservació funcional de dades.</li>
+<li>Distingir entre estat, autenticació i autorització.</li>
+<li>Aplicar autenticació funcional.</li>
+<li>Protegir una operació real del domini vinculada al projecte base.</li>
+<li>Provar, depurar i documentar el flux complet amb eines o entorns simples.</li>
+</ul>
+<p>No es tracta de memoritzar noms de funcions o paraules tècniques. Es tracta de demostrar que entens el recorregut complet del que passa al servidor i per què la informació útil no es queda en una prova que desapareix.</p>
+<h2 id="idea-metodologica-important-deste-repte">Idea metodològica important d’este repte<a class="headerlink" href="#idea-metodologica-important-deste-repte" title="Permanent link">&para;</a></h2>
+<p>Este repte es resol sobre una <strong>base comuna en <code>PHP</code></strong>.</p>
+<p>Això implica també entendre, encara que siga a un nivell bàsic, com es genera una pàgina o una resposta des del servidor amb codi embegut o equivalent, i quines peces tècniques intervenen en eixe recorregut.</p>
+<p>En este moment del curs, la prioritat és consolidar el flux complet en servidor:</p>
+<ul>
+<li>Entrada de dades i validació bàsica.</li>
+<li>Processament, reintent i guardat funcional.</li>
+<li>Lògica del flux i regles del projecte.</li>
+<li>Estat o sessió quan faça falta.</li>
+<li>Autenticació i funcionalitat protegida.</li>
+<li>Prova, depuració i checkpoint tècnic.</li>
+<li>Primera peça testable amb POO i Composer.</li>
+</ul>
+<p>Això significa que la informació correcta ha de poder continuar viva dins del projecte. El sistema ha de poder aprofitar-la després per mostrar-la, recuperar-la, llistar-la o continuar treballant amb ella.</p>
+<p>En <code>R2M8</code>, això implica triar una regla o comprovació del flux, encapsular-la en una classe simple, carregar-la amb Composer i provar-la sense navegador amb una prova unitària mínima.</p>
+<p>Però això no vol dir que ara toque convertir el repte en un bloc d’accés a dades, modelat complet o arquitectura de persistència.</p>
+<p>El contrast de frameworks i la consolidació arquitectònica encara no són el focus principal. No toca reescriure el projecte en <code>Laravel</code>, <code>Symfony</code> o <code>NestJS</code> abans d’hora, ni convertir <code>R2</code> en una carrera per veure qui munta la persistència més sofisticada.</p>
+<p>Ara toca demostrar una base funcional comuna i defensable. Després arribarà el contrast amb itineraris com <code>Laravel</code>, <code>Symfony</code> o <code>NestJS</code>, i serà en <code>R3</code> quan la persistència passarà a tindre un pes més central en l’arquitectura.</p>
+<p><code>R2M8</code> ha de servir per fer el primer pas real cap a codi testable amb POO i Composer, no per fer una reescriptura arquitectònica completa.</p>
+<h2 id="si-et-bloqueges">Si et bloqueges<a class="headerlink" href="#si-et-bloqueges" title="Permanent link">&para;</a></h2>
+<p>Per no perdre el fil del repte:</p>
+<ul>
+<li>Treballa amb un únic actor i una sola operació protegida.</li>
+<li>Tria una dada del domini que després pugues tornar a mostrar o recuperar.</li>
+<li>Tanca primer el flux principal abans d’afegir rols o extres.</li>
+<li>Si hi ha imatge o fitxer com a ampliació, comença per un únic tipus acceptat i una regla de grandària clara.</li>
+<li>No canvies de framework per intentar desbloquejar este repte.</li>
+<li>No compliques la persistència si el flux principal encara no està tancat.</li>
+<li>Assegura’t que el <code>README</code> o la documentació equivalent expliquen com reproduir el cas bo, el cas denegat i la reutilització de la dada correcta.</li>
+</ul>
+<h2 id="presentacio-i-entrega">Presentació i entrega<a class="headerlink" href="#presentacio-i-entrega" title="Permanent link">&para;</a></h2>
+<p>Per preparar l'entrega, la demo i la defensa breu, usa la <a href="guia_presentacio.html#repte-2">guia de presentació dels reptes</a>.</p>
+<p>En este repte no n’hi ha prou amb dir que el sistema funciona. Les proves han de quedar registrades en una checklist o taula simple amb cas de prova, entrada, resultat esperat, resultat obtingut i incidències.</p>
+<h2 id="documentacio-del-codi">Documentació del codi<a class="headerlink" href="#documentacio-del-codi" title="Permanent link">&para;</a></h2>
+<p>La documentació ha de ser útil i proporcionada: on es valida, on es processa, on es comprova l'accés, com es conserva la informació i on es tracta un fitxer o imatge si n'hi ha.</p>
+<p>PHPDoc és recomanable només en funcions pròpies amb lògica rellevant. No es demana documentar cada variable, omplir fitxers trivials de DocBlocks, generar documentació automàtica completa, convertir tot el projecte a POO completa ni fer de la base de dades el centre del repte.</p>
+<h2 id="us-de-la-ia-en-este-repte">Ús de la IA en este repte<a class="headerlink" href="#us-de-la-ia-en-este-repte" title="Permanent link">&para;</a></h2>
+<p>La IA et pot ajudar, per exemple, a:</p>
+<ul>
+<li>Proposar estructures de formulari.</li>
+<li>Suggerir validacions.</li>
+<li>Recordar patrons de sessió o autenticació.</li>
+<li>Proposar un mecanisme simple de conservació de dades.</li>
+<li>Detectar errors.</li>
+<li>Proposar casos de prova.</li>
+<li>Ajudar a documentar el flux.</li>
+</ul>
+<p>El que no pots delegar és:</p>
+<ul>
+<li>Entendre d’on ix cada dada i on es tracta.</li>
+<li>Distingir entre estat, persistència funcional, autenticació i autorització.</li>
+<li>Comprovar que el cas positiu i el negatiu funcionen de veritat.</li>
+<li>Explicar per què una acció queda protegida i una altra no.</li>
+<li>Explicar com reapareix després la informació correcta dins del projecte.</li>
+</ul>
+<p>Encara que uses IA, es comprovarà igualment si pots validar, adaptar, corregir i defendre el que presentes.</p>
+<h2 id="errors-habituals">Errors habituals<a class="headerlink" href="#errors-habituals" title="Permanent link">&para;</a></h2>
+<p>Convindria evitar errors com estos:</p>
+<ul>
+<li>Fer només el cas feliç.</li>
+<li>Quedar-se en un formulari genèric sense funcionalitat real de projecte.</li>
+<li>Reduir el repte a formulari, validació i missatge d’error.</li>
+<li>Guardar dades però no reutilitzar-les després.</li>
+<li>Confondre estat amb persistència del domini.</li>
+<li>Confondre estat amb autenticació.</li>
+<li>Acceptar una imatge o un fitxer sense comprovar tipus o grandària.</li>
+<li>Tindre <code>login</code> però no una funcionalitat real protegida.</li>
+<li>Muntar una base de dades sense necessitat mentre la funcionalitat principal continua sense tancar.</li>
+<li>Mostrar dades sense tractar-les realment.</li>
+<li>Afegir lògica artificial només per complir.</li>
+<li>Portar una solució que no es pot explicar.</li>
+</ul>
+<h2 id="que-prepara-este-repte">Què prepara este repte<a class="headerlink" href="#que-prepara-este-repte" title="Permanent link">&para;</a></h2>
+<p>Este repte deixa el producte preparat per al següent pas del curs:</p>
+<ul>
+<li>Mantindre viu el flux funcional que has construït ací.</li>
+<li>Reorganitzar millor el codi.</li>
+<li>Millorar l’arquitectura.</li>
+<li>Donar més pes a la persistència quan arribe <code>R3</code>.</li>
+<li>Introduir el framework sense canviar de projecte.</li>
+</ul>
+<p><code>R2M8</code> ha de servir justament per arribar a <code>R3</code> amb una primera peça testable, no per consumir abans d’hora tot el que correspon al repte següent.</p>
+<h2 id="ampliacio-910">Ampliació 9→10<a class="headerlink" href="#ampliacio-910" title="Permanent link">&para;</a></h2>
+<p><strong>Finalitat</strong><br />
+Millorar la robustesa del flux en servidor i demostrar més control sobre validació, estat, autenticació, proves i mantenibilitat.</p>
+<p><strong>Autocorrecció associada</strong><br />
+<code>r2-ampliacio-9-10</code></p>
+<p>Esta autocorrecció no posa automàticament un <code>10</code>. Servix per filtrar si la teua ampliació pot optar a la franja <code>9→10</code> i quina revisió docent necessita.</p>
+<h2 id="com-es-calcula-la-nota-final-de-r2">Com es calcula la nota final de R2<a class="headerlink" href="#com-es-calcula-la-nota-final-de-r2" title="Permanent link">&para;</a></h2>
+<p>Les autocorreccions dels microreptes <code>R2M1</code> a <code>R2M9</code> valoren el <strong>nucli obligatori</strong> del repte.</p>
+<p>La nota final de <code>R2</code> es calcula així:</p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>nota_final_R2 = min(nota_nucli_R2, 9) + ampliacio_9_10
+</code></pre></div>
+<p>On:</p>
+<ul>
+<li><code>nota_nucli_R2</code> és la nota ponderada obtinguda amb el conjunt dels microreptes obligatoris, segons els pesos indicats en la taula anterior;</li>
+<li><code>min(nota_nucli_R2, 9)</code> vol dir que el nucli obligatori pot arribar com a màxim a <code>9</code> en la nota final del repte;</li>
+<li><code>ampliacio_9_10</code> pot sumar de <code>0</code> a <code>1</code> punt només si l’ampliació està validada;</li>
+<li>la nota final mai pot superar <code>10</code>.</li>
+</ul>
+<p>Per tant, si tens una mitjana de <code>10</code> en els microreptes però no presentes una ampliació <code>9→10</code> validada, la nota final del repte serà <code>9</code>.</p>
+<p>No és una baixada de nota: és separar el <strong>nucli obligatori</strong> de la <strong>via d’excel·lència</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Situació</th>
+<th style="text-align: right;">Resultat</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nucli de R2 incomplet</td>
+<td style="text-align: right;">no pot optar a <code>9→10</code></td>
+</tr>
+<tr>
+<td>Nucli de R2 complet, sense ampliació</td>
+<td style="text-align: right;">màxim <code>9</code></td>
+</tr>
+<tr>
+<td>Nucli de R2 complet, ampliació no vàlida o decorativa</td>
+<td style="text-align: right;">màxim <code>9</code></td>
+</tr>
+<tr>
+<td>Nucli de R2 complet, ampliació útil però limitada</td>
+<td style="text-align: right;">entre <code>9</code> i <code>9,5</code>, segons revisió docent</td>
+</tr>
+<tr>
+<td>Nucli de R2 complet, ampliació integrada, provada i defensada</td>
+<td style="text-align: right;">fins a <code>10</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>A quin nivell s'aplica</strong><br />
+La via <code>9→10</code> s'aplica al <strong>Repte 2 complet</strong>, no a cada microrepte de manera independent.</p>
+<p>Això vol dir que no has de fer una ampliació diferent per a <code>R2M1</code>, una altra per a <code>R2M2</code>, una altra per a <code>R2M3</code>, etc. Primer has de completar bé el conjunt del repte: entrada, processament, lògica, estat, autenticació, mini API d'autenticació per a client, proves, primera peça testable i persistència mínima amb BBDD.</p>
+<p>Després, si el nucli ja està complet i validat, pots presentar <strong>una ampliació integrada</strong> que millore una part important del flux. Pot nàixer d’un microrepte concret, però ha de tindre impacte sobre el repte complet.</p>
+<p><strong>Condició prèvia</strong><br />
+El nucli del repte ha d'estar complet, funcional i validat.</p>
+<p>Esta ampliació no compensa mancances del nucli. Si falten evidències obligatòries, proves mínimes, autenticació funcional o defensa del flux, primer cal reparar el repte base.</p>
+<p>Tampoc és un requisit per aprovar el repte ni per tancar els microreptes. La seua absència no penalitza mentre el nucli obligatori estiga ben resolt.</p>
+<p><strong>Opcions d'ampliació</strong>
+- Reforçar la validació, els errors visibles o la funcionalitat protegida amb un cas crític millor resolt.
+- Afegir una llibreria externa menuda amb Composer o una crida a una API externa si té sentit real en el projecte i queda documentat com a ampliació.</p>
+<p><strong>Exemples vàlids en R2</strong>
+- Millorar la validació del flux principal amb més casos d’error reals, missatges més útils i prova documentada.
+- Afegir una comprovació de seguretat o autorització més fina sobre l’operació protegida.
+- Automatitzar millor una bateria de proves del flux amb diversos casos rellevants.
+- Usar una llibreria externa menuda amb Composer si resol una necessitat real del projecte i queda explicada.
+- Consumir una API externa només si aporta dades útils al flux i no substituïx el treball obligatori de R2.</p>
+<p><strong>Exemples que no compten com a 9→10</strong>
+- Afegir pantalles decoratives sense millorar el flux.
+- Fer una ampliació que no es pot provar.
+- Usar una API externa només perquè parega avançat.
+- Afegir codi generat per IA que no pots explicar.
+- Presentar una ampliació mentre encara fallen el login, les proves mínimes o l’operació protegida.</p>
+<p><strong>Proposta pròpia</strong><br />
+També pots proposar una ampliació pròpia si té valor tècnic real i es valida abans amb el professorat.</p>
+<p><strong>Evidències mínimes</strong>
+- commit o branca identificable
+- justificació tècnica breu
+- prova funcional dels casos millorats
+- rastre de l'ús assistit per IA, si l'has usat
+- referència a l'autocorrecció <code>r2-ampliacio-9-10</code> o informe equivalent de candidatura</p>
+<p><strong>Ús assistit per IA</strong><br />
+La IA et pot ajudar a contrastar validacions, proves, classes o ús de Composer, però no substituïx la teua decisió ni la teua comprovació real.</p>
+<p><strong>Defensa</strong><br />
+L'ampliació només compta si la pots explicar amb criteri i sense delegació excessiva.</p>
+<p><strong>Regla curta</strong><br />
+Nucli primer, ampliació després. En <code>R2</code>, la via <code>9→10</code> és una ampliació integrada del repte complet, no una col·lecció de punts extra per microrepte. Una ampliació no puja a <code>9→10</code> si el treball base encara no és funcional, verificable i defensable.</p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      2026-2027 Ignasi Gomis  - Licencia CC BY-NC-SA
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="mailto:<i.gomismullor@edu.gva.es>" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 12.13c-.15.01-.29.06-.39.17l-1 1 2.05 2 1-1c.22-.21.22-.56 0-.77l-1.24-1.23a.56.56 0 0 0-.38-.17m-2 1.75L13 19.94V22h2.06l6.06-6.07M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h7v-.89l8.24-8.22c.47-.49 1.12-.76 1.8-.76.34 0 .68.06 1 .19V6c0-1.12-.92-2-2.04-2m0 4-8 5-8-5V6l8 5 8-5"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["header.autohide", "toc.integrate", "content.tabs.link"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiat al porta-retalls", "clipboard.copy": "C\u00f2pia al porta-retalls", "search.result.more.one": "1 m\u00e9s en aquesta p\u00e0gina", "search.result.more.other": "# m\u00e9s en aquesta p\u00e0gina", "search.result.none": "Cap document coincideix", "search.result.one": "1 document coincident", "search.result.other": "# documents coincidents", "search.result.placeholder": "Escriu per a comen\u00e7ar a cercar", "search.result.term.missing": "Desaparegut", "select.version": "Selecciona la versi\u00f3"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
