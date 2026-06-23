@@ -21,14 +21,16 @@ També poden aparéixer com a suport:
 - `RA8`, si la integració modifica un flux dinàmic del backend;
 - `RA6`, només si persistixes o combines dades pròpies amb dades externes.
 
-## Què has de consolidar
+## Vista ràpida
 
-- selecció crítica d'una font externa;
-- connexió real i reproduïble;
-- transformació i mapping de dades;
-- integració dins d'una funcionalitat del producte;
-- tractament mínim d'errors;
-- documentació, proves i defensa tècnica.
+| Bloc | Què has de deixar fet |
+|---|---|
+| Font externa | Selecció crítica d'una font, servei o repositori extern amb valor real per al producte. |
+| Connexió | Recuperació real i reproduïble de dades o servei extern. |
+| Transformació | Mapping i adaptació de la informació externa al domini propi. |
+| Integració | Funcionalitat híbrida integrada en una pantalla, endpoint, procés o automatització del producte. |
+| Robustesa | Tractament mínim d'errors i prova d'una fallada controlada. |
+| Documentació | Proves, mapa del flux, configuració i defensa tècnica. |
 
 ## Què no és suficient
 
@@ -57,27 +59,17 @@ També poden aparéixer com a suport:
 4. Integra el resultat en una pantalla, endpoint, procés o automatització del producte.
 5. Prova el cas correcte, prova una fallada i documenta el flux complet.
 
-## Evidències per microrepte
+## Checklist final del Repte 5
 
-| Microrepte | Evidència mínima |
-|---|---|
-| `R5M1` | Comparativa de fonts, justificació, mapa inicial i riscos. |
-| `R5M2` | Connector funcional, resposta real i cas d'error controlat. |
-| `R5M3` | Taula de mapping, codi de transformació i comparativa abans/després. |
-| `R5M4` | Funcionalitat híbrida integrada, demo completa i commit comentat. |
-| `R5M5` | Proves, mapa final, documentació tècnica, `AI log` si cal i mini defensa. |
+| Microrepte | Evidència mínima | Com es comprovarà |
+|---|---|---|
+| `R5M1` | Comparativa de fonts, justificació, mapa inicial i riscos. | Defensa de per què la font aporta valor real. |
+| `R5M2` | Connector funcional, resposta real i cas d'error controlat. | Execució de connexió correcta i fallada controlada. |
+| `R5M3` | Taula de mapping, codi de transformació i comparativa abans/després. | Revisió del recorregut de dades externes a dades pròpies. |
+| `R5M4` | Funcionalitat híbrida integrada, demo completa i commit comentat. | Prova del valor dins del producte. |
+| `R5M5` | Proves, mapa final, documentació tècnica, `AI log` si cal i mini defensa. | Contrast entre configuració, mapping, flux i resultat. |
 
-## Criteri de superació
-
-El repte es considera superat quan:
-
-- hi ha una font externa triada amb criteri;
-- la connexió recupera resposta real;
-- la informació externa es transforma o adapta al domini;
-- el resultat queda integrat en una funcionalitat real del producte;
-- hi ha prova positiva i prova d'error;
-- la documentació permet entendre font, configuració, mapping i flux;
-- pots defensar què ve de fora, què transforma el sistema i quin valor nou aporta.
+El repte es considera superat quan la checklist final està completa i pots defensar què ve de fora, què transforma el sistema i quin valor nou aporta.
 
 ## Connexió amb el tancament final
 

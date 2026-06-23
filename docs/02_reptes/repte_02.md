@@ -2,121 +2,33 @@
 
 ## Finalitat del repte
 
-Este repte servix per consolidar un flux complet de programació en servidor i fer que el projecte deixe de ser només una base funcional.
-
-Ara el backend ja no ha de limitar-se a rebre una petició i respondre. Ha de ser capaç de:
-
-- Integrar codi de servidor amb `HTML` o una plantilla equivalent.
-- Usar variables, operadors, sentències simples, directives i àmbits dins del flux.
-- Recollir dades útils del projecte.
-- Validar-les en servidor i mostrar errors clars.
-- Generar el document o resposta resultant des del servidor.
-- Permetre correcció i reintent.
-- Processar la informació amb lògica bàsica.
-- Conservar la informació correcta perquè després es puga reutilitzar.
-- Mantindre estat quan faça falta.
-- Autenticar usuaris i gestionar sessions quan toque.
-- Protegir una primera funcionalitat del projecte.
-- Guardar i recuperar una dada significativa en una BBDD mínima amb `PHP`.
+Este repte servix per convertir la base funcional de `R1` en un flux complet de servidor: entrada de dades, validació, processament, conservació d'informació, estat, autenticació, funcionalitat protegida, prova mínima, primera peça testable i persistència mínima amb BBDD.
 
 ## 🌟 Via 9→10 en este repte
 
 Este repte també té una via d'excel·lència `9→10`: **primer has de tancar bé el nucli i després pots obrir una ampliació amb valor tècnic real**. La secció completa està al final del repte.
 
-## Context professional
+## Vista ràpida
 
-L’equip ja té una base executable del producte després del `Repte 1`.
+| Bloc | Què has de deixar fet |
+|---|---|
+| Entrada i validació | Formulari o entrada equivalent vinculada al projecte, recuperació de dades en servidor, error visible i possibilitat de correcció. |
+| Processament | Codi servidor integrat amb `HTML` o plantilla, ús de variables, operadors, sentències simples, directives i àmbits dins d'un flux real. |
+| Conservació | La informació correcta no es perd: es guarda amb un mecanisme simple i es pot reutilitzar després dins del producte. |
+| Lògica i estat | Regles pròpies del projecte, funcions, arrays o bucles, i estat temporal amb sessió o cookies quan faça falta. |
+| Accés protegit | Autenticació funcional i una operació real del projecte protegida, amb cas autoritzat i cas denegat. |
+| Mini API | API d'autenticació per a client amb resposta `JSON`, cas `200`, cas `401` i ruta protegida. |
+| Codi testable | Classe simple del domini o servei, autoload amb Composer o equivalent, prova unitària mínima i comprovació que el flux web continua funcionant. |
+| BBDD mínima | Connexió, taula, alta, lectura, consultes preparades i instruccions per reproduir-ho. |
+| Verificació | Prova del cas positiu, cas negatiu, error de validació, reutilització de dades i documentació del flux. |
 
-Ara toca fer un pas més seriós: convertir eixa base en una funcionalitat real de producte, amb entrada de dades, comportament coherent de servidor, conservació d’informació útil i control d’accés.
+No cal que siga un producte gran. Sí que cal que siga un flux complet, explicable i verificable. El formulari no compta com a repte complet si només envia dades i torna un missatge genèric.
 
-En un entorn professional, este és el moment en què el sistema deixa de ser només una prova tècnica i comença a gestionar informació que després torna a aparéixer dins del mateix producte.
+## Persistència en R2
 
-## Què has de construir
+En este repte la persistència és **funcional i de suport**. Servix perquè la informació correcta torne a aparéixer en el producte: un llistat, una reserva, una publicació, un recurs, una activitat o qualsevol dada significativa del domini.
 
-En este repte has de fer evolucionar el projecte fins a deixar, com a mínim:
-
-- Un formulari o una entrada de dades real vinculada al projecte triat.
-- Codi servidor integrat amb llenguatge de marques o plantilla, no una pàgina estàtica separada del flux.
-- Ús visible de variables, operadors, sentències simples, directives i àmbits.
-- Recollida de dades, validació inicial bàsica, error visible i possibilitat de correcció.
-- Recuperació i tractament de la informació en servidor.
-- Processament real de la petició amb lògica bàsica.
-- Resposta o document generat pel servidor a partir de les dades rebudes.
-- Conservació o persistència funcional de la informació correcta.
-- Reutilització posterior d’eixa informació dins del projecte.
-- Si el flux ho demana i ja tens el mínim tancat, tractament d’imatge o fitxer com a ampliació amb control bàsic de tipus i grandària.
-- Evidència de manteniment d’estat o sessió.
-- Autenticació funcional.
-- Una operació real del projecte protegida i lligada al domini triat.
-- Un cas positiu i un cas negatiu.
-- Prova mínima i documentació bàsica del flux.
-- Primera peça testable amb POO i Composer: classe simple del domini o servei, autoload, prova unitària mínima i comprovació que el flux continua funcionant.
-- Persistència mínima amb BBDD: connexió, taula, alta, lectura, consultes preparades i instruccions de reproducció.
-
-## Producte mínim esperat
-
-Al final del repte hauries de poder mostrar un recorregut complet com este:
-
-- L’usuari inicia una acció útil del projecte base.
-- El sistema recull les dades i aplica una validació bàsica en servidor.
-- Si hi ha error, el sistema mostra almenys un missatge clar.
-- L’usuari pot corregir i tornar a provar.
-- El servidor processa la petició correcta amb variables, operadors i sentències simples aplicades al flux.
-- El sistema genera una resposta o document on es veu el resultat del tractament en servidor.
-- Si hi ha una imatge o un fitxer com a ampliació, el sistema en valida tipus i grandària abans d’acceptar-lo.
-- La informació correcta queda conservada en un mecanisme controlat.
-- El projecte pot recuperar o reutilitzar eixa informació més avant.
-- El sistema aplica una regla o una decisió.
-- Es manté estat quan és necessari.
-- El sistema comprova si l’acció està permesa.
-- Una funcionalitat del producte queda protegida.
-- Es pot demostrar què passa en el cas correcte i en el cas denegat.
-- Una dada significativa queda guardada en BBDD i es pot recuperar després.
-
-No cal que siga un producte gran. Sí que cal que siga un flux complet, explicable i verificable.
-
-La seqüència ha de quedar clara: primer arriben les dades i es fa una validació inicial bàsica; després, només si són correctes, es processen i es guarden per poder reutilitzar-les; després s’apliquen regles del projecte; després es manté estat quan fa falta; després es protegix una acció real; després es prova i es revisa tot el recorregut; i, al final del nucli, una dada significativa passa a una BBDD mínima.
-
-Per tant, el formulari no compta com a repte complet si només envia dades i torna un missatge genèric. Ha d’estar integrat en una funcionalitat real del projecte, amb tractament, conservació i reutilització posterior.
-
-## Persistència funcional de suport
-
-En este repte, la informació que entra per formulari o per una entrada equivalent ha de poder-se guardar d’alguna manera útil perquè el projecte la torne a aprofitar després.
-
-Això pot voler dir, per exemple:
-
-- Mostrar productes d’una tenda.
-- Recuperar usuaris.
-- Tornar a mostrar activitats o reserves.
-- Tornar a carregar recursos, publicacions, fitxers o imatges creades.
-- Llistar elements que formen part del projecte.
-
-Però esta conservació no convertix encara el `Repte 2` en un repte centrat en accés a dades o base de dades.
-
-La prioritat continua sent:
-
-- Tractament de dades.
-- Lògica bàsica.
-- Estat o sessió.
-- Autenticació.
-- Funcionalitat protegida.
-
-La persistència ací és funcional i de suport. Servix perquè el flux tinga sentit i no es quede en una demo efímera.
-
-## Com es pot resoldre la conservació de dades
-
-La persistència d’este repte es pot resoldre preferentment amb un mecanisme simple i controlat, sempre que siga coherent amb el projecte.
-
-Per exemple, es pot treballar amb:
-
-- Persistència estructurada senzilla.
-- Estat o emmagatzematge controlat.
-- Mecanismes simples de conservació dins del backend.
-- Base de dades, només si el professorat ho establix o si el projecte realment ho demana.
-
-En `R2` no es valora principalment la sofisticació de la persistència. El que es valora és que el flux complet funcione, que la informació correcta no es perda sense sentit i que la funcionalitat protegida es puga demostrar de punta a punta.
-
-La base de dades pot aparéixer, però no constituïx encara el focus principal del repte.
+Es pot resoldre amb un mecanisme simple i controlat, sempre que siga coherent amb el projecte. La base de dades apareix al final del nucli amb una persistència mínima en `PHP`, però `R2` encara no és un repte centrat en arquitectura completa d'accés a dades.
 
 ## Què no és suficient
 
@@ -880,7 +792,7 @@ En este moment del curs, la prioritat és consolidar el flux complet en servidor
 
 Això significa que la informació correcta ha de poder continuar viva dins del projecte. El sistema ha de poder aprofitar-la després per mostrar-la, recuperar-la, llistar-la o continuar treballant amb ella.
 
-En la sessió `7`, això implica triar una regla o comprovació del flux, encapsular-la en una classe simple, carregar-la amb Composer i provar-la sense navegador amb una prova unitària mínima.
+En `R2M8`, això implica triar una regla o comprovació del flux, encapsular-la en una classe simple, carregar-la amb Composer i provar-la sense navegador amb una prova unitària mínima.
 
 Però això no vol dir que ara toque convertir el repte en un bloc d’accés a dades, modelat complet o arquitectura de persistència.
 
@@ -888,7 +800,7 @@ El contrast de frameworks i la consolidació arquitectònica encara no són el f
 
 Ara toca demostrar una base funcional comuna i defensable. Després arribarà el contrast amb itineraris com `Laravel`, `Symfony` o `NestJS`, i serà en `R3` quan la persistència passarà a tindre un pes més central en l’arquitectura.
 
-La sessió `7` de `R2` ha de servir per fer el primer pas real cap a codi testable amb POO i Composer, no per fer una reescriptura arquitectònica completa.
+`R2M8` ha de servir per fer el primer pas real cap a codi testable amb POO i Composer, no per fer una reescriptura arquitectònica completa.
 
 ## Si et bloqueges
 
@@ -902,167 +814,35 @@ Per no perdre el fil del repte:
 - No compliques la persistència si el flux principal encara no està tancat.
 - Assegura’t que el `README` o la documentació equivalent expliquen com reproduir el cas bo, el cas denegat i la reutilització de la dada correcta.
 
-## Evidències obligatòries
+## Checklist final del Repte 2
 
-Per considerar complet el repte, hauràs d’aportar com a mínim:
+| Bloc | Evidència mínima | Com es comprovarà |
+|---|---|---|
+| Traçabilitat | Repositori actualitzat, issue o registre equivalent, commits significatius i registre breu de temps per microrepte. | Revisió de commits, issues, temps registrat i coherència amb el treball presentat. |
+| Entrada i validació | Formulari o entrada equivalent, recuperació real de dades, error visible i correcció. | Cas correcte, cas amb error i reintent corregit. |
+| Processament | Lògica de servidor aplicada al producte amb variables, condicions, bucles, arrays o funcions. | Execució del flux i preguntes sobre què passa en servidor. |
+| Conservació | Informació correcta guardada o conservada i reutilitzada després dins del projecte. | Prova que una dada es pot tornar a mostrar, recuperar o llistar. |
+| Estat | Sessió, cookies o mecanisme equivalent si el flux ho necessita. | Prova de recuperació del flux sense perdre informació temporal. |
+| Accés protegit | Autenticació funcional i operació real protegida vinculada al domini. | Cas autoritzat i cas denegat. |
+| Mini API | Endpoint d'autenticació amb `JSON`, resposta `200`, resposta `401` i ruta protegida. | Peticions documentades i comprovables. |
+| R2M8 POO/Composer | `composer.json` o equivalent, classe pròpia en `src/` o carpeta equivalent, prova unitària mínima i resultat documentat. | Execució o revisió de la prova i comprovació que el flux web continua funcionant. |
+| BBDD mínima | Connexió, taula, alta, lectura, consultes preparades i instruccions de reproducció. | Alta i lectura d'una dada significativa. |
+| Documentació i IA | README o documentació del flux, checklist de proves, incidències i `AI log` si hi ha ús rellevant. | Contrast entre documentació, codi i comportament real. |
 
-- Repositori actualitzat.
-- Issue principal del repte o registre equivalent.
-- Seqüència de commits significativa.
-- Per cada microrepte, almenys 3 commits útils quan siga possible: inici, progrés i prova o tancament.
-- Registre breu de temps aproximat per microrepte en el `README`, issue o document equivalent.
-- Formulari funcional o entrada equivalent.
-- Recuperació real de dades.
-- Error de validació bàsic visible i possibilitat de correcció.
-- Processament bàsic en servidor.
-- Conservació o persistència funcional de la informació correcta.
-- Reutilització posterior d’eixa informació dins del projecte.
-- Si el flux inclou imatge o fitxer com a ampliació, prova de validació de tipus i grandària.
-- Ús visible de lògica amb decisions, bucles, arrays o funcions.
-- Evidència d’estat, sessió o cookies.
-- Autenticació funcional.
-- Operació real protegida i vinculada al projecte base.
-- Mini API d'autenticació per a client amb `JSON`, `200`, `401` i ruta protegida.
-- Cas positiu i cas negatiu.
-- Prova o verificació mínima del flux.
-- Documentació tècnica actualitzada.
-- `composer.json` amb autoload configurat o alternativa equivalent justificada.
-- Classe pròpia simple vinculada al domini o servei del projecte.
-- Prova unitària mínima i resultat documentat.
-- Prova de no regressió del flux després d’afegir la classe.
-- Persistència mínima amb BBDD, alta i lectura documentades.
-- `AI log`, quan hi haja ús rellevant d’IA.
-
-## Evidències de R2M8
-
-En el microrepte 8, una bona evidència és:
-
-- `composer.json` o configuració equivalent
-- classe pròpia en `src/` o carpeta equivalent
-- prova unitària mínima que es pot executar sense navegador
-- resultat de l’execució de la prova
-- comprovació que el flux web continua funcionant
-- explicació de per què eixa classe és una peça testable i què queda per a `R3`
-- si després d’això has afegit una llibreria externa o una API, explicació de per què és una ampliació i no el mínim del microrepte
-
-## Forma de prova del repte
-
-En este repte no n’hi ha prou amb dir que el sistema funciona. Cal **provar-lo de manera visible i verificable**.
-
-La prova mínima del repte ha d’incloure, com a mínim, estos casos:
-
-- enviament correcte del formulari
-- error de validació visible per a l’usuari
-- correcció d’un formulari inicialment incorrecte
-- tractament del reintent amb dades conservades en servidor i guardat funcional del cas correcte
-- aplicació d’alguna regla bàsica del projecte
-- recuperació d’informació temporal d’estat o sessió, si forma part del flux
-- conservació o reutilització posterior de la informació
-- cas autoritzat de la funcionalitat protegida
-- cas denegat de la funcionalitat protegida
-- tractament d’imatge o fitxer, si forma part del flux del projecte
-
-## Com s’han de presentar les proves
-
-Les proves del repte han de quedar registrades d’una manera simple però clara.
-
-Es recomana usar una **checklist de verificació** o una **taula de casos de prova** amb una estructura com esta:
-
-- cas de prova
-- entrada
-- resultat esperat
-- resultat obtingut
-- incidències detectades
-
-## Què es comprovarà en la prova
-
-En la revisió del repte, el professorat podrà comprovar:
-
-- si el flux complet funciona realment
-- si els errors de validació es mostren de manera visible
-- si la informació correcta es conserva i es pot reutilitzar
-- si l’estat temporal permet reprendre el flux quan toca
-- si la funcionalitat protegida respon diferent en cas autoritzat i en cas denegat
-- si l’alumne o alumna pot explicar què s’ha provat i per què
-
-## Com es comprovarà
-
-El professorat podrà comprovar el treball amb mecanismes com:
-
-- Execució real del flux complet.
-- Prova del cas positiu, del cas negatiu i d’almenys un error de validació bàsic.
-- Revisió de com es mostren els errors i de com es reprén el flux després de corregir-los.
-- Prova que una dada correcta queda guardada i es pot tornar a mostrar, recuperar o llistar.
-- Si hi ha estat temporal, prova de recuperació del flux sense perdre la informació provisional.
-- Revisió de si el mecanisme de conservació triat és coherent i prou controlat per a `R2`.
-- Si hi ha fitxer o imatge, prova d’un cas acceptable i d’un cas rebutjat.
-- Revisió de commits i issues.
-- Revisió del registre de temps aproximat i de la seua coherència amb els commits.
-- Preguntes tècniques breus.
-- Defensa oral curta.
-- Microcanvis en viu quan siga necessari.
-- Contrast entre documentació, codi i comportament real.
+En este repte no n’hi ha prou amb dir que el sistema funciona. Les proves han de quedar registrades en una checklist o taula simple amb cas de prova, entrada, resultat esperat, resultat obtingut i incidències.
 
 ## Documentació del codi
 
-En este repte, la documentació del codi ha de ser **útil i proporcionada**.
+La documentació ha de ser útil i proporcionada: on es valida, on es processa, on es comprova l'accés, com es conserva la informació i on es tracta un fitxer o imatge si n'hi ha.
 
-No es demana documentar de manera exhaustiva tot el projecte, però sí deixar clar:
-
-- què fa cada part important del flux
-- on es valida la informació
-- on es tracta l’autenticació o la comprovació d’accés
-- on es processa la imatge o el fitxer, si n’hi ha
-- com es conserva després la informació
-
-## Ús de PHPDoc
-
-Es recomana usar **PHPDoc DocBlocks** de manera selectiva en funcions pròpies amb lògica rellevant, especialment en casos com:
-
-- funció o condició de validació quan ja entengues el `if/else` bàsic
-- funcions de tractament de dades
-- funcions de tractament d’imatge o fitxer
-- funcions de comprovació d’accés
-- funcions reutilitzables que no siguen evidents a simple vista
-
-## Què s’espera del PHPDoc en este repte
-
-Si s’utilitza PHPDoc, hauria de servir sobretot per millorar la comprensió del codi.
-
-Com a mínim, en les funcions on toque, pot ser útil incloure:
-
-- una descripció breu
-- `@param`
-- `@return`
-- `@throws`, si realment aplica
-
-## Què no es demana
-
-En este repte no es demana:
-
-- documentar cada variable
-- omplir de DocBlocks fitxers trivials
-- generar documentació automàtica completa
-- convertir la documentació en una capa decorativa sense utilitat real
-- convertir tot el projecte a POO completa
-- muntar una arquitectura completa abans d’hora
-- fer de la base de dades el centre del repte
-
-## Idea clau
-
-En este repte es valorarà sobretot que:
-
-- proves realment el que has programat
-- pots demostrar què funciona i què falla
-- documentes de manera útil les parts importants
-- i deixes el codi prou clar perquè una altra persona puga entendre el flux principal
+PHPDoc és recomanable només en funcions pròpies amb lògica rellevant. No es demana documentar cada variable, omplir fitxers trivials de DocBlocks, generar documentació automàtica completa, convertir tot el projecte a POO completa ni fer de la base de dades el centre del repte.
 
 ## Ús de la IA en este repte
 
 La IA et pot ajudar, per exemple, a:
 
 - Proposar estructures de formulari.
-- Sugerir validacions.
+- Suggerir validacions.
 - Recordar patrons de sessió o autenticació.
 - Proposar un mecanisme simple de conservació de dades.
 - Detectar errors.
@@ -1098,22 +878,7 @@ Convindria evitar errors com estos:
 
 ## Quan es considera superat
 
-Este repte es considera superat quan:
-
-- El sistema rep i tracta dades en servidor dins d’un flux complet.
-- La validació inicial és visible, interpretable i permet correcció.
-- La informació correcta queda conservada amb sentit funcional.
-- Eixa informació es pot reutilitzar després dins del projecte.
-- Hi ha lògica bàsica aplicada amb sentit.
-- Si hi ha imatge o fitxer, el sistema el valida i l’integra amb criteri bàsic.
-- Existix una evidència clara de manteniment d’estat.
-- L’autenticació o control d’accés és funcional.
-- Hi ha una operació real del projecte protegida i vinculada al domini triat.
-- Es poden demostrar un cas positiu i un cas negatiu.
-- El treball està prou documentat i traçat.
-- Pots defendre tècnicament el flux complet i explicar per què la persistència ací és de suport i no encara el centre del repte.
-- Pots justificar quina regla o comprovació has convertit en una classe simple.
-- La sessió `7` deixa `composer.json` o equivalent, autoload, una classe pròpia i una prova unitària mínima executada.
+Este repte es considera superat quan la checklist final està completa, el flux es pot provar de punta a punta i pots defensar tècnicament per què la persistència ací és de suport, quina operació has protegit i quina regla o comprovació has convertit en una classe simple.
 
 ## Què prepara este repte
 
@@ -1125,7 +890,7 @@ Este repte deixa el producte preparat per al següent pas del curs:
 - Donar més pes a la persistència quan arribe `R3`.
 - Introduir el framework sense canviar de projecte.
 
-La sessió `7` en `R2` ha de servir justament per arribar a `R3` amb una primera peça testable, no per consumir abans d’hora tot el que correspon al repte següent.
+`R2M8` ha de servir justament per arribar a `R3` amb una primera peça testable, no per consumir abans d’hora tot el que correspon al repte següent.
 
 ## Ampliació 9→10
 

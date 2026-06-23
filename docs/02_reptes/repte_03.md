@@ -14,33 +14,17 @@ La idea central és:
 
 Este repte també té una via d'excel·lència `9→10`: **primer has de tancar bé el nucli i després pots obrir una ampliació amb valor tècnic real**. La secció completa està al final del repte.
 
-## Què has de construir
+## Vista ràpida
 
-Al final de `R3` has de poder mostrar:
-
-- projecte en framework arrancable
-- Docker funcional
-- configuració mínima i `.env.example` o instruccions equivalents
-- rutes reals
-- controladors o equivalents
-- vistes, plantilles o respostes generades pel framework
-- models, entitats, esquemes o capa equivalent de dades
-- BBDD real
-- migracions o mecanisme equivalent de l'stack per crear l'estructura de dades
-- fixtures, seeders o script equivalent per carregar dades inicials
-- comparació curta del framework triat amb una altra opció possible
-- esquema abans/després de responsabilitats respecte a `R2`
-- recuperació i ús d'un conjunt de dades real dins d'un flux funcional
-- `2` casos d'ús end-to-end
-- almenys `1` cas d'ús migrat de `R2`
-- almenys `1` cas d'ús server-rendered amb vista o plantilla i resposta `HTML` generada en servidor
-- autenticació amb eines del framework
-- almenys una acció protegida amb middleware, guard, voter, policy o equivalent
-- autorització mínima amb cas autoritzat i cas denegat
-- validació mínima
-- tractament bàsic d'errors
-- proves mínimes
-- documentació curta d'arrencada i ús
+| Bloc | Què has de deixar fet |
+|---|---|
+| Projecte base | Framework arrancable amb Docker, configuració mínima i `.env.example` o instruccions equivalents. |
+| Arquitectura | Rutes, controladors o equivalents, vistes/plantilles/respostes i capa de dades pròpia de l'stack. |
+| Persistència | BBDD real, migracions o mecanisme equivalent, fixtures/seeders o script de dades inicials. |
+| Criteri tècnic | Comparació curta del framework triat i esquema abans/després de responsabilitats respecte a `R2`. |
+| Fluxos | `2` casos d'ús end-to-end, almenys `1` migrat de `R2` i almenys `1` server-rendered amb `HTML` generat en servidor. |
+| Accés i qualitat | Autenticació, acció protegida, autorització amb cas autoritzat i denegat, validació, errors i proves mínimes. |
+| Documentació | README curt d'arrencada, ús i mapa del que queda pendent. |
 
 ## Què no es demana
 
@@ -103,49 +87,19 @@ El detall operatiu està en els materials de `R3`:
 - [Suport tècnic mínim](../04_materials/repte_03/suport_tecnic.md)
 - [Checklists d'alumnat](../04_materials/repte_03/checklists.md)
 
-## Evidències obligatòries
+## Checklist final del Repte 3
 
-Has d'aportar:
-
-- repositori actualitzat
-- commits significatius
-- issue o llista de tasques de `R3`
-- Docker i framework arrancables
-- justificació del framework triat i avantatge de separar presentació i lògica
-- comparació breu amb una altra opció de framework
-- esquema abans/després de responsabilitats entre `R2` i `R3`
-- `.env.example` o instruccions de configuració
-- migracions o equivalent de l'stack
-- fixtures, seeders o script equivalent
-- dades de demostració reproduïbles
-- consulta o recuperació d'un conjunt de dades real
-- ús d'eixe conjunt de dades en un llistat, detall, filtre o resposta
-- prova dels `2` casos d'ús funcionals
-- prova que almenys `1` flux ve de `R2`
-- evidència que almenys `1` flux passa dades del controlador a una vista o plantilla i genera `HTML` en servidor
-- evidència de login o autenticació equivalent
-- evidència d'una acció protegida en servidor
-- prova de cas autoritzat i cas denegat
-- validació i errors mínims
-- proves mínimes o checklist verificable
-- README curt d'arrencada i ús
-- mapa del que quedaria per migrar
-- `AI log` si has usat IA de manera rellevant
-
-## Quan es considera superat
-
-`R3` es considera superat quan una altra persona pot:
-
-1. arrancar el projecte amb les instruccions del README
-2. crear la BBDD amb migracions o mecanisme equivalent
-3. carregar dades inicials amb fixtures, seeders o script equivalent
-4. recuperar un conjunt de dades real i vore'l dins d'un flux funcional
-5. executar els `2` casos d'ús
-6. vore almenys `1` cas d'ús server-rendered amb dades reals en una vista o plantilla
-7. accedir a una acció protegida amb cas autoritzat i vore un cas denegat controlat
-8. veure una validació o error controlat
-9. executar o revisar proves mínimes
-10. entendre què s'ha migrat, què s'ha ampliat i què queda pendent
+| Bloc | Evidència mínima | Com es comprovarà |
+|---|---|---|
+| Traçabilitat | Repositori actualitzat, commits significatius i issue o llista de tasques de `R3`. | Revisió de commits, tasques i decisions. |
+| Arrencada | Docker i framework arrancables, `.env.example` o instruccions de configuració. | Execució seguint el README. |
+| Persistència | Migracions o equivalent, fixtures/seeders o script, i dades de demostració reproduïbles. | Crear BBDD, carregar dades i recuperar un conjunt de dades real. |
+| Fluxos | Prova dels `2` casos d'ús, amb almenys `1` flux migrat de `R2`. | Execució end-to-end dels casos d'ús. |
+| Server-rendered | Un flux passa dades del controlador a una vista o plantilla i genera `HTML` en servidor. | Revisió del codi i comprovació visual del resultat. |
+| Accés protegit | Login o autenticació equivalent, acció protegida, cas autoritzat i cas denegat. | Prova dels dos casos. |
+| Qualitat | Validació, errors controlats i proves mínimes o checklist verificable. | Execució o revisió de proves i errors. |
+| Criteri tècnic | Comparació de framework, esquema abans/després i mapa del que queda pendent. | Defensa breu de decisions. |
+| Ús d'IA | `AI log`, si has usat IA de manera rellevant. | Revisió del registre i de la validació feta. |
 
 Si falta Docker, BBDD reconstruïble, fixtures/seeders o càrrega equivalent, els `2` fluxos, el cas server-rendered o la protecció d'una acció significativa, el repte encara no està tancat.
 

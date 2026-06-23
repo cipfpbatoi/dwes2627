@@ -10,13 +10,15 @@ El treball continua sobre el mateix projecte i sobre el mateix encàrrec funcion
 
 Este repte també té una via d'excel·lència `9→10`: **primer has de tancar bé el nucli i després pots obrir una ampliació amb valor tècnic real**. La secció completa està al final del repte.
 
-## Què has de consolidar
+## Vista ràpida
 
-- endpoints lligats a casos d’ús reals
-- validació d’entrada i codis d’estat coherents
-- errors d’API comprensibles
-- documentació operativa
-- una prova real de consum amb client, script o eina equivalent
+| Bloc | Què has de deixar fet |
+|---|---|
+| Contracte | Endpoints lligats a casos d’ús reals, request/response i errors previstos. |
+| Implementació | Respostes estructurades amb dades reals, validació d’entrada i codis d’estat coherents. |
+| Protecció | Autenticació o permisos en punts sensibles, amb cas autoritzat i denegat. |
+| Consum | Prova real amb client, script, col·lecció o eina equivalent. |
+| Documentació | Documentació operativa que coincidix amb el comportament real de l’API. |
 
 ## Què no és suficient
 
@@ -24,14 +26,6 @@ Este repte també té una via d'excel·lència `9→10`: **primer has de tancar 
 - generar documentació que no coincideix amb el codi
 - oblidar autenticació o permisos en punts sensibles
 - donar per bo un consum només manual o parcial
-
-## Evidència mínima
-
-- documentació d’API usable
-- casos correctes i casos d’error verificats
-- col·lecció de proves o script de consum
-- commits i documentació del procés
-- prova que productor i consumidor parlen el mateix contracte
 
 ## Microreptes del repte
 
@@ -51,15 +45,15 @@ Este repte també té una via d'excel·lència `9→10`: **primer has de tancar 
 4. Consumeix el servei com si fores una tercera persona.
 5. Documenta, prova i registra incidències abans de donar per tancat el repte.
 
-## Evidències per microrepte
+## Checklist final del Repte 4
 
-| Microrepte | Evidència mínima |
-|---|---|
-| `R4M1` | Contracte d'API amb mapa d'endpoints i errors. |
-| `R4M2` | Endpoint funcional i prova del cas correcte. |
-| `R4M3` | Petició autoritzada i petició denegada. |
-| `R4M4` | Consumidor o col·lecció amb cas correcte i error. |
-| `R4M5` | Documentació executable i registre de proves. |
+| Microrepte | Evidència mínima | Com es comprovarà |
+|---|---|---|
+| `R4M1` | Contracte d'API amb mapa d'endpoints i errors. | Revisió de coherència entre contracte i cas d'ús. |
+| `R4M2` | Endpoint funcional amb resposta estructurada i prova del cas correcte. | Petició real contra el servei. |
+| `R4M3` | Petició autoritzada i petició denegada. | Comparació de codis d'estat i resposta. |
+| `R4M4` | Consumidor, script o col·lecció amb cas correcte i error. | Execució del consum fora del codi productor. |
+| `R4M5` | Documentació executable, registre de proves i commits del procés. | Verificació que productor i consumidor parlen el mateix contracte. |
 
 ## Connexió amb el següent pas
 
