@@ -2,59 +2,24 @@
 
 ## Finalitat del repte
 
-Este primer repte servix per iniciar el backend en condicions professionals bàsiques.
-
-No es tracta només d’obrir un repositori o de deixar un esquelet buit. Es tracta de començar el projecte del curs amb una base tècnica executable, documentada i defensable.
-
-En concret, este repte ha de servir per:
-
-- Deixar una base tècnica executable.
-- Prendre una primera decisió tècnica justificada.
-- Obrir el treball amb criteri professional mínim.
-- Construir una primera peça funcional real del producte.
+Este primer repte servix per iniciar el backend en condicions professionals bàsiques. No es tracta només d’obrir un repositori o de deixar un esquelet buit, sinó de començar el projecte del curs amb una base tècnica executable, documentada i defensable.
 
 ## 🌟 Via 9→10 en este repte
 
 Este repte també té una via d'excel·lència `9→10`: **primer has de tancar bé el nucli i després pots obrir una ampliació amb valor tècnic real**. La secció completa està al final del repte.
 
-## Context professional
+## Vista ràpida
 
-Imagina que formes part d’un equip que rep l’encàrrec de posar en marxa un nou servei web.
+| Apartat | Què has de deixar fet |
+|---|---|
+| Base tècnica | Repositori funcional, estructura mínima coherent i entorn executable amb Docker o equivalent. |
+| Backend inicial | Primer punt d’entrada servit pel backend: ruta, vista, endpoint, landing mínima o healthcheck. |
+| Documentació | `README` executable amb arrancada, parada, ports, URL i comprovació del resultat. |
+| Decisió tècnica | Fitxa inicial, justificació breu del stack i dubtes tècnics detectats. |
+| Traçabilitat | Issue mare, microtasques, commits o registre equivalent del treball fet. |
+| Verificació | Evidència que el projecte arranca i que el punt d’entrada respon. |
 
-Encara no es demana un producte complet, però sí una base fiable que permeta:
-
-- Arrancar el projecte sense improvisació.
-- Entendre com s’executa el backend.
-- Deixar un punt d’entrada funcional simple.
-- Documentar com es posa en marxa.
-- Continuar el projecte amb criteri en els reptes següents.
-
-## Què has de construir
-
-En este repte has de deixar, com a mínim:
-
-- Un repositori funcional.
-- Un entorn executable.
-- Docker o equivalent per reproduir l’arrancada.
-- Un `README` executable.
-- Una estructura base coherent del servei.
-- Un punt d’entrada funcional simple del producte.
-- Una justificació tècnica breu.
-- Traçabilitat del treball amb issues i commits o registre equivalent.
-
-El mínim obligatori no exigix encara una funcionalitat de domini rica. El que sí exigix és una base real de treball, un punt d’entrada funcional i evidència que el sistema arranca i es pot revisar.
-
-Si el teu kickoff ja inclou formulari, validació mínima o primer registre de dades, pot ser una bona ampliació, però no ha de substituir la qualitat de la base tècnica.
-
-## Producte mínim esperat
-
-Al final del repte hauries de poder mostrar una seqüència com esta:
-
-- El projecte arranca seguint el `README`.
-- El servei es posa en marxa amb Docker o equivalent.
-- Hi ha una resposta real del backend.
-- El punt d’entrada és visible, simple i comprensible.
-- La base creada es pot reutilitzar per al `Repte 2`.
+El mínim obligatori no exigix encara una funcionalitat de domini rica. El que sí exigix és una base real de treball, una primera resposta del backend i evidència que el sistema es pot revisar.
 
 ## Microreptes del Repte 1
 
@@ -209,46 +174,18 @@ En este microrepte es valorarà si pots:
 - Defensa tècnica breu.
 - Preguntes sobre decisions, model d’execució i funcionalitat mínima.
 
-## Resum dels criteris d’avaluació del Repte 1
+## Checklist final del Repte 1
 
-En este repte es treballen especialment estos criteris:
-
-- Entendre la diferència entre client i servidor.
-- Comprendre el paper del backend.
-- Identificar el paper del servidor d’aplicacions.
-- Reconéixer tecnologies i eines del backend.
-- Posar en marxa un entorn executable.
-- Demostrar una primera funcionalitat real.
-- Justificar la base tècnica triada.
-
-## Evidències obligatòries
-
-Per considerar complet el repte, hauràs d’aportar com a mínim:
-
-- Repositori actualitzat i usable.
-- Issue mare del kickoff o registre equivalent.
-- Historial de commits significatiu.
-- Fitxa breu d’exploració tècnica inicial de `R1M1`.
-- `README` executable.
-- Docker Compose o equivalent funcional.
-- Justificació tècnica breu o `ADR` curt.
-- Punt d’entrada funcional simple.
-- Evidència de comprovació tècnica mínima.
-- Defensa tècnica breu.
-- `AI log`, quan hi haja ús rellevant d’IA.
-
-## Com es comprovarà
-
-El professorat podrà comprovar el treball amb mecanismes com:
-
-- Execució real del `README`.
-- Arrencada amb Docker o equivalent.
-- Prova del punt d’entrada funcional.
-- Revisió de commits i issues.
-- Preguntes tècniques breus.
-- Defensa oral curta.
-- Microcanvis en viu quan siga necessari.
-- Contrast entre documentació, codi i resultat real.
+| Bloc | Evidència mínima | Com es comprovarà |
+|---|---|---|
+| Repositori | Repositori actualitzat, usable i amb commits significatius. | Revisió de commits, issues o registre equivalent. |
+| Decisió inicial | Fitxa breu de `R1M1`, justificació del stack i dubtes tècnics. | Revisió de la fitxa i preguntes sobre client, servidor i tecnologia triada. |
+| Entorn executable | Docker Compose, `Dockerfile` o equivalent funcional. | Execució real seguint el `README`. |
+| Punt d’entrada | Ruta, vista, endpoint, landing mínima o healthcheck servit pel backend. | Prova de la URL o ruta documentada. |
+| Documentació | `README` amb requisits, arrancada, parada, ports, URL i resultat esperat. | Una altra persona ha de poder arrancar el projecte només amb el `README`. |
+| Verificació | Captura, log, URL o prova mínima del servei en marxa. | Contrast entre documentació, codi i resultat real. |
+| Defensa | Explicació breu de què has fet, per què i com prepara `R2`. | Preguntes tècniques breus o microcanvis en viu. |
+| Ús d’IA | `AI log`, si hi ha ús rellevant d’IA. | Revisió del registre i de la validació feta després. |
 
 ## Ús de la IA en este repte
 
@@ -282,15 +219,7 @@ Convindria evitar errors com estos:
 
 ## Quan es considera superat
 
-Este repte es considera superat quan:
-
-- El projecte arranca seguint el `README`.
-- L’entorn és executable de manera reproductible.
-- Hi ha una primera peça funcional real del producte.
-- Existix un punt d’entrada funcional simple i defensable.
-- La decisió tècnica inicial està justificada.
-- El treball deixa traçabilitat real.
-- Pots explicar què has fet, per què i com prepara el pas al `Repte 2`.
+Este repte es considera superat quan la checklist final està completa i pots explicar què has fet, per què i com prepara el pas al `Repte 2`.
 
 ## Decisió metodològica important d’este repte
 
@@ -313,26 +242,43 @@ Este repte deixa la base preparada per al següent pas del curs:
 ## Ampliació 9→10
 
 **Finalitat**  
-Aprofundir el kickoff del backend amb una millora tècnica real sobre entorn, arrencada o traçabilitat inicial.
+Aprofundir el kickoff del backend amb una millora funcional visible i defensable: el projecte ha de deixar de ser només una comprovació tècnica d'arrencada i ha de mostrar una primera entrada real al producte.
 
 **Condició prèvia**  
 El nucli del repte ha d'estar complet, funcional i validat.
 
-**Opcions d'ampliació**
+**Millora demanada**
+
+Per optar a la franja `9→10` en este repte, la millora principal és dissenyar i implementar una primera experiència visible del producte:
+
+- Una `landing page` pròpia del projecte, servida pel backend.
+- Una pàgina `Sobre nosaltres` o `Sobre el projecte`, també servida pel backend.
+- Navegació mínima entre les dos pàgines.
+- Contingut adaptat al producte concret, no text genèric ni plantilla sense personalitzar.
+- Evidència que les pàgines es poden executar seguint el `README`.
+
+Esta ampliació ha de mostrar que el projecte ja té una porta d'entrada comprensible per a una persona usuària o revisora. Un `healthcheck` pot ser útil com a comprovació tècnica del nucli, però **no compta com a ampliació 9→10** si és l'única millora presentada.
+
+**Altres millores complementàries**
+
+Si ja tens la landing i la pàgina `Sobre nosaltres`, pots reforçar l'ampliació amb alguna d'estes accions:
+
 - Deixar l'entorn encara més reproductible amb automatització bàsica d'arrencada o millor contenidorització.
 - Redactar un `ADR` curt o una nota tècnica més sòlida sobre l'arquitectura inicial i la decisió de stack.
+- Documentar breument com la landing prepara el pas cap a formularis, dades o fluxos de `R2`.
 
 **Proposta pròpia**  
-També pots proposar una ampliació pròpia si està alineada amb el repte i la valides abans amb el professorat.
+També pots proposar una ampliació pròpia si està alineada amb el repte i la valides abans amb el professorat. En qualsevol cas, ha d'aportar valor visible al producte i no limitar-se a una comprovació tècnica d'estat.
 
 **Evidències mínimes**
 - commit o branca identificable
 - justificació tècnica breu
-- prova funcional de l'arrencada o de la millora aplicada
+- prova funcional de la landing i de la pàgina `Sobre nosaltres`
+- URL o ruta documentada de cada pàgina
 - rastre de l'ús assistit per IA, si n'hi ha hagut
 
 **Ús assistit per IA**  
 La IA et pot ajudar a comparar opcions o revisar configuració, però la decisió, la prova i la validació han de ser teues.
 
 **Defensa**  
-Perquè compute com a `9→10`, l'ampliació ha d'aportar valor real i l'has de poder explicar i defensar.
+Perquè compute com a `9→10`, has de poder explicar què aporta la landing, per què la pàgina `Sobre nosaltres` encaixa amb el projecte, com es generen o servixen des del backend i com esta millora prepara el treball posterior.
