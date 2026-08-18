@@ -11,6 +11,7 @@ Si necessites saber què has d'entregar, entra en [Reptes](../02_reptes/index.md
 | omplir la fitxa inicial de stack | [Fitxa breu d'exploració tècnica inicial](fitxa_exploracio_tecnica_inicial.md) |
 | justificar o revisar l'ús d'IA | [Guia d'ús verificable de la IA](guia_us_verificable_ia.md) |
 | trobar les diapositives de R1 | [Suport ràpid del Repte 1](repte_01/index.md) |
+| trobar les diapositives de R2 | [Suport ràpid del Repte 2](repte_02/index.md) |
 | saber on va cada peça tècnica en R3 | [Suport tècnic mínim de R3](repte_03/suport_tecnic.md) |
 | comprovar si R3 està tancat | [Checklists de R3](repte_03/checklists.md) |
 | buscar PDFs de classe | [Diapositives PDF](../recursos/index.md) |

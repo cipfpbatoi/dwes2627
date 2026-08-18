@@ -14,6 +14,7 @@ Esta pàgina és només un accés directe. Si necessites explicació, usa [Com f
 | preparar una entrega | [Guia de presentació](../02_reptes/guia_presentacio.md) |
 | revisar criteris d'avaluació | [Guies d'avaluació](../03_com_s_avalua/rubriques/index.md) |
 | trobar ajuda de R1 | [Suport ràpid del Repte 1](../04_materials/repte_01/index.md) |
+| trobar ajuda de R2 | [Suport ràpid del Repte 2](../04_materials/repte_02/index.md) |
 | trobar ajuda de R3 | [Suport ràpid del Repte 3](../04_materials/repte_03/index.md) |
 | buscar diapositives | [Diapositives PDF](../recursos/index.md) |
 | consultar tallers | [Tallers](../recursos/tallers.md) |
