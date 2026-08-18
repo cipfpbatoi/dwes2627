@@ -8,6 +8,15 @@ nav:
       - "🧭 Visió general": "01_com_funciona_el_curs/index.md"
       - "🌟 Ampliacions 9→10": "ampliacions-excellencia.md"
       - "🤖 Ús verificable de la IA": "04_materials/guia_us_verificable_ia.md"
+  - "🧩 Reptes":
+      - "👀 Visió general": "02_reptes/index.md"
+      - "🧭 Guia de presentació": "02_reptes/guia_presentacio.md"
+      - "1️⃣ Repte 1": "02_reptes/repte_01.md"
+      - "2️⃣ Repte 2": "02_reptes/repte_02.md"
+      - "3️⃣ Repte 3": "02_reptes/repte_03.md"
+      - "4️⃣ Repte 4": "02_reptes/repte_04.md"
+      - "5️⃣ Repte 5": "02_reptes/repte_05.md"
+      - "🎓 Tancament i defensa": "02_reptes/fase_final.md"
   - "📚 Guies de suport":
       - "👀 Visió general": "04_materials/index.md"
       - "📝 Fitxa d'exploració tècnica inicial": "04_materials/fitxa_exploracio_tecnica_inicial.md"
@@ -20,19 +29,6 @@ nav:
       - "4️⃣ Suport Repte 4": "04_materials/repte_04/index.md"
       - "5️⃣ Suport Repte 5": "04_materials/repte_05/index.md"
   - "🧱 Projectes base": "05_projecte_base/index.md"
-  - "⚡ Recursos ràpids": "06_recursos_rapid/index.md"
-  - "📎 Diapositives PDF":
-      - "👀 Visió general": "recursos/index.md"
-      - "🛠️ Tallers": "recursos/tallers.md"
-  - "🧩 Reptes":
-      - "👀 Visió general": "02_reptes/index.md"
-      - "🧭 Guia de presentació": "02_reptes/guia_presentacio.md"
-      - "1️⃣ Repte 1": "02_reptes/repte_01.md"
-      - "2️⃣ Repte 2": "02_reptes/repte_02.md"
-      - "3️⃣ Repte 3": "02_reptes/repte_03.md"
-      - "4️⃣ Repte 4": "02_reptes/repte_04.md"
-      - "5️⃣ Repte 5": "02_reptes/repte_05.md"
-      - "🎓 Tancament i defensa": "02_reptes/fase_final.md"
   - "📏 Com s'avalua":
       - "👀 Visió general": "03_com_s_avalua/index.md"
       - "📋 Guies d'avaluació":
@@ -60,6 +56,7 @@ nav:
           - "R5M5. Prova i defensa": "03_com_s_avalua/rubriques/r5m5.md"
       - "📝 Report breu d'ús de la IA": "03_com_s_avalua/report_breu_ús_ia.md"
       - "🧪 Checklist de proves": "03_com_s_avalua/checklists_de_prova.md"
+  - "⚡ Recursos ràpids": "06_recursos_rapid/index.md"
 theme:
   language: ca
   favicon: imagenes/favicon.png
