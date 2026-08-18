@@ -1,12 +1,12 @@
-# Materials del Repte 1
+# Guies de suport del Repte 1
 
-Estos materials arrepleguen les explicacions de suport per al kickoff funcional del backend i els conceptes bàsics que has de poder explicar durant el repte.
+Esta pàgina arreplega les explicacions de suport per al kickoff funcional del backend i els conceptes bàsics que has de poder explicar durant el repte.
 
-Usa’ls mentre treballes els microreptes, no com a substitut de les evidències pròpies del projecte.
+L'enunciat principal està en [Repte 1](../../02_reptes/repte_01.md). Usa estes guies mentre treballes els microreptes, no com a substitut de les evidències pròpies del projecte.
 
 ## Organització per sessions
 
-| Sessió | Autocorrecció | Materials principals |
+| Sessió | Autocorrecció | Diapositives i guies de suport |
 |---|---|---|
 | `R1-S01` | `r1-s01-model-client-servidor-stack` | Arquitectura web, client-servidor, backend i llenguatges/frameworks. |
 | `R1-S02` | `r1-s02-entorn-executable` | Entorn executable, punt d’entrada funcional, documentació, evidències i checkpoint. |

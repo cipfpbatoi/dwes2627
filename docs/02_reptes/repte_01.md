@@ -33,7 +33,7 @@ Guies d'avaluació:
 - [R1M1. Guia d'avaluació](../03_com_s_avalua/rubriques/r1m1.md)
 - [R1M2. Guia d'avaluació](../03_com_s_avalua/rubriques/r1m2.md)
 
-Materials de suport: [Repte 1](../04_materials/repte_01/index.md).
+Guies de suport: [Repte 1](../04_materials/repte_01/index.md).
 
 ### R1M1. Model d'execució client/servidor i elecció guiada de stack
 

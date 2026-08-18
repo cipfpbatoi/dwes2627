@@ -67,7 +67,7 @@ Guies d'avaluació:
 - [R5M4. Guia d'avaluació](../03_com_s_avalua/rubriques/r5m4.md)
 - [R5M5. Guia d'avaluació](../03_com_s_avalua/rubriques/r5m5.md)
 
-Materials de suport:
+Diapositives de suport:
 
 - [R5. Integració híbrida i defensa final](../recursos/Repte5/R5-Integracio-hibrida-i-defensa-final.pdf)
 - [R5M1. Selecció de font externa i disseny de la integració](../recursos/Repte5/R5M1-Seleccio-de-font-externa-i-disseny-de-la-integracio.pdf)

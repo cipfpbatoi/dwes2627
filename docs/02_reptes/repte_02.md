@@ -76,7 +76,7 @@ Guies d'avaluació:
 - [R2M8. Guia d'avaluació](../03_com_s_avalua/rubriques/r2m8.md)
 - [R2M9. Guia d'avaluació](../03_com_s_avalua/rubriques/r2m9.md)
 
-Materials de suport:
+Diapositives de suport:
 
 - [R2. Processament, estat i autenticació](../recursos/Repte2/R2-Processament-estat-i-autenticacio.pdf)
 - [R2M1. Entrada variada i validació bàsica](../recursos/Repte2/R2M1-Entrada-variada-i-validacio-basica.pdf)

@@ -49,7 +49,7 @@ Guies d'avaluació:
 - [R4M4. Guia d'avaluació](../03_com_s_avalua/rubriques/r4m4.md)
 - [R4M5. Guia d'avaluació](../03_com_s_avalua/rubriques/r4m5.md)
 
-Materials de suport:
+Diapositives de suport:
 
 - [R4. API pròpia, consum i documentació](../recursos/Repte4/R4-API-propia-consum-i-documentacio.pdf)
 - [R4M1. Disseny del contracte del servei](../recursos/Repte4/R4M1-Disseny-del-contracte-del-servei.pdf)

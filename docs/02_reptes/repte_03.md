@@ -86,14 +86,14 @@ Guies d'avaluació:
 - [R3M6. Guia d'avaluació](../03_com_s_avalua/rubriques/r3m6.md)
 - [R3M7. Guia d'avaluació](../03_com_s_avalua/rubriques/r3m7.md)
 
-El detall operatiu està en els materials de `R3`:
+Per treballar el repte tens guies de suport de `R3`. Estes guies desenvolupen el que apareix ací, però no són un segon llistat de requisits:
 
 - [Fitxa general del Repte 3](../04_materials/repte_03/fitxa_general.md)
-- [Enunciats dels microreptes](../04_materials/repte_03/microreptes.md)
+- [Guia operativa dels microreptes](../04_materials/repte_03/microreptes.md)
 - [Suport tècnic mínim](../04_materials/repte_03/suport_tecnic.md)
 - [Checklists d'alumnat](../04_materials/repte_03/checklists.md)
 
-Materials de suport:
+Diapositives de suport:
 
 - [R3. Framework, arquitectura i persistència real](../recursos/Repte3/R3-Framework-arquitectura-i-persistencia-real.pdf)
 - [R3M1. Arrencada del nou projecte](../recursos/Repte3/R3M1-Arrencada-del-nou-projecte.pdf)

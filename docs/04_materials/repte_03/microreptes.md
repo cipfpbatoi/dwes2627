@@ -1,4 +1,8 @@
-# Enunciats operatius dels microreptes de R3
+# Guia operativa dels microreptes de R3
+
+Esta guia desenvolupa els microreptes de [Repte 3](../../02_reptes/repte_03.md) amb tasques, evidències i errors habituals.
+
+No és un segon enunciat ni afegeix requisits nous. Si dubtes què has d'entregar, la porta d'entrada és la pàgina del repte i la guia d'avaluació de cada microrepte.
 
 ## MP1. Arrencada del nou projecte
 

@@ -1,6 +1,6 @@
-# Presentacions en PDF
+# Diapositives PDF
 
-En esta pàgina tens les presentacions del curs agrupades per tipus de recurs.
+En esta pàgina tens les diapositives del curs agrupades per tipus de recurs.
 
 ## Reptes
 

@@ -10,15 +10,19 @@ El que construïxes en un repte ha de servir per al següent.
 
 ## 🧭 Com llegir els reptes
 
-Per no duplicar informació, el curs separa tres documents:
+Per no duplicar informació, el curs separa estos documents:
 
 | Document | Per a què servix |
 |---|---|
 | Pàgina del repte | Entendre què toca construir i en quin ordre. |
 | [Guia de presentació](guia_presentacio.md) | Preparar l'entrega, la demo i la defensa breu. |
 | [Guies d'avaluació](../03_com_s_avalua/rubriques/index.md) | Consultar criteris, evidències i revisió detallada per microrepte. |
+| [Guies de suport](../04_materials/index.md) | Consultar fitxes, ajuda tècnica i checklists mentre treballes. |
+| [Diapositives PDF](../recursos/index.md) | Repassar presentacions de classe i teoria associada. |
 
 La idea no és només saber “què toca ara”, sinó entendre què aporta cada repte al mateix projecte de curs sense haver de llegir la mateixa informació en tres llocs.
+
+La regla pràctica és esta: si estàs decidint **què has d'entregar**, mira el repte i la guia d'avaluació. Si estàs buscant **ajuda per fer-ho**, mira les guies de suport o les diapositives.
 
 ## 🗺️ Seqüència general del curs
 
