@@ -1,48 +1,27 @@
 # Recursos ràpids
 
-## Si estàs començant
+Esta pàgina és només un accés directe. Si necessites explicació, usa [Com funciona el curs](../01_com_funciona_el_curs/index.md).
 
-- llig [Com funciona el curs](../01_com_funciona_el_curs/index.md)
-- revisa [Projecte base](../05_projecte_base/index.md)
-- entra després a [Reptes](../02_reptes/index.md)
-- consulta les [diapositives PDF](../recursos/index.md) quan necessites repassar teoria o presentacions de classe
+## Vull...
 
-## Si estàs en el tram comú
+| Necessite... | Enllaç |
+|---|---|
+| començar el curs | [Com funciona el curs](../01_com_funciona_el_curs/index.md) |
+| saber quin repte toca | [Reptes](../02_reptes/index.md) |
+| obrir l'enunciat de R1 | [Repte 1](../02_reptes/repte_01.md) |
+| obrir l'enunciat de R2 | [Repte 2](../02_reptes/repte_02.md) |
+| obrir l'enunciat de R3 | [Repte 3](../02_reptes/repte_03.md) |
+| preparar una entrega | [Guia de presentació](../02_reptes/guia_presentacio.md) |
+| revisar criteris d'avaluació | [Guies d'avaluació](../03_com_s_avalua/rubriques/index.md) |
+| trobar ajuda de R1 | [Guies de suport del Repte 1](../04_materials/repte_01/index.md) |
+| trobar ajuda de R3 | [Guies de suport del Repte 3](../04_materials/repte_03/index.md) |
+| buscar diapositives | [Diapositives PDF](../recursos/index.md) |
+| consultar tallers | [Tallers](../recursos/tallers.md) |
+| revisar ús d'IA | [Guia d'ús verificable de la IA](../04_materials/guia_us_verificable_ia.md) |
 
-Per a `R1` i `R2`, el que has de tindre clar és:
+## Enllaços de R3
 
-- el projecte continua sent el mateix
-- `R2` es resol sobre una base comuna en `PHP`
-- el focus està en dades, lògica, estat, autenticació i funcionalitat protegida
-
-Per a `R1`, consulta també:
-
-- [Enunciat del Repte 1](../02_reptes/repte_01.md)
-- [Guies de suport del Repte 1](../04_materials/repte_01/index.md)
-- [Fitxa breu d'exploració tècnica inicial](../04_materials/fitxa_exploracio_tecnica_inicial.md)
-
-## Si ja has entrat al framework
-
-Des de `R3`, els itineraris base són:
-
-- `Laravel`
-- `Symfony`
-- `NestJS`
-
-Per al treball concret de `R3`, consulta també:
-
-- [Enunciat del Repte 3](../02_reptes/repte_03.md)
 - [Fitxa general del Repte 3](../04_materials/repte_03/fitxa_general.md)
 - [Guia operativa dels microreptes de R3](../04_materials/repte_03/microreptes.md)
 - [Suport tècnic de R3](../04_materials/repte_03/suport_tecnic.md)
 - [Checklists de R3](../04_materials/repte_03/checklists.md)
-
-`FastAPI` queda només com a opció avançada o excepcional.
-
-## Si tens dubtes d’avaluació
-
-- [Com s’avalua](../03_com_s_avalua/index.md)
-
-## Si busques una presentació
-
-- [Diapositives PDF](../recursos/index.md)
