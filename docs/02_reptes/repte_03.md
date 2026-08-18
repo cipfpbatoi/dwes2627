@@ -86,10 +86,8 @@ Guies d'avaluació:
 - [R3M6. Guia d'avaluació](../03_com_s_avalua/rubriques/r3m6.md)
 - [R3M7. Guia d'avaluació](../03_com_s_avalua/rubriques/r3m7.md)
 
-Per treballar el repte tens guies de suport de `R3`. Estes guies desenvolupen el que apareix ací, però no són un segon llistat de requisits:
+Suport ràpid:
 
-- [Fitxa general del Repte 3](../04_materials/repte_03/fitxa_general.md)
-- [Guia operativa dels microreptes](../04_materials/repte_03/microreptes.md)
 - [Suport tècnic mínim](../04_materials/repte_03/suport_tecnic.md)
 - [Checklists d'alumnat](../04_materials/repte_03/checklists.md)
 

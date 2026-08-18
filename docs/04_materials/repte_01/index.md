@@ -1,27 +1,9 @@
-# Guies de suport del Repte 1
+# Suport ràpid del Repte 1
 
-Esta pàgina arreplega les explicacions de suport per al kickoff funcional del backend i els conceptes bàsics que has de poder explicar durant el repte.
-
-L'enunciat principal està en [Repte 1](../../02_reptes/repte_01.md). Usa estes guies mentre treballes els microreptes, no com a substitut de les evidències pròpies del projecte.
-
-## Organització per sessions
-
-| Sessió | Autocorrecció | Diapositives i guies de suport |
-|---|---|---|
-| `R1-S01` | `r1-s01-model-client-servidor-stack` | Arquitectura web, client-servidor, backend i llenguatges/frameworks. |
-| `R1-S02` | `r1-s02-entorn-executable` | Entorn executable, punt d’entrada funcional, documentació, evidències i checkpoint. |
-
-## Visió general del repte
-
-- [R1. Kickoff backend i base executable](../../recursos/Repte1/R1-Kickoff-backend-i-base-executable.pdf): mapa general del treball que s’ha de fer, què es revisarà i quines proves has d’aportar.
-
-## R1M1. Client, servidor i stack
-
-- [R1M1. Model client-servidor i elecció guiada de stack](../../recursos/Repte1/R1M1-Model-clientservidor-i-eleccio-guiada-de-stack.pdf)
-
-Consulta també la [fitxa breu d’exploració tècnica inicial](../fitxa_exploracio_tecnica_inicial.md).
-
-## R1M2. Entorn executable, punt d'entrada i tancament
-
-- [R1M2. Entorn executable, punt d'entrada i tancament de R1](../../recursos/Repte1/R1M2-Entorn-executable-punt-dentrada-i-tancament-de-R1.pdf)
-- [R1. Kickoff backend i base executable](../../recursos/Repte1/R1-Kickoff-backend-i-base-executable.pdf)
+| Necessite... | Recurs |
+|---|---|
+| veure l'enunciat | [Repte 1](../../02_reptes/repte_01.md) |
+| completar la decisió inicial de stack | [Fitxa breu d'exploració tècnica inicial](../fitxa_exploracio_tecnica_inicial.md) |
+| repassar el kickoff | [R1. Kickoff backend i base executable](../../recursos/Repte1/R1-Kickoff-backend-i-base-executable.pdf) |
+| repassar client, servidor i stack | [R1M1. Model client-servidor i elecció guiada de stack](../../recursos/Repte1/R1M1-Model-clientservidor-i-eleccio-guiada-de-stack.pdf) |
+| repassar entorn executable | [R1M2. Entorn executable, punt d'entrada i tancament de R1](../../recursos/Repte1/R1M2-Entorn-executable-punt-dentrada-i-tancament-de-R1.pdf) |

@@ -14,8 +14,6 @@ nav:
       - "1️⃣ Suport Repte 1": "04_materials/repte_01/index.md"
       - "3️⃣ Suport Repte 3":
           - "👀 Visió general": "04_materials/repte_03/index.md"
-          - "🧾 Fitxa general": "04_materials/repte_03/fitxa_general.md"
-          - "🧭 Guia operativa": "04_materials/repte_03/microreptes.md"
           - "🛠️ Suport tècnic": "04_materials/repte_03/suport_tecnic.md"
           - "✅ Checklists": "04_materials/repte_03/checklists.md"
   - "🧱 Projectes base": "05_projecte_base/index.md"

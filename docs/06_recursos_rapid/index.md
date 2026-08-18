@@ -13,15 +13,13 @@ Esta pàgina és només un accés directe. Si necessites explicació, usa [Com f
 | obrir l'enunciat de R3 | [Repte 3](../02_reptes/repte_03.md) |
 | preparar una entrega | [Guia de presentació](../02_reptes/guia_presentacio.md) |
 | revisar criteris d'avaluació | [Guies d'avaluació](../03_com_s_avalua/rubriques/index.md) |
-| trobar ajuda de R1 | [Guies de suport del Repte 1](../04_materials/repte_01/index.md) |
-| trobar ajuda de R3 | [Guies de suport del Repte 3](../04_materials/repte_03/index.md) |
+| trobar ajuda de R1 | [Suport ràpid del Repte 1](../04_materials/repte_01/index.md) |
+| trobar ajuda de R3 | [Suport ràpid del Repte 3](../04_materials/repte_03/index.md) |
 | buscar diapositives | [Diapositives PDF](../recursos/index.md) |
 | consultar tallers | [Tallers](../recursos/tallers.md) |
 | revisar ús d'IA | [Guia d'ús verificable de la IA](../04_materials/guia_us_verificable_ia.md) |
 
 ## Enllaços de R3
 
-- [Fitxa general del Repte 3](../04_materials/repte_03/fitxa_general.md)
-- [Guia operativa dels microreptes de R3](../04_materials/repte_03/microreptes.md)
 - [Suport tècnic de R3](../04_materials/repte_03/suport_tecnic.md)
 - [Checklists de R3](../04_materials/repte_03/checklists.md)
