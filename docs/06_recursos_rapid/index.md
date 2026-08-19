@@ -14,6 +14,7 @@ Esta pàgina és només un accés directe. Si necessites explicació, usa [Com f
 | obrir l'enunciat de R4 | [Repte 4](../02_reptes/repte_04.md) |
 | obrir l'enunciat de R5 | [Repte 5](../02_reptes/repte_05.md) |
 | preparar una entrega | [Guia de presentació](../02_reptes/guia_presentacio.md) |
+| pujar treball per autocorrecció | [Com pujar el treball per a l'autocorrecció](../04_materials/guia_pujar_treball_autocorreccio.md) |
 | revisar criteris d'avaluació | [Guies d'avaluació](../03_com_s_avalua/rubriques/index.md) |
 | trobar ajuda de R1 | [Suport ràpid del Repte 1](../04_materials/repte_01/index.md) |
 | trobar ajuda de R2 | [Suport ràpid del Repte 2](../04_materials/repte_02/index.md) |

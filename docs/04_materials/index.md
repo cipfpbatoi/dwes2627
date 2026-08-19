@@ -9,6 +9,7 @@ Si necessites saber què has d'entregar, entra en [Reptes](../02_reptes/index.md
 | Necessite... | Recurs |
 |---|---|
 | omplir la fitxa inicial de stack | [Fitxa breu d'exploració tècnica inicial](fitxa_exploracio_tecnica_inicial.md) |
+| pujar el treball perquè es puga autocorregir | [Com pujar el treball per a l'autocorrecció](guia_pujar_treball_autocorreccio.md) |
 | justificar o revisar l'ús d'IA | [Guia d'ús verificable de la IA](guia_us_verificable_ia.md) |
 | trobar les diapositives de R1 | [Suport ràpid del Repte 1](repte_01/index.md) |
 | trobar les diapositives de R2 | [Suport ràpid del Repte 2](repte_02/index.md) |

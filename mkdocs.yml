@@ -21,6 +21,7 @@ nav:
   - "📚 Guies de suport":
       - "👀 Visió general": "04_materials/index.md"
       - "📝 Fitxa d'exploració tècnica inicial": "04_materials/fitxa_exploracio_tecnica_inicial.md"
+      - "⬆️ Pujar treball per autocorrecció": "04_materials/guia_pujar_treball_autocorreccio.md"
       - "1️⃣ Suport Repte 1":
           - "👀 Visió general": "04_materials/repte_01/index.md"
           - "✅ Checklist": "04_materials/repte_01/checklist.md"
