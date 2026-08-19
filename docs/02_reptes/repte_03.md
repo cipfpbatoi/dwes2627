@@ -64,15 +64,15 @@ Per evitar confusions, estes equivalències compten igual si estan ben aplicades
 
 `R3` es treballa en 7 microreptes:
 
-| Microrepte | Producte principal | Autocorrecció |
-|---|---|---|
-| `R3M1` Arrencada del nou projecte | Docker, framework, `.env`, ruta mínima, comparació de stack i esquema abans/després | `r3-s01-arrencada-nou-projecte` |
-| `R3M2` Persistència mínima | BBDD, migracions o equivalent, dades inicials reproduïbles i conjunt de dades real usat en un flux | `r3-s02-persistencia-minima-migrations-seeders` |
-| `R3M3` Primer cas d'ús complet | flux heretat de `R2` funcionant en framework, preferentment com a cas server-rendered | `r3-s03-primer-cas-us-complet` |
-| `R3M4` Segon cas d'ús o ampliació | segon flux real, migrat o ampliació funcional útil amb canvi dinàmic de resposta | `r3-s04-segon-cas-us-ampliacio-funcional` |
-| `R3M5` Autenticació i autorització | acció significativa protegida amb middleware, guard, voter, policy o equivalent | `r3-s05-autenticacio-autoritzacio-middleware` |
-| `R3M6` Qualitat i estabilització | validació, errors, proves i revisió d'estructura | `r3-s06-qualitat-estabilitzacio` |
-| `R3M7` Tancament tècnic | `ENTREGA.md`, demo, decisions i mapa del que queda pendent | `r3-s07-tancament-tecnic` |
+| Microrepte | Producte principal | Autocorrecció | Taller relacionat |
+|---|---|---|---|
+| `R3M1` Arrencada del nou projecte | Docker, framework, `.env`, ruta mínima, comparació de stack i esquema abans/després | `r3-s01-arrencada-nou-projecte` | [MT07. Migrar un cas d'ús a framework](../recursos/Tallers/MT07-Migrar-un-cas-dus-a-framework.pdf) (`60 min`) |
+| `R3M2` Persistència mínima | BBDD, migracions o equivalent, dades inicials reproduïbles i conjunt de dades real usat en un flux | `r3-s02-persistencia-minima-migrations-seeders` | [MT08. Migracions, seeders i dades de prova](../recursos/Tallers/MT08-Migracions-seeders-i-dades-de-prova.pdf) (`60 min`) |
+| `R3M3` Primer cas d'ús complet | flux heretat de `R2` funcionant en framework, preferentment com a cas server-rendered | `r3-s03-primer-cas-us-complet` | [MT09. On pose la lògica](../recursos/Tallers/MT09-On-pose-la-logica.pdf) (`60 min`) |
+| `R3M4` Segon cas d'ús o ampliació | segon flux real, migrat o ampliació funcional útil amb canvi dinàmic de resposta | `r3-s04-segon-cas-us-ampliacio-funcional` | [MT09. On pose la lògica](../recursos/Tallers/MT09-On-pose-la-logica.pdf) (`60 min`) |
+| `R3M5` Autenticació i autorització | acció significativa protegida amb middleware, guard, voter, policy o equivalent | `r3-s05-autenticacio-autoritzacio-middleware` | [MT16. Portabilitat entre frameworks](../recursos/Tallers/MT16-Portabilitat-entre-frameworks.pdf) (`opcional`) |
+| `R3M6` Qualitat i estabilització | validació, errors, proves i revisió d'estructura | `r3-s06-qualitat-estabilitzacio` | [MT16. Portabilitat entre frameworks](../recursos/Tallers/MT16-Portabilitat-entre-frameworks.pdf) (`opcional`) |
+| `R3M7` Tancament tècnic | `ENTREGA.md`, demo, decisions i mapa del que queda pendent | `r3-s07-tancament-tecnic` | Sense taller específic |
 
 Entre `R3M2` i `R3M3` hi haurà un taller formatiu, `R3S2B`, per comprovar equivalències entre frameworks i auditar el projecte abans del primer flux complet. No és un microrepte amb nota separada, però la taula d'equivalències i la microtasca resultant poden ajudar-te a millorar `R3M3`, `R3M5`, `R3M6` i la documentació final.
 
