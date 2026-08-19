@@ -14,7 +14,7 @@ Usa estes llistes abans de dir que tens `R3` tancat.
 - [ ] Hi ha una ruta mínima o `healthcheck`.
 - [ ] Hi ha una primera resposta generada pel framework.
 - [ ] He decidit quin cas d'ús serà server-rendered amb vista o plantilla.
-- [ ] El README diu com arrancar el projecte.
+- [ ] `ENTREGA.md` diu com arrancar el projecte.
 - [ ] Sé explicar quins serveis hi ha en Docker.
 
 ## 2. BBDD preparada
@@ -36,7 +36,7 @@ Usa estes llistes abans de dir que tens `R3` tancat.
 - [ ] Puc executar la càrrega de dades amb una instrucció clara.
 - [ ] Les dades carregades es poden consultar des de l'aplicació.
 - [ ] Les dades carregades s'usen en un flux funcional, no només en una prova aïllada.
-- [ ] El README explica com carregar-les.
+- [ ] `ENTREGA.md` explica com carregar-les.
 - [ ] No he carregat dades només a mà.
 
 ## 4. Cas d'ús 1 complet
@@ -81,7 +81,7 @@ Usa estes llistes abans de dir que tens `R3` tancat.
 - [ ] He provat el cas autoritzat.
 - [ ] He provat el cas denegat.
 - [ ] L'error de permisos és controlat.
-- [ ] El README explica com provar-ho.
+- [ ] `ENTREGA.md` explica com provar-ho.
 
 ## 7. Proves mínimes
 
@@ -96,7 +96,7 @@ Usa estes llistes abans de dir que tens `R3` tancat.
 - [ ] He deixat rastre de les proves: test, checklist, captures, logs o instruccions.
 - [ ] Les proves es poden repetir.
 
-## 8. README usable
+## 8. Entrega usable
 
 - [ ] Explica requisits previs.
 - [ ] Explica com arrancar Docker.
@@ -110,7 +110,7 @@ Usa estes llistes abans de dir que tens `R3` tancat.
 - [ ] Explica com provar-los.
 - [ ] Inclou decisions tècniques breus.
 - [ ] Inclou què queda pendent de migrar.
-- [ ] El README coincideix amb el projecte real.
+- [ ] `ENTREGA.md` coincideix amb el projecte real.
 
 ## Checklist final de tancament
 

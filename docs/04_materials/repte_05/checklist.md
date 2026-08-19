@@ -32,7 +32,7 @@ Usa esta llista abans de dir que tens `R5` tancat.
 ## Documentació i defensa
 
 - [ ] Hi ha mapa o explicació curta del flux: font, connexió, mapping, ús i errors.
-- [ ] El README o documentació indica com configurar i provar la integració.
+- [ ] `ENTREGA.md` o la documentació indica com configurar i provar la integració.
 - [ ] Puc explicar per on circula la informació i quines decisions he pres.
 - [ ] He deixat rastre de l'ús d'IA si l'he utilitzada de manera rellevant.
 

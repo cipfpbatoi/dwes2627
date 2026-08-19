@@ -16,7 +16,7 @@ Per tant, abans de donar un microrepte per entregat, has de comprovar tres coses
 
 | Tipus de contingut | On posar-ho |
 |---|---|
-| Explicació mínima del microrepte, com arrancar i com provar | `README.md` |
+| Fitxa d'entrega del microrepte, com arrancar i com provar | `ENTREGA.md` |
 | Decisions tècniques, notes breus o registre d'ús d'IA | `docs/` |
 | Captures textuals, logs, resultats de proves o comprovacions | `evidence/` |
 | Tests automàtics o fitxers relacionats amb proves | `tests/` |
@@ -46,10 +46,11 @@ Una estructura recomanada és:
 
 ```text
 README.md
+ENTREGA.md
 docs/
   r2m3.md
   r2m4.md
-  ai-log.md
+  ai-log.md, si cal
 evidence/
   r2m3/
   r2m4/
@@ -57,7 +58,7 @@ tests/
 src/ o app/
 ```
 
-En el `README.md`, mantín sempre un apartat de microrepte actual:
+El `README.md` és la guia base del repositori i no cal modificar-lo en cada microrepte. En `ENTREGA.md`, mantín sempre un apartat de microrepte actual:
 
 ```md
 ## Microrepte actual
@@ -101,8 +102,8 @@ La regla pràctica és esta: `main` és la branca corregible, però cada microre
 Comprova que el repositori conté:
 
 - [ ] el codi o documentació demanada pel microrepte;
-- [ ] un `README.md` actualitzat;
-- [ ] un apartat de microrepte actual en el `README.md`;
+- [ ] `ENTREGA.md` actualitzat;
+- [ ] un apartat de microrepte actual en `ENTREGA.md`;
 - [ ] instruccions per arrancar o provar el treball;
 - [ ] evidències dins de `docs/`, `evidence/` o `tests/`, amb nom del microrepte quan siga possible;
 - [ ] cap secret real, contrasenya personal, token o clau privada;
@@ -164,7 +165,7 @@ Ahí trobaràs el resum llegible de la correcció: nota provisional, feedback i 
 ## Checklist final
 
 - [ ] He comprovat `git status`.
-- [ ] He actualitzat el `README.md`.
+- [ ] He actualitzat `ENTREGA.md`.
 - [ ] He indicat quin és el microrepte actual.
 - [ ] He deixat evidències dins del repositori.
 - [ ] Les evidències tenen nom o carpeta del microrepte.

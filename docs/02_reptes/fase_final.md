@@ -3,7 +3,7 @@
 ## Què has de tindre tancat
 
 - un producte que resol un cas d’ús real del domini
-- `README` clar amb com arrancar-lo i com provar-lo
+- `ENTREGA.md` clar amb com arrancar-lo i com provar-lo
 - evidències mínimes de validació, proves i errors
 - documentació final d’API o del flux híbrid, si toca
 - rastre d’ús de la IA si ha intervingut en parts rellevants

@@ -116,11 +116,11 @@ Per cada microrepte has de deixar una traça mínima:
 |---|---|---|
 | Inici | estructura, primer intent o decisió inicial | `R2M3 inici regla de domini` |
 | Progrés | canvi funcional parcial | `R2M3 afegeix funcio calcularPrioritat` |
-| Prova o tancament | comprovació, correcció, README o checklist | `R2M3 prova casos valid i invalid` |
+| Prova o tancament | comprovació, correcció, `ENTREGA.md` o checklist | `R2M3 prova casos valid i invalid` |
 
 Com a criteri general, cada microrepte hauria de tindre **almenys 3 commits significatius**. No compten com a commits significatius els canvis buits, massius o amb missatges genèrics com `canvis`, `final`, `coses` o `update`.
 
-En el `README`, issue del microrepte o registre equivalent, has d'indicar el temps aproximat:
+En `ENTREGA.md`, issue del microrepte o registre equivalent, has d'indicar el temps aproximat:
 
 ```md
 ## R2M3

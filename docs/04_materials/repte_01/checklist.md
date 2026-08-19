@@ -6,8 +6,8 @@ Usa esta llista abans de dir que tens `R1` tancat.
 
 - [ ] El repositori està creat i té una estructura mínima coherent.
 - [ ] L'entorn arranca amb Docker o mecanisme equivalent.
-- [ ] El README explica requisits, arrancada, parada, ports i URL.
-- [ ] Una altra persona pot seguir el README sense passos ocults.
+- [ ] `ENTREGA.md` explica requisits, arrancada, parada, ports i URL.
+- [ ] Una altra persona pot seguir `ENTREGA.md` sense passos ocults.
 
 ## Punt d'entrada funcional
 
