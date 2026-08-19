@@ -3,6 +3,7 @@
 | Necessite... | Recurs |
 |---|---|
 | veure l'enunciat | [Repte 2](../../02_reptes/repte_02.md) |
+| registrar proves i tancament de R2 | [Checklist de proves del Repte 2](../../03_com_s_avalua/checklists_de_prova.md) |
 | repassar el mapa general de R2 | [R2. Processament, estat i autenticació](../../recursos/Repte2/R2-Processament-estat-i-autenticacio.pdf) |
 | repassar entrada i validació | [R2M1. Entrada variada i validació bàsica](../../recursos/Repte2/R2M1-Entrada-variada-i-validacio-basica.pdf) |
 | repassar reintent i guardat funcional | [R2M2. Processament, reintent i guardat funcional](../../recursos/Repte2/R2M2-Processament-reintent-i-guardat-funcional.pdf) |

@@ -3,6 +3,7 @@
 | Necessite... | Recurs |
 |---|---|
 | veure l'enunciat | [Repte 5](../../02_reptes/repte_05.md) |
+| comprovar el tancament de R5 | [Checklist d'alumnat](checklist.md) |
 | repassar el mapa general de R5 | [R5. Integració híbrida i defensa final](../../recursos/Repte5/R5-Integracio-hibrida-i-defensa-final.pdf) |
 | repassar selecció de font externa i disseny | [R5M1. Selecció de font externa i disseny de la integració](../../recursos/Repte5/R5M1-Seleccio-de-font-externa-i-disseny-de-la-integracio.pdf) |
 | repassar connexió amb la font externa | [R5M2. Connexió amb la font externa](../../recursos/Repte5/R5M2-Connexio-amb-la-font-externa.pdf) |

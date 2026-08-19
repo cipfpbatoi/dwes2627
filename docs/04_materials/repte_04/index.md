@@ -3,6 +3,7 @@
 | Necessite... | Recurs |
 |---|---|
 | veure l'enunciat | [Repte 4](../../02_reptes/repte_04.md) |
+| comprovar el tancament de R4 | [Checklist d'alumnat](checklist.md) |
 | repassar el mapa general de R4 | [R4. API pròpia, consum i documentació](../../recursos/Repte4/R4-API-propia-consum-i-documentacio.pdf) |
 | repassar disseny del contracte del servei | [R4M1. Disseny del contracte del servei](../../recursos/Repte4/R4M1-Disseny-del-contracte-del-servei.pdf) |
 | repassar primer endpoint funcional | [R4M2. Primer endpoint funcional](../../recursos/Repte4/R4M2-Primer-endpoint-funcional.pdf) |

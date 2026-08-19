@@ -20,14 +20,20 @@ nav:
   - "📚 Guies de suport":
       - "👀 Visió general": "04_materials/index.md"
       - "📝 Fitxa d'exploració tècnica inicial": "04_materials/fitxa_exploracio_tecnica_inicial.md"
-      - "1️⃣ Suport Repte 1": "04_materials/repte_01/index.md"
+      - "1️⃣ Suport Repte 1":
+          - "👀 Visió general": "04_materials/repte_01/index.md"
+          - "✅ Checklist": "04_materials/repte_01/checklist.md"
       - "2️⃣ Suport Repte 2": "04_materials/repte_02/index.md"
       - "3️⃣ Suport Repte 3":
           - "👀 Visió general": "04_materials/repte_03/index.md"
           - "🛠️ Suport tècnic": "04_materials/repte_03/suport_tecnic.md"
           - "✅ Checklists": "04_materials/repte_03/checklists.md"
-      - "4️⃣ Suport Repte 4": "04_materials/repte_04/index.md"
-      - "5️⃣ Suport Repte 5": "04_materials/repte_05/index.md"
+      - "4️⃣ Suport Repte 4":
+          - "👀 Visió general": "04_materials/repte_04/index.md"
+          - "✅ Checklist": "04_materials/repte_04/checklist.md"
+      - "5️⃣ Suport Repte 5":
+          - "👀 Visió general": "04_materials/repte_05/index.md"
+          - "✅ Checklist": "04_materials/repte_05/checklist.md"
   - "🧱 Projectes base": "05_projecte_base/index.md"
   - "📏 Com s'avalua":
       - "👀 Visió general": "03_com_s_avalua/index.md"

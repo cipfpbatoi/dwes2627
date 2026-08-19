@@ -23,6 +23,7 @@ Esta pàgina és només un accés directe. Si necessites explicació, usa [Com f
 | buscar diapositives | [Diapositives PDF](../recursos/index.md) |
 | consultar tallers | [Tallers](../recursos/tallers.md) |
 | revisar ús d'IA | [Guia d'ús verificable de la IA](../04_materials/guia_us_verificable_ia.md) |
+| passar checklist de tancament | [R1](../04_materials/repte_01/checklist.md), [R2](../03_com_s_avalua/checklists_de_prova.md), [R3](../04_materials/repte_03/checklists.md), [R4](../04_materials/repte_04/checklist.md), [R5](../04_materials/repte_05/checklist.md) |
 
 ## Enllaços de R3
 
