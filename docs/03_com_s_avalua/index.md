@@ -142,7 +142,7 @@ El temps declarat no dona punts per si sol. Servix per detectar si el procés é
 
 ## 🧪 Recursos de verificació
 
-Si estàs tancant el `Repte 2`, tens una [checklist de proves](checklists_de_prova.md) que et pot ajudar a registrar casos de prova, errors visibles, estat, autenticació i funcionalitat protegida.
+Si estàs tancant el `Repte 2`, tens una [checklist de proves](../04_materials/repte_02/checklist.md) que et pot ajudar a registrar casos de prova, errors visibles, estat, autenticació i funcionalitat protegida.
 
 Esta checklist és una ajuda útil per provar el repte i deixar una evidència de verificació, però no substituïx la demo ni la defensa tècnica.
 

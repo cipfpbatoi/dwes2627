@@ -1,4 +1,4 @@
-# 🧪 Checklist de proves del Repte 2
+# Checklist d'alumnat per a R2
 
 Esta plantilla et servix per deixar rastre de les proves del `Repte 2`.
 

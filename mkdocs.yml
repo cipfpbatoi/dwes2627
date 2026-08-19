@@ -23,11 +23,13 @@ nav:
       - "1️⃣ Suport Repte 1":
           - "👀 Visió general": "04_materials/repte_01/index.md"
           - "✅ Checklist": "04_materials/repte_01/checklist.md"
-      - "2️⃣ Suport Repte 2": "04_materials/repte_02/index.md"
+      - "2️⃣ Suport Repte 2":
+          - "👀 Visió general": "04_materials/repte_02/index.md"
+          - "✅ Checklist": "04_materials/repte_02/checklist.md"
       - "3️⃣ Suport Repte 3":
           - "👀 Visió general": "04_materials/repte_03/index.md"
           - "🛠️ Suport tècnic": "04_materials/repte_03/suport_tecnic.md"
-          - "✅ Checklists": "04_materials/repte_03/checklists.md"
+          - "✅ Checklist": "04_materials/repte_03/checklist.md"
       - "4️⃣ Suport Repte 4":
           - "👀 Visió general": "04_materials/repte_04/index.md"
           - "✅ Checklist": "04_materials/repte_04/checklist.md"
@@ -61,7 +63,6 @@ nav:
           - "R5M4. Funcionalitat híbrida": "03_com_s_avalua/rubriques/r5m4.md"
           - "R5M5. Prova i defensa": "03_com_s_avalua/rubriques/r5m5.md"
       - "📝 Report breu d'ús de la IA": "03_com_s_avalua/report_breu_ús_ia.md"
-      - "🧪 Checklist de proves": "03_com_s_avalua/checklists_de_prova.md"
   - "⚡ Recursos ràpids": "06_recursos_rapid/index.md"
 theme:
   language: ca

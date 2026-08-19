@@ -15,5 +15,5 @@ Si necessites saber què has d'entregar, entra en [Reptes](../02_reptes/index.md
 | trobar suport i diapositives de R3 | [Suport ràpid del Repte 3](repte_03/index.md) |
 | trobar les diapositives de R4 | [Suport ràpid del Repte 4](repte_04/index.md) |
 | trobar les diapositives de R5 | [Suport ràpid del Repte 5](repte_05/index.md) |
-| comprovar el tancament d'un repte | [R1](repte_01/checklist.md), [R2](../03_com_s_avalua/checklists_de_prova.md), [R3](repte_03/checklists.md), [R4](repte_04/checklist.md), [R5](repte_05/checklist.md) |
+| comprovar el tancament d'un repte | [R1](repte_01/checklist.md), [R2](repte_02/checklist.md), [R3](repte_03/checklist.md), [R4](repte_04/checklist.md), [R5](repte_05/checklist.md) |
 | buscar PDFs de classe | [Diapositives PDF](../recursos/index.md) |

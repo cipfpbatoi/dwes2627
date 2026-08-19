@@ -4,7 +4,7 @@
 |---|---|
 | veure l'enunciat | [Repte 3](../../02_reptes/repte_03.md) |
 | ubicar rutes, controladors, models, BBDD, migracions o proves | [Suport tècnic mínim](suport_tecnic.md) |
-| comprovar el tancament de R3 | [Checklists d'alumnat](checklists.md) |
+| comprovar el tancament de R3 | [Checklist d'alumnat](checklist.md) |
 | repassar el mapa general de R3 | [R3. Framework, arquitectura i persistència real](../../recursos/Repte3/R3-Framework-arquitectura-i-persistencia-real.pdf) |
 | repassar arrencada del nou projecte | [R3M1. Arrencada del nou projecte](../../recursos/Repte3/R3M1-Arrencada-del-nou-projecte.pdf) |
 | repassar persistència mínima | [R3M2. Persistència mínima](../../recursos/Repte3/R3M2-Persistencia-minima.pdf) |
