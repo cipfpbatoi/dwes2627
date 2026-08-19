@@ -36,14 +36,75 @@ Pots treballar en una branca pròpia, per exemple `r2m3`, `r3m5` o `feature/auth
 
 No uses el nom de la branca per indicar quin microrepte vols corregir. El microrepte actiu el configura el professorat des del sistema d'autocorrecció.
 
+## Com evitar que `main` siga un caos
+
+La branca `main` és la referència ordinària perquè l'autocorrecció i el professorat no hagen de buscar en branques diferents. Però això no vol dir que tot haja de quedar barrejat.
+
+Cada microrepte ha de deixar el seu treball localitzable.
+
+Una estructura recomanada és:
+
+```text
+README.md
+docs/
+  r2m3.md
+  r2m4.md
+  ai-log.md
+evidence/
+  r2m3/
+  r2m4/
+tests/
+src/ o app/
+```
+
+En el `README.md`, mantín sempre un apartat de microrepte actual:
+
+```md
+## Microrepte actual
+
+Microrepte: R2M3
+
+Què he fet:
+
+Com provar-ho:
+
+Evidències:
+- evidence/r2m3/
+- docs/r2m3.md
+```
+
+Si treballes en branques pròpies, usa-les només per organitzar-te:
+
+```bash
+git switch -c r2m3
+```
+
+Abans de la correcció, integra el treball en `main`:
+
+```bash
+git switch main
+git merge r2m3
+git push origin main
+```
+
+Si el professorat ho demana, també pots marcar una entrega amb una etiqueta:
+
+```bash
+git tag r2m3-entrega
+git push origin r2m3-entrega
+```
+
+La regla pràctica és esta: `main` és la branca corregible, però cada microrepte ha de tindre nom, carpeta o document propi perquè es puga trobar.
+
 ## Abans de fer el commit
 
 Comprova que el repositori conté:
 
 - [ ] el codi o documentació demanada pel microrepte;
 - [ ] un `README.md` actualitzat;
+- [ ] un apartat de microrepte actual en el `README.md`;
 - [ ] instruccions per arrancar o provar el treball;
-- [ ] evidències dins de `docs/`, `evidence/` o `tests/`;
+- [ ] evidències dins de `docs/`, `evidence/` o `tests/`, amb nom del microrepte quan siga possible;
 - [ ] cap secret real, contrasenya personal, token o clau privada;
 - [ ] cap fitxer temporal innecessari.
 
@@ -104,7 +165,9 @@ Ahí trobaràs el resum llegible de la correcció: nota provisional, feedback i 
 
 - [ ] He comprovat `git status`.
 - [ ] He actualitzat el `README.md`.
+- [ ] He indicat quin és el microrepte actual.
 - [ ] He deixat evidències dins del repositori.
+- [ ] Les evidències tenen nom o carpeta del microrepte.
 - [ ] He fet commit amb un missatge comprensible.
 - [ ] He fet `push` a `main`.
 - [ ] He comprovat en GitHub que els fitxers estan pujats.
