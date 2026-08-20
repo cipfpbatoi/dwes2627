@@ -10,7 +10,7 @@ Este primer repte servix per iniciar el backend en condicions professionals bàs
 |---|---|
 | Base tècnica | Repositori funcional, estructura mínima coherent i entorn executable amb Docker o equivalent. |
 | Backend inicial | Primer punt d’entrada servit pel backend: ruta, vista, endpoint, landing mínima o healthcheck. |
-| Documentació | `ENTREGA.md` executable amb arrancada, parada, ports, URL i comprovació del resultat. |
+| Documentació | `README.md` executable amb arrancada, parada, ports, URL i comprovació del resultat. |
 | Decisió tècnica | Fitxa inicial, justificació breu del stack i dubtes tècnics detectats. |
 | Traçabilitat | Issue mare, microtasques, commits o registre equivalent del treball fet. |
 | Verificació | Evidència que el projecte arranca i que el punt d’entrada respon. |
@@ -90,7 +90,7 @@ Has de muntar i tancar una base inicial amb:
 - Base de dades i phpMyAdmin quan el model docent ho demane.
 - Estructura mínima del projecte.
 - Un primer punt d'entrada funcional: ruta, vista, endpoint, landing mínima o healthcheck servit pel backend.
-- `ENTREGA.md` amb instruccions d'arrancada, parada i comprovació.
+- `README.md` amb instruccions d'arrancada, parada i comprovació.
 - Documentació del repte dins del repositori.
 
 En este microrepte encara **no es demana la instal·lació completa del framework**.
@@ -108,7 +108,7 @@ La IA et pot ajudar, per exemple, a:
 - Explorar opcions tècniques.
 - Preparar un primer esquelet.
 - Proposar fitxers de Docker.
-- Revisar `ENTREGA.md` i les instruccions de reproducció.
+- Revisar `README.md` i les instruccions de reproducció.
 - Detectar errors de configuració.
 
 El que no pots delegar és:
@@ -127,7 +127,7 @@ Convindria evitar errors com estos:
 - Esquelet buit sense producte real.
 - Comparativa superficial.
 - Docker present però no usable.
-- `ENTREGA.md` que no permet arrancar el projecte.
+- `README.md` que no permet arrancar el projecte.
 - Punt d’entrada només decoratiu.
 - Codi que no es pot explicar.
 
@@ -165,7 +165,7 @@ Per optar a la franja `9→10` en este repte, la millora principal és dissenyar
 - Una pàgina `Sobre nosaltres` o `Sobre el projecte`, també servida pel backend.
 - Navegació mínima entre les dos pàgines.
 - Contingut adaptat al producte concret, no text genèric ni plantilla sense personalitzar.
-- Evidència que les pàgines es poden executar seguint `ENTREGA.md` o les instruccions documentades.
+- Evidència que les pàgines es poden executar seguint `README.md` o les instruccions documentades.
 
 Esta ampliació ha de mostrar que el projecte ja té una porta d'entrada comprensible per a una persona usuària o revisora. Un `healthcheck` pot ser útil com a comprovació tècnica del nucli, però **no compta com a ampliació 9→10** si és l'única millora presentada.
 

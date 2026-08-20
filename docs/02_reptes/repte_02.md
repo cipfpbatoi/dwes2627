@@ -552,7 +552,7 @@ Per no perdre el fil del repte:
 - Si hi ha imatge o fitxer com a ampliació, comença per un únic tipus acceptat i una regla de grandària clara.
 - No canvies de framework per intentar desbloquejar este repte.
 - No compliques la persistència si el flux principal encara no està tancat.
-- Assegura’t que `ENTREGA.md` o la documentació equivalent expliquen com reproduir el cas bo, el cas denegat i la reutilització de la dada correcta.
+- Assegura’t que `README.md` o la documentació equivalent expliquen com reproduir el cas bo, el cas denegat i la reutilització de la dada correcta.
 
 ## Presentació i entrega
 

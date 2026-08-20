@@ -94,7 +94,7 @@ Al llarg del curs s’espera que sigues capaç de:
 
 - Treballar de manera regular sobre el mateix repositori.
 - Deixar una part funcional i provable del producte en cada repte.
-- Mantindre al dia `ENTREGA.md`, proves, decisions i documentació mínima.
+- Mantindre al dia `README.md`, proves, decisions i documentació mínima.
 - Explicar què has fet, per què ho has fet i com ho has comprovat.
 - Arribar als checkpoints amb una base revisable i no improvisada.
 - Defendre individualment el teu resultat.

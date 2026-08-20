@@ -8,7 +8,7 @@ La pàgina del repte explica **què has de construir**. Les guies d'avaluació e
 
 | Revisió | Fet |
 |---|---|
-| El projecte arranca seguint `ENTREGA.md` o les instruccions documentades. | ☐ |
+| El projecte arranca seguint `README.md` o les instruccions documentades. | ☐ |
 | La funcionalitat principal no és només decorativa. | ☐ |
 | Hi ha una prova o evidència del funcionament real. | ☐ |
 | Hi ha commits, issue o registre del treball fet. | ☐ |
@@ -19,7 +19,7 @@ La pàgina del repte explica **què has de construir**. Les guies d'avaluació e
 ## Demo recomanada
 
 1. Obrir el repositori.
-2. Mostrar `ENTREGA.md` o instruccions d'arrencada.
+2. Mostrar `README.md` o instruccions d'arrencada.
 3. Arrancar el projecte o mostrar la prova reproduïble.
 4. Executar el cas principal del repte.
 5. Mostrar un error, cas denegat o fallada controlada quan corresponga.
@@ -35,7 +35,7 @@ La pàgina del repte explica **què has de construir**. Les guies d'avaluació e
 | Decisió inicial | Fitxa breu de `R1M1`, justificació del stack i dubtes tècnics. |
 | Entorn executable | Docker Compose, `Dockerfile` o equivalent funcional. |
 | Punt d'entrada | Ruta, vista, endpoint, landing mínima o healthcheck servit pel backend. |
-| Documentació | `ENTREGA.md` amb requisits, arrencada, parada, ports, URL i resultat esperat. |
+| Documentació | `README.md` amb requisits, arrencada, parada, ports, URL i resultat esperat. |
 | Verificació | Captura, log, URL o prova mínima del servei en marxa. |
 | Defensa | Què has fet, per què i com prepara `R2`. |
 

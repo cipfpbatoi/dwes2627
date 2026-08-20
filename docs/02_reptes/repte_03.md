@@ -20,7 +20,7 @@ La idea central és:
 | Criteri tècnic | Comparació curta del framework triat i esquema abans/després de responsabilitats respecte a `R2`. |
 | Fluxos | `2` casos d'ús end-to-end, almenys `1` migrat de `R2` i almenys `1` server-rendered amb `HTML` generat en servidor. |
 | Accés i qualitat | Autenticació, acció protegida, autorització amb cas autoritzat i denegat, validació, errors i proves mínimes. |
-| Documentació | `ENTREGA.md` curt d'arrencada, ús i mapa del que queda pendent. |
+| Documentació | `README.md` curt d'arrencada, ús i mapa del que queda pendent. |
 
 ## Què no es demana
 
@@ -72,7 +72,7 @@ Per evitar confusions, estes equivalències compten igual si estan ben aplicades
 | `R3M4` Segon cas d'ús o ampliació | segon flux real, migrat o ampliació funcional útil amb canvi dinàmic de resposta | `r3-s04-segon-cas-us-ampliacio-funcional` | [MT09. On pose la lògica](../recursos/Tallers/MT09-On-pose-la-logica.pdf) (`60 min`) |
 | `R3M5` Autenticació i autorització | acció significativa protegida amb middleware, guard, voter, policy o equivalent | `r3-s05-autenticacio-autoritzacio-middleware` | [MT16. Portabilitat entre frameworks](../recursos/Tallers/MT16-Portabilitat-entre-frameworks.pdf) (`opcional`) |
 | `R3M6` Qualitat i estabilització | validació, errors, proves i revisió d'estructura | `r3-s06-qualitat-estabilitzacio` | [MT16. Portabilitat entre frameworks](../recursos/Tallers/MT16-Portabilitat-entre-frameworks.pdf) (`opcional`) |
-| `R3M7` Tancament tècnic | `ENTREGA.md`, demo, decisions i mapa del que queda pendent | `r3-s07-tancament-tecnic` | Sense taller específic |
+| `R3M7` Tancament tècnic | `README.md`, demo, decisions i mapa del que queda pendent | `r3-s07-tancament-tecnic` | Sense taller específic |
 
 Entre `R3M2` i `R3M3` hi haurà un taller formatiu, `R3S2B`, per comprovar equivalències entre frameworks i auditar el projecte abans del primer flux complet. No és un microrepte amb nota separada, però la taula d'equivalències i la microtasca resultant poden ajudar-te a millorar `R3M3`, `R3M5`, `R3M6` i la documentació final.
 

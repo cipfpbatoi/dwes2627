@@ -128,7 +128,7 @@ Si alimenta una vista, has de poder assenyalar clarament:
 
 La connexió ha d'estar configurada amb variables d'entorn.
 
-`ENTREGA.md` ha d'explicar:
+`README.md` ha d'explicar:
 
 - nom del servei de BBDD en Docker
 - usuari
@@ -197,7 +197,7 @@ La configuració concreta depén de l'stack, però normalment necessites:
 - variables d'entorn
 - instruccions d'arrencada
 
-`ENTREGA.md` ha de dir com fer:
+`README.md` ha de dir com fer:
 
 ```bash
 docker compose up -d

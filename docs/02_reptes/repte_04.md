@@ -93,7 +93,7 @@ Pots proposar una ampliació pròpia si continua centrada en qualitat d'API i es
 
 **Evidències mínimes**
 - commit o branca identificable
-- `ENTREGA.md` curt o nota tècnica de canvis
+- `README.md` curt o nota tècnica de canvis
 - prova funcional amb client, script, Postman o equivalent
 - rastre de l'ús assistit per IA, si n'hi ha hagut
 
