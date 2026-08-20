@@ -35,14 +35,14 @@ Guies d'avaluació:
 
 Guies de suport: [Repte 1](../04_materials/repte_01/index.md).
 
-Taller d'arrancada del curs: [MT19. IA responsable aplicada al repte](../recursos/Tallers/MT19-IA-responsable-aplicada-al-repte.pdf) (`60 min`, `R1S0`). Este taller no és un microrepte amb nota pròpia: servix per fixar com usar, registrar i verificar l'ajuda de la IA abans de començar el treball tècnic.
+Taller d'arrancada del curs: [MT19. IA responsable aplicada al repte](../recursos/Tallers/MT19-IA-responsable-aplicada-al-repte.pdf). Este taller no és un microrepte amb nota pròpia: servix per fixar com usar, registrar i verificar l'ajuda de la IA abans de començar el treball tècnic.
 
 ## Tallers relacionats amb els microreptes
 
 | Microrepte | Taller relacionat | Quan encaixa |
 |---|---|---|
-| `R1M1` | [MT01. Projecte no CRUD](../recursos/Tallers/MT01-Projecte-no-CRUD.pdf) (`60 min`) | Abans de tancar la fitxa inicial i la decisió de stack. |
-| `R1M2` | [MT02. README executable i commit defensable](../recursos/Tallers/MT02-README-executable-i-commit-defensable.pdf) (`45 min`) | Abans de donar per bona l'arrancada, la documentació i el primer commit defensable. |
+| `R1M1` | [MT01. Projecte no CRUD](../recursos/Tallers/MT01-Projecte-no-CRUD.pdf) | Abans de tancar la fitxa inicial i la decisió de stack. |
+| `R1M2` | [MT02. README executable i commit defensable](../recursos/Tallers/MT02-README-executable-i-commit-defensable.pdf) | Abans de donar per bona l'arrancada, la documentació i el primer commit defensable. |
 
 ### R1M1. Model d'execució client/servidor i elecció guiada de stack
 

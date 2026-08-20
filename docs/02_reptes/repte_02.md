@@ -90,17 +90,17 @@ Diapositives de suport:
 
 ## Tallers relacionats amb els microreptes
 
-Els tallers formen part del temps de la sessió indicada en la programació d'aula. No creen una nota separada: et donen una ferramenta concreta per avançar o revisar el microrepte.
+Els tallers no creen una nota separada: et donen una ferramenta concreta per avançar o revisar el microrepte.
 
 | Microrepte | Taller relacionat | Quan encaixa |
 |---|---|---|
-| `R2M1` | [MT03. Validació de servidor amb casos roïns](../recursos/Tallers/MT03-Validacio-de-servidor-amb-casos-roins.pdf) (`60 min`) | En començar el flux d'entrada i validació. |
-| `R2M2` | [MT03. Validació de servidor amb casos roïns](../recursos/Tallers/MT03-Validacio-de-servidor-amb-casos-roins.pdf) (`60 min`) | Abans de donar per bo el reintent i el guardat funcional. |
+| `R2M1` | [MT03. Validació de servidor amb casos roïns](../recursos/Tallers/MT03-Validacio-de-servidor-amb-casos-roins.pdf) | En començar el flux d'entrada i validació. |
+| `R2M2` | [MT03. Validació de servidor amb casos roïns](../recursos/Tallers/MT03-Validacio-de-servidor-amb-casos-roins.pdf) | Abans de donar per bo el reintent i el guardat funcional. |
 | `R2M3` | Sense taller específic | Treball de lògica pròpia dins del flux del projecte. |
-| `R2M4` | [MT04. Sessió, cookies i estat](../recursos/Tallers/MT04-Sessio-cookies-i-estat.pdf) (`45 min`) | Abans de decidir què guardes en sessió, cookie o servidor. |
-| `R2M5` | [MT05. Auth mínima defensable](../recursos/Tallers/MT05-Auth-minima-defensable.pdf) (`60 min`) | Abans de protegir una operació real. |
-| `R2M6` | [MT05. Auth mínima defensable](../recursos/Tallers/MT05-Auth-minima-defensable.pdf) (`60 min`) | Per mantindre coherent l'autenticació quan exposes la mini API. |
-| `R2M7` | [MT06. Debugging i prova curta](../recursos/Tallers/MT06-Debugging-i-prova-curta.pdf) (`45 min`) | En el checkpoint de proves i depuració. |
+| `R2M4` | [MT04. Sessió, cookies i estat](../recursos/Tallers/MT04-Sessio-cookies-i-estat.pdf) | Abans de decidir què guardes en sessió, cookie o servidor. |
+| `R2M5` | [MT05. Auth mínima defensable](../recursos/Tallers/MT05-Auth-minima-defensable.pdf) | Abans de protegir una operació real. |
+| `R2M6` | [MT05. Auth mínima defensable](../recursos/Tallers/MT05-Auth-minima-defensable.pdf) | Per mantindre coherent l'autenticació quan exposes la mini API. |
+| `R2M7` | [MT06. Debugging i prova curta](../recursos/Tallers/MT06-Debugging-i-prova-curta.pdf) | En el checkpoint de proves i depuració. |
 | `R2M8` | Sense taller específic | Primera peça testable amb POO i Composer. |
 | `R2M9` | Sense taller específic | Persistència mínima amb BBDD abans de R3. |
 

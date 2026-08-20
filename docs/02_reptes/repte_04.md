@@ -25,15 +25,15 @@ El treball continua sobre el mateix projecte i sobre el mateix encàrrec funcion
 
 ## Microreptes del repte
 
-Els tallers formen part del temps de la sessió indicada en la programació d'aula. No creen una nota separada: et donen una ferramenta concreta per avançar o revisar el microrepte.
+Els tallers no creen una nota separada: et donen una ferramenta concreta per avançar o revisar el microrepte.
 
 | Microrepte | Focus | Taller relacionat | Pes |
 |---|---|---|---:|
-| `R4M1` | Disseny del contracte del servei: recurs, endpoints, request/response i errors. | [MT10. Dissenyar endpoint abans de programar](../recursos/Tallers/MT10-Dissenyar-endpoint-abans-de-programar.pdf) (`60 min`) | `15%` |
+| `R4M1` | Disseny del contracte del servei: recurs, endpoints, request/response i errors. | [MT10. Dissenyar endpoint abans de programar](../recursos/Tallers/MT10-Dissenyar-endpoint-abans-de-programar.pdf) | `15%` |
 | `R4M2` | Primer endpoint funcional amb resposta estructurada i dades reals. | Sense taller específic | `20%` |
-| `R4M3` | Protecció de l'API amb cas autoritzat i denegat. | [MT17. Tokens funcionals del backend](../recursos/Tallers/MT17-Tokens-funcionals-del-backend.pdf) (`opcional`) | `20%` |
-| `R4M4` | Consum real del servei amb eina, script, client o col·lecció. | [MT17. Tokens funcionals del backend](../recursos/Tallers/MT17-Tokens-funcionals-del-backend.pdf) (`opcional`) | `20%` |
-| `R4M5` | Documentació, proves, incidències i tancament cap a `R5`. | [MT11. Provar i documentar una API](../recursos/Tallers/MT11-Documentar-i-comprovar-una-API.pdf) (`60 min`) | `25%` |
+| `R4M3` | Protecció de l'API amb cas autoritzat i denegat. | [MT17. Tokens funcionals del backend](../recursos/Tallers/MT17-Tokens-funcionals-del-backend.pdf) | `20%` |
+| `R4M4` | Consum real del servei amb eina, script, client o col·lecció. | [MT17. Tokens funcionals del backend](../recursos/Tallers/MT17-Tokens-funcionals-del-backend.pdf) | `20%` |
+| `R4M5` | Documentació, proves, incidències i tancament cap a `R5`. | [MT11. Provar i documentar una API](../recursos/Tallers/MT11-Documentar-i-comprovar-una-API.pdf) | `25%` |
 
 ## Seqüència recomanada
 
