@@ -4,14 +4,14 @@
 
 Crear una presentacio inicial del curs per explicar a l'alumnat com funciona el modul abans d'entrar en `R1M1`: treball per reptes, producte evolutiu, evidencies, avaluacio, autoria, us verificable de la IA, primer mapa del producte i checkpoint inicial.
 
-Esta presentacio ha de refondre i actualitzar els quatre PDF antics de `gamma-presentacions/presentacio/`:
+La versio generada actual és `gamma-presentacions/presentacio/Benvinguda-al-curs.pdf`. Esta presentacio refon els quatre PDF antics:
 
 - `Com-funciona-el-curs.pdf`;
 - `Que-es-valorara-al-llarg-del-curs.pdf`;
 - `Com-treballarem-parelles-trios-i-stacks.pdf`;
 - `Tres-possibles-projectes-del-curs.pdf`.
 
-No s'han de publicar tal qual: poden contindre criteris antics, referencies a una organitzacio previa o exemples de projecte que cal adaptar al model actual.
+Els quatre PDF antics no s'han de recuperar ni publicar tal qual: podien contindre criteris antics, referencies a una organitzacio previa o exemples de projecte que calia adaptar al model actual.
 
 ## Audiencia
 

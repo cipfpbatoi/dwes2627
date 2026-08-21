@@ -13,16 +13,22 @@ Els PDF no es dupliquen en este directori. Es referencien per decidir:
 
 ## Presentacio inicial del curs
 
-PDF antics localitzats en `gamma-presentacions/presentacio/`:
+PDF actual localitzat en `gamma-presentacions/presentacio/`:
 
 | Fitxer | Ús probable | Estat |
 |---|---|---|
-| `Com-funciona-el-curs.pdf` | Base antiga sobre organitzacio general del curs | Font a refondre; no publicar directament |
-| `Que-es-valorara-al-llarg-del-curs.pdf` | Base antiga sobre criteris generals d'avaluacio | Font a refondre; ha d'alinear-se amb rubriques, README, proves i defensa actuals |
-| `Com-treballarem-parelles-trios-i-stacks.pdf` | Base antiga sobre cooperacio, autoria i itineraris tecnologics | Font a refondre; revisar el model actual de parelles de contrast, trios puntuals i stacks de `R3` |
-| `Tres-possibles-projectes-del-curs.pdf` | Base antiga sobre projectes base | Font a refondre; revisar motivacio, viabilitat i variants abans de publicar |
+| `Benvinguda-al-curs.pdf` | Presentacio inicial del curs | Versio refosa dels materials antics. Revisar abans de publicar en `docs/recursos/` si es vol fer visible a l'alumnat. |
 
-Criteri actual: estos quatre PDF no han de convertir-se en quatre accessos separats per a l'alumnat. Han d'alimentar una presentacio inicial unica, actualitzada en `gamma-presentacions/reptes/curs.md`, que explique el funcionament del curs sense duplicar la documentacio principal.
+PDF antics substituits per la versio refosa:
+
+| Fitxer | Ús probable | Estat |
+|---|---|---|
+| `Com-funciona-el-curs.pdf` | Base antiga sobre organitzacio general del curs | Substituit per `Benvinguda-al-curs.pdf` |
+| `Que-es-valorara-al-llarg-del-curs.pdf` | Base antiga sobre criteris generals d'avaluacio | Substituit per `Benvinguda-al-curs.pdf` |
+| `Com-treballarem-parelles-trios-i-stacks.pdf` | Base antiga sobre cooperacio, autoria i itineraris tecnologics | Substituit per `Benvinguda-al-curs.pdf` |
+| `Tres-possibles-projectes-del-curs.pdf` | Base antiga sobre projectes base | Substituit per `Benvinguda-al-curs.pdf` |
+
+Criteri actual: estos quatre PDF no han de tornar com a quatre accessos separats per a l'alumnat. La referencia de treball és una presentacio inicial unica, alineada amb `gamma-presentacions/reptes/curs.md`, que explique el funcionament del curs sense duplicar la documentacio principal.
 
 ## Repte 1
 
@@ -32,7 +38,7 @@ Directori publicat:
 docs/recursos/Repte1/
 ```
 
-Abans del Repte 1 falta publicar una presentació general del curs en PDF. Ja hi ha brief intern per generar-la:
+Abans del Repte 1 hi ha una presentació general del curs generada en `gamma-presentacions/presentacio/Benvinguda-al-curs.pdf`. El brief intern de referència és:
 
 | Fitxer | Ús probable | Observacions |
 |---|---|---|
