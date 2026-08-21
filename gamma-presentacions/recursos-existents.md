@@ -11,6 +11,19 @@ Els PDF no es dupliquen en este directori. Es referencien per decidir:
 - quines cal separar en presentació de repte, microrepte o teoria;
 - quines cal actualitzar quan canvien els reptes, microreptes o criteris.
 
+## Presentacio inicial del curs
+
+PDF antics localitzats en `gamma-presentacions/presentacio/`:
+
+| Fitxer | Ús probable | Estat |
+|---|---|---|
+| `Com-funciona-el-curs.pdf` | Base antiga sobre organitzacio general del curs | Font a refondre; no publicar directament |
+| `Que-es-valorara-al-llarg-del-curs.pdf` | Base antiga sobre criteris generals d'avaluacio | Font a refondre; ha d'alinear-se amb rubriques, README, proves i defensa actuals |
+| `Com-treballarem-parelles-trios-i-stacks.pdf` | Base antiga sobre cooperacio, autoria i itineraris tecnologics | Font a refondre; revisar el model actual de parelles de contrast, trios puntuals i stacks de `R3` |
+| `Tres-possibles-projectes-del-curs.pdf` | Base antiga sobre projectes base | Font a refondre; revisar motivacio, viabilitat i variants abans de publicar |
+
+Criteri actual: estos quatre PDF no han de convertir-se en quatre accessos separats per a l'alumnat. Han d'alimentar una presentacio inicial unica, actualitzada en `gamma-presentacions/reptes/curs.md`, que explique el funcionament del curs sense duplicar la documentacio principal.
+
 ## Repte 1
 
 Directori publicat:

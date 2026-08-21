@@ -55,6 +55,16 @@ Si un projecte no permet arribar de manera creïble a estos punts, no encaixa b�
 
 Els projectes base del curs no formen una llista infinita. Es treballa amb un conjunt curt i usable de contextos que encaixen bé amb els reptes.
 
+La recomanació inicial és esta:
+
+| Opció | Valor per al curs | Motivació per a l'alumnat | Risc |
+|---|---|---|---|
+| Gestor d'incidències | Molt equilibrat: estats, rols, seguiment, API i integració encaixen de manera natural. | Proper si es vincula a aula, centre, equips, projectes o serveis reals. | Pot quedar massa administratiu si no es concreta un context atractiu. |
+| Sistema de reserves | Molt clar per treballar validació, conflictes, estat i tokens. | Fàcil d'entendre i prou visual: espais, activitats, cites, material o esdeveniments. | Cal vigilar que no es convertisca només en un calendari superficial. |
+| Gestor d'inventari | Fort per a rols, traçabilitat i operacions internes. | Pot interessar si es vincula a material tecnològic, préstecs o recursos del centre. | És el més fred si es planteja com a magatzem genèric. |
+
+Si cal prioritzar una opció comuna per al grup, **incidències** és la més completa i estable. Si es busca més motivació inicial, **reserves d'activitats, espais o material** pot entrar millor. **Inventari** funciona bé quan el context és proper i no només una llista d'objectes.
+
 ### 1. 📦 Gestor d’inventari amb rols i token d’operació
 
 És un producte pensat per gestionar recursos, moviments i control d’operacions internes.
@@ -96,6 +106,19 @@ Pot servir per treballar:
 - Fluxos de treball de creació, seguiment, resolució i possible reobertura.
 
 És una bona opció si vols un projecte amb més pes en l’estat del procés, l’assignació i el seguiment.
+
+### Variants controlades que també poden encaixar
+
+Es poden acceptar algunes variants si mantenen la mateixa exigència tècnica i no trenquen la comparabilitat del curs:
+
+| Variant | Per què pot motivar | Condició perquè encaixe |
+|---|---|---|
+| Gestor d'activitats o esdeveniments | Connecta amb tallers, clubs, jornades, competicions o activitats del centre. | Ha de tindre inscripcions, capacitat, estat, rols i confirmació o cancel·lació. |
+| Biblioteca o préstec de recursos digitals/físics | És proper a alumnat i centre, i permet control de disponibilitat. | Ha de gestionar préstecs, devolucions, restriccions, historial i API consultable. |
+| Sistema de cites o torns | És fàcil d'entendre i dona molt de joc amb disponibilitat i estat. | Ha de tindre validació de franges, confirmació, cancel·lació i usuari responsable. |
+| Seguiment de tasques d'un equip | Pot motivar si es relaciona amb projectes reals de classe. | Ha d'anar més enllà d'un `todo`: estats, responsables, permisos, historial i evidències. |
+
+Estes variants no són una invitació a fer qualsevol tema. Són formes diferents de concretar els mateixos patrons: dades, regles, estat, autoria, permisos, API, integració i defensa.
 
 ## 🤝 Què tenen en comú estos projectes
 
