@@ -19,6 +19,12 @@ Directori publicat:
 docs/recursos/Repte1/
 ```
 
+Abans del Repte 1 falta publicar una presentació general del curs en PDF. Ja hi ha brief intern per generar-la:
+
+| Fitxer | Ús probable | Observacions |
+|---|---|---|
+| `gamma-presentacions/reptes/curs.md` | Presentació inicial del curs | Ha d'explicar model per reptes, avaluacions, evidències, IA, primer mapa del producte i checkpoint inicial abans de `R1M1`. |
+
 PDF localitzats:
 
 | Fitxer | Ús probable | Observacions |
