@@ -2,6 +2,10 @@
 
 En esta pàgina tens les diapositives del curs agrupades per tipus de recurs.
 
+## Presentació inicial
+
+- [Benvinguda al curs](Presentacions/Benvinguda-al-curs.pdf)
+
 ## Reptes
 
 ### Repte 1

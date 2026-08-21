@@ -106,7 +106,7 @@ La presentació ha d'usar el mateix nom, codi, abast i evidències que la docume
 ## Estructura recomanada de fitxers
 
 ```text
-gamma-presentacions/
+presentacions/
   README.md
   recursos-existents.md
   reptes/
@@ -133,4 +133,4 @@ Si ja hi ha PDF generats amb Gamma en `docs/recursos/`, s'han de revisar abans d
 - inventari de materials que cal mantindre, actualitzar o substituir;
 - evidència de quins coneixements previs ja estan coberts.
 
-Els PDF publicats no s'han de copiar dins de `gamma-presentacions/`. Este directori només ha de contindre instruccions, prompts, guions i inventaris interns.
+La còpia visible per a l'alumnat ha d'estar en `docs/recursos/`. El directori `presentacions/` queda com a espai intern per a instruccions, prompts, guions, inventaris i, si cal, versions de treball generades amb Gamma.

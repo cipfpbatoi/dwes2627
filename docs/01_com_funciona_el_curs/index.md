@@ -8,6 +8,8 @@ No faràs pràctiques inconnexes ni un projecte diferent en cada tema. Treballar
 
 La idea clau és simple: el que construeixes en un repte ha de servir per al següent.
 
+Presentació d'inici: [Benvinguda al curs](../recursos/Presentacions/Benvinguda-al-curs.pdf).
+
 ## 🧭 Seqüència del curs
 
 La seqüència general és esta:

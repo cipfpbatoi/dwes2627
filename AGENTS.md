@@ -107,7 +107,7 @@ No s'han de mesclar en una mateixa pàgina instruccions de lliurament, rúbrica 
 
 Este repositori ha d'incloure un directori intern, fora de `docs/`, amb instruccions per a Gamma. Este directori no ha de ser visible en la web generada per MkDocs.
 
-El directori recomanat és `gamma-presentacions/`.
+El directori recomanat és `presentacions/`.
 
 Ha de contindre instruccions per construir:
 
@@ -168,6 +168,6 @@ Després d'editar:
 - executar `mkdocs build`;
 - revisar que els enllaços, títols i codis continuen sent coherents;
 - comprovar que les evidències demanades siguen autocorregibles o revisables.
-- si es modifica l'estructura de reptes o microreptes, revisar també les instruccions de `gamma-presentacions/`.
+- si es modifica l'estructura de reptes o microreptes, revisar també les instruccions de `presentacions/`.
 - al final de cada iteració, fer commit i push dels repositoris afectats;
 - fer staging selectiu dels fitxers de la iteració i no incloure fitxers aliens o temporals, com `.DS_Store`.
