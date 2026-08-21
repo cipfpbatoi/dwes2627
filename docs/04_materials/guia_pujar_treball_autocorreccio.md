@@ -12,6 +12,30 @@ Per tant, abans de donar un microrepte per entregat, has de comprovar tres coses
 2. Les evidències són fàcils de trobar.
 3. Tot està en la branca que es corregirà.
 
+## Primer pas del curs: GitHub Classroom
+
+En la primera sessió del curs, `R1S1`, el professorat et donarà l'enllaç de GitHub Classroom. No has de clonar el repositori base directament ni crear un repositori nou pel teu compte.
+
+El procés correcte és:
+
+1. Accepta l'enllaç de GitHub Classroom amb el teu usuari de GitHub.
+2. Espera que Classroom cree el teu repositori individual.
+3. Obri el teu repositori individual en GitHub.
+4. Copia la URL des del botó `Code`.
+5. Clona eixe repositori al teu ordinador.
+
+Exemple:
+
+```bash
+git clone URL_DEL_TEU_REPOSITORI
+cd NOM_DEL_TEU_REPOSITORI
+git status
+```
+
+Eixe és el repositori on treballaràs durant tot el curs. Cada repte i cada microrepte han de quedar dins d'eixe mateix repositori.
+
+En `R1S1`, abans d'acabar la sessió, has de deixar com a mínim un primer canvi en `README.md`, fer commit i fer `push` a GitHub. Això servix per comprovar que el repositori està ben creat, clonat i connectat amb l'autocorrecció.
+
 ## On ha d'estar el treball
 
 | Tipus de contingut | On posar-ho |

@@ -17,6 +17,14 @@ Este primer repte servix per iniciar el backend en condicions professionals bàs
 
 El mínim obligatori no exigix encara una funcionalitat de domini rica. El que sí exigix és una base real de treball, una primera resposta del backend i evidència que el sistema es pot revisar.
 
+## Repositori de treball del curs
+
+En la primera sessió, `R1S1`, acceptaràs l'enllaç de GitHub Classroom que done el professorat i clonaràs el teu repositori individual. No has de treballar sobre el repositori base ni crear-ne un altre.
+
+Eixe repositori individual serà el teu repositori de treball durant tot el curs. En ell aniran quedant els microreptes, les evidències, el `README.md`, les decisions tècniques i els commits.
+
+Tens el procés detallat en la guia [Com pujar el treball per a l'autocorrecció](../04_materials/guia_pujar_treball_autocorreccio.md).
+
 ## Microreptes del Repte 1
 
 Este repte té `2` microreptes, un per sessió. El primer et dona criteri per entendre el backend i triar una base tècnica inicial. El segon transforma eixa decisió en un repositori executable, amb un primer punt d'entrada funcional i documentació suficient per passar a `R2`.
@@ -55,6 +63,15 @@ Entendre què s’executa en client i què s’executa en servidor, i prendre un
 **Què has de fer**
 
 Has de completar una [fitxa breu d’exploració tècnica inicial](../04_materials/fitxa_exploracio_tecnica_inicial.md) i justificar quina base tècnica utilitzaràs per començar el projecte.
+
+També has de deixar preparat el repositori de treball del curs:
+
+- acceptar l'enllaç de GitHub Classroom que done el professorat;
+- clonar el teu repositori individual;
+- localitzar `README.md`, `ENTREGA.md`, `docs/` i `evidence/`;
+- actualitzar `README.md` amb el microrepte actual, el projecte base triat, el primer flux client/servidor i la decisió inicial de stack;
+- guardar la fitxa o evidència equivalent de `R1M1` dins de `docs/`;
+- fer un primer commit i `push` a GitHub abans d'acabar la sessió.
 
 Esta exploració es pot fer amb ajuda d’IA.
 

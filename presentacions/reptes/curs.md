@@ -50,58 +50,65 @@ El curs es basa en construir, provar, documentar i defensar un producte backend.
    - Trios nomes com a opcio puntual si el ritme i la complexitat ho justifiquen.
    - El repositori, les evidencies i la defensa son individuals.
    - Compartir decisions no substitueix explicar el propi treball.
-7. **Stacks i transicio `R2 -> R3`**
+7. **Repositori individual del curs**
+   - En `R1S1` el professorat dona l'enllac de GitHub Classroom.
+   - L'alumnat accepta l'encarrec, clona el repositori individual creat per Classroom i fa un primer `push`.
+   - No s'ha de clonar el repositori base directament ni crear un repositori nou.
+   - Eixe mateix repositori s'usa de `R1` a `R5`.
+   - `README.md` es modifica en cada microrepte; `ENTREGA.md` conserva les instruccions base del repositori.
+8. **Stacks i transicio `R2 -> R3`**
    - `R2` es treballa sobre una base comuna en `PHP`.
    - El contrast de frameworks entra a partir de `R3`.
    - Itineraris base: `Laravel`, `Symfony` o `NestJS`.
    - `FastAPI` no es itinerari base general; nomes opcio avancada o excepcional.
-8. **Que es deixa com a evidencia**
+9. **Que es deixa com a evidencia**
    - Repositori viu i tracable.
    - `README.md` actualitzat.
    - Proves o comprovacions reproduibles.
    - Commits recognoscibles.
    - `AI log` quan la IA ajuda en parts rellevants.
-9. **Com es valorara**
+10. **Com es valorara**
    - Funcionalitat real i provable.
    - Traçabilitat del proces.
    - README i documentacio operativa que coincidisquen amb el repositori.
    - Proves o verificacions reproduibles.
    - Defensa individual curta i concreta.
    - Us responsable de la IA quan aparega.
-10. **Paper de la IA**
+11. **Paper de la IA**
    - Pot ajudar a idear, depurar, revisar o proposar proves.
    - No pot substituir la validacio ni l'autoria.
    - L'alumnat ha de poder explicar que ha acceptat, que ha descartat i com ho ha comprovat.
-11. **Projectes base recomanats**
+12. **Projectes base recomanats**
    - Opcio mes equilibrada: gestor d'incidencies amb seguiment.
    - Opcio molt clara per a regles i estats: sistema de reserves.
    - Opcio mes professional pero menys propera: gestor d'inventari.
    - Variants possibles si el grup necessita mes motivacio: activitats/esdeveniments, biblioteca de recursos o torns/cites.
    - Totes les variants han de permetre usuaris, rols, persistencia, API, integracio i defensa.
-12. **Primer mapa del producte**
+13. **Primer mapa del producte**
    - No es un disseny final.
    - Ha de deixar una fitxa curta en el `README.md`.
    - Camps: producte, usuari principal, necessitat real, primera accio util, dades minimes i risc inicial.
-13. **Checkpoint inicial**
+14. **Checkpoint inicial**
     - No es revisa codi encara.
-    - Es comprova repositori, `README.md`, criteri d'evidencies i preparacio per a `R1S1`.
+    - Es comprova repositori Classroom acceptat i clonat, `README.md`, criteri d'evidencies i preparacio per a `R1M1`.
     - Cada alumne ha de poder explicar el producte i la primera accio real.
-14. **Errors habituals**
+15. **Errors habituals**
     - Dir "fare una web" sense producte concret.
     - Plantejar nomes un CRUD generic.
     - No saber on quedaran les evidencies.
+    - Clonar el repositori base en lloc del repositori individual de Classroom.
     - Confondre ajuda d'IA amb autoria.
     - Arribar a `R1S1` sense decisio inicial de producte.
-15. **Checklist final**
+16. **Checklist final**
     - Puc explicar el producte en una frase.
     - Se qui l'usara primer.
     - Tinc una primera accio real.
-    - Tinc repositori i `README.md` ubicats.
+    - Tinc repositori Classroom individual clonat i `README.md` ubicat.
     - Se com es valorara i com he de defensar el treball.
 
 ## Format recomanat
 
-- 12-15 diapositives.
+- 13-16 diapositives.
 - To clar, directe i d'inici de curs.
 - Usar exemples de producte: incidencies, reserves, inventari i alguna variant propera si ajuda a motivar.
 - Evitar teoria tecnica de backend; aixo entra en les presentacions de `R1`.
