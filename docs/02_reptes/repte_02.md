@@ -65,6 +65,17 @@ La base del repte queda en `27` hores, organitzades en `9` sessions de `3` hores
 
 La progressió també és important: en el microrepte 1 entra i es valida la informació; en el 2 es processen i es guarden les dades correctes; en el 3 s’apliquen regles reals del projecte amb funcions pròpies; en el 4 es conserva estat temporal del flux i s'estabilitzen includes; en el 5 es protegix una operació real; en el 6 s'exposa una mini API d'autenticació per a client; en el 7 es prova, es depura i es tanca un checkpoint tècnic; en el 8 s’introduïx una classe simple carregada amb Composer i verificada amb una primera prova unitària; i en el 9 es fa una persistència mínima amb BBDD.
 
+## Diferència entre R2S1 i R2S2
+
+Les dues primeres sessions treballen el mateix flux, però no demanen el mateix resultat.
+
+| Sessió | Què has de fer | Què no és encara el focus |
+|---|---|---|
+| `R2S1` / `R2M1` | Crear l'entrada de dades del projecte, enviar-la al servidor, recuperar les dades amb `$_POST` o equivalent, aplicar una validació bàsica de servidor i mostrar un error visible. | No cal conservar tots els valors després de l'error ni guardar funcionalment el cas correcte. |
+| `R2S2` / `R2M2` | Partir del formulari de `R2S1`, millorar el reintent perquè no es perden dades aprofitables, processar el cas correcte i guardar-lo funcionalment amb un mecanisme simple. | No és començar un formulari nou ni afegir login, sessió, cookies o BBDD obligatòria. |
+
+La frase curta és: en `R2S1` demostres que el servidor **rep i valida**; en `R2S2` demostres que el servidor **reconstrueix, processa i guarda funcionalment**.
+
 Guies d'avaluació:
 
 - [R2M1. Guia d'avaluació](../03_com_s_avalua/rubriques/r2m1.md)
@@ -125,6 +136,10 @@ Construir un punt d’entrada de dades usable i demostrar que el sistema rep la 
 
 No cal encara acumular errors en arrays, validar tots els controls alhora, conservar tots els valors del formulari, gestionar fitxers ni fer checkbox múltiples. Això es pot millorar més avant.
 
+**Límit de la sessió**
+
+En `R2M1`, si el formulari torna buit després d'un error no és encara un problema greu, sempre que l'error siga visible i el reenviament corregit funcione. La conservació de dades aprofitables i el guardat funcional del cas correcte són el centre de `R2M2`.
+
 ### Microrepte 2. Processament, reintent i guardat funcional
 
 **Objectiu**
@@ -134,6 +149,10 @@ Millorar el flux d’error del formulari i completar el cas correcte. Quan una d
 **Teoria relacionada**: [Reintent, conservació de dades i guardat funcional](../recursos/Teoria/Teoria-R2-Reintent-conservacio-de-dades-i-guardat-funcional.pdf).
 
 Este microrepte continua directament el `R2M1`. No has de començar de zero ni construir un formulari nou si el que tens ja envia dades i valida almenys una dada clau. Ara la pregunta és una altra: què fa el servidor amb la informació correcta quan ja pot confiar mínimament en ella?
+
+**Punt de partida obligatori**
+
+`R2M2` no substitueix `R2M1`: l'amplia. Has de conservar la mateixa acció del projecte o una evolució directa d'eixa acció, reutilitzar la validació inicial i demostrar què millora respecte de la sessió anterior.
 
 **Què s’espera**
 
