@@ -199,7 +199,7 @@ Esta ampliació ha de mostrar que el projecte ja té una porta d'entrada compren
 Si ja tens la landing i la pàgina `Sobre nosaltres`, pots reforçar l'ampliació amb alguna d'estes accions:
 
 - Deixar l'entorn encara més reproductible amb automatització bàsica d'arrencada o millor contenidorització.
-- Redactar un `ADR` curt o una nota tècnica més sòlida sobre l'arquitectura inicial i la decisió de stack.
+- Redactar una nota tècnica breu i clara sobre l'arquitectura inicial i la decisió de stack.
 - Documentar breument com la landing prepara el pas cap a formularis, dades o fluxos de `R2`.
 
 **Proposta pròpia**  

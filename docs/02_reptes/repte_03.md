@@ -133,7 +133,7 @@ Es pot presentar una ampliació pròpia si continua centrada en qualitat arquite
 
 **Evidències mínimes**
 - commit o branca identificable
-- nota tècnica breu o `ADR`
+- nota tècnica breu de decisió
 - demo funcional del flux millorat
 - rastre de l'ús assistit per IA, si n'hi ha hagut
 
