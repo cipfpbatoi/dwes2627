@@ -65,8 +65,8 @@ Per al Repte 1, els PDF existents suggereixen esta separació:
   - kickoff professional del backend;
   - criteris d'avaluació i evidències.
 - Presentacions de microrepte:
-  - `R1M1`: model client/servidor i elecció guiada de stack;
-  - `R1M2`: entorn executable, primer punt d'entrada, tancament, verificació i evidències de pas a `R2`.
+  - `R1M1`: model client/servidor i decisió tècnica inicial;
+  - `R1M2`: entorn executable, landing inicial servida pel backend, tancament, verificació i evidències de pas a `R2`.
 - Presentacions teòriques:
   - client-servidor;
   - què és el backend;

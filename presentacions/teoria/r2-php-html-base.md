@@ -6,7 +6,7 @@ Crear una presentació teòrica de transició per a la sessió `R2S0`: introduir
 
 ## Audiència
 
-Alumnat que acaba `R1` amb un backend executable i un primer punt d'entrada, però que encara necessita situar la sintaxi bàsica de `PHP` i el patró `servidor genera HTML`.
+Alumnat que acaba `R1` amb un backend executable i una landing inicial servida pel backend, però que encara necessita situar la sintaxi bàsica de `PHP` i el patró `servidor genera HTML`.
 
 ## Missatge clau
 

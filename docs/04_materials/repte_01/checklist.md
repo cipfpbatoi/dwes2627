@@ -11,15 +11,18 @@ Usa esta llista abans de dir que tens `R1` tancat.
 
 ## Punt d'entrada funcional
 
-- [ ] Hi ha una ruta, vista, endpoint, landing mínima o `healthcheck` servit pel backend.
-- [ ] La resposta es pot obrir o provar amb una URL documentada.
-- [ ] El punt d'entrada no és només un fitxer estàtic sense backend.
+- [ ] Hi ha una landing inicial del producte servida pel backend.
+- [ ] La landing té contingut propi del projecte i CSS senzill.
+- [ ] La resposta es pot obrir amb una URL documentada.
+- [ ] La landing no és només un fitxer estàtic obert fora del servidor.
+- [ ] Si hi ha `healthcheck`, queda com a comprovació tècnica i no com a única entrega.
 - [ ] Hi ha evidència que el servei respon: captura, log, URL o prova equivalent.
 
 ## Decisió tècnica
 
 - [ ] He completat la fitxa d'exploració tècnica inicial.
-- [ ] He justificat breument el stack triat.
+- [ ] He justificat breument la decisió tècnica inicial.
+- [ ] He indicat què es confirma o s'ajusta en `R1M2` i què queda per a `R3`.
 - [ ] Sé explicar què s'executa en client i què s'executa en servidor.
 - [ ] He indicat algun dubte o límit tècnic real que caldrà resoldre més avant.
 
@@ -27,7 +30,7 @@ Usa esta llista abans de dir que tens `R1` tancat.
 
 - [ ] Hi ha commits o registre del treball fet.
 - [ ] La documentació del repte és localitzable dins del repositori.
-- [ ] Puc arrancar el projecte i ensenyar el punt d'entrada en una demo breu.
+- [ ] Puc arrancar el projecte i ensenyar la landing inicial en una demo breu.
 - [ ] Puc explicar les peces importants sense dependre de text generat per IA.
 
 Si alguna casella bàsica no està marcada, `R1` encara no està complet.

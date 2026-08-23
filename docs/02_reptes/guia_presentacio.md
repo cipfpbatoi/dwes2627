@@ -32,9 +32,9 @@ La pàgina del repte explica **què has de construir**. Les guies d'avaluació e
 | Bloc | Què has de poder mostrar |
 |---|---|
 | Repositori | Repositori actualitzat, usable i amb commits significatius. |
-| Decisió inicial | Fitxa breu de `R1M1`, justificació del stack i dubtes tècnics. |
+| Decisió inicial | Fitxa breu de `R1M1`, justificació de la base tècnica inicial i dubtes tècnics. |
 | Entorn executable | Docker Compose, `Dockerfile` o equivalent funcional. |
-| Punt d'entrada | Ruta, vista, endpoint, landing mínima o healthcheck servit pel backend. |
+| Punt d'entrada | Landing inicial del producte servida pel backend, amb URL documentada i CSS senzill. |
 | Documentació | `README.md` amb requisits, arrencada, parada, ports, URL i resultat esperat. |
 | Verificació | Captura, log, URL o prova mínima del servei en marxa. |
 | Defensa | Què has fet, per què i com prepara `R2`. |

@@ -10,7 +10,7 @@ Crear una presentació teòrica de transició per preparar la decisió de stack 
 - Diferència entre llenguatge, runtime, framework, servidor web i base de dades.
 - Què vol dir full stack sense convertir-ho en una llista de tecnologies.
 - Què ha de tindre un entorn mínim executable.
-- Com es comprova que l'entorn funciona amb una ruta mínima (`/health` o `/`).
+- Com es comprova que l'entorn funciona amb una ruta tècnica (`/health`) i amb una landing inicial servida pel backend.
 - Variables de versió i runtime clares perquè el projecte no depenga d'un entorn inesperat.
 - Quin paper pot tindre Docker en una base comuna.
 - Una tecnologia no és millor per nom, sinó perquè permet construir i defensar el producte.
@@ -33,7 +33,8 @@ Crear una presentació teòrica de transició per preparar la decisió de stack 
    - Què no resol.
    - Per què ajuda a reproduir.
 4. **Comprovar que funciona**
-   - Ruta `/` o `/health`.
+   - Ruta `/` amb landing inicial del producte.
+   - Ruta tècnica `/health`, si es vol, com a comprovació auxiliar.
    - Resposta del servidor.
    - Log o captura.
 5. **Errors habituals**
