@@ -50,6 +50,21 @@ No es considera suficient construir un formulari genèric desconnectat del domin
 
 La pregunta útil no és només “quin formulari faré?”, sinó “quina acció real del meu projecte vull validar, processar, conservar i protegir en servidor?”.
 
+## Abans de fer el formulari
+
+El formulari de `R2M1` no es tria al final ni es canvia en `R2M3`. Ha de nàixer de la landing page que ja tens: quin botó, crida a l'acció o recorregut inicial prometia el teu producte?
+
+Abans d'escriure codi, tria una acció concreta que puga créixer durant tot el repte:
+
+| Projecte base | Acció que pot obrir la landing | Formulari inicial de R2M1 | Dada útil per a decidir en R2M3 |
+|---|---|---|---|
+| Gestor d'incidències | Comunicar o registrar un problema | Alta d'incidència amb títol, tipus o prioritat i confirmació | tipus, prioritat, impacte o urgència |
+| Sistema de reserves | Sol·licitar una reserva | Reserva amb recurs, franja i acceptació de condicions | recurs, franja, quantitat o preferència |
+| Gestor d'inventari | Registrar un recurs o moviment | Alta o moviment amb nom, categoria, estat o quantitat i confirmació | categoria, tipus de moviment, estat o quantitat |
+| Projecte propi validat | Primera acció real que promet la landing | Formulari equivalent amb una dada oberta, una opció tancada i una confirmació | una opció o valor que permeta classificar, acceptar, rebutjar, prioritzar o assignar |
+
+No cal implementar encara la decisió de `R2M3`, però sí deixar preparada una dada que la faça possible. Un formulari de contacte genèric, una enquesta sense efecte o un formulari de “dades del client” només valdrien si són realment l'acció central del producte i poden alimentar una regla posterior.
+
 ## Exemples breus segons projecte base
 
 - **Gestor d'incidències**: alta d'una incidència amb títol, prioritat i confirmació. Si falta una dada clau, el sistema ho mostra, permet correcció i deixa la incidència preparada per al seguiment posterior.
@@ -124,10 +139,16 @@ Construir un punt d’entrada de dades usable i demostrar que el sistema rep la 
 
 **Teoria relacionada**: [Formularis, petició POST i validació de servidor](../recursos/Teoria/Teoria-R2-Formularis-peticio-POST-i-validacio-de-servidor.pdf).
 
+**Punt de partida**
+
+El formulari ha de correspondre a una acció que la landing page ja fa esperar: registrar una incidència, demanar una reserva, donar d'alta un recurs, registrar un moviment o una acció equivalent del teu projecte. En `R2M1` encara no cal decidir l'estat final, però sí recollir almenys una dada tancada o classificada que després puga servir per a aplicar una regla en `R2M3`.
+
 **Què s’espera**
 
 - Un formulari funcional o una entrada equivalent.
 - Camps mínims amb sentit dins del projecte base: text, llista o opció tancada i checkbox.
+- Una connexió clara entre el formulari i una acció visible o esperable de la landing page.
+- Almenys una dada que puga alimentar una decisió posterior del projecte.
 - Recuperació real de les dades en servidor amb `$_POST` o mecanisme equivalent.
 - Una validació bàsica al servidor amb una condició simple.
 - Un missatge d’error visible quan la dada triada no és acceptable.
@@ -152,7 +173,7 @@ Este microrepte continua directament el `R2M1`. No has de començar de zero ni c
 
 **Punt de partida obligatori**
 
-`R2M2` no substitueix `R2M1`: l'amplia. Has de conservar la mateixa acció del projecte o una evolució directa d'eixa acció, reutilitzar la validació inicial i demostrar què millora respecte de la sessió anterior.
+`R2M2` no substitueix `R2M1`: l'amplia. Has de conservar la mateixa acció del projecte o una evolució directa d'eixa acció, reutilitzar la validació inicial i demostrar què millora respecte de la sessió anterior. Si en `R2M1` vas deixar una opció, categoria, prioritat, franja, estat o dada semblant, ara convé conservar-la i processar-la bé perquè puga servir per a la regla de `R2M3`.
 
 **Què s’espera**
 
@@ -222,6 +243,8 @@ Els arrays, funcions i regles del projecte apareixen amb més sentit en `R2M3`. 
 Aplicar lògica bàsica de programació perquè el backend no es limite a rebre i guardar dades, sinó que aplique regles reals del projecte sobre la informació disponible.
 
 **Teoria relacionada**: [Decisions, arrays, funcions i regles de domini](../recursos/Teoria/Teoria-R2-Decisions-arrays-funcions-i-regles-de-domini.pdf).
+
+`R2M3` no és el moment d'inventar un formulari nou. La decisió ha d'eixir del flux preparat en `R2M1` i millorat en `R2M2`: una dada triada per l'usuari, una opció tancada, una categoria, una franja, una prioritat, una quantitat o una dada guardada funcionalment. Si el formulari anterior era massa genèric, primer cal ajustar-lo perquè represente una acció real del projecte i després aplicar la regla.
 
 Perquè este microrepte siga concret, hauràs de crear una **llibreria pròpia mínima** del projecte: un fitxer separat de funcions o regles, per exemple `src/regles.php`, `includes/regles.php`, `lib/funcions.php` o equivalent, carregat des del flux amb `require_once`, `include_once` o una alternativa equivalent del teu entorn.
 
