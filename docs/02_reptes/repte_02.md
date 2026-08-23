@@ -143,6 +143,13 @@ Construir un punt d’entrada de dades usable i demostrar que el sistema rep la 
 
 El formulari ha de correspondre a una acció que la landing page ja fa esperar: registrar una incidència, demanar una reserva, donar d'alta un recurs, registrar un moviment o una acció equivalent del teu projecte. En `R2M1` encara no cal decidir l'estat final, però sí recollir almenys una dada tancada o classificada que després puga servir per a aplicar una regla en `R2M3`.
 
+**Exemples de formulari inicial**
+
+- Si tens un gestor d'incidències, pots començar amb un formulari d'alta d'incidència amb títol, tipus o prioritat i acceptació de condicions. La prioritat, el tipus o la urgència podran servir després per decidir l'estat inicial o l'assignació.
+- Si tens un sistema de reserves, pots començar amb una sol·licitud de reserva amb recurs, franja i acceptació de condicions. El recurs o la franja podran servir després per decidir si la reserva és confirmable, pendent o rebutjada.
+- Si tens un gestor d'inventari, pots començar amb una alta de recurs o moviment amb nom, categoria, estat o quantitat i confirmació. La categoria, l'estat o el tipus de moviment podran servir després per classificar o validar el moviment.
+- Si tens un projecte propi validat, tria la primera acció real que promet la landing i assegura't que inclou una dada oberta, una opció tancada i una confirmació. L'opció tancada ha de poder alimentar una decisió posterior.
+
 **Què s’espera**
 
 - Un formulari funcional o una entrada equivalent.
@@ -204,7 +211,7 @@ Has de completar un recorregut curt però real:
 7. Processar i guardar funcionalment la informació correcta.
 8. Mostrar o recuperar la dada guardada en una pantalla, llista o resum simple.
 
-Exemples:
+Exemples de continuïtat:
 
 - Si tens un gestor d'incidències, pots enviar una incidència sense títol però conservar la prioritat triada; quan el títol ja és correcte, la incidència queda guardada en una llista provisional.
 - Si tens un sistema de reserves, pots enviar una reserva amb una franja no vàlida però conservar el recurs triat; quan la franja ja és correcta, la reserva queda guardada funcionalment.
