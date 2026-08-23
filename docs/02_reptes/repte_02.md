@@ -52,9 +52,10 @@ La pregunta útil no és només “quin formulari faré?”, sinó “quina acci
 
 ## Exemples breus segons projecte base
 
-- **Plataforma de productes**: alta o edició d’un producte amb nom, categoria i confirmació. Si falta la dada triada per validar, el sistema ho mostra, permet correcció i, quan la dada siga correcta, deixa el producte preparat per al processament posterior.
-- **Gestor de reserves o activitats**: creació d’una reserva o d’una activitat amb nom, franja i confirmació. El flux ha de validar almenys una dada clau, respondre amb un error clar si no és correcta i deixar la reserva preparada per continuar el recorregut.
-- **Plataforma de recursos o publicacions**: alta d’un recurs, notícia o publicació amb títol, tipus i confirmació. El servidor ha de validar una dada inicial i permetre que el recurs es puga processar més avant dins del projecte.
+- **Gestor d'incidències**: alta d'una incidència amb títol, prioritat i confirmació. Si falta una dada clau, el sistema ho mostra, permet correcció i deixa la incidència preparada per al seguiment posterior.
+- **Sistema de reserves**: sol·licitud de reserva amb recurs, franja i acceptació de condicions. El flux ha de validar almenys una dada clau, respondre amb un error clar si no és correcta i deixar la reserva preparada per continuar el recorregut.
+- **Gestor d'inventari**: alta o moviment d'un recurs amb nom, categoria, estat inicial i confirmació. El servidor ha de validar una dada inicial i permetre que el recurs o moviment es puga processar més avant dins del projecte.
+- **Projecte propi validat**: una acció equivalent que cree, valide, conserve i protegisca una dada real del domini, sense convertir-se en un formulari genèric.
 
 ## Microreptes del Repte 2
 
@@ -165,9 +166,10 @@ Has de completar un recorregut curt però real:
 
 Exemples:
 
-- Si tens una tenda, pots enviar un producte sense nom però conservar la categoria triada; quan el nom ja és correcte, el producte queda guardat en una llista provisional.
-- Si tens reserves, pots enviar una reserva amb una franja no vàlida però conservar el nom; quan la franja ja és correcta, la reserva queda guardada funcionalment.
-- Si tens publicacions o recursos, pots enviar una publicació amb títol massa curt però conservar el tipus; quan el títol ja és correcte, el recurs queda registrat en una llista simple.
+- Si tens un gestor d'incidències, pots enviar una incidència sense títol però conservar la prioritat triada; quan el títol ja és correcte, la incidència queda guardada en una llista provisional.
+- Si tens un sistema de reserves, pots enviar una reserva amb una franja no vàlida però conservar el recurs triat; quan la franja ja és correcta, la reserva queda guardada funcionalment.
+- Si tens un gestor d'inventari, pots enviar un moviment sense quantitat vàlida però conservar el recurs i el tipus de moviment; quan la quantitat ja és correcta, el moviment queda registrat en una llista simple.
+- Si tens un projecte propi validat, aplica el mateix patró sobre una acció central del domini: conservar dades aprofitables, corregir la dada errònia i guardar funcionalment el cas correcte.
 
 **Requisits mínims**
 
@@ -217,35 +219,45 @@ Perquè este microrepte siga concret, hauràs de crear una **llibreria pròpia m
 
 **Exemples segons projecte**
 
-#### Exemple si el projecte és una tenda
+#### Exemple si el projecte és un gestor d'incidències
 
 Pots fer que el sistema:
 
-- decidisca si un producte queda visible o pendent
-- calcule o transforme alguna informació del producte
-- gestione una llista d’etiquetes o categories
+- decidisca si una incidència queda oberta, pendent o assignable
+- calcule una prioritat interna a partir de gravetat i urgència
+- gestione una llista d'estats o responsables possibles
 - use una funció per validar o preparar dades abans de guardar-les
 - carregue eixa funció des d’un fitxer propi de regles o funcions
 
-#### Exemple si el projecte és un gestor d’activitats o reserves
+#### Exemple si el projecte és un sistema de reserves
 
 Pots fer que el sistema:
 
-- decidisca si una activitat està oberta o tancada
-- valide regles sobre dates o places
+- decidisca si una reserva queda pendent, confirmable o rebutjada
+- valide regles sobre franges, capacitat o disponibilitat
 - construïsca missatges diferents segons l’estat
 - use funcions per separar comprovacions
 - tinga eixes funcions en una llibreria pròpia senzilla
 
-#### Exemple si el projecte és una plataforma de recursos o publicacions
+#### Exemple si el projecte és un gestor d'inventari
 
 Pots fer que el sistema:
 
-- decidisca si una publicació queda en esborrany o publicada
-- genere un resum o classificació bàsica
-- tracte una llista d’etiquetes
-- use funcions per preparar el recurs abans de mostrar-lo o guardar-lo
+- decidisca si un recurs queda disponible, reservat o pendent de revisió
+- calcule o classifique un moviment segons tipus, quantitat o estat
+- tracte una llista de categories, ubicacions o responsables
+- use funcions per preparar el recurs o moviment abans de mostrar-lo o guardar-lo
 - importe eixes funcions des d’un fitxer propi
+
+#### Exemple si és un projecte propi validat
+
+Pots fer que el sistema:
+
+- aplique una regla real del domini equivalent a les anteriors
+- diferencie estats o resultats possibles
+- use una funció pròpia per separar la comprovació principal
+- carregue eixa funció des d'un fitxer propi
+- puga explicar per què eixa regla aporta valor al projecte i no és només un exemple artificial
 
 **Què no es penalitza encara**
 
