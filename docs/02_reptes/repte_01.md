@@ -166,13 +166,16 @@ La decisió sobre el framework pot aparéixer com a exploració inicial o orient
 
 ## Què prepara este repte
 
-Este repte deixa la base preparada per al següent pas del curs:
+Este repte no tanca encara una funcionalitat completa del producte. El que deixa preparat és la base de treball que necessitaràs en `R2`:
 
-- Tractar millor les dades.
-- Incorporar lògica de processament.
-- Gestionar estat o sessió.
-- Protegir funcionalitats.
-- Convertir la base inicial en un flux de servidor més complet en `R2`.
+- Un repositori individual ja organitzat i amb una primera traçabilitat de treball.
+- Un entorn que arranca i es pot revisar seguint instruccions.
+- Una primera resposta servida pel backend, no només fitxers oberts directament al navegador.
+- Una landing inicial que situa el producte i podrà evolucionar cap a formularis o accions reals.
+- Una decisió tècnica inicial amb dubtes visibles, que es podrà confirmar, ajustar o ajornar en reptes posteriors.
+- Una documentació mínima perquè una altra persona puga reproduir l'arrencada.
+
+A partir d'esta base, en `R2` començaràs a convertir eixa primera entrada del producte en un flux amb entrada de dades, validació i processament en servidor.
 
 ## Ampliació 9→10
 
@@ -184,23 +187,26 @@ El nucli del repte ha d'estar complet, funcional i validat.
 
 **Millora demanada**
 
-La landing inicial del producte forma part del nucli de `R1M2`. Per optar a la franja `9→10`, la millora ha d'anar més enllà:
+La landing inicial del producte forma part del nucli de `R1M2`. Per tant, **fer només una landing, encara que estiga cuidada, no és ampliació 9→10**.
 
-- Una pàgina `Sobre nosaltres` o `Sobre el projecte`, també servida pel backend.
-- Navegació mínima entre les dos pàgines.
+Per optar a la franja `9→10`, el projecte ha de superar la landing inicial i mostrar una primera estructura navegable del producte:
+
+- Una segona pàgina o ruta pròpia, com `Sobre nosaltres`, `Sobre el projecte`, `Com funciona` o una pàgina inicial de servei, també servida pel backend.
+- Navegació mínima entre la landing i eixa segona pàgina.
 - Contingut adaptat al producte concret, no text genèric ni plantilla sense personalitzar.
-- Millora visible de la landing inicial: estructura més clara, CSS més cuidat o estat inicial del producte millor explicat.
+- Un missatge més complet que permeta entendre quin problema resol el producte, per a qui és i quin serà el primer flux real en `R2`.
+- Millora visual coherent entre les pàgines: estructura clara, CSS compartit o estil mínimament consistent.
 - Evidència que les pàgines es poden executar seguint `README.md` o les instruccions documentades.
 
-Esta ampliació ha de mostrar que el projecte ja té una porta d'entrada comprensible per a una persona usuària o revisora. Un `healthcheck` pot ser útil com a comprovació tècnica del nucli, però **no compta com a ampliació 9→10** si és l'única millora presentada.
+Esta ampliació ha de mostrar que el projecte ja té més que una porta d'entrada: ha de tindre una primera estructura de presentació del producte que es puga recórrer des del backend. Un `healthcheck` pot ser útil com a comprovació tècnica del nucli, però **no compta com a ampliació 9→10** si és l'única millora presentada.
 
 **Altres millores complementàries**
 
-Si ja tens la landing i la pàgina `Sobre nosaltres`, pots reforçar l'ampliació amb alguna d'estes accions:
+Si ja tens la landing i una segona pàgina o ruta pròpia, pots reforçar l'ampliació amb alguna d'estes accions:
 
 - Deixar l'entorn encara més reproductible amb automatització bàsica d'arrencada o millor contenidorització.
 - Redactar una nota tècnica breu i clara sobre l'arquitectura inicial i la decisió de stack.
-- Documentar breument com la landing prepara el pas cap a formularis, dades o fluxos de `R2`.
+- Documentar breument com l'estructura navegable prepara el pas cap a formularis, dades o fluxos de `R2`.
 
 **Proposta pròpia**  
 També pots proposar una ampliació pròpia si està alineada amb el repte i la valides abans amb el professorat. En qualsevol cas, ha d'aportar valor visible al producte i no limitar-se a una comprovació tècnica d'estat.
@@ -209,7 +215,7 @@ També pots proposar una ampliació pròpia si està alineada amb el repte i la 
 
 - commit o branca identificable
 - justificació tècnica breu
-- prova funcional de la landing i de la pàgina `Sobre nosaltres`
+- prova funcional de la landing i de la segona pàgina o ruta pròpia
 - URL o ruta documentada de cada pàgina
 - rastre de l'ús assistit per IA, si n'hi ha hagut
 
@@ -217,4 +223,4 @@ També pots proposar una ampliació pròpia si està alineada amb el repte i la 
 La IA et pot ajudar a comparar opcions o revisar configuració, però la decisió, la prova i la validació han de ser teues.
 
 **Defensa**  
-Perquè compute com a `9→10`, has de poder explicar què aporta la landing, per què la pàgina `Sobre nosaltres` encaixa amb el projecte, com es generen o servixen des del backend i com esta millora prepara el treball posterior.
+Perquè compute com a `9→10`, has de poder explicar què aporta la part que va més enllà de la landing, per què eixa segona pàgina o ruta encaixa amb el projecte, com es generen o servixen les pàgines des del backend i com esta millora prepara el treball posterior.
