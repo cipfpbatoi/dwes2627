@@ -54,7 +54,7 @@ La pregunta útil no és només “quin formulari faré?”, sinó “quina acci
 
 El formulari de `R2M1` no es tria al final ni es canvia en `R2M3`. Ha de nàixer de la landing page que ja tens: quin botó, crida a l'acció o recorregut inicial prometia el teu producte?
 
-Abans d'escriure codi, tria una acció concreta que puga créixer durant tot el repte:
+Abans d'escriure codi, tria una acció concreta que puga créixer durant tot el repte. Esta taula servix també com a exemples breus segons el projecte base:
 
 | Projecte base | Acció que pot obrir la landing | Formulari inicial de R2M1 | Dada útil per a decidir en R2M3 |
 |---|---|---|---|
@@ -64,13 +64,6 @@ Abans d'escriure codi, tria una acció concreta que puga créixer durant tot el 
 | Projecte propi validat | Primera acció real que promet la landing | Formulari equivalent amb una dada oberta, una opció tancada i una confirmació | una opció o valor que permeta classificar, acceptar, rebutjar, prioritzar o assignar |
 
 No cal implementar encara la decisió de `R2M3`, però sí deixar preparada una dada que la faça possible. Un formulari de contacte genèric, una enquesta sense efecte o un formulari de “dades del client” només valdrien si són realment l'acció central del producte i poden alimentar una regla posterior.
-
-## Exemples breus segons projecte base
-
-- **Gestor d'incidències**: alta d'una incidència amb títol, prioritat i confirmació. Si falta una dada clau, el sistema ho mostra, permet correcció i deixa la incidència preparada per al seguiment posterior.
-- **Sistema de reserves**: sol·licitud de reserva amb recurs, franja i acceptació de condicions. El flux ha de validar almenys una dada clau, respondre amb un error clar si no és correcta i deixar la reserva preparada per continuar el recorregut.
-- **Gestor d'inventari**: alta o moviment d'un recurs amb nom, categoria, estat inicial i confirmació. El servidor ha de validar una dada inicial i permetre que el recurs o moviment es puga processar més avant dins del projecte.
-- **Projecte propi validat**: una acció equivalent que cree, valide, conserve i protegisca una dada real del domini, sense convertir-se en un formulari genèric.
 
 ## Microreptes del Repte 2
 
@@ -603,17 +596,7 @@ Ara toca demostrar una base funcional comuna i defensable. Després arribarà el
 
 `R2M8` ha de servir per fer el primer pas real cap a codi testable amb POO i Composer, no per fer una reescriptura arquitectònica completa.
 
-## Si et bloqueges
-
-Per no perdre el fil del repte:
-
-- Treballa amb un únic actor i una sola operació protegida.
-- Tria una dada del domini que després pugues tornar a mostrar o recuperar.
-- Tanca primer el flux principal abans d’afegir rols o extres.
-- Si hi ha imatge o fitxer com a ampliació, comença per un únic tipus acceptat i una regla de grandària clara.
-- No canvies de framework per intentar desbloquejar este repte.
-- No compliques la persistència si el flux principal encara no està tancat.
-- Assegura’t que `README.md` o la documentació equivalent expliquen com reproduir el cas bo, el cas denegat i la reutilització de la dada correcta.
+ 
 
 ## Presentació i entrega
 
@@ -665,16 +648,7 @@ Convindria evitar errors com estos:
 - Mostrar dades sense tractar-les realment.
 - Afegir lògica artificial només per complir.
 - Portar una solució que no es pot explicar.
-
-## Què prepara este repte
-
-Este repte deixa el producte preparat per al següent pas del curs:
-
-- Mantindre viu el flux funcional que has construït ací.
-- Reorganitzar millor el codi.
-- Millorar l’arquitectura.
-- Donar més pes a la persistència quan arribe `R3`.
-- Introduir el framework sense canviar de projecte.
+ 
 
 `R2M8` ha de servir justament per arribar a `R3` amb una primera peça testable, no per consumir abans d’hora tot el que correspon al repte següent.
 
