@@ -236,6 +236,29 @@ No cal encara:
 
 Els arrays, funcions i regles del projecte apareixen amb més sentit en `R2M3`. Estat, sessió i cookies apareixen en `R2M4`. Autenticació i operació protegida apareixen en `R2M5`.
 
+**Ampliació guiada: pujada de fitxer o imatge**
+
+Quan el flux de `R2M1` i `R2M2` ja funciona, pots practicar la pujada d'un fitxer amb formulari com a ampliació. No és mínim obligatori, però és un bon moment per veure com el servidor rep, valida i associa un arxiu a una dada del projecte.
+
+La pujada ha d'estar connectada amb el domini, no afegida només per provar un control HTML:
+
+- en un gestor d'incidències, una captura o document associat a la incidència;
+- en un sistema de reserves, un justificant o document necessari per a la reserva;
+- en un gestor d'inventari, una imatge o fitxa del recurs;
+- en un projecte propi, un arxiu que tinga sentit dins del primer flux real.
+
+Com a mínim, si fas esta ampliació, has de:
+
+- usar un formulari preparat per enviar fitxers;
+- recuperar el fitxer al servidor amb el mecanisme corresponent del teu entorn;
+- comprovar tipus o extensió permesa;
+- comprovar una grandària màxima raonable;
+- mostrar un error visible si el fitxer no és acceptable;
+- associar el fitxer acceptat al recurs o registre creat;
+- documentar una prova de fitxer correcte i una de fitxer rebutjat.
+
+No cal convertir esta pràctica en un gestor documental complet, ni guardar molts fitxers, ni fer galeries, ni resoldre permisos avançats. L'objectiu és entendre el recorregut bàsic d'una pujada controlada en servidor.
+
 ### Microrepte 3. Lògica del flux i regles del projecte
 
 **Objectiu**
@@ -707,10 +730,12 @@ Tampoc és un requisit per aprovar el repte ni per tancar els microreptes. La se
 
 **Opcions d'ampliació**
 - Reforçar la validació, els errors visibles o la funcionalitat protegida amb un cas crític millor resolt.
+- Afegir una pujada de fitxer o imatge al flux principal si té sentit en el projecte, amb validació de tipus, grandària, error visible i associació al recurs creat.
 - Afegir una llibreria externa menuda amb Composer o una crida a una API externa si té sentit real en el projecte i queda documentat com a ampliació.
 
 **Exemples vàlids en R2**
 - Millorar la validació del flux principal amb més casos d’error reals, missatges més útils i prova documentada.
+- Afegir una imatge, captura, justificant o document associat al registre principal, amb prova de fitxer acceptat i fitxer rebutjat.
 - Afegir una comprovació de seguretat o autorització més fina sobre l’operació protegida.
 - Automatitzar millor una bateria de proves del flux amb diversos casos rellevants.
 - Usar una llibreria externa menuda amb Composer si resol una necessitat real del projecte i queda explicada.

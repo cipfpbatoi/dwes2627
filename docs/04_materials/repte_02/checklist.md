@@ -54,9 +54,11 @@ Això es pot resoldre amb persistència simple o amb base de dades si així ho h
 | Recuperació posterior | Tornar a carregar el flux o consultar el recurs | La dada reapareix i continua sent usable |  |  |
 | Llistat o visualització del recurs | Accés a la vista, llistat o detall | El recurs creat es veu correctament |  |  |
 
-## 6. 🖼️ Proves de fitxer o imatge, si n’hi ha com a ampliació
+## 6. 🖼️ Proves de fitxer o imatge, si n’hi ha com a ampliació guiada
 
-Si el teu flux no treballa amb fitxers o imatges, marca esta secció com a `No aplica`. No és una exigència del primer microrepte de `R2`.
+Si el teu flux no treballa amb fitxers o imatges, marca esta secció com a `No aplica`. No és una exigència del nucli de `R2`, però pots practicar-ho com a ampliació guiada després de tindre resolt el formulari, el reintent i el guardat funcional de `R2M2`.
+
+El fitxer ha d'estar associat a una acció real del projecte: captura d'una incidència, justificant d'una reserva, imatge d'un recurs, document d'una sol·licitud o equivalent. No compta com a pràctica útil si només és un camp de fitxer sense validació ni ús posterior.
 
 | Cas de prova | Entrada | Resultat esperat | Resultat obtingut | Incidències detectades |
 |---|---|---|---|---|
