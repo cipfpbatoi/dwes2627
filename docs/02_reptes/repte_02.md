@@ -223,7 +223,7 @@ Exemples de continuïtat:
 
 **Què es deixa per a més avant**
 
-No cal encara:
+En este microrepte no cal encara:
 
 - acumular errors en arrays;
 - convertir el formulari en una validació completa de tots els camps;
@@ -233,6 +233,8 @@ No cal encara:
 - iniciar sessió, cookies, login o rols;
 - usar base de dades com a mínim obligatori;
 - muntar una arquitectura MVC o una persistència formal.
+
+Este límit no vol dir que la validació completa quede fora del `Repte 2`, sinó que no és el mínim de `R2M2`. Ací el centre és conservar dades per al reintent i guardar només el cas correcte. Els arrays d'errors i la validació més completa poden aparéixer com a ampliació o consolidar-se en microreptes posteriors del mateix repte.
 
 Els arrays, funcions i regles del projecte apareixen amb més sentit en `R2M3`. Estat, sessió i cookies apareixen en `R2M4`. Autenticació i operació protegida apareixen en `R2M5`.
 
