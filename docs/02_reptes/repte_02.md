@@ -748,12 +748,14 @@ Esta ampliació no compensa mancances del nucli. Si falten evidències obligatò
 Tampoc és un requisit per aprovar el repte ni per tancar els microreptes. La seua absència no penalitza mentre el nucli obligatori estiga ben resolt.
 
 **Opcions d'ampliació**
+
 - Reforçar la validació, els errors visibles o la funcionalitat protegida amb un cas crític millor resolt.
 - Afegir una pujada de fitxer o imatge al flux principal si té sentit en el projecte, amb validació de tipus, grandària, error visible i associació al recurs creat.
 - Fer `R2S10`: documentar un contracte d'autenticació consumible per `DWEC`, amb endpoints, headers, respostes, dades demo i prova creuada.
 - Afegir una llibreria externa menuda amb Composer o una crida a una API externa si té sentit real en el projecte i queda documentat com a ampliació.
 
 **Exemples vàlids en R2**
+
 - Millorar la validació del flux principal amb més casos d’error reals, missatges més útils i prova documentada.
 - Afegir una imatge, captura, justificant o document associat al registre principal, amb prova de fitxer acceptat i fitxer rebutjat.
 - Afegir una comprovació de seguretat o autorització més fina sobre l’operació protegida.
@@ -762,6 +764,7 @@ Tampoc és un requisit per aprovar el repte ni per tancar els microreptes. La se
 - Consumir una API externa només si aporta dades útils al flux i no substituïx el treball obligatori de R2.
 
 **Exemples que no compten com a 9→10**
+
 - Afegir pantalles decoratives sense millorar el flux.
 - Fer una ampliació que no es pot provar.
 - Usar una API externa només perquè parega avançat.
@@ -772,6 +775,7 @@ Tampoc és un requisit per aprovar el repte ni per tancar els microreptes. La se
 També pots proposar una ampliació pròpia si té valor tècnic real i es valida abans amb el professorat.
 
 **Evidències mínimes**
+
 - commit o branca identificable
 - justificació tècnica breu
 - prova funcional dels casos millorats
