@@ -69,7 +69,9 @@ No cal implementar encara la decisió de `R2M3`, però sí deixar preparada una 
 
 Per treballar bé este repte convé dividir-lo en nou peces clares. Això ajuda a no reduir-lo a un simple `login` i a entendre què s’està construint en cada fase.
 
-La base del repte queda en `27` hores, organitzades en `9` sessions de `3` hores.
+La base del repte queda en `27` hores, organitzades en `9` sessions de `3` hores amb microrepte.
+
+A més, pot haver-hi una sessió d'ampliació, `R2S10`, dedicada al contracte d'autenticació per a `DWEC`. No és un microrepte nou ni té nota pròpia: ajuda a deixar la mini API de `R2M6` més clara, documentada i consumible.
 
 La progressió també és important: en el microrepte 1 entra i es valida la informació; en el 2 es processen i es guarden les dades correctes; en el 3 s’apliquen regles reals del projecte amb funcions pròpies; en el 4 es conserva estat temporal del flux i s'estabilitzen includes; en el 5 es protegix una operació real; en el 6 s'exposa una mini API d'autenticació per a client; en el 7 es prova, es depura i es tanca un checkpoint tècnic; en el 8 s’introduïx una classe simple carregada amb Composer i verificada amb una primera prova unitària; i en el 9 es fa una persistència mínima amb BBDD.
 
@@ -120,6 +122,7 @@ Els tallers no creen una nota separada: et donen una ferramenta concreta per ava
 | `R2M4` | [MT04. Sessió, cookies i estat](../recursos/Tallers/MT04-Sessio-cookies-i-estat.pdf) | Abans de decidir què guardes en sessió, cookie o servidor. |
 | `R2M5` | [MT05. Auth mínima defensable](../recursos/Tallers/MT05-Auth-minima-defensable.pdf) | Abans de protegir una operació real. |
 | `R2M6` | [MT05. Auth mínima defensable](../recursos/Tallers/MT05-Auth-minima-defensable.pdf) | Per mantindre coherent l'autenticació quan exposes la mini API. |
+| Ampliació `R2S10` | Contracte d'autenticació per a `DWEC` | Després de `R2M6`, si cal deixar la mini API més clara per al consum des de client. |
 | `R2M7` | [MT06. Debugging i prova curta](../recursos/Tallers/MT06-Debugging-i-prova-curta.pdf) | En el checkpoint de proves i depuració. |
 | `R2M8` | Sense taller específic | Primera peça testable amb POO i Composer. |
 | `R2M9` | Sense taller específic | Persistència mínima amb BBDD abans de R3. |
@@ -747,6 +750,7 @@ Tampoc és un requisit per aprovar el repte ni per tancar els microreptes. La se
 **Opcions d'ampliació**
 - Reforçar la validació, els errors visibles o la funcionalitat protegida amb un cas crític millor resolt.
 - Afegir una pujada de fitxer o imatge al flux principal si té sentit en el projecte, amb validació de tipus, grandària, error visible i associació al recurs creat.
+- Fer `R2S10`: documentar un contracte d'autenticació consumible per `DWEC`, amb endpoints, headers, respostes, dades demo i prova creuada.
 - Afegir una llibreria externa menuda amb Composer o una crida a una API externa si té sentit real en el projecte i queda documentat com a ampliació.
 
 **Exemples vàlids en R2**
