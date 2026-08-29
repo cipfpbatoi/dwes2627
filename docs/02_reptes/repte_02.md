@@ -155,7 +155,7 @@ El formulari ha de correspondre a una acció que la landing page ja fa esperar: 
 - Possibilitat de corregir i tornar a enviar.
 - Comentaris breus en el codi quan facen falta per entendre el flux.
 
-No cal encara acumular errors en arrays, validar tots els controls alhora, conservar tots els valors del formulari, gestionar fitxers ni fer checkbox múltiples. Això es pot millorar més avant.
+No cal encara acumular errors en arrays, validar tots els controls alhora, conservar tots els valors del formulari, gestionar fitxers ni fer checkbox múltiples. Els errors acumulats en array encaixen millor com a ampliació de `R2M3`, quan ja es treballen decisions, arrays i funcions.
 
 **Límit de la sessió**
 
@@ -189,7 +189,7 @@ Este microrepte continua directament el `R2M1`. No has de començar de zero ni c
 - Reintent corregit sense haver de repetir totes les dades.
 - Guardat funcional simple quan l’entrada és correcta.
 - Explicació clara de per què conservar dades en el reintent no és el mateix que guardar funcionalment un cas correcte.
-- Els arrays d’errors, fitxers, checkbox múltiples i validacions més completes queden com a ampliació o per a una fase posterior.
+- Els arrays d’errors i validacions més completes queden com a ampliació de `R2M3` o per a una fase posterior del mateix repte. Els fitxers i checkbox múltiples queden com a ampliació si aporten valor al flux.
 
 **Què has de construir**
 
@@ -331,6 +331,20 @@ Pots fer que el sistema:
 - No tindre sessió, cookies, login, rols o autorització.
 - No tindre base de dades obligatòria ni persistència formal.
 - No haver refactoritzat encara cap a MVC o arquitectura completa.
+
+**Ampliació guiada: errors acumulats en array**
+
+Quan la regla de `R2M3` ja funciona amb dos casos visibles, pots millorar la validació del formulari acumulant errors en un array. No és mínim obligatori del microrepte, però és una ampliació natural perquè combina validació, decisions, arrays i funcions pròpies.
+
+La idea és passar d'un únic missatge d'error a una llista d'errors generada pel servidor:
+
+- crear un array `$errors = []`;
+- afegir un missatge per cada comprovació que falle;
+- usar una funció pròpia per validar una part del formulari si aporta claredat;
+- mostrar la llista d'errors sense perdre les dades aprofitables del reintent;
+- processar o guardar només quan l'array d'errors estiga buit.
+
+No cal convertir-ho en un sistema complet de validació de framework ni validar camps que no tenen valor real per al flux. L'objectiu és entendre com el servidor pot acumular diversos errors i retornar-los de manera clara.
 
 ### Microrepte 4. Estat i sessió per conservar el flux
 
