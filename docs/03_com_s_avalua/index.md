@@ -182,9 +182,9 @@ No cal:
 - Registrar cada ús menor.
 - Omplir-lo si la IA no ha afectat de manera rellevant el treball presentat.
 
-La idea és deixar un rastre breu del que has demanat, del que has aprofitat realment i del que pots explicar o defendre després.
+La idea és deixar un rastre breu del que has demanat, del que has aprofitat realment i del que pots explicar o defendre després. En les consultes rellevants, copia també la pregunta o prompte literal que has escrit a la IA; això permet comprovar si la consulta estava alineada amb l'objectiu.
 
-El format recomanat és un fitxer del repositori anomenat `docs/ai-log.md`. Cada entrada hauria d'incloure: objectiu de la consulta, resum del suggeriment, què has acceptat, què has rebutjat o modificat, com ho has verificat i en quin fitxer, commit o prova es pot veure. En la pàgina del report tens una plantilla i un exemple omplit.
+El format recomanat és un fitxer del repositori anomenat `docs/ai-log.md`. Cada entrada hauria d'incloure: objectiu de la consulta, pregunta o prompte literal, resum del suggeriment, què has acceptat, què has rebutjat o modificat, com ho has verificat i en quin fitxer, commit o prova es pot veure. En la pàgina del report tens una plantilla i un exemple omplit.
 
 Un `AI log` ben escrit no acredita autoria per si sol. Es revisarà junt amb commits, codi, proves i defensa curta. Si el registre és genèric, no coincideix amb el repositori o no el pots explicar, no comptarà com a evidència suficient d'ús responsable de la IA.
 

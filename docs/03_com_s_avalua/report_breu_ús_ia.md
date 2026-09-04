@@ -8,7 +8,7 @@ El pots entregar com a report independent o mantindre'l dins del repositori en:
 docs/ai-log.md
 ```
 
-No copies tota la conversa amb la IA. Resumeix només les intervencions rellevants i deixa clara la teua verificació.
+No copies tota la conversa amb la IA. Sí que has de copiar el text exacte de la pregunta o prompte principal en les consultes rellevants, perquè es puga comprovar si estava alineat amb l'objectiu declarat. Resumeix després només les intervencions rellevants i deixa clara la teua verificació.
 
 Este report no compta només per estar ben redactat. Ha de poder contrastar-se amb el teu repositori: commits, fitxers, proves, errors corregits i decisions que pots explicar en una defensa curta.
 
@@ -34,6 +34,12 @@ Marca el que toque.
 Resum breu del que necessitava:
 
 ...
+
+Pregunta o prompte literal principal:
+
+```text
+...
+```
 
 ## Bloc 2. Què m’ha aportat
 
@@ -96,6 +102,12 @@ Si no pots relacionar el report amb el teu projecte real, el report no és una e
 ## Consulta 1 - R2M5 - Error en autenticació
 
 - Objectiu de la consulta: entendre per què el login sempre fallava encara que l'usuari existia.
+- Pregunta o prompte literal:
+
+```text
+Tinc un login en PHP on l'usuari existeix però sempre falla la comprovació de contrasenya. Pots ajudar-me a revisar possibles causes sense reescriure tot el sistema d'usuaris?
+```
+
 - Resum del suggeriment: la IA ha indicat que podia haver-hi un problema en la comparació de contrasenyes i ha proposat revisar `password_verify()`.
 - Què s'ha acceptat: he revisat el punt on comprovava la contrasenya i he canviat la comparació directa per `password_verify()`.
 - Què s'ha rebutjat o modificat: no he incorporat el sistema complet d'usuaris que proposava la IA perquè era massa ampli per al microrepte.

@@ -49,7 +49,8 @@ Qualsevol ús de IA hauria de seguir este recorregut:
 Quan la IA haja tingut un pes rellevant, convé deixar un registre mínim amb:
 
 - tasca o problema treballat
-- resum del que s'ha demanat a la IA
+- objectiu de la consulta
+- pregunta o prompte literal que s'ha escrit a la IA
 - proposta acceptada o rebutjada
 - verificació aplicada
 - resultat final o canvi introduït
@@ -60,7 +61,7 @@ El lloc recomanat per deixar este rastre és:
 docs/ai-log.md
 ```
 
-No cal copiar tota la conversa amb la IA. El que importa és deixar clar què t'ha aportat, què has decidit tu i com ho has comprovat.
+No cal copiar tota la conversa amb la IA. Sí que convé copiar el text exacte de la pregunta principal: ajuda a comprovar si la consulta estava ben enfocada i alineada amb l'objectiu. El que importa és deixar clar què t'ha aportat, què has decidit tu i com ho has comprovat.
 
 ### Exemple curt d'entrada en `docs/ai-log.md`
 
@@ -68,6 +69,12 @@ No cal copiar tota la conversa amb la IA. El que importa és deixar clar què t'
 ## Consulta 1 - R2M7 - Classe per validar una regla del projecte
 
 - Objectiu de la consulta: separar una regla del flux en una classe simple i preparar una prova unitària.
+- Pregunta o prompte literal:
+
+```text
+Vull separar una regla de disponibilitat de reserves en una classe PHP simple i preparar una prova unitària mínima. Pots proposar-me una estructura inicial sense usar base de dades encara?
+```
+
 - Resum del suggeriment: la IA ha proposat una classe `ReservaService` amb un mètode per comprovar si hi ha places disponibles i un test bàsic amb dos casos.
 - Què s'ha acceptat: la idea de posar la regla en una classe i provar-la sense navegador.
 - Què s'ha rebutjat o modificat: he canviat els noms perquè encaixen amb el meu projecte i he eliminat la part que usava base de dades perquè encara no és el focus del microrepte.
@@ -77,6 +84,7 @@ No cal copiar tota la conversa amb la IA. El que importa és deixar clar què t'
 Una entrada bona no ha de ser llarga. Ha de permetre entendre:
 
 - quin problema volies resoldre;
+- quina pregunta concreta vas fer;
 - què va proposar la IA;
 - què has aprofitat, canviat o descartat;
 - quina prova o comprovació real has fet després.
