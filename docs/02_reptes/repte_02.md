@@ -700,7 +700,7 @@ Convindria evitar errors com estos:
 Millorar la robustesa del flux en servidor i demostrar més control sobre validació, estat, autenticació, proves i mantenibilitat.
 
 **Autocorrecció associada**  
-`r2-ampliacio-9-10`
+`r2-s09-persistencia-minima-bbdd-php` (proposta global separada, dins de R2M9)
 
 Esta autocorrecció no posa automàticament un `10`. Servix per filtrar si la teua ampliació pot optar a la franja `9→10` i quina revisió docent necessita.
 
@@ -711,26 +711,26 @@ Les autocorreccions dels microreptes `R2M1` a `R2M9` valoren el **nucli obligato
 La nota final de `R2` es calcula així:
 
 ```text
-nota_final_R2 = min(nota_nucli_R2, 9) + ampliacio_9_10
+nota_final_R2 = 0.9 * nota_nucli_R2 + ampliacio_9_10
 ```
 
 On:
 
 - `nota_nucli_R2` és la nota ponderada obtinguda amb el conjunt dels microreptes obligatoris, segons els pesos indicats en la taula anterior;
-- `min(nota_nucli_R2, 9)` vol dir que el nucli obligatori pot arribar com a màxim a `9` en la nota final del repte;
+- `0.9 * nota_nucli_R2` vol dir que el nucli obligatori pot arribar com a màxim a `9` en la nota final del repte;
 - `ampliacio_9_10` pot sumar de `0` a `1` punt només si l’ampliació està validada;
 - la nota final mai pot superar `10`.
 
 Per tant, si tens una mitjana de `10` en els microreptes però no presentes una ampliació `9→10` validada, la nota final del repte serà `9`.
 
-No és una baixada de nota: és separar el **nucli obligatori** de la **via d’excel·lència**.
+És una ponderació explícita: el **nucli obligatori** representa el 90% i la **via d’excel·lència** aporta fins a un punt.
 
 | Situació | Resultat |
 |---|---:|
 | Nucli de R2 incomplet | no pot optar a `9→10` |
 | Nucli de R2 complet, sense ampliació | màxim `9` |
 | Nucli de R2 complet, ampliació no vàlida o decorativa | màxim `9` |
-| Nucli de R2 complet, ampliació útil però limitada | entre `9` i `9,5`, segons revisió docent |
+| Nucli de R2 complet, ampliació útil però limitada | base ponderada × 0,9 + fins a `0,5`, segons revisió docent |
 | Nucli de R2 complet, ampliació integrada, provada i defensada | fins a `10` |
 
 **A quin nivell s'aplica**  
@@ -780,7 +780,7 @@ També pots proposar una ampliació pròpia si té valor tècnic real i es valid
 - justificació tècnica breu
 - prova funcional dels casos millorats
 - rastre de l'ús assistit per IA, si l'has usat
-- referència a l'autocorrecció `r2-ampliacio-9-10` o informe equivalent de candidatura
+- referència a l'autocorrecció `r2-s09-persistencia-minima-bbdd-php` (proposta global separada, dins de R2M9) o informe equivalent de candidatura
 
 **Ús assistit per IA**  
 La IA et pot ajudar a contrastar validacions, proves, classes o ús de Composer, però no substituïx la teua decisió ni la teua comprovació real.
@@ -790,3 +790,7 @@ L'ampliació només compta si la pots explicar amb criteri i sense delegació ex
 
 **Regla curta**  
 Nucli primer, ampliació després. En `R2`, la via `9→10` és una ampliació integrada del repte complet, no una col·lecció de punts extra per microrepte. Una ampliació no puja a `9→10` si el treball base encara no és funcional, verificable i defensable.
+
+## Registre final de l’ampliació
+
+L’ampliació de R2 es declara una sola vegada en `docs/r2-ampliacio.md` i es recull exclusivament en **R2M9**. La proposta automàtica queda pendent de validació en la presentació. Consulta la [fórmula i l’escala comunes](../ampliacions-excellencia.md#calcul-i-validacio-de-lampliacio-global).

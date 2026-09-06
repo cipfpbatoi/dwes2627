@@ -102,3 +102,7 @@ La IA pot ajudar a revisar endpoints, generar proves o comparar respostes, però
 
 **Defensa**  
 Perquè compte com a `9→10`, l'ampliació ha d'estar integrada, aportar robustesa real i poder-se defensar.
+
+## Registre final de l’ampliació
+
+L’ampliació de R4 es declara una sola vegada en `docs/r4-ampliacio.md` i es recull exclusivament en **R4M5**. La proposta automàtica queda pendent de validació en la presentació. Consulta la [fórmula i l’escala comunes](../ampliacions-excellencia.md#calcul-i-validacio-de-lampliacio-global).

@@ -266,7 +266,7 @@ La franja `9→10` no és un sistema de punts extra. Requerix una ampliació amb
 La nota final d'un repte es llig així:
 
 ```text
-nota_final_repte = min(nota_nucli_repte, 9) + ampliacio_9_10
+nota_final_repte = 0.9 * nota_nucli_repte + ampliacio_9_10
 ```
 
 Per això una mitjana excel·lent dels microreptes acredita un nucli excel·lent, però no dona automàticament un `10` final de repte. Sense ampliació validada, la nota final del repte queda limitada a `9`.
@@ -278,3 +278,5 @@ Perquè una ampliació compte de veritat, ha de:
 - deixar evidències mínimes revisables
 - poder-se explicar i defensar
 - no dependre d'una delegació excessiva en IA
+
+La [regla comuna d’ampliació](../ampliacions-excellencia.md#calcul-i-validacio-de-lampliacio-global) concreta la fórmula 90% + 1 punt i el registre únic en l’últim microrepte.

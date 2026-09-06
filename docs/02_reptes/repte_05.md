@@ -132,3 +132,7 @@ La IA pot servir per contrastar estratègies, revisar transformacions o suggerir
 
 **Defensa**  
 L'ampliació només compta si pots explicar què s'integra, com circula la informació i per què la solució està ben resolta.
+
+## Registre final de l’ampliació
+
+L’ampliació de R5 es declara una sola vegada en `docs/r5-ampliacio.md` i es recull exclusivament en **R5M5**. La proposta automàtica queda pendent de validació en la presentació. Consulta la [fórmula i l’escala comunes](../ampliacions-excellencia.md#calcul-i-validacio-de-lampliacio-global).

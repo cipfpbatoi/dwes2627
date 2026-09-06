@@ -142,3 +142,7 @@ La IA et pot ajudar a comparar estructures, revisar codi o suggerir proves, per�
 
 **Defensa**  
 Perquè compute com a `9→10`, has de poder justificar per què la millora aporta qualitat real al projecte.
+
+## Registre final de l’ampliació
+
+L’ampliació de R3 es declara una sola vegada en `docs/r3-ampliacio.md` i es recull exclusivament en **R3M7**. La proposta automàtica queda pendent de validació en la presentació. Consulta la [fórmula i l’escala comunes](../ampliacions-excellencia.md#calcul-i-validacio-de-lampliacio-global).

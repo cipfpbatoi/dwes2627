@@ -224,3 +224,7 @@ La IA et pot ajudar a comparar opcions o revisar configuració, però la decisi�
 
 **Defensa**  
 Perquè compute com a `9→10`, has de poder explicar què aporta la part que va més enllà de la landing, per què eixa segona pàgina o ruta encaixa amb el projecte, com es generen o servixen les pàgines des del backend i com esta millora prepara el treball posterior.
+
+## Registre final de l’ampliació
+
+L’ampliació de R1 es declara una sola vegada en `docs/r1-ampliacio.md` i es recull exclusivament en **R1M2**. La proposta automàtica queda pendent de validació en la presentació. Consulta la [fórmula i l’escala comunes](../ampliacions-excellencia.md#calcul-i-validacio-de-lampliacio-global).
