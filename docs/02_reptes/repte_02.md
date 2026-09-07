@@ -4,6 +4,10 @@
 
 Este repte servix per convertir la base funcional de `R1` en un flux complet de servidor: entrada de dades, validació, processament, conservació d'informació, estat, autenticació, funcionalitat protegida, prova mínima, primera peça testable i persistència mínima amb BBDD.
 
+## Preparació en R2S0
+
+Abans del primer microrepte, practica execució, sintaxi bàsica i barreja de PHP amb HTML amb la [bateria de 7 exercicis de R2S0](../04_materials/repte_02/practica_php_html.md). És pràctica introductòria sense microrepte ni nota pròpia.
+
 ## Vista ràpida
 
 | Bloc | Què has de deixar fet |
