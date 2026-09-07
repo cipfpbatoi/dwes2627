@@ -155,3 +155,7 @@ La idea és simple:
 - l'ampliació només compta si la pots provar, explicar i defensar
 
 Tens el resum comú en [Ampliacions d'excel·lència 9→10](../ampliacions-excellencia.md).
+
+## Entendre i corregir abans de continuar
+
+Les sessions reserven temps de retorn, correcció guiada i comprovació de la comprensió. Consulta [què fer si encara no has assolit un microrepte](../04_materials/guia_consolidacio_i_recuperacio_repte.md). Els microreptes són treball d’aula sense recuperació individual. La recuperació correspon al repte complet.

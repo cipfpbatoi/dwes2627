@@ -20,3 +20,7 @@ Si necessites saber què has d'entregar, entra en [Reptes](../02_reptes/index.md
 | trobar les diapositives de R5 | [Suport ràpid del Repte 5](repte_05/index.md) |
 | comprovar el tancament d'un repte | [R1](repte_01/checklist.md), [R2](repte_02/checklist.md), [R3](repte_03/checklist.md), [R4](repte_04/checklist.md), [R5](repte_05/checklist.md) |
 | buscar PDFs de classe | [Diapositives PDF](../recursos/index.md) |
+
+## Entendre i corregir abans de continuar
+
+Les sessions reserven temps de retorn, correcció guiada i comprovació de la comprensió. Consulta [què fer si encara no has assolit un microrepte](guia_consolidacio_i_recuperacio_repte.md). Els microreptes són treball d’aula sense recuperació individual. La recuperació correspon al repte complet.
