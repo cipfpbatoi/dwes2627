@@ -24,3 +24,5 @@ Si necessites saber què has d'entregar, entra en [Reptes](../02_reptes/index.md
 ## Entendre i corregir abans de continuar
 
 Les sessions reserven temps de retorn, correcció guiada i comprovació de la comprensió. Consulta [què fer si encara no has assolit un microrepte](guia_consolidacio_i_recuperacio_repte.md). Els microreptes són treball d’aula sense recuperació individual. La recuperació correspon al repte complet.
+
+Consulta les [fitxes de consolidació publicades després de classe](consolidacio/index.md).

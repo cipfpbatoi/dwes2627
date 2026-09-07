@@ -14,3 +14,5 @@
 | repassar mini API d'autenticació | [R2M6. Mini API d'autenticació per a client](../../recursos/Repte2/R2M6-Mini-API-dautenticacio-per-a-client.pdf) |
 | repassar POO, Composer i prova unitària | [R2M8. Primera peça testable amb POO i Composer](../../recursos/Repte2/R2M8-Primera-peca-testable-amb-POO-i-Composer.pdf) |
 | repassar persistència mínima amb BBDD | [R2M9. Persistència mínima amb BBDD en PHP](../../recursos/Repte2/R2M9-Persistencia-minima-amb-BBDD-en-PHP.pdf) |
+
+Consulta les [fitxes de consolidació publicades després de classe](../consolidacio/index.md).
