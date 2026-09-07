@@ -58,7 +58,7 @@ La correcció ordinària revisa la branca:
 main
 ```
 
-Pots treballar en una branca pròpia, per exemple `r2m3`, `r3m5` o `feature/auth`, però abans de demanar correcció has d'integrar el treball en `main`.
+Recomanem una branca `repte/r2` i una `microrepte/r2m3`, amb el flux **microrepte → repte → main**. Seguix la [guia de branques, PR i entregues](guia_branques_i_entregues.md), amb les dues PR que tu mateix pots integrar i etiquetes per conservar cada entrega.
 
 No uses el nom de la branca per indicar quin microrepte vols corregir. El microrepte actiu el configura el professorat des del sistema d'autocorrecció.
 
@@ -100,28 +100,7 @@ Evidències:
 - docs/r2m3.md
 ```
 
-Si treballes en branques pròpies, usa-les només per organitzar-te:
-
-```bash
-git switch -c r2m3
-```
-
-Abans de la correcció, integra el treball en `main`:
-
-```bash
-git switch main
-git merge r2m3
-git push origin main
-```
-
-Si el professorat ho demana, també pots marcar una entrega amb una etiqueta:
-
-```bash
-git tag r2m3-entrega
-git push origin r2m3-entrega
-```
-
-La regla pràctica és esta: `main` és la branca corregible, però cada microrepte ha de tindre nom, carpeta o document propi perquè es puga trobar.
+Conserva les branques de repte i microrepte i una etiqueta per entrega. La [guia de branques i entregues](guia_branques_i_entregues.md) explica com crear-les, integrar-les i recuperar una versió anterior.
 
 ## Exemples de README omplits
 
@@ -326,16 +305,7 @@ Comprova que el repositori conté:
 
 ## Com pujar el treball
 
-Des del teu repositori:
-
-```bash
-git status
-git add .
-git commit -m "Entrega R2M3"
-git push origin main
-```
-
-Canvia `R2M3` pel microrepte que estàs entregant.
+Fes commit i push en la branca del microrepte. Després integra la PR **microrepte → repte** i la PR **repte → main**, comprova el contingut de `main` i marca l’entrega amb una etiqueta. Tens les comandes i els passos de GitHub en la [guia de branques i entregues](guia_branques_i_entregues.md).
 
 Si el teu repositori encara usa `master`, consulta el professorat abans d'entregar. La referència ordinària de correcció és `main`.
 
