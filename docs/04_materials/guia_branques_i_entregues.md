@@ -1,3 +1,3 @@
-# Guia unificada de repositori i entrega
+# Guia unificada
 
-Les instruccions de branques, PR, clonatge i autocorrecció estan reunides en [Repositori, branques i entrega del treball](guia_pujar_treball_autocorreccio.md). Consulta eixa guia per seguir el procediment actual.
+Consulta [Repositori, branques i entrega del treball](guia_pujar_treball_autocorreccio.md), amb invitació, clonatge i una branca per microrepte que s’integra directament en `main`.
