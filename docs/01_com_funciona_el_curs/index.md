@@ -71,9 +71,9 @@ Per això, des del principi convé que el projecte:
 
 ## 🗂️ Repositori del curs
 
-Treballaràs en un repositori individual creat per GitHub Classroom. El professorat donarà l'enllaç en `R1S1`; quan l'acceptes, GitHub crearà el teu repositori i el clonaràs al teu ordinador.
+Treballaràs en un repositori individual que crea el professorat. En `R1S1`, acceptaràs la invitació com a col·laborador i faràs `git clone` de la URL assignada al teu ordinador.
 
-Eixe repositori és el mateix per a tot el curs. No has de crear un repositori nou per a cada repte ni treballar sobre el repositori base. Les instruccions per clonar, fer commit, fer `push` i deixar el treball preparat per a l'autocorrecció estan en [Com pujar el treball per a l'autocorrecció](../04_materials/guia_pujar_treball_autocorreccio.md).
+Eixe repositori és el mateix per a tot el curs. No has de crear un repositori nou per a cada repte ni treballar sobre el repositori base. Les instruccions per clonar, fer commit, fer `push` i deixar el treball preparat per a l'autocorrecció estan en [Repositori, branques i entrega](../04_materials/guia_pujar_treball_autocorreccio.md).
 
 ## 🤝 Cooperació i autoria
 

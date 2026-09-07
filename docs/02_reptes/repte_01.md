@@ -19,11 +19,11 @@ El mínim obligatori no exigix encara una funcionalitat de domini rica. El que s
 
 ## Repositori de treball del curs
 
-En la primera sessió, `R1S1`, acceptaràs l'enllaç de GitHub Classroom que done el professorat i clonaràs el teu repositori individual. No has de treballar sobre el repositori base ni crear-ne un altre.
+En la primera sessió, `R1S1`, acceptaràs la invitació al repositori que haja creat el professorat i clonaràs el teu repositori individual. No has de treballar sobre el repositori base ni crear-ne un altre.
 
 Eixe repositori individual serà el teu repositori de treball durant tot el curs. En ell aniran quedant els microreptes, les evidències, el `README.md`, les decisions tècniques i els commits.
 
-Tens el procés detallat en la guia [Com pujar el treball per a l'autocorrecció](../04_materials/guia_pujar_treball_autocorreccio.md).
+Tens el procés detallat en la guia [Repositori, branques i entrega](../04_materials/guia_pujar_treball_autocorreccio.md).
 
 ## Microreptes del Repte 1
 
@@ -68,7 +68,7 @@ Esta decisió és **orientativa**. En `R1M1` no estàs triant definitivament el 
 
 També has de deixar preparat el repositori de treball del curs:
 
-- acceptar l'enllaç de GitHub Classroom que done el professorat;
+- acceptar la invitació com a col·laborador al repositori creat pel professorat;
 - clonar el teu repositori individual;
 - localitzar `README.md`, `ENTREGA.md`, `docs/` i `evidence/`;
 - actualitzar `README.md` amb el microrepte actual, el projecte base triat, el primer flux client/servidor i la decisió tècnica inicial;

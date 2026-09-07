@@ -23,8 +23,7 @@ nav:
       - "📝 Fitxa d'exploració tècnica inicial": "04_materials/fitxa_exploracio_tecnica_inicial.md"
       - "Fitxes després de classe": "04_materials/consolidacio/index.md"
       - "Consolidació i recuperació del repte": "04_materials/guia_consolidacio_i_recuperacio_repte.md"
-      - "Branques, PR i entregues": "04_materials/guia_branques_i_entregues.md"
-      - "⬆️ Pujar treball per autocorrecció": "04_materials/guia_pujar_treball_autocorreccio.md"
+      - "Repositori, branques i entrega": "04_materials/guia_pujar_treball_autocorreccio.md"
       - "1️⃣ Suport Repte 1":
           - "👀 Visió general": "04_materials/repte_01/index.md"
           - "✅ Checklist": "04_materials/repte_01/checklist.md"
