@@ -1,177 +1,107 @@
-# 🤖 Guia d'ús verificable de la IA
+# Ús de la IA: què pots fer i com demanar ajuda
 
-## 🎯 Finalitat
+**La IA pot ajudar-te a comprendre. La implementació de servidor i les proves del repte les has de fer tu.** Esta norma s’aplica als microreptes, al repte complet i a les ampliacions.
 
-Esta guia fixa un criteri comú perquè la IA es puga usar com a eina de suport dins del curs sense substituir comprensió, validació ni defensa tècnica.
+## Què està permés i què no
 
-La IA es considera una ferramenta habitual de treball, però només té valor real si el seu ús deixa rastre i es convertix en treball comprovat dins del teu repositori.
+| Situació | Criteri del mòdul |
+|---|---|
+| Demanar que t’explique teoria, sintaxi o un concepte amb un exemple menut diferent del repte | Permés. Contrasta-ho amb els apunts i comprova que ho entens. |
+| Mostrar el teu intent i demanar pistes, preguntes o possibles causes d’un error | Permés. Tu escrius i comproves la correcció. |
+| Demanar revisió del teu raonament, alternatives o casos límit que convé provar | Permés. Tu decideixes i escrius les proves. |
+| Millorar la redacció d’una explicació pròpia o ordenar l’AI log | Permés, sense inventar decisions, dubtes, proves ni resultats. |
+| Generar la presentació HTML/CSS completa | Permés dins dels límits explicats més avall. Cal registrar-ho. |
+| Demanar la solució del microrepte, el backend complet o una funcionalitat avaluable ja resolta | No permés, encara que després la lliges o canvies els noms. |
+| Demanar un esquelet que ja resolga la lògica avaluable, o generar-la per fragments fins a completar-la | No permés. Dividir la petició no canvia que estàs delegant el treball. |
+| Fer que un agent implemente, execute proves i corregisca el projecte fins que funcione | No permés. Tampoc si vas acceptant automàticament cada canvi. |
+| Inventar converses, proves, resultats o ocultar ajuda rebuda | No permés. |
 
-## ✅ Per a què sí la pots usar
+La norma depén de **l’ús**, no de la marca de la ferramenta. Un agent de programació en mode autònom no pot fer-te el repte. Un xat convencional tampoc pot donar-te la solució perquè l’entregues. Pots consultar conceptes en una ferramenta que també tinga funcions d’agent, mantenint desactivada la delegació del treball avaluable.
 
-La IA es pot usar per:
+## Primer comprén, després intenta i pregunta
 
-- generar esquelets o primers punts de partida
-- ajudar en debugging
-- proposar proves o casos límit
-- revisar documentació tècnica
-- comparar alternatives de disseny
-- explorar maneres diferents d'organitzar una solució
+1. **Llig la teoria i l’enunciat.** Identifica el concepte que necessites. Pots demanar una explicació abans de programar; no cal entendre-ho tot a la primera.
+2. **Explica amb les teues paraules què ha de passar.** Per exemple: què entra, què ha de comprovar el servidor i quin resultat esperes.
+3. **Fes un primer intent propi.** Pot ser codi incomplet, un esquema o una hipòtesi.
+4. **Pregunta sobre una dificultat concreta.** Inclou l’intent, el resultat esperat i el resultat observat; demana pistes, no la implementació.
+5. **Aplica tu el que has entés i comprova-ho.** Prova casos correctes i d’error. Si continues bloquejat, demana ajuda al professorat.
+6. **Registra l’ajuda rellevant.** Anota també què no has entés encara. Un dubte real és informació útil.
 
-## ⛔ Per a què no és acceptable
+## Exemples de preguntes adequades
 
-No s'ha d'usar com a substitut de:
+### Per comprendre la teoria
 
-- comprensió del codi o de la decisió tècnica
-- execució de proves o verificació real
-- defensa del treball davant professorat
-- lectura crítica de riscos, límits o impacte dels canvis
+> Estic aprenent sessions en PHP. Sense resoldre el meu repte, explica’m la diferència entre una sessió i una cookie amb un exemple menut diferent del projecte. Després fes-me dues preguntes per comprovar si ho he entés.
 
-Tampoc és acceptable:
+### Per passar de la teoria al problema
 
-- copiar codi o documentació sense entendre'ls
-- donar per bona una resposta només perquè sembla plausible
-- inventar proves o resultats no executats
-- ocultar que has usat IA
-- entregar una solució que no pots tocar, modificar ni explicar
+> He llegit els apunts de validació. Crec que el servidor ha de comprovar estes tres condicions: […]. Sense escriure’m la solució, ajuda’m a revisar el raonament i indica quin concepte hauria de repassar.
 
-## 🔄 Recorregut mínim quan uses IA
+### Per depurar un intent propi
 
-Qualsevol ús de IA hauria de seguir este recorregut:
+> Este és el meu codi: […]. Amb esta entrada espere […] però obtinc […]. Ja he provat […]. Dona’m una pista per identificar la causa, sense reescriure la funció ni mostrar-me la solució.
 
-1. formular una necessitat concreta
-2. revisar críticament la resposta
-3. adaptar-la al context real del teu projecte
-4. executar, provar o contrastar el resultat
-5. deixar rastre del que has acceptat i del que has descartat
+### Per pensar les comprovacions
 
-## 📝 AI log mínim recomanat
+> He implementat esta regla i ja he comprovat […]. Quins altres casos límit hauria de considerar? Explica per què, sense generar el codi de les proves.
 
-Quan la IA haja tingut un pes rellevant, convé deixar un registre mínim amb:
+### Peticions que no has de fer
 
-- tasca o problema treballat
-- objectiu de la consulta
-- pregunta o prompte literal que s'ha escrit a la IA
-- proposta acceptada o rebutjada
-- verificació aplicada
-- resultat final o canvi introduït
+- «Ací tens l’enunciat: fes-me tots els fitxers i deixa-ho preparat per entregar.»
+- «Implementa el login del meu projecte i escriu els tests.»
+- «Executa l’autocorrecció i modifica el codi fins que obtinga la màxima nota.»
+- «Inventa’m preguntes i errors per omplir l’AI log.»
 
-El lloc recomanat per deixar este rastre és:
+Escriure «sense donar-me la solució» no autoritza a usar una resposta que acaba resolent el repte. Si la IA es passa de l’ajuda demanada, no incorpores eixa solució: demana una explicació conceptual o una pista més limitada i deixa constància del que has descartat.
 
-```text
-docs/ai-log.md
-```
+## Excepció: HTML i CSS de presentació
 
-No cal copiar tota la conversa amb la IA. Sí que convé copiar el text exacte de la pregunta principal: ajuda a comprovar si la consulta estava ben enfocada i alineada amb l'objectiu. El que importa és deixar clar què t'ha aportat, què has decidit tu i com ho has comprovat.
+Pots generar amb IA la maquetació, els estils i l’HTML estàtic complet, perquè la presentació visual no és l’objectiu d’este mòdul. Revisa el resultat i identifica en l’AI log els fitxers generats.
 
-### Exemple curt d'entrada en `docs/ai-log.md`
+En un formulari, **tu has de decidir i entendre** els camps, `name`, `method`, `action` i com els rep el servidor. Una maquetació generada no acredita estos coneixements.
+
+L’excepció no inclou PHP incrustat en HTML, plantilles amb lògica de servidor, escapament de dades, validació, sessions, autenticació, persistència, APIs ni JavaScript que resolga funcionalitat avaluable. Estes parts i la configuració tècnica avaluable continuen sent treball teu.
+
+Exemple de petició permesa:
+
+> Genera només HTML estàtic i CSS per presentar este formulari. Jo he decidit els camps, els seus noms, el mètode i l’acció: […]. No afegisques PHP, JavaScript funcional, validació ni connexions a serveis. La lògica de servidor la faré jo.
+
+## Com omplir l’AI log
+
+Usa **`docs/ai-log.md`**; «AI log» o «ai.log» es referixen a este registre, no a un segon fitxer. No cal copiar tota la conversa ni duplicar-la en un report separat.
+
+Per cada consulta rellevant, registra:
+
+- Data i microrepte, ferramenta utilitzada.
+- Dubte i teoria consultada; intent propi abans de preguntar.
+- Pregunta principal literal.
+- Ajuda rebuda i qualsevol codi generat, indicant si l’has incorporat o descartat.
+- Decisió pròpia i fitxer o commit relacionat, si n’hi ha.
+- Comprovació real: passos o ordre, dades i resultat observat.
+- Dubtes que continuen oberts.
+
+**No és obligatori usar IA i no usar-la no penalitza.** Si el microrepte demana el registre i no l’has usada, escriu «No he utilitzat IA en R?M?» i indica les fonts que sí has consultat, si n’hi ha. No inventes consultes per omplir una plantilla. Una consulta conceptual pot enllaçar els apunts i una explicació pròpia; no necessita un commit de codi fictici.
+
+### Exemple d’entrada (il·lustratiu; no el copies com si fora teu)
 
 ```md
-## Consulta 1 - R2M7 - Classe per validar una regla del projecte
-
-- Objectiu de la consulta: separar una regla del flux en una classe simple i preparar una prova unitària.
-- Pregunta o prompte literal:
-
-```text
-Vull separar una regla de disponibilitat de reserves en una classe PHP simple i preparar una prova unitària mínima. Pots proposar-me una estructura inicial sense usar base de dades encara?
+## R2M1 — Dubte sobre un camp buit
+- Data i ferramenta: [data real i ferramenta usada].
+- Teoria consultada: apunts de validació d’entrada.
+- Intent propi: havia comprovat que el camp existia, però acceptava només espais.
+- Pregunta literal: «El meu formulari accepta un nom amb espais. He comprovat
+  que el camp existeix. Quina diferència conceptual hi ha entre existir i
+  tindre contingut útil? Dona’m una pista sense escriure la validació.»
+- Ajuda rebuda: distingir presència, normalització i contingut.
+- Decisió pròpia: he revisat la condició del meu validador; no he copiat codi.
+- Evidència: [ruta real del validador].
+- Comprovació: camp absent, cadena buida, tres espais i nom vàlid.
+  Els tres primers mostren error; el nom vàlid continua el flux.
+- Dubte pendent: encara he de revisar els límits de longitud.
 ```
 
-- Resum del suggeriment: la IA ha proposat una classe `ReservaService` amb un mètode per comprovar si hi ha places disponibles i un test bàsic amb dos casos.
-- Què s'ha acceptat: la idea de posar la regla en una classe i provar-la sense navegador.
-- Què s'ha rebutjat o modificat: he canviat els noms perquè encaixen amb el meu projecte i he eliminat la part que usava base de dades perquè encara no és el focus del microrepte.
-- Com s'ha verificat: he executat `composer dump-autoload`, la prova unitària i un cas del flux web que ja funcionava en `R2M6`.
-```
+## Com es comprova la comprensió
 
-Una entrada bona no ha de ser llarga. Ha de permetre entendre:
+El professorat pot demanar-te que expliques una decisió, reproduïsques una prova o faces una modificació menuda sense IA. Un registre ben redactat no demostra autoria per si sol: ha de correspondre al treball real.
 
-- quin problema volies resoldre;
-- quina pregunta concreta vas fer;
-- què va proposar la IA;
-- què has aprofitat, canviat o descartat;
-- quina prova o comprovació real has fet després.
-
-## 🔎 Com es comprovarà que l'AI log és real
-
-Un `AI log` ben escrit no demostra per si sol que entens el treball. També pot haver sigut redactat amb ajuda d'una IA. Per això el professorat no valorarà només la qualitat del text, sinó si el registre encaixa amb el teu repositori i amb la teua defensa tècnica.
-
-El teu `AI log` ha de poder contrastar-se amb:
-
-- commits del repositori;
-- fitxers concrets modificats;
-- proves executades;
-- errors trobats i corregits;
-- decisions que pots explicar;
-- canvis que pots fer en directe si se't demana.
-
-Si una entrada diu que has acceptat una proposta, has de poder ensenyar on està aplicada. Si diu que has rebutjat una alternativa, has de poder explicar per què. Si diu que has verificat un canvi, has de poder repetir o descriure la prova.
-
-### Què pot preguntar el professorat
-
-En una revisió o microdefensa, el professorat pot triar una entrada de l'`AI log` i demanar-te:
-
-- en quin fitxer està el canvi relacionat;
-- quin commit o part del procés correspon a eixa entrada;
-- quina part de la proposta vas acceptar i quina vas modificar;
-- quin error va aparéixer i com el vas resoldre;
-- quina prova demostra que funciona;
-- què passaria si canviàrem una condició, una dada o un cas de prova.
-
-La resposta ha d'eixir del teu projecte real, no d'una explicació genèrica.
-
-### Senyals d'alerta
-
-El professorat pot considerar que l'`AI log` no és una evidència suficient si:
-
-- apareix complet només al final i no té relació clara amb commits o canvis;
-- és massa genèric i podria servir per a qualsevol projecte;
-- diu que s'han fet proves però no hi ha cap rastre, captura, comanda, checklist o resultat;
-- no coincideix amb el codi entregat;
-- l'alumne no pot explicar la decisió que diu haver pres;
-- l'alumne no pot modificar o provar una part menuda del codi relacionat.
-
-En eixe cas, el problema no és haver usat IA per redactar millor el registre. El problema és que el registre no és verificable o no demostra autoria tècnica.
-
-### Regla curta
-
-Pots usar IA per ordenar o redactar millor l'`AI log`, però les decisions, proves, errors i explicacions han de correspondre amb el teu repositori real i has de poder defensar-les.
-
-## 👀 Quan convé deixar rastre de manera especialment clara
-
-Convé deixar AI log o rastre equivalent sobretot:
-
-- quan la IA ha generat codi que incorpores al repositori
-- quan t'ha ajudat a resoldre un error o una prova
-- quan ha influït en una decisió d'arquitectura, `API` o integració
-- quan l'has usada per redactar documentació que després entregues com a evidència
-
-## ⚠️ Errors habituals o riscos
-
-- copiar codi o documentació sense entendre'ls
-- confiar en respostes correctes en aparença però incompatibles amb el teu stack o amb el teu repte
-- donar per bones solucions no verificades
-- perdre capacitat de defensa tècnica perquè no saps què has acceptat realment
-- presentar com a criteri propi una decisió que no has revisat críticament
-
-## ✅ Checklist final
-
-- pots explicar el codi, la prova o la decisió assistida per IA
-- hi ha execució real o contrast tècnic del que has incorporat
-- el registre d'ús permet saber què ha aportat la IA
-- cada entrada important es pot relacionar amb fitxers, commits, proves o decisions concretes
-- la resposta de la IA s'ha adaptat al teu projecte i al teu repte reals
-- la IA s'ha usat com a suport, no com a substitut del treball tècnic
-- si la IA ha fallat o has descartat una proposta, això també pot quedar reflectit si aporta context útil
-- el resultat final continua sent defensable encara que desaparega el text original generat
-
-
-## 🌟 IA i ampliacions 9→10
-
-En les ampliacions `9→10`, la IA també es pot usar com a suport per contrastar enfocaments, revisar codi, suggerir proves o comparar alternatives.
-
-Però continua sense ser acceptable que substituïsca:
-
-- la decisió tècnica
-- la validació real
-- la prova funcional
-- la defensa de l'ampliació
-
-Si la IA ha tingut un paper rellevant en una ampliació, convé que això quede reflectit en el rastre o `AI log` corresponent.
+Abans d’entregar, comprova que pots explicar i modificar la lògica de servidor, que has executat les proves que declares i que has identificat l’ajuda rebuda, inclosa la generació d’HTML/CSS. Les mateixes regles s’apliquen a les ampliacions 9→10.

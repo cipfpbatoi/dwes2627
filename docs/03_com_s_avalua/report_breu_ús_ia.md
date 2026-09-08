@@ -1,116 +1,29 @@
-# Report breu d’ús de la IA
+# AI log
 
-Usa esta plantilla quan la IA haja tingut pes real en el treball que presentes. No cal fer-la per consultes menudes o trivials.
+Consulta primer la [guia d’ús de la IA](../04_materials/guia_us_verificable_ia.md). Usa un únic registre en `docs/ai-log.md`.
 
-El pots entregar com a report independent o mantindre'l dins del repositori en:
+No és obligatori usar IA. Si no l’has usada en el microrepte, substituïx l’entrada buida per: **«No he utilitzat IA en R?M?»**, amb les fonts consultades si n’hi ha. No inventes consultes ni proves.
 
-```text
-docs/ai-log.md
-```
+Duplica este bloc només per a consultes reals rellevants. Inclou també la generació permesa d’HTML/CSS; no cal copiar tota la conversa.
 
-No copies tota la conversa amb la IA. Sí que has de copiar el text exacte de la pregunta o prompte principal en les consultes rellevants, perquè es puga comprovar si estava alineat amb l'objectiu declarat. Resumeix després només les intervencions rellevants i deixa clara la teua verificació.
+## Consulta — R?M? — Títol breu
 
-Este report no compta només per estar ben redactat. Ha de poder contrastar-se amb el teu repositori: commits, fitxers, proves, errors corregits i decisions que pots explicar en una defensa curta.
-
-## Dades bàsiques
-
-- Nom i cognoms:
-- Repte / microrepte:
-- Data:
-- Projecte:
-
-## Bloc 1. En què he utilitzat la IA
-
-Marca el que toque.
-
-- [ ] Entendre el problema
-- [ ] Comparar opcions
-- [ ] Generar esquelet de codi
-- [ ] Corregir errors
-- [ ] Documentar
-- [ ] Pensar proves
-- [ ] Altra cosa:
-
-Resum breu del que necessitava:
-
-...
-
-Pregunta o prompte literal principal:
+- Data i ferramenta:
+- Dubte o objectiu:
+- Teoria o apunts consultats:
+- Intent propi abans de preguntar (codi, esquema o hipòtesi):
+- Pregunta principal literal:
 
 ```text
-...
+[Pregunta real enviada a la IA.]
 ```
 
-## Bloc 2. Què m’ha aportat
+- Ajuda rebuda (indica qualsevol codi generat):
+- Què he acceptat i què he descartat:
+- Què he decidit i implementat jo:
+- Fitxer, commit o apunts relacionats, si correspon:
+- Com ho he comprovat (passos o ordre, dades i resultat real):
+- Què puc explicar o modificar sense IA:
+- Dubtes pendents:
 
-Resum breu de la resposta o ajuda rebuda:
-
-...
-
-## Bloc 3. Què he aprofitat realment
-
-Marca el que toque.
-
-- [ ] Només la idea
-- [ ] Una part adaptada
-- [ ] Una proposta quasi completa
-- [ ] Altra situació:
-
-Què he incorporat finalment:
-
-...
-
-## Bloc 4. Què he validat jo
-
-Marca el que toque.
-
-- [ ] He provat el codi
-- [ ] He corregit errors
-- [ ] He revisat la lògica
-- [ ] He comparat amb documentació o apunts
-- [ ] Puc relacionar-ho amb un commit, fitxer o prova concreta
-- [ ] Altra validació:
-
-Explicació breu de com ho he comprovat:
-
-...
-
-## Bloc 5. Què puc explicar o defendre
-
-- Com funciona:
-- Què he canviat:
-- Quins errors he detectat:
-- Com ho provaria:
-- En quin fitxer o commit es veu:
-
-## Com es pot revisar
-
-El professorat pot triar una entrada d'este report i demanar-te que ensenyes:
-
-- el fitxer o fragment relacionat;
-- el commit o moment del procés;
-- la prova executada;
-- què vas acceptar de la IA;
-- què vas modificar o rebutjar;
-- què canviaries si apareix un cas nou.
-
-Si no pots relacionar el report amb el teu projecte real, el report no és una evidència suficient d'ús responsable de la IA.
-
-## Exemple d'entrada breu
-
-```md
-## Consulta 1 - R2M5 - Error en autenticació
-
-- Objectiu de la consulta: entendre per què el login sempre fallava encara que l'usuari existia.
-- Pregunta o prompte literal:
-
-```text
-Tinc un login en PHP on l'usuari existeix però sempre falla la comprovació de contrasenya. Pots ajudar-me a revisar possibles causes sense reescriure tot el sistema d'usuaris?
-```
-
-- Resum del suggeriment: la IA ha indicat que podia haver-hi un problema en la comparació de contrasenyes i ha proposat revisar `password_verify()`.
-- Què s'ha acceptat: he revisat el punt on comprovava la contrasenya i he canviat la comparació directa per `password_verify()`.
-- Què s'ha rebutjat o modificat: no he incorporat el sistema complet d'usuaris que proposava la IA perquè era massa ampli per al microrepte.
-- Com s'ha verificat: he provat login correcte, login amb contrasenya incorrecta i accés a la funcionalitat protegida sense sessió.
-- En quin fitxer o commit es veu: `src/auth.php` i commit `a1b2c3d`.
-```
+El report pot estar dins de `docs/ai-log.md`; no cal entregar-lo dues vegades. Trobaràs exemples complets de preguntes i d’entrada en la guia.

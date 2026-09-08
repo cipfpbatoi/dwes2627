@@ -118,7 +118,7 @@ No és suficient:
 
 La IA es pot usar com a ferramenta de suport.
 
-Et pot ajudar a explorar alternatives, detectar errors, generar un primer esquelet o proposar proves.
+Et pot explicar teoria, donar pistes sobre un intent propi i suggerir casos límit. No pot implementar el backend ni les proves per tu, tampoc mitjançant agents autònoms. Es permet generar HTML estàtic/CSS de presentació, amb registre i revisió.
 
 Però hi ha una condició clara: has de **validar, provar i defendre** el que presentes.
 

@@ -129,11 +129,13 @@ Per preparar l'entrega, la demo i la defensa breu, usa la [guia de presentació 
 La IA et pot ajudar, per exemple, a:
 
 - Explorar opcions tècniques.
-- Preparar un primer esquelet.
-- Proposar fitxers de Docker.
+- Comprendre l’estructura del projecte abans de preparar-la tu.
+- Explicar directives de Docker i donar pistes sobre la teua configuració.
 - Generar o millorar una landing inicial amb HTML i CSS.
 - Revisar `README.md` i les instruccions de reproducció.
 - Detectar errors de configuració.
+
+Aplica la [guia comuna d’IA](../04_materials/guia_us_verificable_ia.md): no delegues la implementació ni la configuració avaluable.
 
 El que no pots delegar és:
 
