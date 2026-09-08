@@ -134,3 +134,7 @@ Si ja hi ha PDF generats amb Gamma en `docs/recursos/`, s'han de revisar abans d
 - evidència de quins coneixements previs ja estan coberts.
 
 La còpia visible per a l'alumnat ha d'estar en `docs/recursos/`. El directori `presentacions/` queda com a espai intern per a instruccions, prompts, guions, inventaris i, si cal, versions de treball generades amb Gamma.
+
+## Revisió de setembre de 2026
+
+Consulta la [revisió de fonts i PDF des de juliol](revisio-des-de-juliol-2026.md) abans de regenerar presentacions. Per a MT19 tens les [instruccions concretes per a Gamma](tallers/mt19-instruccions-actualitzacio-gamma.md).
