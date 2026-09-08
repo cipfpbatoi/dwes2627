@@ -4,7 +4,7 @@
 
 Crear una presentacio inicial del curs per explicar a l'alumnat com funciona el modul abans d'entrar en `R1M1`: treball per reptes, producte evolutiu, evidencies, avaluacio, autoria, us verificable de la IA, primer mapa del producte i checkpoint inicial.
 
-La versio generada actual és `presentacions/presentacio/Benvinguda-al-curs.pdf`. Esta presentacio refon els quatre PDF antics:
+La còpia publicada que cal actualitzar és `docs/recursos/Presentacions/Benvinguda-al-curs.pdf`. Esta presentacio refon els quatre PDF antics:
 
 - `Com-funciona-el-curs.pdf`;
 - `Que-es-valorara-al-llarg-del-curs.pdf`;
@@ -51,8 +51,8 @@ El curs es basa en construir, provar, documentar i defensar un producte backend.
    - El repositori, les evidencies i la defensa son individuals.
    - Compartir decisions no substitueix explicar el propi treball.
 7. **Repositori individual del curs**
-   - En `R1S1` el professorat dona l'enllac de GitHub Classroom.
-   - L'alumnat accepta l'encarrec, clona el repositori individual creat per Classroom i fa un primer `push`.
+   - En `R1S1` el professorat crea el repositori individual i convida l’alumne com a col·laborador.
+   - L’alumnat accepta la invitació, fa `git clone` del repositori assignat una sola vegada i prepara el primer treball en `microrepte/r1m1`.
    - No s'ha de clonar el repositori base directament ni crear un repositori nou.
    - Eixe mateix repositori s'usa de `R1` a `R5`.
    - `README.md` es modifica en cada microrepte; `ENTREGA.md` conserva les instruccions base del repositori.
@@ -75,9 +75,9 @@ El curs es basa en construir, provar, documentar i defensar un producte backend.
    - Defensa individual curta i concreta.
    - Us responsable de la IA quan aparega.
 11. **Paper de la IA**
-   - Pot ajudar a idear, depurar, revisar o proposar proves.
-   - No pot substituir la validacio ni l'autoria.
-   - L'alumnat ha de poder explicar que ha acceptat, que ha descartat i com ho ha comprovat.
+   - Primer teoria, després intent propi, pregunta concreta, implementació i comprovació pròpies.
+   - Es permeten explicacions, pistes i casos límit. No es pot delegar backend, configuració avaluable ni proves en agents o xats, encara que després s’entenguen.
+   - Es permet generar HTML estàtic/CSS de presentació, sense PHP ni lògica funcional. Guia i report units en `docs/ai-log.md`; declarar no ús és vàlid i no penalitza.
 12. **Projectes base recomanats**
    - Opcio mes equilibrada: gestor d'incidencies amb seguiment.
    - Opcio molt clara per a regles i estats: sistema de reserves.
@@ -90,20 +90,20 @@ El curs es basa en construir, provar, documentar i defensar un producte backend.
    - Camps: producte, usuari principal, necessitat real, primera accio util, dades minimes i risc inicial.
 14. **Checkpoint inicial**
     - No es revisa codi encara.
-    - Es comprova repositori Classroom acceptat i clonat, `README.md`, criteri d'evidencies i preparacio per a `R1M1`.
+    - Abans de `R1S1`, es comprova el mapa del producte i que s’entén on aniran les evidències; no s’exigix haver clonat un repositori que encara no s’ha assignat. En `R1S1` es comproven invitació acceptada, clonació i `README.md`.
     - Cada alumne ha de poder explicar el producte i la primera accio real.
 15. **Errors habituals**
     - Dir "fare una web" sense producte concret.
     - Plantejar nomes un CRUD generic.
     - No saber on quedaran les evidencies.
-    - Clonar el repositori base en lloc del repositori individual de Classroom.
+    - Clonar el repositori base en lloc del repositori individual assignat pel professorat.
     - Confondre ajuda d'IA amb autoria.
     - Arribar a `R1S1` sense decisio inicial de producte.
 16. **Checklist final**
     - Puc explicar el producte en una frase.
     - Se qui l'usara primer.
     - Tinc una primera accio real.
-    - Tinc repositori Classroom individual clonat i `README.md` ubicat.
+    - Sé que en `R1S1` acceptaré la invitació, clonaré el repositori assignat i prepararé el `README.md`.
     - Se com es valorara i com he de defensar el treball.
 
 ## Format recomanat
@@ -122,3 +122,47 @@ El curs es basa en construir, provar, documentar i defensar un producte backend.
 - Rubriques completes.
 - Contingut propi de `R1M1` o `R1M2`.
 - Els PDF antics com a quatre presentacions separades. La versio nova ha de ser una presentacio inicial unica i coherent.
+
+## Procediment Git que ha de mostrar Gamma
+
+El professorat crea el repositori i convida l’alumne. No s’usa GitHub Classroom ni es clona la plantilla. Només hi ha `main` i una branca per microrepte; no crear branques de repte ni exigir pull requests.
+
+Una vegada acceptada la invitació, clonar la URL real del repositori assignat i entrar en la carpeta. No copiar una URL d’exemple com si fora la pròpia.
+
+Des de la còpia local, amb el treball anterior guardat:
+
+```bash
+git switch main
+git pull --ff-only origin main
+git switch -c microrepte/r1m1
+```
+
+Treballar, comprovar i guardar només els fitxers de l’entrega amb `git add` i `git commit`. Pujar la branca:
+
+```bash
+git push -u origin microrepte/r1m1
+```
+
+Per entregar, integrar el treball personalment:
+
+```bash
+git switch main
+git pull --ff-only origin main
+git merge --no-edit microrepte/r1m1
+git push origin main
+```
+
+L’autocorrecció llig `main`: pujar només la branca del microrepte no completa l’entrega. Conservar les branques anteriors per consultar-les. Per reprendre un microrepte ja començat, usar `git switch microrepte/r1m1`, sense tornar a crear-lo. Davant d’un conflicte, demanar ajuda; no forçar ni descartar treball.
+
+## Retorn, consolidació i ús d’IA
+
+Els microreptes són treball d’aula consecutiu. El retorn i la correcció guiada ajuden a continuar el projecte; no són una recuperació ni una nova qualificació individual del microrepte. Només es recupera el repte complet segons el procediment docent. Les fitxes de consolidació es consulten quan el professorat les publique.
+
+La IA pot explicar teoria i donar pistes sobre un intent propi. No pot implementar la configuració avaluable, el backend ni les proves en lloc de l’alumne. L’excepció d’HTML/CSS es limita a presentació estàtica: camps, `name`, `method`, `action` i processament s’han d’entendre i decidir personalment. Registre únic en `docs/ai-log.md`, amb guia i apartat «El meu registre». Si no hi ha ús d’IA, declarar-ho sense inventar consultes.
+
+## Fonts vigents i exportació
+
+- [Repositori, branques i entrega](../../docs/04_materials/guia_pujar_treball_autocorreccio.md).
+- [Norma d’ús d’IA](../../docs/04_materials/guia_us_verificable_ia.md).
+
+Mostrar els passos Git amb un esquema breu i deixar les ordres completes en notes si cal. No afegir solucions del microrepte. Després d’actualitzar Gamma, exportar i substituir el PDF corresponent de `docs/recursos/`; editar el brief no actualitza el PDF.

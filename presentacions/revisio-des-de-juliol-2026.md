@@ -24,8 +24,8 @@ Onze briefs de presentacions existents tenen canvis de contingut anteriors a est
 
 | Presentació i font | Últim canvi de font abans d’esta revisió | Què ha canviat / acció | PDF |
 |---|---|---|---|
-| [R1M1](microreptes/r1m1.md) | 2026-08-23 (db7c4c1) | Decisió tècnica orientativa i preparació del repositori. Corregir abans les referències a Classroom. | [PDF](../docs/recursos/Repte1/R1M1-Model-clientservidor-i-eleccio-guiada-de-stack.pdf) |
-| [R1M2](microreptes/r1m2.md) | 2026-09-06 (48b15b8) | Landing obligatòria servida pel backend i ampliació global. Corregir abans Classroom. | [PDF](../docs/recursos/Repte1/R1M2-Entorn-executable-punt-dentrada-i-tancament-de-R1.pdf) |
+| [R1M1](microreptes/r1m1.md) | 2026-08-23 (db7c4c1) | Decisió tècnica orientativa i preparació del repositori. Font corregida el 8 de setembre: invitació docent i clonació. | [PDF](../docs/recursos/Repte1/R1M1-Model-clientservidor-i-eleccio-guiada-de-stack.pdf) |
+| [R1M2](microreptes/r1m2.md) | 2026-09-06 (48b15b8) | Landing obligatòria servida pel backend i ampliació global. Font corregida el 8 de setembre: invitació docent i clonació. | [PDF](../docs/recursos/Repte1/R1M2-Entorn-executable-punt-dentrada-i-tancament-de-R1.pdf) |
 | [R2M2](microreptes/r2m2.md) | 2026-08-29 (7c9d222) | Abast del mínim: arrays d’errors no obligatoris ací, possibles després. Revisar també el PDF: tracta fitxers com a prohibits i esmenta sessió bàsica. | [PDF](../docs/recursos/Repte2/R2M2-Processament-reintent-i-guardat-funcional.pdf) |
 | [R2M3](microreptes/r2m3.md) | 2026-08-29 (cf64993) | Array d’errors com a ampliació guiada, després de la regla de domini mínima. | [PDF](../docs/recursos/Repte2/R2M3-Logica-del-flux-i-regles-del-projecte.pdf) |
 | [R2M9](microreptes/r2m9.md) | 2026-09-06 (48b15b8) | Ampliació única del repte complet, separada de la nota del microrepte. | [PDF](../docs/recursos/Repte2/R2M9-Persistencia-minima-amb-BBDD-en-PHP.pdf) |
@@ -42,7 +42,7 @@ En els cinc tancaments (`R1M2`, `R2M9`, `R3M7`, `R4M5`, `R5M5`) la font especifi
 
 [Benvinguda / curs](reptes/curs.md) és una font nova del 21 d’agost, no existia en juliol. El PDF de benvinguda també es va publicar en agost: això no significa que continue alineat amb setembre. La diapositiva d’IA conserva el criteri general de generar, validar i assumir responsabilitat; falta la norma explícita nova.
 
-Abans de regenerar-la cal actualitzar la font de benvinguda, que encara esmenta Classroom. Ha d’explicar invitació del professorat i `git clone`, `main` més una branca per microrepte, merge senzill, retorn/consolidació d’aula i recuperació només del repte complet. No s’han fet eixos canvis de font en esta iteració.
+La font de benvinguda s’ha corregit el 8 de setembre per explicar invitació del professorat i `git clone`, `main` més una branca per microrepte, merge senzill, retorn/consolidació d’aula i recuperació només del repte complet. Les fonts de Benvinguda, R1M1 i R1M2 ja incorporen estos canvis; els PDF continuen pendents de regenerar.
 
 En `dwes-restructuracio-modul/docs/07_presentacions/` també han canviat:
 
@@ -54,7 +54,7 @@ No són tres PDF addicionals a comptar: corresponen a les presentacions de curs,
 
 ## Fonts que necessiten revisió abans de tornar a Gamma
 
-Una font sense canvis en Git pot haver quedat desactualitzada perquè ha canviat la norma comuna. S’ha comprovat que `reptes/curs.md`, `microreptes/r1m1.md` i `microreptes/r1m2.md` encara contenen Classroom. No s’han de regenerar literalment amb eixe criteri antic.
+Una font sense canvis en Git pot haver quedat desactualitzada perquè ha canviat la norma comuna. Les referències antigues de `reptes/curs.md`, `microreptes/r1m1.md` i `microreptes/r1m2.md` s’han corregit el 8 de setembre. Ara especifiquen invitació docent, una branca per microrepte, merge a main i la norma vigent d’IA; ja es poden usar per actualitzar Gamma.
 
 Per a qualsevol presentació que parle d’IA, aplicar la [guia vigent](../docs/04_materials/guia_us_verificable_ia.md), encara que el brief no haja canviat. Per a Git i entregues, consultar la [guia d’entrega vigent](../docs/04_materials/guia_pujar_treball_autocorreccio.md). Les referències antigues a esquelets o codi assistit no autoritzen delegar el backend.
 
@@ -67,7 +67,7 @@ La resta de briefs de repte, microrepte, teoria i tallers no presenta diferènci
 ## Ordre de treball recomanat
 
 1. MT19, amb les fonts i el text per a Gamma ja preparats.
-2. Benvinguda i R1M1/R1M2, corregint primer Classroom i els criteris transversals de les fonts.
+2. Benvinguda i R1M1/R1M2, amb les fonts corregides el 8 de setembre.
 3. Tancaments R2M9, R3M7, R4M5 i R5M5: ampliació global.
 4. R1 i teoria de stack/entorn: landing; R2M2/R2M3: límits de validació i ampliació.
 5. Teoria HTML/PHP: revisió puntual del context inicial.
