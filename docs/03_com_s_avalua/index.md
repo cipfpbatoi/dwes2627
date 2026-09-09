@@ -28,7 +28,7 @@ Pot ser, per exemple:
 - Documentació tècnica.
 - Una demo o una execució reproduïble.
 - Una defensa tècnica.
-- `Report breu d’ús de la IA` o registre equivalent, quan corresponga.
+- Registre d’ús de la IA, quan corresponga.
 
 Les evidències no servixen per decorar l’entrega. Servixen perquè es puga revisar el teu treball real.
 
@@ -59,7 +59,7 @@ Per exemple:
 - Documentació de decisions.
 - Comparació entre versions.
 - Comparació breu abans/després de la revisió final de codi del `Repte 2`.
-- `Report breu d’ús de la IA`, si la IA ha tingut pes rellevant.
+- Registre d’ús de la IA, si la IA ha tingut pes rellevant.
 
 ### 🧠 Evidències de comprensió
 
@@ -106,39 +106,11 @@ La nota d'un repte no s'ha de llegir només com una mitjana única. Un mateix re
 
 Els tallers, microdefenses, ampliacions i checkpoints poden condicionar la revisió docent, però no generen una nota RA pròpia si no indiquen explícitament un **RA avaluat**.
 
-## 🕒 Temps de treball, commits i traçabilitat
+## 🔄 Traçabilitat del treball
 
-No es controlarà el temps amb un cronòmetre. El temps de treball es revisarà com a **evidència de procés**, junt amb commits, issues, proves, documentació i defensa.
+Els commits, issues, proves i notes de decisions poden ajudar a entendre l’evolució del treball.
 
-Per cada microrepte has de deixar una traça mínima:
-
-| Moment | Evidència esperada | Exemple de commit |
-|---|---|---|
-| Inici | estructura, primer intent o decisió inicial | `R2M3 inici regla de domini` |
-| Progrés | canvi funcional parcial | `R2M3 afegeix funcio calcularPrioritat` |
-| Prova o tancament | comprovació, correcció, `README.md` o checklist | `R2M3 prova casos valid i invalid` |
-
-Com a criteri general, cada microrepte hauria de tindre **almenys 3 commits significatius**. No compten com a commits significatius els canvis buits, massius o amb missatges genèrics com `canvis`, `final`, `coses` o `update`.
-
-En `README.md`, issue del microrepte o registre equivalent, has d'indicar el temps aproximat:
-
-```md
-## R2M3
-
-- Inici: 2026-10-14 09:10
-- Final: 2026-10-14 11:35
-- Temps aproximat: 2h 25m
-- Commits relacionats:
-  - a1b2c3d R2M3 inici regla de domini
-  - e4f5g6h R2M3 afegeix funcio calcularPrioritat
-  - i7j8k9l R2M3 prova casos valid i invalid
-- Què he fet:
-- Què m'ha costat:
-- Què he comprovat:
-- IA usada, si aplica:
-```
-
-El temps declarat no dona punts per si sol. Servix per detectar si el procés és coherent. Si hi ha un únic commit enorme al final, temps declarat poc creïble, falta de proves o explicacions genèriques, el professorat podrà demanar una defensa més concreta o un microcanvi en directe.
+La traça ha de ser coherent amb el microrepte i permetre identificar els canvis importants, les comprovacions realitzades i les correccions, sense convertir el recompte de commits en un criteri d’avaluació.
 
 ## 🧪 Recursos de verificació
 
@@ -164,37 +136,15 @@ El que es valorarà és si pots:
 - Corregir-lo si falla.
 - Defendre el que presentes.
 
-### 📝 Report breu d’ús de la IA
+### 📝 Guia i registre d’ús de la IA
 
-Quan la IA haja influït de manera rellevant en el treball que presentes, has d’entregar el [Report breu d’ús de la IA](report_breu_ús_ia.md).
-
-S’ha d’entregar:
-
-- Almenys al final de cada repte.
-- També es pot demanar en checkpoints importants.
-- En defenses tècniques.
-- En microreptes amb ús intensiu d’IA.
-- En situacions en què calga verificar millor l’autoria.
-
-No cal:
-
-- Fer un report per cada consulta menuda o trivial.
-- Registrar cada ús menor.
-- Omplir-lo si la IA no ha afectat de manera rellevant el treball presentat.
-
-La idea és deixar un rastre breu del que has demanat, del que has aprofitat realment i del que pots explicar o defendre després. En les consultes rellevants, copia també la pregunta o prompte literal que has escrit a la IA; això permet comprovar si la consulta estava alineada amb l'objectiu.
-
-El format recomanat és un fitxer del repositori anomenat `docs/ai-log.md`. Cada entrada hauria d'incloure: objectiu de la consulta, pregunta o prompte literal, resum del suggeriment, què has acceptat, què has rebutjat o modificat, com ho has verificat i en quin fitxer, commit o prova es pot veure. En la pàgina del report tens una plantilla i un exemple omplit.
-
-Un `AI log` ben escrit no acredita autoria per si sol. Es revisarà junt amb commits, codi, proves i defensa curta. Si el registre és genèric, no coincideix amb el repositori o no el pots explicar, no comptarà com a evidència suficient d'ús responsable de la IA.
+Consulta la [Guia d’ús verificable de la IA](../04_materials/guia_us_verificable_ia.md). És l’única referència per saber què està permés i com registrar les consultes rellevants en `docs/ai-log.md`; no has d’entregar un report separat.
 
 ## 🤝 Treball cooperatiu i autoria individual
 
 El curs pot tindre treball cooperatiu, però l’avaluació continua sent individual.
 
 La modalitat base és la de **parelles de contrast tècnic**.
-
-De manera puntual es poden donar **trios avançats**, però no són la forma general de treball.
 
 Es pot compartir:
 
@@ -210,7 +160,7 @@ Però continuen sent individuals:
 - Les evidències.
 - La defensa.
 
-Això vol dir que no et pots amagar darrere del treball de la parella o del trio. Has de poder explicar i defensar la teua part.
+Això vol dir que no et pots amagar darrere del treball de la parella. Has de poder explicar i defensar la teua part.
 
 ## 🎓 Checkpoints i defenses
 

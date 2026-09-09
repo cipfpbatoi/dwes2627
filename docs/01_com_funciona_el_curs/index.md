@@ -81,8 +81,6 @@ La cooperació és possible, però no substituïx l’autoria individual.
 
 El model base de treball és el de **parelles de contrast tècnic**.
 
-En alguns casos es poden obrir **trios avançats**, però només com a possibilitat puntual, no com a modalitat general.
-
 Es pot compartir parcialment:
 
 - El mateix projecte.

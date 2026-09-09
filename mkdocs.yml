@@ -74,7 +74,6 @@ nav:
           - "R5M3. Mapping i transformació": "03_com_s_avalua/rubriques/r5m3.md"
           - "R5M4. Funcionalitat híbrida": "03_com_s_avalua/rubriques/r5m4.md"
           - "R5M5. Prova i defensa": "03_com_s_avalua/rubriques/r5m5.md"
-      - "📝 Report breu d'ús de la IA": "03_com_s_avalua/report_breu_ús_ia.md"
   - "⚡ Recursos ràpids": "06_recursos_rapid/index.md"
 theme:
   language: ca

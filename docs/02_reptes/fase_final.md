@@ -18,7 +18,7 @@
 
 ## Regla curta de defensa
 
-Encara que hages treballat en parella de contrast tècnic o en un trio avançat, la defensa continua sent individual.
+Encara que hages treballat en parella de contrast tècnic, la defensa continua sent individual.
 
 Has de poder:
 
