@@ -107,7 +107,7 @@ Has de muntar i tancar una base inicial amb:
 - Docker o equivalent.
 - PHP.
 - Servidor web.
-- Base de dades i phpMyAdmin quan el model docent ho demane.
+- Base de dades i phpMyAdmin, si s'indica per al teu projecte.
 - Estructura mínima del projecte.
 - Una landing inicial del projecte, servida pel backend, amb contingut propi i CSS senzill.
 - Una ruta tècnica de comprovació, com `/health`, si t'ajuda a demostrar que l'entorn respon.

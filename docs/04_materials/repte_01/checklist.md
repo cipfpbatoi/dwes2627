@@ -1,4 +1,4 @@
-# Checklist d'alumnat per a R1
+# Checklist de R1
 
 Usa esta llista abans de dir que tens `R1` tancat.
 

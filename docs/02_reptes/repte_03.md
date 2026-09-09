@@ -89,7 +89,7 @@ Guies d'avaluació:
 Suport ràpid:
 
 - [Suport tècnic mínim](../04_materials/repte_03/suport_tecnic.md)
-- [Checklist d'alumnat](../04_materials/repte_03/checklist.md)
+- [Checklist de R3](../04_materials/repte_03/checklist.md)
 
 Diapositives de suport:
 

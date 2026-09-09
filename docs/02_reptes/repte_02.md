@@ -509,7 +509,7 @@ Este microrepte no vol dir:
 - consumir una API externa com a mínim obligatori
 - substituir el treball propi de `R3`
 
-Si després d’esta peça afegixes més classes, una llibreria externa menuda via Composer o una crida a una API externa, això s’ha d’entendre com a ampliació o pont cap als reptes següents, no com a exigència central per a tot l’alumnat dins de `R2`.
+Si després d’esta peça afegixes més classes, una llibreria externa menuda via Composer o una crida a una API externa, això s’ha d’entendre com a ampliació o pont cap als reptes següents, no com a requisit obligatori de `R2`.
 
 **Què no es penalitza encara**
 

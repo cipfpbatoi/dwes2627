@@ -1,4 +1,4 @@
-# Checklist d'alumnat per a R5
+# Checklist de R5
 
 Usa esta llista abans de dir que tens `R5` tancat.
 

@@ -1,6 +1,6 @@
 # 🏠 Inici
 
-Esta és la porta d'entrada del curs per a alumnat. Des d'ací has d'arribar ràpidament al lloc correcte, no rellegir la mateixa explicació en diverses pàgines.
+Esta és la teua porta d'entrada al curs. Des d'ací has d'arribar ràpidament al lloc correcte, no rellegir la mateixa explicació en diverses pàgines.
 
 ## 🧭 On vols anar?
 

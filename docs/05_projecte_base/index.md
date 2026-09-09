@@ -118,7 +118,7 @@ Es poden acceptar altres projectes si mantenen la mateixa exigència tècnica i 
 | Biblioteca o préstec de recursos digitals/físics | Ha de gestionar préstecs, devolucions, restriccions, historial i API consultable. |
 | Sistema de cites o torns | Ha de tindre validació de franges, confirmació, cancel·lació i usuari responsable. |
 | Seguiment de tasques d'un equip | Ha d'anar més enllà d'un `todo`: estats, responsables, permisos, historial i evidències. |
-| Projecte triat per l'alumnat | Ha de complir les condicions mínimes comunes del curs i ha de ser validat pel professorat abans de començar. |
+| Projecte proposat per tu | Ha de complir les condicions mínimes comunes del curs i l'has d'acordar amb el professorat abans de començar. |
 
 Esta opció oberta no és una invitació a fer qualsevol tema. El projecte ha de tindre dades, regles, estat, autoria, permisos, persistència, API, integració i defensa possible.
 

@@ -1,4 +1,4 @@
-# Checklist d'alumnat per a R3
+# Checklist de R3
 
 Usa estes llistes abans de dir que tens `R3` tancat.
 

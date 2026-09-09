@@ -1,6 +1,6 @@
 # 🌟 Ampliacions d'excel·lència 9→10
 
-Les ampliacions `9→10` són una via d'excel·lència tècnica per a l'alumnat que ja ha resolt bé el nucli d'un repte.
+Si ja has resolt bé el nucli d'un repte, les ampliacions `9→10` et permeten aprofundir i demostrar excel·lència tècnica.
 
 ## Per a què servixen
 
