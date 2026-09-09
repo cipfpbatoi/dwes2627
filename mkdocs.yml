@@ -23,9 +23,7 @@ nav:
       - "📝 Fitxa d'exploració tècnica inicial": "04_materials/fitxa_exploracio_tecnica_inicial.md"
       - "Fitxes després de classe": "04_materials/consolidacio/index.md"
       - "Repositori, branques i entrega": "04_materials/guia_pujar_treball_autocorreccio.md"
-      - "📏 Com s'avalua":
-          - "👀 Visió general": "03_com_s_avalua/index.md"
-          - "Consolidació i recuperació del repte": "04_materials/guia_consolidacio_i_recuperacio_repte.md"
+      - "📏 Com s'avalua": "03_com_s_avalua/index.md"
       - "📋 Guies d'avaluació":
           - "👀 Visió general": "03_com_s_avalua/rubriques/index.md"
           - "R1M1. Model client/servidor i stack": "03_com_s_avalua/rubriques/r1m1.md"
@@ -58,21 +56,16 @@ nav:
           - "R5M5. Prova i defensa": "03_com_s_avalua/rubriques/r5m5.md"
       - "1️⃣ Suport Repte 1":
           - "👀 Visió general": "04_materials/repte_01/index.md"
-          - "✅ Checklist": "04_materials/repte_01/checklist.md"
       - "2️⃣ Suport Repte 2":
           - "👀 Visió general": "04_materials/repte_02/index.md"
           - "PHP i HTML: pràctica R2S0": "04_materials/repte_02/practica_php_html.md"
-          - "✅ Checklist": "04_materials/repte_02/checklist.md"
       - "3️⃣ Suport Repte 3":
           - "👀 Visió general": "04_materials/repte_03/index.md"
           - "🛠️ Suport tècnic": "04_materials/repte_03/suport_tecnic.md"
-          - "✅ Checklist": "04_materials/repte_03/checklist.md"
       - "4️⃣ Suport Repte 4":
           - "👀 Visió general": "04_materials/repte_04/index.md"
-          - "✅ Checklist": "04_materials/repte_04/checklist.md"
       - "5️⃣ Suport Repte 5":
           - "👀 Visió general": "04_materials/repte_05/index.md"
-          - "✅ Checklist": "04_materials/repte_05/checklist.md"
   - "🛠️ Tallers": "recursos/tallers.md"
   - "⚡ Recursos ràpids": "06_recursos_rapid/index.md"
 theme:

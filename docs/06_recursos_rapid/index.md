@@ -24,9 +24,9 @@ Esta pàgina és només un accés directe. Si necessites explicació, usa [Com f
 | buscar diapositives | [Diapositives PDF](../recursos/index.md) |
 | consultar tallers | [Tallers](../recursos/tallers.md) |
 | revisar ús d'IA | [Guia d'ús verificable de la IA](../04_materials/guia_us_verificable_ia.md) |
-| passar checklist de tancament | [R1](../04_materials/repte_01/checklist.md), [R2](../04_materials/repte_02/checklist.md), [R3](../04_materials/repte_03/checklist.md), [R4](../04_materials/repte_04/checklist.md), [R5](../04_materials/repte_05/checklist.md) |
+| passar checklist de tancament | [R1](../04_materials/repte_01/index.md#checklist-de-r1), [R2](../04_materials/repte_02/index.md#checklist-de-r2), [R3](../04_materials/repte_03/index.md#checklist-de-r3), [R4](../04_materials/repte_04/index.md#checklist-de-r4), [R5](../04_materials/repte_05/index.md#checklist-de-r5) |
 
 ## Enllaços de R3
 
 - [Suport tècnic de R3](../04_materials/repte_03/suport_tecnic.md)
-- [Checklist de R3](../04_materials/repte_03/checklist.md)
+- [Checklist de R3](../04_materials/repte_03/index.md#checklist-de-r3)
