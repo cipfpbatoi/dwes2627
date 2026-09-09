@@ -3,6 +3,7 @@
 | Necessite... | Recurs |
 |---|---|
 | veure l'enunciat | [Repte 4](../../02_reptes/repte_04.md) |
+| consultar com s'avalua cada microrepte | [Guies d'avaluació de R4](../../03_com_s_avalua/rubriques/index.md#repte-4) |
 | comprovar el tancament de R4 | [Checklist de R4](checklist.md) |
 | repassar el mapa general de R4 | [R4. API pròpia, consum i documentació](../../recursos/Repte4/R4-API-propia-consum-i-documentacio.pdf) |
 | repassar disseny del contracte del servei | [R4M1. Disseny del contracte del servei](../../recursos/Repte4/R4M1-Disseny-del-contracte-del-servei.pdf) |

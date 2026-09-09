@@ -4,6 +4,7 @@
 |---|---|
 | practicar PHP i HTML en R2S0 | [Bateria de 7 exercicis](practica_php_html.md) |
 | veure l'enunciat | [Repte 2](../../02_reptes/repte_02.md) |
+| consultar com s'avalua cada microrepte | [Guies d'avaluació de R2](../../03_com_s_avalua/rubriques/index.md#repte-2) |
 | registrar proves i tancament de R2 | [Checklist de R2](checklist.md) |
 | repassar el mapa general de R2 | [R2. Processament, estat i autenticació](../../recursos/Repte2/R2-Processament-estat-i-autenticacio.pdf) |
 | repassar entrada i validació | [R2M1. Entrada variada i validació bàsica](../../recursos/Repte2/R2M1-Entrada-variada-i-validacio-basica.pdf) |

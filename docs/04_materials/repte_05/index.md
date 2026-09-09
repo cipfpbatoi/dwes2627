@@ -3,6 +3,7 @@
 | Necessite... | Recurs |
 |---|---|
 | veure l'enunciat | [Repte 5](../../02_reptes/repte_05.md) |
+| consultar com s'avalua cada microrepte | [Guies d'avaluació de R5](../../03_com_s_avalua/rubriques/index.md#repte-5) |
 | comprovar el tancament de R5 | [Checklist de R5](checklist.md) |
 | repassar el mapa general de R5 | [R5. Integració híbrida i defensa final](../../recursos/Repte5/R5-Integracio-hibrida-i-defensa-final.pdf) |
 | repassar selecció de font externa i disseny | [R5M1. Selecció de font externa i disseny de la integració](../../recursos/Repte5/R5M1-Seleccio-de-font-externa-i-disseny-de-la-integracio.pdf) |

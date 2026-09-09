@@ -112,16 +112,6 @@ Els commits, issues, proves i notes de decisions poden ajudar a entendre l’evo
 
 La traça ha de ser coherent amb el microrepte i permetre identificar els canvis importants, les comprovacions realitzades i les correccions, sense convertir el recompte de commits en un criteri d’avaluació.
 
-## 🧪 Recursos de verificació
-
-Si estàs tancant el `Repte 2`, tens una [checklist de proves](../04_materials/repte_02/checklist.md) que et pot ajudar a registrar casos de prova, errors visibles, estat, autenticació i funcionalitat protegida.
-
-Esta checklist és una ajuda útil per provar el repte i deixar una evidència de verificació, però no substituïx la demo ni la defensa tècnica.
-
-En `R2S8`, una evidència bona és `composer.json` o equivalent, una classe simple del domini o servei, una prova unitària mínima executada i una comprovació que el flux web continua funcionant. En `R2S9`, la persistència mínima amb BBDD ha de quedar reproduïble.
-
-No es tracta encara d’una reescriptura completa, ni de convertir-ho tot a objectes, ni d’anticipar tot `R3`.
-
 ## 🤖 Ús de la IA i avaluació
 
 En este curs es dona per fet que usaràs la IA de manera habitual.

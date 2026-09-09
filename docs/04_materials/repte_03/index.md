@@ -3,6 +3,7 @@
 | Necessite... | Recurs |
 |---|---|
 | veure l'enunciat | [Repte 3](../../02_reptes/repte_03.md) |
+| consultar com s'avalua cada microrepte | [Guies d'avaluació de R3](../../03_com_s_avalua/rubriques/index.md#repte-3) |
 | ubicar rutes, controladors, models, BBDD, migracions o proves | [Suport tècnic mínim](suport_tecnic.md) |
 | comprovar el tancament de R3 | [Checklist de R3](checklist.md) |
 | repassar el mapa general de R3 | [R3. Framework, arquitectura i persistència real](../../recursos/Repte3/R3-Framework-arquitectura-i-persistencia-real.pdf) |
