@@ -52,7 +52,7 @@ A partir d’eixe moment, el mateix projecte i el mateix encàrrec funcional pod
 - `Symfony`.
 - `NestJS`.
 
-`FastAPI` no és un itinerari base general per a alumnat. Només pot aparéixer com a opció avançada o excepcional.
+Si vols treballar amb `FastAPI`, acorda-ho abans amb el professorat. És una opció reservada per a casos amb prou autonomia tècnica.
 
 ## 🧱 Mateix projecte, diferents fases
 
