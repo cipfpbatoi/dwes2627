@@ -22,9 +22,10 @@ nav:
       - "👀 Visió general": "04_materials/index.md"
       - "📝 Fitxa d'exploració tècnica inicial": "04_materials/fitxa_exploracio_tecnica_inicial.md"
       - "Fitxes després de classe": "04_materials/consolidacio/index.md"
-      - "Consolidació i recuperació del repte": "04_materials/guia_consolidacio_i_recuperacio_repte.md"
       - "Repositori, branques i entrega": "04_materials/guia_pujar_treball_autocorreccio.md"
-      - "📏 Com s'avalua": "03_com_s_avalua/index.md"
+      - "📏 Com s'avalua":
+          - "👀 Visió general": "03_com_s_avalua/index.md"
+          - "Consolidació i recuperació del repte": "04_materials/guia_consolidacio_i_recuperacio_repte.md"
       - "📋 Guies d'avaluació":
           - "👀 Visió general": "03_com_s_avalua/rubriques/index.md"
           - "R1M1. Model client/servidor i stack": "03_com_s_avalua/rubriques/r1m1.md"
