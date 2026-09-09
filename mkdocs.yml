@@ -20,7 +20,6 @@ nav:
       - "🎓 Tancament i defensa": "02_reptes/fase_final.md"
   - "📚 Guies de suport":
       - "👀 Visió general": "04_materials/index.md"
-      - "📝 Fitxa d'exploració tècnica inicial": "04_materials/fitxa_exploracio_tecnica_inicial.md"
       - "Fitxes després de classe": "04_materials/consolidacio/index.md"
       - "Repositori, branques i entrega": "04_materials/guia_pujar_treball_autocorreccio.md"
       - "📏 Com s'avalua": "03_com_s_avalua/index.md"
@@ -56,6 +55,7 @@ nav:
           - "R5M5. Prova i defensa": "03_com_s_avalua/rubriques/r5m5.md"
       - "1️⃣ Suport Repte 1":
           - "👀 Visió general": "04_materials/repte_01/index.md"
+          - "📝 Fitxa d'exploració tècnica inicial": "04_materials/fitxa_exploracio_tecnica_inicial.md"
       - "2️⃣ Suport Repte 2":
           - "👀 Visió general": "04_materials/repte_02/index.md"
           - "PHP i HTML: pràctica R2S0": "04_materials/repte_02/practica_php_html.md"
