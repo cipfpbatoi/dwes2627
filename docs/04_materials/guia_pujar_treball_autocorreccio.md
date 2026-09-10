@@ -27,13 +27,14 @@ Substituïx els dos marcadors per la URL real i el nom de la carpeta creada per 
 
 El clonatge descarrega el repositori i el seu historial i configura `origin`. Es fa una vegada per ordinador o còpia de treball. No cal crear abans una carpeta amb `git init`, fer un fork, descarregar un ZIP ni clonar la plantilla docent. Si ja tens esta còpia, entra en ella i sincronitza-la; no repetisques el clonatge per a cada sessió.
 
-En R1S1, treballa en `microrepte/r1m1`, actualitza el README i la fitxa inicial, fes commit i push i integra la branca directament en `main` com s’explica més avall. Així el primer treball queda integrat en `main` per a la correcció.
+En `R1S1`, treballa en `microrepte/r1m1`, guarda la fitxa completa de `R1S0` com `docs/fitxa-r1s0-mapa-producte.md`, actualitza el `README.md` i la fitxa d’exploració tècnica, fes `commit` i `push` i integra la branca directament en `main` com s’explica més avall. Així el primer treball queda integrat en `main` per a la correcció. No és suficient pujar la plantilla de `R1S0` buida.
 
 ## On ha d'estar el treball
 
 | Tipus de contingut | On posar-ho |
 |---|---|
 | Fitxa d'entrega del microrepte, com arrancar i com provar | `README.md` |
+| Fitxa completa de la sessió inicial `R1S0` | `docs/fitxa-r1s0-mapa-producte.md` |
 | Decisions tècniques, notes breus o registre d'ús d'IA | `docs/` |
 | Captures textuals, logs, resultats de proves o comprovacions | `evidence/` |
 | Tests automàtics o fitxers relacionats amb proves | `tests/` |

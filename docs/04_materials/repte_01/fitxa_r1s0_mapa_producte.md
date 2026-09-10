@@ -4,8 +4,8 @@
 
 Ompli esta fitxa durant la sessió inicial per convertir una idea general en un primer producte concret. Escriu respostes curtes: una o dues frases per apartat són suficients.
 
-!!! info "Sessió sense lliurament propi"
-    `R1S0` no té microrepte ni nota pròpia. Conserva la fitxa perquè en `R1S1`, quan tingues el repositori individual, reutilitzaràs estes decisions en el `README.md` i en la fitxa d’exploració tècnica.
+!!! warning "Has de conservar-la i pujar-la al repositori"
+    En `R1S1`, quan tingues el repositori individual, guarda la fitxa completa com `docs/fitxa-r1s0-mapa-producte.md`, fes `commit` i `push`. Servirà com a punt de partida del projecte, però **no té nota, no s’avalua i no és un microrepte**. També reutilitzaràs estes decisions en el `README.md` i en la fitxa d’exploració tècnica.
 
 ## 1. Dades bàsiques
 
@@ -62,3 +62,25 @@ Mostra només el **primer mapa del producte** a la teua parella. La parella no h
 En acabar has de poder dir:
 
 > Vull construir __________ per a __________. La primera acció útil serà __________. El servidor rebrà __________ i respondrà __________.
+
+## Com pujar la fitxa en R1S1
+
+Quan hages acceptat la invitació i clonat el repositori individual:
+
+1. Crea el fitxer `docs/fitxa-r1s0-mapa-producte.md`.
+2. Copia la fitxa amb **totes les teues respostes**. No puges la plantilla buida.
+3. Revisa que no quede cap apartat sense respondre.
+4. Afig el fitxer, fes el `commit` i puja la branca de `R1M1`:
+
+```bash
+git add docs/fitxa-r1s0-mapa-producte.md
+git commit -m "docs: afegix la fitxa inicial de R1S0"
+git push
+```
+
+Abans de continuar, obri el repositori en GitHub i comprova que pots veure el fitxer i les respostes.
+
+- [ ] La fitxa està completa.
+- [ ] Està guardada exactament com `docs/fitxa-r1s0-mapa-producte.md`.
+- [ ] He fet `commit` i `push`.
+- [ ] Puc obrir-la des de GitHub.

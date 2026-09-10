@@ -19,7 +19,9 @@ El mínim obligatori no exigix encara una funcionalitat de domini rica. El que s
 
 ## Preparació en R1S0
 
-Abans del primer microrepte completaràs la [fitxa inicial de R1S0](../04_materials/repte_01/fitxa_r1s0_mapa_producte.md). Servix per acotar la idea del producte i arribar a `R1S1` amb una primera acció útil identificada. És una fitxa provisional: `R1S0` no té microrepte ni nota pròpia, i en `R1S1` reutilitzaràs estes decisions en el repositori.
+Abans del primer microrepte completaràs la [fitxa inicial de R1S0](../04_materials/repte_01/fitxa_r1s0_mapa_producte.md). Servix per acotar la idea del producte i arribar a `R1S1` amb una primera acció útil identificada.
+
+`R1S0` no té microrepte ni nota pròpia, però has de conservar la fitxa completa. En `R1S1`, quan tingues el repositori individual, la guardaràs exactament com `docs/fitxa-r1s0-mapa-producte.md` i faràs `commit` i `push`. La plantilla buida no servix com a punt de partida. La fitxa **no s’avalua ni entra en l’autocorrecció**; les seues decisions es reutilitzaran en el `README.md` i en el treball de `R1M1`.
 
 ## Repositori de treball del curs
 
@@ -75,6 +77,7 @@ També has de deixar preparat el repositori de treball del curs:
 - acceptar la invitació com a col·laborador al repositori creat pel professorat;
 - clonar el teu repositori individual;
 - localitzar `README.md`, `ENTREGA.md`, `docs/` i `evidence/`;
+- guardar la fitxa completa de `R1S0` com `docs/fitxa-r1s0-mapa-producte.md`;
 - actualitzar `README.md` amb el microrepte actual, el projecte base triat, el primer flux client/servidor i la decisió tècnica inicial;
 - guardar la fitxa o evidència equivalent de `R1M1` dins de `docs/`;
 - fer un primer commit i `push` a GitHub abans d'acabar la sessió.
