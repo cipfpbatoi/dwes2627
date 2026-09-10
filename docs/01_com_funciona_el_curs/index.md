@@ -81,18 +81,25 @@ La cooperació és possible, però no substituïx l’autoria individual.
 
 El model base de treball és el de **parelles de contrast tècnic**.
 
-Es pot compartir parcialment:
+La parella no fa el projecte amb tu ni necessita conéixer-lo completament. Cada persona continua el seu projecte, que pot ser diferent del de la parella. La seua funció és ajudar-te en moments concrets: fer preguntes, provar una funcionalitat seguint les teues instruccions, revisar un error o detectar un pas que falta en la documentació. També pot proposar una millora, però no implementar-la per tu.
 
-- El mateix projecte.
-- El mateix encàrrec funcional.
-- Alguns checkpoints o moments de contrast.
-- La comparació de decisions tècniques.
+Perquè el contrast siga àgil, es farà en tres moments breus:
 
-Però continuen sent individuals:
+1. **Inici, 5 minuts:** expliques què faràs i amb quina tecnologia.
+2. **Durant el treball, 10 minuts:** reviseu un bloqueig o una funcionalitat concreta.
+3. **Final, 10 minuts:** la parella comprova que funciona i que pot seguir la documentació.
 
+No cal preparar un informe llarg. Si es demana deixar constància del contrast, n'hi ha prou amb anotar breument què s'ha revisat, quin problema o millora s'ha detectat i què has decidit fer.
+
+En tot cas, continuen sent individuals:
+
+- El projecte i el codi.
 - El repositori.
 - Les evidències.
+- Les decisions finals.
 - La defensa.
+
+**Regla curta:** la parella assessora, pregunta i prova; no escriu ni resol el teu projecte.
 
 ## ✅ Què s’espera del teu treball
 

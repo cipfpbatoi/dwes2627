@@ -136,21 +136,19 @@ El curs pot tindre treball cooperatiu, però l’avaluació continua sent indivi
 
 La modalitat base és la de **parelles de contrast tècnic**.
 
-Es pot compartir:
+La parella actua com a suport puntual: pot fer preguntes, provar una funcionalitat, ajudar-te a interpretar un error, revisar si la documentació es pot seguir o proposar una millora. No fa el projecte amb tu ni ha d'implementar la solució. Els projectes de les dues persones poden ser diferents.
 
-- El mateix projecte.
-- El mateix encàrrec funcional.
-- Part del context de treball.
-- Comparació de tecnologies o decisions.
-- Alguns checkpoints o moments de contrast.
+El contrast es limita a moments breus d'inici, revisió durant el treball i comprovació final. No genera un informe llarg: quan calga registrar-lo, bastarà una nota breu amb què s'ha revisat, què s'ha detectat i quina decisió has pres.
 
-Però continuen sent individuals:
+Continuen sent individuals:
 
+- El projecte i el codi.
 - El repositori.
 - Les evidències.
+- Les decisions finals.
 - La defensa.
 
-Això vol dir que no et pots amagar darrere del treball de la parella. Has de poder explicar i defensar la teua part.
+Això vol dir que la parella assessora, pregunta i prova, però no resol el teu projecte. Has de poder explicar i defensar tot el que presentes.
 
 ## 🎓 Checkpoints i defenses
 
