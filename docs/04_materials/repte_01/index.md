@@ -3,6 +3,7 @@
 | Necessite... | Recurs |
 |---|---|
 | veure l'enunciat | [Repte 1](../../02_reptes/repte_01.md) |
+| omplir el primer mapa del producte en R1S0 | [Fitxa inicial de R1S0](fitxa_r1s0_mapa_producte.md) |
 | consultar com s'avalua cada microrepte | [Guies d'avaluació de R1](../../03_com_s_avalua/rubriques/index.md#repte-1) |
 | comprovar el tancament de R1 | [Checklist de R1](#checklist-de-r1) |
 | completar la decisió inicial de stack | [Fitxa breu d'exploració tècnica inicial](../fitxa_exploracio_tecnica_inicial.md) |

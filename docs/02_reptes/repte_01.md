@@ -17,6 +17,10 @@ Este primer repte servix per iniciar el backend en condicions professionals bàs
 
 El mínim obligatori no exigix encara una funcionalitat de domini rica. El que sí exigix és una base real de treball, una primera resposta del backend i evidència que el sistema es pot revisar.
 
+## Preparació en R1S0
+
+Abans del primer microrepte completaràs la [fitxa inicial de R1S0](../04_materials/repte_01/fitxa_r1s0_mapa_producte.md). Servix per acotar la idea del producte i arribar a `R1S1` amb una primera acció útil identificada. És una fitxa provisional: `R1S0` no té microrepte ni nota pròpia, i en `R1S1` reutilitzaràs estes decisions en el repositori.
+
 ## Repositori de treball del curs
 
 En la primera sessió, `R1S1`, acceptaràs la invitació al repositori que haja creat el professorat i clonaràs el teu repositori individual. No has de treballar sobre el repositori base ni crear-ne un altre.

@@ -8,6 +8,7 @@ Si necessites saber què has d'entregar, entra en [Reptes](../02_reptes/index.md
 
 | Necessite... | Recurs |
 |---|---|
+| omplir el primer mapa del producte en R1S0 | [Fitxa inicial de R1S0](repte_01/fitxa_r1s0_mapa_producte.md) |
 | omplir la fitxa inicial de decisió tècnica | [Fitxa breu d'exploració tècnica inicial](fitxa_exploracio_tecnica_inicial.md) |
 | clonar, treballar amb branques i entregar | [Repositori, branques i entrega](guia_pujar_treball_autocorreccio.md) |
 | justificar o revisar l'ús d'IA | [Guia d'ús verificable de la IA](guia_us_verificable_ia.md) |
