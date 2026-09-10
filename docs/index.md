@@ -2,6 +2,9 @@
 
 Esta és la teua porta d'entrada al curs. Des d'ací has d'arribar ràpidament al lloc correcte, no rellegir la mateixa explicació en diverses pàgines.
 
+!!! info "¿Necesitas leer la web en castellano?"
+    Puedes traducir las páginas desde el navegador. Consulta la [guía rápida para traducir la web al castellano](04_materials/guia_traduir_web_castella.md). La traducción es automática; si una instrucción no queda clara, pregunta al profesor.
+
 ## 🧭 On vols anar?
 
 | Si vols... | Ves a... |
