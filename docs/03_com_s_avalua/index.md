@@ -114,7 +114,7 @@ La traça ha de ser coherent amb el microrepte i permetre identificar els canvis
 
 ## 🤖 Ús de la IA i avaluació
 
-En este curs es dona per fet que usaràs la IA de manera habitual.
+En este curs pots usar IA, però no és obligatori i no usar-la no penalitza.
 
 No es tracta d’evitar-la ni d’amagar-la. Es tracta d’usar-la amb criteri i de poder demostrar què has entés, què has aprofitat i què has validat tu.
 
@@ -128,7 +128,11 @@ El que es valorarà és si pots:
 
 ### 📝 Guia i registre d’ús de la IA
 
-Consulta la [Guia d’ús verificable de la IA](../04_materials/guia_us_verificable_ia.md). És l’única referència per saber què està permés i com registrar les consultes rellevants en `docs/ai-log.md`; no has d’entregar un report separat.
+Consulta la [Guia d’ús verificable de la IA](../04_materials/guia_us_verificable_ia.md).
+És l’única referència per saber què està permés, també quan uses un agent en
+local, i com registrar les consultes rellevants en `docs/ai-log.md`. La base
+personal `docs/base-coneixement/` és opcional i no substituïx el registre ni els
+lliurables; no has d’entregar un report d’IA separat.
 
 ## 🤝 Treball cooperatiu i autoria individual
 

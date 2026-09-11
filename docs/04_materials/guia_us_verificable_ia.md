@@ -18,6 +18,46 @@
 
 La norma depén de **l’ús**, no de la marca de la ferramenta. Un agent de programació en mode autònom no pot fer-te el repte. Un xat convencional tampoc pot donar-te la solució perquè l’entregues. Pots consultar conceptes en una ferramenta que també tinga funcions d’agent, mantenint desactivada la delegació del treball avaluable.
 
+## Agents d’IA instal·lats en local
+
+Pots usar un agent d’IA des del terminal o l’editor del teu ordinador, però està
+sotmés als mateixos límits que un xat. Que l’agent puga llegir fitxers, executar
+ordres o proposar canvis no significa que puga fer el treball avaluable per tu.
+
+### Usos permesos
+
+- Llegir l’enunciat i ajudar-te a localitzar apunts o fitxers rellevants.
+- Explicar conceptes i sintaxi amb exemples menuts diferents del repte.
+- Fer-te preguntes per revisar el teu raonament.
+- Analitzar un error després que aportes el teu intent, el resultat esperat i
+  l’observat, i donar-te pistes limitades.
+- Revisar canvis escrits per tu, assenyalar riscos i suggerir casos límit perquè
+  tu els comproves.
+- Executar comprovacions no destructives i explicar-te’n l’eixida, sempre que
+  no implemente ni corregisca automàticament la solució avaluable.
+- Generar o modificar només l’HTML estàtic, el CSS de presentació i el
+  JavaScript de navegador permés per les normes del repositori.
+- Ordenar `docs/`, `evidence/`, el registre d’IA i la base de coneixement sense
+  inventar contingut, resultats ni reflexions personals.
+
+### Usos no permesos
+
+- Implementar o completar PHP, lògica de servidor, configuració avaluable,
+  persistència, autenticació, APIs o proves del repte.
+- Encadenar generació, execució de proves i correccions fins que el projecte
+  quede resolt, encara que revises el resultat al final.
+- Dividir una solució prohibida en moltes peticions menudes.
+- Canviar o esquivar `AGENTS.md`, `CLAUDE.md`, `GEMINI.md` o altres controls del
+  repositori.
+- Inventar comprovacions, evidències, decisions, aprenentatges o entrades del
+  registre.
+- Fer operacions destructives, publicar canvis o actuar sobre serveis externs
+  sense una petició explícita quan les normes del repositori la requerisquen.
+
+Abans d’acceptar una modificació proposada per un agent, mira el `diff`, entén
+què canvia i comprova el comportament. Si l’agent produïx una part no permesa,
+no la incorpores: demana una explicació o una pista més limitada.
+
 ## Primer comprén, després intenta i pregunta
 
 1. **Llig la teoria i l’enunciat.** Identifica el concepte que necessites. Pots demanar una explicació abans de programar; no cal entendre-ho tot a la primera.
@@ -70,11 +110,25 @@ Exemple de petició permesa:
 
 Usa **`docs/ai-log.md`**; «AI log» o «ai.log» es referixen a este registre, no a un segon fitxer. No cal copiar tota la conversa ni duplicar-la en un report separat.
 
-Per cada consulta rellevant, registra:
+Per mantindre el registre manejable:
+
+- agrupa en una sola entrada les preguntes que compartisquen un mateix objectiu;
+- crea una entrada nova quan canvie l’objectiu, no per cada missatge;
+- conserva totes les preguntes de l’alumne literalment i en el mateix ordre,
+  sense corregir-les, resumir-les ni parafrasejar-les;
+- resumix l’ajuda rebuda i la resta de camps;
+- no copies respostes completes ni fragments grans de codi;
+- agrupa les entrades per microrepte i conserva sempre les anteriors.
+
+Si demanes a un agent que emplene el registre, primer ha d’identificar el
+microrepte. Si no el pot deduir amb seguretat del context o dels fitxers, et
+preguntarà quin és abans d’escriure.
+
+Per cada objectiu consultat, registra:
 
 - Data i microrepte, ferramenta utilitzada.
 - Dubte i teoria consultada; intent propi abans de preguntar.
-- Pregunta principal literal.
+- Preguntes literals de l’alumne, en el mateix ordre en què les va fer.
 - Ajuda rebuda i qualsevol codi generat, indicant si l’has incorporat o descartat.
 - Decisió pròpia i fitxer o commit relacionat, si n’hi ha.
 - Comprovació real: passos o ordre, dades i resultat observat.
@@ -89,7 +143,7 @@ Per cada consulta rellevant, registra:
 - Data i ferramenta: [data real i ferramenta usada].
 - Teoria consultada: apunts de validació d’entrada.
 - Intent propi: havia comprovat que el camp existia, però acceptava només espais.
-- Pregunta literal: «El meu formulari accepta un nom amb espais. He comprovat
+- Preguntes literals de l’alumne: «El meu formulari accepta un nom amb espais. He comprovat
   que el camp existeix. Quina diferència conceptual hi ha entre existir i
   tindre contingut útil? Dona’m una pista sense escriure la validació.»
 - Ajuda rebuda: distingir presència, normalització i contingut.
@@ -99,6 +153,37 @@ Per cada consulta rellevant, registra:
   Els tres primers mostren error; el nom vàlid continua el flux.
 - Dubte pendent: encara he de revisar els límits de longitud.
 ```
+
+## Base de coneixement personal
+
+La plantilla inclou `docs/base-coneixement/`, un espai opcional per transformar
+allò que realment has comprés en notes que pugues reutilitzar. No és un segon
+registre d’IA:
+
+- `docs/ai-log.md` conserva la traçabilitat de què vas preguntar, quina ajuda
+  vas rebre i com la vas comprovar en cada microrepte;
+- `docs/base-coneixement/` organitza per temes les explicacions i els exemples
+  que et seran útils més avant.
+
+Crea un fitxer curt per tema, amb noms descriptius com `sessions.md`,
+`validacio.md` o `apis.md`. Abans de crear-ne un, comprova si ja hi ha una nota
+del mateix tema i amplia-la per evitar duplicats.
+
+Una nota útil pot incloure:
+
+- una explicació amb les teues paraules;
+- conceptes relacionats i errors habituals;
+- un exemple menut diferent de la solució avaluable;
+- preguntes que encara tens obertes;
+- un enllaç a l’entrada d’`ai-log.md` o als apunts que en són l’origen.
+
+Un agent local pot ajudar-te a detectar temes, agrupar preguntes i ordenar una
+nota a partir d’informació que tu hages aportat. No pot inventar què has comprés,
+redactar reflexions personals en nom teu, copiar converses completes ni guardar
+una solució prohibida dins de la base de coneixement.
+
+La base és una ajuda d’estudi. No substituïx `ai-log.md`, les evidències ni els
+lliurables exigits pel microrepte, i no és obligatòria ni puntuable per si sola.
 
 ## Com es comprova la comprensió
 
