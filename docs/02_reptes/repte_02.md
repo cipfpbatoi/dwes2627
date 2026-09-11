@@ -157,12 +157,26 @@ El formulari ha de correspondre a una acció que la landing page ja fa esperar: 
 - Una connexió clara entre el formulari i una acció visible o esperable de la landing page.
 - Almenys una dada que puga alimentar una decisió posterior del projecte.
 - Recuperació real de les dades en servidor amb `$_POST` o mecanisme equivalent.
+- Tractament de tota dada rebuda com a entrada no fiable: camps absents sense
+  avisos, normalització quan corresponga i validació en servidor.
+- Validació per llista per a opcions tancades i límits bàsics de format o
+  longitud per a text; no n'hi ha prou amb confiar en el control HTML.
+- Eixida HTML escapada quan es torna a mostrar qualsevol dada introduïda per
+  l'usuari; no s'ha de reflectir directament el contingut de `$_POST`.
+- Absència de contrasenyes, tokens o altres dades sensibles en la URL, els
+  missatges de depuració, les captures o el repositori.
 - Una validació bàsica al servidor amb una condició simple.
 - Un missatge d’error visible quan la dada triada no és acceptable.
 - Possibilitat de corregir i tornar a enviar.
 - Comentaris breus en el codi quan facen falta per entendre el flux.
 
 No cal encara acumular errors en arrays, validar tots els controls alhora, conservar tots els valors del formulari, gestionar fitxers ni fer checkbox múltiples. Els errors acumulats en array encaixen millor com a ampliació de `R2M3`, quan ja es treballen decisions, arrays i funcions.
+
+La protecció CSRF serà obligatòria quan el formulari execute una operació que
+canvie estat o depenga d'una sessió autenticada. En `R2M1`, com que encara no
+hi ha guardat funcional ni autenticació, no es demana afegir un token artificial;
+sí que es demanen des del principi recepció defensiva, validació de servidor i
+eixida segura.
 
 **Límit de la sessió**
 
