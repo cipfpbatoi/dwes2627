@@ -68,7 +68,7 @@ Entendre què s’executa en client i què s’executa en servidor, i proposar u
 
 **Què has de fer**
 
-Has de completar una [fitxa breu d’exploració tècnica inicial](../04_materials/fitxa_exploracio_tecnica_inicial.md) i justificar quina base tècnica proposes per començar el projecte.
+Has de completar una [fitxa breu d’exploració tècnica inicial](../04_materials/fitxa_exploracio_tecnica_inicial.md) i justificar quina base tècnica proposes per començar el projecte. Abans de decidir, consulta la [guia breu per triar el stack tecnològic de servidor](../recursos/Repte1/R1M1-Com-triar-el-teu-stack-tecnologic-de-servidor.pdf): et dona els criteris essencials perquè investigues i contrastes les opcions, però no resol la tria per tu.
 
 Esta decisió és **orientativa**. En `R1M1` no estàs triant definitivament el framework del curs. En `R1M2`, amb la teoria de stack servidor i entorn executable, hauràs de confirmar o ajustar eixa decisió i convertir-la en una base que arranque.
 

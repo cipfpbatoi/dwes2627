@@ -11,6 +11,7 @@ En esta pàgina tens les diapositives del curs agrupades per tipus de recurs.
 ### Repte 1
 
 - [R1. Kickoff backend i base executable](Repte1/R1-Kickoff-backend-i-base-executable.pdf)
+- [R1M1. Guia breu per triar el stack tecnològic de servidor](Repte1/R1M1-Com-triar-el-teu-stack-tecnologic-de-servidor.pdf)
 - [R1M1. Model client-servidor i elecció guiada de stack](Repte1/R1M1-Model-clientservidor-i-eleccio-guiada-de-stack.pdf)
 - [R1M2. Entorn executable, landing inicial i tancament de R1](Repte1/R1M2-Entorn-executable-punt-dentrada-i-tancament-de-R1.pdf)
 

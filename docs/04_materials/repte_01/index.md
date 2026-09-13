@@ -7,6 +7,7 @@
 | consultar com s'avalua cada microrepte | [Guies d'avaluació de R1](../../03_com_s_avalua/rubriques/index.md#repte-1) |
 | comprovar el tancament de R1 | [Checklist de R1](#checklist-de-r1) |
 | completar la decisió inicial de stack | [Fitxa breu d'exploració tècnica inicial](../fitxa_exploracio_tecnica_inicial.md) |
+| investigar els criteris per triar el stack | [Guia breu: com triar el teu stack tecnològic de servidor](../../recursos/Repte1/R1M1-Com-triar-el-teu-stack-tecnologic-de-servidor.pdf) |
 | repassar el kickoff | [R1. Kickoff backend i base executable](../../recursos/Repte1/R1-Kickoff-backend-i-base-executable.pdf) |
 | repassar client, servidor i decisió tècnica | [R1M1. Model client-servidor i decisió tècnica inicial](../../recursos/Repte1/R1M1-Model-clientservidor-i-eleccio-guiada-de-stack.pdf) |
 | repassar entorn executable i landing inicial | [R1M2. Entorn executable, landing inicial i tancament de R1](../../recursos/Repte1/R1M2-Entorn-executable-punt-dentrada-i-tancament-de-R1.pdf) |
