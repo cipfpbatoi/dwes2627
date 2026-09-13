@@ -18,6 +18,12 @@
 
 La norma depén de **l’ús**, no de la marca de la ferramenta. Un agent de programació en mode autònom no pot fer-te el repte. Un xat convencional tampoc pot donar-te la solució perquè l’entregues. Pots consultar conceptes en una ferramenta que també tinga funcions d’agent, mantenint desactivada la delegació del treball avaluable.
 
+## Si la IA et permet acabar abans
+
+Els mínims són els mateixos uses IA o no. Acabar abans amb Codex o una altra ferramenta no obliga a afegir funcionalitats noves, però tampoc és motiu per donar el treball per tancat sense revisar-lo. Reinvertix el temps en una extensió curta del mateix aprenentatge: casos límit, proves, comparació d'alternatives, qualitat de la documentació o una modificació que pugues explicar en directe.
+
+Consulta les [extensions opcionals de cada microrepte](../01_com_funciona_el_curs/si_acabes_abans.md). No avances continguts de la sessió següent i no demanes a la IA que implemente l'extensió: s'hi apliquen les mateixes normes d'autoria, registre i verificació que al nucli.
+
 ## Agents d’IA instal·lats en local
 
 Pots usar un agent d’IA des del terminal o l’editor del teu ordinador, però està

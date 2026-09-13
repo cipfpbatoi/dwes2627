@@ -136,6 +136,12 @@ Si uses IA, has de poder:
 
 Si vols el criteri complet, consulta la [Guia d'ús verificable de la IA](../04_materials/guia_us_verificable_ia.md).
 
+### Si la IA t'estalvia temps
+
+Usar Codex o una altra IA no augmenta automàticament els requisits mínims del microrepte. Si acabes abans, el temps guanyat s'utilitza per **provar millor, comparar alternatives, justificar decisions i preparar una explicació o modificació pròpia**, no per generar més codi sense control ni per avançar continguts del microrepte següent.
+
+Cada microrepte té propostes opcionals en [Si acabes abans](si_acabes_abans.md). No formen part del mínim, no penalitzen qui no les faça i no substituïxen l'ampliació global `9→10` del repte.
+
 ## 🎯 Idea final
 
 L’objectiu del curs no és només arribar a un producte que funcione.
