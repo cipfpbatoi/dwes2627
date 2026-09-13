@@ -47,6 +47,13 @@ Guies d'avaluació:
 - [R1M1. Guia d'avaluació](../03_com_s_avalua/rubriques/r1m1.md)
 - [R1M2. Guia d'avaluació](../03_com_s_avalua/rubriques/r1m2.md)
 
+Diapositives de suport:
+
+- [R1. Kickoff backend i base executable](../recursos/Repte1/R1-Kickoff-backend-i-base-executable.pdf)
+- [R1M1. Model client-servidor i elecció guiada de stack](../recursos/Repte1/R1M1-Model-clientservidor-i-eleccio-guiada-de-stack.pdf)
+- [R1M1. Guia breu per triar el stack tecnològic de servidor](../recursos/Repte1/R1M1-Com-triar-el-teu-stack-tecnologic-de-servidor.pdf)
+- [R1M2. Entorn executable, punt d'entrada i tancament de R1](../recursos/Repte1/R1M2-Entorn-executable-punt-dentrada-i-tancament-de-R1.pdf)
+
 Guies de suport: [Repte 1](../04_materials/repte_01/index.md).
 
 Taller d'arrancada del curs: [MT19. IA responsable aplicada al repte](../recursos/Tallers/MT19-IA-responsable-aplicada-al-repte.pdf). Este taller no és un microrepte amb nota pròpia: servix per fixar com usar, registrar i verificar l'ajuda de la IA abans de començar el treball tècnic.
