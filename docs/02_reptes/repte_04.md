@@ -27,13 +27,13 @@ El treball continua sobre el mateix projecte i sobre el mateix encàrrec funcion
 
 Els tallers no creen una nota separada: et donen una ferramenta concreta per avançar o revisar el microrepte.
 
-| Microrepte | Focus | Taller relacionat | Pes |
-|---|---|---|---:|
-| `R4M1` | Disseny del contracte del servei: recurs, endpoints, request/response i errors. | [MT10. Dissenyar endpoint abans de programar](../recursos/Tallers/MT10-Dissenyar-endpoint-abans-de-programar.pdf) | `15%` |
-| `R4M2` | Primer endpoint funcional amb resposta estructurada i dades reals. | Sense taller específic | `20%` |
-| `R4M3` | Protecció de l'API amb cas autoritzat i denegat. | [MT17. Tokens funcionals del backend](../recursos/Tallers/MT17-Tokens-funcionals-del-backend.pdf) | `20%` |
-| `R4M4` | Consum real del servei amb eina, script, client o col·lecció. | [MT17. Tokens funcionals del backend](../recursos/Tallers/MT17-Tokens-funcionals-del-backend.pdf) | `20%` |
-| `R4M5` | Documentació, proves, incidències i tancament cap a `R5`. | [MT11. Provar i documentar una API](../recursos/Tallers/MT11-Documentar-i-comprovar-una-API.pdf) | `25%` |
+| Microrepte | Focus | Taller relacionat |
+|---|---|---|
+| `R4M1` | Disseny del contracte del servei: recurs, endpoints, request/response i errors. | [MT10. Dissenyar endpoint abans de programar](../recursos/Tallers/MT10-Dissenyar-endpoint-abans-de-programar.pdf) |
+| `R4M2` | Primer endpoint funcional amb resposta estructurada i dades reals. | Sense taller específic |
+| `R4M3` | Protecció de l'API amb cas autoritzat i denegat. | [MT17. Tokens funcionals del backend](../recursos/Tallers/MT17-Tokens-funcionals-del-backend.pdf) |
+| `R4M4` | Consum real del servei amb eina, script, client o col·lecció. | [MT17. Tokens funcionals del backend](../recursos/Tallers/MT17-Tokens-funcionals-del-backend.pdf) |
+| `R4M5` | Documentació, proves, incidències i tancament cap a `R5`. | [MT11. Provar i documentar una API](../recursos/Tallers/MT11-Documentar-i-comprovar-una-API.pdf) |
 
 ## Seqüència recomanada
 
@@ -105,4 +105,4 @@ Perquè compte com a `9→10`, l'ampliació ha d'estar integrada, aportar robust
 
 ## Registre final de l’ampliació
 
-L’ampliació de R4 es declara una sola vegada en `docs/r4-ampliacio.md` i es recull exclusivament en **R4M5**. La proposta automàtica queda pendent de validació en la presentació. Consulta la [fórmula i l’escala comunes](../ampliacions-excellencia.md#calcul-i-validacio-de-lampliacio-global).
+L’ampliació de R4 es declara una sola vegada en `docs/r4-ampliacio.md` i es recull exclusivament en **R4M5**. La proposta automàtica queda separada de la nota del microrepte i el professorat la valida durant la defensa. Consulta l’[escala comuna](../ampliacions-excellencia.md).

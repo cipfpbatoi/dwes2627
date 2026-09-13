@@ -584,25 +584,23 @@ Per orientar-te sense convertir el repte en una llista normativa, pots llegir-lo
 - `RA4` apareix sobretot en els microreptes 4, 5, 6, 7 i 8: estat, emmagatzematge en client quan toque, autenticació, funcionalitat protegida, mini API autenticada, prova, depuració, prova unitària inicial i comprovació final del flux.
 - `RA6` apareix de manera introductòria en el microrepte 9: connexió a BBDD, alta, lectura, consultes preparades i reproducció mínima abans de treballar migrations, seeders i models en `R3`.
 
-## Pes dels microreptes dins del nucli de R2
+## Relació dels microreptes amb els RA
 
-La `nota_nucli_R2` no és una mitjana simple de tots els microreptes. Es calcula amb estos pesos per fer seguiment del repte, però cada microrepte genera nota només per al seu **RA avaluat**. Els RA de context poden aparéixer en el producte, però no puntuen en eixe microrepte.
+Cada microrepte genera una nota pròpia només per al seu **RA avaluat**. Els RA de context poden aparéixer en el producte, però no puntuen en eixe microrepte. No es calcula una nota ponderada del repte.
 
-| Microrepte | Focus principal | RA avaluat | CA avaluats | RA de context | Pes dins del nucli |
-|---|---|---|---|---|---:|
-| `R2M1` | Entrada i validació bàsica | `RA2` | `RA2.a`, `RA2.b`, `RA2.c`, `RA2.d` | `RA3.e`, `RA3.f`, `RA3.g` | `12%` |
-| `R2M2` | Processament, reintent i guardat funcional | `RA2` | `RA2.a-h` | `RA3.e`, `RA3.f`, `RA3.g` | `12%` |
-| `R2M3` | Lògica, arrays, funcions i llibreria pròpia | `RA3` | `RA3.a`, `RA3.b`, `RA3.c`, `RA3.d` | - | `12%` |
-| `R2M4` | Estat, sessió, cookie, `$_SERVER` i includes estables | `RA4` | `RA4.a`, `RA4.b`, `RA4.c` | - | `12%` |
-| `R2M5` | Registre, hash, autenticació i operació protegida | `RA4` | `RA4.d`, `RA4.e` | - | `16%` |
-| `R2M6` | Mini API d'autenticació per a client | `RA4` | `RA4.d`, `RA4.e` | pont DWEC | `10%` |
-| `R2M7` | Proves automàtiques lleugeres, depuració i checkpoint | `RA4` | `RA4.f` | - | `8%` |
-| `R2M8` | Primera peça testable amb POO i Composer | `RA3` | `RA3.d`, `RA3.g` | `RA4.f` | `8%` |
-| `R2M9` | Persistència mínima amb BBDD en PHP | `RA6` | `RA6.a`, `RA6.b`, `RA6.c`, `RA6.d`, `RA6.f` | `RA3`, `RA4` | `10%` |
+| Microrepte | Focus principal | RA avaluat | CA avaluats | RA de context |
+|---|---|---|---|---|
+| `R2M1` | Entrada i validació bàsica | `RA2` | `RA2.a`, `RA2.b`, `RA2.c`, `RA2.d` | `RA3.e`, `RA3.f`, `RA3.g` |
+| `R2M2` | Processament, reintent i guardat funcional | `RA2` | `RA2.a-h` | `RA3.e`, `RA3.f`, `RA3.g` |
+| `R2M3` | Lògica, arrays, funcions i llibreria pròpia | `RA3` | `RA3.a`, `RA3.b`, `RA3.c`, `RA3.d` | - |
+| `R2M4` | Estat, sessió, cookie, `$_SERVER` i includes estables | `RA4` | `RA4.a`, `RA4.b`, `RA4.c` | - |
+| `R2M5` | Registre, hash, autenticació i operació protegida | `RA4` | `RA4.d`, `RA4.e` | - |
+| `R2M6` | Mini API d'autenticació per a client | `RA4` | `RA4.d`, `RA4.e` | pont DWEC |
+| `R2M7` | Proves automàtiques lleugeres, depuració i checkpoint | `RA4` | `RA4.f` | - |
+| `R2M8` | Primera peça testable amb POO i Composer | `RA3` | `RA3.d`, `RA3.g` | `RA4.f` |
+| `R2M9` | Persistència mínima amb BBDD en PHP | `RA6` | `RA6.a`, `RA6.b`, `RA6.c`, `RA6.d`, `RA6.f` | `RA3`, `RA4` |
 
-El microrepte `R2M5` pesa més perquè concentra la part més significativa del repte: demostrar que l'estat i el control d'accés servixen per protegir una acció real del projecte. `R2M6` pesa prou perquè és el pont intermodular amb DWEC, però queda acotat a autenticació mínima consumible. `R2M9` és obligatori dins del nucli, però queda acotat com a introducció a BBDD abans de `R3`. `R2M7` i `R2M8` pesen menys per separat, però fan verificable i defensable el que s'ha construït.
-
-Si un microrepte posterior depén d'un anterior, el pes no elimina la dependència. Per exemple, un bon `R2M5` necessita un flux d'entrada, processament, lògica i estat suficientment funcional.
+La dependència funcional entre microreptes no els convertix en una nota única. Per exemple, `R2M5` necessita un flux anterior suficientment funcional, però conserva una qualificació pròpia.
 
 ## Criteris que es treballen en este repte
 
@@ -722,34 +720,9 @@ Millorar la robustesa del flux en servidor i demostrar més control sobre valida
 
 Esta autocorrecció no posa automàticament un `10`. Servix per filtrar si la teua ampliació pot optar a la franja `9→10` i quina revisió docent necessita.
 
-## Com es calcula la nota final de R2
+## Com es registra l’ampliació de R2
 
-Les autocorreccions dels microreptes `R2M1` a `R2M9` valoren el **nucli obligatori** del repte.
-
-La nota final de `R2` es calcula així:
-
-```text
-nota_final_R2 = 0.9 * nota_nucli_R2 + ampliacio_9_10
-```
-
-On:
-
-- `nota_nucli_R2` és la nota ponderada obtinguda amb el conjunt dels microreptes obligatoris, segons els pesos indicats en la taula anterior;
-- `0.9 * nota_nucli_R2` vol dir que el nucli obligatori pot arribar com a màxim a `9` en la nota final del repte;
-- `ampliacio_9_10` pot sumar de `0` a `1` punt només si l’ampliació està validada;
-- la nota final mai pot superar `10`.
-
-Per tant, si tens una mitjana de `10` en els microreptes però no presentes una ampliació `9→10` validada, la nota final del repte serà `9`.
-
-És una ponderació explícita: el **nucli obligatori** representa el 90% i la **via d’excel·lència** aporta fins a un punt.
-
-| Situació | Resultat |
-|---|---:|
-| Nucli de R2 incomplet | no pot optar a `9→10` |
-| Nucli de R2 complet, sense ampliació | màxim `9` |
-| Nucli de R2 complet, ampliació no vàlida o decorativa | màxim `9` |
-| Nucli de R2 complet, ampliació útil però limitada | base ponderada × 0,9 + fins a `0,5`, segons revisió docent |
-| Nucli de R2 complet, ampliació integrada, provada i defensada | fins a `10` |
+Les autocorreccions de `R2M1` a `R2M9` generen notes independents. A més, `R2M9` pot recollir una proposta d’ampliació separada entre 0 i 1. El professorat la valida durant la defensa i la considera com una evidència pròpia d’eixe instrument; no es genera cap nota final automàtica de R2.
 
 **A quin nivell s'aplica**  
 La via `9→10` s'aplica al **Repte 2 complet**, no a cada microrepte de manera independent.
@@ -811,4 +784,4 @@ Nucli primer, ampliació després. En `R2`, la via `9→10` és una ampliació i
 
 ## Registre final de l’ampliació
 
-L’ampliació de R2 es declara una sola vegada en `docs/r2-ampliacio.md` i es recull exclusivament en **R2M9**. La proposta automàtica queda pendent de validació en la presentació. Consulta la [fórmula i l’escala comunes](../ampliacions-excellencia.md#calcul-i-validacio-de-lampliacio-global).
+L’ampliació de R2 es declara una sola vegada en `docs/r2-ampliacio.md` i es recull exclusivament en **R2M9**. La proposta automàtica queda separada de la nota del microrepte i el professorat la valida durant la defensa. Consulta l’[escala comuna](../ampliacions-excellencia.md).

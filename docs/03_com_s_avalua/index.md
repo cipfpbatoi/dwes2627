@@ -203,15 +203,7 @@ En este curs es valora sobretot si el teu treball és:
 
 ## 🌟 Com compta la franja 9→10
 
-La franja `9→10` no és un sistema de punts extra. Requerix una ampliació amb valor tècnic real sobre un repte que ja estiga ben resolt.
-
-La nota final d'un repte es llig així:
-
-```text
-nota_final_repte = 0.9 * nota_nucli_repte + ampliacio_9_10
-```
-
-Per això una mitjana excel·lent dels microreptes acredita un nucli excel·lent, però no dona automàticament un `10` final de repte. Sense ampliació validada, la nota final del repte queda limitada a `9`.
+La franja `9→10` requerix una ampliació amb valor tècnic real. Cada microrepte conserva la seua nota pròpia sobre 10 i no es calcula una nota única del repte. L’autocorrecció mostra una valoració separada de l’ampliació, entre 0 i 1, perquè el professorat la tinga en compte en la defensa oral.
 
 Perquè una ampliació compte de veritat, ha de:
 
@@ -221,7 +213,7 @@ Perquè una ampliació compte de veritat, ha de:
 - poder-se explicar i defensar
 - no dependre d'una delegació excessiva en IA
 
-La [regla comuna d’ampliació](../ampliacions-excellencia.md#calcul-i-validacio-de-lampliacio-global) concreta la fórmula 90% + 1 punt i el registre únic en l’últim microrepte.
+La [regla comuna d’ampliació](../ampliacions-excellencia.md) concreta la proposta automàtica i la validació docent en la defensa.
 
 ## Consolidació i recuperació del repte
 

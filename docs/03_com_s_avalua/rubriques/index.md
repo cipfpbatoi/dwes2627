@@ -62,4 +62,4 @@ Cada guia està alineada amb l'autocorrecció corresponent i mostra:
 | `R5M2` | [Connexió amb la font externa](r5m2.md) | `r5-s02-connexio-font-externa` |
 | `R5M3` | [Transformació, mapping i valor afegit](r5m3.md) | `r5-s03-mapping-transformacio-valor` |
 | `R5M4` | [Funcionalitat híbrida integrada](r5m4.md) | `r5-s04-funcionalitat-hibrida-producte` |
-| `R5M5` | [Prova, documentació i defensa](r5m5.md) | `r5-s05-prova-documentacio-defensa` |
+| `R5M5` | [Prova i documentació](r5m5.md) | `r5-s05-prova-documentacio-defensa` |

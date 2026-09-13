@@ -45,13 +45,13 @@ També poden aparéixer com a suport:
 
 Els tallers no creen una nota separada: et donen una ferramenta concreta per avançar o revisar el microrepte.
 
-| Microrepte | Focus | Taller relacionat | Pes |
-|---|---|---|---:|
-| `R5M1` | Selecció de font externa i disseny de la integració. | [MT12. Triar una integració amb valor](../recursos/Tallers/MT12-Triar-una-integracio-amb-valor.pdf) | `15%` |
-| `R5M2` | Connexió amb la font externa i recuperació real. | [MT13. Secrets, `.env` i claus](../recursos/Tallers/MT13-Secrets-env-i-claus.pdf) | `20%` |
-| `R5M3` | Transformació, mapping i valor afegit. | [MT14. Mapping de resposta externa](../recursos/Tallers/MT14-Mapping-de-resposta-externa.pdf) | `20%` |
-| `R5M4` | Integració de la funcionalitat híbrida en el producte. | [MT18. Actius digitals tokenitzats](../recursos/Tallers/MT18-Actius-digitals-tokenitzats.pdf) | `25%` |
-| `R5M5` | Prova, documentació i defensa de la integració. | [MT15. Defensa tècnica curta](../recursos/Tallers/MT15-Defensa-tecnica-curta.pdf) | `20%` |
+| Microrepte | Focus | Taller relacionat |
+|---|---|---|
+| `R5M1` | Selecció de font externa i disseny de la integració. | [MT12. Triar una integració amb valor](../recursos/Tallers/MT12-Triar-una-integracio-amb-valor.pdf) |
+| `R5M2` | Connexió amb la font externa i recuperació real. | [MT13. Secrets, `.env` i claus](../recursos/Tallers/MT13-Secrets-env-i-claus.pdf) |
+| `R5M3` | Transformació, mapping i valor afegit. | [MT14. Mapping de resposta externa](../recursos/Tallers/MT14-Mapping-de-resposta-externa.pdf) |
+| `R5M4` | Integració de la funcionalitat híbrida en el producte. | [MT18. Actius digitals tokenitzats](../recursos/Tallers/MT18-Actius-digitals-tokenitzats.pdf) |
+| `R5M5` | Prova i documentació de la integració. | [MT15. Defensa tècnica curta](../recursos/Tallers/MT15-Defensa-tecnica-curta.pdf) |
 
 `MT18` només s'ha d'usar si el projecte necessita treballar actius digitals tokenitzats. Si no aporta valor al producte, no cal incorporar-lo.
 
@@ -135,4 +135,4 @@ L'ampliació només compta si pots explicar què s'integra, com circula la infor
 
 ## Registre final de l’ampliació
 
-L’ampliació de R5 es declara una sola vegada en `docs/r5-ampliacio.md` i es recull exclusivament en **R5M5**. La proposta automàtica queda pendent de validació en la presentació. Consulta la [fórmula i l’escala comunes](../ampliacions-excellencia.md#calcul-i-validacio-de-lampliacio-global).
+L’ampliació de R5 es declara una sola vegada en `docs/r5-ampliacio.md` i es recull exclusivament en **R5M5**. La proposta automàtica queda separada de la nota del microrepte i el professorat la valida durant la defensa. Consulta l’[escala comuna](../ampliacions-excellencia.md).

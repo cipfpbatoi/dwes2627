@@ -35,12 +35,12 @@ Tens el procés detallat en la guia [Repositori, branques i entrega](../04_mater
 
 Este repte té `2` microreptes, un per sessió. El primer et dona criteri per entendre el backend i proposar una base tècnica inicial. El segon valida o ajusta eixa decisió en execució i la transforma en un repositori executable, amb una landing inicial servida pel backend i documentació suficient per passar a `R2`.
 
-L'autocorrecció també es farà per sessió. Per tant, `R1M1` té un pes del `25%` dins del repte i `R1M2` té un pes del `75%`.
+L'autocorrecció es farà per sessió i donarà una nota pròpia per a cada microrepte. No es calcularà una nota conjunta de R1.
 
-| Sessió | Autocorrecció | Microreptes inclosos | Pes dins del repte | Focus principal |
-|---|---|---|---:|---|
-| `R1-S01` | `r1-s01-model-client-servidor-stack` | `R1M1` | `25%` | Model client/servidor, backend i decisió tècnica inicial orientativa. |
-| `R1-S02` | `r1-s02-entorn-executable` | `R1M2` | `75%` | Entorn executable amb Docker, PHP i servidor web, landing inicial servida pel backend, documentació, verificació i defensa breu. |
+| Sessió | Autocorrecció | Microrepte | Focus principal |
+|---|---|---|---|
+| `R1-S01` | `r1-s01-model-client-servidor-stack` | `R1M1` | Model client/servidor, backend i decisió tècnica inicial orientativa. |
+| `R1-S02` | `r1-s02-entorn-executable` | `R1M2` | Entorn executable amb Docker, PHP i servidor web, landing inicial servida pel backend i documentació. |
 
 Guies d'avaluació:
 
@@ -243,4 +243,4 @@ Perquè compute com a `9→10`, has de poder explicar què aporta la part que va
 
 ## Registre final de l’ampliació
 
-L’ampliació de R1 es declara una sola vegada en `docs/r1-ampliacio.md` i es recull exclusivament en **R1M2**. La proposta automàtica queda pendent de validació en la presentació. Consulta la [fórmula i l’escala comunes](../ampliacions-excellencia.md#calcul-i-validacio-de-lampliacio-global).
+L’ampliació de R1 es declara una sola vegada en `docs/r1-ampliacio.md` i es recull exclusivament en **R1M2**. La proposta automàtica queda separada de la nota del microrepte i el professorat la valida durant la defensa. Consulta l’[escala comuna](../ampliacions-excellencia.md).
