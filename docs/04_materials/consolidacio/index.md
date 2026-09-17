@@ -5,3 +5,5 @@ El professorat publicarà ací les fitxes després de treballar cada microrepte.
 Són materials de suport per continuar aprenent, sense nova entrega ni recuperació individual dels microreptes. La recuperació correspon al repte complet.
 
 ## Fitxes publicades
+
+- [R1M1. Consolidació](r1m1.md)
