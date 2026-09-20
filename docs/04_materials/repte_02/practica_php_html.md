@@ -4,6 +4,8 @@ Ja saps programar: ara practicaràs la sintaxi de PHP i com el servidor genera H
 
 És una pràctica de la sessió introductòria del Repte 2, sense microrepte ni nota pròpia. No substituïx les evidències de R2M1 ni de R2M2. Treballarem amb dades escrites al codi; els formularis vindran en R2S1.
 
+Si treballes amb Python, tens [la mateixa bateria adaptada a Flask i Jinja](practica_python_html.md), amb els mateixos problemes i resultats esperats.
+
 ## Preparació i execució
 
 Crea una carpeta de pràctiques `practiques/r2s0` i treballa dins d’ella. Pots usar l’entorn PHP preparat a classe. Si tens PHP instal·lat localment, comprova’l i inicia el servidor des d’eixa carpeta:

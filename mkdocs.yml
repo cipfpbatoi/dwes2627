@@ -62,6 +62,7 @@ nav:
       - "2️⃣ Suport Repte 2":
           - "👀 Visió general": "04_materials/repte_02/index.md"
           - "PHP i HTML: pràctica R2S0": "04_materials/repte_02/practica_php_html.md"
+          - "Python i HTML: pràctica R2S0": "04_materials/repte_02/practica_python_html.md"
       - "3️⃣ Suport Repte 3":
           - "👀 Visió general": "04_materials/repte_03/index.md"
           - "🛠️ Suport tècnic": "04_materials/repte_03/suport_tecnic.md"

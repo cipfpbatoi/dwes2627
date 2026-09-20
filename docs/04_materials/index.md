@@ -13,7 +13,8 @@ Si necessites saber què has d'entregar, entra en [Reptes](../02_reptes/index.md
 | clonar, treballar amb branques i entregar | [Repositori, branques i entrega](guia_pujar_treball_autocorreccio.md) |
 | usar IA o agents locals, registrar consultes i crear una base de coneixement | [Guia d'ús verificable de la IA](guia_us_verificable_ia.md) |
 | trobar les diapositives de R1 | [Suport ràpid del Repte 1](repte_01/index.md) |
-| practicar PHP i HTML en R2S0 | [Bateria d’exercicis](repte_02/practica_php_html.md) |
+| practicar PHP i HTML en R2S0 | [Bateria d’exercicis en PHP](repte_02/practica_php_html.md) |
+| practicar Python i HTML en R2S0 | [La mateixa bateria amb Flask i Jinja](repte_02/practica_python_html.md) |
 | trobar les diapositives de R2 | [Suport ràpid del Repte 2](repte_02/index.md) |
 | trobar suport i diapositives de R3 | [Suport ràpid del Repte 3](repte_03/index.md) |
 | trobar les diapositives de R4 | [Suport ràpid del Repte 4](repte_04/index.md) |

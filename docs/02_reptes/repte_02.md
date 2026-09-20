@@ -6,7 +6,7 @@ Este repte servix per convertir la base funcional de `R1` en un flux complet de 
 
 ## Preparació en R2S0
 
-Abans del primer microrepte, practica execució, sintaxi bàsica i barreja de PHP amb HTML amb la [bateria de 7 exercicis de R2S0](../04_materials/repte_02/practica_php_html.md). És pràctica introductòria sense microrepte ni nota pròpia.
+Abans del primer microrepte, practica execució, sintaxi bàsica i generació d’HTML des del servidor amb la bateria de 7 exercicis de R2S0. Pots seguir la [via PHP](../04_materials/repte_02/practica_php_html.md) o resoldre [els mateixos problemes amb Python, Flask i Jinja](../04_materials/repte_02/practica_python_html.md). És pràctica introductòria sense microrepte ni nota pròpia.
 
 ## Vista ràpida
 

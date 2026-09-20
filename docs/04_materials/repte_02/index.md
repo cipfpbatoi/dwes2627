@@ -2,7 +2,8 @@
 
 | Necessite... | Recurs |
 |---|---|
-| practicar PHP i HTML en R2S0 | [Bateria de 7 exercicis](practica_php_html.md) |
+| practicar PHP i HTML en R2S0 | [Bateria de 7 exercicis en PHP](practica_php_html.md) |
+| practicar Python i HTML en R2S0 | [Els mateixos 7 exercicis amb Flask i Jinja](practica_python_html.md) |
 | veure l'enunciat | [Repte 2](../../02_reptes/repte_02.md) |
 | consultar com s'avalua cada microrepte | [Guies d'avaluació de R2](../../03_com_s_avalua/rubriques/index.md#repte-2) |
 | registrar proves i tancament de R2 | [Checklist de R2](#checklist-de-r2) |
