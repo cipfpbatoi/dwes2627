@@ -6,7 +6,30 @@ Ja saps programar: ara practicaràs com Python executa la lògica al servidor i 
 
 ## Preparació i execució amb Docker
 
-Crea una carpeta `practiques/r2s0-python`, entra-hi i crea dins la carpeta `templates`. Tot el codi Python s’executarà en un contenidor: no cal instal·lar Python, Flask ni crear un entorn virtual a l’ordinador.
+Crea una carpeta `practiques/r2s0-python` dins del projecte de `R1` i crea-hi la carpeta `templates`. Reutilitza l’entorn Docker que vas construir en el repte anterior: esta pràctica no et demana crear-ne un de nou.
+
+Abans de començar, comprova des de l’arrel del projecte que l’entorn continua funcionant:
+
+```sh
+docker compose up -d --build
+docker compose ps
+```
+
+Usa el servei Python, els ports i les ordres que ja tingues definits. Comprova que `Flask` està inclòs en les dependències del contenidor i que la carpeta de treball està muntada o copiada dins d’ell. Quan arranques un exercici, visita l’adreça publicada pel teu `compose.yaml`. No òbrigues la plantilla amb doble clic: una adreça `file://` no executa Python ni processa Jinja.
+
+Per comprovar la sintaxi dins del contenidor, adapta el nom del servei i la ruta a la teua configuració:
+
+```sh
+docker compose exec web python -m py_compile practiques/r2s0-python/01-hola.py
+```
+
+Si el teu servei no es diu `web`, substituïx-lo pel nom que apareix en `docker compose ps`.
+
+### Recordatori de recuperació de l’entorn
+
+Usa este apartat només si no vas aconseguir deixar funcional l’entorn Docker de `R1`. No substituïsques ni sobreescrigues una configuració que ja funciona. Revisa el bloqueig amb el professorat i, si t’ho indiquen, pots usar temporalment esta base mínima dins de `practiques/r2s0-python`.
+
+Crea `requirements.txt`:
 
 Crea `requirements.txt`:
 
@@ -40,19 +63,19 @@ services:
       - .:/app
 ```
 
-Per al primer exercici, construïx la imatge i inicia el servei:
+Amb esta base de recuperació, construïx la imatge i inicia el primer exercici:
 
 ```sh
 docker compose up --build
 ```
 
-Mantín el terminal obert, visita `http://localhost:5000` i para el servei amb `Ctrl+C`. Per executar un altre exercici, indica el fitxer abans de la mateixa ordre:
+Mantín el terminal obert, visita `http://localhost:5000` i para el servei amb `Ctrl+C`. Per executar un altre exercici amb esta base, indica el fitxer abans de la mateixa ordre:
 
 ```sh
 FITXER=02-fitxa.py docker compose up
 ```
 
-Si el contenidor anterior continua actiu, para’l abans amb `docker compose down`. No òbrigues la plantilla amb doble clic: una adreça `file://` no executa Python ni processa Jinja.
+Si el contenidor anterior continua actiu, para’l abans amb `docker compose down`.
 
 Per comprovar la sintaxi dins del mateix entorn Docker sense iniciar el servidor:
 
