@@ -4,30 +4,60 @@ Ja saps programar: ara practicaràs com Python executa la lògica al servidor i 
 
 És una pràctica de la sessió introductòria del Repte 2, sense microrepte ni nota pròpia. No substituïx les evidències de R2M1 ni de R2M2. Treballarem amb dades escrites al codi; els formularis vindran en R2S1.
 
-## Preparació i execució
+## Preparació i execució amb Docker
 
-Crea una carpeta `practiques/r2s0-python`, entra-hi i prepara un entorn virtual:
+Crea una carpeta `practiques/r2s0-python`, entra-hi i crea dins la carpeta `templates`. Tot el codi Python s’executarà en un contenidor: no cal instal·lar Python, Flask ni crear un entorn virtual a l’ordinador.
 
-```sh
-python3 --version
-python3 -m venv .venv
-source .venv/bin/activate
-python -m pip install Flask
-mkdir templates
+Crea `requirements.txt`:
+
+```text
+Flask==3.1.2
 ```
 
-En Windows, activa l’entorn amb `.venv\Scripts\activate`. Per a cada exercici, inicia el programa corresponent, per exemple:
+Crea `Dockerfile`:
 
-```sh
-python 01-hola.py
+```dockerfile
+FROM python:3.13-slim
+
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+CMD ["python", "01-hola.py"]
 ```
 
-Mantín el terminal obert, visita l’adreça que mostra Flask —normalment `http://127.0.0.1:5000`— i para el servidor amb `Ctrl+C`. No òbrigues la plantilla amb doble clic: una adreça `file://` no executa Python ni processa Jinja.
+Crea `compose.yaml`:
 
-Per comprovar la sintaxi sense iniciar el servidor:
+```yaml
+services:
+  web:
+    build: .
+    command: python ${FITXER:-01-hola.py}
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
+```
+
+Per al primer exercici, construïx la imatge i inicia el servei:
 
 ```sh
-python -m py_compile 01-hola.py
+docker compose up --build
+```
+
+Mantín el terminal obert, visita `http://localhost:5000` i para el servei amb `Ctrl+C`. Per executar un altre exercici, indica el fitxer abans de la mateixa ordre:
+
+```sh
+FITXER=02-fitxa.py docker compose up
+```
+
+Si el contenidor anterior continua actiu, para’l abans amb `docker compose down`. No òbrigues la plantilla amb doble clic: una adreça `file://` no executa Python ni processa Jinja.
+
+Per comprovar la sintaxi dins del mateix entorn Docker sense iniciar el servidor:
+
+```sh
+docker compose run --rm web python -m py_compile 01-hola.py
 ```
 
 ## Recordatori mínim
@@ -56,7 +86,7 @@ def inici():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)
 ```
 
 I crea `templates/01-hola.html`:
@@ -149,7 +179,7 @@ def inici():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)
 ```
 
 I crea `templates/06-errors.html`:
