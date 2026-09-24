@@ -36,7 +36,7 @@ nav:
           - "R2M5. Autenticació i funcionalitat protegida": "03_com_s_avalua/rubriques/r2m5.md"
           - "R2M6. Mini API d'autenticació": "03_com_s_avalua/rubriques/r2m6.md"
           - "R2M7. Proves, depuració i checkpoint": "03_com_s_avalua/rubriques/r2m7.md"
-          - "R2M8. Peça testable amb POO i Composer": "03_com_s_avalua/rubriques/r2m8.md"
+          - "R2M8. Peça testable amb POO i dependències": "03_com_s_avalua/rubriques/r2m8.md"
           - "R2M9. Persistència mínima amb BBDD": "03_com_s_avalua/rubriques/r2m9.md"
           - "R3M1. Arrencada del nou projecte": "03_com_s_avalua/rubriques/r3m1.md"
           - "R3M2. Persistència mínima": "03_com_s_avalua/rubriques/r3m2.md"
@@ -63,6 +63,7 @@ nav:
           - "👀 Visió general": "04_materials/repte_02/index.md"
           - "PHP i HTML: pràctica R2S0": "04_materials/repte_02/practica_php_html.md"
           - "Python i HTML: pràctica R2S0": "04_materials/repte_02/practica_python_html.md"
+          - "Python en els microreptes R2": "04_materials/repte_02/guia_python_microreptes.md"
       - "3️⃣ Suport Repte 3":
           - "👀 Visió general": "04_materials/repte_03/index.md"
           - "🛠️ Suport tècnic": "04_materials/repte_03/suport_tecnic.md"

@@ -2,7 +2,7 @@
 
 ## Objectiu
 
-Crear una presentació teòrica curta per preparar `R2M2`.
+Crear una presentació de consolidació molt breu per usar després de `R2M2`. Ha de permetre revisar el que s'ha fet, no tornar a explicar tot el microrepte.
 
 
 ## Idees clau
@@ -15,13 +15,12 @@ Crear una presentació teòrica curta per preparar `R2M2`.
 - El cas correcte pot guardar-se funcionalment amb un mecanisme simple i explicable.
 - Si es mostra text de l'usuari, cal tractar-lo o escapar-lo segons el nivell.
 
-## Exemples PHP que han d'aparéixer
+## Exemples mínims que han d'aparéixer
 
-- Reomplir un `<input>` amb `value`.
-- Mantindre un `<select>` amb `selected`.
-- Mantindre un checkbox amb `checked`.
-- Guardar funcionalment el cas correcte en array, fitxer simple o estructura controlada segons el nivell.
-- Diferenciar "conservar per corregir" i "guardar com a dada correcta".
+- Un únic exemple que mostre com conservar un camp de text i una opció tancada.
+- Les dues vies, PHP i Python amb Flask/Jinja, en pestanyes o columnes equivalents.
+- Un esquema amb els dos camins: error i reintent; cas correcte i guardat funcional.
+- La diferència entre "conservar per corregir" i "guardar com a dada correcta".
 
 ## Codi base per a diapositives
 
@@ -33,24 +32,25 @@ $nom = $_POST['nom'] ?? '';
 <input name="nom" value="<?= htmlspecialchars($nom) ?>">
 ```
 
-```php
-<option value="alta" <?= $tipus === 'alta' ? 'selected' : '' ?>>Alta</option>
+```python
+nom = request.form.get("nom", "").strip()
 ```
 
-```php
-<input type="checkbox" name="urgent" <?= $urgent ? 'checked' : '' ?>>
+```html
+<input name="nom" value="{{ nom }}">
 ```
+
+No cal mostrar codi separat per a tots els controls. El `select` o el checkbox es pot explicar visualment sobre el mateix patró.
 
 ## Format recomanat
 
-- 9-11 diapositives.
-- Una diapositiva amb els dos camins: error/reintent i correcte/guardat.
-- Una diapositiva visual sobre `value`, `selected` i `checked`.
-- Una diapositiva comparant reintent, guardat funcional i persistència formal.
-- Una diapositiva amb exemple complet de reintent.
-- Una diapositiva d'errors habituals.
-- Una diapositiva final amb checklist de prova.
-- Una diapositiva final amb preguntes de comprovació.
+- 5-6 diapositives com a màxim.
+- 1: recordatori del problema observat en `R2M2`.
+- 2: esquema dels dos camins.
+- 3: un exemple mínim PHP/Python de dada conservada.
+- 4: tres errors habituals i com detectar-los.
+- 5: checklist de prova i dues preguntes de comprovació.
+- 6 opcional: connexió amb `R2M3`, sense avançar-ne contingut.
 
 ## No incloure
 
@@ -59,11 +59,11 @@ $nom = $_POST['nom'] ?? '';
 - MVC o arquitectura completa.
 - Arrays d'errors com a mínim.
 - Solució completa del microrepte.
+- Repetir la teoria de peticions i validació ja vista en `R2M1`.
+- Més d'un exemple complet de codi.
 
 ## Preguntes de comprovació
 
 - Quina diferència hi ha entre conservar dades per reintentar i guardar una dada correcta?
-- Quin camp del formulari pots repintar amb `value`?
-- Quan uses `selected` i quan uses `checked`?
 - Què no s'ha de guardar si el formulari encara té error?
-- On es pot veure després la dada correcta guardada funcionalment?
+- On es pot comprovar després la dada correcta guardada funcionalment?

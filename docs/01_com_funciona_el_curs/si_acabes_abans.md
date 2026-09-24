@@ -70,13 +70,13 @@ Tria una proposta amb el professorat o adapta-la als errors i decisions del teu 
 - **Evidència curta:** prova que falla abans del canvi i passa després, o registre de depuració amb hipòtesi i conclusió.
 - **No avances encara:** reestructuració completa amb framework.
 
-### R2M8. Primera peça testable amb POO i Composer
+### R2M8. Primera peça testable amb POO i dependències
 
 - **Pots aprofundir en:** afegir un segon cas unitari, provar una excepció o comparar la dependència directa amb una versió injectada de manera simple.
 - **Evidència curta:** ordre de prova, resultat i explicació de per què la classe es pot provar sense navegador.
 - **No avances encara:** arquitectura MVC completa, contenidor de dependències o ORM.
 
-### R2M9. Persistència mínima amb BBDD en PHP
+### R2M9. Persistència mínima amb BBDD
 
 - **Pots aprofundir en:** provar una restricció, usar una transacció curta o separar la configuració de connexió sense exposar secrets.
 - **Evidència curta:** alta, lectura i un cas d’error reproduïble amb l’estat final de les dades.

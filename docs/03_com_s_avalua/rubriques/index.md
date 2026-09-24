@@ -29,8 +29,8 @@ Cada guia està alineada amb l'autocorrecció corresponent i mostra:
 | `R2M5` | [Autenticació i funcionalitat protegida](r2m5.md) | `r2-s05-autenticacio-funcionalitat-protegida` |
 | `R2M6` | [Mini API d'autenticació per a client](r2m6.md) | `r2-s06-mini-api-autenticacio-client` |
 | `R2M7` | [Proves, depuració i checkpoint tècnic](r2m7.md) | `r2-s07-proves-depuracio-checkpoint` |
-| `R2M8` | [Primera peça testable amb POO i Composer](r2m8.md) | `r2-s08-primera-peca-testable-poo-composer` |
-| `R2M9` | [Persistència mínima amb BBDD en PHP](r2m9.md) | `r2-s09-persistencia-minima-bbdd-php` |
+| `R2M8` | [Primera peça testable amb POO i dependències](r2m8.md) | `r2-s08-primera-peca-testable-poo-composer` |
+| `R2M9` | [Persistència mínima amb BBDD](r2m9.md) | `r2-s09-persistencia-minima-bbdd-php` |
 
 ## Repte 3
 

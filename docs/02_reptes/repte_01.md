@@ -40,7 +40,7 @@ L'autocorrecció es farà per sessió i donarà una nota pròpia per a cada micr
 | Sessió | Autocorrecció | Microrepte | Focus principal |
 |---|---|---|---|
 | `R1-S01` | `r1-s01-model-client-servidor-stack` | `R1M1` | Model client/servidor, backend i decisió tècnica inicial orientativa. |
-| `R1-S02` | `r1-s02-entorn-executable` | `R1M2` | Entorn executable amb Docker, PHP i servidor web, landing inicial servida pel backend i documentació. |
+| `R1-S02` | `r1-s02-entorn-executable` | `R1M2` | Entorn executable amb Docker, PHP o Python i servidor web, landing inicial servida pel backend i documentació. |
 
 Guies d'avaluació:
 
@@ -119,7 +119,7 @@ Deixar el projecte preparat perquè es puga arrancar de manera clara, reproduïb
 Has de muntar i tancar una base inicial amb:
 
 - Docker o equivalent.
-- PHP.
+- PHP o Python, segons la via triada.
 - Servidor web.
 - Base de dades i phpMyAdmin, si s'indica per al teu projecte.
 - Estructura mínima del projecte.
@@ -176,7 +176,7 @@ Convindria evitar errors com estos:
 
 En el **Repte 1** no es demana encara la instal·lació completa d’un framework.
 
-La prioritat és disposar d’un entorn executable en **Docker + PHP + servidor web** i construir una primera landing inicial servida pel backend.
+La prioritat és disposar d’un entorn executable en **Docker + PHP o Python + servidor web** i construir una primera landing inicial servida pel backend.
 
 La decisió sobre el framework pot aparéixer com a exploració inicial o orientació tècnica dins de la fitxa breu de `R1M1`, però la seua incorporació efectiva es reserva per a fases posteriors del curs. En `R1M2` confirmes o ajustes la base tècnica perquè l'entorn arranque.
 

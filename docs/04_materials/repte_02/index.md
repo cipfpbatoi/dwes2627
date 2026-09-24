@@ -4,6 +4,7 @@
 |---|---|
 | practicar PHP i HTML en R2S0 | [Bateria de 7 exercicis en PHP](practica_php_html.md) |
 | practicar Python i HTML en R2S0 | [Els mateixos 7 exercicis amb Flask i Jinja](practica_python_html.md) |
+| continuar els microreptes R2M1-R2M9 amb Python | [Equivalències i orientacions amb Flask](guia_python_microreptes.md) |
 | veure l'enunciat | [Repte 2](../../02_reptes/repte_02.md) |
 | consultar com s'avalua cada microrepte | [Guies d'avaluació de R2](../../03_com_s_avalua/rubriques/index.md#repte-2) |
 | registrar proves i tancament de R2 | [Checklist de R2](#checklist-de-r2) |
@@ -14,8 +15,8 @@
 | repassar sessió, cookies i estat | [R2M4. Estat, sessió i cookies](../../recursos/Repte2/R2M4-Estat-sessio-i-cookies.pdf) |
 | repassar autenticació i funcionalitat protegida | [R2M5. Autenticació i funcionalitat protegida](../../recursos/Repte2/R2M5-Autenticacio-i-funcionalitat-protegida.pdf) |
 | repassar mini API d'autenticació | [R2M6. Mini API d'autenticació per a client](../../recursos/Repte2/R2M6-Mini-API-dautenticacio-per-a-client.pdf) |
-| repassar POO, Composer i prova unitària | [R2M8. Primera peça testable amb POO i Composer](../../recursos/Repte2/R2M8-Primera-peca-testable-amb-POO-i-Composer.pdf) |
-| repassar persistència mínima amb BBDD | [R2M9. Persistència mínima amb BBDD en PHP](../../recursos/Repte2/R2M9-Persistencia-minima-amb-BBDD-en-PHP.pdf) |
+| repassar POO, dependències i prova unitària | [R2M8. Primera peça testable](../../recursos/Repte2/R2M8-Primera-peca-testable-amb-POO-i-Composer.pdf) i [equivalència Python](guia_python_microreptes.md#r2m8-primera-peca-testable) |
+| repassar persistència mínima amb BBDD | [R2M9. Persistència mínima](../../recursos/Repte2/R2M9-Persistencia-minima-amb-BBDD-en-PHP.pdf) i [equivalència Python](guia_python_microreptes.md#r2m9-persistencia-minima-amb-bbdd) |
 
 Consulta les [fitxes de consolidació publicades després de classe](../consolidacio/index.md).
 

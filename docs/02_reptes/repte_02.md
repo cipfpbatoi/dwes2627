@@ -28,7 +28,7 @@ No cal que siga un producte gran. Sí que cal que siga un flux complet, explicab
 
 En este repte la persistència és **funcional i de suport**. Servix perquè la informació correcta torne a aparéixer en el producte: un llistat, una reserva, una publicació, un recurs, una activitat o qualsevol dada significativa del domini.
 
-Es pot resoldre amb un mecanisme simple i controlat, sempre que siga coherent amb el projecte. La base de dades apareix al final del nucli amb una persistència mínima en `PHP`, però `R2` encara no és un repte centrat en arquitectura completa d'accés a dades.
+Es pot resoldre amb un mecanisme simple i controlat, sempre que siga coherent amb el projecte. La base de dades apareix al final del nucli amb una persistència mínima des de `PHP` o `Python`, però `R2` encara no és un repte centrat en arquitectura completa d'accés a dades.
 
 ## Què no és suficient
 
@@ -77,7 +77,9 @@ La base del repte queda en `27` hores, organitzades en `9` sessions de `3` hores
 
 A més, pot haver-hi una sessió d'ampliació, `R2S10`, dedicada al contracte d'autenticació per a `DWEC`. No és un microrepte nou ni té nota pròpia: ajuda a deixar la mini API de `R2M6` més clara, documentada i consumible.
 
-La progressió també és important: en el microrepte 1 entra i es valida la informació; en el 2 es processen i es guarden les dades correctes; en el 3 s’apliquen regles reals del projecte amb funcions pròpies; en el 4 es conserva estat temporal del flux i s'estabilitzen includes; en el 5 es protegix una operació real; en el 6 s'exposa una mini API d'autenticació per a client; en el 7 es prova, es depura i es tanca un checkpoint tècnic; en el 8 s’introduïx una classe simple carregada amb Composer i verificada amb una primera prova unitària; i en el 9 es fa una persistència mínima amb BBDD.
+La progressió també és important: en el microrepte 1 entra i es valida la informació; en el 2 es processen i es guarden les dades correctes; en el 3 s’apliquen regles reals del projecte amb funcions pròpies; en el 4 es conserva estat temporal del flux i s'estabilitza el punt d'arrancada; en el 5 es protegix una operació real; en el 6 s'exposa una mini API d'autenticació per a client; en el 7 es prova, es depura i es tanca un checkpoint tècnic; en el 8 s’introduïx una classe simple carregada amb el mecanisme propi de l'entorn i verificada amb una primera prova unitària; i en el 9 es fa una persistència mínima amb BBDD.
+
+Si treballes amb Python, usa la [guia de continuïtat amb Flask per als microreptes](../04_materials/repte_02/guia_python_microreptes.md). Els productes i les evidències són els mateixos; la guia només traduïx les peces tècniques de PHP al teu entorn.
 
 ## Diferència entre R2S1 i R2S2
 
@@ -198,7 +200,7 @@ Este microrepte continua directament el `R2M1`. No has de començar de zero ni c
 
 **Què s’espera**
 
-- Comprensió bàsica de com la base comuna en `PHP` genera una pàgina o una resposta amb codi embegut o equivalent.
+- Comprensió bàsica de com la base de servidor en `PHP` o `Python` genera una pàgina o una resposta amb codi embegut o una plantilla.
 - Identificació clara de les peces tècniques associades al flux: petició, servidor, fitxer o plantilla i resposta.
 - Inclusió recognoscible de codi de servidor dins del punt on es genera la resposta.
 - Sintaxi correcta.
@@ -375,7 +377,7 @@ Demostrar que el sistema pot recordar informació provisional entre peticions pe
 
 **Teoria relacionada**: [Estat, sessió i cookies](../recursos/Teoria/Teoria-R2-Estat-sessio-i-cookies.pdf).
 
-En este microrepte hauràs d’usar **sessió i cookie**. No és suficient triar només una de les dues. També hauràs de llegir alguna dada de `$_SERVER` amb una finalitat clara i preparar una base comuna de rutes perquè els `include` / `require` partisquen del mateix lloc.
+En este microrepte hauràs d’usar **sessió i cookie**. No és suficient triar només una de les dues. També hauràs de llegir alguna dada de la petició o de l'entorn del servidor amb una finalitat clara i preparar un punt d'arrancada comú perquè les importacions o inclusions partisquen del mateix lloc.
 
 **Què s’espera**
 
@@ -383,8 +385,8 @@ En este microrepte hauràs d’usar **sessió i cookie**. No és suficient triar
 - Una cookie pròpia no sensible amb sentit funcional: preferència de vista, últim filtre, idioma, avís vist o última secció consultada.
 - Evidència de què es guarda en sessió i de com es recupera.
 - Evidència de què es guarda en cookie i de com es recupera.
-- Lectura acotada d’alguna dada de `$_SERVER`, com `REQUEST_METHOD`, `HTTP_USER_AGENT` o `REMOTE_ADDR` tractada amb prudència.
-- Un fitxer comú de configuració o bootstrap amb una ruta base per fer `include` / `require` de manera estable.
+- Lectura acotada d’alguna dada del servidor, com el mètode HTTP, `User-Agent` o adreça remota, tractada amb prudència (`$_SERVER` en PHP o `request` en Flask).
+- Un fitxer comú de configuració o bootstrap que permeta fer `include` / `require` en PHP o importacions en Python de manera estable.
 - Recuperació del flux després d’un error, una recàrrega o un pas intermedi.
 - Distinció clara entre estat temporal del flux i guardat funcional del recurs.
 - Neteja o invalidació quan toque.
@@ -471,7 +473,7 @@ Comprovar que el flux complet funciona, que queda registrat amb una checklist o 
 
 **Teoria relacionada**: [Proves, depuració i checkpoint](../recursos/Teoria/Teoria-R2-Proves-depuracio-i-checkpoint.pdf).
 
-En este microrepte no es demanen encara proves unitàries ni `PHPUnit` com a mínim. Sí que has d’introduir una **prova automàtica lleugera de flux**, encara que siga una comanda `curl`, un script `.sh`, un script PHP senzill o una col·lecció de peticions documentada.
+En este microrepte no es demanen encara proves unitàries ni un framework de proves com a mínim. Sí que has d’introduir una **prova automàtica lleugera de flux**, encara que siga una comanda `curl`, un script `.sh`, un script PHP o Python senzill o una col·lecció de peticions documentada.
 
 **Què s’espera**
 
@@ -489,13 +491,13 @@ En este microrepte no es demanen encara proves unitàries ni `PHPUnit` com a mí
 **Què no es penalitza encara**
 
 - No tindre una suite completa de proves automatitzades.
-- No tindre proves unitàries ni `PHPUnit`.
+- No tindre proves unitàries ni `PHPUnit`/`pytest`.
 - No haver refactoritzat encara el codi.
 - No afegir funcionalitats noves si el flux ja està tancat i verificat.
 
-### Microrepte 8. Primera peça testable amb POO i Composer
+### Microrepte 8. Primera peça testable amb POO i dependències controlades
 
-En este microrepte hauràs de convertir una regla, comprovació o càlcul del flux que ja funciona en una classe simple carregada amb Composer i provar-la de manera automàtica.
+En este microrepte hauràs de convertir una regla, comprovació o càlcul del flux que ja funciona en una classe simple carregada amb el mecanisme propi de l'entorn i provar-la de manera automàtica.
 
 **Teoria relacionada**: [POO, Composer i proves unitàries](../recursos/Teoria/Teoria-R2-POO-Composer-i-proves-unitaries.pdf).
 
@@ -504,12 +506,12 @@ Este microrepte no substituïx la resta del repte ni convertix `R2` en `R3`.
 Ací sí que hauràs de:
 
 - partir d’un flux ja provat en `R2M7`
-- crear o ajustar `composer.json`
-- configurar autoload per carregar classes pròpies
+- declarar les dependències amb `composer.json` o `requirements.txt`
+- configurar l'autoload de Composer o una estructura de paquets i importacions Python coherent
 - crear una classe simple en `src/` o carpeta equivalent
 - posar dins de la classe una regla, comprovació o càlcul real del projecte
 - evitar que eixa classe depenga directament de `$_POST`, `$_SESSION`, `$_COOKIE` o del codi `HTML`
-- escriure una prova unitària mínima amb `PHPUnit`, `Pest` o un script automàtic equivalent
+- escriure una prova unitària mínima amb `PHPUnit`, `Pest`, `pytest`, `unittest` o un script automàtic equivalent
 - executar la prova i documentar el resultat
 - repetir un cas clau del flux web per comprovar que no s’ha trencat res
 - explicar què queda per reorganitzar en `R3`
@@ -523,7 +525,7 @@ Este microrepte no vol dir:
 - consumir una API externa com a mínim obligatori
 - substituir el treball propi de `R3`
 
-Si després d’esta peça afegixes més classes, una llibreria externa menuda via Composer o una crida a una API externa, això s’ha d’entendre com a ampliació o pont cap als reptes següents, no com a requisit obligatori de `R2`.
+Si després d’esta peça afegixes més classes, una llibreria externa menuda via Composer o `pip`, o una crida a una API externa, això s’ha d’entendre com a ampliació o pont cap als reptes següents, no com a requisit obligatori de `R2`.
 
 **Què no es penalitza encara**
 
@@ -533,7 +535,7 @@ Si després d’esta peça afegixes més classes, una llibreria externa menuda v
 - No fer POO completa.
 - No consumir API externa.
 
-### Microrepte 9. Persistència mínima amb BBDD en PHP
+### Microrepte 9. Persistència mínima amb BBDD
 
 En este microrepte hauràs de fer que una dada significativa del projecte quede guardada en una base de dades i es puga recuperar després.
 
@@ -547,7 +549,7 @@ Ací sí que hauràs de:
 - crear o documentar una taula mínima
 - separar la configuració de connexió del codi principal
 - evitar pujar secrets reals al repositori
-- connectar amb `PDO` o un mecanisme equivalent justificat
+- connectar amb `PDO` en PHP o amb un connector DB-API/driver equivalent en Python
 - fer una alta amb dades que ja passen per la validació del flux
 - fer una lectura posterior, llistat o detall
 - usar consultes preparades quan hi haja dades d'usuari
@@ -565,7 +567,7 @@ Este microrepte no vol dir:
 - substituir la validació, la sessió o l'autenticació per la BBDD
 - guardar contrasenyes en clar
 
-Si ja tens Composer introduït en `R2M8`, pots usar-lo per organitzar millor la connexió o carregar una llibreria menuda com `vlucas/phpdotenv`, però això no és el mínim obligatori. El mínim és entendre i demostrar connexió, alta i lectura amb dades pròpies.
+Si ja tens controlades les dependències en `R2M8`, pots usar Composer o `pip` per organitzar millor la connexió o carregar una llibreria menuda per a les variables d'entorn, però això no és el mínim obligatori. El mínim és entendre i demostrar connexió, alta i lectura amb dades pròpies.
 
 **Què no es penalitza encara**
 
@@ -579,7 +581,7 @@ Si ja tens Composer introduït en `R2M8`, pots usar-lo per organitzar millor la 
 
 Per orientar-te sense convertir el repte en una llista normativa, pots llegir-lo així:
 
-- `RA2` apareix sobretot en el microrepte 2: ací entra la base comuna en `PHP`, la generació de pàgines o respostes amb codi embegut, la sintaxi, les sentències, les directives, les variables, els operadors i els àmbits.
+- `RA2` apareix sobretot en el microrepte 2: ací entra la base de servidor en `PHP` o `Python`, la generació de pàgines o respostes amb codi o plantilles, la sintaxi, les sentències, les variables, els operadors i els àmbits.
 - `RA3` apareix sobretot en els microreptes 1, 3 i 8: formularis, recuperació de dades, comentaris útils, decisions, bucles, arrays, funcions i encapsulació mínima d’una regla en una classe.
 - `RA4` apareix sobretot en els microreptes 4, 5, 6, 7 i 8: estat, emmagatzematge en client quan toque, autenticació, funcionalitat protegida, mini API autenticada, prova, depuració, prova unitària inicial i comprovació final del flux.
 - `RA6` apareix de manera introductòria en el microrepte 9: connexió a BBDD, alta, lectura, consultes preparades i reproducció mínima abans de treballar migrations, seeders i models en `R3`.
@@ -593,12 +595,12 @@ Cada microrepte genera una nota pròpia només per al seu **RA avaluat**. Els RA
 | `R2M1` | Entrada i validació bàsica | `RA2` | `RA2.a`, `RA2.b`, `RA2.c`, `RA2.d` | `RA3.e`, `RA3.f`, `RA3.g` |
 | `R2M2` | Processament, reintent i guardat funcional | `RA2` | `RA2.a-h` | `RA3.e`, `RA3.f`, `RA3.g` |
 | `R2M3` | Lògica, arrays, funcions i llibreria pròpia | `RA3` | `RA3.a`, `RA3.b`, `RA3.c`, `RA3.d` | - |
-| `R2M4` | Estat, sessió, cookie, `$_SERVER` i includes estables | `RA4` | `RA4.a`, `RA4.b`, `RA4.c` | - |
+| `R2M4` | Estat, sessió, cookie, dades de petició i arrancada estable | `RA4` | `RA4.a`, `RA4.b`, `RA4.c` | - |
 | `R2M5` | Registre, hash, autenticació i operació protegida | `RA4` | `RA4.d`, `RA4.e` | - |
 | `R2M6` | Mini API d'autenticació per a client | `RA4` | `RA4.d`, `RA4.e` | pont DWEC |
 | `R2M7` | Proves automàtiques lleugeres, depuració i checkpoint | `RA4` | `RA4.f` | - |
-| `R2M8` | Primera peça testable amb POO i Composer | `RA3` | `RA3.d`, `RA3.g` | `RA4.f` |
-| `R2M9` | Persistència mínima amb BBDD en PHP | `RA6` | `RA6.a`, `RA6.b`, `RA6.c`, `RA6.d`, `RA6.f` | `RA3`, `RA4` |
+| `R2M8` | Primera peça testable amb POO i dependències controlades | `RA3` | `RA3.d`, `RA3.g` | `RA4.f` |
+| `R2M9` | Persistència mínima amb BBDD | `RA6` | `RA6.a`, `RA6.b`, `RA6.c`, `RA6.d`, `RA6.f` | `RA3`, `RA4` |
 
 La dependència funcional entre microreptes no els convertix en una nota única. Per exemple, `R2M5` necessita un flux anterior suficientment funcional, però conserva una qualificació pròpia.
 
@@ -606,7 +608,7 @@ La dependència funcional entre microreptes no els convertix en una nota única.
 
 En llenguatge clar, en este repte es treballa sobretot que sigues capaç de:
 
-- Entendre com la base comuna en `PHP` genera una pàgina o resposta amb codi embegut o equivalent.
+- Entendre com la base de servidor en `PHP` o `Python` genera una pàgina o resposta amb codi o plantilles.
 - Identificar les peces tècniques bàsiques que intervenen en eixe flux.
 - Rebre i recuperar dades d’un formulari o entrada equivalent.
 - Mostrar almenys un error de validació de manera clara i permetre correcció.
@@ -628,7 +630,7 @@ No es tracta de memoritzar noms de funcions o paraules tècniques. Es tracta de 
 
 ## Idea metodològica important d’este repte
 
-Este repte es resol sobre una **base comuna en `PHP`**.
+Este repte es resol sobre una **base de servidor en `PHP` o `Python`**. La via Python de referència usa Flask i Jinja; no canvia el que has de construir, provar ni explicar.
 
 Això implica també entendre, encara que siga a un nivell bàsic, com es genera una pàgina o una resposta des del servidor amb codi embegut o equivalent, i quines peces tècniques intervenen en eixe recorregut.
 
@@ -640,11 +642,11 @@ En este moment del curs, la prioritat és consolidar el flux complet en servidor
 - Estat o sessió quan faça falta.
 - Autenticació i funcionalitat protegida.
 - Prova, depuració i checkpoint tècnic.
-- Primera peça testable amb POO i Composer.
+- Primera peça testable amb POO i dependències controlades.
 
 Això significa que la informació correcta ha de poder continuar viva dins del projecte. El sistema ha de poder aprofitar-la després per mostrar-la, recuperar-la, llistar-la o continuar treballant amb ella.
 
-En `R2M8`, això implica triar una regla o comprovació del flux, encapsular-la en una classe simple, carregar-la amb Composer i provar-la sense navegador amb una prova unitària mínima.
+En `R2M8`, això implica triar una regla o comprovació del flux, encapsular-la en una classe simple, carregar-la amb Composer en PHP o importar-la com a mòdul en Python, i provar-la sense navegador amb una prova unitària mínima.
 
 Però això no vol dir que ara toque convertir el repte en un bloc d’accés a dades, modelat complet o arquitectura de persistència.
 
@@ -652,7 +654,7 @@ El contrast de frameworks i la consolidació arquitectònica encara no són el f
 
 Ara toca demostrar una base funcional comuna i defensable. Després arribarà el contrast amb itineraris com `Laravel`, `Symfony` o `NestJS`, i serà en `R3` quan la persistència passarà a tindre un pes més central en l’arquitectura.
 
-`R2M8` ha de servir per fer el primer pas real cap a codi testable amb POO i Composer, no per fer una reescriptura arquitectònica completa.
+`R2M8` ha de servir per fer el primer pas real cap a codi testable amb POO i dependències controlades, no per fer una reescriptura arquitectònica completa.
 
  
 
@@ -666,7 +668,7 @@ En este repte no n’hi ha prou amb dir que el sistema funciona. Les proves han 
 
 La documentació ha de ser útil i proporcionada: on es valida, on es processa, on es comprova l'accés, com es conserva la informació i on es tracta un fitxer o imatge si n'hi ha.
 
-PHPDoc és recomanable només en funcions pròpies amb lògica rellevant. No es demana documentar cada variable, omplir fitxers trivials de DocBlocks, generar documentació automàtica completa, convertir tot el projecte a POO completa ni fer de la base de dades el centre del repte.
+PHPDoc o docstrings són recomanables només en funcions pròpies amb lògica rellevant. No es demana documentar cada variable, omplir fitxers trivials de comentaris, generar documentació automàtica completa, convertir tot el projecte a POO completa ni fer de la base de dades el centre del repte.
 
 ## Ús de la IA en este repte
 
