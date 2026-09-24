@@ -5,6 +5,7 @@
 | practicar PHP i HTML en R2S0 | [Bateria de 7 exercicis en PHP](practica_php_html.md) |
 | practicar Python i HTML en R2S0 | [Els mateixos 7 exercicis amb Flask i Jinja](practica_python_html.md) |
 | continuar els microreptes R2M1-R2M9 amb Python | [Equivalències i orientacions amb Flask](guia_python_microreptes.md) |
+| consultar la teoria Python de cada microrepte | [R2M1](python/r2m1_formularis_validacio.md) · [R2M2](python/r2m2_reintent_guardat.md) · [R2M3](python/r2m3_logica_funcions.md) · [R2M4](python/r2m4_sessio_cookies.md) · [R2M5](python/r2m5_autenticacio.md) · [R2M6](python/r2m6_api_auth_json.md) · [R2M7](python/r2m7_proves_debug.md) · [R2M8](python/r2m8_poo_proves.md) · [R2M9](python/r2m9_bbdd.md) |
 | veure l'enunciat | [Repte 2](../../02_reptes/repte_02.md) |
 | consultar com s'avalua cada microrepte | [Guies d'avaluació de R2](../../03_com_s_avalua/rubriques/index.md#repte-2) |
 | registrar proves i tancament de R2 | [Checklist de R2](#checklist-de-r2) |

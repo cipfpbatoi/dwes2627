@@ -139,7 +139,7 @@ Els tallers no creen una nota separada: et donen una ferramenta concreta per ava
 
 Construir un punt d’entrada de dades usable i demostrar que el sistema rep la informació correctament, aplica una validació bàsica en servidor, mostra un error visible i permet reenviar el formulari corregit.
 
-**Teoria relacionada**: [Formularis, petició POST i validació de servidor](../recursos/Teoria/Teoria-R2-Formularis-peticio-POST-i-validacio-de-servidor.pdf).
+**Teoria relacionada**: [PDF general](../recursos/Teoria/Teoria-R2-Formularis-peticio-POST-i-validacio-de-servidor.pdf) · [Guia Python: Flask i validació](../04_materials/repte_02/python/r2m1_formularis_validacio.md).
 
 **Punt de partida**
 
@@ -190,7 +190,7 @@ En `R2M1`, si el formulari torna buit després d'un error no és encara un probl
 
 Millorar el flux d’error del formulari i completar el cas correcte. Quan una dada no és correcta, el servidor torna a generar el formulari conservant les dades que sí eren aprofitables. Quan l’entrada ja és correcta, el servidor la processa i la guarda funcionalment amb un mecanisme simple.
 
-**Teoria relacionada**: [Reintent, conservació de dades i guardat funcional](../recursos/Teoria/Teoria-R2-Reintent-conservacio-de-dades-i-guardat-funcional.pdf).
+**Teoria relacionada**: [PDF general](../recursos/Teoria/Teoria-R2-Reintent-conservacio-de-dades-i-guardat-funcional.pdf) · [Guia Python: reintent i guardat](../04_materials/repte_02/python/r2m2_reintent_guardat.md).
 
 Este microrepte continua directament el `R2M1`. No has de començar de zero ni construir un formulari nou si el que tens ja envia dades i valida almenys una dada clau. Ara la pregunta és una altra: què fa el servidor amb la informació correcta quan ja pot confiar mínimament en ella?
 
@@ -290,7 +290,7 @@ No cal convertir esta pràctica en un gestor documental complet, ni guardar molt
 
 Aplicar lògica bàsica de programació perquè el backend no es limite a rebre i guardar dades, sinó que aplique regles reals del projecte sobre la informació disponible.
 
-**Teoria relacionada**: [Decisions, arrays, funcions i regles de domini](../recursos/Teoria/Teoria-R2-Decisions-arrays-funcions-i-regles-de-domini.pdf).
+**Teoria relacionada**: [PDF general](../recursos/Teoria/Teoria-R2-Decisions-arrays-funcions-i-regles-de-domini.pdf) · [Guia Python: lògica i funcions](../04_materials/repte_02/python/r2m3_logica_funcions.md).
 
 `R2M3` no és el moment d'inventar un formulari nou. La decisió ha d'eixir del flux preparat en `R2M1` i millorat en `R2M2`: una dada triada per l'usuari, una opció tancada, una categoria, una franja, una prioritat, una quantitat o una dada guardada funcionalment. Si el formulari anterior era massa genèric, primer cal ajustar-lo perquè represente una acció real del projecte i després aplicar la regla.
 
@@ -375,7 +375,7 @@ No cal convertir-ho en un sistema complet de validació de framework ni validar 
 
 Demostrar que el sistema pot recordar informació provisional entre peticions per no perdre el fil del recorregut, recuperar un esborrany o unes seleccions temporals i invalidar-les quan ja no facen falta, sense convertir encara este punt en un model complet d’usuari.
 
-**Teoria relacionada**: [Estat, sessió i cookies](../recursos/Teoria/Teoria-R2-Estat-sessio-i-cookies.pdf).
+**Teoria relacionada**: [PDF general](../recursos/Teoria/Teoria-R2-Estat-sessio-i-cookies.pdf) · [Guia Python: sessió i cookies](../04_materials/repte_02/python/r2m4_sessio_cookies.md).
 
 En este microrepte hauràs d’usar **sessió i cookie**. No és suficient triar només una de les dues. També hauràs de llegir alguna dada de la petició o de l'entorn del servidor amb una finalitat clara i preparar un punt d'arrancada comú perquè les importacions o inclusions partisquen del mateix lloc.
 
@@ -403,7 +403,7 @@ En este microrepte hauràs d’usar **sessió i cookie**. No és suficient triar
 
 Connectar tot el flux anterior amb una necessitat real del producte: una operació que només es pot executar si es complixen unes condicions d’accés i que deixa clar què passa en el cas autoritzat i en el cas denegat.
 
-**Teoria relacionada**: [Autenticació, autorització i operació protegida](../recursos/Teoria/Teoria-R2-Autenticacio-autoritzacio-i-operacio-protegida.pdf).
+**Teoria relacionada**: [PDF general](../recursos/Teoria/Teoria-R2-Autenticacio-autoritzacio-i-operacio-protegida.pdf) · [Guia Python: autenticació](../04_materials/repte_02/python/r2m5_autenticacio.md).
 
 En este microrepte també has de mostrar un registre o alta mínima d’usuari. No cal una base de dades ni un sistema complet d’usuaris, però sí cal guardar la contrasenya amb hash, encara que siga en un array, fitxer o estructura equivalent del projecte.
 
@@ -426,7 +426,7 @@ En este microrepte també has de mostrar un registre o alta mínima d’usuari. 
 
 En este microrepte hauràs d'exposar l'autenticació que ja tens en `R2M5` com una mini API consumible des d'un client extern.
 
-**Teoria relacionada**: [JSON, codis HTTP i autenticació mínima per a client](../recursos/Teoria/Teoria-R2-JSON-codis-HTTP-i-autenticacio-minima-per-a-client.pdf).
+**Teoria relacionada**: [PDF general](../recursos/Teoria/Teoria-R2-JSON-codis-HTTP-i-autenticacio-minima-per-a-client.pdf) · [Guia Python: API i JSON](../04_materials/repte_02/python/r2m6_api_auth_json.md).
 
 Açò no convertix `R2` en el repte d'API. El que es busca és donar a `Desenvolupament Web en Entorn Client` un contracte mínim i estable per poder practicar autenticació amb `fetch`, `curl`, Postman o Insomnia abans d'arribar a `R4`.
 
@@ -471,7 +471,7 @@ Este microrepte no vol dir:
 
 Comprovar que el flux complet funciona, que queda registrat amb una checklist o taula simple de proves, que es pot demostrar en una demo breu i que el repte arriba a les fases finals amb una base tècnica clara.
 
-**Teoria relacionada**: [Proves, depuració i checkpoint](../recursos/Teoria/Teoria-R2-Proves-depuracio-i-checkpoint.pdf).
+**Teoria relacionada**: [PDF general](../recursos/Teoria/Teoria-R2-Proves-depuracio-i-checkpoint.pdf) · [Guia Python: proves i depuració](../04_materials/repte_02/python/r2m7_proves_debug.md).
 
 En este microrepte no es demanen encara proves unitàries ni un framework de proves com a mínim. Sí que has d’introduir una **prova automàtica lleugera de flux**, encara que siga una comanda `curl`, un script `.sh`, un script PHP o Python senzill o una col·lecció de peticions documentada.
 
@@ -499,7 +499,7 @@ En este microrepte no es demanen encara proves unitàries ni un framework de pro
 
 En este microrepte hauràs de convertir una regla, comprovació o càlcul del flux que ja funciona en una classe simple carregada amb el mecanisme propi de l'entorn i provar-la de manera automàtica.
 
-**Teoria relacionada**: [POO, Composer i proves unitàries](../recursos/Teoria/Teoria-R2-POO-Composer-i-proves-unitaries.pdf).
+**Teoria relacionada**: [PDF general](../recursos/Teoria/Teoria-R2-POO-Composer-i-proves-unitaries.pdf) · [Guia Python: classe i prova unitària](../04_materials/repte_02/python/r2m8_poo_proves.md).
 
 Este microrepte no substituïx la resta del repte ni convertix `R2` en `R3`.
 
@@ -539,7 +539,7 @@ Si després d’esta peça afegixes més classes, una llibreria externa menuda v
 
 En este microrepte hauràs de fer que una dada significativa del projecte quede guardada en una base de dades i es puga recuperar després.
 
-**Teoria relacionada**: [BBDD en PHP amb PDO](../recursos/Teoria/Teoria-R2-BBDD-en-PHP-amb-PDO.pdf).
+**Teoria relacionada**: [PDF general de BBDD](../recursos/Teoria/Teoria-R2-BBDD-en-PHP-amb-PDO.pdf) · [Guia Python: BBDD i DB-API](../04_materials/repte_02/python/r2m9_bbdd.md).
 
 Este microrepte arriba després de les funcions, l'estat, l'autenticació, les proves i la primera peça testable perquè ara la pregunta és una altra: quina informació del projecte ha de sobreviure més enllà de la sessió o d'un array provisional?
 
