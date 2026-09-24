@@ -726,6 +726,8 @@ Esta autocorrecció no posa automàticament un `10`. Servix per filtrar si la te
 
 Les autocorreccions de `R2M1` a `R2M9` generen notes independents. A més, `R2M9` pot recollir una proposta d’ampliació separada entre 0 i 1. El professorat la valida durant la defensa i la considera com una evidència pròpia d’eixe instrument; no es genera cap nota final automàtica de R2.
 
+Si vols presentar-te a la franja `9→10`, has de crear obligatòriament `docs/r2-ampliacio.md` abans d'entregar `R2M9`. Sense este fitxer, l'autocorrecció entendrà que no presentes ampliació. El document ha d'explicar què has millorat, per què aporta valor al repte complet, on està la implementació, com es prova i què podràs defensar oralment.
+
 **A quin nivell s'aplica**  
 La via `9→10` s'aplica al **Repte 2 complet**, no a cada microrepte de manera independent.
 
@@ -769,6 +771,7 @@ També pots proposar una ampliació pròpia si té valor tècnic real i es valid
 
 **Evidències mínimes**
 
+- `docs/r2-ampliacio.md`, obligatori per presentar la candidatura
 - commit o branca identificable
 - justificació tècnica breu
 - prova funcional dels casos millorats
@@ -786,4 +789,4 @@ Nucli primer, ampliació després. En `R2`, la via `9→10` és una ampliació i
 
 ## Registre final de l’ampliació
 
-L’ampliació de R2 es declara una sola vegada en `docs/r2-ampliacio.md` i es recull exclusivament en **R2M9**. La proposta automàtica queda separada de la nota del microrepte i el professorat la valida durant la defensa. Consulta l’[escala comuna](../ampliacions-excellencia.md).
+L’ampliació de R2 es declara una sola vegada en `docs/r2-ampliacio.md` i es recull exclusivament en **R2M9**. Este fitxer és obligatori si presentes la candidatura; sense ell, la proposta serà 0 perquè es considerarà no presentada. La proposta automàtica queda separada de la nota del microrepte i el professorat la valida durant la defensa. Consulta l’[escala comuna](../ampliacions-excellencia.md).
