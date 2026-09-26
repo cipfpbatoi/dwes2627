@@ -33,4 +33,8 @@ En Jinja, usa `value="{{ nom }}"` i `{% if torn == 'mati' %}selected{% endif %}`
 
 ## Ampliació opcional
 
-Després de tancar el mínim, es pot guardar l'entrada i recuperar-la en una petició posterior amb un mecanisme simple. Esta ampliació no és necessària per superar `R2M2` i no substituïx el reintent.
+Després de tancar el mínim, es poden guardar les entrades correctes en un fitxer `JSON`, llegir-les en una petició posterior i mostrar-ne una llista o resum.
+
+També es pot afegir una pujada de fitxer al mateix formulari. Cal comprovar en servidor l'error de pujada, la mida i el tipus permés, generar un nom segur amb el servidor i guardar el fitxer només si la resta del formulari és vàlida. Quan siga possible, es guarda fora de la carpeta pública. S'ha de provar almenys un fitxer acceptat i un de rebutjat.
+
+Estes ampliacions no són necessàries per superar `R2M2` i no substituïxen el reintent.

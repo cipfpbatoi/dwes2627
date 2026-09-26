@@ -244,7 +244,14 @@ Exemples de continuïtat:
 - Quan el cas és correcte, la resposta ha de mostrar una confirmació o resum amb les dades processades.
 - Has de poder assenyalar en el codi el punt de recepció, validació, preparació de valors, reconstrucció del formulari i confirmació del cas correcte.
 
-**Ampliació opcional**: després de tancar el mínim, pots guardar una entrada correcta i recuperar-la en una petició posterior amb un mecanisme simple i explicable. No és obligatori i no compensa mancances del reintent.
+**Ampliacions opcionals**, només després de tancar el mínim:
+
+- guardar les entrades correctes en un fitxer `JSON`, llegir-lo en una petició posterior i mostrar-ne una llista o resum;
+- afegir al mateix formulari un fitxer relacionat amb l'acció del projecte i guardar-lo només quan totes les dades siguen vàlides;
+- validar el fitxer en servidor: error de pujada, mida màxima i tipus MIME o extensió permesa; generar un nom segur en el servidor i, quan siga possible, guardar-lo fora de la zona pública;
+- demostrar un cas de fitxer acceptat i un de rebutjat.
+
+Estes ampliacions no són obligatòries, no compensen mancances del reintent i no convertixen el `JSON` o la pujada de fitxers en criteris del mínim.
 
 **Què es deixa per a més avant**
 
