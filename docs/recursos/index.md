@@ -19,7 +19,7 @@ En esta pàgina tens les diapositives del curs agrupades per tipus de recurs.
 
 - [R2. Processament, estat i autenticació](Repte2/R2-Processament-estat-i-autenticacio.pdf)
 - [R2M1. Entrada variada i validació bàsica](Repte2/R2M1-Entrada-variada-i-validacio-basica.pdf)
-- [R2M2. Processament, reintent i guardat funcional](Repte2/R2M2-Processament-reintent-i-guardat-funcional.pdf)
+- [R2M2. Processament, reintent i guardat funcional — PDF pendent de regenerar](Repte2/R2M2-Processament-reintent-i-guardat-funcional.pdf)
 - [R2M3. Lògica del flux i regles del projecte](Repte2/R2M3-Logica-del-flux-i-regles-del-projecte.pdf)
 - [R2M4. Estat, sessió i cookies](Repte2/R2M4-Estat-sessio-i-cookies.pdf)
 - [R2M5. Autenticació i funcionalitat protegida](Repte2/R2M5-Autenticacio-i-funcionalitat-protegida.pdf)
@@ -93,7 +93,7 @@ També tens un [índex específic de tallers](tallers.md) amb orientació sobre 
 - [R2. JSON, codis HTTP i autenticació mínima per a client](Teoria/Teoria-R2-JSON-codis-HTTP-i-autenticacio-minima-per-a-client.pdf)
 - [R2. POO, Composer i proves unitàries](Teoria/Teoria-R2-POO-Composer-i-proves-unitaries.pdf)
 - [R2. Proves, depuració i checkpoint](Teoria/Teoria-R2-Proves-depuracio-i-checkpoint.pdf)
-- [R2. Reintent, conservació de dades i guardat funcional](Teoria/Teoria-R2-Reintent-conservacio-de-dades-i-guardat-funcional.pdf)
+- [R2. Reintent, conservació de dades i guardat funcional — PDF pendent de regenerar](Teoria/Teoria-R2-Reintent-conservacio-de-dades-i-guardat-funcional.pdf)
 - [R3. Autenticació, autorització i middleware](Teoria/Teoria-R3-Autenticacio-autoritzacio-i-middleware.pdf)
 - [R3. Docker, entorn i arrencada reproduïble](Teoria/Teoria-R3-Docker-entorn-i-arrencada-reproduible.pdf)
 - [R3. Framework MVC i responsabilitats](Teoria/Teoria-R3-Framework-MVC-i-responsabilitats.pdf)

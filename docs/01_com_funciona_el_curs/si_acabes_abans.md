@@ -32,9 +32,9 @@ Tria una proposta amb el professorat o adapta-la als errors i decisions del teu 
 
 - **Pots aprofundir en:** provar camp absent, buit, amb espais i valor límit, o revisar que el missatge d’error siga útil i no revele informació tècnica.
 - **Evidència curta:** taula amb entrada, resultat esperat i resultat observat.
-- **No avances encara:** conservació completa de dades, guardat funcional o múltiples errors acumulats.
+- **No avances encara:** conservació completa de dades, confirmació del cas correcte o múltiples errors acumulats.
 
-### R2M2. Processament, reintent i guardat funcional
+### R2M2. Processament, reintent i confirmació
 
 - **Pots aprofundir en:** conservar només les dades aprofitables, evitar duplicats en un reenviament o comparar dos mecanismes simples de guardat.
 - **Evidència curta:** un cas de reintent i un cas correcte reproduïbles, amb el canvi respecte de `R2M1`.

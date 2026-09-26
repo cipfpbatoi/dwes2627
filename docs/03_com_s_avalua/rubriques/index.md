@@ -23,7 +23,7 @@ Cada guia està alineada amb l'autocorrecció corresponent i mostra:
 | Microrepte | Guia | Autocorrecció |
 |---|---|---|
 | `R2M1` | [Entrada de dades i validació bàsica](r2m1.md) | `r2-s01-entrada-validacio-basica` |
-| `R2M2` | [Processament, reintent i guardat funcional](r2m2.md) | `r2-s02-processament-reintent-conservacio-dades` |
+| `R2M2` | [Processament, reintent i confirmació](r2m2.md) | `r2-s02-processament-reintent-conservacio-dades` |
 | `R2M3` | [Lògica del flux i regles del projecte](r2m3.md) | `r2-s03-logica-flux-regles-projecte` |
 | `R2M4` | [Estat, sessió i cookies](r2m4.md) | `r2-s04-estat-sessio-cookies` |
 | `R2M5` | [Autenticació i funcionalitat protegida](r2m5.md) | `r2-s05-autenticacio-funcionalitat-protegida` |

@@ -93,7 +93,7 @@ Briefs interns creats per preparar les presentacions de la seqüència actual:
 |---|---|---|
 | `presentacions/reptes/r2.md` | Presentació de repte | Visió general de processament, reintent, guardat funcional, estat i autenticació. |
 | `presentacions/microreptes/r2m1.md` | Presentació de microrepte | Entrada variada i validació bàsica de servidor. |
-| `presentacions/microreptes/r2m2.md` | Presentació de microrepte | Processament, reintent i guardat funcional. |
+| `presentacions/microreptes/r2m2.md` | Presentació de microrepte | Processament, reintent i confirmació. |
 | `presentacions/microreptes/r2m3.md` | Presentació de microrepte | Lògica del flux i regles del projecte. |
 | `presentacions/microreptes/r2m4.md` | Presentació de microrepte | Estat, sessió i cookies. |
 | `presentacions/microreptes/r2m5.md` | Presentació de microrepte | Autenticació i funcionalitat protegida. |

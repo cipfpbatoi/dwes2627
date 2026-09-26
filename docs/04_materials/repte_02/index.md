@@ -11,7 +11,7 @@
 | registrar proves i tancament de R2 | [Checklist de R2](#checklist-de-r2) |
 | repassar el mapa general de R2 | [R2. Processament, estat i autenticació](../../recursos/Repte2/R2-Processament-estat-i-autenticacio.pdf) |
 | repassar entrada i validació | [R2M1. Entrada variada i validació bàsica](../../recursos/Repte2/R2M1-Entrada-variada-i-validacio-basica.pdf) |
-| repassar reintent i guardat funcional | [R2M2. Processament, reintent i guardat funcional](../../recursos/Repte2/R2M2-Processament-reintent-i-guardat-funcional.pdf) |
+| repassar reintent i confirmació | [R2M2. Processament, reintent i guardat funcional (PDF pendent de regenerar)](../../recursos/Repte2/R2M2-Processament-reintent-i-guardat-funcional.pdf) |
 | repassar lògica del flux i regles | [R2M3. Lògica del flux i regles del projecte](../../recursos/Repte2/R2M3-Logica-del-flux-i-regles-del-projecte.pdf) |
 | repassar sessió, cookies i estat | [R2M4. Estat, sessió i cookies](../../recursos/Repte2/R2M4-Estat-sessio-i-cookies.pdf) |
 | repassar autenticació i funcionalitat protegida | [R2M5. Autenticació i funcionalitat protegida](../../recursos/Repte2/R2M5-Autenticacio-i-funcionalitat-protegida.pdf) |
@@ -73,13 +73,13 @@ Això es pot resoldre amb persistència simple o amb base de dades si així ho h
 
 | Cas de prova | Entrada | Resultat esperat | Resultat obtingut | Incidències detectades |
 |---|---|---|---|---|
-| Dada guardada | Enviament correcte | La informació queda conservada amb el mecanisme triat |  |  |
+| Confirmació | Enviament correcte | La resposta mostra un resum de la informació processada |  |  |
 | Recuperació posterior | Tornar a carregar el flux o consultar el recurs | La dada reapareix i continua sent usable |  |  |
 | Llistat o visualització del recurs | Accés a la vista, llistat o detall | El recurs creat es veu correctament |  |  |
 
 ### 6. 🖼️ Proves de fitxer o imatge, si n’hi ha com a ampliació guiada
 
-Si el teu flux no treballa amb fitxers o imatges, marca esta secció com a `No aplica`. No és una exigència del nucli de `R2`, però pots practicar-ho com a ampliació guiada després de tindre resolt el formulari, el reintent i el guardat funcional de `R2M2`.
+Si el teu flux no treballa amb fitxers o imatges, marca esta secció com a `No aplica`. No és una exigència del nucli de `R2`, però pots practicar-ho com a ampliació guiada després de tindre resolt el formulari, el reintent i la confirmació de `R2M2`.
 
 El fitxer ha d'estar associat a una acció real del projecte: captura d'una incidència, justificant d'una reserva, imatge d'un recurs, document d'una sol·licitud o equivalent. No compta com a pràctica útil si només és un camp de fitxer sense validació ni ús posterior.
 

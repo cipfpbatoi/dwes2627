@@ -28,7 +28,7 @@ Les equivalències no són receptes per copiar. Has de poder explicar on entra l
 - Valida en Python les opcions tancades, longituds i formats necessaris.
 - Torna a renderitzar la plantilla amb un error visible i sense marcar dades variables com a segures.
 
-## R2M2. Reintent i guardat funcional
+## R2M2. Reintent i confirmació
 
 - Passa a Jinja els valors aprofitables perquè reapareguen en `value`, `selected` o `checked`.
 - Mantín separats l'error de validació, la reconstrucció del formulari i el guardat del cas correcte.
@@ -87,4 +87,3 @@ En la documentació i en la defensa usa els noms reals de Python que has aplicat
 3. Quina resposta o canvi observable produïx?
 4. Com has comprovat el cas correcte i el cas d'error?
 5. Quin fitxer o prova permet a una altra persona reproduir-ho?
-

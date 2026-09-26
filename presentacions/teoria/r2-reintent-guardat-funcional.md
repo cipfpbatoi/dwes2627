@@ -1,4 +1,4 @@
-# Brief Gamma. Teoria R2. Reintent, conservació de dades i guardat funcional
+# Brief Gamma. Teoria R2. Reintent, conservació de dades i confirmació
 
 ## Objectiu
 
@@ -8,19 +8,20 @@ Crear una presentació de consolidació molt breu per usar després de `R2M2`. H
 ## Idees clau
 
 - El servidor pot reconstruir el formulari després d'un error.
-- Conservar dades en el reintent no és el mateix que guardar una entrada correcta.
+- Conservar dades en el reintent no és el mateix que confirmar una entrada correcta.
 - `value`, `selected` i `checked` o equivalents ajuden a tornar a pintar valors.
 - Els valors conservats han de vindre de la petició real, no de literals fixos.
-- El cas amb error no s'ha de guardar com a correcte.
-- El cas correcte pot guardar-se funcionalment amb un mecanisme simple i explicable.
+- El cas amb error no ha de mostrar-se com a correcte.
+- El cas correcte es processa i es mostra en una confirmació o resum.
+- Guardar-lo per recuperar-lo en una altra petició és una ampliació.
 - Si es mostra text de l'usuari, cal tractar-lo o escapar-lo segons el nivell.
 
 ## Exemples mínims que han d'aparéixer
 
 - Un únic exemple que mostre com conservar un camp de text i una opció tancada.
 - Les dues vies, PHP i Python amb Flask/Jinja, en pestanyes o columnes equivalents.
-- Un esquema amb els dos camins: error i reintent; cas correcte i guardat funcional.
-- La diferència entre "conservar per corregir" i "guardar com a dada correcta".
+- Un esquema amb els dos camins: error i reintent; cas correcte i confirmació.
+- La diferència entre "conservar per corregir", "confirmar el resultat" i "persistir entre peticions".
 
 ## Codi base per a diapositives
 
@@ -54,7 +55,7 @@ No cal mostrar codi separat per a tots els controls. El `select` o el checkbox e
 
 ## No incloure
 
-- Persistència formal com a requisit.
+- Persistència entre peticions com a requisit.
 - Sessió, cookies o login.
 - MVC o arquitectura completa.
 - Arrays d'errors com a mínim.
@@ -64,6 +65,6 @@ No cal mostrar codi separat per a tots els controls. El `select` o el checkbox e
 
 ## Preguntes de comprovació
 
-- Quina diferència hi ha entre conservar dades per reintentar i guardar una dada correcta?
-- Què no s'ha de guardar si el formulari encara té error?
-- On es pot comprovar després la dada correcta guardada funcionalment?
+- Quina diferència hi ha entre conservar dades per reintentar i confirmar un cas correcte?
+- Què no s'ha de confirmar si el formulari encara té error?
+- Quines dades processades han d'aparéixer en el resum del cas correcte?

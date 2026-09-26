@@ -108,7 +108,7 @@ Diapositives de suport:
 
 - [R2. Processament, estat i autenticació](../recursos/Repte2/R2-Processament-estat-i-autenticacio.pdf)
 - [R2M1. Entrada variada i validació bàsica](../recursos/Repte2/R2M1-Entrada-variada-i-validacio-basica.pdf)
-- [R2M2. Processament, reintent i guardat funcional](../recursos/Repte2/R2M2-Processament-reintent-i-guardat-funcional.pdf)
+- [R2M2. Processament, reintent i guardat funcional — PDF pendent de regenerar](../recursos/Repte2/R2M2-Processament-reintent-i-guardat-funcional.pdf)
 - [R2M3. Lògica del flux i regles del projecte](../recursos/Repte2/R2M3-Logica-del-flux-i-regles-del-projecte.pdf)
 - [R2M4. Estat, sessió i cookies](../recursos/Repte2/R2M4-Estat-sessio-i-cookies.pdf)
 - [R2M5. Autenticació i funcionalitat protegida](../recursos/Repte2/R2M5-Autenticacio-i-funcionalitat-protegida.pdf)
@@ -123,7 +123,7 @@ Els tallers no creen una nota separada: et donen una ferramenta concreta per ava
 | Microrepte | Taller relacionat | Quan encaixa |
 |---|---|---|
 | `R2M1` | [MT03. Validació de servidor amb casos roïns](../recursos/Tallers/MT03-Validacio-de-servidor-amb-casos-roins.pdf) | En començar el flux d'entrada i validació. |
-| `R2M2` | [MT03. Validació de servidor amb casos roïns](../recursos/Tallers/MT03-Validacio-de-servidor-amb-casos-roins.pdf) | Abans de donar per bo el reintent i el guardat funcional. |
+| `R2M2` | [MT03. Validació de servidor amb casos roïns](../recursos/Tallers/MT03-Validacio-de-servidor-amb-casos-roins.pdf) | Abans de donar per bo el reintent i la confirmació. |
 | `R2M3` | Sense taller específic | Treball de lògica pròpia dins del flux del projecte. |
 | `R2M4` | [MT04. Sessió, cookies i estat](../recursos/Tallers/MT04-Sessio-cookies-i-estat.pdf) | Abans de decidir què guardes en sessió, cookie o servidor. |
 | `R2M5` | [MT05. Auth mínima defensable](../recursos/Tallers/MT05-Auth-minima-defensable.pdf) | Abans de protegir una operació real. |
@@ -182,15 +182,15 @@ eixida segura.
 
 **Límit de la sessió**
 
-En `R2M1`, si el formulari torna buit després d'un error no és encara un problema greu, sempre que l'error siga visible i el reenviament corregit funcione. La conservació de dades aprofitables i el guardat funcional del cas correcte són el centre de `R2M2`.
+En `R2M1`, si el formulari torna buit després d'un error no és encara un problema greu, sempre que l'error siga visible i el reenviament corregit funcione. La conservació de dades aprofitables i la confirmació del cas correcte són el centre de `R2M2`.
 
-### Microrepte 2. Processament, reintent i guardat funcional
+### Microrepte 2. Processament, reintent i confirmació
 
 **Objectiu**
 
-Millorar el flux d’error del formulari i completar el cas correcte. Quan una dada no és correcta, el servidor torna a generar el formulari conservant les dades que sí eren aprofitables. Quan l’entrada ja és correcta, el servidor la processa i la guarda funcionalment amb un mecanisme simple.
+Millorar el flux d’error del formulari i completar el cas correcte. Quan una dada no és correcta, el servidor torna a generar el formulari conservant les dades que sí eren aprofitables. Quan l’entrada ja és correcta, el servidor la processa i mostra una confirmació o resum comprensible.
 
-**Teoria relacionada**: [PDF general](../recursos/Teoria/Teoria-R2-Reintent-conservacio-de-dades-i-guardat-funcional.pdf) · [Guia Python: reintent i guardat](../04_materials/repte_02/python/r2m2_reintent_guardat.md).
+**Teoria relacionada**: [PDF general, pendent de regenerar](../recursos/Teoria/Teoria-R2-Reintent-conservacio-de-dades-i-guardat-funcional.pdf) · [Guia Python: reintent i confirmació](../04_materials/repte_02/python/r2m2_reintent_guardat.md).
 
 Este microrepte continua directament el `R2M1`. No has de començar de zero ni construir un formulari nou si el que tens ja envia dades i valida almenys una dada clau. Ara la pregunta és una altra: què fa el servidor amb la informació correcta quan ja pot confiar mínimament en ella?
 
@@ -210,8 +210,8 @@ Este microrepte continua directament el `R2M1`. No has de començar de zero ni c
 - Error visible generat en servidor.
 - Formulari regenerat amb les dades aprofitables conservades.
 - Reintent corregit sense haver de repetir totes les dades.
-- Guardat funcional simple quan l’entrada és correcta.
-- Explicació clara de per què conservar dades en el reintent no és el mateix que guardar funcionalment un cas correcte.
+- Confirmació o resum amb les dades processades quan l’entrada és correcta.
+- Explicació clara de per què conservar dades en el reintent no és el mateix que processar i confirmar un cas correcte.
 - Els arrays d’errors i validacions més completes queden com a ampliació de `R2M3` o per a una fase posterior del mateix repte. Els fitxers i checkbox múltiples queden com a ampliació si aporten valor al flux.
 
 **Què has de construir**
@@ -224,15 +224,15 @@ Has de completar un recorregut curt però real:
 4. Tornar a generar el formulari amb les dades aprofitables ja escrites o seleccionades.
 5. Corregir només la dada errònia.
 6. Reenviar correctament i obtindre una resposta final.
-7. Processar i guardar funcionalment la informació correcta.
-8. Mostrar o recuperar la dada guardada en una pantalla, llista o resum simple.
+7. Processar la informació correcta.
+8. Mostrar una confirmació o resum simple amb les dades processades.
 
 Exemples de continuïtat:
 
-- Si tens un gestor d'incidències, pots enviar una incidència sense títol però conservar la prioritat triada; quan el títol ja és correcte, la incidència queda guardada en una llista provisional.
-- Si tens un sistema de reserves, pots enviar una reserva amb una franja no vàlida però conservar el recurs triat; quan la franja ja és correcta, la reserva queda guardada funcionalment.
-- Si tens un gestor d'inventari, pots enviar un moviment sense quantitat vàlida però conservar el recurs i el tipus de moviment; quan la quantitat ja és correcta, el moviment queda registrat en una llista simple.
-- Si tens un projecte propi validat, aplica el mateix patró sobre una acció central del domini: conservar dades aprofitables, corregir la dada errònia i guardar funcionalment el cas correcte.
+- Si tens un gestor d'incidències, pots enviar una incidència sense títol però conservar la prioritat triada; quan el títol ja és correcte, mostra un resum de la incidència processada.
+- Si tens un sistema de reserves, pots enviar una reserva amb una franja no vàlida però conservar el recurs triat; quan la franja ja és correcta, mostra la confirmació de la reserva.
+- Si tens un gestor d'inventari, pots enviar un moviment sense quantitat vàlida però conservar el recurs i el tipus de moviment; quan la quantitat ja és correcta, mostra el resum del moviment.
+- Si tens un projecte propi validat, aplica el mateix patró sobre una acció central del domini: conservar dades aprofitables, corregir la dada errònia i confirmar el cas correcte.
 
 **Requisits mínims**
 
@@ -241,8 +241,10 @@ Exemples de continuïtat:
 - La resposta del servidor ha de dependre de les dades enviades, no de valors fixos.
 - Hi ha d’haver ús real de variables, operadors o sentències simples.
 - Has de conservar almenys un camp de text i una opció tancada, i revisar què passa amb un checkbox simple.
-- Quan el cas és correcte, la informació ha de quedar guardada amb un mecanisme simple que pugues explicar.
-- Has de poder assenyalar en el codi el punt de recepció, validació, preparació de valors, reconstrucció del formulari i guardat del cas correcte.
+- Quan el cas és correcte, la resposta ha de mostrar una confirmació o resum amb les dades processades.
+- Has de poder assenyalar en el codi el punt de recepció, validació, preparació de valors, reconstrucció del formulari i confirmació del cas correcte.
+
+**Ampliació opcional**: després de tancar el mínim, pots guardar una entrada correcta i recuperar-la en una petició posterior amb un mecanisme simple i explicable. No és obligatori i no compensa mancances del reintent.
 
 **Què es deixa per a més avant**
 
@@ -593,7 +595,7 @@ Cada microrepte genera una nota pròpia només per al seu **RA avaluat**. Els RA
 | Microrepte | Focus principal | RA avaluat | CA avaluats | RA de context |
 |---|---|---|---|---|
 | `R2M1` | Entrada i validació bàsica | `RA2` | `RA2.a`, `RA2.b`, `RA2.c`, `RA2.d` | `RA3.e`, `RA3.f`, `RA3.g` |
-| `R2M2` | Processament, reintent i guardat funcional | `RA2` | `RA2.a-h` | `RA3.e`, `RA3.f`, `RA3.g` |
+| `R2M2` | Processament, reintent i confirmació | `RA2` | `RA2.a-h` | `RA3.e`, `RA3.f`, `RA3.g` |
 | `R2M3` | Lògica, arrays, funcions i llibreria pròpia | `RA3` | `RA3.a`, `RA3.b`, `RA3.c`, `RA3.d` | - |
 | `R2M4` | Estat, sessió, cookie, dades de petició i arrancada estable | `RA4` | `RA4.a`, `RA4.b`, `RA4.c` | - |
 | `R2M5` | Registre, hash, autenticació i operació protegida | `RA4` | `RA4.d`, `RA4.e` | - |
@@ -637,7 +639,7 @@ Això implica també entendre, encara que siga a un nivell bàsic, com es genera
 En este moment del curs, la prioritat és consolidar el flux complet en servidor:
 
 - Entrada de dades i validació bàsica.
-- Processament, reintent i guardat funcional.
+- Processament, reintent i confirmació.
 - Lògica del flux i regles del projecte.
 - Estat o sessió quan faça falta.
 - Autenticació i funcionalitat protegida.
