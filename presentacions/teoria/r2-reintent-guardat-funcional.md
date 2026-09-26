@@ -15,7 +15,7 @@ Crear una presentació de consolidació molt breu per usar després de `R2M2`. H
 - El cas correcte es processa i es mostra en una confirmació o resum.
 - Guardar-lo per recuperar-lo en una altra petició és una ampliació.
 - L'ampliació pot usar un fitxer `JSON` per guardar casos correctes i mostrar-los després.
-- Una segona ampliació pot pujar un fitxer relacionat amb el formulari, sempre amb validació de mida i tipus, nom segur i una prova d'acceptació i rebuig.
+- La pujada bàsica d'un fitxer del domini és obligatòria, amb validació de mida i tipus o extensió, intent de guardat i una prova d'acceptació i rebuig.
 - Si es mostra text de l'usuari, cal tractar-lo o escapar-lo segons el nivell.
 
 ## Exemples mínims que han d'aparéixer
@@ -58,7 +58,7 @@ No cal mostrar codi separat per a tots els controls. El `select` o el checkbox e
 ## No incloure
 
 - Persistència entre peticions com a requisit.
-- Pujada de fitxers com a requisit del mínim.
+- Convertir la pujada de fitxers en el focus principal: té un pes menor que el reintent.
 - Sessió, cookies o login.
 - MVC o arquitectura completa.
 - Arrays d'errors com a mínim.

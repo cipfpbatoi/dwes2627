@@ -211,8 +211,10 @@ Este microrepte continua directament el `R2M1`. No has de començar de zero ni c
 - Formulari regenerat amb les dades aprofitables conservades.
 - Reintent corregit sense haver de repetir totes les dades.
 - Confirmació o resum amb les dades processades quan l’entrada és correcta.
+- Pujada d'un fitxer relacionat amb l'acció del projecte, amb recepció en servidor, intent de guardat i error visible si falla.
+- Comprovació bàsica de mida i tipus o extensió permesa, amb una prova d'acceptació i una de rebuig.
 - Explicació clara de per què conservar dades en el reintent no és el mateix que processar i confirmar un cas correcte.
-- Els arrays d’errors i validacions més completes queden com a ampliació de `R2M3` o per a una fase posterior del mateix repte. Els fitxers i checkbox múltiples queden com a ampliació si aporten valor al flux.
+- Els arrays d’errors i validacions més completes queden com a ampliació de `R2M3` o per a una fase posterior del mateix repte. Els checkbox múltiples queden com a ampliació si aporten valor al flux.
 
 **Què has de construir**
 
@@ -226,6 +228,8 @@ Has de completar un recorregut curt però real:
 6. Reenviar correctament i obtindre una resposta final.
 7. Processar la informació correcta.
 8. Mostrar una confirmació o resum simple amb les dades processades.
+9. Pujar un fitxer relacionat amb el domini, validar-lo bàsicament en servidor i intentar guardar-lo amb un nom segur.
+10. Demostrar un fitxer acceptat i un de rebutjat.
 
 Exemples de continuïtat:
 
@@ -244,14 +248,12 @@ Exemples de continuïtat:
 - Quan el cas és correcte, la resposta ha de mostrar una confirmació o resum amb les dades processades.
 - Has de poder assenyalar en el codi el punt de recepció, validació, preparació de valors, reconstrucció del formulari i confirmació del cas correcte.
 
-**Ampliacions opcionals**, només després de tancar el mínim:
+**Ampliació opcional**, només després de tancar el mínim:
 
 - guardar les entrades correctes en un fitxer `JSON`, llegir-lo en una petició posterior i mostrar-ne una llista o resum;
-- afegir al mateix formulari un fitxer relacionat amb l'acció del projecte i guardar-lo només quan totes les dades siguen vàlides;
-- validar el fitxer en servidor: error de pujada, mida màxima i tipus MIME o extensió permesa; generar un nom segur en el servidor i, quan siga possible, guardar-lo fora de la zona pública;
-- demostrar un cas de fitxer acceptat i un de rebutjat.
+- reforçar el tractament obligatori del fitxer amb detecció MIME, noms no predictibles, emmagatzematge fora de la zona pública i neteja de fitxers residuals.
 
-Estes ampliacions no són obligatòries, no compensen mancances del reintent i no convertixen el `JSON` o la pujada de fitxers en criteris del mínim.
+El `JSON` i les millores avançades no són obligatoris ni compensen mancances del reintent. La pujada bàsica del fitxer sí que forma part del mínim, amb un pes reduït.
 
 **Què es deixa per a més avant**
 
@@ -270,9 +272,9 @@ Este límit no vol dir que la validació completa quede fora del `Repte 2`, sin�
 
 Els arrays, funcions i regles del projecte apareixen amb més sentit en `R2M3`. Estat, sessió i cookies apareixen en `R2M4`. Autenticació i operació protegida apareixen en `R2M5`.
 
-**Ampliació guiada: pujada de fitxer o imatge**
+**Requisit de pes reduït: pujada de fitxer o imatge**
 
-Quan el flux de `R2M1` i `R2M2` ja funciona, pots practicar la pujada d'un fitxer amb formulari com a ampliació. No és mínim obligatori, però és un bon moment per veure com el servidor rep, valida i associa un arxiu a una dada del projecte.
+El flux de `R2M2` ha d'incloure la pujada d'un fitxer amb formulari. És obligatòria, però té menys pes que el reintent i el processament principal. L'objectiu és que intentes rebre, validar i associar un arxiu a una dada del projecte.
 
 La pujada ha d'estar connectada amb el domini, no afegida només per provar un control HTML:
 
@@ -281,7 +283,7 @@ La pujada ha d'estar connectada amb el domini, no afegida només per provar un c
 - en un gestor d'inventari, una imatge o fitxa del recurs;
 - en un projecte propi, un arxiu que tinga sentit dins del primer flux real.
 
-Com a mínim, si fas esta ampliació, has de:
+Com a mínim, has de:
 
 - usar un formulari preparat per enviar fitxers;
 - recuperar el fitxer al servidor amb el mecanisme corresponent del teu entorn;
@@ -754,14 +756,12 @@ Tampoc és un requisit per aprovar el repte ni per tancar els microreptes. La se
 **Opcions d'ampliació**
 
 - Reforçar la validació, els errors visibles o la funcionalitat protegida amb un cas crític millor resolt.
-- Afegir una pujada de fitxer o imatge al flux principal si té sentit en el projecte, amb validació de tipus, grandària, error visible i associació al recurs creat.
 - Fer `R2S10`: documentar un contracte d'autenticació consumible per `DWEC`, amb endpoints, headers, respostes, dades demo i prova creuada.
 - Afegir una llibreria externa menuda amb Composer o una crida a una API externa si té sentit real en el projecte i queda documentat com a ampliació.
 
 **Exemples vàlids en R2**
 
 - Millorar la validació del flux principal amb més casos d’error reals, missatges més útils i prova documentada.
-- Afegir una imatge, captura, justificant o document associat al registre principal, amb prova de fitxer acceptat i fitxer rebutjat.
 - Afegir una comprovació de seguretat o autorització més fina sobre l’operació protegida.
 - Automatitzar millor una bateria de proves del flux amb diversos casos rellevants.
 - Usar una llibreria externa menuda amb Composer si resol una necessitat real del projecte i queda explicada.

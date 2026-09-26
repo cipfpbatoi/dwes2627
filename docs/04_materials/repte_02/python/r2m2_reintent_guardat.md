@@ -35,6 +35,8 @@ En Jinja, usa `value="{{ nom }}"` i `{% if torn == 'mati' %}selected{% endif %}`
 
 Després de tancar el mínim, es poden guardar les entrades correctes en un fitxer `JSON`, llegir-les en una petició posterior i mostrar-ne una llista o resum.
 
-També es pot afegir una pujada de fitxer al mateix formulari. Cal comprovar en servidor l'error de pujada, la mida i el tipus permés, generar un nom segur amb el servidor i guardar el fitxer només si la resta del formulari és vàlida. Quan siga possible, es guarda fora de la carpeta pública. S'ha de provar almenys un fitxer acceptat i un de rebutjat.
+## Fitxer obligatori amb pes reduït
 
-Estes ampliacions no són necessàries per superar `R2M2` i no substituïxen el reintent.
+Cal afegir una pujada de fitxer al mateix formulari. El servidor ha de rebre'l, comprovar una mida màxima i un tipus o extensió permesa, intentar guardar-lo amb un nom segur i mostrar un error si falla. S'ha de provar almenys un fitxer acceptat i un de rebutjat.
+
+La versió avançada —detecció MIME, nom no predictible, emmagatzematge fora de la carpeta pública i neteja de residuals— queda com a ampliació. El tractament del fitxer pesa menys que el reintent i no el substituïx.
