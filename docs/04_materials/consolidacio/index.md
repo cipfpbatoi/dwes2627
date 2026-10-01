@@ -11,3 +11,5 @@ Són materials de suport per continuar aprenent, sense nova entrega ni recuperac
 - [R1M2. Consolidació](r1m2.md)
 
 - [R2M1. Consolidació](r2m1.md)
+
+- [R2M2. Consolidació](r2m2.md)
