@@ -380,6 +380,18 @@ La idea és passar d'un únic missatge d'error a una llista d'errors generada pe
 
 No cal convertir-ho en un sistema complet de validació de framework ni validar camps que no tenen valor real per al flux. L'objectiu és entendre com el servidor pot acumular diversos errors i retornar-los de manera clara.
 
+**Ampliació guiada: taula de decisions configurable**
+
+Si ja tens la regla mínima amb dos casos visibles, pots evitar una cadena llarga de `if` o `elseif` definint una taula de decisions del teu domini. Per exemple, una reserva pot associar cada franja o tipus amb un estat i un missatge; un gestor de recursos pot associar una categoria amb una prioritat i una acció següent.
+
+- crea un array, diccionari o llista amb les opcions i el resultat que correspon a cadascuna;
+- escriu una funció pròpia, en el fitxer de regles, que reba la dada validada i consulte eixa taula;
+- importa i usa la funció des del flux principal, sense copiar la taula ni la decisió en el controlador;
+- mostra l'estat, la raó o el següent pas que ha decidit el backend;
+- documenta tres casos: dos opcions vàlides amb resultats diferents i una dada desconeguda o no permesa.
+
+No cal afegir base de dades, sessió ni un motor genèric de regles. La taula ha de ser curta, explicable i relacionada amb el domini. Esta ampliació es pot combinar amb l'array d'errors, però no l'exigix.
+
 ### Microrepte 4. Estat i sessió per conservar el flux
 
 **Objectiu**
