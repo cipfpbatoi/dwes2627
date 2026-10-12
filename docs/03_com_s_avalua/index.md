@@ -15,6 +15,14 @@ També s’avalua si eres capaç de:
 
 La idea clau és esta: no n’hi ha prou amb entregar una solució. Cal poder demostrar què fa, com ho fa i per què està feta així.
 
+## ⚙️ Equivalència tecnològica
+
+La tecnologia usada no es penalitza per si mateixa. Si el projecte està fet en `Java` amb una via acordada amb el professorat, es corregix amb els mateixos criteris funcionals que les vies de referència en `PHP` o `Python`.
+
+En la correcció es busquen responsabilitats equivalents: recepció i validació de dades, lògica de servidor, estat o sessió, autenticació, persistència, API, proves i documentació. Per tant, Maven o Gradle poden substituir Composer o `requirements.txt`; JUnit pot substituir PHPUnit o pytest; JDBC/JPA pot substituir PDO o DB-API; i servlets, plantilles Java o Spring poden aportar els mecanismes equivalents del backend.
+
+No es descompta puntuació per no usar fitxers, funcions o ferramentes específiques de PHP o Python quan l'evidència equivalent en Java existix i es pot provar. Si l'autocorrecció no reconeix l'estructura del projecte Java, el resultat passa a revisió docent i no s'aplica eixa absència com una penalització automàtica.
+
 ## 🧾 Què és una evidència
 
 Una evidència és una prova real del treball que has fet i del que saps fer.

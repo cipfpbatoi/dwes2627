@@ -15,7 +15,7 @@ Presentació d'inici: [Benvinguda al curs](../recursos/Presentacions/Benvinguda-
 La seqüència general és esta:
 
 - `R1`: obri el projecte i deixa una primera peça funcional real.
-- `R2`: es resol sobre una base de servidor en `PHP` o `Python` per consolidar dades, lògica, estat o sessió, autenticació i funcionalitat protegida.
+- `R2`: es resol sobre una base de servidor en `PHP`, `Python` o una via equivalent acordada, com `Java`, per consolidar dades, lògica, estat o sessió, autenticació i funcionalitat protegida.
 - `R3`: és on entra el contrast de frameworks i el mateix projecte es reconstrueix amb Docker, BBDD real, `migrations`, `seeders` i `2` casos d'ús funcionals.
 - `R4`: el producte passa a publicar i consumir una `API` real.
 - `R5`: el curs es tanca amb integració, manteniment, revisió i defensa del producte.
@@ -54,6 +54,8 @@ A partir d’eixe moment, el mateix projecte i el mateix encàrrec funcional pod
 - `FastAPI` o un altre framework Python acordat.
 
 En `R1` i `R2`, la via Python de referència usa `Flask` i `Jinja`. Abans de `R3` acordaràs amb el professorat si continues amb `Flask`, passes a `FastAPI` o tries una altra opció coherent amb el teu projecte.
+
+Si tens acordada una via Java, pots mantindre-la durant el projecte. Es valoraran els mateixos resultats funcionals, proves, evidències i capacitat de defensa que en les vies de referència. Usar Java no resta puntuació per si mateix: les ferramentes pròpies del seu ecosistema, com Maven o Gradle, JUnit, JDBC/JPA, servlets o Spring, compten com a equivalents quan complixen la mateixa funció i estan documentades.
 
 ## 🧱 Mateix projecte, diferents fases
 

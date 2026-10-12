@@ -28,7 +28,7 @@ No cal que siga un producte gran. Sí que cal que siga un flux complet, explicab
 
 En este repte la persistència és **funcional i de suport**. Servix perquè la informació correcta torne a aparéixer en el producte: un llistat, una reserva, una publicació, un recurs, una activitat o qualsevol dada significativa del domini.
 
-Es pot resoldre amb un mecanisme simple i controlat, sempre que siga coherent amb el projecte. La base de dades apareix al final del nucli amb una persistència mínima des de `PHP` o `Python`, però `R2` encara no és un repte centrat en arquitectura completa d'accés a dades.
+Es pot resoldre amb un mecanisme simple i controlat, sempre que siga coherent amb el projecte. La base de dades apareix al final del nucli amb una persistència mínima des de `PHP`, `Python`, `Java` o la via equivalent acordada, però `R2` encara no és un repte centrat en arquitectura completa d'accés a dades.
 
 ## Què no és suficient
 
@@ -200,7 +200,7 @@ Este microrepte continua directament el `R2M1`. No has de començar de zero ni c
 
 **Què s’espera**
 
-- Comprensió bàsica de com la base de servidor en `PHP` o `Python` genera una pàgina o una resposta amb codi embegut o una plantilla.
+- Comprensió bàsica de com la base de servidor triada genera una pàgina o una resposta amb codi, una plantilla o un mecanisme equivalent.
 - Identificació clara de les peces tècniques associades al flux: petició, servidor, fitxer o plantilla i resposta.
 - Inclusió recognoscible de codi de servidor dins del punt on es genera la resposta.
 - Sintaxi correcta.
@@ -409,7 +409,7 @@ En este microrepte hauràs d’usar **sessió i cookie**. No és suficient triar
 - Evidència de què es guarda en sessió i de com es recupera.
 - Evidència de què es guarda en cookie i de com es recupera.
 - Lectura acotada d’alguna dada del servidor, com el mètode HTTP, `User-Agent` o adreça remota, tractada amb prudència (`$_SERVER` en PHP o `request` en Flask).
-- Un fitxer comú de configuració o bootstrap que permeta fer `include` / `require` en PHP o importacions en Python de manera estable.
+- Una configuració, bootstrap o estructura comuna que permeta carregar peces compartides de manera estable en la tecnologia usada.
 - Recuperació del flux després d’un error, una recàrrega o un pas intermedi.
 - Distinció clara entre estat temporal del flux i guardat funcional del recurs.
 - Neteja o invalidació quan toque.
@@ -496,7 +496,7 @@ Comprovar que el flux complet funciona, que queda registrat amb una checklist o 
 
 **Teoria relacionada**: [PDF general](../recursos/Teoria/Teoria-R2-Proves-depuracio-i-checkpoint.pdf) · [Guia Python: proves i depuració](../04_materials/repte_02/python/r2m7_proves_debug.md).
 
-En este microrepte no es demanen encara proves unitàries ni un framework de proves com a mínim. Sí que has d’introduir una **prova automàtica lleugera de flux**, encara que siga una comanda `curl`, un script `.sh`, un script PHP o Python senzill o una col·lecció de peticions documentada.
+En este microrepte no es demanen encara proves unitàries ni un framework de proves com a mínim. Sí que has d’introduir una **prova automàtica lleugera de flux**, encara que siga una comanda `curl`, un script `.sh`, un script senzill en la tecnologia usada o una col·lecció de peticions documentada.
 
 **Què s’espera**
 
@@ -514,7 +514,7 @@ En este microrepte no es demanen encara proves unitàries ni un framework de pro
 **Què no es penalitza encara**
 
 - No tindre una suite completa de proves automatitzades.
-- No tindre proves unitàries ni `PHPUnit`/`pytest`.
+- No tindre encara proves unitàries ni una suite formal com `PHPUnit`, `pytest` o `JUnit`.
 - No haver refactoritzat encara el codi.
 - No afegir funcionalitats noves si el flux ja està tancat i verificat.
 
@@ -529,12 +529,12 @@ Este microrepte no substituïx la resta del repte ni convertix `R2` en `R3`.
 Ací sí que hauràs de:
 
 - partir d’un flux ja provat en `R2M7`
-- declarar les dependències amb `composer.json` o `requirements.txt`
-- configurar l'autoload de Composer o una estructura de paquets i importacions Python coherent
+- declarar les dependències amb `composer.json`, `requirements.txt`/`pyproject.toml`, `pom.xml`/`build.gradle` o un mecanisme equivalent
+- configurar l'autoload de Composer, una estructura de paquets i importacions Python, Maven/Gradle en Java o un mecanisme equivalent coherent
 - crear una classe simple en `src/` o carpeta equivalent
 - posar dins de la classe una regla, comprovació o càlcul real del projecte
 - evitar que eixa classe depenga directament de `$_POST`, `$_SESSION`, `$_COOKIE` o del codi `HTML`
-- escriure una prova unitària mínima amb `PHPUnit`, `Pest`, `pytest`, `unittest` o un script automàtic equivalent
+- escriure una prova unitària mínima amb `PHPUnit`, `Pest`, `pytest`, `unittest`, `JUnit` o una ferramenta automàtica equivalent
 - executar la prova i documentar el resultat
 - repetir un cas clau del flux web per comprovar que no s’ha trencat res
 - explicar què queda per reorganitzar en `R3`
@@ -572,7 +572,7 @@ Ací sí que hauràs de:
 - crear o documentar una taula mínima
 - separar la configuració de connexió del codi principal
 - evitar pujar secrets reals al repositori
-- connectar amb `PDO` en PHP o amb un connector DB-API/driver equivalent en Python
+- connectar amb `PDO` en PHP, un connector DB-API en Python, JDBC/JPA en Java o un driver equivalent
 - fer una alta amb dades que ja passen per la validació del flux
 - fer una lectura posterior, llistat o detall
 - usar consultes preparades quan hi haja dades d'usuari
@@ -604,7 +604,7 @@ Si ja tens controlades les dependències en `R2M8`, pots usar Composer o `pip` p
 
 Per orientar-te sense convertir el repte en una llista normativa, pots llegir-lo així:
 
-- `RA2` apareix sobretot en el microrepte 2: ací entra la base de servidor en `PHP` o `Python`, la generació de pàgines o respostes amb codi o plantilles, la sintaxi, les sentències, les variables, els operadors i els àmbits.
+- `RA2` apareix sobretot en el microrepte 2: ací entra la base de servidor triada, la generació de pàgines o respostes amb codi o plantilles, la sintaxi, les sentències, les variables, els operadors i els àmbits.
 - `RA3` apareix sobretot en els microreptes 1, 3 i 8: formularis, recuperació de dades, comentaris útils, decisions, bucles, arrays, funcions i encapsulació mínima d’una regla en una classe.
 - `RA4` apareix sobretot en els microreptes 4, 5, 6, 7 i 8: estat, emmagatzematge en client quan toque, autenticació, funcionalitat protegida, mini API autenticada, prova, depuració, prova unitària inicial i comprovació final del flux.
 - `RA6` apareix de manera introductòria en el microrepte 9: connexió a BBDD, alta, lectura, consultes preparades i reproducció mínima abans de treballar migrations, seeders i models en `R3`.
@@ -631,7 +631,7 @@ La dependència funcional entre microreptes no els convertix en una nota única.
 
 En llenguatge clar, en este repte es treballa sobretot que sigues capaç de:
 
-- Entendre com la base de servidor en `PHP` o `Python` genera una pàgina o resposta amb codi o plantilles.
+- Entendre com la base de servidor triada genera una pàgina o resposta amb codi, plantilles o un mecanisme equivalent.
 - Identificar les peces tècniques bàsiques que intervenen en eixe flux.
 - Rebre i recuperar dades d’un formulari o entrada equivalent.
 - Mostrar almenys un error de validació de manera clara i permetre correcció.
@@ -653,7 +653,7 @@ No es tracta de memoritzar noms de funcions o paraules tècniques. Es tracta de 
 
 ## Idea metodològica important d’este repte
 
-Este repte es resol sobre una **base de servidor en `PHP` o `Python`**. La via Python de referència usa Flask i Jinja; no canvia el que has de construir, provar ni explicar.
+Este repte es resol sobre una **base de servidor en `PHP`, `Python`, `Java` o una via equivalent acordada**. Les vies de referència continuen sent PHP i Python amb Flask/Jinja, però un projecte Java es corregix pel mateix comportament, evidències i criteris, sense penalització per l'ecosistema triat.
 
 Això implica també entendre, encara que siga a un nivell bàsic, com es genera una pàgina o una resposta des del servidor amb codi embegut o equivalent, i quines peces tècniques intervenen en eixe recorregut.
 
@@ -669,7 +669,7 @@ En este moment del curs, la prioritat és consolidar el flux complet en servidor
 
 Això significa que la informació correcta ha de poder continuar viva dins del projecte. El sistema ha de poder aprofitar-la després per mostrar-la, recuperar-la, llistar-la o continuar treballant amb ella.
 
-En `R2M8`, això implica triar una regla o comprovació del flux, encapsular-la en una classe simple, carregar-la amb Composer en PHP o importar-la com a mòdul en Python, i provar-la sense navegador amb una prova unitària mínima.
+En `R2M8`, això implica triar una regla o comprovació del flux, encapsular-la en una classe simple, carregar-la o importar-la amb el mecanisme propi de la tecnologia i provar-la sense navegador amb una prova unitària mínima.
 
 Però això no vol dir que ara toque convertir el repte en un bloc d’accés a dades, modelat complet o arquitectura de persistència.
 
