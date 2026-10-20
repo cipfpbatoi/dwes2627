@@ -120,6 +120,23 @@ Els commits, issues, proves i notes de decisions poden ajudar a entendre l’evo
 
 La traça ha de ser coherent amb el microrepte i permetre identificar els canvis importants, les comprovacions realitzades i les correccions, sense convertir el recompte de commits en un criteri d’avaluació.
 
+## 🕒 Com es comprova el treball d'aula
+
+Els microreptes són treball d'aula. A l'inici i al final de la sessió es guarda automàticament la versió de `main` que hi ha en GitHub. Després es compara el progrés tècnic d'eixes versions amb l'entrega definitiva. No es puntua el nombre de commits ni el nombre de línies.
+
+La documentació, les captures, la traçabilitat i el registre d'IA no reduïxen el percentatge tècnic per haver-se completat després. Per exemple, si la funcionalitat ja estava implementada a classe i acabes el `README` a casa, la funcionalitat continua comptant com a treball d'aula.
+
+| Part del progrés tècnic observable feta a classe | Evidència | Nota màxima aplicable |
+|---:|---|---:|
+| `70–100%` | Alta | `10` |
+| `35–69%` | Mitjana | `9` |
+| `1–34%` | Baixa | `7,5` |
+| `0%` | Sense evidència | `6` |
+
+La nota original, la puntuació tècnica usada en la comparació i el topall es conserven per separat. Si hi ha una fallada de GitHub, de l'autocorrecció o de la captura del professorat, el cas queda pendent i no s'aplica automàticament el topall de `6`.
+
+Abans d'acabar la classe, fes `commit`, puja la branca i integra el treball en `main`. Si oblides fusionar una branca però l'havies pujada, el professorat podrà comprovar-la i registrar una excepció justificada. Si el treball només estava en el teu ordinador, hauràs de demostrar-lo perquè GitHub no pot verificar retroactivament quan es va fer.
+
 ## 🤖 Ús de la IA i avaluació
 
 En este curs pots usar IA, però no és obligatori i no usar-la no penalitza.
