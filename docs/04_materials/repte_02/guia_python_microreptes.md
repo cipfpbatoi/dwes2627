@@ -61,9 +61,11 @@ Les equivalències no són receptes per copiar. Has de poder explicar on entra l
 
 ## R2M7. Prova i depuració
 
-- Conserva la mateixa taula de casos positius i negatius.
-- Automatitza almenys un cas amb `curl`, un script Python curt o el client de proves de Flask.
-- Registra l'ordre executada i el resultat; activar `debug=True` no és una prova.
+- Automatitza el recorregut HTTP complet: accés protegit sense sessió denegat, login incorrecte, login correcte, operació protegida permesa, logout i nova denegació.
+- Usa `curl`, un script Python amb `requests` o el client de proves de Flask, mantenint cookies o token entre peticions.
+- Afig assercions perquè la prova acabe amb error davant qualsevol resultat inesperat; imprimir respostes o activar `debug=True` no és provar.
+- Documenta una ordre d'execució i guarda l'eixida real en `evidence/r2m7/verificacio.txt` o equivalent.
+- Consulta la [guia completa del flux HTTP](r2m7_flux_http.md). Una prova unitària d'una classe no substituïx este flux; entra en `R2M8`.
 
 ## R2M8. Primera peça testable
 

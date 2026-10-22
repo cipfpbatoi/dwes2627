@@ -66,9 +66,9 @@ Tria una proposta amb el professorat o adapta-la als errors i decisions del teu 
 
 ### R2M7. Proves, depuració i checkpoint tècnic
 
-- **Pots aprofundir en:** convertir una comprovació manual repetida en una prova executable o reproduir i documentar una incidència real fins trobar-ne la causa.
-- **Evidència curta:** prova que falla abans del canvi i passa després, o registre de depuració amb hipòtesi i conclusió.
-- **No avances encara:** reestructuració completa amb framework.
+- **Pots aprofundir en:** fer repetible `tests/flux-r2.sh`, afegir missatges per cas o comprovar més d'un resultat estable sense lligar-te a l'HTML decoratiu.
+- **Evidència curta:** eixida on el flux complet passa i una execució provocada que retorna error davant una expectativa incorrecta.
+- **No avances encara:** reestructuració completa amb framework ni substituir el flux HTTP per una prova unitària de `R2M8`.
 
 ### R2M8. Primera peça testable amb POO i dependències
 

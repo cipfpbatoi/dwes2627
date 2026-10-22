@@ -488,33 +488,42 @@ Este microrepte no vol dir:
 - No tindre refresh tokens.
 - No haver resolt CORS si el client encara no el necessita.
 
-### Microrepte 7. Prova, depuració i checkpoint tècnic
+### Microrepte 7. Automatització del flux HTTP, depuració i checkpoint tècnic
 
 **Objectiu**
 
-Comprovar que el flux complet funciona, que queda registrat amb una checklist o taula simple de proves, que es pot demostrar en una demo breu i que el repte arriba a les fases finals amb una base tècnica clara.
+Convertir les comprovacions manuals que ja has fet en una prova de flux HTTP executable, capaç de decidir per si mateixa si el recorregut funciona i de fallar quan no es complix una expectativa.
 
-**Teoria relacionada**: [PDF general](../recursos/Teoria/Teoria-R2-Proves-depuracio-i-checkpoint.pdf) · [Guia Python: proves i depuració](../04_materials/repte_02/python/r2m7_proves_debug.md).
+**Teoria relacionada**: [Guia pas a pas de R2M7](../04_materials/repte_02/r2m7_flux_http.md) · [PDF general](../recursos/Teoria/Teoria-R2-Proves-depuracio-i-checkpoint.pdf) · [Guia Python](../04_materials/repte_02/python/r2m7_proves_debug.md).
 
-En este microrepte no es demanen encara proves unitàries ni un framework de proves com a mínim. Sí que has d’introduir una **prova automàtica lleugera de flux**, encara que siga una comanda `curl`, un script `.sh`, un script senzill en la tecnologia usada o una col·lecció de peticions documentada.
+El lliurable principal és `tests/flux-r2.sh` o una prova HTTP equivalent en Python o Java. Ha d'executar, en este ordre:
+
+1. accés sense autenticar a una operació protegida i denegació;
+2. login incorrecte i denegació;
+3. login correcte i creació de sessió o obtenció de token;
+4. accés autenticat a una operació protegida i resultat permés;
+5. logout o invalidació;
+6. nou intent amb l'estat anterior i denegació.
+
+No es demanen encara proves unitàries ni una suite formal. `R2M7` mira l'aplicació des de fora; en `R2M8` provaràs des de dins una classe o regla aïllada amb `PHPUnit`, `pytest`, `JUnit` o equivalent. Són proves diferents i complementàries.
 
 **Què s’espera**
 
-- Checklist o taula simple de casos de prova.
-- Prova del cas correcte.
-- Prova d’un cas d’error o denegació.
-- Revisió d’errors i validacions.
-- Comprovació que la informació guardada es pot recuperar o reutilitzar.
-- Ús visible d’alguna eina o entorn simple de prova i depuració.
-- Almenys una prova automàtica lleugera d’un cas observable del flux.
-- Documentació mínima actualitzada.
-- Demo reproduïble del flux complet.
-- Defensa tècnica breu del recorregut.
+- URL base configurable i credencials demo, sense secrets reals.
+- Cookies temporals o reutilització del token entre peticions.
+- Comprovacions automàtiques de codis HTTP, redireccions o textos estables.
+- Codi d'eixida `0` si tot passa i diferent de `0` si falla qualsevol expectativa.
+- Neteja dels fitxers temporals i missatges que indiquen quin cas ha passat o ha fallat.
+- Una única ordre d'execució documentada.
+- Eixida real guardada en `evidence/r2m7/verificacio.txt` o equivalent.
+- Incidències i correccions registrades, i una demo reproduïble.
+
+Una ordre `curl` que només imprimix la resposta, una col·lecció sense assercions, captures o una taula manual poden ajudar a depurar, però no són la prova automàtica mínima. El mateix script ha de comparar el resultat i retornar error quan no coincidix.
 
 **Què no es penalitza encara**
 
 - No tindre una suite completa de proves automatitzades.
-- No tindre encara proves unitàries ni una suite formal com `PHPUnit`, `pytest` o `JUnit`.
+- No tindre encara proves unitàries amb `PHPUnit`, `pytest` o `JUnit`.
 - No haver refactoritzat encara el codi.
 - No afegir funcionalitats noves si el flux ja està tancat i verificat.
 
@@ -621,7 +630,7 @@ Cada microrepte genera una nota pròpia només per al seu **RA avaluat**. Els RA
 | `R2M4` | Estat, sessió, cookie, dades de petició i arrancada estable | `RA4` | `RA4.a`, `RA4.b`, `RA4.c` | - |
 | `R2M5` | Registre, hash, autenticació i operació protegida | `RA4` | `RA4.d`, `RA4.e` | - |
 | `R2M6` | Mini API d'autenticació per a client | `RA4` | `RA4.d`, `RA4.e` | pont DWEC |
-| `R2M7` | Proves automàtiques lleugeres, depuració i checkpoint | `RA4` | `RA4.f` | - |
+| `R2M7` | Prova de flux HTTP automatitzada, depuració i checkpoint | `RA4` | `RA4.f` | - |
 | `R2M8` | Primera peça testable amb POO i dependències controlades | `RA3` | `RA3.d`, `RA3.g` | `RA4.f` |
 | `R2M9` | Persistència mínima amb BBDD | `RA6` | `RA6.a`, `RA6.b`, `RA6.c`, `RA6.d`, `RA6.f` | `RA3`, `RA4` |
 
