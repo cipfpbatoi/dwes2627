@@ -66,7 +66,7 @@ Tria una proposta amb el professorat o adapta-la als errors i decisions del teu 
 
 ### R2M7. Proves, depuració i checkpoint tècnic
 
-- **Pots aprofundir en:** fer repetible `tests/flux-r2.sh`, afegir missatges per cas o comprovar més d'un resultat estable sense lligar-te a l'HTML decoratiu.
+- **Pots aprofundir en:** fer repetible `tests/flux-r2.php`, afegir missatges per cas o comprovar més d'un resultat estable sense lligar-te a l'HTML decoratiu.
 - **Evidència curta:** eixida on el flux complet passa i una execució provocada que retorna error davant una expectativa incorrecta.
 - **No avances encara:** reestructuració completa amb framework ni substituir el flux HTTP per una prova unitària de `R2M8`.
 

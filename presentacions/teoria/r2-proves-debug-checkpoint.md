@@ -10,8 +10,8 @@ Crear una presentació teòrica curta per preparar `R2M7`.
 - Provar és comparar resultat esperat i resultat real.
 - El camí feliç no és suficient.
 - Una prova de flux comprova l'aplicació des de fora: HTTP, sessió o token, operació protegida i invalidació.
-- `R2M7` demana `tests/flux-r2.sh` o una alternativa equivalent que execute els sis passos i faça assercions automàtiques.
-- `curl` és el client HTTP, no l'asserció: mostrar una resposta no és suficient si el script no decidix si és correcta.
+- `R2M7` demana `tests/flux-r2.php` o una alternativa equivalent que execute els sis passos i faça comprovacions automàtiques.
+- l'extensió cURL de PHP és el client HTTP, no la comprovació: obtindre una resposta no és suficient si el programa no decidix si és correcta.
 - Les proves unitàries i `PHPUnit` comproven una peça interna i entren en `R2M8`; complementen el flux, no el substituïxen.
 - El codi d'eixida és part del resultat: `0` quan passa i diferent de `0` quan falla.
 - Primer cal reproduir un error i després corregir-lo.
@@ -22,26 +22,25 @@ Crear una presentació teòrica curta per preparar `R2M7`.
 ## Exemples pràctics que han d'aparéixer
 
 - Taula de prova amb entrada, passos, resultat esperat i resultat real.
-- `curl -o ... -w '%{http_code}'` per separar cos i codi.
-- Script `.sh` amb asserció, `exit 1`, cookies temporals i neteja.
+- extensió cURL de PHP per obtindre cos i codi HTTP;
+- programa PHP amb funció de comprovació, `exit(1)`, cookies temporals i neteja;
 - Seqüència: denegació inicial, login incorrecte, login correcte, operació protegida, logout i denegació final.
 - Exemple d'incidència: "esperava 403, torna 200".
 - Exemple de checklist de regressió del flux de `R2`.
 
 ## Codi base per a diapositives
 
-```bash
-CODI=$(curl -sS -o resposta.html -w '%{http_code}' http://localhost:8000/protegida)
-[[ "$CODI" == "302" ]] || exit 1
-```
+```php
+<?php
+$curl = curl_init('http://localhost:8000/protegida');
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+$cos = curl_exec($curl);
+$codi = curl_getinfo($curl, CURLINFO_HTTP_CODE);
 
-```bash
-#!/usr/bin/env bash
-set -euo pipefail
-TEMP="$(mktemp -d)"
-trap 'rm -rf "$TEMP"' EXIT
-curl -sS -c "$TEMP/cookies" -d 'email=demo@example.test&password=demo-password' http://localhost:8000/login
-curl -sS -b "$TEMP/cookies" http://localhost:8000/protegida | grep -Fq 'text estable'
+if ($cos === false || $codi !== 302) {
+    fwrite(STDERR, "ERROR: s'esperava 302\n");
+    exit(1);
+}
 ```
 
 ## Format recomanat
@@ -49,7 +48,7 @@ curl -sS -b "$TEMP/cookies" http://localhost:8000/protegida | grep -Fq 'text est
 - 8-10 diapositives.
 - Una taula de prova d'exemple.
 - Una diapositiva de casos mínims.
-- Una diapositiva amb una petició `curl` i la seua asserció.
+- Una diapositiva amb una petició cURL de PHP i la seua comprovació.
 - Una diapositiva comparant prova manual, prova de flux i prova unitària.
 - Una diapositiva de depuració ordenada.
 - Errors habituals.

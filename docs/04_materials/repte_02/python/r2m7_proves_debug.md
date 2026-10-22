@@ -2,7 +2,7 @@
 
 Convertix les comprovacions manuals de `R2M4`-`R2M6` en una prova executable. Ha de recórrer: accés protegit sense autenticar denegat, login incorrecte, login correcte, operació protegida permesa, logout i nou accés denegat.
 
-Pots usar [`tests/flux-r2.sh`](../r2m7_flux_http.md) independentment del llenguatge. Si preferixes Python, usa `requests.Session()` contra el servidor real o el client de proves de Flask, que conserva cookies entre peticions:
+El lliurable recomanat és [`tests/flux-r2.php`](../r2m7_flux_http.md). Si el projecte està fet amb Python, pots usar `requests.Session()` contra el servidor real o el client de proves de Flask, que conserva cookies entre peticions:
 
 ```python
 from app import app

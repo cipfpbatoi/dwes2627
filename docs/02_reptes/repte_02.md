@@ -496,7 +496,7 @@ Convertir les comprovacions manuals que ja has fet en una prova de flux HTTP exe
 
 **Teoria relacionada**: [Guia pas a pas de R2M7](../04_materials/repte_02/r2m7_flux_http.md) · [PDF general](../recursos/Teoria/Teoria-R2-Proves-depuracio-i-checkpoint.pdf) · [Guia Python](../04_materials/repte_02/python/r2m7_proves_debug.md).
 
-El lliurable principal és `tests/flux-r2.sh` o una prova HTTP equivalent en Python o Java. Ha d'executar, en este ordre:
+El lliurable principal és `tests/flux-r2.php` o una prova HTTP equivalent en Bash, Python o Java. S'executa habitualment amb `php tests/flux-r2.php` i necessita PHP CLI amb l'extensió cURL. Ha d'executar, en este ordre:
 
 1. accés sense autenticar a una operació protegida i denegació;
 2. login incorrecte i denegació;

@@ -1,17 +1,21 @@
-# R2M7. Automatitza el flux HTTP
+# R2M7. Automatitza el flux HTTP amb PHP
 
 ## Què faràs
 
-En els microreptes anteriors ja has comprovat manualment el login, l'estat i una operació protegida. Ara convertiràs eixe recorregut en una prova executable que el puga repetir qualsevol persona amb una sola ordre.
+En els microreptes anteriors ja has comprovat manualment el login, l'estat i una operació protegida. Ara convertiràs eixe recorregut en una prova executable que el puga repetir qualsevol persona amb una sola ordre:
 
-El producte habitual en PHP és `tests/flux-r2.sh`. També pots fer una prova HTTP equivalent en Python o Java si recorre l'aplicació real i falla automàticament davant un resultat incorrecte.
+```bash
+php tests/flux-r2.php
+```
+
+El producte recomanat i explicat a classe és `tests/flux-r2.php`. També pots entregar `tests/flux-r2.sh` en Bash, o una prova HTTP equivalent en Python o Java, si recorre l'aplicació real i falla automàticament davant un resultat incorrecte. L'opció Bash s'avalua amb els mateixos criteris i no comporta penalització.
 
 ## Tres coses diferents
 
 | Tipus | Qui decidix si passa? | Què observa? | On encaixa? |
 |---|---|---|---|
 | comprovació manual | una persona | navegador, resposta o captura | preparació i depuració |
-| prova de flux | el script | HTTP, cookies o token i resultat visible | `R2M7` |
+| prova de flux | el programa PHP | HTTP, cookies o token i resultat visible | `R2M7` |
 | prova unitària | el framework de tests | una classe o funció aïllada | `R2M8` |
 
 Una prova unitària amb `PHPUnit` és útil, però no substituïx el flux HTTP de `R2M7`: pot demostrar que una regla interna funciona sense demostrar que el login, la sessió, la ruta protegida i el logout estan connectats correctament.
@@ -27,93 +31,155 @@ La prova ha d'executar en ordre:
 5. logout o invalidació del token;
 6. reutilització de l'estat anterior: denegada de nou.
 
-No cal una suite completa, mocks ni un framework de testing. Sí que cal que el programa execute tot el recorregut, faça assercions i retorne un codi d'error si alguna no es complix.
+No cal una suite completa, mocks ni un framework de testing. Sí que cal que el programa execute tot el recorregut, faça comprovacions i retorne un codi d'error si alguna no es complix.
 
-## Bash mínim que necessites
+## Requisit previ
+
+Comprova que PHP CLI té disponible l'extensió cURL:
+
+```bash
+php -m
+```
+
+En la llista ha d'aparéixer `curl`. Si el projecte funciona dins de Docker, executa la prova dins del contenidor PHP o assegura't que el servidor és accessible des d'on llances l'ordre.
+
+## PHP mínim que necessites
 
 Una base possible és:
 
-```bash
-#!/usr/bin/env bash
-set -euo pipefail
+```php
+<?php
 
-BASE_URL="${BASE_URL:-http://localhost:8000}"
-DEMO_USER="${DEMO_USER:-demo@example.test}"
-DEMO_PASSWORD="${DEMO_PASSWORD:-demo-password}"
-TEMP="$(mktemp -d)"
-COOKIES="$TEMP/cookies.txt"
-trap 'rm -rf "$TEMP"' EXIT
+declare(strict_types=1);
 
-fail() {
-  echo "ERROR: $1" >&2
-  exit 1
+$baseUrl = rtrim(getenv('BASE_URL') ?: 'http://localhost:8000', '/');
+$demoUser = getenv('DEMO_USER') ?: 'demo@example.test';
+$demoPassword = getenv('DEMO_PASSWORD') ?: 'demo-password';
+$cookies = tempnam(sys_get_temp_dir(), 'r2m7-');
+
+if ($cookies === false) {
+    fwrite(STDERR, "ERROR: no s'ha pogut crear el fitxer temporal\n");
+    exit(1);
+}
+
+register_shutdown_function(static function () use ($cookies): void {
+    if (is_file($cookies)) {
+        unlink($cookies);
+    }
+});
+
+function comprova(bool $condicio, string $missatge): void
+{
+    if (!$condicio) {
+        fwrite(STDERR, "ERROR: $missatge\n");
+        exit(1);
+    }
+
+    echo "OK: $missatge\n";
 }
 ```
 
-- `set -euo pipefail` evita continuar silenciosament després d'errors.
-- Les variables permeten canviar URL i credencials demo sense editar el fitxer.
-- `mktemp -d` crea un espai temporal per a respostes i cookies.
-- `trap` neteja eixe espai quan acaba el script.
-- `exit 1` comunica a la terminal o a CI que la prova ha fallat.
+- `getenv()` permet canviar URL i credencials demo sense editar el fitxer.
+- `tempnam()` crea un fitxer temporal per a les cookies.
+- `register_shutdown_function()` i `unlink()` el netegen al final.
+- `exit(1)` comunica a la terminal o a CI que la prova ha fallat.
 
 No versions contrasenyes reals. Usa un compte demo preparat per a la correcció.
 
-## Comprova la resposta, no sols la mostres
+## Fes una petició i comprova-la
 
-Amb `curl` pots guardar el cos i capturar per separat el codi HTTP:
+Pots crear una funció reutilitzable:
 
-```bash
-CODI=$(curl -sS -o "$TEMP/resposta.html" -w '%{http_code}' \
-  "$BASE_URL/protegida.php")
+```php
+function peticio(string $url, string $cookies, ?array $dades = null): array
+{
+    $curl = curl_init($url);
 
-[[ "$CODI" == "302" ]] || fail "sense sessió s'esperava 302 i s'ha rebut $CODI"
+    $opcions = [
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_HEADER => false,
+        CURLOPT_FOLLOWLOCATION => false,
+        CURLOPT_COOKIEJAR => $cookies,
+        CURLOPT_COOKIEFILE => $cookies,
+    ];
+
+    if ($dades !== null) {
+        $opcions[CURLOPT_POST] = true;
+        $opcions[CURLOPT_POSTFIELDS] = http_build_query($dades);
+    }
+
+    curl_setopt_array($curl, $opcions);
+    $cos = curl_exec($curl);
+
+    if ($cos === false) {
+        $error = curl_error($curl);
+        throw new RuntimeException("Error HTTP: $error");
+    }
+
+    return [
+        'codi' => curl_getinfo($curl, CURLINFO_HTTP_CODE),
+        'cos' => $cos,
+    ];
+}
+```
+
+Ara el programa pot decidir si el resultat és correcte:
+
+```php
+$senseSessio = peticio("$baseUrl/protegida.php", $cookies);
+
+comprova(
+    in_array($senseSessio['codi'], [302, 401, 403], true),
+    'l’accés sense sessió queda denegat'
+);
 ```
 
 També pots comprovar un text estable:
 
-```bash
-grep -Fq "Accés denegat" "$TEMP/resposta.html" \
-  || fail "no apareix el missatge estable d'accés denegat"
+```php
+comprova(
+    str_contains($senseSessio['cos'], 'Accés denegat'),
+    'apareix el missatge estable d’accés denegat'
+);
 ```
 
-Tria indicadors que formen part del contracte de l'aplicació: un codi, una capçalera, una redirecció o un text estable. Evita comparar tot l'HTML o detalls decoratius que canvien amb facilitat.
+Adapta els codis i textos al contracte real del projecte. Evita comparar tot l'HTML o detalls decoratius que canvien amb facilitat.
 
 ## Mantín la identitat entre peticions
 
-Si el projecte usa sessions, `curl` pot escriure i reutilitzar cookies:
+Totes les crides han de reutilitzar el mateix fitxer de cookies:
 
-```bash
-curl -sS -c "$COOKIES" \
-  -d "email=$DEMO_USER&password=$DEMO_PASSWORD" \
-  "$BASE_URL/login.php" -o "$TEMP/login.html"
+```php
+$login = peticio("$baseUrl/login.php", $cookies, [
+    'email' => $demoUser,
+    'password' => $demoPassword,
+]);
 
-curl -sS -b "$COOKIES" \
-  "$BASE_URL/protegida.php" -o "$TEMP/protegida.html"
+$protegida = peticio("$baseUrl/protegida.php", $cookies);
+comprova($protegida['codi'] === 200, 'l’operació protegida queda permesa');
 ```
 
-Si usa una API amb token, extrau el token de la resposta del login i envia'l en les peticions següents. No inventes una sessió o un token directament en la prova: obtín-lo mitjançant el mateix login que usa el projecte.
+Si el projecte usa una API amb token, extrau el token de la resposta del login i envia'l en una capçalera de les peticions següents. No inventes una sessió o un token directament en la prova: obtín-lo mitjançant el mateix login que usa el projecte.
 
-## Com depurar el guió
+## Com depurar el programa
 
-Executa primer un cas, comprova el codi i mira el cos guardat. Després:
+1. executa un cas i mostra temporalment el codi HTTP;
+2. identifica la primera expectativa que falla;
+3. revisa el cos o les capçaleres retornades;
+4. decidix si està malament l'aplicació, la ruta o l'expectativa;
+5. corregix una sola causa i torna a executar el recorregut complet.
 
-1. identifica la primera expectativa que falla;
-2. repetix manualment eixa petició amb `curl -i` si necessites veure capçaleres;
-3. decidix si està malament l'aplicació, la ruta o l'expectativa;
-4. corregix una sola causa;
-5. torna a executar el recorregut complet.
-
-Pots usar `bash -x tests/flux-r2.sh` temporalment per veure les ordres, però evita que les traces mostren secrets.
+Pots usar una petició `curl -i` manual per explorar, però el lliurable PHP ha de fer la comprovació automàticament.
 
 ## Altres tecnologies
 
-En Python pots usar `requests` contra el servidor real o el client de proves de Flask. En Java pots usar el client HTTP o MockMvc. L'equivalent és vàlid quan:
+`tests/flux-r2.sh` en Bash, `requests` o el client de Flask en Python, i MockMvc o un client HTTP en Java són equivalents quan:
 
-- recorre els sis passos HTTP;
-- conserva cookies o token;
-- conté assercions automàtiques;
-- acaba amb error quan una expectativa falla;
-- té una única ordre documentada.
+- recorren els sis passos HTTP;
+- conserven cookies o token;
+- contenen comprovacions automàtiques;
+- acaben amb error quan una expectativa falla;
+- tenen una única ordre documentada.
 
 Una prova que només crida una funció o una classe és unitària i correspon a `R2M8`, no a este lliurable.
 
@@ -122,11 +188,12 @@ Una prova que només crida una funció o una classe és unitària i correspon a 
 Documenta, en el `README.md` o la guia del projecte:
 
 - com arrancar l'aplicació;
+- que es necessita PHP CLI amb l'extensió cURL;
 - la URL base i els requisits previs;
 - quin compte demo s'usa, sense publicar secrets reals;
-- l'ordre `bash tests/flux-r2.sh` o l'equivalent real.
+- l'ordre `php tests/flux-r2.php` o l'equivalent real.
 
-Guarda una execució correcta en `evidence/r2m7/verificacio.txt`. En la revisió, el professorat pot canviar temporalment una expectativa o una ruta per comprovar que el test falla de veritat.
+Guarda una execució correcta en `evidence/r2m7/verificacio.txt`. En la revisió, el professorat pot canviar temporalment una expectativa o una ruta per comprovar que la prova falla de veritat.
 
 ## Checklist
 
@@ -145,7 +212,7 @@ Guarda una execució correcta en `evidence/r2m7/verificacio.txt`. En la revisió
 
 - una ordre `curl` que només imprimix la resposta;
 - una col·lecció de peticions sense assercions executables;
-- captures o una taula de casos sense el guió automatitzat;
-- un script que sempre acaba amb èxit;
+- captures o una taula de casos sense el programa automatitzat;
+- un programa que sempre acaba amb èxit;
 - una prova unitària que no recorre HTTP;
 - instruccions sense una execució real guardada.
