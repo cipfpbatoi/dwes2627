@@ -126,14 +126,16 @@ Els microreptes són treball d'aula. A l'inici i al final de la sessió es guard
 
 La documentació, les captures, la traçabilitat i el registre d'IA no reduïxen el percentatge tècnic per haver-se completat després. Per exemple, si la funcionalitat ja estava implementada a classe i acabes el `README` a casa, la funcionalitat continua comptant com a treball d'aula.
 
-| Part del progrés tècnic observable feta a classe | Evidència | Nota màxima aplicable |
-|---:|---|---:|
-| `70–100%` | Alta | `10` |
-| `35–69%` | Mitjana | `9` |
-| `1–34%` | Baixa | `7,5` |
-| `0%` | Sense evidència | `6` |
+La nota del producte compta un `70%`. El treball d'aula aporta el `30%` restant amb esta escala automàtica:
 
-La nota original, la puntuació tècnica usada en la comparació i el topall es conserven per separat. Si hi ha una fallada de GitHub, de l'autocorrecció o de la captura del professorat, el cas queda pendent i no s'aplica automàticament el topall de `6`.
+| Part del progrés tècnic observable feta a classe | Evidència | Punts d'aula |
+|---:|---|---:|
+| `70–100%` | Alta | `3` |
+| `35–69%` | Mitjana | `2` |
+| `1–34%` | Baixa | `1` |
+| `0%` | Sense evidència | `0` |
+
+La fórmula és `nota final = nota del producte × 0,7 + punts d'aula`. Així, notes de producte diferents continuen donant notes finals diferents encara que tinguen el mateix nivell d'aula. La nota original i la puntuació tècnica usada en la comparació es conserven per separat. Si hi ha una fallada de GitHub, de l'autocorrecció o de la captura del professorat, el cas queda pendent i la ponderació no s'aplica automàticament.
 
 Abans d'acabar la classe, fes `commit`, puja la branca i integra el treball en `main`. Si oblides fusionar una branca però l'havies pujada, el professorat podrà comprovar-la i registrar una excepció justificada. Si el treball només estava en el teu ordinador, hauràs de demostrar-lo perquè GitHub no pot verificar retroactivament quan es va fer.
 
