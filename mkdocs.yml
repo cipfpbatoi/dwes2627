@@ -64,6 +64,7 @@ nav:
           - "PHP i HTML: pràctica R2S0": "04_materials/repte_02/practica_php_html.md"
           - "Python i HTML: pràctica R2S0": "04_materials/repte_02/practica_python_html.md"
           - "R2M7. Automatitzar el flux HTTP": "04_materials/repte_02/r2m7_flux_http.md"
+          - "R2S10. Contracte d'autenticació per a DWEC": "04_materials/repte_02/r2s10_contracte_autenticacio_dwec.md"
           - "Python en els microreptes R2": "04_materials/repte_02/guia_python_microreptes.md"
           - "Python R2M1. Formularis i validació": "04_materials/repte_02/python/r2m1_formularis_validacio.md"
           - "Python R2M2. Reintent i confirmació": "04_materials/repte_02/python/r2m2_reintent_guardat.md"

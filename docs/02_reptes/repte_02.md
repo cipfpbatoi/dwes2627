@@ -75,7 +75,7 @@ Per treballar bé este repte convé dividir-lo en nou peces clares. Això ajuda 
 
 La base del repte queda en `27` hores, organitzades en `9` sessions de `3` hores amb microrepte.
 
-A més, pot haver-hi una sessió d'ampliació, `R2S10`, dedicada al contracte d'autenticació per a `DWEC`. No és un microrepte nou ni té nota pròpia: ajuda a deixar la mini API de `R2M6` més clara, documentada i consumible.
+A més, pot haver-hi una sessió d'ampliació, [`R2S10`](../04_materials/repte_02/r2s10_contracte_autenticacio_dwec.md), dedicada al contracte d'autenticació per a `DWEC`. No és un microrepte nou ni té nota pròpia: ajuda a deixar la mini API de `R2M6` més clara, documentada i consumible.
 
 La progressió també és important: en el microrepte 1 entra i es valida la informació; en el 2 es processen i es guarden les dades correctes; en el 3 s’apliquen regles reals del projecte amb funcions pròpies; en el 4 es conserva estat temporal del flux i s'estabilitza el punt d'arrancada; en el 5 es protegix una operació real; en el 6 s'exposa una mini API d'autenticació per a client; en el 7 es prova, es depura i es tanca un checkpoint tècnic; en el 8 s’introduïx una classe simple carregada amb el mecanisme propi de l'entorn i verificada amb una primera prova unitària; i en el 9 es fa una persistència mínima amb BBDD.
 
@@ -128,7 +128,7 @@ Els tallers no creen una nota separada: et donen una ferramenta concreta per ava
 | `R2M4` | [MT04. Sessió, cookies i estat](../recursos/Tallers/MT04-Sessio-cookies-i-estat.pdf) | Abans de decidir què guardes en sessió, cookie o servidor. |
 | `R2M5` | [MT05. Auth mínima defensable](../recursos/Tallers/MT05-Auth-minima-defensable.pdf) | Abans de protegir una operació real. |
 | `R2M6` | [MT05. Auth mínima defensable](../recursos/Tallers/MT05-Auth-minima-defensable.pdf) | Per mantindre coherent l'autenticació quan exposes la mini API. |
-| Ampliació `R2S10` | Contracte d'autenticació per a `DWEC` | Després de `R2M6`, si cal deixar la mini API més clara per al consum des de client. |
+| Ampliació [`R2S10`](../04_materials/repte_02/r2s10_contracte_autenticacio_dwec.md) | Contracte d'autenticació per a `DWEC` | Després de `R2M6`, si cal deixar la mini API més clara per al consum des de client. |
 | `R2M7` | [MT06. Debugging i prova curta](../recursos/Tallers/MT06-Debugging-i-prova-curta.pdf) | En el checkpoint de proves i depuració. |
 | `R2M8` | Sense taller específic | Primera peça testable amb POO i Composer. |
 | `R2M9` | Sense taller específic | Persistència mínima amb BBDD abans de R3. |
@@ -777,7 +777,8 @@ Tampoc és un requisit per aprovar el repte ni per tancar els microreptes. La se
 **Opcions d'ampliació**
 
 - Reforçar la validació, els errors visibles o la funcionalitat protegida amb un cas crític millor resolt.
-- Fer `R2S10`: documentar un contracte d'autenticació consumible per `DWEC`, amb endpoints, headers, respostes, dades demo i prova creuada.
+- Fer [`R2S10`](../04_materials/repte_02/r2s10_contracte_autenticacio_dwec.md): documentar un contracte d'autenticació consumible per `DWEC`, amb endpoints, headers, respostes, dades demo i prova creuada.
+- Refactoritzar amb POO una part significativa del flux: extraure diverses responsabilitats reals a classes cohesionades, carregar-les amb l’autoload del projecte i protegir el canvi amb proves unitàries i una comprovació de no regressió del flux web.
 - Afegir una llibreria externa menuda amb Composer o una crida a una API externa si té sentit real en el projecte i queda documentat com a ampliació.
 
 **Exemples vàlids en R2**
@@ -785,6 +786,7 @@ Tampoc és un requisit per aprovar el repte ni per tancar els microreptes. La se
 - Millorar la validació del flux principal amb més casos d’error reals, missatges més útils i prova documentada.
 - Afegir una comprovació de seguretat o autorització més fina sobre l’operació protegida.
 - Automatitzar millor una bateria de proves del flux amb diversos casos rellevants.
+- Passar a classes la validació i una regla o servei del domini, injectar les dades que necessiten i demostrar amb proves que el comportament anterior es conserva.
 - Usar una llibreria externa menuda amb Composer si resol una necessitat real del projecte i queda explicada.
 - Consumir una API externa només si aporta dades útils al flux i no substituïx el treball obligatori de R2.
 
@@ -793,6 +795,8 @@ Tampoc és un requisit per aprovar el repte ni per tancar els microreptes. La se
 - Afegir pantalles decoratives sense millorar el flux.
 - Fer una ampliació que no es pot provar.
 - Usar una API externa només perquè parega avançat.
+- Repartir el mateix codi entre classes buides, canviar només noms o carpetes, o duplicar la classe mínima que ja era obligatòria en `R2M8`.
+- Intentar una migració completa a MVC o a un framework: eixe canvi arquitectònic correspon al Repte 3.
 - Afegir codi generat per IA que no pots explicar.
 - Presentar una ampliació mentre encara fallen el login, les proves mínimes o l’operació protegida.
 
