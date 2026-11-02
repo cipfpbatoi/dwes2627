@@ -151,6 +151,71 @@ per a les ordres d'Artisan, proves i altres dependències del projecte. No
 versiones el fitxer `.env` ni secrets reals; conserva les instruccions i
 `.env.example` sense credencials.
 
+### Projecte ja clonat: arrancar-lo només amb Docker
+
+En clonar o baixar un projecte Laravel existent, la carpeta `vendor/` no sol
+estar versionada. En un projecte amb Laravel Sail, `compose.yaml` pot necessitar
+`vendor/laravel/sail/` fins i tot per construir la imatge. Per això, si
+l'ordinador no té PHP ni Composer, primer cal generar `vendor/` amb un
+contenidor temporal de Composer.
+
+Des de l'arrel del repositori, entra a la carpeta Laravel i prepara la
+configuració local. Estes ordres no sobreescriuen un `.env` que ja existisca:
+
+```bash
+cd r3
+[ -f .env ] || cp .env.example .env
+grep -q '^APP_PORT=' .env || echo 'APP_PORT=8080' >> .env
+grep -q '^WWWUSER=' .env || echo "WWWUSER=$(id -u)" >> .env
+grep -q '^WWWGROUP=' .env || echo "WWWGROUP=$(id -g)" >> .env
+touch database/database.sqlite
+```
+
+Crea les dependències mínimes necessàries per construir Sail. El contenidor
+esborra en acabar, però `vendor/` queda en la carpeta del projecte:
+
+```bash
+docker run --rm \
+  --user "$(id -u):$(id -g)" \
+  -e COMPOSER_HOME=/tmp/composer \
+  --mount "type=bind,source=$PWD,target=/app" \
+  -w /app \
+  composer:2 install --ignore-platform-reqs --no-scripts
+```
+
+Ara ja es pot construir i arrancar l'entorn. La resta d'ordres s'executen dins
+del contenidor Laravel, que sí que inclou PHP, Composer i Node:
+
+```bash
+docker compose up -d --build
+docker compose exec laravel.test composer install
+docker compose exec laravel.test php artisan key:generate
+docker compose exec laravel.test php artisan migrate --force
+docker compose exec laravel.test npm install
+docker compose exec laravel.test npm run build
+```
+
+Comprova el recorregut de la petició en
+`http://localhost:8080/recorregut?nom=Aina`.
+
+En els pulls següents, `vendor/` i `.env` continuen en la màquina perquè Git
+els ignora. Després de baixar canvis, actualitza dependències i migracions dins
+del contenidor:
+
+```bash
+git pull
+cd r3
+docker compose up -d --build
+docker compose exec laravel.test composer install
+docker compose exec laravel.test npm install
+docker compose exec laravel.test php artisan migrate --force
+```
+
+No cal instal·lar PHP, Composer, Node ni npm en l'ordinador amfitrió. Si s'ha
+eliminat `vendor/`, repeteix abans el `docker run` amb `composer:2`. No copies
+`.env.example` damunt d'un `.env` existent, perquè perdries la configuració
+local.
+
 ## 4. La mateixa idea amb NestJS
 
 NestJS necessita Node.js i npm. Pots crear un projecte amb la CLI oficial:
