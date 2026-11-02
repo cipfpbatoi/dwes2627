@@ -296,7 +296,7 @@ cd r3-django
 printf 'Django\n' > requirements.txt
 
 docker run --rm \
-  --user "$(id -u):$(id -g)" \
+  --user 0:0 \
   -e HOME=/tmp \
   --mount "type=bind,source=$PWD,target=/app" \
   -w /app \
@@ -304,16 +304,21 @@ docker run --rm \
     python -m venv /tmp/venv &&
     /tmp/venv/bin/pip install --no-cache-dir -r requirements.txt &&
     /tmp/venv/bin/django-admin startproject config . &&
-    /tmp/venv/bin/python manage.py startapp web
+    /tmp/venv/bin/python manage.py startapp webf
   '
 ```
 
-Després de crear `web/views.py`, `web/urls.py` i modificar `config/urls.py`
-com en l'exemple anterior, arranca Django dins del contenidor:
+`startapp` crea la carpeta de l'aplicació, però no la dona d'alta en el
+projecte. Abans d'usar-la, afegeix `'webf.apps.WebfConfig'` a `INSTALLED_APPS`
+en `config/settings.py`, al costat de les aplicacions de Django.
+
+En els exemples anteriors, substitueix `web` per `webf` (`webf/views.py`,
+`webf/urls.py` i `include("webf.urls")`). Després, arranca Django dins del
+contenidor:
 
 ```bash
 docker run --rm -it \
-  --user "$(id -u):$(id -g)" \
+  --user 0:0 \
   -e HOME=/tmp \
   -p 8000:8000 \
   --mount "type=bind,source=$PWD,target=/app" \
@@ -321,6 +326,7 @@ docker run --rm -it \
   python:3.13-slim sh -lc '
     python -m venv /tmp/venv &&
     /tmp/venv/bin/pip install --no-cache-dir -r requirements.txt &&
+    /tmp/venv/bin/python manage.py check &&
     /tmp/venv/bin/python manage.py migrate &&
     exec /tmp/venv/bin/python manage.py runserver 0.0.0.0:8000
   '
