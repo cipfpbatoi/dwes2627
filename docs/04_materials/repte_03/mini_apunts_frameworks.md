@@ -92,6 +92,101 @@ La configuració real pot variar segons la versió i l'entorn del curs. Segueix 
 guia oficial i les instruccions de Docker del projecte; no cal substituir ni
 modificar el `compose` existent per a fer esta demostració.
 
+### Projecte nou amb Docker, sense PHP ni Composer locals
+
+Si només tens Docker instal·lat, pots crear el projecte Laravel executant
+Composer dins d'un contenidor temporal. Com que el repositori del curs ja té
+fitxers, crea l'aplicació dins d'una carpeta pròpia, com ara `r3/`, per no
+sobreescriure'ls. Executa les ordres des de l'arrel del repositori.
+
+En macOS, Linux o Git Bash:
+
+```bash
+mkdir -p r3
+docker run --rm -it \
+  --mount "type=bind,source=$PWD/r3,target=/app" \
+  -w /app composer:2 create-project laravel/laravel .
+```
+
+En PowerShell:
+
+```powershell
+New-Item -ItemType Directory -Force r3
+$projectPath = (Resolve-Path r3).Path -replace '\\','/'
+docker run --rm -it `
+  --mount "type=bind,source=$projectPath,target=/app" `
+  -w /app composer:2 create-project laravel/laravel .
+```
+
+El contenidor temporal porta PHP i Composer; els fitxers i les dependències
+queden en `r3/`, dins del teu repositori. No instal·les PHP ni Composer a
+l'ordinador.
+
+Entra al projecte:
+
+```bash
+cd r3
+```
+
+Les aplicacions Laravel noves solen incloure Sail. Si no trobes
+`vendor/bin/sail` (o `vendor/bin/sail.bat`), afegeix-lo des de l'arrel de
+`r3/`, encara amb Composer dins d'un contenidor:
+
+```bash
+docker run --rm -it \
+  --mount "type=bind,source=$PWD,target=/app" \
+  -w /app composer:2 require laravel/sail --dev
+```
+
+En PowerShell, usa la mateixa ordre amb el format de continuació propi del
+terminal:
+
+```powershell
+$projectPath = (Get-Location).Path -replace '\\','/'
+docker run --rm -it `
+  --mount "type=bind,source=$projectPath,target=/app" `
+  -w /app composer:2 require laravel/sail --dev
+```
+
+Genera la configuració de Sail amb MySQL i Mailpit. Esta ordre executa PHP des
+del contenidor de Composer, no des de l'ordinador:
+
+```bash
+docker run --rm -it \
+  --mount "type=bind,source=$PWD,target=/app" \
+  -w /app --entrypoint php composer:2 artisan sail:install --with=mysql,mailpit
+```
+
+En PowerShell:
+
+```powershell
+$projectPath = (Get-Location).Path -replace '\\','/'
+docker run --rm -it `
+  --mount "type=bind,source=$projectPath,target=/app" `
+  -w /app --entrypoint php composer:2 artisan sail:install --with=mysql,mailpit
+```
+
+Amb Docker en marxa, inicia Sail i prepara l'aplicació:
+
+```bash
+./vendor/bin/sail up -d
+./vendor/bin/sail artisan key:generate
+./vendor/bin/sail artisan migrate
+```
+
+En PowerShell, pots usar directament Docker Compose:
+
+```powershell
+docker compose up -d
+docker compose exec laravel.test php artisan key:generate
+docker compose exec laravel.test php artisan migrate
+```
+
+A partir d'ací, usa `./vendor/bin/sail` (o `docker compose exec laravel.test`)
+per a les ordres d'Artisan, proves i altres dependències del projecte. No
+versiones el fitxer `.env` ni secrets reals; conserva les instruccions i
+`.env.example` sense credencials.
+
 ## 4. La mateixa idea amb Express
 
 Express necessita Node.js i npm. Un projecte mínim es pot iniciar així:
