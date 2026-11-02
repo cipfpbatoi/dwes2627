@@ -216,7 +216,120 @@ eliminat `vendor/`, repeteix abans el `docker run` amb `composer:2`. No copies
 `.env.example` damunt d'un `.env` existent, perquè perdries la configuració
 local.
 
-## 4. La mateixa idea amb NestJS
+## 4. Demostració curta amb Django
+
+Django necessita Python i pip. Django diferencia el **projecte**, que conté la
+configuració global, de les **aplicacions**, que agrupen funcionalitats. En un
+entorn amb Python instal·lat, pots crear una demostració així:
+
+```bash
+mkdir demo-django
+cd demo-django
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install Django
+django-admin startproject config .
+python manage.py startapp web
+```
+
+En `web/views.py`, crea una vista que prepare la resposta HTTP:
+
+```python
+from django.http import HttpResponse
+
+
+def demo_framework(request):
+    return HttpResponse("La ruta respon des de Django")
+```
+
+Defineix les rutes pròpies de l'aplicació en `web/urls.py`:
+
+```python
+from django.urls import path
+
+from . import views
+
+app_name = "web"
+
+urlpatterns = [
+    path("demo-framework/", views.demo_framework, name="demo-framework"),
+]
+```
+
+Connecta-les amb la configuració global en `config/urls.py`:
+
+```python
+from django.contrib import admin
+from django.urls import include, path
+
+urlpatterns = [
+    path("", include("web.urls")),
+    path("admin/", admin.site.urls),
+]
+```
+
+Prepara la base SQLite inicial i arranca el servidor de desenvolupament:
+
+```bash
+python manage.py migrate
+python manage.py runserver
+```
+
+En obrir `http://127.0.0.1:8000/demo-framework/`, Django busca la URL en
+`config/urls.py`, delega en `web/urls.py`, executa `demo_framework()` i retorna
+un `HttpResponse`. En una funcionalitat completa, la vista pot coordinar
+serveis, models de l'ORM i una plantilla HTML. `runserver` és només per a
+desenvolupament, no per a producció.
+
+### Projecte Django amb Docker, sense Python ni pip locals
+
+Si l'ordinador només té Docker, crea el projecte amb una imatge temporal de
+Python. Des de l'arrel del repositori, usa una carpeta pròpia per no
+sobreescriure altres fitxers:
+
+```bash
+mkdir -p r3-django
+cd r3-django
+printf 'Django\n' > requirements.txt
+
+docker run --rm \
+  --user "$(id -u):$(id -g)" \
+  -e HOME=/tmp \
+  --mount "type=bind,source=$PWD,target=/app" \
+  -w /app \
+  python:3.13-slim sh -lc '
+    python -m venv /tmp/venv &&
+    /tmp/venv/bin/pip install --no-cache-dir -r requirements.txt &&
+    /tmp/venv/bin/django-admin startproject config . &&
+    /tmp/venv/bin/python manage.py startapp web
+  '
+```
+
+Després de crear `web/views.py`, `web/urls.py` i modificar `config/urls.py`
+com en l'exemple anterior, arranca Django dins del contenidor:
+
+```bash
+docker run --rm -it \
+  --user "$(id -u):$(id -g)" \
+  -e HOME=/tmp \
+  -p 8000:8000 \
+  --mount "type=bind,source=$PWD,target=/app" \
+  -w /app \
+  python:3.13-slim sh -lc '
+    python -m venv /tmp/venv &&
+    /tmp/venv/bin/pip install --no-cache-dir -r requirements.txt &&
+    /tmp/venv/bin/python manage.py migrate &&
+    exec /tmp/venv/bin/python manage.py runserver 0.0.0.0:8000
+  '
+```
+
+La carpeta del projecte, el codi i `db.sqlite3` queden en l'ordinador; l'entorn
+virtual i les dependències d'esta demostració viuen dins del contenidor. En un
+projecte de curs ja preparat, usa el `Dockerfile` o el `compose.yaml` que porte
+el repositori i executa `migrate` i `runserver` en el servei indicat pel seu
+README.
+
+## 5. La mateixa idea amb NestJS
 
 NestJS necessita Node.js i npm. Pots crear un projecte amb la CLI oficial:
 
@@ -250,7 +363,7 @@ La petició a `http://localhost:3000/demo-framework` retorna el text. NestJS
 organitza les rutes amb decoradors i controladors, i permet separar la lògica
 en serveis.
 
-## 5. Què tenen en comú i què canvia?
+## 6. Què tenen en comú i què canvia?
 
 | Idea | Laravel | Symfony | Django | NestJS |
 |---|---|---|---|---|
@@ -264,7 +377,7 @@ No compares només noms de carpetes. Compara com resol cada opció les mateixes
 necessitats del projecte: arrencada, rutes, separació de responsabilitats,
 resposta HTML, dades, proves i facilitat per a l'equip.
 
-## 6. Procés general per instal·lar i arrancar
+## 7. Procés general per instal·lar i arrancar
 
 Independentment del stack, comprova estos passos:
 
@@ -283,12 +396,13 @@ Si ja tens un projecte amb Docker, comprova primer com es relaciona el framework
 amb els serveis existents. No canvies el `compose` ni sobreescrigues informació
 anterior del README sense seguir les instruccions del repositori.
 
-## 7. Preguntes per a comprovar que ho has entés
+## 8. Preguntes per a comprovar que ho has entés
 
 - Quina part del recorregut rep la URL?
 - On posaries una regla pròpia del projecte?
 - Quina diferència hi ha entre Node.js i NestJS?
 - Què resol Laravel abans que escrigues la primera funcionalitat?
+- Com connecta Django el URLconf amb una vista?
 - Quines peces d'arquitectura proposa NestJS?
 - Quina ordre arranca el projecte triat i quina ruta faràs servir per comprovar
   que funciona?
