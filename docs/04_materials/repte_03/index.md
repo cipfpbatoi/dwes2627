@@ -5,6 +5,7 @@
 | veure l'enunciat | [Repte 3](../../02_reptes/repte_03.md) |
 | consultar com s'avalua cada microrepte | [Guies d'avaluació de R3](../../03_com_s_avalua/rubriques/index.md#repte-3) |
 | ubicar rutes, controladors, models, BBDD, migracions o proves | [Suport tècnic mínim](suport_tecnic.md) |
+| entendre què és un framework i veure l'arrencada mínima | [Miniapunts de frameworks](mini_apunts_frameworks.md) |
 | comprovar el tancament de R3 | [Checklist de R3](#checklist-de-r3) |
 | repassar el mapa general de R3 | [R3. Framework, arquitectura i persistència real](../../recursos/Repte3/R3-Framework-arquitectura-i-persistencia-real.pdf) |
 | repassar arrencada del nou projecte | [R3M1. Arrencada del nou projecte](../../recursos/Repte3/R3M1-Arrencada-del-nou-projecte.pdf) |
@@ -21,7 +22,7 @@ Usa estes llistes abans de dir que tens `R3` tancat.
 
 ### 1. Entorn arrancable
 
-- [ ] He triat stack: `Laravel`, `Symfony` o `NestJS`.
+- [ ] He triat stack: `Laravel`, `Symfony`, `NestJS` o `Express` sobre `Node.js`.
 - [ ] He comparat el stack triat amb almenys una altra opció.
 - [ ] He justificat per què el framework triat ajuda a separar presentació i lògica.
 - [ ] Tinc un esquema abans/després entre `R2` i la nova estructura.

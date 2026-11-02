@@ -4,7 +4,7 @@
 
 En `R3` deixes de treballar sobre la base comuna de `R2` i reconstrueixes el projecte sobre un framework.
 
-No es demana migrar tota l'aplicació antiga. Es demana construir una base real, arrancable i verificable en `Laravel`, `Symfony` o `NestJS`, amb base de dades real i `2` casos d'ús funcionals.
+No es demana migrar tota l'aplicació antiga. Es demana construir una base real, arrancable i verificable en `Laravel`, `Symfony`, `NestJS` o `Express` sobre `Node.js`, amb base de dades real i `2` casos d'ús funcionals.
 
 La idea central és:
 
@@ -43,22 +43,23 @@ Els stacks base són:
 - `Laravel`
 - `Symfony`
 - `NestJS`
+- `Express` sobre `Node.js`
 
-La nomenclatura canvia segons l'stack, però el criteri és el mateix: ruta, controlador, capa de dades, persistència real, resposta visible, validació, error i prova. En almenys un flux, la resposta visible ha de ser una pàgina o plantilla renderitzada pel servidor.
+`Node.js` és l'entorn d'execució; si tries esta via, el framework web és `Express`. La nomenclatura canvia segons l'stack, però el criteri és el mateix: ruta, controlador o manejador, capa de dades, persistència real, resposta visible, validació, error i prova. En almenys un flux, la resposta visible ha de ser una pàgina o plantilla renderitzada pel servidor.
 
 Per evitar confusions, estes equivalències compten igual si estan ben aplicades:
 
-| Criteri comú | Laravel | Symfony | NestJS |
-|---|---|---|---|
-| Ruta | route | route | controller route |
-| Controlador | controller | controller | controller |
-| Vista/resposta | Blade/view | Twig/Response | template/response o resposta server-rendered equivalent |
-| Model/capa de dades | Eloquent model | Doctrine entity/repository | Prisma/TypeORM entity, schema o service |
-| Migració d'esquema | migration | Doctrine migration | Prisma/TypeORM migration o equivalent |
-| Dades inicials | seeder | fixture | seed script o seeder |
-| Validació | Form Request/validator | Validator/Form | DTO + class-validator o equivalent |
-| Protecció d'accés | middleware, guard, policy | security, voter, access control | guard, middleware, decorator o pipe |
-| Configuració | `.env` | `.env` | `.env` |
+| Criteri comú | Laravel | Symfony | NestJS | Express |
+|---|---|---|---|---|
+| Ruta | route | route | controller route | `app.get`, router |
+| Controlador | controller | controller | controller | manejador o controlador propi |
+| Vista/resposta | Blade/view | Twig/Response | template/response o resposta server-rendered equivalent | resposta o motor de plantilles configurat |
+| Model/capa de dades | Eloquent model | Doctrine entity/repository | Prisma/TypeORM entity, schema o service | capa de dades o ORM triat |
+| Migració d'esquema | migration | Doctrine migration | Prisma/TypeORM migration o equivalent | eina de migracions triada |
+| Dades inicials | seeder | fixture | seed script o seeder | script o seeder triat |
+| Validació | Form Request/validator | Validator/Form | DTO + class-validator o equivalent | middleware o llibreria triada |
+| Protecció d'accés | middleware, guard, policy | security, voter, access control | guard, middleware, decorator o pipe | middleware o llibreria triada |
+| Configuració | `.env` | `.env` | `.env` | variables d'entorn |
 
 ## Microreptes
 
@@ -88,6 +89,7 @@ Guies d'avaluació:
 
 Suport ràpid:
 
+- [Miniapunts de frameworks](../04_materials/repte_03/mini_apunts_frameworks.md)
 - [Suport tècnic mínim](../04_materials/repte_03/suport_tecnic.md)
 - [Checklist de R3](../04_materials/repte_03/index.md#checklist-de-r3)
 
