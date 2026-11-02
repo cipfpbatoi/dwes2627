@@ -5,6 +5,9 @@ demostració guiada usa Laravel; NestJS apareix com a exemple de l'opció Node.j
 No cal que tots els frameworks tinguen les mateixes carpetes ni que anomenen
 igual les seues peces.
 
+Per a localitzar estes responsabilitats en el projecte i revisar persistència,
+proves i altres requisits de `R3`, consulta el [suport tècnic mínim](suport_tecnic.md).
+
 ## 1. Què és un framework?
 
 Un framework és una base de treball que ofereix convencions i peces

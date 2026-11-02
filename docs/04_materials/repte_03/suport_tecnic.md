@@ -2,6 +2,9 @@
 
 Esta guia no substituïx la documentació oficial del framework. Servix per saber quines peces has de buscar i com han d'encaixar en `R3`.
 
+Si primer vols entendre què és un framework i veure una arrencada mínima amb
+Laravel o NestJS, consulta els [miniapunts de frameworks](mini_apunts_frameworks.md).
+
 ## Recorregut d'una petició
 
 En un flux web bàsic, el camí és:
