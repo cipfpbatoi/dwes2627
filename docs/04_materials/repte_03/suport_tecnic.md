@@ -70,8 +70,8 @@ Segons l'stack:
 
 - `Laravel`: Blade o resposta JSON.
 - `Symfony`: Twig o resposta JSON.
-- `NestJS`: resposta JSON; plantilles només si el projecte les usa.
-- `Express`: resposta HTML directa o amb un motor de plantilles configurat.
+- `Django`: plantilles Django o resposta JSON.
+- `NestJS`: resposta JSON; configura plantilles si el projecte necessita HTML renderitzat en servidor.
 
 Criteri mínim:
 
@@ -208,13 +208,13 @@ I també com executar dins del contenidor les comandes del framework, si cal.
 
 ## Mapa ràpid per stack
 
-| Peça | Laravel | Symfony | NestJS | Express |
+| Peça | Laravel | Symfony | Django | NestJS |
 |---|---|---|---|---|
-| Ruta | `routes/web.php` o `api.php` | atributs o fitxers de rutes | decorators en controller | `app.get(...)` o un router |
-| Controlador | `app/Http/Controllers` | `src/Controller` | `*.controller.ts` | manejador o controlador propi |
-| Servei | `app/Services` o accions | `src/Service` | `*.service.ts` | mòdul o funció pròpia |
-| Model | `app/Models` | `src/Entity` | entity, schema o model | ORM o capa de dades triada |
-| Migració | `database/migrations` | Doctrine migrations | carpeta de migrations de l'ORM | eina de migracions triada |
-| Dades inicials | `database/seeders` | fixtures | script o seeder | script o seeder triat |
-| Vista | Blade | Twig | plantilles si el projecte activa renderitzat servidor; si no, acordar amb el professorat quin flux HTML cobreix `R3` | motor de plantilles configurat |
-| Proves | PHPUnit/Pest | PHPUnit | Jest | framework de proves triat |
+| Ruta | `routes/web.php` o `api.php` | atributs o fitxers de rutes | `urls.py` | decorators en controller |
+| Controlador | `app/Http/Controllers` | `src/Controller` | funció o classe view | `*.controller.ts` |
+| Servei | `app/Services` o accions | `src/Service` | servei o lògica pròpia | `*.service.ts` |
+| Model | `app/Models` | `src/Entity` | models Django ORM | entity, schema o model |
+| Migració | `database/migrations` | Doctrine migrations | `python manage.py makemigrations` | carpeta de migrations de l'ORM |
+| Dades inicials | `database/seeders` | fixtures | fixtures o management command | script o seeder |
+| Vista | Blade | Twig | plantilles Django | configurar plantilles per al flux server-rendered de `R3` |
+| Proves | PHPUnit/Pest | PHPUnit | Django TestCase/pytest-django | Jest |

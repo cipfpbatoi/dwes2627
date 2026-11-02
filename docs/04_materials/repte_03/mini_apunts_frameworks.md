@@ -1,9 +1,9 @@
 # Miniapunts: què aporta un framework?
 
-Estos apunts presenten idees comunes a Laravel, Symfony, NestJS i Express. La
-demostració guiada usa Laravel; Express apareix com a exemple breu de l'opció
-Node.js. No cal que tots els frameworks tinguen les mateixes carpetes ni que
-anomenen igual les seues peces.
+Estos apunts presenten idees comunes a Laravel, Symfony, Django i NestJS. La
+demostració guiada usa Laravel; NestJS apareix com a exemple de l'opció Node.js.
+No cal que tots els frameworks tinguen les mateixes carpetes ni que anomenen
+igual les seues peces.
 
 ## 1. Què és un framework?
 
@@ -16,8 +16,9 @@ Un framework no fa automàticament una aplicació correcta. Cal entendre què
 genera, on va cada responsabilitat i com es configura i es prova.
 
 **Node.js no és un framework**: és un entorn per executar JavaScript fora del
-navegador. Express és un framework web minimalista que funciona sobre Node.js;
-NestJS també funciona sobre Node.js, però proposa una estructura més guiada.
+navegador. NestJS funciona sobre Node.js i proposa una estructura guiada amb
+mòduls, controladors i serveis. Django és un framework web de Python amb ORM,
+rutes, plantilles i altres peces integrades.
 
 ## 2. El recorregut d'una petició
 
@@ -51,9 +52,9 @@ d'entendre, provar i modificar.
 | Model o capa de dades | Quines dades del domini es consulten o es guarden? |
 | Vista o resposta | Què rep el navegador o el client? |
 
-Els noms i l'estructura depenen del framework. Express, per exemple, no obliga a
-crear una arquitectura MVC completa: l'equip ha de mantindre el codi ordenat i
-triar les peces que necessite.
+Els noms i l'estructura depenen del framework. En NestJS, per exemple, els
+mòduls, controladors i serveis ajuden a organitzar el codi, però l'equip ha de
+decidir com aplicar-los al seu domini.
 
 ## 3. Demostració curta amb Laravel
 
@@ -99,22 +100,12 @@ Composer dins d'un contenidor temporal. Com que el repositori del curs ja té
 fitxers, crea l'aplicació dins d'una carpeta pròpia, com ara `r3/`, per no
 sobreescriure'ls. Executa les ordres des de l'arrel del repositori.
 
-En macOS, Linux o Git Bash:
+En macOS o Linux:
 
 ```bash
 mkdir -p r3
 docker run --rm -it \
   --mount "type=bind,source=$PWD/r3,target=/app" \
-  -w /app composer:2 create-project laravel/laravel .
-```
-
-En PowerShell:
-
-```powershell
-New-Item -ItemType Directory -Force r3
-$projectPath = (Resolve-Path r3).Path -replace '\\','/'
-docker run --rm -it `
-  --mount "type=bind,source=$projectPath,target=/app" `
   -w /app composer:2 create-project laravel/laravel .
 ```
 
@@ -129,22 +120,12 @@ cd r3
 ```
 
 Les aplicacions Laravel noves solen incloure Sail. Si no trobes
-`vendor/bin/sail` (o `vendor/bin/sail.bat`), afegeix-lo des de l'arrel de
-`r3/`, encara amb Composer dins d'un contenidor:
+`vendor/bin/sail`, afegeix-lo des de l'arrel de `r3/`, encara amb Composer
+dins d'un contenidor:
 
 ```bash
 docker run --rm -it \
   --mount "type=bind,source=$PWD,target=/app" \
-  -w /app composer:2 require laravel/sail --dev
-```
-
-En PowerShell, usa la mateixa ordre amb el format de continuació propi del
-terminal:
-
-```powershell
-$projectPath = (Get-Location).Path -replace '\\','/'
-docker run --rm -it `
-  --mount "type=bind,source=$projectPath,target=/app" `
   -w /app composer:2 require laravel/sail --dev
 ```
 
@@ -157,15 +138,6 @@ docker run --rm -it \
   -w /app --entrypoint php composer:2 artisan sail:install --with=mysql,mailpit
 ```
 
-En PowerShell:
-
-```powershell
-$projectPath = (Get-Location).Path -replace '\\','/'
-docker run --rm -it `
-  --mount "type=bind,source=$projectPath,target=/app" `
-  -w /app --entrypoint php composer:2 artisan sail:install --with=mysql,mailpit
-```
-
 Amb Docker en marxa, inicia Sail i prepara l'aplicació:
 
 ```bash
@@ -174,64 +146,54 @@ Amb Docker en marxa, inicia Sail i prepara l'aplicació:
 ./vendor/bin/sail artisan migrate
 ```
 
-En PowerShell, pots usar directament Docker Compose:
-
-```powershell
-docker compose up -d
-docker compose exec laravel.test php artisan key:generate
-docker compose exec laravel.test php artisan migrate
-```
-
 A partir d'ací, usa `./vendor/bin/sail` (o `docker compose exec laravel.test`)
 per a les ordres d'Artisan, proves i altres dependències del projecte. No
 versiones el fitxer `.env` ni secrets reals; conserva les instruccions i
 `.env.example` sense credencials.
 
-## 4. La mateixa idea amb Express
+## 4. La mateixa idea amb NestJS
 
-Express necessita Node.js i npm. Un projecte mínim es pot iniciar així:
-
-```bash
-mkdir demo-express
-cd demo-express
-npm init -y
-npm install express
-```
-
-En `index.js`, una ruta mínima pot ser:
-
-```js
-const express = require('express');
-const app = express();
-
-app.get('/demo-framework', (req, res) => {
-  res.send('La ruta respon des d’Express');
-});
-
-app.listen(3000, () => {
-  console.log('Servidor disponible en http://localhost:3000');
-});
-```
-
-S'inicia amb:
+NestJS necessita Node.js i npm. Pots crear un projecte amb la CLI oficial:
 
 ```bash
-node index.js
+npm install -g @nestjs/cli
+nest new demo-nestjs
+cd demo-nestjs
 ```
 
-La petició a `http://localhost:3000/demo-framework` també acaba en una resposta.
-Express dona més llibertat sobre l'estructura del projecte; no genera per si
-mateix controladors, models ni accés a BBDD.
+En `src/app.controller.ts`, defineix una ruta:
+
+```ts
+import { Controller, Get } from '@nestjs/common';
+
+@Controller('demo-framework')
+export class AppController {
+  @Get()
+  getDemo(): string {
+    return 'La ruta respon des de NestJS';
+  }
+}
+```
+
+Arranca el servidor de desenvolupament:
+
+```bash
+npm run start:dev
+```
+
+La petició a `http://localhost:3000/demo-framework` retorna el text. NestJS
+organitza les rutes amb decoradors i controladors, i permet separar la lògica
+en serveis.
 
 ## 5. Què tenen en comú i què canvia?
 
-| Idea | Laravel | Symfony | NestJS | Express |
+| Idea | Laravel | Symfony | Django | NestJS |
 |---|---|---|---|---|
-| Entorn principal | PHP | PHP | Node.js | Node.js |
-| Definir una ruta | Fitxers de rutes | Configuració o atributs | Decorador en un controlador | `app.get(...)` o un router |
-| Organització | Convencions de Laravel | Components i serveis | Mòduls, controladors i serveis | L'equip tria l'estructura |
-| Resposta HTML | Blade | Twig | Cal configurar una vista o alternativa | Cal configurar un motor de plantilles |
-| Instal·lació habitual | Composer | Composer | npm i CLI de NestJS | npm |
+| Entorn principal | PHP | PHP | Python | Node.js |
+| Definir una ruta | Fitxers de rutes | Configuració o atributs | URLconf (`urls.py`) | Decorador en un controlador |
+| Organització | Convencions de Laravel | Components i serveis | Aplicacions, URLconf, views i models | Mòduls, controladors i serveis |
+| Resposta HTML | Blade | Twig | Plantilles Django | Cal configurar una vista o alternativa |
+| Instal·lació habitual | Composer | Composer | pip i Django | npm i CLI de NestJS |
 
 No compares només noms de carpetes. Compara com resol cada opció les mateixes
 necessitats del projecte: arrencada, rutes, separació de responsabilitats,
@@ -260,9 +222,9 @@ anterior del README sense seguir les instruccions del repositori.
 
 - Quina part del recorregut rep la URL?
 - On posaries una regla pròpia del projecte?
-- Quina diferència hi ha entre Node.js i Express?
+- Quina diferència hi ha entre Node.js i NestJS?
 - Què resol Laravel abans que escrigues la primera funcionalitat?
-- Què hauràs de decidir tu quan uses Express?
+- Quines peces d'arquitectura proposa NestJS?
 - Quina ordre arranca el projecte triat i quina ruta faràs servir per comprovar
   que funciona?
 
@@ -270,6 +232,5 @@ anterior del README sense seguir les instruccions del repositori.
 
 - [Laravel: instal·lació](https://laravel.com/docs/installation)
 - [Symfony: crear una aplicació](https://symfony.com/doc/current/setup.html)
+- [Django: primers passos](https://docs.djangoproject.com/en/stable/intro/)
 - [NestJS: primers passos](https://docs.nestjs.com/first-steps)
-- [Express: instal·lació](https://expressjs.com/en/starter/installing.html)
-- [Express: Hello World](https://expressjs.com/en/starter/hello-world.html)

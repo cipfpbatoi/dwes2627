@@ -4,7 +4,7 @@
 
 En `R3` deixes de treballar sobre la base comuna de `R2` i reconstrueixes el projecte sobre un framework.
 
-No es demana migrar tota l'aplicació antiga. Es demana construir una base real, arrancable i verificable en `Laravel`, `Symfony`, `NestJS` o `Express` sobre `Node.js`, amb base de dades real i `2` casos d'ús funcionals.
+No es demana migrar tota l'aplicació antiga. Es demana construir una base real, arrancable i verificable en `Laravel`, `Symfony`, `Django` o `NestJS`, amb base de dades real i `2` casos d'ús funcionals.
 
 La idea central és:
 
@@ -42,24 +42,24 @@ Els stacks base són:
 
 - `Laravel`
 - `Symfony`
+- `Django`
 - `NestJS`
-- `Express` sobre `Node.js`
 
-`Node.js` és l'entorn d'execució; si tries esta via, el framework web és `Express`. La nomenclatura canvia segons l'stack, però el criteri és el mateix: ruta, controlador o manejador, capa de dades, persistència real, resposta visible, validació, error i prova. En almenys un flux, la resposta visible ha de ser una pàgina o plantilla renderitzada pel servidor.
+NestJS funciona sobre `Node.js`, que és l'entorn d'execució, no un framework. La nomenclatura canvia segons l'stack, però el criteri és el mateix: ruta, controlador o manejador, capa de dades, persistència real, resposta visible, validació, error i prova. En almenys un flux, la resposta visible ha de ser una pàgina o plantilla renderitzada pel servidor.
 
 Per evitar confusions, estes equivalències compten igual si estan ben aplicades:
 
-| Criteri comú | Laravel | Symfony | NestJS | Express |
+| Criteri comú | Laravel | Symfony | Django | NestJS |
 |---|---|---|---|---|
-| Ruta | route | route | controller route | `app.get`, router |
-| Controlador | controller | controller | controller | manejador o controlador propi |
-| Vista/resposta | Blade/view | Twig/Response | template/response o resposta server-rendered equivalent | resposta o motor de plantilles configurat |
-| Model/capa de dades | Eloquent model | Doctrine entity/repository | Prisma/TypeORM entity, schema o service | capa de dades o ORM triat |
-| Migració d'esquema | migration | Doctrine migration | Prisma/TypeORM migration o equivalent | eina de migracions triada |
-| Dades inicials | seeder | fixture | seed script o seeder | script o seeder triat |
-| Validació | Form Request/validator | Validator/Form | DTO + class-validator o equivalent | middleware o llibreria triada |
-| Protecció d'accés | middleware, guard, policy | security, voter, access control | guard, middleware, decorator o pipe | middleware o llibreria triada |
-| Configuració | `.env` | `.env` | `.env` | variables d'entorn |
+| Ruta | route | route | URLconf | controller route |
+| Controlador | controller | controller | view | controller |
+| Vista/resposta | Blade/view | Twig/Response | plantilles Django/Response | template/response o resposta server-rendered equivalent |
+| Model/capa de dades | Eloquent model | Doctrine entity/repository | model Django ORM | Prisma/TypeORM entity, schema o service |
+| Migració d'esquema | migration | Doctrine migration | migrations de Django | Prisma/TypeORM migration o equivalent |
+| Dades inicials | seeder | fixture | fixtures o management command | seed script o seeder |
+| Validació | Form Request/validator | Validator/Form | Forms i validators | DTO + class-validator o equivalent |
+| Protecció d'accés | middleware, guard, policy | security, voter, access control | autenticació i permisos Django | guard, middleware, decorator o pipe |
+| Configuració | `.env` | `.env` | `settings.py` i variables d'entorn | `.env` |
 
 ## Microreptes
 

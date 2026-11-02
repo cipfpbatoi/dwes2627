@@ -22,7 +22,7 @@ Usa estes llistes abans de dir que tens `R3` tancat.
 
 ### 1. Entorn arrancable
 
-- [ ] He triat stack: `Laravel`, `Symfony`, `NestJS` o `Express` sobre `Node.js`.
+- [ ] He triat stack: `Laravel`, `Symfony`, `Django` o `NestJS`.
 - [ ] He comparat el stack triat amb almenys una altra opció.
 - [ ] He justificat per què el framework triat ajuda a separar presentació i lògica.
 - [ ] Tinc un esquema abans/després entre `R2` i la nova estructura.
