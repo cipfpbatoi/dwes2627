@@ -61,6 +61,23 @@ Per evitar confusions, estes equivalències compten igual si estan ben aplicades
 | Protecció d'accés | middleware, guard, policy | security, voter, access control | autenticació i permisos Django | guard, middleware, decorator o pipe |
 | Configuració | `.env` | `.env` | `settings.py` i variables d'entorn | `.env` |
 
+!!! info "Si tries Node.js en R3M1"
+    `Node.js` és l'entorn d'execució; el framework base d'este itinerari és
+    `NestJS`. En `R3M1` has de deixar el projecte arrancable i mostrar el
+    recorregut mínim equivalent al dels altres stacks:
+
+    - `main.ts` arranca l'aplicació i un mòdul registra el controlador;
+    - un controlador de NestJS definix la ruta inicial o el `healthcheck`;
+    - la ruta genera una resposta visible i comprovable des del navegador o el
+      terminal;
+    - Docker o l'entorn equivalent, `.env.example`, la comparació de stack,
+      l'esquema abans/després i els dos casos d'ús queden documentats.
+
+    Pots separar la preparació de la resposta en un `service` i afegir una prova
+    HTTP si t'ajuda a explicar el recorregut, però no són requisits nous
+    d'`R3M1`. Encara no toca implementar BBDD, autenticació ni els fluxos
+    complets. Consulta l'[exemple mínim de NestJS](../04_materials/repte_03/mini_apunts_frameworks.md#5-la-mateixa-idea-amb-nestjs).
+
 ## Microreptes
 
 `R3` es treballa en 7 microreptes:
