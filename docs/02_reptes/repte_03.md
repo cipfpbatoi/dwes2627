@@ -131,6 +131,435 @@ Teoria relacionada per microrepte:
 - `R3M6`: [Qualitat, proves i tancament tècnic](../recursos/Teoria/Teoria-R3-Qualitat-proves-i-tancament-tecnic.pdf)
 - `R3M7`: [Qualitat, proves i tancament tècnic](../recursos/Teoria/Teoria-R3-Qualitat-proves-i-tancament-tecnic.pdf)
 
+## Com avança el projecte durant R3
+
+Els microreptes no són set exercicis independents. Cada microrepte continua la mateixa aplicació i ha de conservar el que funcionava en l'anterior:
+
+```text
+R3M1  projecte arrancable i dos fluxos acotats
+  ↓
+R3M2  models, migracions, dades inicials i primera lectura real
+  ↓
+R3M3  primer flux complet: formulari/interacció, validació, regla, BBDD i resposta
+  ↓
+R3M4  segon flux: nova operació o transició d'estat sense trencar el primer
+  ↓
+R3M5  identitat real del framework, acció protegida i autorització
+  ↓
+R3M6  regressió, errors, proves i neteja de responsabilitats
+  ↓
+R3M7  reproducció des de zero, README, demo, decisions i backlog cap a R4
+```
+
+Quan comences un microrepte, no elimines ni simules les peces anteriors. Si una peça imprescindible continua pendent, recupera primer el mínim necessari per poder construir el pas nou.
+
+### Organització recomanada de les evidències
+
+Pots adaptar els noms a l'estructura del teu repositori, però ha de ser fàcil localitzar:
+
+| Element | Organització recomanada |
+|---|---|
+| Explicació del microrepte | `docs/r3m1.md` … `docs/r3m7.md` o seccions equivalents |
+| Resultats executats | `evidence/r3m1/` … `evidence/r3m7/` |
+| Ús real d'IA | `docs/ai-log.md` o registre equivalent |
+| Proves | carpeta pròpia del framework (`tests/`, `test/` o equivalent) |
+| Arrencada i ús general | `README.md` i `.env.example` |
+
+No cal copiar esta estructura literal si el teu projecte ja té una convenció coherent. Sí que cal poder diferenciar codi, documentació, proves i resultats reals.
+
+## R3M1. Arrencada del nou projecte
+
+### Objectiu
+
+Crear una base nova en framework que arranque de manera reproduïble i delimitar què reconstruiràs durant R3. No has de migrar encara tot R2 ni començar la BBDD.
+
+### Punt de partida
+
+Partixes del projecte funcional d'R2. Primer identifica una acció real que val la pena conservar i un segon flux relacionat. Un dels dos ha de vindre clarament d'R2 i almenys un acabarà sent server-rendered amb HTML generat pel framework.
+
+### Què has de fer
+
+1. Tria `Laravel`, `Symfony`, `Django` o `NestJS` i compara'l breument amb una alternativa.
+2. Explica un avantatge concret de la tria per al teu projecte: separació de responsabilitats, plantilles, ORM, validació, proves o ecosistema.
+3. Crea el projecte dins del repositori i prepara Docker o l'entorn reproduïble equivalent.
+4. Crea `.env.example` o instruccions equivalents sense secrets reals.
+5. Implementa una ruta mínima gestionada pel framework. Pot ser una portada, un recorregut explicatiu o un `healthcheck`, però ha de respondre realment.
+6. Dibuixa el mapa entre R2 i R3: fitxer d'entrada → ruta; coordinació → controlador; SQL → ORM; HTML mesclat → plantilla; funcions/regles → servei o peça equivalent.
+7. Declara els dos casos d'ús de R3, indica quin ve d'R2 i quin serà server-rendered.
+8. Documenta l'ordre d'arrencada i comprova-la des d'una còpia neta o una situació equivalent.
+
+### Resultat que has de poder mostrar
+
+- El projecte arranca amb una ordre documentada.
+- Una URL retorna una resposta generada pel framework.
+- Pots assenyalar ruta, controlador o manejador i vista/resposta.
+- Els dos fluxos són menuts, concrets i viables en R3.
+- No hi ha secrets, `.env` personals ni dependències generades indegudament versionades.
+
+### Exemple de continuïtat
+
+En [la branca `r3m1` de La Roda](https://github.com/batoi-dwes-2026/microreptes-c-igomis/tree/r3m1), el projecte PHP d'R2 es reconstruïx amb Laravel. `/recorregut` mostra ruta → controlador → servei → Blade, però encara no consulta la BBDD. També es declaren els fluxos **publicar un servici** i **gestionar un intercanvi**.
+
+### Ampliació opcional
+
+- Prova automàtica de la ruta mínima.
+- Comprovació de salut del contenidor.
+- Segona forma d'arrencada ben documentada.
+
+### Fora d'abast
+
+Encara no cal crear models del domini, migracions, seeders, formularis complets, autenticació ni API. Una ruta mínima no és ja el primer cas d'ús.
+
+Consulta [com s'avalua R3M1](../03_com_s_avalua/rubriques/r3m1.md).
+
+## R3M2. Persistència mínima reproduïble
+
+### Objectiu
+
+Convertir la base arrancable en una aplicació amb BBDD real, esquema versionat, dades inicials reproduïbles i una primera lectura integrada en l'aplicació.
+
+### Què heretes d'R3M1
+
+- El framework i Docker ja han d'arrancar.
+- Els dos fluxos ja estan decidits.
+- El model mínim ha de preparar eixos fluxos, no tot el producte futur.
+
+### Què has de fer
+
+1. Identifica les entitats i relacions estrictament necessàries per als dos fluxos.
+2. Configura la connexió a BBDD amb variables d'entorn.
+3. Crea els models o entitats seguint les convencions del framework.
+4. Genera i versiona les migracions o el mecanisme equivalent. No crees les taules manualment amb una interfície gràfica.
+5. Afig claus foranes, unicitat o restriccions simples que eviten dades impossibles quan siguen necessàries per als fluxos.
+6. Prepara seeders, fixtures, factories amb càrrega dirigida o un script equivalent amb dades recognoscibles.
+7. Documenta una seqüència que, des d'una BBDD buida, cree l'esquema i carregue les dades.
+8. Fes una lectura real amb l'ORM i utilitza-la en un llistat, detall, filtre o resposta de l'aplicació.
+9. Comprova que la lectura canvia si canvien les dades de la BBDD i que no prové d'un array escrit al controlador o a la vista.
+
+### Resultat que has de poder mostrar
+
+```text
+BBDD buida → migracions → dades inicials → consulta ORM → vista/resposta amb dades reals
+```
+
+La comprovació ha d'incloure les ordres reals de reconstrucció, càrrega i lectura. Una consulta feta només en consola ajuda a depurar, però no substituïx la lectura integrada en una ruta o resposta.
+
+### Exemple de continuïtat
+
+En [la branca `r3m2` de La Roda](https://github.com/batoi-dwes-2026/microreptes-c-igomis/tree/r3m2), les migracions creen `serveis`, `intercanvis` i el saldo de `users`; el seeder crea Aina, Biel i Carla; `GET /` consulta els servicis actius amb Eloquent i Blade mostra el catàleg.
+
+### Ampliació opcional
+
+- Una relació addicional que s'use realment.
+- Factory per preparar proves aïllades.
+- Prova automàtica de reconstrucció, càrrega o lectura.
+
+### Fora d'abast
+
+No cal implementar encara el formulari complet, els dos casos d'ús, autenticació, rols ni API. Tampoc cal modelar totes les taules imaginables del producte.
+
+Consulta [com s'avalua R3M2](../03_com_s_avalua/rubriques/r3m2.md).
+
+## R3M3. Primer cas d'ús complet
+
+### Objectiu
+
+Reconstruir dins del framework el primer flux real heretat d'R2. Ara ja no és suficient llegir dades: una persona ha de poder iniciar una interacció, enviar dades, rebre errors o completar l'operació i veure el resultat persistent.
+
+### Què canvia respecte d'R3M2
+
+| R3M2 | R3M3 |
+|---|---|
+| Esquema i dades preparades | L'usuari inicia una operació real |
+| Seeder o fixture crea les files | Un formulari o interacció envia l'entrada |
+| Consulta i llistat | Validació, regla de negoci i escriptura |
+| Prova que les dades es mostren | Prova de l'èxit i d'un error sense efectes parcials |
+
+R3M3 reutilitza els models i migracions d'R3M2. Només crea una migració nova si descobreixes un camp imprescindible per al flux i pots justificar-lo.
+
+### El formulari i els dos recorreguts HTTP
+
+Si el flux crea o modifica dades —que és el recorregut recomanat per a R3M3— has d'implementar explícitament:
+
+1. Una ruta `GET` que prepara i mostra el formulari server-rendered.
+2. Una vista o plantilla amb camps del domini, valors previs quan hi ha error i protecció CSRF del framework.
+3. Una ruta `POST` que rep l'enviament.
+4. Validació en servidor amb les eines del framework; els atributs HTML no són suficients.
+5. Missatges d'error visibles i associats als camps o a l'operació.
+6. Una regla pròpia del projecte separada del codi de presentació.
+7. Persistència mitjançant el model, relació o repositori existent.
+8. Redirecció després de l'èxit —patró Post/Redirect/Get— i resultat llegit de nou des de la BBDD.
+
+Si el teu primer flux aprovat és realment de consulta, ha de processar una interacció significativa —per exemple filtre, cerca o detall amb paràmetres validats— i no quedar en un llistat estàtic. En qualsevol cas, abans de tancar R3 hauràs de tindre almenys un flux server-rendered amb entrada processada en servidor.
+
+### Repartiment de responsabilitats
+
+| Peça | Responsabilitat |
+|---|---|
+| Ruta | mètode HTTP, URL, nom i controlador/manejador |
+| Formulari o DTO | contracte de l'entrada |
+| Validador/Form Request/Form | autorització inicial, regles i missatges |
+| Controlador o view | coordinar entrada validada, operació i resposta |
+| Servei o regla | decisió pròpia del domini que no depén d'HTML |
+| Model/ORM/repositori | llegir o escriure dades persistents |
+| Vista/plantilla | presentar camps, errors i resultat; no consultar la BBDD |
+
+No és obligatori crear una classe de servei per qualsevol `if`. Sí que cal evitar que ruta, controlador o plantilla concentren tot el flux.
+
+### Què has de provar
+
+- **Cas positiu:** entrada correcta, resposta esperada i canvi verificat en BBDD.
+- **Cas negatiu:** dada invàlida o manipulada, error visible i absència d'inserció o canvi parcial.
+- **Regla de negoci:** si té límits o trams, prova almenys els valors frontera importants.
+- **Resultat visible:** després de guardar, la nova dada apareix en un llistat, detall o confirmació llegida de la BBDD.
+
+### Exemple de continuïtat
+
+En [la branca `r3m3` de La Roda](https://github.com/batoi-dwes-2026/microreptes-c-igomis/tree/r3m3):
+
+```text
+GET /serveis/nou
+  → formulari Blade amb CSRF i valors previs
+POST /serveis
+  → StoreServeiRequest valida
+  → CalculadoraCostServei calcula tokens
+  → ServeiController crea mitjançant la relació de l'oferent
+  → redirecció al catàleg amb missatge d'èxit
+```
+
+La prova funcional comprova una publicació correcta i una duració invàlida que no crea cap fila. Aina és encara una identitat de demostració explícita; l'autenticació real arriba en R3M5.
+
+### Ampliació opcional
+
+- Prova unitària de la regla de negoci.
+- Validacions de frontera addicionals.
+- Pujada de fitxer només quan el flux sense fitxer ja siga atòmic i estiga provat.
+
+### Fora d'abast
+
+No toca encara implementar el segon flux, autenticació completa, autorització, API ni una refactorització total. No avances funcionalitats si el cas positiu i l'error del primer flux no estan tancats.
+
+Consulta [com s'avalua R3M3](../03_com_s_avalua/rubriques/r3m3.md).
+
+## R3M4. Segon cas d'ús o ampliació funcional
+
+### Objectiu
+
+Demostrar que l'arquitectura aguanta un segon recorregut útil. Pot ser un segon flux migrat d'R2 o una ampliació menuda, però ha d'interactuar amb la BBDD i produir un canvi dinàmic observable.
+
+### Tria un segon flux que aporte una operació nova
+
+Exemples adequats:
+
+- sol·licitar i completar un intercanvi;
+- confirmar, cancel·lar o reprogramar una reserva;
+- prestar i retornar un recurs;
+- registrar una entrada o eixida d'inventari;
+- assignar i resoldre una incidència;
+- inscriure una persona en un torneig.
+
+Un altre llistat amb colors diferents, una pàgina informativa o una còpia del formulari d'R3M3 amb noms canviats no és un segon flux.
+
+### Què has de fer
+
+1. Escriu l'estat inicial, l'acció, l'estat final i qui pot executar-la.
+2. Afig les rutes i controladors o manejadors necessaris reutilitzant l'estructura existent.
+3. Llig o modifica dades reals mitjançant el model o capa de dades.
+4. Aplica una regla nova del domini: disponibilitat, capacitat, saldo, propietat, estat o equivalent.
+5. Controla almenys un error: identificador inexistent, estat incompatible, saldo insuficient, recurs ocupat o dada manipulada.
+6. Si una operació modifica diverses files o saldos relacionats, fes-la atòmica amb transacció o mecanisme equivalent.
+7. Mostra el canvi en una vista o resposta dinàmica.
+8. Prova el segon flux i torna a executar R3M3 com a regressió.
+
+### Exemple de continuïtat
+
+En [la branca `r3m4` de La Roda](https://github.com/batoi-dwes-2026/microreptes-c-igomis/tree/r3m4), una persona sol·licita un servici alié i l'oferent el completa. L'operació final canvia dos saldos i l'estat dins d'una transacció. Un selector docent representa temporalment Aina, Biel o Carla perquè l'autenticació encara no toca; està identificat com a substitució provisional, no com a login.
+
+### Què has de provar
+
+- Segon flux correcte.
+- Acció no permesa o estat invàlid.
+- Absència de canvis parcials si falla una operació múltiple.
+- Regressió del primer flux d'R3M3.
+
+### Ampliació opcional
+
+- Nova relació simple que reduïsca dades duplicades.
+- Servei reutilitzable per a una regla compartida.
+- Prova específica de rollback o concurrència si el domini ho necessita.
+
+### Fora d'abast
+
+No toca encara una API, integració externa, rols complexos ni un tercer flux. Si el segon flux és massa gran, retalla'l a una transició completa i provable.
+
+Consulta [com s'avalua R3M4](../03_com_s_avalua/rubriques/r3m4.md).
+
+## R3M5. Autenticació, autorització i protecció real
+
+### Objectiu
+
+Substituir qualsevol identitat de demostració per l'autenticació pròpia del framework i protegir una acció significativa amb una regla d'autorització del domini.
+
+### Tres conceptes que no has de confondre
+
+| Concepte | Pregunta que respon | Exemple |
+|---|---|---|
+| Autenticació | Qui és la persona? | login i sessió del framework |
+| Middleware/guard | Pot arribar a esta ruta sense identificar-se? | convidat redirigit a login |
+| Autorització/policy/voter | Esta persona concreta pot fer esta acció sobre este registre? | només l'oferent completa l'intercanvi |
+
+Ocultar un botó en la vista millora la interfície, però no protegix l'operació. La comprovació decisiva ha d'estar en servidor.
+
+### Què has de fer
+
+1. Usa el mecanisme d'autenticació del framework; no reconstruïsques manualment el login d'R2.
+2. Prepara almenys dos usuaris demo reproduïbles, amb credencials didàctiques i no personals.
+3. Implementa login correcte, login incorrecte i logout o invalidació equivalent.
+4. Protegix en servidor les operacions d'escriptura significatives amb middleware, guard o equivalent.
+5. Tria una acció sobre un registre i definix una regla d'autorització: propietari, oferent, responsable, participant o rol mínim justificat.
+6. Retorna una redirecció, `403` o error controlat coherent quan no hi ha permís.
+7. Elimina el selector, usuari fix o substitució provisional utilitzada en R3M3/R3M4.
+8. Repetix els dos fluxos amb identitat autenticada.
+
+### Casos obligatoris de verificació
+
+- Sense autenticar: no accedix a l'acció protegida.
+- Autenticat i autoritzat: completa l'acció.
+- Autenticat però no autoritzat: rep denegació i la BBDD no canvia.
+- Després de logout: torna a quedar fora de l'acció protegida.
+
+### Exemple de continuïtat
+
+En [la branca `r3m5` de La Roda](https://github.com/batoi-dwes-2026/microreptes-c-igomis/tree/r3m5), desapareixen el selector docent i `ContextMembreDemo`. Laravel aporta login, logout i middleware `auth`; `IntercanviPolicy` permet completar només a l'oferent del servici.
+
+### Ampliació opcional
+
+- Limitació d'intents de login.
+- Una segona policy sobre una altra operació ja existent.
+- Millora de missatges sense revelar si un correu està registrat.
+
+### Fora d'abast
+
+No cal registre públic, recuperació de contrasenya, OAuth, 2FA, JWT avançat, administració completa de rols ni API d'autenticació.
+
+Consulta [com s'avalua R3M5](../03_com_s_avalua/rubriques/r3m5.md).
+
+## R3M6. Qualitat i estabilització
+
+### Objectiu
+
+Deixar de construir funcionalitat nova i demostrar que la base acumulada és repetible, provable i mantenible. R3M6 és una sessió de regressió, correcció i criteri tècnic.
+
+### Inventari mínim que has de revisar
+
+1. Arrencada des de les instruccions actuals.
+2. Reconstrucció de la BBDD i càrrega inicial.
+3. Lectura real d'R3M2.
+4. Cas positiu i negatiu d'R3M3.
+5. Cas positiu, error i regressió d'R3M4.
+6. Accés sense autenticar, autoritzat, denegat i logout d'R3M5.
+7. Eixida segura i errors comprensibles.
+
+### Què has de fer
+
+- Executa la suite o una checklist reproduïble i guarda el resultat real.
+- Provoca almenys un error de validació i un error de domini o autorització.
+- Anota incidència, causa, correcció i prova de regressió.
+- Revisa que la vista no consulte la BBDD i que ruta/controlador no concentren regles llargues.
+- Extrau una peça només si reduïx una responsabilitat barrejada real; no refactoritzes per aparença.
+- Comprova que migracions i seeders continuen funcionant després dels canvis.
+- Elimina proves inicials del framework que ja no representen el projecte o adapta-les correctament.
+
+### Exemple de continuïtat
+
+En [la branca `r3m6` de La Roda](https://github.com/batoi-dwes-2026/microreptes-c-igomis/tree/r3m6), no apareix un tercer flux. S'amplien proves de saldo insuficient, rollback, accés i regressió; es documenten incidències reals i es comprova `migrate:fresh --seed`, la suite completa i el format del codi.
+
+### Evidència que has de conservar
+
+| Evidència | Contingut mínim |
+|---|---|
+| Resultat de proves | ordre executada, casos i resultat |
+| Incidències | símptoma, causa, correcció i prova posterior |
+| Regressió | primer i segon flux continuen funcionant |
+| Persistència | reconstrucció i càrrega inicial continuen funcionant |
+| Qualitat | responsabilitat revisada o justificació de per què ja és adequada |
+
+### Ampliació opcional
+
+- Convertir una comprovació manual important en test funcional.
+- Mesurar consultes i corregir un N+1 real.
+- Afegir validacions de frontera que falten.
+
+### Fora d'abast
+
+No afiges una funcionalitat gran, un tercer flux, API ni desplegament per evitar corregir el que ja existix.
+
+Consulta [com s'avalua R3M6](../03_com_s_avalua/rubriques/r3m6.md).
+
+## R3M7. Tancament tècnic
+
+### Objectiu
+
+Deixar R3 reproduïble i defensable per una altra persona i preparar una continuïtat concreta cap a R4. El README ha de descriure el projecte real, no el projecte que voldries tindre.
+
+### Prova principal de tancament
+
+Imagina una còpia neta del repositori. Amb només el README i els fitxers versionats, una altra persona ha de poder:
+
+1. preparar `.env` sense inventar variables;
+2. arrancar l'aplicació;
+3. reconstruir la BBDD;
+4. carregar usuaris i dades demo;
+5. executar el primer flux i el seu error;
+6. executar el segon flux i el seu error;
+7. comprovar login, acció protegida i cas denegat;
+8. executar les proves o la checklist final.
+
+### Contingut mínim del README final
+
+- Requisits previs i ordres d'arrencada.
+- Variables d'entorn necessàries, sense secrets reals.
+- Migracions, reset i càrrega inicial.
+- Usuaris demo i credencials didàctiques.
+- Descripció i passos dels dos fluxos.
+- Acció protegida i regla d'autorització.
+- Ordres de proves i resultats esperats.
+- Decisions tècniques breus.
+- Què s'ha migrat, què s'ha adaptat i què continua pendent.
+- Backlog cap a R4 amb un primer recurs o endpoint candidat.
+
+### Demo recomanada
+
+Prepara una demo de 5–7 minuts: reconstrucció, lectura inicial, cas positiu i error d'R3M3, operació principal d'R3M4, canvi d'usuari i denegació d'R3M5, i suite/checklist final.
+
+### Exemple de continuïtat
+
+En [la branca `r3m7` de La Roda](https://github.com/batoi-dwes-2026/microreptes-c-igomis/tree/r3m7), el tancament diferencia **migrat**, **adaptat** i **pendent**, simplifica l'entorn, deixa una demo completa i proposa `GET /api/v1/serveis` com a primera lectura d'R4 sense implementar-la encara.
+
+### Ampliació global 9→10
+
+Només després de tancar el nucli, declara l'ampliació en `docs/r3-ampliacio.md`. Ha de tindre commit identificable, decisió tècnica, prova i demo. No compensa migracions trencades, fluxos incomplets o documentació fictícia.
+
+### Fora d'abast
+
+No implementes encara l'API d'R4, integracions externes, desplegament productiu ni funcionalitats grans noves.
+
+Consulta [com s'avalua R3M7](../03_com_s_avalua/rubriques/r3m7.md).
+
+## Correspondència amb el repositori docent
+
+El repositori [`microreptes-c-igomis`](https://github.com/batoi-dwes-2026/microreptes-c-igomis) mostra la mateixa aplicació en set moments. Les branques servixen per comparar què s'afig en cada microrepte, no per copiar una solució Laravel en un projecte diferent.
+
+| Branca | Canvi principal respecte de l'anterior |
+|---|---|
+| [`r3m1`](https://github.com/batoi-dwes-2026/microreptes-c-igomis/tree/r3m1) | Projecte Laravel arrancable, mapa R2→R3, ruta mínima i dos fluxos acotats. |
+| [`r3m2`](https://github.com/batoi-dwes-2026/microreptes-c-igomis/tree/r3m2) | Models, relacions, migracions, factories/seeder i catàleg llegit de BBDD. |
+| [`r3m3`](https://github.com/batoi-dwes-2026/microreptes-c-igomis/tree/r3m3) | Formulari GET/POST, CSRF, Form Request, regla de cost, alta Eloquent, PRG i proves. |
+| [`r3m4`](https://github.com/batoi-dwes-2026/microreptes-c-igomis/tree/r3m4) | Sol·licitud/finalització d'intercanvi, estats, transacció i regressió del primer flux. |
+| [`r3m5`](https://github.com/batoi-dwes-2026/microreptes-c-igomis/tree/r3m5) | Login/logout, middleware `auth`, policy i eliminació de la identitat demo. |
+| [`r3m6`](https://github.com/batoi-dwes-2026/microreptes-c-igomis/tree/r3m6) | Proves negatives i de rollback, correcció d'incidències i estabilització sense nou flux. |
+| [`r3m7`](https://github.com/batoi-dwes-2026/microreptes-c-igomis/tree/r3m7) | README reproduïble, demo, decisions, estat honest i backlog cap a R4. |
+
 ## Presentació i entrega
 
 Per preparar l'entrega, la demo i la defensa breu, usa la [guia de presentació dels reptes](guia_presentacio.md#repte-3).

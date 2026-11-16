@@ -89,6 +89,60 @@ Per al cas server-rendered:
 - el contingut ha de canviar segons dades, paràmetres, estat, filtre o formulari
 - no val una plantilla estàtica sense dades del projecte
 
+## Formularis i flux d'escriptura en R3M3
+
+En `R3M2` prepares l'esquema, les dades inicials i una primera lectura. En `R3M3`, si el cas d'ús crea o modifica dades, el recorregut esperat és:
+
+```text
+GET formulari
+  → plantilla server-rendered
+  → POST amb CSRF
+  → validació en servidor
+  → regla de negoci
+  → alta o canvi en BBDD
+  → redirecció
+  → resultat llegit de la BBDD
+```
+
+### El formulari ha de demostrar
+
+- camps vinculats al domini, no un formulari de contacte genèric;
+- opcions tancades procedents d'una única font coherent;
+- protecció CSRF pròpia del framework;
+- conservació de valors aprofitables quan hi ha error;
+- errors visibles i comprensibles;
+- validació en servidor encara que també hi haja restriccions HTML;
+- persistència només després de validar;
+- redirecció després de l'èxit per evitar reenviar en refrescar;
+- resultat visible obtingut novament de la BBDD.
+
+No uses directament tota la petició per fer una inserció massiva. Selecciona o obtín només les dades validades i calcula en servidor els camps que l'usuari no ha de controlar, com l'estat inicial, l'autoria, el cost o el saldo.
+
+### Equivalències orientatives
+
+| Peça | Laravel | Symfony | Django | NestJS |
+|---|---|---|---|---|
+| Mostrar formulari | ruta `GET` + controlador + Blade | ruta/controlador + Form/Twig | URL + view + Form/ModelForm + template | `@Get()` + template engine configurat |
+| Processar | ruta `POST` | mateixa ruta o acció `POST` | branca `request.method == "POST"` o view de classe | `@Post()` + DTO |
+| CSRF | `@csrf` | token CSRF del Form | `{% csrf_token %}` | protecció equivalent coherent amb sessió/formulari |
+| Validar | Form Request/validator | Form + Validator | `form.is_valid()` + validators | DTO + `ValidationPipe` |
+| Dades segures | `$request->validated()` o `safe()` | dades vàlides del Form | `cleaned_data` o instància del ModelForm | DTO validat |
+| Guardar | Eloquent/model/relació | EntityManager/repositori | ORM amb `save()` | service + repositori/ORM |
+| Tancar | `redirect()->route()` + flash | `redirectToRoute()` + flash | `redirect()` + messages | redirecció/resposta server-rendered equivalent |
+
+La sintaxi canvia, però la idea és la mateixa: la plantilla presenta; la validació protegix l'entrada; el controlador coordina; la regla decidix; la capa de dades persistix.
+
+### Cas positiu i cas negatiu
+
+La prova del flux no ha de limitar-se a comprovar un codi `200`:
+
+- amb entrada correcta, comprova redirecció o resposta i fila creada/modificada;
+- amb entrada invàlida, comprova error visible i que la BBDD no ha canviat;
+- si hi ha una regla calculada, comprova també el valor resultant;
+- si es puja un fitxer, comprova que no quede orfe quan falla la BBDD.
+
+Consulta el desenvolupament complet en [R3M3. Primer cas d'ús complet](../../02_reptes/repte_03.md#r3m3-primer-cas-dus-complet).
+
 ## Models i capa de dades
 
 El model, entitat, esquema o repositori representa dades del domini.
