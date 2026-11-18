@@ -380,6 +380,16 @@ Crea una peça de presentació amb una entrada clara i reutilitza-la almenys en 
 
 Pot ser un component, parcial, macro, *include*, *inclusion tag* o equivalent. No és suficient comptar el *layout* general que ja tenia el projecte ni duplicar el mateix HTML.
 
+| Framework | Equivalent acceptable |
+|---|---|
+| Laravel | component Blade anònim o de classe amb propietats explícites |
+| Symfony | component Twig, macro o `include` amb dades explícites |
+| Django 6 o superior | *template partial* amb `partialdef` i `partial` |
+| Django 5.2 o anterior | `include ... with ... only`; `inclusion_tag` si cal preparar dades amb Python |
+| NestJS server-rendered | parcial o component del motor de plantilles configurat |
+
+En Django, un `include` amb `only` és suficient quan la peça només presenta dades. Usa un `inclusion_tag` quan la reutilització necessita lògica Python. No cal instal·lar una biblioteca externa de components.
+
 ### Què has de fer
 
 1. Identifica el recurs, els camps editables i en quines condicions es pot eliminar.

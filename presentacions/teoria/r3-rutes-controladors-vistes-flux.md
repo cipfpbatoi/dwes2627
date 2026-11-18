@@ -18,6 +18,7 @@ Crear una presentació teòrica curta per preparar `R3M3` i `R3M4`, explicant co
 - Els formularis HTML només envien `GET` i `POST` nativament; el framework pot oferir *method override* o una convenció equivalent per a `PUT/PATCH/DELETE`.
 - `PATCH` modifica parcialment, `PUT` substituïx i `DELETE` elimina; una transició d'estat no és una eliminació.
 - Un component, parcial, macro o equivalent rep dades explícites i evita duplicar presentació.
+- En Django 6, `partialdef` i `partial` definixen fragments reutilitzables; en versions anteriors, `include ... only` explicita el context i `inclusion_tag` incorpora lògica Python quan cal.
 - En `R3`, almenys un flux ha de ser server-rendered amb HTML generat pel servidor.
 - El segon flux ha d'aportar valor funcional, no només una pantalla nova.
 - Cal provar cas positiu i almenys un error o validació.
