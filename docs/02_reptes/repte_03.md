@@ -87,7 +87,7 @@ Per evitar confusions, estes equivalències compten igual si estan ben aplicades
 | `R3M1` Arrencada del nou projecte | Docker, framework, `.env`, ruta mínima, comparació de stack i esquema abans/després | `r3-s01-arrencada-nou-projecte` | [MT07. Migrar un cas d'ús a framework](../recursos/Tallers/MT07-Migrar-un-cas-dus-a-framework.pdf) |
 | `R3M2` Persistència mínima | BBDD, migracions o equivalent, dades inicials reproduïbles i conjunt de dades real usat en un flux | `r3-s02-persistencia-minima-migrations-seeders` | [MT08. Migracions, seeders i dades de prova](../recursos/Tallers/MT08-Migracions-seeders-i-dades-de-prova.pdf) |
 | `R3M3` Primer cas d'ús complet | flux heretat de `R2` funcionant en framework, preferentment com a cas server-rendered | `r3-s03-primer-cas-us-complet` | [MT09. On pose la lògica](../recursos/Tallers/MT09-On-pose-la-logica.pdf) |
-| `R3M4` Segon cas d'ús o ampliació | segon flux real, migrat o ampliació funcional útil amb canvi dinàmic de resposta | `r3-s04-segon-cas-us-ampliacio-funcional` | [MT09. On pose la lògica](../recursos/Tallers/MT09-On-pose-la-logica.pdf) |
+| `R3M4` Components de vista i manteniment d'un recurs | segon flux sobre un recurs existent amb component reutilitzable, actualització `PUT/PATCH`, eliminació `DELETE` i BBDD coherent | `r3-s04-segon-cas-us-ampliacio-funcional` | [MT09. On pose la lògica](../recursos/Tallers/MT09-On-pose-la-logica.pdf) |
 | `R3M5` Autenticació i autorització | acció significativa protegida amb middleware, guard, voter, policy o equivalent | `r3-s05-autenticacio-autoritzacio-middleware` | [MT16. Portabilitat entre frameworks](../recursos/Tallers/MT16-Portabilitat-entre-frameworks.pdf) |
 | `R3M6` Qualitat i estabilització | validació, errors, proves i revisió d'estructura | `r3-s06-qualitat-estabilitzacio` | [MT16. Portabilitat entre frameworks](../recursos/Tallers/MT16-Portabilitat-entre-frameworks.pdf) |
 | `R3M7` Tancament tècnic | `README.md`, demo, decisions i mapa del que queda pendent | `r3-s07-tancament-tecnic` | Sense taller específic |
@@ -116,7 +116,7 @@ Diapositives de suport:
 - [R3M1. Arrencada del nou projecte](../recursos/Repte3/R3M1-Arrencada-del-nou-projecte.pdf)
 - [R3M2. Persistència mínima](../recursos/Repte3/R3M2-Persistencia-minima.pdf)
 - [R3M3. Primer cas d'ús complet](../recursos/Repte3/R3M3-Primer-cas-dus-complet.pdf)
-- [R3M4. Segon cas d'ús o ampliació funcional](../recursos/Repte3/R3M4-Segon-cas-dus-o-ampliacio-funcional.pdf)
+- [R3M4. Components de vista i manteniment d'un recurs](../recursos/Repte3/R3M4-Segon-cas-dus-o-ampliacio-funcional.pdf)
 - [R3M5. Autenticació, autorització i middleware](../recursos/Repte3/R3M5-Autenticacio-autoritzacio-i-middleware.pdf)
 - [R3M6. Qualitat i estabilització](../recursos/Repte3/R3M6-Qualitat-i-estabilitzacio.pdf)
 - [R3M7. Tancament tècnic](../recursos/Repte3/R3M7-Tancament-tecnic.pdf)
@@ -142,7 +142,7 @@ R3M2  models, migracions, dades inicials i primera lectura real
   ↓
 R3M3  primer flux complet: formulari/interacció, validació, regla, BBDD i resposta
   ↓
-R3M4  segon flux: nova operació o transició d'estat sense trencar el primer
+R3M4  manteniment: component reutilitzable, PUT/PATCH, DELETE i regressió
   ↓
 R3M5  identitat real del framework, acció protegida i autorització
   ↓
@@ -341,56 +341,80 @@ No toca encara implementar el segon flux, autenticació completa, autorització,
 
 Consulta [com s'avalua R3M3](../03_com_s_avalua/rubriques/r3m3.md).
 
-## R3M4. Segon cas d'ús o ampliació funcional
+## R3M4. Components de vista i manteniment d'un recurs
 
 ### Objectiu
 
-Demostrar que l'arquitectura aguanta un segon recorregut útil. Pot ser un segon flux migrat d'R2 o una ampliació menuda, però ha d'interactuar amb la BBDD i produir un canvi dinàmic observable.
+Demostrar que l'arquitectura aguanta el manteniment d'un recurs existent. A partir del primer flux d'R3M3, has de reutilitzar una peça de vista i implementar una actualització i una eliminació controlades amb les convencions del framework, BBDD real i respostes observables.
 
-### Tria un segon flux que aporte una operació nova
+### Progressió respecte d'R3M3
 
-Exemples adequats:
+| R3M3 | R3M4 |
+|---|---|
+| `GET` mostra el formulari i `POST` crea | `GET` mostra el recurs i `PUT/PATCH` l'actualitza |
+| Vista completa del primer flux | Component, parcial o fragment reutilitzat almenys en dos llocs |
+| Alta i validació inicial | Edició, eliminació i regles sobre un recurs existent |
+| Persistència d'una operació | Coherència, `404`, denegació i transacció si hi ha diversos canvis |
 
-- sol·licitar i completar un intercanvi;
-- confirmar, cancel·lar o reprogramar una reserva;
-- prestar i retornar un recurs;
-- registrar una entrada o eixida d'inventari;
-- assignar i resoldre una incidència;
-- inscriure una persona en un torneig.
+El segon recorregut ha d'aportar valor al projecte. Pot mantindre un recurs creat en R3M3 o actuar sobre una altra entitat relacionada, però no pot ser una còpia del primer formulari amb noms diferents.
 
-Un altre llistat amb colors diferents, una pàgina informativa o una còpia del formulari d'R3M3 amb noms canviats no és un segon flux.
+### Mètodes HTTP i formularis server-rendered
+
+Els formularis HTML només envien `GET` i `POST` de manera nativa. Per expressar actualització i eliminació, usa el mecanisme propi del framework:
+
+- mètode real des d'un client que el permeta;
+- *method override* o camp ocult reconegut pel framework;
+- convenció server-rendered equivalent, si el framework no oferix simulació nativa, explicant en el README com es correspon amb `PUT/PATCH` o `DELETE`.
+
+Usa `PATCH` quan canvies només alguns camps o l'estat; reserva `PUT` per a una substitució completa. Usa `DELETE` per eliminar un recurs. Cancel·lar, completar o arxivar és normalment un canvi d'estat amb `PATCH`, no una eliminació.
+
+### Component de vista reutilitzable
+
+Crea una peça de presentació amb una entrada clara i reutilitza-la almenys en dos llocs. Pot ser, per exemple:
+
+- una targeta o fila de recurs;
+- una etiqueta d'estat;
+- un resum d'errors;
+- un grup de botons d'edició i eliminació;
+- un fragment de formulari compartit entre alta i edició.
+
+Pot ser un component, parcial, macro, *include*, *inclusion tag* o equivalent. No és suficient comptar el *layout* general que ja tenia el projecte ni duplicar el mateix HTML.
 
 ### Què has de fer
 
-1. Escriu l'estat inicial, l'acció, l'estat final i qui pot executar-la.
-2. Afig les rutes i controladors o manejadors necessaris reutilitzant l'estructura existent.
-3. Llig o modifica dades reals mitjançant el model o capa de dades.
-4. Aplica una regla nova del domini: disponibilitat, capacitat, saldo, propietat, estat o equivalent.
-5. Controla almenys un error: identificador inexistent, estat incompatible, saldo insuficient, recurs ocupat o dada manipulada.
-6. Si una operació modifica diverses files o saldos relacionats, fes-la atòmica amb transacció o mecanisme equivalent.
-7. Mostra el canvi en una vista o resposta dinàmica.
-8. Prova el segon flux i torna a executar R3M3 com a regressió.
+1. Identifica el recurs, els camps editables i en quines condicions es pot eliminar.
+2. Crea i reutilitza un component de vista amb dades rebudes explícitament.
+3. Afig la ruta d'edició i l'operació `PUT` o `PATCH`, o l'equivalent server-rendered documentat.
+4. Valida en servidor i mostra els errors conservant els valors introduïts.
+5. Afig una operació `DELETE`, o l'equivalent natiu documentat, amb CSRF i una regla que impedisca almenys una eliminació no vàlida.
+6. Recupera el recurs amb el mecanisme del framework i controla l'identificador inexistent amb `404` o resposta equivalent.
+7. Mostra el resultat de l'actualització o l'eliminació llegint de nou l'estat real de la BBDD.
+8. Si una operació modifica diverses files o registres relacionats, fes-la atòmica amb una transacció o mecanisme equivalent.
+9. Prova actualització, error, eliminació i regressió d'R3M3.
 
 ### Exemple de continuïtat
 
-En [la branca `r3m4` de La Roda](https://github.com/batoi-dwes-2026/microreptes-c-igomis/tree/r3m4), una persona sol·licita un servici alié i l'oferent el completa. L'operació final canvia dos saldos i l'estat dins d'una transacció. Un selector docent representa temporalment Aina, Biel o Carla perquè l'autenticació encara no toca; està identificat com a substitució provisional, no com a login.
+Si R3M3 permet publicar un servici, R3M4 pot reutilitzar una targeta de servici en el catàleg i en el detall, editar-ne parcialment la descripció amb `PATCH` i eliminar amb `DELETE` només un servici que encara no tinga intercanvis. Si l'eliminació afecta registres relacionats, l'operació usa una transacció i fa `rollback` davant d'error. La identitat pot continuar sent una substitució docent explícita perquè l'autenticació real arriba en R3M5.
 
 ### Què has de provar
 
-- Segon flux correcte.
-- Acció no permesa o estat invàlid.
+- Actualització correcta amb `PUT/PATCH` o equivalent i canvi verificat en BBDD.
+- Actualització invàlida sense canvi persistent.
+- Eliminació correcta i eliminació denegada o incompatible amb les regles del domini.
+- Identificador inexistent amb resposta `404` o equivalent controlat.
 - Absència de canvis parcials si falla una operació múltiple.
+- Component de vista renderitzat en almenys dos llocs.
 - Regressió del primer flux d'R3M3.
 
 ### Ampliació opcional
 
-- Nova relació simple que reduïsca dades duplicades.
-- Servei reutilitzable per a una regla compartida.
-- Prova específica de rollback o concurrència si el domini ho necessita.
+- Component amb variants o *slots* justificats.
+- *Soft delete* si el domini necessita conservar traçabilitat.
+- Prova específica de `rollback` o concurrència si el domini ho necessita.
 
 ### Fora d'abast
 
-No toca encara una API, integració externa, rols complexos ni un tercer flux. Si el segon flux és massa gran, retalla'l a una transició completa i provable.
+No toca encara una API, integració externa, autenticació, rols complexos ni un sistema genèric de components. No cal construir un CRUD complet d'entitats que el projecte no necessita: tanca l'actualització i l'eliminació del recurs triat i deixa-les preparades per protegir-les en R3M5.
 
 Consulta [com s'avalua R3M4](../03_com_s_avalua/rubriques/r3m4.md).
 
@@ -456,7 +480,7 @@ Deixar de construir funcionalitat nova i demostrar que la base acumulada és rep
 2. Reconstrucció de la BBDD i càrrega inicial.
 3. Lectura real d'R3M2.
 4. Cas positiu i negatiu d'R3M3.
-5. Cas positiu, error i regressió d'R3M4.
+5. Component, actualització, eliminació, error i regressió d'R3M4.
 6. Accés sense autenticar, autoritzat, denegat i logout d'R3M5.
 7. Eixida segura i errors comprensibles.
 
@@ -530,7 +554,7 @@ Imagina una còpia neta del repositori. Amb només el README i els fitxers versi
 
 ### Demo recomanada
 
-Prepara una demo de 5–7 minuts: reconstrucció, lectura inicial, cas positiu i error d'R3M3, operació principal d'R3M4, canvi d'usuari i denegació d'R3M5, i suite/checklist final.
+Prepara una demo de 5–7 minuts: reconstrucció, lectura inicial, cas positiu i error d'R3M3, component, actualització i eliminació d'R3M4, canvi d'usuari i denegació d'R3M5, i suite/checklist final.
 
 ### Exemple de continuïtat
 

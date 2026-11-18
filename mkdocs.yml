@@ -41,7 +41,7 @@ nav:
           - "R3M1. Arrencada del nou projecte": "03_com_s_avalua/rubriques/r3m1.md"
           - "R3M2. Persistència mínima": "03_com_s_avalua/rubriques/r3m2.md"
           - "R3M3. Primer cas d'ús complet": "03_com_s_avalua/rubriques/r3m3.md"
-          - "R3M4. Segon cas d'ús": "03_com_s_avalua/rubriques/r3m4.md"
+          - "R3M4. Components i manteniment": "03_com_s_avalua/rubriques/r3m4.md"
           - "R3M5. Autenticació, autorització i middleware": "03_com_s_avalua/rubriques/r3m5.md"
           - "R3M6. Qualitat i estabilització": "03_com_s_avalua/rubriques/r3m6.md"
           - "R3M7. Tancament tècnic": "03_com_s_avalua/rubriques/r3m7.md"

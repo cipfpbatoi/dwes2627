@@ -105,7 +105,7 @@ Briefs interns creats per preparar les presentacions de la seqüència actual:
 | `presentacions/microreptes/r3m1.md` | Presentació de microrepte | Arrencada del nou projecte en framework. |
 | `presentacions/microreptes/r3m2.md` | Presentació de microrepte | Persistència mínima amb migracions o equivalent i dades inicials reproduïbles. |
 | `presentacions/microreptes/r3m3.md` | Presentació de microrepte | Primer cas d'ús complet heretat de `R2`. |
-| `presentacions/microreptes/r3m4.md` | Presentació de microrepte | Segon cas d'ús o ampliació funcional. |
+| `presentacions/microreptes/r3m4.md` | Presentació de microrepte | Components de vista i manteniment d'un recurs. |
 | `presentacions/microreptes/r3m5.md` | Presentació de microrepte | Autenticació, autorització i middleware. |
 | `presentacions/microreptes/r3m6.md` | Presentació de microrepte | Qualitat i estabilització. |
 | `presentacions/microreptes/r3m7.md` | Presentació de microrepte | Tancament tècnic i pas cap a `R4`. |

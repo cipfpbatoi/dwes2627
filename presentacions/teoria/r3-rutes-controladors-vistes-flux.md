@@ -15,6 +15,9 @@ Crear una presentació teòrica curta per preparar `R3M3` i `R3M4`, explicant co
 - La capa de dades recupera o guarda informació real.
 - La vista, plantilla o resposta ha de mostrar dades reals del projecte.
 - Després d'una escriptura correcta, Post/Redirect/Get evita repetir l'operació en refrescar.
+- Els formularis HTML només envien `GET` i `POST` nativament; el framework pot oferir *method override* o una convenció equivalent per a `PUT/PATCH/DELETE`.
+- `PATCH` modifica parcialment, `PUT` substituïx i `DELETE` elimina; una transició d'estat no és una eliminació.
+- Un component, parcial, macro o equivalent rep dades explícites i evita duplicar presentació.
 - En `R3`, almenys un flux ha de ser server-rendered amb HTML generat pel servidor.
 - El segon flux ha d'aportar valor funcional, no només una pantalla nova.
 - Cal provar cas positiu i almenys un error o validació.
@@ -28,7 +31,8 @@ Crear una presentació teòrica curta per preparar `R3M3` i `R3M4`, explicant co
 - Exemple de dades passades a vista/plantilla.
 - Taula de responsabilitats: ruta, formulari/DTO, validador, controlador, servei, model/ORM i vista.
 - Diapositiva sobre primer flux heretat de `R2`.
-- Diapositiva sobre segon flux o ampliació funcional.
+- Diapositiva sobre component de vista reutilitzat en llistat i edició.
+- Diapositiva comparant `POST`, `PUT`, `PATCH`, `DELETE` i els equivalents server-rendered.
 - Errors habituals.
 - Una diapositiva final amb preguntes de comprovació.
 

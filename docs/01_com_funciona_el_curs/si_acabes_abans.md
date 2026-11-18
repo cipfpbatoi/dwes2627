@@ -102,10 +102,10 @@ Tria una proposta amb el professorat o adapta-la als errors i decisions del teu 
 - **Evidència curta:** recorregut feliç i un cas incorrecte, amb la capa que resol cada pas.
 - **No avances encara:** un segon cas d’ús independent.
 
-### R3M4. Segon cas d’ús o ampliació funcional
+### R3M4. Components de vista i manteniment d’un recurs
 
-- **Pots aprofundir en:** connectar millor els dos fluxos, afegir una regla de domini rellevant o comprovar un canvi d’estat no permés.
-- **Evidència curta:** estat inicial, acció, estat final i regla que impedix el cas incorrecte.
+- **Pots aprofundir en:** variants del component, *soft delete* o una prova de `rollback` quan canvien diversos registres.
+- **Evidència curta:** component reutilitzat, actualització `PUT/PATCH`, eliminació `DELETE` i regla que impedix el cas incorrecte.
 - **No avances encara:** autenticació o autorització de `R3M5` si encara no formen part del flux.
 
 ### R3M5. Autenticació, autorització i middleware
