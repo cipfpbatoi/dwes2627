@@ -5,6 +5,9 @@ Esta guia no substituïx la documentació oficial del framework. Servix per sabe
 Si primer vols entendre què és un framework i veure una arrencada mínima amb
 Laravel o NestJS, consulta els [miniapunts de frameworks](mini_apunts_frameworks.md).
 
+Per preparar específicament `R3M4`, consulta la guia de
+[components de vista i manteniment d'un recurs](manteniment_components.md).
+
 ## Recorregut d'una petició
 
 En un flux web bàsic, el camí és:
@@ -142,6 +145,17 @@ La prova del flux no ha de limitar-se a comprovar un codi `200`:
 - si es puja un fitxer, comprova que no quede orfe quan falla la BBDD.
 
 Consulta el desenvolupament complet en [R3M3. Primer cas d'ús complet](../../02_reptes/repte_03.md#r3m3-primer-cas-dus-complet).
+
+## Edició, eliminació i components en R3M4
+
+`R3M4` amplia el flux anterior sobre un recurs existent. Incorpora actualització
+amb `PUT/PATCH`, eliminació amb `DELETE` o els equivalents server-rendered del
+framework, una peça de vista reutilitzada, resposta `404`, regla d'eliminació i
+transacció quan una operació modifica diversos registres.
+
+Consulta la [teoria específica d'R3M4](manteniment_components.md) per entendre
+la semàntica dels mètodes, els equivalents de component en Laravel, Symfony,
+Django i NestJS, i les proves mínimes que has de preparar.
 
 ## Models i capa de dades
 

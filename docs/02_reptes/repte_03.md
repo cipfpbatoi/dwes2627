@@ -126,7 +126,7 @@ Teoria relacionada per microrepte:
 - `R3M1`: [Docker, entorn i arrencada reproduïble](../recursos/Teoria/Teoria-R3-Docker-entorn-i-arrencada-reproduible.pdf) i [Framework MVC i responsabilitats](../recursos/Teoria/Teoria-R3-Framework-MVC-i-responsabilitats.pdf)
 - `R3M2`: [Persistència, migracions i seeders](../recursos/Teoria/Teoria-R3-Persistencia-migracions-i-seeders.pdf)
 - `R3M3`: [Rutes, controladors, vistes i flux end-to-end](../recursos/Teoria/Teoria-R3-Rutes-controladors-vistes-i-flux-end-to-end.pdf)
-- `R3M4`: [Rutes, controladors, vistes i flux end-to-end](../recursos/Teoria/Teoria-R3-Rutes-controladors-vistes-i-flux-end-to-end.pdf)
+- `R3M4`: [Components de vista i manteniment d'un recurs](../04_materials/repte_03/manteniment_components.md)
 - `R3M5`: [Autenticació, autorització i middleware](../recursos/Teoria/Teoria-R3-Autenticacio-autoritzacio-i-middleware.pdf)
 - `R3M6`: [Qualitat, proves i tancament tècnic](../recursos/Teoria/Teoria-R3-Qualitat-proves-i-tancament-tecnic.pdf)
 - `R3M7`: [Qualitat, proves i tancament tècnic](../recursos/Teoria/Teoria-R3-Qualitat-proves-i-tancament-tecnic.pdf)

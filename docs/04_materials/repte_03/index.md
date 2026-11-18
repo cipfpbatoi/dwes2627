@@ -11,7 +11,8 @@
 | repassar arrencada del nou projecte | [R3M1. Arrencada del nou projecte](../../recursos/Repte3/R3M1-Arrencada-del-nou-projecte.pdf) |
 | repassar persistència mínima | [R3M2. Persistència mínima](../../recursos/Repte3/R3M2-Persistencia-minima.pdf) |
 | repassar primer cas d'ús complet | [R3M3. Primer cas d'ús complet](../../recursos/Repte3/R3M3-Primer-cas-dus-complet.pdf) |
-| repassar components i manteniment | [R3M4. Components de vista i manteniment d'un recurs](../../recursos/Repte3/R3M4-Segon-cas-dus-o-ampliacio-funcional.pdf) |
+| entendre components, `PUT/PATCH`, `DELETE`, `404` i transaccions | [Teoria d'R3M4. Components i manteniment](manteniment_components.md) |
+| repassar l'enunciat visual d'R3M4 | [R3M4. Components de vista i manteniment d'un recurs](../../recursos/Repte3/R3M4-Segon-cas-dus-o-ampliacio-funcional.pdf) |
 | repassar autenticació i autorització | [R3M5. Autenticació, autorització i middleware](../../recursos/Repte3/R3M5-Autenticacio-autoritzacio-i-middleware.pdf) |
 | repassar qualitat i estabilització | [R3M6. Qualitat i estabilització](../../recursos/Repte3/R3M6-Qualitat-i-estabilitzacio.pdf) |
 | repassar tancament tècnic | [R3M7. Tancament tècnic](../../recursos/Repte3/R3M7-Tancament-tecnic.pdf) |
@@ -85,6 +86,11 @@ Usa estes llistes abans de dir que tens `R3` tancat.
 - [ ] He provat el recorregut complet.
 - [ ] No trenca el cas d'ús 1.
 - [ ] Puc explicar quin valor aporta.
+- [ ] Reutilitze un component, parcial o equivalent en almenys dos llocs.
+- [ ] L'actualització usa `PUT/PATCH` o l'equivalent documentat del framework.
+- [ ] L'eliminació usa `DELETE` o l'equivalent documentat, amb CSRF i una regla del domini.
+- [ ] Un identificador inexistent produïx `404` o una resposta equivalent.
+- [ ] Si una operació modifica diversos registres, use una transacció i evite canvis parcials.
 
 ### 6. Autenticació i autorització
 

@@ -50,3 +50,6 @@ Crear una presentació teòrica curta per preparar `R3M3` i `R3M4`, explicant co
 - D'on venen les dades reals que es mostren?
 - Quin flux heretat de `R2` queda reconstruït en framework?
 - Quin error o validació pots demostrar en el flux?
+- Quan correspon `PUT`, `PATCH` o `DELETE` i com ho expressa un formulari HTML en el teu framework?
+- Quines dades rep el component de vista i en quins dos llocs es reutilitza?
+- Quan cal una transacció i com comproves que no queden canvis parcials?
