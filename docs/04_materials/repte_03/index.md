@@ -3,6 +3,7 @@
 | Necessite... | Recurs |
 |---|---|
 | veure l'enunciat | [Repte 3](../../02_reptes/repte_03.md) |
+| entrar directament en un microrepte | [R3M1](../../02_reptes/repte_03/r3m1.md) · [R3M2](../../02_reptes/repte_03/r3m2.md) · [R3M3](../../02_reptes/repte_03/r3m3.md) · [R3M4](../../02_reptes/repte_03/r3m4.md) · [R3M5](../../02_reptes/repte_03/r3m5.md) · [R3M6](../../02_reptes/repte_03/r3m6.md) · [R3M7](../../02_reptes/repte_03/r3m7.md) |
 | consultar com s'avalua cada microrepte | [Guies d'avaluació de R3](../../03_com_s_avalua/rubriques/index.md#repte-3) |
 | ubicar rutes, controladors, models, BBDD, migracions o proves | [Suport tècnic mínim](suport_tecnic.md) |
 | entendre què és un framework i veure l'arrencada mínima | [Miniapunts de frameworks](mini_apunts_frameworks.md) |

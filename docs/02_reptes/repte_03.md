@@ -82,15 +82,20 @@ Per evitar confusions, estes equivalències compten igual si estan ben aplicades
 
 `R3` es treballa en 7 microreptes:
 
+Cada microrepte té ara una entrada pròpia amb el punt de partida, el mínim
+obligatori, els passos de treball, les proves, les evidències i els límits. Usa
+la pàgina general per entendre la progressió i entra en la fitxa concreta quan
+comences una sessió.
+
 | Microrepte | Producte principal | Autocorrecció | Taller relacionat |
 |---|---|---|---|
-| `R3M1` Arrencada del nou projecte | Docker, framework, `.env`, ruta mínima, comparació de stack i esquema abans/després | `r3-s01-arrencada-nou-projecte` | [MT07. Migrar un cas d'ús a framework](../recursos/Tallers/MT07-Migrar-un-cas-dus-a-framework.pdf) |
-| `R3M2` Persistència mínima | BBDD, migracions o equivalent, dades inicials reproduïbles i conjunt de dades real usat en un flux | `r3-s02-persistencia-minima-migrations-seeders` | [MT08. Migracions, seeders i dades de prova](../recursos/Tallers/MT08-Migracions-seeders-i-dades-de-prova.pdf) |
-| `R3M3` Primer cas d'ús complet | flux heretat de `R2` funcionant en framework, preferentment com a cas server-rendered | `r3-s03-primer-cas-us-complet` | [MT09. On pose la lògica](../recursos/Tallers/MT09-On-pose-la-logica.pdf) |
-| `R3M4` Components de vista i manteniment d'un recurs | segon flux sobre un recurs existent amb component reutilitzable, actualització `PUT/PATCH`, eliminació `DELETE` i BBDD coherent | `r3-s04-segon-cas-us-ampliacio-funcional` | [MT09. On pose la lògica](../recursos/Tallers/MT09-On-pose-la-logica.pdf) |
-| `R3M5` Autenticació i autorització | acció significativa protegida amb middleware, guard, voter, policy o equivalent | `r3-s05-autenticacio-autoritzacio-middleware` | [MT16. Portabilitat entre frameworks](../recursos/Tallers/MT16-Portabilitat-entre-frameworks.pdf) |
-| `R3M6` Qualitat i estabilització | validació, errors, proves i revisió d'estructura | `r3-s06-qualitat-estabilitzacio` | [MT16. Portabilitat entre frameworks](../recursos/Tallers/MT16-Portabilitat-entre-frameworks.pdf) |
-| `R3M7` Tancament tècnic | `README.md`, demo, decisions i mapa del que queda pendent | `r3-s07-tancament-tecnic` | Sense taller específic |
+| [R3M1. Arrencada del nou projecte](repte_03/r3m1.md) | Docker, framework, `.env`, ruta mínima, comparació de stack i esquema abans/després | `r3-s01-arrencada-nou-projecte` | [MT07. Migrar un cas d'ús a framework](../recursos/Tallers/MT07-Migrar-un-cas-dus-a-framework.pdf) |
+| [R3M2. Persistència mínima](repte_03/r3m2.md) | BBDD, migracions o equivalent, dades inicials reproduïbles i conjunt de dades real usat en un flux | `r3-s02-persistencia-minima-migrations-seeders` | [MT08. Migracions, seeders i dades de prova](../recursos/Tallers/MT08-Migracions-seeders-i-dades-de-prova.pdf) |
+| [R3M3. Primer cas d'ús complet](repte_03/r3m3.md) | flux heretat de `R2` funcionant en framework, preferentment com a cas server-rendered | `r3-s03-primer-cas-us-complet` | [MT09. On pose la lògica](../recursos/Tallers/MT09-On-pose-la-logica.pdf) |
+| [R3M4. Components de vista i manteniment](repte_03/r3m4.md) | segon flux sobre un recurs existent amb component reutilitzable, actualització `PUT/PATCH`, eliminació `DELETE` i BBDD coherent | `r3-s04-segon-cas-us-ampliacio-funcional` | [MT09. On pose la lògica](../recursos/Tallers/MT09-On-pose-la-logica.pdf) |
+| [R3M5. Autenticació i autorització](repte_03/r3m5.md) | acció significativa protegida amb middleware, guard, voter, policy o equivalent | `r3-s05-autenticacio-autoritzacio-middleware` | [MT16. Portabilitat entre frameworks](../recursos/Tallers/MT16-Portabilitat-entre-frameworks.pdf) |
+| [R3M6. Qualitat i estabilització](repte_03/r3m6.md) | validació, errors, proves i revisió d'estructura | `r3-s06-qualitat-estabilitzacio` | [MT16. Portabilitat entre frameworks](../recursos/Tallers/MT16-Portabilitat-entre-frameworks.pdf) |
+| [R3M7. Tancament tècnic](repte_03/r3m7.md) | `README.md`, demo, decisions i mapa del que queda pendent | `r3-s07-tancament-tecnic` | Sense taller específic |
 
 Entre `R3M2` i `R3M3` hi haurà un taller formatiu per comprovar equivalències entre frameworks i auditar el projecte abans del primer flux complet. No és un microrepte amb nota separada, però la taula d'equivalències i la microtasca resultant poden ajudar-te a millorar `R3M3`, `R3M5`, `R3M6` i la documentació final.
 

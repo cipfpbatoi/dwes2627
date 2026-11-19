@@ -166,5 +166,5 @@ Abans d'entregar, comprova que pots respondre:
 - La teua operació necessita transacció? Per què?
 - Com has comprovat que `R3M3` no s'ha trencat?
 
-Consulta també l'[enunciat d'R3M4](../../02_reptes/repte_03.md#r3m4-components-de-vista-i-manteniment-dun-recurs)
+Consulta també l'[enunciat d'R3M4](../../02_reptes/repte_03/r3m4.md)
 i la [guia d'avaluació](../../03_com_s_avalua/rubriques/r3m4.md).

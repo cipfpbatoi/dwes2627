@@ -144,7 +144,7 @@ La prova del flux no ha de limitar-se a comprovar un codi `200`:
 - si hi ha una regla calculada, comprova també el valor resultant;
 - si es puja un fitxer, comprova que no quede orfe quan falla la BBDD.
 
-Consulta el desenvolupament complet en [R3M3. Primer cas d'ús complet](../../02_reptes/repte_03.md#r3m3-primer-cas-dus-complet).
+Consulta el desenvolupament complet en [R3M3. Primer cas d'ús complet](../../02_reptes/repte_03/r3m3.md).
 
 ## Edició, eliminació i components en R3M4
 
