@@ -46,6 +46,26 @@ Si una evidència és important, ha d'estar en el repositori i ha de tindre un n
 
 El `README.md` de l’arrel descriu l’entrega actual: codi del microrepte, què has fet, com executar-ho, com provar-ho i enllaços a les evidències. Pot substituir la descripció del microrepte anterior, perquè la branca del microrepte en conserva la versió. Si necessites una explicació anterior dins de la versió actual, guarda-la en `docs/r2m1.md` o un fitxer equivalent.
 
+### Indicar on està el projecte corregible
+
+Si el projecte executable està dins d'una subcarpeta, afig una sola fila a la
+taula del `README.md`:
+
+```md
+| Directori del projecte | `r3/` |
+```
+
+Substituïx `r3/` pel teu directori real, com `django_app/`, `app-laravel/` o
+`gymconnect-r3/`. Usa `.` si el projecte està en l'arrel. El camí ha de ser
+relatiu, estar versionat i no pot contindre `..`.
+
+No has d'enumerar cada controlador, ruta, vista, component o test. A partir
+d'esta única arrel, l'autocorrecció localitza els camins rellevants del
+framework i prioritza els fitxers modificats durant els commits del microrepte.
+Si no declares el directori, intentarà detectar-lo amb marcadors habituals com
+`artisan` o `manage.py`; la declaració explícita evita ambigüitats quan el
+repositori conté més d'un projecte.
+
 `ENTREGA.md` i els README de carpeta són instruccions de la plantilla; no cal reescriure’ls en cada entrega. Els fitxers de treball han de ser localitzables, per exemple `docs/r2m1.md` i `evidence/r2m1/`. Registra només l’ús real d’IA i les comprovacions que has fet.
 
 Abans del commit, revisa que no falten fitxers necessaris, que les ordres del README funcionen i que no has inclòs secrets, dades personals innecessàries ni fitxers temporals. Tens [dos exemples de README omplits](#exemples-de-readme-omplits) al final d’esta guia.
