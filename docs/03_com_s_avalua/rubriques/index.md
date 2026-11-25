@@ -41,8 +41,8 @@ Cada guia està alineada amb l'autocorrecció corresponent i mostra:
 | `R3M3` | [Primer cas d'ús complet](r3m3.md) | `r3-s03-primer-cas-us-complet` |
 | `R3M4` | [Components de vista i manteniment d'un recurs](r3m4.md) | `r3-s04-segon-cas-us-ampliacio-funcional` |
 | `R3M5` | [Autenticació, autorització i middleware](r3m5.md) | `r3-s05-autenticacio-autoritzacio-middleware` |
-| `R3M6` | [Qualitat i estabilització](r3m6.md) | `r3-s06-qualitat-estabilitzacio` |
-| `R3M7` | [Tancament tècnic](r3m7.md) | `r3-s07-tancament-tecnic` |
+| `R3M6` | [Esdeveniments i correu](r3m6.md) | `r3-s06-esdeveniments-correu` |
+| `R3M7` | [Estabilització i tancament tècnic](r3m7.md) | `r3-s07-tancament-tecnic` |
 
 ## Repte 4
 

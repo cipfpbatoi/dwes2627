@@ -114,13 +114,11 @@ Tria una proposta amb el professorat o adapta-la als errors i decisions del teu 
 - **Evidència curta:** matriu d’identitat, permís, resposta i capa que pren la decisió.
 - **No avances encara:** sistema complet de rols o permisos administrables.
 
-### R3M6. Qualitat i estabilització
+### R3M6. Esdeveniments i correu
 
-- **Pots aprofundir en:** afegir una prova de regressió per un error real, revisar logs i missatges d’error o mesurar i reduir una duplicació concreta.
-- **Evidència curta:** problema inicial, canvi acotat i prova que evita que reaparega.
-- **No avances encara:** funcionalitats noves que amplien l’abast del producte.
+Personalitza el correu amb dades del domini i comprova-les en una prova.
 
-### R3M7. Tancament tècnic
+### R3M7. Estabilització i tancament tècnic
 
 - **Pots aprofundir en:** provar el `README.md` en una còpia neta, preparar una decisió arquitectònica breu o assajar una modificació sorpresa de cinc minuts.
 - **Evidència curta:** incidència trobada durant l’assaig i correcció documental o tècnica aplicada.

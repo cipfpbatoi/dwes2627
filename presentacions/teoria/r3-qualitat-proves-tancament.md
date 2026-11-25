@@ -2,7 +2,7 @@
 
 ## Objectiu
 
-Crear una presentació teòrica curta per preparar `R3M6` i `R3M7`, centrada en estabilitzar els fluxos, verificar reconstrucció de BBDD, càrrega inicial reproduïble i protecció d'accessos, documentar decisions i deixar el projecte preparat per a `R4`.
+Crear una presentació teòrica curta per preparar `R3M7`, centrada en estabilitzar els fluxos, verificar reconstrucció de BBDD, càrrega inicial reproduïble i protecció d'accessos, documentar decisions i deixar el projecte preparat per a `R4`.
 
 
 ## Idees clau

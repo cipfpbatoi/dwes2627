@@ -16,8 +16,8 @@
 | repassar l'enunciat visual d'R3M4 | [R3M4. Components de vista i manteniment d'un recurs](../../recursos/Repte3/R3M4-Segon-cas-dus-o-ampliacio-funcional.pdf) |
 | saber què activar i com protegir una ruta en R3M5 | [Orientació tècnica d'autenticació i autorització](autenticacio_autoritzacio.md) |
 | repassar autenticació i autorització | [R3M5. Autenticació, autorització i middleware](../../recursos/Repte3/R3M5-Autenticacio-autoritzacio-i-middleware.pdf) |
-| repassar qualitat i estabilització | [R3M6. Qualitat i estabilització](../../recursos/Repte3/R3M6-Qualitat-i-estabilitzacio.pdf) |
-| repassar tancament tècnic | [R3M7. Tancament tècnic](../../recursos/Repte3/R3M7-Tancament-tecnic.pdf) |
+
+
 
 ## Checklist de R3
 

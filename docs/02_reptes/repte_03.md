@@ -94,8 +94,8 @@ comences una sessió.
 | [R3M3. Primer cas d'ús complet](repte_03/r3m3.md) | flux heretat de `R2` funcionant en framework, preferentment com a cas server-rendered | `r3-s03-primer-cas-us-complet` | [MT09. On pose la lògica](../recursos/Tallers/MT09-On-pose-la-logica.pdf) |
 | [R3M4. Components de vista i manteniment](repte_03/r3m4.md) | segon flux sobre un recurs existent amb component reutilitzable, actualització `PUT/PATCH`, eliminació `DELETE` i BBDD coherent | `r3-s04-segon-cas-us-ampliacio-funcional` | [MT09. On pose la lògica](../recursos/Tallers/MT09-On-pose-la-logica.pdf) |
 | [R3M5. Autenticació i autorització](repte_03/r3m5.md) | acció significativa protegida amb middleware, guard, voter, policy o equivalent | `r3-s05-autenticacio-autoritzacio-middleware` | [MT16. Portabilitat entre frameworks](../recursos/Tallers/MT16-Portabilitat-entre-frameworks.pdf) |
-| [R3M6. Qualitat i estabilització](repte_03/r3m6.md) | validació, errors, proves i revisió d'estructura | `r3-s06-qualitat-estabilitzacio` | [MT16. Portabilitat entre frameworks](../recursos/Tallers/MT16-Portabilitat-entre-frameworks.pdf) |
-| [R3M7. Tancament tècnic](repte_03/r3m7.md) | `README.md`, demo, decisions i mapa del que queda pendent | `r3-s07-tancament-tecnic` | Sense taller específic |
+| [R3M6. Esdeveniments i correu](repte_03/r3m6.md) | esdeveniment, listener i correu de prova | `r3-s06-esdeveniments-correu` | Sense taller específic |
+| [R3M7. Estabilització i tancament tècnic](repte_03/r3m7.md) | `README.md`, demo, decisions i mapa del que queda pendent | `r3-s07-tancament-tecnic` | Sense taller específic |
 
 Entre `R3M2` i `R3M3` hi haurà un taller formatiu per comprovar equivalències entre frameworks i auditar el projecte abans del primer flux complet. No és un microrepte amb nota separada, però la taula d'equivalències i la microtasca resultant poden ajudar-te a millorar `R3M3`, `R3M5`, `R3M6` i la documentació final.
 
@@ -123,8 +123,8 @@ Diapositives de suport:
 - [R3M3. Primer cas d'ús complet](../recursos/Repte3/R3M3-Primer-cas-dus-complet.pdf)
 - [R3M4. Components de vista i manteniment d'un recurs](../recursos/Repte3/R3M4-Segon-cas-dus-o-ampliacio-funcional.pdf)
 - [R3M5. Autenticació, autorització i middleware](../recursos/Repte3/R3M5-Autenticacio-autoritzacio-i-middleware.pdf)
-- [R3M6. Qualitat i estabilització](../recursos/Repte3/R3M6-Qualitat-i-estabilitzacio.pdf)
-- [R3M7. Tancament tècnic](../recursos/Repte3/R3M7-Tancament-tecnic.pdf)
+
+
 
 Teoria relacionada per microrepte:
 
@@ -133,7 +133,6 @@ Teoria relacionada per microrepte:
 - `R3M3`: [Rutes, controladors, vistes i flux end-to-end](../recursos/Teoria/Teoria-R3-Rutes-controladors-vistes-i-flux-end-to-end.pdf)
 - `R3M4`: [Components de vista i manteniment d'un recurs](../04_materials/repte_03/manteniment_components.md)
 - `R3M5`: [Autenticació, autorització i middleware](../recursos/Teoria/Teoria-R3-Autenticacio-autoritzacio-i-middleware.pdf)
-- `R3M6`: [Qualitat, proves i tancament tècnic](../recursos/Teoria/Teoria-R3-Qualitat-proves-i-tancament-tecnic.pdf)
 - `R3M7`: [Qualitat, proves i tancament tècnic](../recursos/Teoria/Teoria-R3-Qualitat-proves-i-tancament-tecnic.pdf)
 
 ## Com avança el projecte durant R3
@@ -151,7 +150,7 @@ R3M4  manteniment: component reutilitzable, PUT/PATCH, DELETE i regressió
   ↓
 R3M5  identitat real del framework, acció protegida i autorització
   ↓
-R3M6  regressió, errors, proves i neteja de responsabilitats
+R3M6  esdeveniment, listener i correu de prova
   ↓
 R3M7  reproducció des de zero, README, demo, decisions i backlog cap a R4
 ```
@@ -483,59 +482,17 @@ No cal registre públic, recuperació de contrasenya, OAuth, 2FA, JWT avançat, 
 
 Consulta [com s'avalua R3M5](../03_com_s_avalua/rubriques/r3m5.md).
 
-## R3M6. Qualitat i estabilització
+## R3M6. Esdeveniments i correu
 
-### Objectiu
+- Tria una acció protegida existent i emet un esdeveniment de domini quan l’operació ha quedat confirmada. Si hi ha transacció, el correu només es pot generar després del commit.
+- Connecta un listener o equivalent que prepare un correu per a un destinatari demo determinat pel domini. Usa una bústia local o el mecanisme de proves del framework.
+- Guarda els resultats de tres casos: èxit amb un únic correu per al destinatari esperat, error sense correu i accés denegat sense correu.
 
-Deixar de construir funcionalitat nova i demostrar que la base acumulada és repetible, provable i mantenible. R3M6 és una sessió de regressió, correcció i criteri tècnic.
+[Enunciat d’R3M6](repte_03/r3m6.md)
 
-### Inventari mínim que has de revisar
+## R3M7. Estabilització i tancament tècnic
 
-1. Arrencada des de les instruccions actuals.
-2. Reconstrucció de la BBDD i càrrega inicial.
-3. Lectura real d'R3M2.
-4. Cas positiu i negatiu d'R3M3.
-5. Component, actualització, eliminació, error i regressió d'R3M4.
-6. Accés sense autenticar, autoritzat, denegat i logout d'R3M5.
-7. Eixida segura i errors comprensibles.
-
-### Què has de fer
-
-- Executa la suite o una checklist reproduïble i guarda el resultat real.
-- Provoca almenys un error de validació i un error de domini o autorització.
-- Anota incidència, causa, correcció i prova de regressió.
-- Revisa que la vista no consulte la BBDD i que ruta/controlador no concentren regles llargues.
-- Extrau una peça només si reduïx una responsabilitat barrejada real; no refactoritzes per aparença.
-- Comprova que migracions i seeders continuen funcionant després dels canvis.
-- Elimina proves inicials del framework que ja no representen el projecte o adapta-les correctament.
-
-### Exemple de continuïtat
-
-En [la branca `r3m6` de La Roda](https://github.com/batoi-dwes-2026/microreptes-c-igomis/tree/r3m6), no apareix un tercer flux. S'amplien proves de saldo insuficient, rollback, accés i regressió; es documenten incidències reals i es comprova `migrate:fresh --seed`, la suite completa i el format del codi.
-
-### Evidència que has de conservar
-
-| Evidència | Contingut mínim |
-|---|---|
-| Resultat de proves | ordre executada, casos i resultat |
-| Incidències | símptoma, causa, correcció i prova posterior |
-| Regressió | primer i segon flux continuen funcionant |
-| Persistència | reconstrucció i càrrega inicial continuen funcionant |
-| Qualitat | responsabilitat revisada o justificació de per què ja és adequada |
-
-### Ampliació opcional
-
-- Convertir una comprovació manual important en test funcional.
-- Mesurar consultes i corregir un N+1 real.
-- Afegir validacions de frontera que falten.
-
-### Fora d'abast
-
-No afiges una funcionalitat gran, un tercer flux, API ni desplegament per evitar corregir el que ja existix.
-
-Consulta [com s'avalua R3M6](../03_com_s_avalua/rubriques/r3m6.md).
-
-## R3M7. Tancament tècnic
+Des d’una còpia neta i amb una BBDD de prova, seguix el README, reconstruïx les dades i guarda l’eixida d’una suite o checklist executada. Verifica els dos fluxos i els seus errors, la protecció d’accés i el correu d’R3M6. Revisa les responsabilitats. Si detectes una incidència, documenta símptoma, causa, correcció i prova posterior. Si no en detectes, registra les comprovacions executades.
 
 ### Objectiu
 
@@ -596,8 +553,7 @@ El repositori [`microreptes-c-igomis`](https://github.com/batoi-dwes-2026/micror
 | [`r3m3`](https://github.com/batoi-dwes-2026/microreptes-c-igomis/tree/r3m3) | Formulari GET/POST, CSRF, Form Request, regla de cost, alta Eloquent, PRG i proves. |
 | [`r3m4`](https://github.com/batoi-dwes-2026/microreptes-c-igomis/tree/r3m4) | Sol·licitud/finalització d'intercanvi, estats, transacció i regressió del primer flux. |
 | [`r3m5`](https://github.com/batoi-dwes-2026/microreptes-c-igomis/tree/r3m5) | Login/logout, middleware `auth`, policy i eliminació de la identitat demo. |
-| [`r3m6`](https://github.com/batoi-dwes-2026/microreptes-c-igomis/tree/r3m6) | Proves negatives i de rollback, correcció d'incidències i estabilització sense nou flux. |
-| [`r3m7`](https://github.com/batoi-dwes-2026/microreptes-c-igomis/tree/r3m7) | README reproduïble, demo, decisions, estat honest i backlog cap a R4. |
+| [`r3m7`](https://github.com/batoi-dwes-2026/microreptes-c-igomis/tree/r3m7) | Referència de la versió anterior. README reproduïble, demo, decisions, estat honest i backlog cap a R4. |
 
 ## Presentació i entrega
 
