@@ -31,3 +31,5 @@ Són materials de suport per continuar aprenent, sense nova entrega ni recuperac
 - [R3M2. Consolidació](r3m2.md)
 
 - [R3M3. Consolidació](r3m3.md)
+
+- [R3M4. Consolidació](r3m4.md)
